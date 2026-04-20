@@ -24,6 +24,10 @@ Portfolio personal y espacio privado de Kimo (diseñador gráfico y desarrollado
 | Portfolio de desarrollo     | Pública              | Mostrar proyectos de software                 |
 | Espacio personal            | Oculta (no indexada) | Libros leídos, lugares visitados, uso privado |
 
+**Gestor de paquetes:**
+
+- Se usará **pnpm** como gestor de paquetes principal en todo el proyecto (en vez de npm o yarn).
+
 **Principios de diseño del sistema:**
 
 - Sin servicios externos salvo GitHub
@@ -146,8 +150,8 @@ kimografico/
 ├── data/                    # Contenido de la web en JSON
 │   ├── portfolio-diseno.json
 │   ├── portfolio-dev.json
-│   ├── libros.json
-│   └── lugares.json
+│   ├── books.json
+│   └── trips.json
 │
 └── spec.md                  # Este documento
 ```
@@ -356,26 +360,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"
-          cache-dependency-path: frontend/package-lock.json
+          cache: "pnpm"
+          cache-dependency-path: frontend/pnpm-lock.yaml
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
         working-directory: frontend
 
       - name: Lint
-        run: npm run lint
+        run: pnpm run lint
         working-directory: frontend
 
       - name: Type check
-        run: npm run typecheck
+        run: pnpm run typecheck
         working-directory: frontend
 
       - name: Tests
-        run: npm run test
+        run: pnpm run test
         working-directory: frontend
 
       - name: Check image sizes
@@ -399,7 +404,7 @@ jobs:
           echo "✅ Todas las imágenes dentro del límite"
 
       - name: Build
-        run: npm run build
+        run: pnpm run build
         working-directory: frontend
 ```
 
@@ -419,18 +424,19 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"
-          cache-dependency-path: frontend/package-lock.json
+          cache: "pnpm"
+          cache-dependency-path: frontend/pnpm-lock.yaml
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
         working-directory: frontend
 
       - name: Build
-        run: npm run build
+        run: pnpm run build
         working-directory: frontend
 
       - name: Deploy to GitHub Pages
@@ -452,7 +458,7 @@ jobs:
 
 #### 1.1 Setup del proyecto
 
-- [ ] Crear repo en GitHub
+- [x] Crear repo en GitHub
 - [ ] Inicializar proyecto con Vite + React + TypeScript
 - [ ] Configurar Tailwind CSS
 - [ ] Configurar ESLint + Prettier
