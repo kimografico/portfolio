@@ -590,6 +590,7 @@ jobs:
 
 **Condición para abordarla:** el proyecto debe estar estable y la lógica de cada componente bien conocida. Refactorizar sin ese conocimiento previo añade riesgo innecesario.
 
+- [ ] Crear un agente y las skills pertinentes para abordar las migraciones a lit
 - [ ] Configurar soporte de Web Components en el proyecto (Vite ya lo soporta nativamente)
 - [ ] Definir el contrato de cada componente (props → atributos/propiedades, eventos)
 - [ ] Migrar `basics/` a Lit uno a uno, verificando que el comportamiento visual no cambia
@@ -598,5 +599,3 @@ jobs:
 - [ ] Verificar que los tests existentes siguen pasando
 
 ---
-
-_Última actualización: Fase 1 en definición — dominio pendiente hasta Fase 5_
