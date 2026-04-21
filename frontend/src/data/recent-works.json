@@ -1,0 +1,23 @@
+[
+  {
+    "num": "01",
+    "title": "Montanejos",
+    "tipo": "Logotipo",
+    "year": "2024",
+    "href": "/diseno/montanejos"
+  },
+  {
+    "num": "02",
+    "title": "kimografico",
+    "tipo": "Web",
+    "year": "2026",
+    "href": "/dev/kimografico"
+  },
+  {
+    "num": "03",
+    "title": "Campaña editorial",
+    "tipo": "Editorial",
+    "year": "2023",
+    "href": "/diseno/campana-editorial"
+  }
+]

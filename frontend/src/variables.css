@@ -1,0 +1,10 @@
+:root {
+  --color-bg: #f8f7f4;
+  --color-surface: #ffffff;
+  --color-border: #e5e4e0;
+  --color-muted: #9e9c96;
+  --color-text: #1a1917;
+  --color-accent: #d4542a;
+  --font-sans: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}

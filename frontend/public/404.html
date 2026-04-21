@@ -2,19 +2,194 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>404 - Página no encontrada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
+    <title>404 — kimografico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
     <style>
+      :root {
+        --bg: #f8f7f4;
+        --border: #e5e4e0;
+        --muted: #9e9c96;
+        --text: #1a1917;
+        --accent: #d4542a;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html,
       body {
-        font-family: sans-serif;
-        text-align: center;
-        padding: 2rem;
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: 'DM Sans', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .page {
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        border-bottom: 1px solid var(--border);
+        padding: 0 2rem;
+        height: 3.5rem;
+        display: flex;
+        align-items: center;
+      }
+
+      .wordmark {
+        font-size: 0.875rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        color: var(--text);
+        text-decoration: none;
+        transition: opacity 0.15s ease;
+      }
+
+      .wordmark:hover {
+        opacity: 0.7;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 4rem 2rem;
+        max-width: 64rem;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        width: 100%;
+      }
+
+      @media (min-width: 768px) {
+        .content {
+          grid-template-columns: auto 1fr;
+          gap: 5rem;
+          align-items: end;
+        }
+      }
+
+      .number {
+        font-size: clamp(6rem, 18vw, 13rem);
+        font-weight: 700;
+        letter-spacing: -0.05em;
+        line-height: 1;
+        color: var(--border);
+        margin: 0;
+        user-select: none;
+      }
+
+      .text {
+        padding-bottom: 0.5rem;
+      }
+
+      .label {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin: 0 0 1.5rem;
+      }
+
+      h1 {
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+        font-weight: 600;
+        letter-spacing: -0.03em;
+        line-height: 1.15;
+        margin: 0 0 1rem;
+        color: var(--text);
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: var(--muted);
+        margin: 0 0 2rem;
+        max-width: 42ch;
+      }
+
+      .back {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: var(--text);
+        text-decoration: none;
+        border: 1px solid var(--text);
+        padding: 0.625rem 1.25rem;
+        transition: opacity 0.15s ease;
+      }
+
+      .back:hover {
+        opacity: 0.7;
+      }
+
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 0 2rem;
+        height: 3.5rem;
+        display: flex;
+        align-items: center;
+      }
+
+      .footer-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.7rem;
+        color: var(--muted);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          transition-duration: 0.01ms !important;
+        }
       }
     </style>
   </head>
   <body>
-    <h1>404</h1>
-    <p>Página no encontrada.</p>
-    <a href="/">Volver al inicio</a>
+    <div class="page">
+      <header>
+        <a href="/" class="wordmark">kimografico</a>
+      </header>
+
+      <main>
+        <div class="content">
+          <p class="number" aria-hidden="true">404</p>
+          <div class="text">
+            <p class="label">Error — Página no encontrada</p>
+            <h1>Esta ruta no existe.</h1>
+            <p>
+              La página que buscas no existe o ha sido movida. Si llegaste aquí desde un enlace,
+              puede que esté desactualizado.
+            </p>
+            <a href="/" class="back">← Volver al inicio</a>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <span class="footer-text">© 2026 kimografico</span>
+      </footer>
+    </div>
   </body>
 </html>
