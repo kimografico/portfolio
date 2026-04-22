@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import booksData from '../../../../data/books.json';
+import booksData from '../../data/books.json';
 import BooksTable from './BooksTable';
 import BooksGallery from './BooksGallery';
 
@@ -7,7 +7,7 @@ import BooksGallery from './BooksGallery';
  * Página de /kimo/books. Toggle entre tabla y galería de libros.
  */
 export default function BooksPage() {
-  const [view, setView] = useState<'table' | 'gallery'>('table');
+  const [view, setView] = useState<'table' | 'gallery'>('gallery');
 
   return (
     <section>

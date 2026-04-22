@@ -116,7 +116,11 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
               title={book.title}
             >
               <img
-                src={imgErrors[book.id] || !book.cover ? noCover : book.cover}
+                src={
+                  imgErrors[book.id] || !book.cover || book.cover.trim() === ''
+                    ? noCover
+                    : book.cover
+                }
                 alt={`Portada de ${book.title}`}
                 className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-200"
                 draggable={false}
@@ -156,9 +160,9 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
               </button>
               {/* Portada */}
               <img
-                src={selected.cover || noCover}
+                src={!selected.cover || selected.cover.trim() === '' ? noCover : selected.cover}
                 alt={`Portada de ${selected.title}`}
-                className="object-cover w-40 h-60 rounded mb-4 shadow"
+                className="object-cover w-64 h-96 rounded mb-4 shadow"
                 draggable={false}
                 onError={(e) => {
                   const target = e.currentTarget;
