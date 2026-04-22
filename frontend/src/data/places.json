@@ -1,0 +1,257 @@
+[
+  { "city": "Aragón", "place": "Gea de Albarracín", "country": "es", "date": "2005", "people": "" },
+  {
+    "city": "Aragón",
+    "place": "Gea de Albarracín",
+    "country": "es",
+    "date": "2008 / 07",
+    "people": ""
+  },
+  {
+    "city": "Aragón",
+    "place": "Gea de Albarracín",
+    "country": "es",
+    "date": "2009 / 12",
+    "people": ""
+  },
+  {
+    "city": "Cataluña",
+    "place": "Concierto Black Label Society",
+    "country": "es",
+    "date": "2011 / 03",
+    "people": ""
+  },
+  {
+    "city": "Andalucía",
+    "place": "Granada",
+    "country": "es",
+    "date": "2011 / 04",
+    "people": ""
+  },
+  {
+    "city": "Castilla-La Mancha",
+    "place": "Toledo",
+    "country": "es",
+    "date": "2011 / 08",
+    "people": ""
+  },
+  {
+    "city": "Cataluña",
+    "place": "SEPRONAAA Sitio cerca de Barcelona",
+    "country": "es",
+    "date": "2012 / 10",
+    "people": ""
+  },
+  {
+    "city": "Norte",
+    "place": "Asturias",
+    "country": "es",
+    "date": "2012 / 12",
+    "people": ""
+  },
+  {
+    "city": "Valencia",
+    "place": "Quesa y Anna",
+    "country": "es",
+    "date": "2013 / 07",
+    "people": ""
+  },
+  {
+    "city": "Valencia",
+    "place": "Jávea",
+    "country": "es",
+    "date": "2013 / 08",
+    "people": ""
+  },
+  {
+    "city": "Valencia",
+    "place": "Anna",
+    "country": "es",
+    "date": "2014 / 08",
+    "people": ""
+  },
+  {
+    "city": "Islas Baleares",
+    "place": "Menorca",
+    "country": "es",
+    "date": "2015 / 05",
+    "people": ""
+  },
+  {
+    "city": "Valencia",
+    "place": "Tabarca",
+    "country": "es",
+    "date": "2015 / 08",
+    "people": ""
+  },
+  {
+    "city": "Valencia",
+    "place": "Rio Fraile",
+    "country": "es",
+    "date": "2016 / 07",
+    "people": ""
+  },
+  {
+    "city": "Canarias",
+    "place": "Tenerife",
+    "country": "es",
+    "date": "2016 / 08",
+    "people": ""
+  },
+  {
+    "city": "Valencia",
+    "place": "Tabarca",
+    "country": "es",
+    "date": "2016 / 09",
+    "people": ""
+  },
+  {
+    "city": "Valencia",
+    "place": "Jávea",
+    "country": "es",
+    "date": "2017 / 08",
+    "people": ""
+  },
+  { "city": "Francia", "place": "París", "country": "fr", "date": "2018 / 04", "people": "" },
+  {
+    "city": "Países Bajos",
+    "place": "Amsterdam",
+    "country": "nl",
+    "date": "2018 / 08",
+    "people": ""
+  },
+  {
+    "city": "Valencia",
+    "place": "Anna",
+    "country": "es",
+    "date": "2018 / 08",
+    "people": ""
+  },
+  { "city": "Asia", "place": "Tailandia", "country": "th", "date": "2018 / 08", "people": "" },
+  {
+    "city": "Navarra",
+    "place": "Navarra",
+    "country": "es",
+    "date": "2018 / 10",
+    "people": ""
+  },
+  {
+    "city": "Grecia",
+    "place": "Atenas y Kalambaka",
+    "country": "gr",
+    "date": "2019 / 03",
+    "people": ""
+  },
+  {
+    "city": "Valencia",
+    "place": "Jávea",
+    "country": "es",
+    "date": "2019 / 06",
+    "people": ""
+  },
+  {
+    "city": "Islas Baleares",
+    "place": "Mallorca",
+    "country": "es",
+    "date": "2019 / 08",
+    "people": ""
+  },
+  {
+    "city": "Madrid",
+    "place": "La Hiruela",
+    "country": "es",
+    "date": "2020 / 03",
+    "people": "Mar"
+  },
+  {
+    "city": "Cataluña",
+    "place": "Bolvir",
+    "country": "es",
+    "date": "2020 / 08",
+    "people": "Mar, Menchu, Merche, Toran"
+  },
+  {
+    "city": "Cataluña",
+    "place": "Lloret de Mar",
+    "country": "es",
+    "date": "2021 / 09",
+    "people": "Mar, Lorena"
+  },
+  {
+    "city": "Aragón",
+    "place": "Javalambre",
+    "country": "es",
+    "date": "2022 / 01",
+    "people": ""
+  },
+  {
+    "city": "Valencia",
+    "place": "Casa de ricos (Jávea)",
+    "country": "es",
+    "date": "2022 / 02",
+    "people": ""
+  },
+  {
+    "city": "Valencia",
+    "place": "Denia",
+    "country": "es",
+    "date": "2022 / 07",
+    "people": ""
+  },
+  {
+    "city": "Castilla-La Mancha",
+    "place": "Retorno del Cabriel",
+    "country": "es",
+    "date": "2023 / 08",
+    "people": ""
+  },
+  {
+    "city": "Norte",
+    "place": "Asturias y Cantabria",
+    "country": "es",
+    "date": "2024 / 08",
+    "people": "Mar, Helena, Gerar"
+  },
+  {
+    "city": "Irlanda",
+    "place": "República de Irlanda",
+    "country": "ie",
+    "date": "2025 / 06",
+    "people": "Madre, Tía, Juanjo, Marina"
+  },
+  {
+    "city": "País Vasco",
+    "place": "País Vasco",
+    "country": "es",
+    "date": "2025 / 08",
+    "people": ""
+  },
+  {
+    "city": "Valencia",
+    "place": "Ibi",
+    "country": "es",
+    "date": "2025 / 10",
+    "people": ""
+  },
+  { "city": "Castilla y León", "place": "Burgos", "country": "es", "date": "", "people": "" },
+  { "city": "", "place": "Andorra", "country": "es", "date": "", "people": "" },
+  { "city": "Aragón", "place": "Teruel", "country": "es", "date": "", "people": "" },
+  { "city": "", "place": "Campings", "country": "es", "date": "", "people": "" },
+  {
+    "city": "Valencia",
+    "place": "Via Larga Jávea",
+    "country": "es",
+    "date": "",
+    "people": ""
+  },
+  { "city": "Valencia", "place": "Calpe", "country": "es", "date": "", "people": "" },
+  { "city": "Aragón", "place": "Valdelinares", "country": "es", "date": "", "people": "" },
+  {
+    "city": "Castilla y León",
+    "place": "Cañón Rio Lobos (Soria)",
+    "country": "es",
+    "date": "",
+    "people": ""
+  },
+  { "city": "Aragón", "place": "Albarracín", "country": "es", "date": "", "people": "" }
+]
