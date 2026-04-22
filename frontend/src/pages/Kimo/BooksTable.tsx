@@ -11,6 +11,12 @@ import {
   flexRender,
   createColumnHelper,
 } from '@tanstack/react-table';
+import {
+  TABLE_CLASS,
+  TABLE_ROW_CLASS,
+  TABLE_CELL_CLASS,
+  TABLE_HEADER_CELL_CLASS,
+} from '../../styles/tableStyles';
 
 interface BooksTableProps {
   books: Book[];
@@ -79,22 +85,21 @@ export default function BooksTable({ books }: BooksTableProps) {
 
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full border border-border rounded-lg text-sm">
-        <thead className="bg-surface">
+      <table className={TABLE_CLASS}>
+        <thead>
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>
               {headerGroup.headers.map((header) => {
                 const isSorted = header.column.getIsSorted();
+                const align = (header.column.columnDef.meta as ColumnMeta)?.align;
+                const wide = (header.column.columnDef.meta as ColumnMeta)?.wide;
                 return (
                   <th
                     key={header.id}
                     className={
-                      'px-4 py-2 font-semibold text-ink border-b border-border ' +
-                      ((header.column.columnDef.meta as ColumnMeta)?.align === 'center'
-                        ? 'text-center'
-                        : 'text-left') +
-                      ((header.column.columnDef.meta as ColumnMeta)?.wide ? ' min-w-[9rem]' : '') +
-                      (header.column.getCanSort() ? ' cursor-pointer select-none group' : '')
+                      TABLE_HEADER_CELL_CLASS +
+                      (align === 'center' ? ' text-center' : ' text-left') +
+                      (wide ? ' min-w-[9rem]' : '')
                     }
                     scope="col"
                     onClick={header.column.getToggleSortingHandler()}
@@ -109,10 +114,15 @@ export default function BooksTable({ books }: BooksTableProps) {
                     <span className="inline-flex items-center gap-1">
                       {flexRender(header.column.columnDef.header, header.getContext())}
                       {header.column.getCanSort() && (
-                        <span className="ml-1 text-xs text-muted group-hover:text-ink transition-colors">
+                        <span
+                          className={
+                            'ml-1 text-xs transition-colors ' +
+                            (isSorted ? 'text-accent' : 'text-gray-300 group-hover:text-gray-400')
+                          }
+                        >
                           {isSorted === 'asc' && '▲'}
                           {isSorted === 'desc' && '▼'}
-                          {!isSorted && <span className="opacity-30">⇅</span>}
+                          {isSorted === false && '▲'}
                         </span>
                       )}
                     </span>
@@ -124,21 +134,23 @@ export default function BooksTable({ books }: BooksTableProps) {
         </thead>
         <tbody>
           {table.getRowModel().rows.map((row) => (
-            <tr key={row.id} className="even:bg-bg">
-              {row.getVisibleCells().map((cell) => (
-                <td
-                  key={cell.id}
-                  className={
-                    'px-4 py-2 border-b border-border ' +
-                    ((cell.column.columnDef.meta as ColumnMeta)?.align === 'center'
-                      ? 'text-center'
-                      : 'text-left') +
-                    ((cell.column.columnDef.meta as ColumnMeta)?.wide ? ' min-w-[9rem]' : '')
-                  }
-                >
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                </td>
-              ))}
+            <tr key={row.id} className={TABLE_ROW_CLASS}>
+              {row.getVisibleCells().map((cell) => {
+                const align = (cell.column.columnDef.meta as ColumnMeta)?.align;
+                const wide = (cell.column.columnDef.meta as ColumnMeta)?.wide;
+                return (
+                  <td
+                    key={cell.id}
+                    className={
+                      TABLE_CELL_CLASS +
+                      (align === 'center' ? ' text-center' : ' text-left') +
+                      (wide ? ' min-w-[9rem]' : '')
+                    }
+                  >
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </td>
+                );
+              })}
             </tr>
           ))}
         </tbody>

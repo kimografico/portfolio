@@ -6,6 +6,12 @@ import {
   getSortedRowModel,
   useReactTable,
 } from '@tanstack/react-table';
+import {
+  TABLE_CLASS,
+  TABLE_ROW_CLASS,
+  TABLE_CELL_CLASS,
+  TABLE_HEADER_CELL_CLASS,
+} from '../../styles/tableStyles';
 import type { Place } from '../../types/places';
 import places from '../../data/places.json';
 
@@ -52,7 +58,7 @@ export default function PlacesTable() {
         header: 'País',
         accessorKey: 'country',
         cell: (info) => (
-          <span className="font-bold text-xl">{getFlag(info.getValue() as string)}</span>
+          <span className="font-bold text-4xl">{getFlag(info.getValue() as string)}</span>
         ),
         enableSorting: true,
       },
@@ -84,7 +90,7 @@ export default function PlacesTable() {
 
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full border-separate border-spacing-y-1 text-sm">
+      <table className={TABLE_CLASS}>
         <thead>
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>
@@ -94,7 +100,7 @@ export default function PlacesTable() {
                 return (
                   <th
                     key={header.id}
-                    className="px-3 py-2 text-left font-semibold text-muted-foreground select-none cursor-pointer group"
+                    className={TABLE_HEADER_CELL_CLASS}
                     onClick={canSort ? header.column.getToggleSortingHandler() : undefined}
                   >
                     {flexRender(header.column.columnDef.header, header.getContext())}
@@ -125,9 +131,9 @@ export default function PlacesTable() {
         </thead>
         <tbody>
           {table.getRowModel().rows.map((row) => (
-            <tr key={row.id} className="bg-white hover:bg-accent/30">
+            <tr key={row.id} className={TABLE_ROW_CLASS}>
               {row.getVisibleCells().map((cell) => (
-                <td key={cell.id} className="px-3 py-2 align-top">
+                <td key={cell.id} className={TABLE_CELL_CLASS}>
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
                 </td>
               ))}
