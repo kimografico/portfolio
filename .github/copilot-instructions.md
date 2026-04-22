@@ -4,6 +4,7 @@
 
 - Usar React 18+ con TypeScript y Vite.
 - Gestor de paquetes: pnpm (no usar npm ni yarn).
+- Instalar todas las dependencias solo en frontend/package.json (no en el package.json raíz).
 - CSS: Tailwind, no usar CSS-in-JS.
 - Testing: Vitest + Testing Library.
 - Estructura de carpetas según spec.md.
@@ -47,11 +48,6 @@ Se explicará la arquitectura del proyecto, la estructura de carpetas, el flujo 
 Se fomentará el aprendizaje y la comprensión profunda del código, no solo la generación de código funcional.
 Es importante seguir las buenas prácticas, convenciones de clean code y SOLID, explicando cómo se aplican en el contexto del proyecto.
 Se usaran comentarios en el código para explicar partes específicas, pero las respuestas de Copilot deben ser completas y no depender exclusivamente de los comentarios para transmitir la información.
-
-## Diario
-
-Después de cada cambio significativo, Copilot escribirá una entrada en el diario del proyecto (DIARIO.md) explicando qué se hizo y por qué se hizo.
-Cada entrada del diario debe empezar por una etiqueta [frontend], [tests], [componente], etc...
 
 ## Lint y revisión automática
 

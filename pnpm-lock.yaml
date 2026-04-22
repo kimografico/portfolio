@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      jsvectormap:
+        specifier: ^1.7.0
+        version: 1.7.0
+
+packages:
+
+  jsvectormap@1.7.0:
+    resolution: {integrity: sha512-8VmL3Uuen08Es9xb2N6Wdc32TrQDGPXYCIdTB126jAhTJsYd/4r4Mc63VQA3qHxG0p4zeCI8sFO5XRsdjljMJg==}
+
+snapshots:
+
+  jsvectormap@1.7.0: {}
