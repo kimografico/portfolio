@@ -53,4 +53,12 @@ Se usaran comentarios en el código para explicar partes específicas, pero las 
 Después de cada cambio significativo, Copilot escribirá una entrada en el diario del proyecto (DIARIO.md) explicando qué se hizo y por qué se hizo.
 Cada entrada del diario debe empezar por una etiqueta [frontend], [tests], [componente], etc...
 
+## Lint y revisión automática
+
+- Al finalizar cada cambio, Copilot debe:
+  - Revisar y corregir los errores y warnings reportados por el editor (diagnósticos de lint, formato, imports, etc.).
+  - Optimizar los imports de los archivos modificados.
+  - Corregir cualquier otro problema de formato, importación o warning relevante detectado automáticamente.
+  - Explicar en el diario cualquier corrección automática realizada tras el cambio principal.
+
 ---

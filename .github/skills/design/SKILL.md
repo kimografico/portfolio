@@ -16,17 +16,22 @@ Estética fijada: **Minimalismo Suizo**. Este skill no ofrece opciones de estilo
 
 ---
 
-## 1. Estética: Minimalismo Suizo
+## Estética: Minimalismo Suizo
+
+## Accesibilidad y Responsive (obligatorio en todo el proyecto)
+
+- La accesibilidad se implementa por defecto solo con atributos semánticos (roles, aria, alt, labels) y lógica mínima. No se añade navegación por teclado personalizada salvo que se especifique en la spec o diseño técnico.
+- El diseño debe ser siempre responsive: toda página y componente debe verse correctamente en desktop y mobile, usando los breakpoints y patrones definidos en la guía.
 
 > "La forma sigue a la función. La tipografía manda. El espacio vacío es contenido."
 
-| Pilar | Aplicación concreta |
-|-------|---------------------|
-| **Tipografía primero** | La jerarquía visual se comunica con tipo, peso y espaciado — no con color ni ornamentos |
-| **Grid estricto** | Todo se alinea. Nada flota arbitrariamente. |
-| **Espacio generoso** | El blanco no es vacío, es estructura |
-| **Paleta contenida** | Monocromático + un único acento. Nunca más de dos colores funcionales |
-| **Movimiento casi invisible** | Las animaciones existen para confirmar interacciones, no para llamar la atención |
+| Pilar                         | Aplicación concreta                                                                     |
+| ----------------------------- | --------------------------------------------------------------------------------------- |
+| **Tipografía primero**        | La jerarquía visual se comunica con tipo, peso y espaciado — no con color ni ornamentos |
+| **Grid estricto**             | Todo se alinea. Nada flota arbitrariamente.                                             |
+| **Espacio generoso**          | El blanco no es vacío, es estructura                                                    |
+| **Paleta contenida**          | Monocromático + un único acento. Nunca más de dos colores funcionales                   |
+| **Movimiento casi invisible** | Las animaciones existen para confirmar interacciones, no para llamar la atención        |
 
 **La pregunta de oro antes de cualquier decisión:** ¿esto sirve al contenido o sirve al decorado?
 
@@ -38,28 +43,28 @@ Estética fijada: **Minimalismo Suizo**. Este skill no ofrece opciones de estilo
 
 ```css
 /* Display / Headings */
-font-family: 'DM Sans', sans-serif;   /* opción A — limpio, geométrico */
-font-family: 'Archivo', sans-serif;   /* opción B — más austero, editorial */
+font-family: "DM Sans", sans-serif; /* opción A — limpio, geométrico */
+font-family: "Archivo", sans-serif; /* opción B — más austero, editorial */
 
 /* Body / UI */
-font-family: 'DM Sans', sans-serif;
+font-family: "DM Sans", sans-serif;
 
 /* Monospace (datos, fechas, tablas) */
-font-family: 'JetBrains Mono', monospace;
+font-family: "JetBrains Mono", monospace;
 ```
 
 Carga desde Google Fonts. Usa **siempre una sola familia** por proyecto para máxima coherencia.
 
 ### Escala tipográfica
 
-| Token | Tailwind | Uso |
-|-------|----------|-----|
-| `text-xs` | `text-xs tracking-widest uppercase` | Labels, metadatos |
-| `text-sm` | `text-sm leading-relaxed` | Cuerpo secundario, captions |
-| `text-base` | `text-base leading-relaxed max-w-[65ch]` | Cuerpo principal |
-| `text-xl` | `text-xl font-medium tracking-tight` | Subtítulos |
-| `text-3xl` | `text-3xl md:text-5xl font-semibold tracking-tight leading-none` | Títulos de sección |
-| `text-5xl` | `text-5xl md:text-7xl font-bold tracking-tighter leading-none` | Hero / Display |
+| Token       | Tailwind                                                         | Uso                         |
+| ----------- | ---------------------------------------------------------------- | --------------------------- |
+| `text-xs`   | `text-xs tracking-widest uppercase`                              | Labels, metadatos           |
+| `text-sm`   | `text-sm leading-relaxed`                                        | Cuerpo secundario, captions |
+| `text-base` | `text-base leading-relaxed max-w-[65ch]`                         | Cuerpo principal            |
+| `text-xl`   | `text-xl font-medium tracking-tight`                             | Subtítulos                  |
+| `text-3xl`  | `text-3xl md:text-5xl font-semibold tracking-tight leading-none` | Títulos de sección          |
+| `text-5xl`  | `text-5xl md:text-7xl font-bold tracking-tighter leading-none`   | Hero / Display              |
 
 ### Reglas absolutas de tipografía
 
@@ -78,18 +83,18 @@ Carga desde Google Fonts. Usa **siempre una sola familia** por proyecto para má
 ```css
 :root {
   /* Base */
-  --color-bg:       #F8F7F4;    /* blanco cálido, no puro */
-  --color-surface:  #FFFFFF;
-  --color-border:   #E5E4E0;
-  --color-muted:    #9E9C96;    /* texto secundario */
-  --color-text:     #1A1917;    /* casi negro, no #000000 */
+  --color-bg: #f8f7f4; /* blanco cálido, no puro */
+  --color-surface: #ffffff;
+  --color-border: #e5e4e0;
+  --color-muted: #9e9c96; /* texto secundario */
+  --color-text: #1a1917; /* casi negro, no #000000 */
 
   /* Acento único — decidir uno y no cambiar */
-  --color-accent:   #1A1917;    /* modo monocromático puro */
+  --color-accent: #1a1917; /* modo monocromático puro */
   /* — o — */
-  --color-accent:   #D4542A;    /* terracota cálida */
+  --color-accent: #d4542a; /* terracota cálida */
   /* — o — */
-  --color-accent:   #2E5BFF;    /* azul eléctrico frío */
+  --color-accent: #2e5bff; /* azul eléctrico frío */
 }
 ```
 
@@ -112,12 +117,12 @@ Carga desde Google Fonts. Usa **siempre una sola familia** por proyecto para má
 ```html
 <!-- Contenedor de página -->
 <div class="max-w-5xl mx-auto px-6 md:px-12">
-
-<!-- Sección con espacio generoso -->
-<section class="py-20 md:py-32">
-
-<!-- Grid asimétrico (preferir sobre 3 columnas iguales) -->
-<div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8">
+  <!-- Sección con espacio generoso -->
+  <section class="py-20 md:py-32">
+    <!-- Grid asimétrico (preferir sobre 3 columnas iguales) -->
+    <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8"></div>
+  </section>
+</div>
 ```
 
 ### Reglas de layout
@@ -155,7 +160,7 @@ transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 /* Hover lift sutil */
 .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
 /* Reveal de entrada — stagger por CSS */
@@ -165,8 +170,14 @@ transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Feedback táctil en botones */
@@ -188,7 +199,9 @@ button:active {
 
 ```css
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
@@ -203,14 +216,14 @@ button:active {
 
 Nunca entregar solo el estado de éxito. Implementar siempre:
 
-| Estado | Implementación |
-|--------|----------------|
-| **Loading** | Skeleton con `animate-pulse` que replica el layout real |
-| **Empty** | Estado vacío con texto descriptivo, sin iconos genéricos |
-| **Error** | Mensaje inline bajo el campo, color `text-red-600` |
-| **Hover** | `translateY(-2px)` o cambio de `border-color`, nunca glow |
-| **Active/Press** | `scale(0.98)` o `translateY(1px)` |
-| **Focus** | Ring visible — nunca `outline: none` sin alternativa |
+| Estado           | Implementación                                            |
+| ---------------- | --------------------------------------------------------- |
+| **Loading**      | Skeleton con `animate-pulse` que replica el layout real   |
+| **Empty**        | Estado vacío con texto descriptivo, sin iconos genéricos  |
+| **Error**        | Mensaje inline bajo el campo, color `text-red-600`        |
+| **Hover**        | `translateY(-2px)` o cambio de `border-color`, nunca glow |
+| **Active/Press** | `scale(0.98)` o `translateY(1px)`                         |
+| **Focus**        | Ring visible — nunca `outline: none` sin alternativa      |
 
 ### Cards
 
@@ -219,14 +232,16 @@ Usar cards **solo cuando la elevación comunica jerarquía**. Alternativas prefe
 ```html
 <!-- Separación por línea (preferida en listas) -->
 <div class="divide-y divide-[var(--color-border)]">
-
-<!-- Separación por espacio (preferida en grids) -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-
-<!-- Card solo cuando se necesita elevación real -->
-<div class="bg-white border border-[var(--color-border)] rounded-lg p-6
+  <!-- Separación por espacio (preferida en grids) -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <!-- Card solo cuando se necesita elevación real -->
+    <div
+      class="bg-white border border-[var(--color-border)] rounded-lg p-6
             hover:shadow-[0_4px_16px_rgba(0,0,0,0.06)]
-            transition-shadow duration-200">
+            transition-shadow duration-200"
+    ></div>
+  </div>
+</div>
 ```
 
 ### Formularios
@@ -236,10 +251,12 @@ Usar cards **solo cuando la elevación comunica jerarquía**. Alternativas prefe
   <label class="text-sm font-medium text-[var(--color-text)]">
     Nombre del campo
   </label>
-  <input class="border border-[var(--color-border)] rounded-md px-3 py-2
+  <input
+    class="border border-[var(--color-border)] rounded-md px-3 py-2
                 text-sm placeholder:text-[var(--color-muted)]
                 focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]
-                focus:border-transparent transition-all duration-150" />
+                focus:border-transparent transition-all duration-150"
+  />
   <span class="text-xs text-[var(--color-muted)]">Texto de ayuda opcional</span>
   <!-- Error: -->
   <span class="text-xs text-red-600">Mensaje de error</span>
