@@ -68,11 +68,24 @@ export default function BooksTable({ books }: BooksTableProps) {
   const [filterGenre, setFilterGenre] = useState('');
 
   // Opciones únicas para selects
-  const authorOptions = useMemo(() => {
-    const set = new Set<string>();
-    books.forEach((b) => b.author && set.add(b.author));
-    return Array.from(set).sort();
-  }, [books]);
+
+  // Devuelve autores frecuentes y añade 'OTROS' al final
+  function getAuthorOptions(books: Book[]): string[] {
+    const count: Record<string, number> = {};
+    books.forEach((b) => {
+      if (b.author) count[b.author] = (count[b.author] || 0) + 1;
+    });
+    const frequent = Object.entries(count)
+      .filter(([_, n]) => n > 1)
+      .map(([a]) => a)
+      .sort();
+    if (Object.entries(count).some(([_, n]) => n === 1)) {
+      frequent.push('OTROS');
+    }
+    return frequent;
+  }
+
+  const authorOptions = useMemo(() => getAuthorOptions(books), [books]);
 
   const seriesOptions = useMemo(() => {
     const set = new Set<string>();
@@ -189,7 +202,15 @@ export default function BooksTable({ books }: BooksTableProps) {
       const matchesTitle =
         filterTitle.trim() === '' ||
         b.title.toLowerCase().includes(filterTitle.trim().toLowerCase());
-      const matchesAuthor = filterAuthor === '' || b.author === filterAuthor;
+      let matchesAuthor = filterAuthor === '' || b.author === filterAuthor;
+      if (filterAuthor === 'OTROS') {
+        // Solo autores que aparecen una vez
+        const count: Record<string, number> = {};
+        books.forEach((book) => {
+          if (book.author) count[book.author] = (count[book.author] || 0) + 1;
+        });
+        matchesAuthor = count[b.author] === 1;
+      }
       const matchesSeries = filterSeries === '' || b.series === filterSeries;
       const matchesGenre = filterGenre === '' || b.genre === filterGenre;
       return matchesTitle && matchesAuthor && matchesSeries && matchesGenre;
