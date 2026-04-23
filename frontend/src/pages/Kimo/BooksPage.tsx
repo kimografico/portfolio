@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import booksData from '../../data/books.json';
 import BooksTable from './BooksTable';
 import BooksGallery from './BooksGallery';

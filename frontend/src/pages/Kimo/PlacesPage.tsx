@@ -1,9 +1,9 @@
 import PlacesTable from './PlacesTable';
-import VisitedWorldMap from '../../components/combinations/VisitedWorldMap';
+import VisitedWorldMap, { type MapPoint } from '../../components/combinations/VisitedWorldMap';
 import places from '../../data/places.json';
 
 // Mocks locales: puntos destacados. Se podrian añadir al JSON los lugares y crear un array
-const MOCK_POINTS = [
+const MOCK_POINTS: MapPoint[] = [
   // { name: 'Valencia', lat: 39.4699, lon: -0.3763 },
   // { name: 'París', lat: 48.8566, lon: 2.3522 },
 ];

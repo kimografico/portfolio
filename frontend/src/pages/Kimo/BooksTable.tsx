@@ -2,7 +2,7 @@ type ColumnMeta = {
   align?: 'left' | 'center';
   wide?: boolean;
 };
-import * as React from 'react';
+import { useState } from 'react';
 import type { Book } from '../../types';
 import {
   useReactTable,
@@ -61,7 +61,7 @@ const columns = [
 ];
 
 export default function BooksTable({ books }: BooksTableProps) {
-  const [sorting, setSorting] = React.useState<Array<{ id: string; desc: boolean }>>([
+  const [sorting, setSorting] = useState<Array<{ id: string; desc: boolean }>>([
     { id: 'dateRead', desc: true },
   ]);
 
