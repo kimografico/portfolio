@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
     <title>404 — kimografico</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --bg: #f8f7f4;
-        --border: #e5e4e0;
-        --muted: #9e9c96;
-        --text: #1a1917;
-        --accent: #d4542a;
+    <script>
+      // Workaround para GitHub Pages + SPAs
+      // Redirige a index.html pasando la ruta como parámetro
+      const path = window.location.pathname;
+      const searchParams = window.location.search;
+      window.location.replace('/portfolio/index.html?redirect=' + encodeURIComponent(path + searchParams));
+    </script>
+  </head>
+  <body>
+    <!-- Este contenido nunca se ve porque el script anterior redirige inmediatamente -->
+  </body>
+</html>
       }
 
       *,
