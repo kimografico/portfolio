@@ -28,7 +28,7 @@ const columnHelper = createColumnHelper<Book>();
 const columns = [
   columnHelper.accessor('title', {
     header: 'Título',
-    cell: (info) => <span className="font-semibold text-ink text-lg">{info.getValue()}</span>,
+    cell: (info) => <span className="font-semibold text-lg">{info.getValue()}</span>,
     meta: { align: 'left' } as ColumnMeta,
   }),
   columnHelper.accessor('author', {
@@ -172,21 +172,27 @@ export default function BooksTable({ books }: BooksTableProps) {
           {table.getRowModel().rows.map((row) => (
             <tr
               key={row.id}
-              className={TABLE_ROW_CLASS + ' cursor-pointer hover:bg-accent/10'}
+              className={
+                TABLE_ROW_CLASS +
+                ' cursor-pointer group hover:bg-accent hover:text-white transition-colors'
+              }
               onClick={() => setSelectedBook(row.original)}
               tabIndex={0}
               aria-label={`Ver detalles de ${row.original.title}`}
             >
-              {row.getVisibleCells().map((cell) => {
+              {row.getVisibleCells().map((cell, cellIdx) => {
                 const align = (cell.column.columnDef.meta as ColumnMeta)?.align;
                 const wide = (cell.column.columnDef.meta as ColumnMeta)?.wide;
+                // Primera columna: título
+                const isTitle = cellIdx === 0;
                 return (
                   <td
                     key={cell.id}
                     className={
                       TABLE_CELL_CLASS +
                       (align === 'center' ? ' text-center' : ' text-left') +
-                      (wide ? ' min-w-[9rem]' : '')
+                      (wide ? ' min-w-[9rem]' : '') +
+                      (isTitle ? ' group-hover:text-white font-semibold transition-colors' : '')
                     }
                   >
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
