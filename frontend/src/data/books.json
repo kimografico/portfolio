@@ -36,10 +36,10 @@
     "synopsis": "En esta secuela oficial, los antiguos Niños Perdidos, ahora adultos, regresan a Nunca Jamás para salvar el mundo de los sueños. El tiempo y la realidad se han distorsionado, tiñendo el lugar de un tono mucho más oscuro."
   },
   {
-    "id": "peter-pan-en-los-jardines-de-kensington",
-    "title": "Peter Pan en los jardines de Kensington",
+    "id": "peter-pan-in-kensington-gardens",
+    "title": "Peter Pan in Kensington Gardens",
     "author": "J.M. Barrie",
-    "language": "Español",
+    "language": "English",
     "cover": " ",
     "dateRead": "",
     "genre": "Fantasía",
@@ -360,8 +360,8 @@
     "synopsis": "Drizzt y sus amigos emprenden una búsqueda para recuperar Mithril Hall, el legendario hogar ancestral de los enanos. En el camino son perseguidos por el implacable asesino Artemis Entreri."
   },
   {
-    "id": "la-gema-del-hafling",
-    "title": "La gema del hafling",
+    "id": "la-gema-del-halfling",
+    "title": "La gema del halfling",
     "author": "R.A. Salvatore",
     "language": "Español",
     "cover": " ",
@@ -576,8 +576,8 @@
     "synopsis": "Años después de la guerra, Ender viaja a un planeta donde los humanos conviven con una extraña especie alienígena. Allí ejerce como 'Portavoz de los Muertos', revelando verdades ocultas para sanar a la comunidad."
   },
   {
-    "id": "los-hijos-de-la-mente",
-    "title": "Los hijos de la mente",
+    "id": "hijos-de-la-mente",
+    "title": "Hijos de la mente",
     "author": "Orson Scott Card",
     "language": "Español",
     "cover": " ",
@@ -768,8 +768,8 @@
     "synopsis": "En la España del siglo XVI, un joven con una sensibilidad especial para los caballos busca justicia y su lugar en el mundo. Es una epopeya histórica que recorre desde las dehesas andaluzas hasta el Nuevo Mundo."
   },
   {
-    "id": "la-muerte-de-ivan-ilitch",
-    "title": "La muerte de ivan ilitch",
+    "id": "la-muerte-de-ivan-ilich",
+    "title": "La muerte de Ivan Ilich",
     "author": "Leo Tolstoi",
     "language": "Español",
     "cover": " ",
@@ -924,7 +924,7 @@
     "synopsis": "Paul Atreides viaja al planeta desértico Arrakis, la única fuente de la especia que permite el viaje estelar. Allí debe liderar a los nativos en una revolución religiosa y política para vengar a su familia y controlar el universo."
   },
   {
-    "id": "rendezvous-con-rama",
+    "id": "rendezvous-with-rama",
     "title": "Rendezvous con rama",
     "author": "Arthur C. Clarke",
     "language": "Español",
@@ -936,8 +936,8 @@
     "synopsis": "Un cilindro alienígena gigante entra en el sistema solar y un equipo de astronautas es enviado a explorarlo. Lo que encuentran dentro es un mundo autosuficiente y enigmático que ignora por completo la presencia humana."
   },
   {
-    "id": "cronopaisaje",
-    "title": "Cronopaisaje",
+    "id": "crono-paisaje",
+    "title": "Crono paisaje",
     "author": "Gregory Benford",
     "language": "Español",
     "cover": " ",
@@ -996,7 +996,7 @@
     "synopsis": "Una antología de cuatro relatos sombríos que exploran el lado más turbio y vengativo de la naturaleza humana. Historias de crímenes, secretos y retribuciones donde no hay espacio para la redención."
   },
   {
-    "id": "tecnoscuridad-tiempo-de-oscuridad",
+    "id": "tecnoscuridad",
     "title": "Tecnoscuridad - tiempo de oscuridad",
     "author": "Andrei Levitski y Aleksei Bobl",
     "language": "Español",
@@ -1056,7 +1056,7 @@
     "synopsis": "Dos jóvenes buscan la iluminación espiritual a través del budismo zen, la poesía y el senderismo por las montañas de California. Una obra clave de la generación beat que celebra la libertad y la conexión con la naturaleza."
   },
   {
-    "id": "la-torre-oscura-i-la-hierba-del-diablo",
+    "id": "la-hierba-del-diablo",
     "title": "La torre oscura i - la hierba del diablo",
     "author": "Stephen King",
     "language": "Español",
@@ -1068,7 +1068,7 @@
     "synopsis": "Roland Deschain, el último pistolero, persigue al Hombre de Negro a través de un desierto infinito en un mundo que se ha movido. Es el inicio de su búsqueda de la mítica Torre Oscura."
   },
   {
-    "id": "la-torre-oscura-ii-la-invocacion",
+    "id": "la-invocacion",
     "title": "La torre oscura ii - la invocacion",
     "author": "Stephen King",
     "language": "Español",
@@ -1080,7 +1080,7 @@
     "synopsis": "Herido y en una playa llena de monstruos, Roland encuentra tres puertas que conectan con nuestra realidad en diferentes épocas. A través de ellas debe 'invocar' a los compañeros que le ayudarán en su misión."
   },
   {
-    "id": "la-torre-oscura-iii-las-tierras-baldias",
+    "id": "las-tierras-baldias",
     "title": "La torre oscura iii - las tierras baldias",
     "author": "Stephen King",
     "language": "Español",
@@ -1092,7 +1092,7 @@
     "synopsis": "Roland y sus nuevos compañeros, Eddie y Susannah, avanzan hacia la Torre mientras entrenan como pistoleros. Deben cruzar una ciudad decadente y enfrentarse a un tren inteligente con una personalidad psicópata."
   },
   {
-    "id": "la-torre-oscura-iv-la-bola-de-cristal",
+    "id": "la-bola-de-cristal",
     "title": "La torre oscura iv - la bola de cristal",
     "author": "Stephen King",
     "language": "Español",
@@ -1104,7 +1104,7 @@
     "synopsis": "Mientras descansan de su viaje, Roland cuenta a su grupo su pasado en Mejis y su primer amor, Susan Delgado. Es una historia de juventud, tragedia y la pérdida de la inocencia que marcó su destino como pistolero."
   },
   {
-    "id": "la-torre-oscura-v-lobos-del-calla",
+    "id": "lobos-del-calla",
     "title": "La torre oscura v - lobos del calla",
     "author": "Stephen King",
     "language": "Español",
@@ -1116,7 +1116,7 @@
     "synopsis": "El grupo llega a un pueblo cuyos habitantes viven aterrorizados por unos jinetes que roban a sus hijos. Los pistoleros deciden quedarse para defender a la comunidad, mezclando el género fantástico con el estilo de los siete samuráis."
   },
   {
-    "id": "la-torre-oscura-vi-la-cancion-de-susannah",
+    "id": "cancion-de-susannah",
     "title": "La torre oscura vi - la cancion de susannah",
     "author": "Stephen King",
     "language": "Español",
@@ -1128,7 +1128,7 @@
     "synopsis": "Las barreras entre los mundos se debilitan y los protagonistas deben separarse para cumplir misiones críticas en diferentes realidades. Susannah es poseída por una entidad que busca dar a luz a una criatura destinada a destruir la Torre."
   },
   {
-    "id": "la-torre-oscura-vii-la-torre-oscura",
+    "id": "la-torre-oscura",
     "title": "La torre oscura vii - la torre oscura",
     "author": "Stephen King",
     "language": "Español",
@@ -1200,7 +1200,7 @@
     "synopsis": "Kvothe, una figura legendaria que vive oculto como un posadero, decide contar su verdadera historia a un cronista. Narra sus años de miseria y su educación en una prestigiosa academia de magia mientras busca el secreto de los Chandrian."
   },
   {
-    "id": "el-temor-de-un-hombre sabio",
+    "id": "el-temor-de-un-hombre-sabio",
     "title": "El temor de un hombre sabio",
     "author": "Patrick Rothfuss",
     "language": "Español",
@@ -1248,15 +1248,15 @@
     "synopsis": "Dunk y Egg sirven a un pequeño señor en una tierra azotada por la sequía y los conflictos de límites. La historia profundiza en las secuelas de la Rebelión Fuegoscuro y la complejidad de los juramentos de lealtad en Poniente."
   },
   {
-    "id": "trilogia-de-von-carstein",
-    "title": "Trilogia de von carstein",
+    "id": "las-guerras-de-los-vampiros",
+    "title": "Las guerras de los Vampiros",
     "author": "Steven Savile",
     "language": "Español",
     "cover": " ",
     "dateRead": "2015-08",
     "genre": "Fantasía",
     "isbn": "9788448003616",
-    "series": "Warhammer Fantasy: Von Carstein",
+    "series": "Trilogia de von carstein",
     "synopsis": "La saga narra el ascenso y la caída de los más poderosos condes vampiros del mundo de Warhammer. Desde Sylvania, Vlad e Isabella lanzan sus huestes de no-muertos contra el Imperio en una lucha sangrienta por el poder eterno."
   },
   {
@@ -1344,7 +1344,7 @@
     "synopsis": "Bean y sus hijos viajan por el espacio buscando una cura para su gigantismo genético mientras escapan de sus enemigos en la Tierra. Es un relato de supervivencia y legado familiar en la inmensidad del cosmos."
   },
   {
-    "id": "endeer-el-xenocida",
+    "id": "ender-el-xenocida",
     "title": "Ender el xenocida",
     "author": "Orson Scott Card",
     "language": "Español",
@@ -1392,7 +1392,7 @@
     "synopsis": "Neil Gaiman presenta una antología de relatos donde lo cotidiano se mezcla con lo fantástico de forma inquietante. Son historias de realismo mágico que exploran mitos modernos, deseos oscuros y la magia que se oculta en las esquinas."
   },
   {
-    "id": "la-llamada-de-chthulhu",
+    "id": "la-llamada-de-cthulhu",
     "title": "La llamada de Cthulhu",
     "author": "H. P. Lovecraft",
     "language": "Español",
@@ -1812,8 +1812,8 @@
     "synopsis": "Un relato autobiográfico de Ángel Martín que narra de forma directa y valiente su experiencia tras sufrir un brote psicótico. Es una guía cruda y necesaria sobre la salud mental y el proceso de reconstruirse a uno mismo."
   },
   {
-    "id": "merrick-el-vampiro",
-    "title": "Merrick el vampiro",
+    "id": "merrick",
+    "title": "Merrick",
     "author": "Anne Rice",
     "language": "Español",
     "cover": " ",
@@ -1948,7 +1948,7 @@
     "title": "El año de Drácula",
     "author": "Kim Newman",
     "language": "Español",
-    "cover": " ",
+    "cover": "anno-dracula.jpg",
     "dateRead": "2025-12",
     "genre": "Terror",
     "isbn": "9788417347208",

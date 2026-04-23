@@ -116,11 +116,15 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
               title={book.title}
             >
               <img
-                src={
-                  imgErrors[book.id] || !book.cover || book.cover.trim() === ''
+                src={(() => {
+                  const coverName =
+                    book.cover && book.cover.trim() !== '' ? book.cover.trim() : book.id + '.jpg';
+                  const path = imgErrors[book.id]
                     ? noCover
-                    : book.cover
-                }
+                    : `${import.meta.env.BASE_URL}src/assets/images/books/${coverName}`;
+                  console.log('Portada', book.title, '→', path);
+                  return path;
+                })()}
                 alt={`Portada de ${book.title}`}
                 className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-200"
                 draggable={false}
@@ -160,7 +164,18 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
               </button>
               {/* Portada */}
               <img
-                src={!selected.cover || selected.cover.trim() === '' ? noCover : selected.cover}
+                src={(() => {
+                  const coverName =
+                    selected && selected.cover && selected.cover.trim() !== ''
+                      ? selected.cover.trim()
+                      : selected?.id + '.jpg';
+                  const path =
+                    selected && imgErrors[selected.id]
+                      ? noCover
+                      : `${import.meta.env.BASE_URL}src/assets/images/books/${coverName}`;
+                  if (selected) console.log('Portada modal', selected.title, '→', path);
+                  return path;
+                })()}
                 alt={`Portada de ${selected.title}`}
                 className="object-cover w-64 h-96 rounded mb-4 shadow"
                 draggable={false}
