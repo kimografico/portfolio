@@ -13,38 +13,6 @@ export default function Home() {
         Saltar al contenido principal
       </a>
 
-      {/* Header */}
-      <header className="sticky top-0 z-40 bg-bg border-b border-border">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 h-14 flex items-center justify-between">
-          <a
-            href="/"
-            className="font-semibold tracking-tight text-ink text-sm transition-opacity duration-150 hover:opacity-70"
-          >
-            kimografico
-          </a>
-          <nav aria-label="Principal">
-            <ul className="flex items-center gap-6 list-none m-0 p-0">
-              {(
-                [
-                  { label: 'Diseño', href: '/diseno' },
-                  { label: 'Dev', href: '/dev' },
-                  { label: 'Contacto', href: '/contacto' },
-                ] as const
-              ).map(({ label, href }) => (
-                <li key={href}>
-                  <a
-                    href={href}
-                    className="text-sm text-muted hover:text-ink transition-colors duration-150"
-                  >
-                    {label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-      </header>
-
       <main id="main-content">
         {/* Hero */}
         <section aria-labelledby="hero-heading" className="border-b border-border">
@@ -163,33 +131,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer>
-        <div className="max-w-7xl mx-auto px-6 md:px-12 h-14 flex items-center justify-between border-t border-border">
-          <span className="font-mono text-xs text-muted">© 2026 kimografico</span>
-          <nav aria-label="Footer">
-            <ul className="flex items-center gap-6 list-none m-0 p-0">
-              {(
-                [
-                  { label: 'Diseño', href: '/diseno' },
-                  { label: 'Dev', href: '/dev' },
-                  { label: 'Contacto', href: '/contacto' },
-                ] as const
-              ).map(({ label, href }) => (
-                <li key={href}>
-                  <a
-                    href={href}
-                    className="text-xs text-muted hover:text-ink transition-colors duration-150"
-                  >
-                    {label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-      </footer>
     </>
   );
 }

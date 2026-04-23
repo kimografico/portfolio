@@ -4,6 +4,8 @@ import KimoLayout from './pages/Kimo/KimoLayout';
 import BooksPage from './pages/Kimo/BooksPage';
 import PlacesPage from './pages/Kimo/PlacesPage';
 import NotFoundPage from './pages/NotFoundPage';
+import GraphicDesignHome from './pages/GraphicDesign/GraphicDesignHome';
+import MainLayout from './components/layout/MainLayout';
 
 // Componentes placeholder para rutas en desarrollo
 const PlaceholderPage = ({ title }: { title: string }) => (
@@ -16,19 +18,20 @@ const PlaceholderPage = ({ title }: { title: string }) => (
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/kimo" element={<KimoLayout />}>
-        <Route index element={<BooksPage />} />
-        <Route path="books" element={<BooksPage />} />
-        <Route path="places" element={<PlacesPage />} />
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/kimo" element={<KimoLayout />}>
+          <Route index element={<BooksPage />} />
+          <Route path="books" element={<BooksPage />} />
+          <Route path="places" element={<PlacesPage />} />
+        </Route>
+        <Route path="/graphic-design" element={<GraphicDesignHome />} />
+        <Route path="/dev" element={<PlaceholderPage title="Desarrollo" />} />
+        <Route path="/dev/:id" element={<PlaceholderPage title="Proyecto de Desarrollo" />} />
+        <Route path="/contacto" element={<PlaceholderPage title="Contacto" />} />
+        {/* Fallback 404 */}
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
-      <Route path="/diseno" element={<PlaceholderPage title="Diseño" />} />
-      <Route path="/diseno/:id" element={<PlaceholderPage title="Proyecto de Diseño" />} />
-      <Route path="/dev" element={<PlaceholderPage title="Desarrollo" />} />
-      <Route path="/dev/:id" element={<PlaceholderPage title="Proyecto de Desarrollo" />} />
-      <Route path="/contacto" element={<PlaceholderPage title="Contacto" />} />
-      {/* Fallback 404 */}
-      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }
