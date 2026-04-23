@@ -56,8 +56,8 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
 
   return (
     <>
-      {/* Modal reutilizable */}
-      <BookModal book={selected} open={!!selected} onClose={closeModal} />
+      {/* Modal reutilizable: solo se monta si hay libro seleccionado */}
+      {selected && <BookModal book={selected} onClose={closeModal} />}
       {/* Galería de portadas */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
         {[...books]
