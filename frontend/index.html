@@ -18,6 +18,16 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // Workaround para GitHub Pages + SPAs
+      // Si llegamos aquí desde 404.html, restaura la ruta original
+      const params = new URLSearchParams(window.location.search);
+      const redirectPath = params.get('redirect');
+      if (redirectPath) {
+        // Limpia la URL y la restaura a su forma original
+        window.history.replaceState(null, null, redirectPath);
+      }
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
