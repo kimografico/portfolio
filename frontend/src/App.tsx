@@ -3,6 +3,7 @@ import Home from './pages/Home/Home';
 import KimoLayout from './pages/Kimo/KimoLayout';
 import BooksPage from './pages/Kimo/BooksPage';
 import PlacesPage from './pages/Kimo/PlacesPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 // Componentes placeholder para rutas en desarrollo
 const PlaceholderPage = ({ title }: { title: string }) => (
@@ -27,7 +28,7 @@ export default function App() {
       <Route path="/dev/:id" element={<PlaceholderPage title="Proyecto de Desarrollo" />} />
       <Route path="/contacto" element={<PlaceholderPage title="Contacto" />} />
       {/* Fallback 404 */}
-      <Route path="*" element={<PlaceholderPage title="404 - Página no encontrada" />} />
+      <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );
 }

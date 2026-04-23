@@ -37,6 +37,11 @@ jobs:
         run: pnpm run build
         working-directory: frontend
 
+      - name: Prepare GitHub Pages artifact
+        run: |
+          # Copia el 404.html a la raíz del build (requerido por GitHub Pages)
+          cp frontend/public/404.html frontend/dist/404.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
