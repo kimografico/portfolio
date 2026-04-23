@@ -109,7 +109,7 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
           .map((book) => (
             <button
               key={book.id}
-              className="group aspect-[2/3] w-full bg-muted rounded-lg overflow-hidden shadow hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent transition-all"
+              className="group aspect-[2/3] w-full bg-muted rounded-lg overflow-hidden shadow transition-transform duration-300 hover:rotate-2 hover:scale-110 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-accent"
               onClick={() => setSelected(book)}
               aria-label={`Ver detalles de ${book.title}`}
               tabIndex={0}
@@ -122,11 +122,10 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
                   const path = imgErrors[book.id]
                     ? noCover
                     : `${import.meta.env.BASE_URL}src/assets/images/books/${coverName}`;
-                  console.log('Portada', book.title, '→', path);
                   return path;
                 })()}
                 alt={`Portada de ${book.title}`}
-                className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-200"
+                className="object-cover w-full h-full transition-transform duration-200"
                 draggable={false}
                 loading="lazy"
                 onError={() => setImgErrors((prev) => ({ ...prev, [book.id]: true }))}
@@ -173,7 +172,6 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
                     selected && imgErrors[selected.id]
                       ? noCover
                       : `${import.meta.env.BASE_URL}src/assets/images/books/${coverName}`;
-                  if (selected) console.log('Portada modal', selected.title, '→', path);
                   return path;
                 })()}
                 alt={`Portada de ${selected.title}`}
