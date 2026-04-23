@@ -3,6 +3,7 @@ type ColumnMeta = {
   wide?: boolean;
 };
 import { useState, useMemo } from 'react';
+import BookModal from '../../components/combinations/BookModal';
 import type { Book } from '../../types';
 import {
   useReactTable,
@@ -54,13 +55,15 @@ const columns = [
     header: 'Idioma',
     cell: (info) => {
       const lang = info.getValue();
-      return lang === 'Español' ? '🇪🇸' : lang === 'Inglés' ? '🇬🇧' : lang;
+      return lang === 'Español' ? ' ' : lang === 'Inglés' ? '🇬🇧' : lang;
     },
     meta: { align: 'center' } as ColumnMeta,
   }),
 ];
 
 export default function BooksTable({ books }: BooksTableProps) {
+  // Estado para modal
+  const [selectedBook, setSelectedBook] = useState<Book | null>(null);
   // Estado para filtros
   const [filterTitle, setFilterTitle] = useState('');
   const [filterAuthor, setFilterAuthor] = useState('');
@@ -167,7 +170,13 @@ export default function BooksTable({ books }: BooksTableProps) {
         </thead>
         <tbody>
           {table.getRowModel().rows.map((row) => (
-            <tr key={row.id} className={TABLE_ROW_CLASS}>
+            <tr
+              key={row.id}
+              className={TABLE_ROW_CLASS + ' cursor-pointer hover:bg-accent/10'}
+              onClick={() => setSelectedBook(row.original)}
+              tabIndex={0}
+              aria-label={`Ver detalles de ${row.original.title}`}
+            >
               {row.getVisibleCells().map((cell) => {
                 const align = (cell.column.columnDef.meta as ColumnMeta)?.align;
                 const wide = (cell.column.columnDef.meta as ColumnMeta)?.wide;
@@ -324,6 +333,9 @@ export default function BooksTable({ books }: BooksTableProps) {
           <BooksTableInner books={filteredBooks} sorting={sorting} setSorting={setSorting} />
         </div>
       )}
+
+      {/* Modal reutilizable para detalles: solo se monta si hay libro seleccionado */}
+      {selectedBook && <BookModal book={selectedBook} onClose={() => setSelectedBook(null)} />}
     </>
   );
 }

@@ -36,9 +36,10 @@ function formatYearMonth(fecha: string): string {
   if (mesNum < 1 || mesNum > 12) return fecha;
   return `${meses[mesNum]} de ${year}`;
 }
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import type { Book } from '../../types';
 import noCover from '../../assets/images/books/_blank.jpg';
+import BookModal from '../../components/combinations/BookModal';
 
 interface BooksGalleryProps {
   books: Book[];
@@ -46,50 +47,17 @@ interface BooksGalleryProps {
 
 export default function BooksGallery({ books }: BooksGalleryProps) {
   const [selected, setSelected] = useState<Book | null>(null);
-  const [showOverlay, setShowOverlay] = useState(false); // controla el montaje del overlay
-  const [overlayVisible, setOverlayVisible] = useState(false); // controla la opacidad
-  const modalRef = useRef<HTMLDivElement>(null);
 
-  // Abrir modal: montar overlay y activar animación en el siguiente tick
-  useEffect(() => {
-    if (selected) {
-      setShowOverlay(true);
-      // Esperar al siguiente tick para activar la opacidad
-      setTimeout(() => setOverlayVisible(true), 10);
-    }
-  }, [selected]);
-
-  // Cerrar modal: animar opacidad y desmontar tras la transición
-  const closeModal = () => {
-    setOverlayVisible(false);
-    setTimeout(() => {
-      setShowOverlay(false);
-      setSelected(null);
-    }, 500); // igual a duration-500
-  };
-
-  // Cerrar modal con Escape
-  useEffect(() => {
-    if (!showOverlay) return;
-    const onKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') closeModal();
-    };
-    window.addEventListener('keydown', onKeyDown);
-    return () => window.removeEventListener('keydown', onKeyDown);
-  }, [showOverlay]);
-
-  // Focus trap simple
-  useEffect(() => {
-    if (showOverlay && modalRef.current) {
-      modalRef.current.focus();
-    }
-  }, [showOverlay]);
+  // Modal control helpers
+  const closeModal = () => setSelected(null);
 
   // Estado para errores de imagen en la galería
   const [imgErrors, setImgErrors] = useState<{ [id: string]: boolean }>({});
 
   return (
     <>
+      {/* Modal reutilizable */}
+      <BookModal book={selected} open={!!selected} onClose={closeModal} />
       {/* Galería de portadas */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
         {[...books]
@@ -133,86 +101,6 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
             </button>
           ))}
       </div>
-
-      {/* Modal de detalles con overlay animado */}
-      {showOverlay && (
-        <div
-          className="fixed inset-0 z-40 flex items-center justify-center"
-          aria-modal="true"
-          role="dialog"
-        >
-          {/* Overlay oscuro y desenfoque */}
-          <div
-            className={`absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-500 ${overlayVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
-            onClick={closeModal}
-            aria-hidden="true"
-          />
-          {selected && overlayVisible && (
-            <div
-              ref={modalRef}
-              tabIndex={-1}
-              className="relative z-50 bg-white rounded-xl shadow-2xl max-w-md w-full mx-4 p-6 outline-none flex flex-col items-center"
-            >
-              {/* Botón cerrar */}
-              <button
-                onClick={closeModal}
-                className="absolute top-3 right-3 text-xl text-muted hover:text-accent focus:outline-none"
-                aria-label="Cerrar"
-              >
-                ×
-              </button>
-              {/* Portada */}
-              <img
-                src={(() => {
-                  const coverName =
-                    selected && selected.cover && selected.cover.trim() !== ''
-                      ? selected.cover.trim()
-                      : selected?.id + '.jpg';
-                  const path =
-                    selected && imgErrors[selected.id]
-                      ? noCover
-                      : `${import.meta.env.BASE_URL}src/assets/images/books/${coverName}`;
-                  return path;
-                })()}
-                alt={`Portada de ${selected.title}`}
-                className="object-cover w-64 h-96 rounded mb-4 shadow"
-                draggable={false}
-                onError={(e) => {
-                  const target = e.currentTarget;
-                  if (target.src !== noCover) target.src = noCover;
-                }}
-              />
-              {/* Info */}
-              <h2 className="text-2xl font-bold mb-1 text-center">{selected.title}</h2>
-              <div className="text-lg font-medium text-center mb-2">{selected.author}</div>
-              <div className="w-full flex flex-col gap-1 text-sm text-muted mt-2">
-                <div>
-                  <span className="font-semibold">Fecha de lectura:</span>{' '}
-                  {selected.dateRead && selected.dateRead.trim() !== ''
-                    ? formatYearMonth(selected.dateRead.trim())
-                    : 'Desconocida'}{' '}
-                  {getFlag(selected.language) && (
-                    <span className="ml-1">{getFlag(selected.language)}</span>
-                  )}
-                </div>
-                {selected.series && selected.series.trim() !== '' && (
-                  <div>
-                    <span className="font-semibold">Serie:</span> {selected.series}
-                  </div>
-                )}
-                <div>
-                  <span className="font-semibold">Género:</span> {selected.genre}
-                </div>
-                {selected.synopsis && (
-                  <div>
-                    <span className="font-semibold">Sinopsis:</span> {selected.synopsis}
-                  </div>
-                )}
-              </div>
-            </div>
-          )}
-        </div>
-      )}
     </>
   );
 }
