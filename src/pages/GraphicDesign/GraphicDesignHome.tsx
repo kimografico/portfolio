@@ -4,7 +4,6 @@ import {
   IconFlyer,
   IconPoster,
   IconScreen,
-  IconBrush,
   IconBox,
   IconImage,
 } from '../../components/iconos';
@@ -13,45 +12,39 @@ import './GraphicDesign.css';
 const CATEGORIES = [
   {
     key: 'branding',
-    title: 'Branding & Identidad visual',
+    title: 'Branding & Logotipos',
     description: 'Identidad visual, logotipos y sistemas de marca.',
-    icon: 'plant',
+    icon: IconPlant,
   },
   {
     key: 'stationery',
     title: 'Papelería Corporativa',
     description: 'Tarjetas, sobres, carpetas y material corporativo.',
-    icon: 'flyer',
+    icon: IconFlyer,
   },
   {
     key: 'posters',
     title: 'Cartelería',
     description: 'Posters, flyers y material promocional.',
-    icon: 'poster',
+    icon: IconPoster,
   },
   {
     key: 'multimedia',
     title: 'Digital & Multimedia',
     description: 'Diseño para vídeo, web y presentaciones.',
-    icon: 'screen',
-  },
-  {
-    key: 'illustration',
-    title: 'Ilustración',
-    description: 'Ilustraciones digitales y tradicionales.',
-    icon: 'brush',
+    icon: IconScreen,
   },
   {
     key: 'packaging',
     title: 'Packaging',
     description: 'Envases, etiquetas y diseño de producto.',
-    icon: 'box',
+    icon: IconBox,
   },
   {
     key: 'other',
     title: 'Proyectos especiales',
     description: 'Proyectos diversos de diseño gráfico.',
-    icon: 'image',
+    icon: IconImage,
   },
 ];
 
@@ -71,42 +64,22 @@ export default function GraphicDesignHome() {
       {/* Categorías en rejilla */}
       <main className="flex-1 max-w-5xl mx-auto w-full px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {CATEGORIES.map((cat) => (
+          {CATEGORIES.map((category) => (
             <Link
-              to={`/graphic-design/${cat.key}`}
-              key={cat.key}
+              to={`/graphic-design/${category.key}`}
+              key={category.key}
               className="group flex flex-col items-center p-8 bg-bg rounded-xl transition-shadow hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary"
             >
               <span
                 className="text-6xl mb-4 transition-transform transition-colors duration-300 ease-out group-hover:scale-150 group-hover:-rotate-6 group-hover:text-red-600"
                 aria-hidden="true"
               >
-                {cat.icon === 'plant' && (
-                  <IconPlant size={96} strokeWidth={0.75} className="icono-categoria" />
-                )}
-                {cat.icon === 'flyer' && (
-                  <IconFlyer size={96} strokeWidth={0.75} className="icono-categoria" />
-                )}
-                {cat.icon === 'poster' && (
-                  <IconPoster size={96} strokeWidth={0.75} className="icono-categoria" />
-                )}
-                {cat.icon === 'screen' && (
-                  <IconScreen size={96} strokeWidth={0.75} className="icono-categoria" />
-                )}
-                {cat.icon === 'brush' && (
-                  <IconBrush size={96} strokeWidth={0.75} className="icono-categoria" />
-                )}
-                {cat.icon === 'box' && (
-                  <IconBox size={96} strokeWidth={0.75} className="icono-categoria" />
-                )}
-                {cat.icon === 'image' && (
-                  <IconImage size={96} strokeWidth={0.75} className="icono-categoria" />
-                )}
+                <category.icon size={96} strokeWidth={0.75} className="icono-categoria" />
               </span>
               <h2 className="text-xl font-semibold text-ink mb-2 group-hover:text-primary transition-colors">
-                {cat.title}
+                {category.title}
               </h2>
-              <p className="text-sm text-muted text-center">{cat.description}</p>
+              <p className="text-sm text-muted text-center">{category.description}</p>
             </Link>
           ))}
         </div>
