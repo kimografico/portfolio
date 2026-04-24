@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { Book } from '../../types';
-import noCover from '../../assets/images/books/_blank.jpg';
 
 interface BookModalProps {
   book: Book;
@@ -126,7 +125,7 @@ function BookModal({ book, onClose }: BookModalProps) {
           src={(() => {
             const coverName =
               book.cover && book.cover.trim() !== '' ? book.cover.trim() : book.id + '.jpg';
-            const path = `${import.meta.env.BASE_URL}src/assets/images/books/${coverName}`;
+            const path = `${import.meta.env.VITE_BOOKS_IMAGES_PATH}/${coverName}`;
             return path;
           })()}
           alt={`Portada de ${book.title}`}
@@ -134,7 +133,8 @@ function BookModal({ book, onClose }: BookModalProps) {
           draggable={false}
           onError={(e) => {
             const target = e.currentTarget;
-            if (target.src !== noCover) target.src = noCover;
+            const blankImage = `${import.meta.env.VITE_BOOKS_IMAGES_PATH}/_blank.jpg`;
+            if (target.src !== blankImage) target.src = blankImage;
           }}
         />
         {/* Info */}

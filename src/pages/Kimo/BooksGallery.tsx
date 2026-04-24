@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import type { Book } from '../../types';
-import noCover from '../../assets/images/books/_blank.jpg';
 import BookModal from '../../components/combinations/BookModal';
 
 interface BooksGalleryProps {
@@ -49,9 +48,10 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
                 src={(() => {
                   const coverName =
                     book.cover && book.cover.trim() !== '' ? book.cover.trim() : book.id + '.jpg';
+                  const blankImage = `${import.meta.env.VITE_BOOKS_IMAGES_PATH}/_blank.jpg`;
                   const path = imgErrors[book.id]
-                    ? noCover
-                    : `${import.meta.env.BASE_URL}src/assets/images/books/${coverName}`;
+                    ? blankImage
+                    : `${import.meta.env.VITE_BOOKS_IMAGES_PATH}/${coverName}`;
                   return path;
                 })()}
                 alt={`Portada de ${book.title}`}
