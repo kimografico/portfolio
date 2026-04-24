@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
 
 permissions:
   contents: read
@@ -26,26 +26,32 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "pnpm"
-          cache-dependency-path: frontend/pnpm-lock.yaml
+          cache: 'pnpm'
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-        working-directory: frontend
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Type check
+        run: pnpm typecheck
+
+      - name: Test
+        run: pnpm test
 
       - name: Build
         run: pnpm run build
-        working-directory: frontend
 
       - name: Prepare GitHub Pages artifact
         run: |
-          # Copia el 404.html a la raíz del build (requerido por GitHub Pages)
-          cp frontend/public/404.html frontend/dist/404.html
+          cp public/404.html dist/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: frontend/dist
+          path: dist
 
   deploy:
     needs: build

@@ -1,162 +1,111 @@
-# Kimográfico — Portfolio
+# React + TypeScript + Vite
 
-Portfolio personal de Kimo, diseñador gráfico y desarrollador de software.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-🌐 **Web actual:** [kimografico.com](https://kimografico.com)
-🚧 **Nueva versión:** en desarrollo — [kimografico.github.io/portfolio](https://kimografico.github.io/portfolio)
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Secciones
+## React Compiler
 
-| Ruta | Visibilidad | Descripción |
-|---|---|---|
-| `/` | Pública | Landing y presentación |
-| `/diseno` | Pública | Portfolio de diseño gráfico |
-| `/dev` | Pública | Portfolio de desarrollo de software |
-| `/cv` | Pública | Curriculum |
-| `/contacto` | Pública | Formulario de contacto |
-| `/kimo` | Oculta | Espacio personal (no indexado) |
-| `/kimo/libros` | Oculta | Libros leídos |
-| `/kimo/lugares` | Oculta | Lugares visitados |
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-> La sección `/kimo` no aparece en ningún menú público y está excluida de la indexación mediante `robots.txt` y meta tags `noindex`.
+## Expanding the ESLint configuration
 
----
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-## Stack
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-| Capa | Tecnología |
-|---|---|
-| Frontend | React 18 + TypeScript + Vite |
-| Estilos | Tailwind CSS |
-| Routing | React Router v6 |
-| Tablas | TanStack Table v8 |
-| Componentes aislados | Storybook 8 |
-| Datos | JSON estático en `/data/` |
-| Imágenes | `/public/images/` en el repo |
-| Hosting | GitHub Pages |
-| CI/CD | GitHub Actions |
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
----
-
-## Arrancar en local
-
-```bash
-# Clonar el repo
-git clone https://github.com/kimografico/portfolio.git
-cd portfolio
-
-# Instalar dependencias
-cd frontend
-npm install
-
-# Servidor de desarrollo
-npm run dev
-
-# Storybook (componentes aislados)
-npm run storybook
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+]);
 ```
 
----
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-## Scripts disponibles
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x';
+import reactDom from 'eslint-plugin-react-dom';
 
-| Script | Descripción |
-|---|---|
-| `npm run dev` | Servidor de desarrollo en `localhost:5173` |
-| `npm run build` | Build de producción en `/dist` |
-| `npm run preview` | Preview del build de producción |
-| `npm run lint` | ESLint |
-| `npm run typecheck` | Comprobación de tipos TypeScript |
-| `npm run test` | Tests con Vitest |
-| `npm run storybook` | Storybook en `localhost:6006` |
-| `npm run build-storybook` | Build estático de Storybook |
-
----
-
-## Gestión del contenido
-
-El contenido de la web se gestiona editando los archivos JSON en `/data/`. No hay base de datos ni CMS externo.
-
-| Archivo | Contenido |
-|---|---|
-| `data/portfolio-diseno.json` | Proyectos de diseño gráfico |
-| `data/portfolio-dev.json` | Proyectos de desarrollo |
-| `data/libros.json` | Libros leídos |
-| `data/lugares.json` | Lugares visitados |
-
-Para actualizar la web: edita el JSON correspondiente → commit → push a `main` → el pipeline hace el deploy automáticamente.
-
-### Límite de imágenes
-
-El pipeline comprueba el tamaño de las imágenes en cada PR:
-
-- ⚠️ **Aviso** por encima de **700 KB** (el pipeline no se detiene)
-- ❌ **Bloqueado** por encima de **1000 KB** (el pipeline falla)
-
-Las imágenes van en `frontend/public/images/`, organizadas por sección:
-
-```
-public/images/
-├── diseno/      # Portfolio de diseño
-├── dev/         # Portfolio de desarrollo
-└── personal/    # Libros y viajes
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+]);
 ```
 
----
+## Mapa de países visitados (PlacesPage)
 
-## Arquitectura de componentes
+Este proyecto utiliza [jsvectormap](https://jvm-docs.vercel.app/) para mostrar un mapamundi vectorial minimalista en la sección de lugares visitados.
 
-Los componentes siguen la nomenclatura de BBVA:
+### Instalación
 
-| Capa | Carpeta | Contenido |
-|---|---|---|
-| Basics | `components/basics/` | Átomos sin lógica de negocio: Badge, Button, NavLink... |
-| Combinations | `components/combinations/` | Combinaciones de basics: LibroCard, ProyectoCard... |
-| Compositions | `components/compositions/` | Organismos completos: LibrosTabla, LibrosGaleria... |
-| Layout | `components/layout/` | Header, Footer, Layout, LayoutPersonal |
+La librería se instala automáticamente con:
 
-Cada componente en `basics/`, `combinations/` y `compositions/` tiene su archivo `.stories.tsx` al lado para poder probarlo de forma aislada en Storybook.
-
-> **Decisión técnica:** los componentes de `basics/` y `combinations/` están implementados en TSX. Una vez estabilizado el proyecto, se valorará migrarlos a Lit (Web Components) para alinear con el stack de BBVA.
-
----
-
-## CI/CD
-
-Dos pipelines en `.github/workflows/`:
-
-**`ci.yml`** — se ejecuta en cada Pull Request:
 ```
-lint → typecheck → tests → check imágenes → build
+pnpm add jsvectormap
 ```
 
-**`deploy.yml`** — se ejecuta en cada push a `main`:
+### Uso
+
+- El componente `VisitedWorldMap` se encuentra en `src/components/combinations/VisitedWorldMap.tsx`.
+- Se integra en `PlacesPage` y recibe como props:
+  - `highlightedCountries`: array de códigos ISO de países visitados (ej: `["ES", "FR", "TH"]`).
+  - `points`: array de objetos `{ name, lat, lon }` para marcar lugares concretos.
+  - `height`: alto del mapa en px (opcional, por defecto 500).
+- El mapa soporta zoom nativo (botones, rueda, pinch en móvil).
+- Accesibilidad: role="img", aria-label, contraste suficiente.
+
+### Ejemplo de integración
+
+```tsx
+import VisitedWorldMap from '../../components/combinations/VisitedWorldMap';
+import { MOCK_COUNTRIES, MOCK_POINTS } from '../../components/combinations/visitedWorldMap.mocks';
+
+<VisitedWorldMap highlightedCountries={MOCK_COUNTRIES} points={MOCK_POINTS} height={500} />;
 ```
-build → deploy a GitHub Pages
-```
 
----
+### Consideraciones
 
-## Fases de desarrollo
-
-- ✅ **Fase 0** — Definición del proyecto (`spec.md`)
-- 🔄 **Fase 1** — Arquitectura base + sección personal (libros y lugares)
-- ⬜ **Fase 2** — Portfolio de diseño gráfico
-- ⬜ **Fase 3** — Portfolio de desarrollo
-- ⬜ **Fase 4** — Home, CV y contacto
-- ⬜ **Fase 5** — Pulido, animaciones, mapa, formulario real, migración de dominio
-- ⬜ **Fase 6** — Migración a Lit (opcional)
-
-Para el detalle completo de cada fase, ver [`spec.md`](./spec.md).
-
----
-
-## Dominio
-
-Durante el desarrollo, la nueva web convive en `kimografico.github.io/portfolio` mientras la web actual sigue activa en `kimografico.com`. La migración del dominio se realizará al completar la Fase 5.
-
----
-
-*Proyecto en desarrollo activo — documentación en [`spec.md`](./spec.md)*
+- El mapa es minimalista y no muestra detalles urbanos.
+- El zoom es sobre el SVG completo, útil para distinguir puntos cercanos a nivel país/ciudad.
+- Si JVM no carga, el componente no rompe la página.
+- Los mocks pueden sustituirse por datos reales.

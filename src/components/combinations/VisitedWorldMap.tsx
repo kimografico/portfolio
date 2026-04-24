@@ -28,7 +28,7 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
   points,
 }) => {
   const mapRef = useRef<HTMLDivElement>(null);
-  const mapInstance = useRef<any>(null);
+  const mapInstance = useRef<Record<string, unknown> | null>(null);
 
   useEffect(() => {
     if (!mapRef.current) return;
@@ -36,15 +36,16 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
     if (mapInstance.current) {
       // JVM puede lanzar error si destroy llama a dispose y ya está destruido
       try {
-        if (typeof mapInstance.current.dispose === 'function') {
-          mapInstance.current.destroy();
+        const map = mapInstance.current as Record<string, unknown>;
+        if (typeof map.destroy === 'function') {
+          (map.destroy as () => void)();
         }
-      } catch (e) {
+      } catch {
         // Silencia error de doble dispose
       }
     }
     // Inicializa JVM
-    // @ts-ignore
+    // @ts-expect-error jsvectormap types are incomplete
 
     import('jsvectormap').then(({ default: jsVectorMap }) => {
       mapInstance.current = new jsVectorMap({
@@ -92,10 +93,11 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
       if (mapInstance.current) {
         // JVM puede lanzar error si destroy llama a dispose y ya está destruido
         try {
-          if (typeof mapInstance.current.destroy === 'function') {
-            mapInstance.current.destroy();
+          const map = mapInstance.current as Record<string, unknown>;
+          if (typeof map.destroy === 'function') {
+            (map.destroy as () => void)();
           }
-        } catch (e) {
+        } catch {
           // Silencia error de doble dispose
         }
       }

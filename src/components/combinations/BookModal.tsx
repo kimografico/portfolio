@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type { Book } from '../../types';
 import noCover from '../../assets/images/books/_blank.jpg';
 
 interface BookModalProps {
-  book: Book | null;
+  book: Book;
   onClose: () => void;
 }
 
@@ -43,7 +43,6 @@ function formatYearMonth(fecha: string): string {
 }
 
 function BookModal({ book, onClose }: BookModalProps) {
-  if (!book) return null;
   const modalRef = useRef<HTMLDivElement>(null);
   // visible: controla el overlay (velo)
   // modalVisible: controla la caja modal
@@ -55,17 +54,18 @@ function BookModal({ book, onClose }: BookModalProps) {
 
   // Animación de entrada al montar
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setVisible(true);
     const timeout = setTimeout(() => setModalVisible(true), 10);
     return () => clearTimeout(timeout);
   }, []);
 
   // Animación de salida y desmontaje
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setModalVisible(false);
     setTimeout(() => setVisible(false), MODAL_DURATION);
     setTimeout(() => onClose(), OVERLAY_DURATION);
-  };
+  }, [MODAL_DURATION, OVERLAY_DURATION, onClose]);
 
   // Focus trap simple
   useEffect(() => {
@@ -82,7 +82,7 @@ function BookModal({ book, onClose }: BookModalProps) {
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [modalVisible]);
+  }, [modalVisible, handleClose]);
 
   if (!visible) return null;
 

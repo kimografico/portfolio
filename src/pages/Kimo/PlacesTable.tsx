@@ -34,7 +34,7 @@ export default function PlacesTable() {
   // Orden inicial: por fecha descendente (más reciente primero)
   const [sorting, setSorting] = useState([{ id: 'date', desc: true }]);
 
-  const columns = useMemo<ColumnDef<Place, any>[]>(
+  const columns = useMemo<ColumnDef<Place, string | undefined>[]>(
     () => [
       {
         header: 'Ciudad',
@@ -83,7 +83,11 @@ export default function PlacesTable() {
     data,
     columns,
     state: { sorting },
-    onSortingChange: setSorting,
+    onSortingChange: (updater) => {
+      // TanStack Table puede pasar una función updater o un valor directo
+      const newSorting = typeof updater === 'function' ? updater(sorting) : updater;
+      setSorting(newSorting);
+    },
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
   });

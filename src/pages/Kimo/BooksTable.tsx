@@ -110,13 +110,21 @@ export default function BooksTable({ books }: BooksTableProps) {
   }: {
     books: Book[];
     sorting: Array<{ id: string; desc: boolean }>;
-    setSorting: (s: Array<{ id: string; desc: boolean }>) => void;
+    setSorting: (
+      s:
+        | Array<{ id: string; desc: boolean }>
+        | ((prev: Array<{ id: string; desc: boolean }>) => Array<{ id: string; desc: boolean }>),
+    ) => void;
   }) {
     const table = useReactTable({
       data: books,
       columns,
       state: { sorting },
-      onSortingChange: setSorting,
+      onSortingChange: (updater) => {
+        // TanStack Table puede pasar una función updater o un valor directo
+        const newSorting = typeof updater === 'function' ? updater(sorting) : updater;
+        setSorting(newSorting);
+      },
       getCoreRowModel: getCoreRowModel(),
       getSortedRowModel: getSortedRowModel(),
     });
