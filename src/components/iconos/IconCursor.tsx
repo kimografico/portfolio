@@ -1,16 +1,11 @@
-export type IconCursorProps = {
-  size?: number;
-  color?: string;
-  strokeWidth?: number;
-  className?: string;
-};
+import type { IconProps } from '../../types/icons';
 
 export function IconCursor({
   size = 24,
   color = 'currentColor',
   strokeWidth = 2,
   className = '',
-}: IconCursorProps) {
+}: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

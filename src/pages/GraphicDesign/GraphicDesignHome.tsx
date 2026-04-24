@@ -71,7 +71,7 @@ export default function GraphicDesignHome() {
               className="group flex flex-col items-center p-8 bg-bg rounded-xl transition-shadow hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary"
             >
               <span
-                className="text-6xl mb-4 transition-transform transition-colors duration-300 ease-out group-hover:scale-150 group-hover:-rotate-6 group-hover:text-red-600"
+                className="text-6xl mb-4 transition-transform duration-300 ease-out group-hover:scale-150 group-hover:-rotate-6 group-hover:text-red-600"
                 aria-hidden="true"
               >
                 <category.icon size={96} strokeWidth={0.75} className="icono-categoria" />

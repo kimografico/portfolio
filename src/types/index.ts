@@ -12,3 +12,9 @@ export interface Book {
   series: string;
   synopsis: string;
 }
+
+/**
+ * Tipo para la vista de libros (tabla o galería)
+ * Usado en BooksPage y similares para alternar entre vistas
+ */
+export type View = 'table' | 'gallery';

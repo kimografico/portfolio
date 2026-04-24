@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import '../styles/buttonStyles.css';
 
 export default function NotFoundPage() {
   return (
@@ -23,10 +24,7 @@ export default function NotFoundPage() {
               La página que buscas no existe o ha sido movida. Si llegaste aquí desde un enlace,
               puede que esté desactualizado.
             </p>
-            <Link
-              to="/"
-              className="inline-flex items-center gap-2 text-sm font-medium text-ink border border-ink px-5 py-2 rounded transition-opacity duration-150 hover:opacity-70"
-            >
+            <Link to="/" className="btn-outline-ink">
               ← Volver al inicio
             </Link>
           </div>

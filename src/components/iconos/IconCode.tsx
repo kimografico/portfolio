@@ -1,17 +1,12 @@
-import React from 'react';
-export type IconCodeProps = {
-  size?: number;
-  color?: string;
-  strokeWidth?: number;
-  className?: string;
-};
+import type { IconProps } from '../../types/icons';
+
 export function IconCode({
   size = 24,
   color = 'currentColor',
   strokeWidth = 2,
   className = '',
   ...props
-}: IconCodeProps) {
+}: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

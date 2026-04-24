@@ -1,17 +1,12 @@
-import React from 'react';
-export type IconFingerprintProps = {
-  size?: number;
-  color?: string;
-  strokeWidth?: number;
-  className?: string;
-};
+import type { IconProps } from '../../types/icons';
+
 export function IconFingerprint({
   size = 24,
   color = 'currentColor',
   strokeWidth = 2,
   className = '',
   ...props
-}: IconFingerprintProps) {
+}: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

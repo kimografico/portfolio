@@ -1,0 +1,19 @@
+/* Botón outline general */
+.btn-outline {
+  @apply inline-block px-5 py-2 border border-ink text-ink font-semibold rounded transition-colors duration-200 hover:bg-ink hover:text-white focus:outline-none focus:ring-2 focus:ring-ink focus:ring-offset-2;
+}
+
+/* Botón outline variante ink (para NotFoundPage) */
+.btn-outline-ink {
+  @apply inline-block px-5 py-2 border border-ink text-ink font-semibold rounded transition-colors duration-200 hover:bg-ink hover:text-white focus:outline-none focus:ring-2 focus:ring-ink focus:ring-offset-2;
+}
+/* Estilos base y variantes para botones toggle */
+.btn-toggle {
+  @apply px-4 py-1 rounded font-semibold transition-colors duration-200 border border-gray-300;
+}
+.btn-toggle--active {
+  @apply bg-blue-600 text-white border-blue-600 shadow;
+}
+.btn-toggle--inactive {
+  @apply bg-white text-gray-700 hover:bg-gray-100;
+}

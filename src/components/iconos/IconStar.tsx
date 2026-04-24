@@ -1,17 +1,12 @@
-import React from 'react';
-export type IconStarProps = {
-  size?: number;
-  color?: string;
-  strokeWidth?: number;
-  className?: string;
-};
+import type { IconProps } from '../../types/icons';
+
 export function IconStar({
   size = 24,
   color = 'currentColor',
   strokeWidth = 2,
   className = '',
   ...props
-}: IconStarProps) {
+}: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

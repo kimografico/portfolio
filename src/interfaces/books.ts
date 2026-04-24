@@ -14,3 +14,13 @@ export interface BooksTableProps {
 export interface BooksGalleryProps {
   books: Book[];
 }
+
+export interface BooksFilterProps {
+  books: Book[];
+  onFiltered: (filtered: Book[]) => void;
+}
+
+export interface BookModalProps {
+  book: Book;
+  onClose: () => void;
+}

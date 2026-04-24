@@ -1,4 +1,6 @@
+import '../../styles/buttonStyles.css';
 import recentWorks from '../../data/recent-works.json';
+import './home.css';
 
 const mockProjects = recentWorks;
 
@@ -6,10 +8,7 @@ export default function Home() {
   return (
     <>
       {/* Skip link */}
-      <a
-        href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-surface focus:text-ink focus:border focus:border-border focus:rounded-sm text-sm"
-      >
+      <a href="#main-content" className="skip-link">
         Saltar al contenido principal
       </a>
 
@@ -37,16 +36,10 @@ export default function Home() {
                   proyectos, procesos y el trabajo del día a día.
                 </p>
                 <div className="flex flex-wrap gap-4">
-                  <a
-                    href="/diseno"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-muted border border-border px-5 py-2.5 hover:border-ink hover:text-ink transition-colors duration-250"
-                  >
+                  <a href="/diseno" className="btn-outline">
                     Ver diseño <span aria-hidden="true">→</span>
                   </a>
-                  <a
-                    href="/dev"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-muted border border-border px-5 py-2.5 hover:border-ink hover:text-ink transition-colors duration-250"
-                  >
+                  <a href="/dev" className="btn-outline">
                     Ver proyectos
                   </a>
                 </div>

@@ -1,16 +1,12 @@
-export type IconBrushProps = {
-  size?: number;
-  color?: string;
-  strokeWidth?: number;
-  className?: string;
-};
+import type { IconProps } from '../../types/icons';
+
 export function IconBrush({
   size = 24,
   color = 'currentColor',
   strokeWidth = 2,
   className = '',
   ...props
-}: IconBrushProps) {
+}: IconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

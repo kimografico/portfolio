@@ -3,3 +3,18 @@
 .icono-categoria {
   @apply transition-colors duration-300 group-hover:stroke-red-600 text-muted;
 }
+
+/* Icono de categoría con animación de hover */
+.category-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  transition:
+    transform 0.3s ease-out,
+    color 0.3s ease-out;
+  display: block;
+}
+
+.group:hover .category-icon {
+  transform: scale(1.5) rotate(-6deg);
+  color: #dc2626; /* text-red-600 */
+}

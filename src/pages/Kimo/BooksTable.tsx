@@ -11,12 +11,7 @@ import {
   flexRender,
   createColumnHelper,
 } from '@tanstack/react-table';
-import {
-  TABLE_CLASS,
-  TABLE_ROW_CLASS,
-  TABLE_CELL_CLASS,
-  TABLE_HEADER_CELL_CLASS,
-} from '../../styles/tableStyles';
+import '../../styles/tableStyles.css';
 
 const columnHelper = createColumnHelper<Book>();
 
@@ -89,7 +84,7 @@ export default function BooksTable({ books }: BooksTableProps) {
       getSortedRowModel: getSortedRowModel(),
     });
     return (
-      <table className={TABLE_CLASS}>
+      <table className="table-main">
         <thead>
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>
@@ -101,7 +96,7 @@ export default function BooksTable({ books }: BooksTableProps) {
                   <th
                     key={header.id}
                     className={
-                      TABLE_HEADER_CELL_CLASS +
+                      'table-header-cell' +
                       (align === 'center' ? ' text-center' : ' text-left') +
                       (wide ? ' min-w-[9rem]' : '')
                     }
@@ -140,8 +135,7 @@ export default function BooksTable({ books }: BooksTableProps) {
             <tr
               key={row.id}
               className={
-                TABLE_ROW_CLASS +
-                ' cursor-pointer group hover:bg-accent hover:text-white transition-colors'
+                'table-row cursor-pointer group hover:bg-accent hover:text-white transition-colors'
               }
               onClick={() => setSelectedBook(row.original)}
               tabIndex={0}
@@ -156,7 +150,7 @@ export default function BooksTable({ books }: BooksTableProps) {
                   <td
                     key={cell.id}
                     className={
-                      TABLE_CELL_CLASS +
+                      'table-cell' +
                       (align === 'center' ? ' text-center' : ' text-left') +
                       (wide ? ' min-w-[9rem]' : '') +
                       (isTitle ? ' group-hover:text-white font-semibold transition-colors' : '')

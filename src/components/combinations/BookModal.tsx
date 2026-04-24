@@ -1,10 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import type { Book } from '../../types';
-
-interface BookModalProps {
-  book: Book;
-  onClose: () => void;
-}
+import type { BookModalProps } from '../../interfaces/books';
+import './modal.css';
 
 // Devuelve la bandera según el idioma
 function getFlag(lang: string): string {

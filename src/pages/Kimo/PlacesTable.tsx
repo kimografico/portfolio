@@ -6,12 +6,7 @@ import {
   getSortedRowModel,
   useReactTable,
 } from '@tanstack/react-table';
-import {
-  TABLE_CLASS,
-  TABLE_ROW_CLASS,
-  TABLE_CELL_CLASS,
-  TABLE_HEADER_CELL_CLASS,
-} from '../../styles/tableStyles';
+import '../../styles/tableStyles.css';
 import type { Place } from '../../types/places';
 import places from '../../data/places.json';
 
@@ -94,7 +89,7 @@ export default function PlacesTable() {
 
   return (
     <div className="overflow-x-auto">
-      <table className={TABLE_CLASS}>
+      <table className="table-main">
         <thead>
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>
@@ -104,7 +99,7 @@ export default function PlacesTable() {
                 return (
                   <th
                     key={header.id}
-                    className={TABLE_HEADER_CELL_CLASS}
+                    className="table-header-cell"
                     onClick={canSort ? header.column.getToggleSortingHandler() : undefined}
                   >
                     {flexRender(header.column.columnDef.header, header.getContext())}
@@ -135,9 +130,9 @@ export default function PlacesTable() {
         </thead>
         <tbody>
           {table.getRowModel().rows.map((row) => (
-            <tr key={row.id} className={TABLE_ROW_CLASS}>
+            <tr key={row.id} className="table-row">
               {row.getVisibleCells().map((cell) => (
-                <td key={cell.id} className={TABLE_CELL_CLASS}>
+                <td key={cell.id} className="table-cell">
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
                 </td>
               ))}

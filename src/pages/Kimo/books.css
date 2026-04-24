@@ -76,7 +76,7 @@
   height: 100%;
   transition: transform 0.2s;
   display: block;
-  user-drag: none;
+  user-select: none;
 }
 /* books.css: estilos responsivos para los filtros de BooksTable y BooksGallery */
 
@@ -95,4 +95,29 @@
     flex-basis: 0;
     min-width: 0;
   }
+}
+
+/* Botón de toggle para cambiar entre vista tabla/galería */
+.btn-toggle {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--color-border, #e5e7eb);
+  font-size: 0.875rem;
+  font-family: monospace;
+  transition:
+    background-color 0.15s,
+    color 0.15s;
+}
+
+.btn-toggle--active {
+  background-color: var(--color-accent, #e11d48);
+  color: var(--color-bg, #fafafa);
+}
+
+.btn-toggle--inactive {
+  background-color: var(--color-surface, #ffffff);
+  color: var(--color-ink, #1a1a1a);
 }

@@ -1,10 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import type { Book } from '../../types';
-
-interface BooksFilterProps {
-  books: Book[];
-  onFiltered: (filtered: Book[]) => void;
-}
+import type { BooksFilterProps } from '../../interfaces/books';
 
 /**
  * Filtros reutilizables para libros: título, autor, serie y género.

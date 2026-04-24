@@ -22,10 +22,9 @@ convenciones:
   - specs master se actualizan solo al archivar cambios
   - Los nombres de cambio usan kebab-case y reflejan la fase o feature
   - El ciclo SDD es: sdd-init → sdd-explore → sdd-propose → sdd-spec → sdd-design → sdd-tasks → sdd-apply → sdd-verify → sdd-archive
-  - Los comandos de frontend se ejecutan desde /frontend
   - Tests: pnpm test
   - Typecheck: pnpm typecheck
   - Build: pnpm build
   - Datos en /data/*.json
-  - Imágenes en /frontend/public/images/
+  - Imágenes en /public/images/
   - Documentar decisiones y specs en markdown
