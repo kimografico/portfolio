@@ -125,7 +125,7 @@ function BookModal({ book, onClose }: BookModalProps) {
           src={(() => {
             const coverName =
               book.cover && book.cover.trim() !== '' ? book.cover.trim() : book.id + '.jpg';
-            const path = `${import.meta.env.VITE_BOOKS_IMAGES_PATH}/${coverName}`;
+            const path = `${import.meta.env.VITE_BOOK_COVERS_PATH}/${coverName}`;
             return path;
           })()}
           alt={`Portada de ${book.title}`}
@@ -133,7 +133,7 @@ function BookModal({ book, onClose }: BookModalProps) {
           draggable={false}
           onError={(e) => {
             const target = e.currentTarget;
-            const blankImage = `${import.meta.env.VITE_BOOKS_IMAGES_PATH}/_blank.jpg`;
+            const blankImage = `${import.meta.env.VITE_BOOK_COVERS_PATH}/_blank.jpg`;
             if (target.src !== blankImage) target.src = blankImage;
           }}
         />
