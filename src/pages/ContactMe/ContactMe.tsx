@@ -17,7 +17,6 @@ import {
   IconGym,
   IconSkull,
   IconScreen,
-  IconPen,
   IconFile,
   IconFingerprint,
   IconSkate,
@@ -113,10 +112,6 @@ export default function ContactMe() {
             <div className="iconos-demo-item">
               <IconScreen size={48} className="text-primary" />
               <div className="iconos-demo-label">IconScreen</div>
-            </div>
-            <div className="iconos-demo-item">
-              <IconPen size={48} className="text-primary" />
-              <div className="iconos-demo-label">IconPen</div>
             </div>
             <div className="iconos-demo-item">
               <IconFile size={48} className="text-primary" />

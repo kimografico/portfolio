@@ -14,7 +14,6 @@ export { IconImage } from './IconImage';
 export { IconLaptop } from './IconLaptop';
 export { IconMail } from './IconMail';
 export { IconPalette } from './IconPalette';
-export { IconPen } from './IconPen';
 export { IconPlant } from './IconPlant';
 export { IconPoster } from './IconPoster';
 export { IconScreen } from './IconScreen';

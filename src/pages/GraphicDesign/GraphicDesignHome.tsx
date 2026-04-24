@@ -1,48 +1,57 @@
 import { Link } from 'react-router-dom';
-import { IconCursor } from '../../components/iconos/IconCursor';
+import {
+  IconPlant,
+  IconFlyer,
+  IconPoster,
+  IconScreen,
+  IconBrush,
+  IconBox,
+  IconImage,
+} from '../../components/iconos';
+import './GraphicDesign.css';
 
 const CATEGORIES = [
   {
     key: 'branding',
     title: 'Branding & Identidad visual',
     description: 'Identidad visual, logotipos y sistemas de marca.',
-    icon: '🎨',
+    icon: 'plant',
   },
   {
     key: 'stationery',
     title: 'Papelería Corporativa',
     description: 'Tarjetas, sobres, carpetas y material corporativo.',
-    icon: '✉️',
+    icon: 'flyer',
   },
   {
     key: 'posters',
     title: 'Cartelería',
     description: 'Posters, flyers y material promocional.',
-    icon: '🖼️',
+    icon: 'poster',
   },
   {
     key: 'multimedia',
     title: 'Digital & Multimedia',
     description: 'Diseño para vídeo, web y presentaciones.',
-    icon: '💻',
+    icon: 'screen',
   },
   {
     key: 'illustration',
     title: 'Ilustración',
     description: 'Ilustraciones digitales y tradicionales.',
-    icon: '✏️',
+    icon: 'brush',
   },
   {
     key: 'packaging',
     title: 'Packaging',
     description: 'Envases, etiquetas y diseño de producto.',
-    icon: '📦',
+    icon: 'box',
   },
   {
     key: 'other',
     title: 'Proyectos especiales',
     description: 'Proyectos diversos de diseño gráfico.',
-    icon: 'cursor',
+    icon: 'image',
   },
 ];
 
@@ -72,14 +81,26 @@ export default function GraphicDesignHome() {
                 className="text-6xl mb-4 transition-transform transition-colors duration-300 ease-out group-hover:scale-150 group-hover:-rotate-6 group-hover:text-red-600"
                 aria-hidden="true"
               >
-                {cat.icon === 'cursor' ? (
-                  <IconCursor
-                    size={96}
-                    strokeWidth={0.75}
-                    className="transition-colors duration-300 group-hover:stroke-red-600 text-muted"
-                  />
-                ) : (
-                  cat.icon
+                {cat.icon === 'plant' && (
+                  <IconPlant size={96} strokeWidth={0.75} className="icono-categoria" />
+                )}
+                {cat.icon === 'flyer' && (
+                  <IconFlyer size={96} strokeWidth={0.75} className="icono-categoria" />
+                )}
+                {cat.icon === 'poster' && (
+                  <IconPoster size={96} strokeWidth={0.75} className="icono-categoria" />
+                )}
+                {cat.icon === 'screen' && (
+                  <IconScreen size={96} strokeWidth={0.75} className="icono-categoria" />
+                )}
+                {cat.icon === 'brush' && (
+                  <IconBrush size={96} strokeWidth={0.75} className="icono-categoria" />
+                )}
+                {cat.icon === 'box' && (
+                  <IconBox size={96} strokeWidth={0.75} className="icono-categoria" />
+                )}
+                {cat.icon === 'image' && (
+                  <IconImage size={96} strokeWidth={0.75} className="icono-categoria" />
                 )}
               </span>
               <h2 className="text-xl font-semibold text-ink mb-2 group-hover:text-primary transition-colors">

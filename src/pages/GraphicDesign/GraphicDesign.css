@@ -1,0 +1,5 @@
+/* GraphicDesign.css: utilidades y estilos para la sección de diseño gráfico */
+
+.icono-categoria {
+  @apply transition-colors duration-300 group-hover:stroke-red-600 text-muted;
+}
