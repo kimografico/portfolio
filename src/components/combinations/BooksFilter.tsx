@@ -1,26 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import type { Book } from '../../types';
 
 interface BooksFilterProps {
   books: Book[];
   onFiltered: (filtered: Book[]) => void;
-  authorOptions: string[];
-  seriesOptions: string[];
-  genreOptions: string[];
 }
 
 /**
  * Filtros reutilizables para libros: título, autor, serie y género.
  * Controlado por el padre para máxima flexibilidad.
  */
-
-export default function BooksFilter({
-  books,
-  onFiltered,
-  authorOptions,
-  seriesOptions,
-  genreOptions,
-}: BooksFilterProps) {
+export default function BooksFilter({ books, onFiltered }: BooksFilterProps) {
   const [filterTitle, setFilterTitle] = useState('');
   const [filterAuthor, setFilterAuthor] = useState('');
   const [filterSeries, setFilterSeries] = useState('');
@@ -47,6 +37,33 @@ export default function BooksFilter({
     });
     onFiltered(filtered);
   }, [books, filterTitle, filterAuthor, filterSeries, filterGenre, onFiltered]);
+
+  function getAuthorOptions(books: Book[]): string[] {
+    const count: Record<string, number> = {};
+    books.forEach((b) => {
+      if (b.author) count[b.author] = (count[b.author] || 0) + 1;
+    });
+    const frequent = Object.entries(count)
+      .filter(([_, n]) => n > 1)
+      .map(([a]) => a)
+      .sort();
+    if (Object.entries(count).some(([_, n]) => n === 1)) {
+      frequent.push('OTROS');
+    }
+    return frequent;
+  }
+
+  const authorOptions = useMemo(() => getAuthorOptions(books), [books]);
+  const seriesOptions = useMemo(() => {
+    const set = new Set<string>();
+    books.forEach((b) => b.series && set.add(b.series));
+    return Array.from(set).sort();
+  }, [books]);
+  const genreOptions = useMemo(() => {
+    const set = new Set<string>();
+    books.forEach((b) => b.genre && set.add(b.genre));
+    return Array.from(set).sort();
+  }, [books]);
 
   return (
     <div className="flex flex-wrap gap-4 w-full mb-4 items-end">

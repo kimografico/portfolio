@@ -1,9 +1,7 @@
-type ColumnMeta = {
-  align?: 'left' | 'center';
-  wide?: boolean;
-};
-import { useState, useMemo } from 'react';
+import type { ColumnMeta, BooksTableProps } from '../../interfaces/books';
+import { useState } from 'react';
 import BookModal from '../../components/combinations/BookModal';
+import './books.css';
 import BooksFilter from '../../components/combinations/BooksFilter';
 import type { Book } from '../../types';
 import {
@@ -19,10 +17,6 @@ import {
   TABLE_CELL_CLASS,
   TABLE_HEADER_CELL_CLASS,
 } from '../../styles/tableStyles';
-
-interface BooksTableProps {
-  books: Book[];
-}
 
 const columnHelper = createColumnHelper<Book>();
 
@@ -67,38 +61,6 @@ export default function BooksTable({ books }: BooksTableProps) {
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
   // Estado para libros filtrados
   const [filteredBooks, setFilteredBooks] = useState<Book[]>(books);
-
-  // Opciones únicas para selects
-
-  // Devuelve autores frecuentes y añade 'OTROS' al final
-  function getAuthorOptions(books: Book[]): string[] {
-    const count: Record<string, number> = {};
-    books.forEach((b) => {
-      if (b.author) count[b.author] = (count[b.author] || 0) + 1;
-    });
-    const frequent = Object.entries(count)
-      .filter(([_, n]) => n > 1)
-      .map(([a]) => a)
-      .sort();
-    if (Object.entries(count).some(([_, n]) => n === 1)) {
-      frequent.push('OTROS');
-    }
-    return frequent;
-  }
-
-  const authorOptions = useMemo(() => getAuthorOptions(books), [books]);
-
-  const seriesOptions = useMemo(() => {
-    const set = new Set<string>();
-    books.forEach((b) => b.series && set.add(b.series));
-    return Array.from(set).sort();
-  }, [books]);
-
-  const genreOptions = useMemo(() => {
-    const set = new Set<string>();
-    books.forEach((b) => b.genre && set.add(b.genre));
-    return Array.from(set).sort();
-  }, [books]);
 
   // Componente interno para la tabla filtrada
   function BooksTableInner({
@@ -153,13 +115,12 @@ export default function BooksTable({ books }: BooksTableProps) {
                           : undefined
                     }
                   >
-                    <span className="inline-flex items-center gap-1">
+                    <span className="table-header-label">
                       {flexRender(header.column.columnDef.header, header.getContext())}
                       {header.column.getCanSort() && (
                         <span
                           className={
-                            'ml-1 text-xs transition-colors ' +
-                            (isSorted ? 'text-accent' : 'text-gray-300 group-hover:text-gray-400')
+                            'table-sort-arrow ' + (isSorted ? 'arrow-accent' : 'arrow-grey')
                           }
                         >
                           {isSorted === 'asc' && '▲'}
@@ -220,26 +181,8 @@ export default function BooksTable({ books }: BooksTableProps) {
   // Renderizado de filtros
   return (
     <>
-      <BooksFilter
-        books={books}
-        onFiltered={setFilteredBooks}
-        authorOptions={authorOptions}
-        seriesOptions={seriesOptions}
-        genreOptions={genreOptions}
-      />
+      <BooksFilter books={books} onFiltered={setFilteredBooks} />
 
-      <style>{`
-        @media (max-width: 767px) {
-          /* En móvil: todos los filtros apilados verticalmente */
-        }
-        @media (min-width: 768px) and (max-width: 1023px) {
-          /* En md: Título arriba (100%), los otros tres en una fila debajo */
-          .mb-4.items-end > .order-1 { flex-basis: 100%; max-width: 100%; }
-          .mb-4.items-end > .order-2,
-          .mb-4.items-end > .order-3,
-          .mb-4.items-end > .order-4 { flex-basis: 0; min-width: 0; }
-        }
-      `}</style>
       {/* Tabla y mensaje de vacío */}
       {filteredBooks.length === 0 ? (
         <div className="text-muted text-center py-16">
