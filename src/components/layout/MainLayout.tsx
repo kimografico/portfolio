@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
+import { IconSkull as IconFooter } from '../iconos';
 
 const NAV_LINKS = [
   { label: 'Diseño gráfico', href: '/graphic-design' },
   { label: 'Desarrollo Web', href: '/dev' },
   { label: 'Contacto', href: '/contacto' },
 ];
-const FOOTER_LINKS = [{ label: '💀', href: '/kimo' }];
+const FOOTER_LINKS = [{ label: 'personal', href: '/kimo' }];
 
 export default function MainLayout() {
   return (
@@ -55,9 +56,13 @@ export default function MainLayout() {
                 <li key={href}>
                   <Link
                     to={href}
-                    className="text-xl text-muted hover:text-ink transition-colors duration-150"
+                    className="text-xl text-muted hover:text-ink transition-colors duration-150 flex items-center"
                   >
-                    {label}
+                    {label === 'personal' ? (
+                      <IconFooter size={24} strokeWidth={1} className="inline-block align-middle" />
+                    ) : (
+                      label
+                    )}
                   </Link>
                 </li>
               ))}

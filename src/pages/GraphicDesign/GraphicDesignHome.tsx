@@ -1,15 +1,16 @@
 import { Link } from 'react-router-dom';
+import { IconCursor } from '../../components/iconos/IconCursor';
 
 const CATEGORIES = [
   {
     key: 'branding',
-    title: 'Logotipos & Branding',
+    title: 'Branding & Identidad visual',
     description: 'Identidad visual, logotipos y sistemas de marca.',
     icon: '🎨',
   },
   {
     key: 'stationery',
-    title: 'Papelería',
+    title: 'Papelería Corporativa',
     description: 'Tarjetas, sobres, carpetas y material corporativo.',
     icon: '✉️',
   },
@@ -21,7 +22,7 @@ const CATEGORIES = [
   },
   {
     key: 'multimedia',
-    title: 'Multimedia',
+    title: 'Digital & Multimedia',
     description: 'Diseño para vídeo, web y presentaciones.',
     icon: '💻',
   },
@@ -39,9 +40,9 @@ const CATEGORIES = [
   },
   {
     key: 'other',
-    title: 'Otros',
+    title: 'Proyectos especiales',
     description: 'Proyectos diversos de diseño gráfico.',
-    icon: '🧩',
+    icon: 'cursor',
   },
 ];
 
@@ -67,8 +68,19 @@ export default function GraphicDesignHome() {
               key={cat.key}
               className="group flex flex-col items-center p-8 bg-bg rounded-xl transition-shadow hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary"
             >
-              <span className="text-6xl mb-4" aria-hidden="true">
-                {cat.icon}
+              <span
+                className="text-6xl mb-4 transition-transform transition-colors duration-300 ease-out group-hover:scale-150 group-hover:-rotate-6 group-hover:text-red-600"
+                aria-hidden="true"
+              >
+                {cat.icon === 'cursor' ? (
+                  <IconCursor
+                    size={96}
+                    strokeWidth={0.75}
+                    className="transition-colors duration-300 group-hover:stroke-red-600 text-muted"
+                  />
+                ) : (
+                  cat.icon
+                )}
               </span>
               <h2 className="text-xl font-semibold text-ink mb-2 group-hover:text-primary transition-colors">
                 {cat.title}

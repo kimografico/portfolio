@@ -6,6 +6,7 @@ import PlacesPage from './pages/Kimo/PlacesPage';
 import NotFoundPage from './pages/NotFoundPage';
 import GraphicDesignHome from './pages/GraphicDesign/GraphicDesignHome';
 import MainLayout from './components/layout/MainLayout';
+import ContactMe from './pages/ContactMe/ContactMe';
 
 // Componentes placeholder para rutas en desarrollo
 const PlaceholderPage = ({ title }: { title: string }) => (
@@ -28,7 +29,7 @@ export default function App() {
         <Route path="/graphic-design" element={<GraphicDesignHome />} />
         <Route path="/dev" element={<PlaceholderPage title="Desarrollo" />} />
         <Route path="/dev/:id" element={<PlaceholderPage title="Proyecto de Desarrollo" />} />
-        <Route path="/contacto" element={<PlaceholderPage title="Contacto" />} />
+        <Route path="/contacto" element={<ContactMe />} />
         {/* Fallback 404 */}
         <Route path="*" element={<NotFoundPage />} />
       </Route>
