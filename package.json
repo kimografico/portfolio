@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest",
     "preview": "vite preview",
-    "check": "bash ./check.sh"
+    "check": "node scripts/check.js"
   },
   "dependencies": {
     "react": "^19.2.5",

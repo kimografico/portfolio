@@ -6,10 +6,13 @@ import tseslint from 'typescript-eslint';
 
 export default [
   { ignores: ['dist'] },
+
   js.configs.recommended,
   ...tseslint.configs.recommended,
+
+  // 👇 FRONTEND (React + TS)
   {
-    files: ['**/*.{ts,tsx}'],
+    files: ['src/**/*.{ts,tsx,js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
@@ -22,7 +25,7 @@ export default [
       ...reactHooks.configs.flat.recommended.rules,
       ...reactRefresh.configs.vite.rules,
       'react-hooks/incompatible-library': 'off',
-      // Detectar variables no utilizadas (TypeScript)
+
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
@@ -30,8 +33,20 @@ export default [
           varsIgnorePattern: '^_',
         },
       ],
-      // Detectar cualquier tipo implícito en variables
+
       '@typescript-eslint/no-explicit-any': 'error',
+    },
+  },
+
+  // 👇 SCRIPTS NODE (check.js)
+  {
+    files: ['check.js', 'scripts/**/*.js'],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.node,
+    },
+    rules: {
+      'no-undef': 'off', // clave: evita conflicto con TS/flat config
     },
   },
 ];
