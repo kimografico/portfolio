@@ -1,16 +1,17 @@
+import React, { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 
 const NAV_LINKS = [
   { label: 'Diseño gráfico', href: '/graphic-design' },
   { label: 'Desarrollo Web', href: '/dev' },
   { label: 'Contacto', href: '/contacto' },
-  { label: '💀', href: '/kimo' },
 ];
+const FOOTER_LINKS = [{ label: '💀', href: '/kimo' }];
 
 export default function MainLayout() {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Header */}
+      {/* Header responsive con menú hamburguesa */}
       <header className="sticky top-0 z-40 bg-bg border-b border-border">
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-14 flex items-center justify-between">
           <Link
@@ -19,7 +20,8 @@ export default function MainLayout() {
           >
             kimografico
           </Link>
-          <nav aria-label="Principal">
+          {/* Menú desktop */}
+          <nav aria-label="Principal" className="hidden md:block">
             <ul className="flex items-center gap-6 list-none m-0 p-0">
               {NAV_LINKS.map(({ label, href }) => (
                 <li key={href}>
@@ -33,6 +35,8 @@ export default function MainLayout() {
               ))}
             </ul>
           </nav>
+          {/* Menú hamburguesa móvil */}
+          <MobileMenu />
         </div>
       </header>
 
@@ -41,17 +45,17 @@ export default function MainLayout() {
         <Outlet />
       </main>
 
-      {/* Footer */}
-      <footer>
-        <div className="max-w-7xl mx-auto px-6 md:px-12 h-14 flex items-center justify-between border-t border-border">
+      {/* Footer simple */}
+      <footer className="border-t border-border">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 h-14 flex items-center justify-between">
           <span className="font-mono text-xs text-muted">© 2026 kimografico</span>
           <nav aria-label="Footer">
             <ul className="flex items-center gap-6 list-none m-0 p-0">
-              {NAV_LINKS.map(({ label, href }) => (
+              {FOOTER_LINKS.map(({ label, href }) => (
                 <li key={href}>
                   <Link
                     to={href}
-                    className="text-xs text-muted hover:text-ink transition-colors duration-150"
+                    className="text-xl text-muted hover:text-ink transition-colors duration-150"
                   >
                     {label}
                   </Link>
@@ -61,6 +65,71 @@ export default function MainLayout() {
           </nav>
         </div>
       </footer>
+    </div>
+  );
+}
+
+// Componente menú hamburguesa responsive
+function MobileMenu() {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="md:hidden">
+      {/* Botón hamburguesa accesible */}
+      <button
+        aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
+        aria-expanded={open}
+        aria-controls="mobile-menu"
+        className="p-2 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none"
+        style={{ outline: 'none', boxShadow: 'none' }}
+        onClick={() => setOpen((v) => !v)}
+      >
+        <span className="sr-only">Menú</span>
+        {/* Icono hamburguesa animado */}
+        <span
+          className="block w-6 h-0.5 bg-ink mb-1 transition-all duration-200"
+          style={{ transform: open ? 'rotate(45deg) translateY(8.5px)' : 'none' }}
+        />
+        <span
+          className={`block w-6 h-0.5 bg-ink mb-1 transition-all duration-200 ${open ? 'opacity-0' : ''}`}
+        />
+        <span
+          className="block w-6 h-0.5 bg-ink transition-all duration-200"
+          style={{ transform: open ? 'rotate(-45deg) translateY(-8.5px)' : 'none' }}
+        />
+      </button>
+      {/* Menú desplegable */}
+      {open && (
+        <nav
+          id="mobile-menu"
+          aria-label="Menú móvil"
+          className="absolute left-0 top-14 w-full bg-bg border-b border-border shadow-md z-50"
+        >
+          <ul className="flex flex-col items-stretch w-full py-2 px-2">
+            {NAV_LINKS.map(({ label, href }, idx) => (
+              <React.Fragment key={href}>
+                <li className="w-full">
+                  <Link
+                    to={href}
+                    className="block px-6 py-5 text-2xl text-ink text-center hover:text-accent transition-colors duration-150"
+                    onClick={() => setOpen(false)}
+                  >
+                    {label}
+                  </Link>
+                </li>
+                {idx < NAV_LINKS.length - 1 && (
+                  <li
+                    key={href + '-divider'}
+                    aria-hidden="true"
+                    className="w-full flex justify-center"
+                  >
+                    <hr className="w-3/4 border-t border-muted opacity-80 my-2" />
+                  </li>
+                )}
+              </React.Fragment>
+            ))}
+          </ul>
+        </nav>
+      )}
     </div>
   );
 }
