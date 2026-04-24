@@ -4,6 +4,7 @@ type ColumnMeta = {
 };
 import { useState, useMemo } from 'react';
 import BookModal from '../../components/combinations/BookModal';
+import BooksFilter from '../../components/combinations/BooksFilter';
 import type { Book } from '../../types';
 import {
   useReactTable,
@@ -64,11 +65,8 @@ const columns = [
 export default function BooksTable({ books }: BooksTableProps) {
   // Estado para modal
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
-  // Estado para filtros
-  const [filterTitle, setFilterTitle] = useState('');
-  const [filterAuthor, setFilterAuthor] = useState('');
-  const [filterSeries, setFilterSeries] = useState('');
-  const [filterGenre, setFilterGenre] = useState('');
+  // Estado para libros filtrados
+  const [filteredBooks, setFilteredBooks] = useState<Book[]>(books);
 
   // Opciones únicas para selects
 
@@ -219,111 +217,16 @@ export default function BooksTable({ books }: BooksTableProps) {
     { id: 'dateRead', desc: true },
   ]);
 
-  // Filtrado de libros según los filtros activos
-  const filteredBooks = useMemo(() => {
-    return books.filter((b) => {
-      const matchesTitle =
-        filterTitle.trim() === '' ||
-        b.title.toLowerCase().includes(filterTitle.trim().toLowerCase());
-      let matchesAuthor = filterAuthor === '' || b.author === filterAuthor;
-      if (filterAuthor === 'OTROS') {
-        // Solo autores que aparecen una vez
-        const count: Record<string, number> = {};
-        books.forEach((book) => {
-          if (book.author) count[book.author] = (count[book.author] || 0) + 1;
-        });
-        matchesAuthor = count[b.author] === 1;
-      }
-      const matchesSeries = filterSeries === '' || b.series === filterSeries;
-      const matchesGenre = filterGenre === '' || b.genre === filterGenre;
-      return matchesTitle && matchesAuthor && matchesSeries && matchesGenre;
-    });
-  }, [books, filterTitle, filterAuthor, filterSeries, filterGenre]);
-
   // Renderizado de filtros
   return (
     <>
-      <div className="flex flex-wrap gap-4 w-full mb-4 items-end">
-        <div className="flex-[1.5_1.5_0%] min-w-[16rem] md:order-1 order-1 w-full md:w-auto">
-          <label className="block text-xs font-semibold text-muted mb-1" htmlFor="filter-title">
-            Título
-          </label>
-          <input
-            id="filter-title"
-            type="text"
-            className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent w-full"
-            placeholder="Buscar título..."
-            value={filterTitle}
-            onChange={(e) => setFilterTitle(e.target.value)}
-          />
-        </div>
-        <div className="flex-1 min-w-[10rem] md:order-2 order-2 w-full md:w-auto">
-          <label className="block text-xs font-semibold text-muted mb-1" htmlFor="filter-author">
-            Autor
-          </label>
-          <select
-            id="filter-author"
-            className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent min-w-[8rem] w-full"
-            value={filterAuthor}
-            onChange={(e) => {
-              setFilterAuthor(e.target.value);
-              setFilterSeries('');
-              setFilterGenre('');
-            }}
-          >
-            <option value="">Todos</option>
-            {authorOptions.map((a) => (
-              <option key={a} value={a}>
-                {a}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="flex-1 min-w-[10rem] md:order-3 order-3 w-full md:w-auto">
-          <label className="block text-xs font-semibold text-muted mb-1" htmlFor="filter-series">
-            Serie
-          </label>
-          <select
-            id="filter-series"
-            className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent min-w-[8rem] w-full"
-            value={filterSeries}
-            onChange={(e) => {
-              setFilterSeries(e.target.value);
-              setFilterAuthor('');
-              setFilterGenre('');
-            }}
-          >
-            <option value="">Todas</option>
-            {seriesOptions.map((s) => (
-              <option key={s} value={s}>
-                {s}
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="flex-1 min-w-[10rem] md:order-4 order-4 w-full md:w-auto">
-          <label className="block text-xs font-semibold text-muted mb-1" htmlFor="filter-genre">
-            Género
-          </label>
-          <select
-            id="filter-genre"
-            className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent min-w-[8rem] w-full"
-            value={filterGenre}
-            onChange={(e) => {
-              setFilterGenre(e.target.value);
-              setFilterAuthor('');
-              setFilterSeries('');
-            }}
-          >
-            <option value="">Todos</option>
-            {genreOptions.map((g) => (
-              <option key={g} value={g}>
-                {g}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
+      <BooksFilter
+        books={books}
+        onFiltered={setFilteredBooks}
+        authorOptions={authorOptions}
+        seriesOptions={seriesOptions}
+        genreOptions={genreOptions}
+      />
 
       <style>{`
         @media (max-width: 767px) {
