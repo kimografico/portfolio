@@ -7,6 +7,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import GraphicDesignHome from './pages/GraphicDesign/GraphicDesignHome';
 import MainLayout from './components/layout/MainLayout';
 import ContactMe from './pages/ContactMe/ContactMe';
+import ScrollToTop from './components/layout/ScrollToTop';
 
 // Componentes placeholder para rutas en desarrollo
 const PlaceholderPage = ({ title }: { title: string }) => (
@@ -18,21 +19,24 @@ const PlaceholderPage = ({ title }: { title: string }) => (
 
 export default function App() {
   return (
-    <Routes>
-      <Route element={<MainLayout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/kimo" element={<KimoLayout />}>
-          <Route index element={<BooksPage />} />
-          <Route path="books" element={<BooksPage />} />
-          <Route path="places" element={<PlacesPage />} />
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/kimo" element={<KimoLayout />}>
+            <Route index element={<BooksPage />} />
+            <Route path="books" element={<BooksPage />} />
+            <Route path="places" element={<PlacesPage />} />
+          </Route>
+          <Route path="/graphic-design" element={<GraphicDesignHome />} />
+          <Route path="/dev" element={<PlaceholderPage title="Desarrollo" />} />
+          <Route path="/dev/:id" element={<PlaceholderPage title="Proyecto de Desarrollo" />} />
+          <Route path="/contacto" element={<ContactMe />} />
+          {/* Fallback 404 */}
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
-        <Route path="/graphic-design" element={<GraphicDesignHome />} />
-        <Route path="/dev" element={<PlaceholderPage title="Desarrollo" />} />
-        <Route path="/dev/:id" element={<PlaceholderPage title="Proyecto de Desarrollo" />} />
-        <Route path="/contacto" element={<ContactMe />} />
-        {/* Fallback 404 */}
-        <Route path="*" element={<NotFoundPage />} />
-      </Route>
-    </Routes>
+      </Routes>
+    </>
   );
 }
