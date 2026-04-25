@@ -2,9 +2,10 @@ import React, { useRef, useState, useEffect } from 'react';
 import 'jsvectormap';
 import 'jsvectormap/dist/maps/world.js';
 // Paleta única para el mapa (azul o imagen de fondo)
+const UI_IMG_PATH = import.meta.env.VITE_UI_IMG_PATH;
 const mapColors = {
   ocean: '#f2f7fc',
-  oceanImage: 'url(/portfolio/images/map-bg.jpg)',
+  oceanImage: `url(${UI_IMG_PATH}/map-bg.jpg)`,
   country: 'var(--color-border)',
   countryVisited: 'var(--color-accent)',
   marker: '#FFF',

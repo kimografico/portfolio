@@ -4,8 +4,7 @@ import type { Illustration } from '../../../interfaces/illustration';
 import illustrations from '../../../data/illustrations.json';
 import './IllustrationDetailPage.css';
 
-const ILLUSTRATIONS_PATH =
-  import.meta.env.VITE_ILLUSTRATIONS_PATH || '/portfolio/images/illustrations';
+const ILLUSTRATIONS_PATH = import.meta.env.VITE_ILLUSTRATIONS_PATH;
 
 export default function IllustrationDetailPage() {
   const { id } = useParams();

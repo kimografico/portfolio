@@ -2,8 +2,7 @@ import { useState } from 'react';
 import type { Illustration } from '../../../interfaces/illustration';
 import './IllustrationsGallery.css';
 
-const ILLUSTRATIONS_PATH =
-  import.meta.env.VITE_ILLUSTRATIONS_PATH || '/portfolio/images/illustrations';
+const ILLUSTRATIONS_PATH = import.meta.env.VITE_ILLUSTRATIONS_PATH;
 
 interface IllustrationsGalleryProps {
   illustrations: Illustration[];
