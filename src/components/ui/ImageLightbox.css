@@ -3,7 +3,8 @@
   position: relative;
   display: inline-block;
 }
-/* Lightbox raíz: igual que bookmodal-root */
+
+/* Lightbox raíz */
 .imagelightbox-root {
   position: fixed;
   inset: 0;
@@ -13,20 +14,17 @@
   justify-content: center;
 }
 
-/* Overlay del lightbox: cubre toda la pantalla y permite cerrar al hacer clic fuera */
+/* Overlay del lightbox */
 .modal-overlay {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
   transition: opacity 0.3s ease-out;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 49;
 }
 
-/* Asegura que el modal no tenga padding ni margen extra */
+/* Contenedor del modal - desktop */
 .imagelightbox-content {
   background: transparent;
   box-shadow: none;
@@ -39,7 +37,8 @@
   justify-content: center;
   position: relative;
 }
-/* Botón cerrar en la esquina superior derecha de la imagen */
+
+/* Botón cerrar - desktop */
 .imagelightbox-close {
   position: absolute;
   top: 0.5rem;
@@ -53,10 +52,12 @@
   cursor: pointer;
   transition: background 0.2s;
 }
+
 .imagelightbox-close:hover {
   background: rgba(255, 255, 255, 1);
 }
 
+/* Imagen - desktop */
 .imagelightbox-image {
   max-width: 90vw;
   max-height: 80vh;
@@ -66,4 +67,57 @@
   object-fit: contain;
 }
 
-/* Botón cerrar: reutiliza .modal-close */
+/* Responsive: fullscreen en móvil */
+@media (max-width: 767px) {
+  .imagelightbox-root {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  /* Overlay invisible en móvil */
+  .modal-overlay {
+    display: contents !important;
+  }
+
+  /* Modal fullscreen en móvil */
+  .imagelightbox-content {
+    position: fixed !important;
+    inset: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    margin: 0 !important;
+    padding: 1rem !important;
+    border-radius: 0;
+    box-shadow: none;
+    overflow-y: auto;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--color-bg, #f8f7f4) !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Imagen en móvil */
+  .imagelightbox-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    object-fit: contain;
+    margin-top: 3rem;
+  }
+
+  /* Botón cerrar móvil */
+  .imagelightbox-close {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    font-size: 1.5rem;
+    z-index: 51;
+    padding: 0.5rem !important;
+  }
+}

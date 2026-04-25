@@ -84,37 +84,37 @@ export default function ImageLightbox({ open, src, alt, onClose }: ImageLightbox
         onClick={handleOverlayClick}
         aria-hidden="true"
         style={{ transitionDuration: `${OVERLAY_DURATION}ms` }}
+      />
+      <div
+        ref={modalRef}
+        tabIndex={-1}
+        className="modal-content imagelightbox-content"
+        data-visible={modalVisible}
+        onClick={handleOverlayClick}
+        style={{
+          transitionDuration: `${MODAL_DURATION}ms`,
+          position: 'relative',
+          background: 'transparent',
+          boxShadow: 'none',
+          padding: 0,
+          maxWidth: '90vw',
+          maxHeight: '90vh',
+          width: 'auto',
+          height: 'auto',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
       >
-        <div
-          ref={modalRef}
-          tabIndex={-1}
-          className="modal-content imagelightbox-content"
-          data-visible={modalVisible}
-          style={{
-            transitionDuration: `${MODAL_DURATION}ms`,
-            position: 'relative',
-            background: 'transparent',
-            boxShadow: 'none',
-            padding: 0,
-            maxWidth: '90vw',
-            maxHeight: '90vh',
-            width: 'auto',
-            height: 'auto',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          <div className="imagelightbox-imgwrap">
-            <img src={src} alt={alt} className="imagelightbox-image" draggable={false} />
-            <button
-              onClick={handleClose}
-              className="modal-close imagelightbox-close"
-              aria-label="Cerrar"
-            >
-              <IconClose size={24} strokeWidth={1} color="var(--color-muted)" />
-            </button>
-          </div>
+        <div className="imagelightbox-imgwrap">
+          <img src={src} alt={alt} className="imagelightbox-image" draggable={false} />
+          <button
+            onClick={handleClose}
+            className="modal-close imagelightbox-close"
+            aria-label="Cerrar"
+          >
+            <IconClose size={24} strokeWidth={1} color="var(--color-muted)" />
+          </button>
         </div>
       </div>
     </div>
