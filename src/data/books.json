@@ -18,9 +18,9 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "",
-    "genre": "Fantasía",
+    "genre": "Aventuras",
     "isbn": "9788466706131",
-    "series": "Peter Pan",
+    "series": "",
     "synopsis": "Wendy y sus hermanos viajan al País de Nunca Jamás guiados por Peter Pan, el niño que no quería crecer. Allí viven aventuras contra el Capitán Garfio y descubren la magia y los peligros de la infancia eterna."
   },
   {
@@ -30,9 +30,9 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "",
-    "genre": "Fantasía",
+    "genre": "Aventuras",
     "isbn": "9788420470481",
-    "series": "Peter Pan",
+    "series": "",
     "synopsis": "En esta secuela oficial, los antiguos Niños Perdidos, ahora adultos, regresan a Nunca Jamás para salvar el mundo de los sueños. El tiempo y la realidad se han distorsionado, tiñendo el lugar de un tono mucho más oscuro."
   },
   {
@@ -42,9 +42,9 @@
     "language": "Inglés",
     "cover": " ",
     "dateRead": "",
-    "genre": "Fantasía",
+    "genre": "Aventuras",
     "isbn": "9788496666320",
-    "series": "Peter Pan",
+    "series": "",
     "synopsis": "Narra los orígenes de Peter Pan antes de irse al País de Nunca Jamás, viviendo como un ser entre humano y hada en Londres. Es una fábula lírica sobre la inocencia y el mundo mágico que se oculta en los parques reales."
   },
   {
@@ -126,7 +126,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "9788401336041",
     "series": "",
     "synopsis": "Una fuerza inteligente desconocida que habita en las profundidades del océano comienza a atacar a la humanidad. Científicos de todo el mundo deben unirse para entender por qué la naturaleza se ha vuelto contra nosotros."
@@ -138,7 +138,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "",
-    "genre": "Crónica",
+    "genre": "",
     "isbn": "9780140440577",
     "series": "",
     "synopsis": "El famoso viajero veneciano relata sus asombrosas experiencias y descubrimientos en la corte de Kublai Khan. Es un testimonio histórico fundamental sobre la Ruta de la Seda y el choque cultural entre Oriente y Occidente."
@@ -150,7 +150,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "9788445076811",
     "series": "Trilogía de Marte",
     "synopsis": "Un grupo de cien pioneros viaja al planeta rojo para iniciar el proceso de terraformación y colonización. La historia explora los conflictos políticos, éticos y científicos que surgen al intentar crear un nuevo mundo."
@@ -162,7 +162,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "9788445070246",
     "series": "Trilogía de Marte",
     "synopsis": "La terraformación avanza y Marte empieza a tener una atmósfera respirable, pero las tensiones con la Tierra estallan. Las diferentes facciones de colonos luchan por definir la independencia y el futuro ecológico del planeta."
@@ -174,7 +174,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "9788445077023",
     "series": "Trilogía de Marte",
     "synopsis": "Marte se ha convertido en un mundo habitable con océanos y una sociedad compleja que busca su propia identidad. La humanidad se expande por el sistema solar mientras enfrenta los retos de la inmortalidad biológica."
@@ -186,7 +186,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2010-06",
-    "genre": "Thriller",
+    "genre": "Hard Sci-Fi",
     "isbn": "9781439150146",
     "series": "",
     "synopsis": "Un equipo de reality show llega a una isla remota donde la evolución ha seguido un camino aterrador y acelerado. Lo que encuentran es un ecosistema depredador que amenaza con destruir el equilibrio biológico de todo el planeta."
@@ -200,7 +200,7 @@
     "dateRead": "2010-06",
     "genre": "Fantasía",
     "isbn": "9788448035549",
-    "series": "Dragonlance: Crónicas",
+    "series": "Dragonlance",
     "synopsis": "Un grupo de viejos amigos se reúne para descubrir que la oscuridad amenaza el mundo de Krynn. Es el inicio de las Crónicas de la Dragonlance, donde los verdaderos dioses y los dragones regresan para la batalla final."
   },
   {
@@ -212,7 +212,7 @@
     "dateRead": "2010-06",
     "genre": "Fantasía",
     "isbn": "9788448033781",
-    "series": "Dragonlance: Héroes",
+    "series": "Dragonlance",
     "synopsis": "Narra la leyenda del caballero Solamnico Huma y su lucha contra la Reina de la Oscuridad en tiempos remotos. Es una historia de sacrificio heroico que forjó las leyes y el destino de los caballeros en Krynn."
   },
   {
@@ -224,7 +224,7 @@
     "dateRead": "2010-07",
     "genre": "Fantasía",
     "isbn": "9780880385442",
-    "series": "Dragonlance: Crónicas",
+    "series": "Dragonlance",
     "synopsis": "La guerra de la lanza llega a su conclusión épica mientras los héroes se infiltran en el corazón del imperio enemigo. El destino del mundo depende de un último esfuerzo para cerrar las puertas al abismo."
   },
   {
@@ -236,7 +236,7 @@
     "dateRead": "2010-07",
     "genre": "Fantasía",
     "isbn": "9788448033798",
-    "series": "Dragonlance: Leyendas",
+    "series": "Dragonlance",
     "synopsis": "Los gemelos Caramon y Raistlin viajan al pasado, a la época previa al Cataclismo, para cumplir un destino oscuro. Es una exploración sobre la ambición de poder y los peligros de intentar cambiar la historia."
   },
   {
@@ -248,7 +248,7 @@
     "dateRead": "2010-07",
     "genre": "Fantasía",
     "isbn": "9780880381741",
-    "series": "Dragonlance: Leyendas",
+    "series": "Dragonlance",
     "synopsis": "Tras sobrevivir al Cataclismo, los protagonistas se ven envueltos en una cruenta guerra civil entre las diferentes naciones de enanos. Raistlin continúa su ascenso hacia la divinidad sin importar el coste humano."
   },
   {
@@ -260,7 +260,7 @@
     "dateRead": "2010-07",
     "genre": "Fantasía",
     "isbn": "9788448033811",
-    "series": "Dragonlance: Leyendas",
+    "series": "Dragonlance",
     "synopsis": "El mago Raistlin intenta desafiar a la mismísima Reina de las Tinieblas en su propio reino. Sus amigos deben decidir si detenerlo o ayudarlo en una misión que podría destruir el tejido de la realidad."
   },
   {
@@ -296,7 +296,7 @@
     "dateRead": "2010-08",
     "genre": "Fantasía",
     "isbn": "9788448037802",
-    "series": "Reinos Olvidados: El Elfo Oscuro",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Drizzt Do'Urden nace en la cruel y oscura ciudad de Menzoberranzan, hogar de los elfos oscuros drow. Allí deberá elegir entre la maldad intrínseca de su raza o seguir los dictados de su propia conciencia."
   },
   {
@@ -308,7 +308,7 @@
     "dateRead": "2010-08",
     "genre": "Fantasía",
     "isbn": "9788448037819",
-    "series": "Reinos Olvidados: El Elfo Oscuro",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Tras abandonar su hogar, Drizzt vaga por los peligrosos túneles de la Antípoda Oscura buscando un lugar donde encajar. Es una lucha constante contra la soledad y los enemigos que lo persiguen desde su pasado."
   },
   {
@@ -320,7 +320,7 @@
     "dateRead": "2010-08",
     "genre": "Fantasía",
     "isbn": "9788448037826",
-    "series": "Reinos Olvidados: El Elfo Oscuro",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Drizzt llega finalmente a la superficie, donde debe enfrentarse al prejuicio de los humanos por su color de piel. En el Valle del Viento Helado encontrará finalmente los amigos y el propósito que siempre buscó."
   },
   {
@@ -332,7 +332,7 @@
     "dateRead": "2010-08",
     "genre": "Thriller",
     "isbn": "9780007342983",
-    "series": "La biblioteca de los muertos",
+    "series": "",
     "synopsis": "Un agente del FBI investiga una serie de muertes que parecen estar relacionadas con una biblioteca oculta desde la Edad Media. El secreto revela una lista con las fechas de nacimiento y muerte de toda la humanidad."
   },
   {
@@ -344,7 +344,7 @@
     "dateRead": "2010-08",
     "genre": "Fantasía",
     "isbn": "9788448037833",
-    "series": "Reinos Olvidados: El valle del viento helado",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Un malvado aprendiz de mago encuentra una reliquia poderosa que amenaza con esclavizar las tierras del norte. Drizzt y sus nuevos compañeros deben unir fuerzas para detener una invasión de bárbaros y trasgos."
   },
   {
@@ -356,7 +356,7 @@
     "dateRead": "2010-08",
     "genre": "Fantasía",
     "isbn": "9788448037840",
-    "series": "Reinos Olvidados: El valle del viento helado",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Drizzt y sus amigos emprenden una búsqueda para recuperar Mithril Hall, el legendario hogar ancestral de los enanos. En el camino son perseguidos por el implacable asesino Artemis Entreri."
   },
   {
@@ -368,7 +368,7 @@
     "dateRead": "2010-08",
     "genre": "Fantasía",
     "isbn": "9788448037857",
-    "series": "Reinos Olvidados: El valle del viento helado",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Regis el Halfling es secuestrado por Artemis Entreri, obligando a Drizzt y Wulfgar a viajar al sur para rescatarlo. El viaje culmina en una confrontación definitiva entre los dos mejores espadachines del mundo."
   },
   {
@@ -380,7 +380,7 @@
     "dateRead": "2010-08",
     "genre": "Fantasía",
     "isbn": "9788448038168",
-    "series": "Reinos Olvidados: El legado del drow",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Drizzt Do'Urden cree haber encontrado la paz, pero su pasado en Menzoberranzan regresa para perseguirlo. Su propia familia planea su captura, desencadenando una batalla que pone a prueba la lealtad de sus compañeros."
   },
   {
@@ -392,7 +392,7 @@
     "dateRead": "2010-08",
     "genre": "Fantasía",
     "isbn": "9781560766292",
-    "series": "Reinos Olvidados: El legado del drow",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Tras los ataques de los drow, Drizzt decide regresar a la Antípoda Oscura para enfrentarse a su origen y proteger a sus amigos de la superficie. Es un viaje de regreso a las sombras para salvar la luz que ha encontrado."
   },
   {
@@ -404,7 +404,7 @@
     "dateRead": "2010-08",
     "genre": "Fantasía",
     "isbn": "9781560768456",
-    "series": "Reinos Olvidados: El legado del drow",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "La ciudad drow lanza una invasión masiva contra Mithril Hall mientras el mundo exterior sufre el caos de la Era de los Trastornos. Drizzt y los enanos deben resistir un asedio legendario contra fuerzas mágicas y demoníacas."
   },
   {
@@ -416,7 +416,7 @@
     "dateRead": "2010-09",
     "genre": "Fantasía",
     "isbn": "9788448038199",
-    "series": "Reinos Olvidados: El legado del drow",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Drizzt se enfrenta a las secuelas de la guerra y a la pérdida de seres queridos mientras intenta reconstruir su vida. La historia explora la resiliencia del espíritu frente a la tristeza y los nuevos enemigos que acechan."
   },
   {
@@ -428,7 +428,7 @@
     "dateRead": "2010-09",
     "genre": "Fantasía",
     "isbn": "9780786906642",
-    "series": "Reinos Olvidados: Sendas de tinieblas",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "El demonio Errtu ha regresado y busca venganza contra Drizzt utilizando la poderosa Piedra de Cristal. Los compañeros deben reunirse una vez más para detener una amenaza que trasciende el plano material."
   },
   {
@@ -440,7 +440,7 @@
     "dateRead": "2010-09",
     "genre": "Fantasía",
     "isbn": "9788448038212",
-    "series": "Reinos Olvidados: Sendas de tinieblas",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Wulfgar, el bárbaro, lucha por superar el trauma de su cautiverio en el abismo mientras busca un nuevo propósito. Es una historia de redención personal ambientada en las duras tierras del sur de los Reinos Olvidados."
   },
   {
@@ -452,7 +452,7 @@
     "dateRead": "2010-09",
     "genre": "Fantasía",
     "isbn": "9788448038229",
-    "series": "Reinos Olvidados: Sendas de tinieblas",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Se centra en el asesino Artemis Entreri y el mercenario Jarlaxle, quienes se ven envueltos en intrigas de poder en la superficie. Ambos deben decidir si su alianza es de conveniencia o algo más profundo mientras manejan reliquias peligrosas."
   },
   {
@@ -464,7 +464,7 @@
     "dateRead": "2010-10",
     "genre": "Fantasía",
     "isbn": "9788448038236",
-    "series": "Reinos Olvidados: Los mercenarios",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Artemis Entreri intenta encontrar su lugar en un mundo que solo lo ve como un monstruo. En su viaje hacia Calimport, se enfrenta a su pasado y a la posibilidad de dejar atrás su vida de asesinatos."
   },
   {
@@ -476,7 +476,7 @@
     "dateRead": "2010-10",
     "genre": "Fantasía",
     "isbn": "9780786918553",
-    "series": "Reinos Olvidados: Sendas de tinieblas",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Drizzt y sus amigos se reúnen para recuperar un objeto robado, lo que los lleva a enfrentarse a piratas y antiguos enemigos en la costa. Es una aventura clásica de capa y espada que cierra cabos sueltos de la saga."
   },
   {
@@ -488,7 +488,7 @@
     "dateRead": "2010-11",
     "genre": "Fantasía",
     "isbn": "9780786928040",
-    "series": "Reinos Olvidados: Las espadas del cazador",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Una horda masiva de orcos liderada por un rey inteligente amenaza con arrasar las tierras del norte. Drizzt queda separado de sus amigos y debe luchar solo contra un ejército que parece imparable."
   },
   {
@@ -500,7 +500,7 @@
     "dateRead": "2010-11",
     "genre": "Fantasía",
     "isbn": "9780786933648",
-    "series": "Reinos Olvidados: Las espadas del cazador",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "La guerra contra los orcos se intensifica y las bajas aumentan en ambos bandos. Los protagonistas deben enfrentarse a la realidad de una guerra total que amenaza con cambiar la geografía de los Reinos para siempre."
   },
   {
@@ -512,7 +512,7 @@
     "dateRead": "2010-11",
     "genre": "Fantasía",
     "isbn": "9780786937608",
-    "series": "Reinos Olvidados: Las espadas del cazador",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Drizzt debe decidir su papel en el conflicto global mientras su habilidad con las espadas es puesta a prueba como nunca antes. La conclusión de la trilogía de las espadas define el futuro de las tierras del norte."
   },
   {
@@ -524,7 +524,7 @@
     "dateRead": "2011-01",
     "genre": "Fantasía",
     "isbn": "9780786943401",
-    "series": "Reinos Olvidados: Transiciones",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Siglos después de las guerras, se explora la posibilidad de una paz duradera entre enanos y orcos. Drizzt reflexiona sobre el legado de la violencia y si es posible cambiar la naturaleza de las razas en conflicto."
   },
   {
@@ -536,7 +536,7 @@
     "dateRead": "2011-01",
     "genre": "Fantasía",
     "isbn": "9788448038311",
-    "series": "Reinos Olvidados: Transiciones",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Drizzt se ve envuelto en una lucha de poder en Luskan, donde magos y capitanes piratas se disputan el control de la ciudad. La magia antigua y la traición marcan el destino de la Torre del Arcanista."
   },
   {
@@ -548,7 +548,7 @@
     "dateRead": "2011-01",
     "genre": "Fantasía",
     "isbn": "9788448038373",
-    "series": "Reinos Olvidados: Transiciones",
+    "series": "Drizzt, El Elfo Oscuro",
     "synopsis": "Una catástrofe mágica, la Plaga de los Conjuros, asola el mundo y afecta a la compañera de Drizzt, Catti-brie. Drizzt debe aliarse con antiguos rivales para salvar el alma de su esposa en un mundo que se desmorona."
   },
   {
@@ -596,7 +596,7 @@
     "dateRead": "2011-02",
     "genre": "Sci-Fi",
     "isbn": "9788466611091",
-    "series": "Saga de la Sombra",
+    "series": "Saga de Ender",
     "synopsis": "Tras la guerra de Ender, los niños de la Escuela de Batalla regresan a una Tierra dividida por ambiciones políticas. Bean, el mejor aliado de Ender, debe enfrentarse a un estratega brillante que busca conquistar el mundo."
   },
   {
@@ -608,7 +608,7 @@
     "dateRead": "2011-03",
     "genre": "Sci-Fi",
     "isbn": "9788466617758",
-    "series": "Saga de la Sombra",
+    "series": "Saga de Ender",
     "synopsis": "Bean y Petra buscan un lugar seguro mientras intentan recuperar a sus hijos perdidos en un mundo al borde del colapso. La historia mezcla el thriller político con la búsqueda personal de un hogar."
   },
   {
@@ -620,7 +620,7 @@
     "dateRead": "2011-03",
     "genre": "Sci-Fi",
     "isbn": "9788466624503",
-    "series": "Saga de la Sombra",
+    "series": "Saga de Ender",
     "synopsis": "El equilibrio de poder en la Tierra se decide en una serie de conflictos militares globales. Bean debe aceptar su destino genético mientras ayuda a unificar el planeta bajo un solo gobierno antes de que se agote su tiempo."
   },
   {
@@ -714,9 +714,9 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2011-04",
-    "genre": "Aventuras",
+    "genre": "",
     "isbn": "9788499700304",
-    "series": "Assassin's Creed",
+    "series": "",
     "synopsis": "Ezio Auditore, un joven noble de Florencia, se convierte en un asesino tras la traición a su familia. En su búsqueda de venganza, descubre una conspiración ancestral que involucra a los Templarios y reliquias de una civilización perdida."
   },
   {
@@ -750,7 +750,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2011-05",
-    "genre": "Infantil",
+    "genre": "",
     "isbn": "9788427200425",
     "series": "",
     "synopsis": "Un relato que explora la vida de un hombre a través de múltiples reencarnaciones o facetas, analizando la naturaleza humana desde diferentes perspectivas. Es una obra introspectiva sobre el destino y las segundas oportunidades."
@@ -774,7 +774,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2011-09",
-    "genre": "Clásico",
+    "genre": "",
     "isbn": "9788420651163",
     "series": "",
     "synopsis": "Iván Ilitch, un alto funcionario judicial, se enfrenta a una enfermedad terminal que lo obliga a reflexionar sobre la vacuidad de su vida burguesa. Una obra maestra sobre la alienación, el sufrimiento y la búsqueda de significado ante la muerte."
@@ -920,7 +920,7 @@
     "dateRead": "2012-08",
     "genre": "Sci-Fi",
     "isbn": "9788401331077",
-    "series": "Saga Dune",
+    "series": "Dune",
     "synopsis": "Paul Atreides viaja al planeta desértico Arrakis, la única fuente de la especia que permite el viaje estelar. Allí debe liderar a los nativos en una revolución religiosa y política para vengar a su familia y controlar el universo."
   },
   {
@@ -930,9 +930,9 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2012-08",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "057501587X",
-    "series": "Saga de Rama",
+    "series": "",
     "synopsis": "Un cilindro alienígena gigante entra en el sistema solar y un equipo de astronautas es enviado a explorarlo. Lo que encuentran dentro es un mundo autosuficiente y enigmático que ignora por completo la presencia humana."
   },
   {
@@ -942,7 +942,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2012-08",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "9788445074219",
     "series": "",
     "synopsis": "Científicos del año 1998 intentan enviar mensajes al pasado para advertir sobre un desastre ecológico inminente. La historia sigue simultáneamente a los investigadores del futuro y a los físicos de 1962 que reciben las señales."
@@ -954,9 +954,9 @@
     "language": "Inglés",
     "cover": " ",
     "dateRead": "2012-08",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "9780345435293",
-    "series": "Cheela",
+    "series": "",
     "synopsis": "En la superficie de una estrella de neutrones, donde la gravedad es extrema, evoluciona una especie inteligente llamada los Cheela. El tiempo para ellos pasa miles de veces más rápido, permitiéndoles superar la tecnología humana en días."
   },
   {
@@ -966,9 +966,9 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2012-08",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "9788445073861",
-    "series": "Mesklin",
+    "series": "",
     "synopsis": "En Mesklin, un planeta con una gravedad variable y devastadora, un capitán nativo ayuda a los humanos a recuperar una sonda perdida. Es una aventura de supervivencia científica en uno de los entornos más extraños de la galaxia."
   },
   {
@@ -978,9 +978,9 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2012-09",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "9780345020468",
-    "series": "Mundo Anillo",
+    "series": "",
     "synopsis": "Un equipo de exploradores descubre una estructura artificial gigantesca en forma de anillo que rodea una estrella. Su misión es explorar la superficie inabarcable del anillo y descubrir quiénes fueron sus constructores."
   },
   {
@@ -1004,7 +1004,7 @@
     "dateRead": "2013-05",
     "genre": "Sci-Fi",
     "isbn": "9780441012350",
-    "series": "Tecnoscuridad",
+    "series": "",
     "synopsis": "En un mundo donde la tecnología ha colapsado o se ha vuelto contra sus creadores, los supervivientes luchan en una nueva era bárbara. Se explora el miedo a la dependencia tecnológica y la fragilidad de la civilización."
   },
   {
@@ -1016,7 +1016,7 @@
     "dateRead": "2013-06",
     "genre": "Fantasía",
     "isbn": "9788466653060",
-    "series": "Infinity Blade",
+    "series": "",
     "synopsis": "Siris se enfrenta al Rey Dios en un ciclo infinito de reencarnaciones y batallas por el control de la Espada del Infinito. Una historia de fantasía épica sobre el destino, el sacrificio y el fin de la inmortalidad."
   },
   {
@@ -1050,7 +1050,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2013-09",
-    "genre": "Literatura",
+    "genre": "",
     "isbn": "9788433920218",
     "series": "",
     "synopsis": "Dos jóvenes buscan la iluminación espiritual a través del budismo zen, la poesía y el senderismo por las montañas de California. Una obra clave de la generación beat que celebra la libertad y la conexión con la naturaleza."
@@ -1146,7 +1146,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2014-06",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "9788401337482",
     "series": "",
     "synopsis": "Frank Schätzing explora una crisis energética global que lleva a la humanidad a colonizar la Luna en busca de helio-3. La trama mezcla el espionaje corporativo con los peligros tecnológicos en una carrera por el control de los recursos espaciales."
@@ -1182,7 +1182,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2015-07",
-    "genre": "Misterio",
+    "genre": "Thriller",
     "isbn": "9788467041538",
     "series": "",
     "synopsis": "Diez desconocidos son invitados a una isla privada donde, uno a uno, comienzan a ser asesinados siguiendo una antigua canción infantil. Atrapados y sin salida, deben descubrir quién entre ellos es el asesino antes de que no quede nadie."
@@ -1232,7 +1232,7 @@
     "dateRead": "2015-08",
     "genre": "Fantasía",
     "isbn": "9788492472628",
-    "series": "Cuentos de Dunk y Egg",
+    "series": "Canción de hielo y fuego",
     "synopsis": "Siglos antes de Juego de Tronos, el joven escudero Dunk asume la identidad de un caballero tras la muerte de su maestro. En un torneo, se cruza con un niño llamado Egg, que oculta una identidad real que cambiará el destino de ambos."
   },
   {
@@ -1244,7 +1244,7 @@
     "dateRead": "2015-08",
     "genre": "Fantasía",
     "isbn": "9781417752409",
-    "series": "Cuentos de Dunk y Egg",
+    "series": "Canción de hielo y fuego",
     "synopsis": "Dunk y Egg sirven a un pequeño señor en una tierra azotada por la sequía y los conflictos de límites. La historia profundiza en las secuelas de la Rebelión Fuegoscuro y la complejidad de los juramentos de lealtad en Poniente."
   },
   {
@@ -1254,9 +1254,9 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2015-08",
-    "genre": "Fantasía",
+    "genre": "Terror",
     "isbn": "9788448003616",
-    "series": "Trilogia de von carstein",
+    "series": "",
     "synopsis": "La saga narra el ascenso y la caída de los más poderosos condes vampiros del mundo de Warhammer. Desde Sylvania, Vlad e Isabella lanzan sus huestes de no-muertos contra el Imperio en una lucha sangrienta por el poder eterno."
   },
   {
@@ -1266,7 +1266,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2016-11",
-    "genre": "Literatura",
+    "genre": "",
     "isbn": "9788420443003",
     "series": "",
     "synopsis": "Una misteriosa epidemia de ceguera blanca se extiende por una ciudad, provocando el colapso de la sociedad y revelando lo peor de la naturaleza humana. Un pequeño grupo intenta sobrevivir en medio del caos, guiado por una mujer que aún puede ver."
@@ -1292,7 +1292,7 @@
     "dateRead": "2016-11",
     "genre": "Sci-Fi",
     "isbn": "9788466654876",
-    "series": "Saga de Ender: Primera Guerra Fórmica",
+    "series": "Saga de Ender",
     "synopsis": "En esta precuela de El Juego de Ender, una nave alienígena entra en el sistema solar mucho antes de la guerra definitiva. La humanidad, desorganizada y sin tecnología militar espacial, debe aprender a luchar por su supervivencia."
   },
   {
@@ -1304,7 +1304,7 @@
     "dateRead": "2016-11",
     "genre": "Sci-Fi",
     "isbn": "9788466654883",
-    "series": "Saga de Ender: Primera Guerra Fórmica",
+    "series": "Saga de Ender",
     "synopsis": "La invasión alienígena llega a la Tierra y las primeras batallas se libran en el terreno. La resistencia humana empieza a formarse entre mineros espaciales y soldados que descubren cómo dañar la tecnología de los Insectores."
   },
   {
@@ -1316,7 +1316,7 @@
     "dateRead": "2016-12",
     "genre": "Sci-Fi",
     "isbn": "9780765367389",
-    "series": "Saga de Ender: Primera Guerra Fórmica",
+    "series": "Saga de Ender",
     "synopsis": "La primera guerra contra los Insectores llega a su punto crítico mientras la humanidad intenta unir sus fuerzas tecnológicas. Es el cierre de la trilogía que explica cómo se formó la Flota Internacional y la Escuela de Batalla."
   },
   {
@@ -1340,7 +1340,7 @@
     "dateRead": "2016-12",
     "genre": "Sci-Fi",
     "isbn": "9788466652612",
-    "series": "Saga de la Sombra",
+    "series": "Saga de Ender",
     "synopsis": "Bean y sus hijos viajan por el espacio buscando una cura para su gigantismo genético mientras escapan de sus enemigos en la Tierra. Es un relato de supervivencia y legado familiar en la inmensidad del cosmos."
   },
   {
@@ -1400,7 +1400,7 @@
     "dateRead": "2017-06",
     "genre": "Terror",
     "isbn": "9788477028161",
-    "series": "Mitos de Cthulhu",
+    "series": "",
     "synopsis": "Un investigador descubre documentos que revelan la existencia de un culto ancestral dedicado a una deidad cósmica durmiente. Es el pilar del horror cósmico, donde el conocimiento de la verdad conduce inevitablemente a la locura."
   },
   {
@@ -1446,7 +1446,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2018-08",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "9780312863555",
     "series": "",
     "synopsis": "Los habitantes de las colonias lunares inician una revolución contra el control de la Tierra con la ayuda de una inteligencia artificial sensible. Una obra maestra de la ciencia ficción sobre la libertad, la política y la rebelión espacial."
@@ -1458,9 +1458,9 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2018-08",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "9780312098100",
-    "series": "La guerra interminable",
+    "series": "",
     "synopsis": "Debido a la dilatación temporal de los viajes espaciales, los soldados que luchan contra alienígenas regresan a una Tierra que ya no reconocen. Es una metáfora cruda sobre la alienación militar y el sinsentido de los conflictos bélicos."
   },
   {
@@ -1506,7 +1506,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2019-06",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "9788498004540",
     "series": "",
     "synopsis": "En 1912, Europa desaparece de la noche a la mañana y es sustituida por una extraña selva prehistórica llena de criaturas fantásticas. Un fotógrafo se une a una expedición para explorar este nuevo continente en una aventura que esconde un secreto sobre la naturaleza de nuestra realidad."
@@ -1518,9 +1518,9 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2019-07",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "9780312851231",
-    "series": "Trilogía de Mayflower",
+    "series": "",
     "synopsis": "Narra la historia de un 'simio mejorado' genéticamente cuya función es servir de testigo y cronista para una familia de científicos en una nave espacial. Es una mirada cínica y profunda sobre la libertad, la esclavitud y la soberbia humana frente a la naturaleza."
   },
   {
@@ -1724,7 +1724,7 @@
     "dateRead": "2023-01",
     "genre": "Sci-Fi",
     "isbn": "9788416401918",
-    "series": "Star Wars: Thrawn",
+    "series": "Star Wars",
     "synopsis": "Explora los orígenes en el Imperio del Gran Almirante Thrawn, un genio táctico de piel azul y raza Chiss. Narra su ascenso meteórico a través de la jerarquía militar imperial gracias a su capacidad única para analizar el arte y la psicología de sus enemigos."
   },
   {
@@ -1734,7 +1734,7 @@
     "language": "Español",
     "cover": " ",
     "dateRead": "2023-01",
-    "genre": "Sci-Fi",
+    "genre": "Hard Sci-Fi",
     "isbn": "9780593135204",
     "series": "",
     "synopsis": "Un hombre despierta en una nave espacial sin recordar quién es ni cómo llegó allí, descubriendo que es el único superviviente de una misión para salvar al Sol. Con ayuda de la ciencia y un aliado inesperado, debe resolver un rompecabezas cósmico."
@@ -1904,7 +1904,7 @@
     "dateRead": "2025-08",
     "genre": "Fantasía",
     "isbn": "9780765311740",
-    "series": "Elantris",
+    "series": "",
     "synopsis": "La ciudad de los dioses se ha convertido en una cárcel para aquellos afectados por una extraña maldición que les impide morir pero los mantiene en constante dolor. Un príncipe caído intenta descubrir el secreto de la magia perdida para salvar a su pueblo."
   },
   {
