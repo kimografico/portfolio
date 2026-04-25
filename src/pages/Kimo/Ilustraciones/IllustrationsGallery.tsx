@@ -40,16 +40,11 @@ export default function IllustrationsGallery({
                   <span className="illustration-overlay-text">Ver detalles →</span>
                 </div>
               )}
-            </div>
-            {hoveredId === illustration.id && (
               <div className="illustration-info">
                 <h3 className="illustration-title">{illustration.nombre}</h3>
-                {illustration.cliente && (
-                  <p className="illustration-meta">{illustration.cliente}</p>
-                )}
                 {illustration.fecha && <p className="illustration-meta">{illustration.fecha}</p>}
               </div>
-            )}
+            </div>
           </button>
         ))}
       </div>
