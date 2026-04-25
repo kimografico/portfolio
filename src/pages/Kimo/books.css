@@ -1,28 +1,3 @@
-/* Color de acento para la flecha de ordenación activa */
-.arrow-accent {
-  color: var(--color-accent, #e11d48);
-  transition: color 0.2s;
-}
-/* Color gris para la flecha de ordenación cuando no está activa */
-.arrow-grey {
-  color: #d1d5db; /* text-gray-300 */
-  transition: color 0.2s;
-}
-.group:hover .arrow-grey {
-  color: #9ca3af; /* text-gray-400 */
-}
-/* Flecha de ordenación en el encabezado de la tabla de libros */
-.table-sort-arrow {
-  margin-left: 0.25rem; /* ml-1 de Tailwind = 4px */
-  font-size: 0.75rem; /* text-xs de Tailwind = 12px */
-  transition: color 0.2s;
-}
-/* Encabezado de columna de tabla de libros */
-.table-header-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem; /* gap-1 de Tailwind = 4px */
-}
 /* Galería de portadas de libros */
 .bookshelf-grid {
   display: grid;
@@ -78,7 +53,8 @@
   display: block;
   user-select: none;
 }
-/* books.css: estilos responsivos para los filtros de BooksTable y BooksGallery */
+
+/* Estilos responsivos para los filtros de BooksTable y BooksGallery */
 
 @media (max-width: 767px) {
   /* En móvil: todos los filtros apilados verticalmente */

@@ -1,0 +1,60 @@
+/* ======================================
+   ESTILOS UNIFICADOS PARA TABLAS
+   ====================================== */
+
+/* Tabla base */
+.table-main {
+  @apply min-w-full border-separate border-spacing-y-1 text-sm;
+}
+
+/* Fila de tabla */
+.table-row {
+  @apply bg-white transition-colors;
+}
+
+/* Fila interactiva (con clic) - hover blanco con transición suave */
+.table-row-interactive {
+  @apply cursor-pointer hover:bg-accent hover:text-white;
+}
+
+/* Celda de tabla */
+.table-cell {
+  @apply px-3 py-2 align-middle;
+}
+
+/* Encabezado de columna */
+.table-header-cell {
+  @apply px-3 py-2 text-left font-semibold select-none cursor-pointer;
+  color: var(--color-muted);
+}
+
+/* Etiqueta del encabezado (contiene título + flechas) */
+.table-header-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem; /* 4px */
+}
+
+/* Flecha de ordenación */
+.table-sort-arrow {
+  margin-left: 0.25rem; /* 4px */
+  font-size: 0.75rem; /* 12px */
+  transition: color 0.2s;
+}
+
+/* Flecha activa (color accent) */
+.sort-arrow-active {
+  color: var(--color-accent, #e11d48);
+  transition: color 0.2s;
+}
+
+/* Flecha inactiva (gris) */
+.sort-arrow-inactive {
+  color: #d1d5db; /* text-gray-300 */
+  transition: color 0.2s;
+}
+
+/* Flecha inactiva en hover */
+.sort-arrow-inactive:hover {
+  color: #9ca3af; /* text-gray-400 */
+}
