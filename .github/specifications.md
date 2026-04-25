@@ -47,34 +47,34 @@ Portfolio personal y espacio privado de Kimo (diseñador gráfico y desarrollado
 │                                                     │
 │  ┌──────────────┐        ┌────────────────────────┐ │
 │  │   Repo       │──push──▶   GitHub Actions (CI)  │ │
-│  │  /frontend   │        │   lint → test → build  │ │
+│  │  /src        │        │   lint → test → build  │ │
 │  │  /data       │        └────────────┬───────────┘ │
 │  │  /public     │                     │ deploy       │
 │  └──────────────┘        ┌────────────▼───────────┐ │
 │                          │     GitHub Pages        │ │
-│                          │  kimografico.com        │ │
+│                          │ kimografico.github.io   │ │
+│                          │     /portfolio          │ │
 │                          └────────────────────────┘ │
 └─────────────────────────────────────────────────────┘
 ```
 
 **Stack:**
 
-| Capa                 | Tecnología                     |
-| -------------------- | ------------------------------ |
-| Frontend             | React 18 + TypeScript + Vite   |
-| Estilos              | Tailwind CSS                   |
-| Routing              | React Router v6                |
-| Tablas               | TanStack Table v8              |
-| Componentes aislados | Storybook 8                    |
-| Datos                | JSON estático en `/data/`      |
-| Imágenes             | `/public/images/` en el repo   |
-| Hosting              | GitHub Pages                   |
-| CI/CD                | GitHub Actions                 |
-| Formulario (MVP)     | `mailto:`                      |
-| Formulario (futuro)  | Node.js + Express + Nodemailer |
+| Capa                | Tecnología                     |
+| ------------------- | ------------------------------ |
+| Frontend            | React 18 + TypeScript + Vite   |
+| Estilos             | Tailwind CSS                   |
+| Routing             | React Router v6                |
+| Tablas              | TanStack Table v8              |
+| Datos               | JSON estático en `/src/data/`  |
+| Imágenes            | `/public/images/` en el repo   |
+| Hosting             | GitHub Pages                   |
+| CI/CD               | GitHub Actions                 |
+| Formulario (MVP)    | `mailto:`                      |
+| Formulario (futuro) | Node.js + Express + Nodemailer |
 
-**Decisión técnica — migración progresiva a Lit:**
-Los componentes de `basics/` y `combinations/` se implementarán inicialmente en TSX. Una vez estabilizada la lógica de negocio del proyecto, se valorará migrarlos a Lit (Web Components) como ejercicio de aprendizaje y para alinear con el stack de BBVA (Ember + Lit). La refactorización estará acotada a esas dos capas sin afectar páginas, rutas ni lógica de negocio.
+**Migración a Lit (Fase 6 — opcional):**
+Una vez estabilizado el proyecto, se valorará migrar los componentes de `basics/` y `combinations/` a Lit (Web Components) como ejercicio de aprendizaje y para alinear con el stack de BBVA (Ember + Lit). La refactorización estará acotada a esas dos capas sin afectar páginas, rutas ni lógica de negocio.
 
 ---
 
@@ -84,76 +84,104 @@ Los componentes de `basics/` y `combinations/` se implementarán inicialmente en
 kimografico/
 │
 ├── .github/
-│   └── workflows/
-│       ├── ci.yml           # Lint + tests en cada PR
-│       └── deploy.yml       # Build + deploy a GitHub Pages en push a main
+│   ├── workflows/
+│   │   ├── ci.yml           # Lint + tests en cada PR
+│   │   └── deploy.yml       # Build + deploy a GitHub Pages en push a main
+│   ├── skills/              # Skills para automatización y workflows
+│   └── copilot-instructions.md
 │
-├── frontend/
-│   ├── .storybook/
-│   │   ├── main.ts              # Configuración de Storybook (Vite builder)
-│   │   └── preview.ts           # Decoradores globales, importación de Tailwind
-│   ├── public/
-│   │   ├── favicon.ico          # Favicon principal
-│   │   ├── favicon-32.png       # Variante PNG 32×32
-│   │   ├── favicon-180.png      # Apple touch icon 180×180
-│   │   ├── robots.txt           # Disallow: /kimo
-│   │   ├── 404.html             # Workaround React Router + GitHub Pages
-│   │   └── images/
-│   │       ├── og-image.jpg     # Imagen Open Graph para previews sociales
-│   │       ├── diseno/          # Imágenes del portfolio de diseño
-│   │       ├── dev/             # Imágenes del portfolio de desarrollo
-│   │       └── personal/        # Imágenes de viajes y uso personal
+├── public/
+│   ├── favicon.ico          # Favicon principal
+│   ├── favicon-32.png       # Variante PNG 32×32
+│   ├── favicon-180.png      # Apple touch icon 180×180
+│   ├── robots.txt           # Disallow: /kimo
+│   ├── 404.html             # Workaround React Router + GitHub Pages
+│   └── images/
+│       ├── og-image.jpg     # Imagen Open Graph para previews sociales
+│       ├── books/           # Portadas de libros
+│       ├── diseno/          # Imágenes del portfolio de diseño
+│       ├── dev/             # Imágenes del portfolio de desarrollo
+│       └── places/          # Imágenes de viajes y lugares
+│
+├── src/
+│   ├── components/
+│   │   ├── basics/          # Átomos: Badge, Button, NavLink, ToggleVista...
+│   │   │   ├── Badge.tsx
+│   │   │   └── ...
+│   │   ├── combinations/    # Moléculas: LibroCard, ProyectoCard, CabeceraOrdenable...
+│   │   │   ├── LibroCard.tsx
+│   │   │   └── ...
+│   │   ├── compositions/    # Organismos: BooksGallery, BooksTable, PlacesTable...
+│   │   │   ├── BooksGallery.tsx
+│   │   │   ├── BooksTable.tsx
+│   │   │   ├── PlacesTable.tsx
+│   │   │   └── ...
+│   │   ├── layout/          # Header, Footer, Layout, MainLayout
+│   │   │   ├── MainLayout.tsx
+│   │   │   ├── MainHeader.tsx
+│   │   │   └── ...
+│   │   ├── iconos/          # Iconos SVG reutilizables como componentes React
+│   │   │   ├── IconMail.tsx
+│   │   │   ├── IconUser.tsx
+│   │   │   ├── index.ts
+│   │   │   └── iconos.css
+│   │   └── ui/              # Componentes de UI reciclables
+│   │       └── UIButton.tsx
 │   │
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── basics/          # Átomos: Badge, Button, NavLink, ToggleVista...
-│   │   │   │   ├── Badge.tsx
-│   │   │   │   ├── Badge.stories.tsx
-│   │   │   │   └── ...
-│   │   │   │                    # (→ candidatos a migrar a Lit en el futuro)
-│   │   │   ├── combinations/    # Moléculas: LibroCard, ProyectoCard, CabeceraOrdenable...
-│   │   │   │   ├── LibroCard.tsx
-│   │   │   │   ├── LibroCard.stories.tsx
-│   │   │   │   └── ...
-│   │   │   │                    # (→ candidatos a migrar a Lit en el futuro)
-│   │   │   ├── compositions/    # Organismos: LibrosGaleria, LibrosTabla, LugaresTabla...
-│   │   │   │   ├── LibrosTabla.tsx
-│   │   │   │   ├── LibrosTabla.stories.tsx
-│   │   │   │   └── ...
-│   │   │   └── layout/          # Header, Footer, Layout, LayoutPersonal
-│   │   │       ├── Header.tsx
-│   │   │       ├── Header.stories.tsx
-│   │   │       └── ...
-│   │   │
-│   │   ├── pages/               # Una carpeta por sección principal
-│   │   │   ├── Home/
-│   │   │   ├── Diseno/
-│   │   │   ├── Dev/
-│   │   │   └── Personal/
-│   │   │       ├── Libros/      # PaginaLibros.tsx — orquesta, sin lógica visual
-│   │   │       └── Lugares/     # PaginaLugares.tsx — orquesta, sin lógica visual
-│   │   │
-│   │   ├── types/               # Interfaces TypeScript de los modelos
-│   │   │   └── index.ts
-│   │   │
-│   │   ├── data/                # Funciones para leer los JSON
-│   │   │   └── loaders.ts
-│   │   │
-│   │   ├── App.tsx              # Definición de rutas
-│   │   └── main.tsx             # Entry point
+│   ├── pages/               # Una carpeta por sección principal
+│   │   ├── Home/
+│   │   ├── GraphicDesign/
+│   │   ├── Dev/
+│   │   ├── ContactMe/
+│   │   ├── Kimo/
+│   │   │   ├── KimoLayout.tsx     # Layout para sección personal
+│   │   │   ├── BooksPage.tsx      # Galería y tabla de libros
+│   │   │   ├── BooksGallery.tsx   # Componente galería de libros
+│   │   │   ├── BooksTable.tsx     # Componente tabla de libros
+│   │   │   ├── PlacesPage.tsx     # Tabla de lugares visitados
+│   │   │   ├── PlacesTable.tsx    # Componente tabla de lugares
+│   │   │   ├── IconGallery.tsx    # Galería de iconos del proyecto
+│   │   │   └── espacio-personal.css
+│   │   └── NotFoundPage.tsx
 │   │
-│   ├── index.html
-│   ├── vite.config.ts
-│   ├── tailwind.config.ts
-│   └── tsconfig.json
+│   ├── data/                # Datos JSON y funciones para leerlos
+│   │   ├── books.json
+│   │   ├── places.json
+│   │   ├── recent-works.json
+│   │   └── loaders.ts
+│   │
+│   ├── interfaces/          # Interfaces y tipos centralizados
+│   │   └── ui.ts
+│   │
+│   ├── styles/              # Estilos globales y compartidos
+│   │   └── tableStyles.ts
+│   │
+│   ├── App.tsx              # Definición de rutas
+│   ├── App.test.tsx
+│   ├── main.tsx             # Entry point
+│   ├── index.css
+│   ├── App.css
+│   ├── variables.css
+│   ├── setupTests.ts
+│   └── types/
+│       └── index.ts
 │
-├── data/                    # Contenido de la web en JSON
-│   ├── portfolio-diseno.json
-│   ├── portfolio-dev.json
-│   ├── books.json
-│   └── trips.json
+├── tests/                   # Tests de integración y unitarios
+│   └── NotFoundPage.test.tsx
 │
-└── spec.md                  # Este documento
+├── index.html
+├── vite.config.ts
+├── vitest.config.ts
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json             # Scripts: dev, build, lint, typecheck, test
+├── pnpm-lock.yaml
+├── tsconfig.json
+├── tsconfig.app.json
+├── tsconfig.node.json
+├── eslint.config.js
+├── README.md
+└── .github/specifications.md  # Este documento
 ```
 
 ---
@@ -177,16 +205,16 @@ interface ProyectoDiseno {
 }
 
 type CategoriaDiseno =
-  | "logotipos"
-  | "web"
-  | "editorial"
-  | "papeleria"
-  | "carteleria"
-  | "multimedia"
-  | "ilustracion"
-  | "packaging"
-  | "3d"
-  | "otros";
+  | 'logotipos'
+  | 'web'
+  | 'editorial'
+  | 'papeleria'
+  | 'carteleria'
+  | 'multimedia'
+  | 'ilustracion'
+  | 'packaging'
+  | '3d'
+  | 'otros';
 ```
 
 ### 4.2 Proyecto de desarrollo
@@ -206,22 +234,23 @@ interface ProyectoDev {
   destacado: boolean;
 }
 
-type CategoriaDev = "web" | "mobile" | "cli" | "libreria" | "otros";
+type CategoriaDev = 'web' | 'mobile' | 'cli' | 'libreria' | 'otros';
 ```
 
 ### 4.3 Libro
 
 ```typescript
 interface Libro {
-  id: string;
-  titulo: string;
-  autor: string;
-  idioma: string; // ej: "Español", "Inglés", "Francés"
-  caratula: string; // ruta relativa: "/images/personal/libros/nombre-libro.jpg"
-  fechaFinLectura: string; // formato "YYYY-MM"
-  genero: string; // ej: "Fantasía", "Ensayo", "Novela negra"
-  recomendadoPor?: string; // nombre de quien lo recomendó (opcional)
-  isbn?: string; // ISBN-13 sin guiones, ej: "9788490705834" — usado para fallback de portada via OpenLibrary
+  id: string; // slug único, coincide con nombre de portada
+  titulo: string; // título del libro
+  autor: string; // nombre del autor
+  portada: string; // ruta relativa: "/images/books/nombre-libro.jpg"
+  fecha: string; // formato "YYYY-MM-DD" (siempre completa, día 01 si falta)
+  idioma: string; // código ISO 639-1: "es", "en", "fr", etc. (por defecto "es")
+  genero: string; // ej: "Ficción", "Ensayo", "Novela Gráfica" (buscado automáticamente si falta)
+  sinopsis: string; // breve descripción del libro (buscada automáticamente si falta)
+  serie?: string; // nombre de la serie si aplica (opcional, buscada automáticamente si falta)
+  isbn?: string; // ISBN-13 sin guiones, ej: "9788490705834" (opcional)
 }
 ```
 
@@ -233,12 +262,13 @@ interface Libro {
     "id": "el-nombre-del-viento",
     "titulo": "El nombre del viento",
     "autor": "Patrick Rothfuss",
-    "idioma": "Español",
-    "caratula": "/images/books/el-nombre-del-viento.jpg",
-    "fechaLectura": "2023-04",
+    "portada": "/images/books/el-nombre-del-viento.jpg",
+    "fecha": "2023-04-15",
+    "idioma": "es",
     "genero": "Fantasía",
-    "isbn": "9788401352836",
-    "synopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    "sinopsis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "serie": "The Kingkiller Chronicle",
+    "isbn": "9788401352836"
   }
 ]
 ```
@@ -253,9 +283,9 @@ interface Libro {
 **Vista tabla — comportamiento:**
 
 - Sin carátula
-- Columnas: Título · Autor · Idioma · Género · Fecha de lectura · Recomendado por
+- Columnas: Título · Autor · Idioma · Género · Fecha · Serie
 - Cualquier columna es ordenable (click en cabecera, segundo click invierte el orden)
-- Ordenada por `fechaLectura` descendente por defecto
+- Ordenada por `fecha` descendente por defecto (más reciente primero)
 
 **Controles de la página:**
 
@@ -277,14 +307,14 @@ interface LugarEspecifico {
   };
 }
 
-interface Visita {
+interface Lugar {
   id: string;
-  pais: string;
-  codigoPais: string; // ISO 3166-1 alpha-2, ej: "JP", "FR" (necesario para el mapa futuro)
-  fechaVisita: string; // formato "YYYY-MM"
-  lugares: LugarEspecifico[]; // lugares concretos visitados dentro del país
-  acompañantes?: string[]; // nombres (opcional)
-  notas?: string;
+  pais: string; // nombre del país visitado
+  codigoPais: string; // ISO 3166-1 alpha-2, ej: "JP", "FR" (para mapa futuro)
+  date: string; // formato "YYYY-MM-DD"
+  city: string; // ciudad principal o entrada
+  place: string; // lugar específico visitado
+  people?: string; // personas que acompañaron (opcional)
 }
 ```
 
@@ -293,27 +323,30 @@ interface Visita {
 ```json
 [
   {
-    "id": "japon-2022",
+    "id": "japon-2022-tokyo",
     "pais": "Japón",
     "codigoPais": "JP",
-    "fechaVisita": "2022-09",
-    "lugares": [
-      { "nombre": "Tokio", "coordenadas": { "lat": 35.6762, "lng": 139.6503 } },
-      { "nombre": "Kioto", "coordenadas": { "lat": 35.0116, "lng": 135.7681 } },
-      { "nombre": "Osaka", "coordenadas": { "lat": 34.6937, "lng": 135.5023 } }
-    ],
-    "acompañantes": ["Laura"],
-    "notas": "Viaje de tres semanas, época de los momiji."
+    "date": "2022-09-15",
+    "city": "Tokio",
+    "place": "Templo Senso-ji",
+    "people": "Laura, María"
+  },
+  {
+    "id": "japon-2022-kyoto",
+    "pais": "Japón",
+    "codigoPais": "JP",
+    "date": "2022-09-20",
+    "city": "Kioto",
+    "place": "Bosque de bambú de Arashiyama"
   }
 ]
 ```
 
 **Vista tabla — comportamiento:**
 
-- Columnas: Fecha · País · Lugares visitados · Acompañantes · Notas
-- La columna "Lugares visitados" muestra los nombres separados por coma: "Tokio, Kioto, Osaka"
-- Ordenable por: Fecha, País
-- Ordenada por `fechaVisita` descendente por defecto
+- Columnas: Fecha · País · Ciudad · Lugar · Personas
+- Ordenable por: Fecha, País, Ciudad, Lugar
+- Ordenada por `date` descendente por defecto (más reciente primero)
 
 **Nota sobre el mapa (fase posterior):**
 El campo `codigoPais` (ISO 3166-1 alpha-2) se añade ahora en el JSON para no tener que rellenar todos los registros cuando se implemente el mapa. El mapa usará este código para colorear los países visitados, y las `coordenadas` de cada `LugarEspecifico` para añadir marcadores. La librería candidata es `react-simple-maps` (SVG puro, sin dependencias de Google Maps, sin coste).
@@ -322,25 +355,23 @@ El campo `codigoPais` (ISO 3166-1 alpha-2) se añade ahora en el JSON para no te
 
 ## 5. Rutas
 
-| Ruta            | Componente              | Notas                        |
-| --------------- | ----------------------- | ---------------------------- |
-| `/`             | `Home`                  | Landing pública              |
-| `/diseno`       | `PortfolioDiseno`       | Grid filtrable por categoría |
-| `/diseno/:id`   | `ProyectoDisenoDetalle` | Detalle de un proyecto       |
-| `/dev`          | `PortfolioDev`          | Grid filtrable por categoría |
-| `/dev/:id`      | `ProyectoDevDetalle`    | Detalle de un proyecto       |
-| `/cv`           | `Curriculum`            | CV interactivo               |
-| `/contacto`     | `Contacto`              | Formulario / mailto:         |
-| `/kimo`         | `Personal`              | Sección oculta, no indexada  |
-| `/kimo/libros`  | `Libros`                | Lista de libros leídos       |
-| `/kimo/lugares` | `Lugares`               | Lista de lugares visitados   |
+| Ruta              | Componente          | Notas                       |
+| ----------------- | ------------------- | --------------------------- |
+| `/`               | `Home`              | Landing pública             |
+| `/graphic-design` | `GraphicDesignHome` | Portfolio de diseño gráfico |
+| `/dev`            | `PortfolioDev`      | Portfolio de desarrollo     |
+| `/contacto`       | `ContactMe`         | Formulario / mailto:        |
+| `/kimo`           | `KimoLayout`        | Sección oculta, no indexada |
+| `/kimo/books`     | `BooksPage`         | Galería y tabla de libros   |
+| `/kimo/places`    | `PlacesPage`        | Tabla de lugares visitados  |
 
-**Notas sobre la sección personal:**
+**Notas sobre la sección personal (/kimo):**
 
 - La ruta `/kimo` no aparece en ningún menú público
-- Cada página bajo `/kimo` incluye `<meta name="robots" content="noindex, nofollow">`
+- Cada página bajo `/kimo` incluye `<meta name="robots" content="noindex, nofollow">` (no indexada por buscadores)
 - No hay autenticación en el MVP (seguridad por oscuridad)
 - Autenticación simple (PIN o contraseña) se puede añadir en una fase posterior si se desea
+- URL raíz: https://kimografico.github.io/portfolio/kimo
 
 ---
 
@@ -364,31 +395,27 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "pnpm"
-          cache-dependency-path: frontend/pnpm-lock.yaml
+          cache: 'pnpm'
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-        working-directory: frontend
 
       - name: Lint
         run: pnpm run lint
-        working-directory: frontend
 
       - name: Type check
-        run: pnpm run typecheck
-        working-directory: frontend
+        run: pnpm run check
 
       - name: Tests
         run: pnpm run test
-        working-directory: frontend
 
       - name: Check image sizes
         run: |
           WARN_BYTES=716800      # 700 KB — aviso, pero no bloquea
           BLOCK_BYTES=1024000    # 1000 KB — bloquea el pipeline
           FAILED=0
-          find frontend/public/images -type f \
+          find public/images -type f \
             \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" -o -name "*.webp" \) | \
           while read img; do
             size=$(stat -c%s "$img")
@@ -405,7 +432,6 @@ jobs:
 
       - name: Build
         run: pnpm run build
-        working-directory: frontend
 ```
 
 ### `deploy.yml` — Se ejecuta en cada push a `main`
@@ -428,22 +454,20 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "pnpm"
-          cache-dependency-path: frontend/pnpm-lock.yaml
+          cache: 'pnpm'
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-        working-directory: frontend
 
       - name: Build
         run: pnpm run build
-        working-directory: frontend
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: frontend/dist
+          publish_dir: dist
 ```
 
 ---
@@ -459,19 +483,17 @@ jobs:
 #### 1.1 Setup del proyecto
 
 - [x] Crear repo en GitHub
-- [ ] Inicializar proyecto con Vite + React + TypeScript
-- [ ] Configurar Tailwind CSS
-- [ ] Configurar ESLint + Prettier
-- [ ] Configurar Vitest (testing)
-- [ ] Instalar TanStack Table v8 (`@tanstack/react-table`)
-- [ ] Instalar y configurar Storybook 8 (`npx storybook@latest init`)
-- [ ] Verificar que Storybook arranca con `npm run storybook` y lee los estilos de Tailwind
-- [ ] Añadir scripts en `package.json`: `dev`, `build`, `lint`, `typecheck`, `test`, `storybook`, `build-storybook`
-- [ ] Configurar `vite.config.ts` para GitHub Pages (`base: '/kimografico'` o dominio propio)
-- [ ] Añadir `favicon.ico` y variantes PNG en `/public/`
-- [ ] Crear `robots.txt` en `/public/` con `Disallow: /kimo`
-- [ ] Crear `404.html` en `/public/` con script de redirección para React Router (ver nota)
-- [ ] Configurar meta tags Open Graph en `index.html`: título, descripción, imagen de preview, URL canónica
+- [x] Inicializar proyecto con Vite + React + TypeScript
+- [x] Configurar Tailwind CSS
+- [x] Configurar ESLint + Prettier
+- [x] Configurar Vitest (testing)
+- [x] Instalar TanStack Table v8 (`@tanstack/react-table`)
+- [x] Añadir scripts en `package.json`: `dev`, `build`, `lint`, `check`, `test`
+- [x] Configurar `vite.config.ts` para GitHub Pages (`base: '/portfolio'`)
+- [x] Añadir `favicon.ico` y variantes PNG en `/public/`
+- [x] Crear `robots.txt` en `/public/` con `Disallow: /kimo`
+- [x] Crear `404.html` en `/public/` con script de redirección para React Router
+- [x] Configurar meta tags Open Graph en `index.html`
 
 > **Nota sobre el 404 y GitHub Pages:** cuando alguien accede directamente a una URL como `/diseno/colordmar`, GitHub Pages devuelve su propia 404 porque no encuentra ese archivo estático. La solución estándar es añadir un `404.html` que redirige silenciosamente a `index.html` pasando la ruta como parámetro, y un pequeño script en `index.html` que la restaura antes de que React Router tome el control. Es un workaround conocido, no elegante, pero funciona perfectamente.
 
@@ -483,47 +505,51 @@ jobs:
 
 #### 1.3 Estructura base
 
-- [ ] Definir interfaces TypeScript en `src/types/index.ts`
-- [ ] Crear `Header` y `Footer` básicos
-- [ ] Configurar React Router con todas las rutas definidas en §5
-- [ ] Crear páginas vacías (placeholder) para todas las rutas
-- [ ] Crear la primera story (`Badge.stories.tsx`) como prueba de que Storybook funciona con Tailwind
+- [x] Definir interfaces TypeScript en `src/types/index.ts`
+- [x] Crear `Header` y `Footer` básicos
+- [x] Configurar React Router con todas las rutas definidas en §5
+- [x] Crear páginas vacías (placeholder) para todas las rutas
 
-> **Convención de stories:** cada componente en `basics/`, `combinations/` y `compositions/` tendrá su archivo `.stories.tsx` al lado. Las stories documentan los estados relevantes del componente (default, variantes, casos límite). No es obligatorio cubrir el 100% desde el principio, pero sí crear la story en el mismo momento que el componente.
+> **Convención de componentes:** cada componente en `basics/`, `combinations/` y `compositions/` se implementará con su lógica clara y autoexplicativa. Se valorará el uso de Storybook en una fase posterior para documentar visualmente los componentes.
 
 #### 1.4 Datos mock
 
-- [ ] `data/libros.json` con 3 libros de ejemplo
-- [ ] `data/lugares.json` con 3 lugares de ejemplo
-- [ ] `data/portfolio-diseno.json` con 2 proyectos de ejemplo
-- [ ] `data/portfolio-dev.json` con 1 proyecto de ejemplo
+- [x] `src/data/books.json` con libros de ejemplo
+- [x] `src/data/places.json` con lugares de ejemplo
+- [ ] `src/data/portfolio-diseno.json` con proyectos de diseño de ejemplo
+- [ ] `src/data/portfolio-dev.json` con proyectos de desarrollo de ejemplo
+- [x] `src/data/recent-works.json` con trabajos recientes
 
-#### 1.5 Sección personal — Libros (`/kimo/libros`)
+#### 1.5 Sección personal — Libros (`/kimo/books`)
 
-- [ ] Añadir `<meta name="robots" content="noindex, nofollow">` en páginas `/kimo`
-- [ ] Componente `LibroCard` con carátula, título y autor visibles; género, idioma y "Rec. por" en hover
-- [ ] Componente `LibrosTabla` con columnas: Título · Autor · Idioma · Género · Fecha · Recomendado por
-- [ ] Ordenación en tabla: click en cabecera ordena por esa columna, segundo click invierte
-- [ ] Toggle galería / tabla con persistencia en `localStorage`
-- [ ] Ambas vistas ordenadas por `fechaFinLectura` descendente por defecto
+- [x] Añadir `<meta name="robots" content="noindex, nofollow">` en páginas `/kimo`
+- [x] Componente `BooksGallery` con portada, título y autor; modal con ficha completa
+- [x] Componente `BooksTable` con columnas: Título · Autor · Idioma · Género · Fecha · Serie
+- [x] Ordenación en tabla: click en cabecera ordena por esa columna, segundo click invierte
+- [x] Toggle galería / tabla con persistencia en `localStorage`
+- [x] Ambas vistas ordenadas por `fecha` descendente por defecto (más reciente primero)
 
-#### 1.6 Sección personal — Lugares (`/kimo/lugares`)
+#### 1.6 Sección personal — Lugares (`/kimo/places`)
 
-- [ ] Componente `LugaresTabla` con columnas: Fecha · País · Lugares visitados · Acompañantes · Notas
-- [ ] Columna "Lugares visitados" muestra los nombres del array `lugares` separados por coma
-- [ ] Ordenable por Fecha y País (click en cabecera)
-- [ ] Ordenada por `fechaVisita` descendente por defecto
+- [x] Componente `PlacesTable` con columnas: Fecha · País · Ciudad · Lugar · Personas
+- [x] Ordenable por cualquier columna (click en cabecera)
+- [x] Ordenada por `date` descendente por defecto (más reciente primero)
+- [x] Icono de bandera para el país (emoji o componente)
+
+#### 1.7 Sección personal — Galería de iconos (`/kimo/iconos`)
+
+- [x] Componente `IconGallery` que renderiza automáticamente todos los iconos exportados
+- [x] Grid de iconos con hover interactivo (icono más grande, blanco, fondo accent)
+- [x] Sin necesidad de modificar el componente al añadir nuevos iconos (se añaden automáticamente)
 
 #### Tests de la Fase 1
 
-- [ ] Test unitario: `LibroCard` renderiza título y autor correctamente
-- [ ] Test unitario: `LibroCard` muestra "Rec. por X" solo cuando el campo existe
-- [ ] Test unitario: `LibrosTabla` ordena correctamente por autor al hacer click en la cabecera
-- [ ] Test unitario: `LibrosTabla` invierte el orden al hacer segundo click en la misma cabecera
-- [ ] Test unitario: `LugaresTabla` concatena los nombres de `lugares` correctamente
-- [ ] Test unitario: los datos mock cumplen las interfaces TypeScript (tipos bien formados)
-- [ ] Test de integración: la ruta `/kimo/libros` carga, renderiza las cards y el toggle funciona
-- [ ] Test de integración: la ruta `/kimo/lugares` carga y muestra la tabla con los datos mock
+- [x] Test unitario: `BooksGallery` renderiza la galería con portadas correctamente
+- [x] Test unitario: `BooksTable` ordena correctamente al hacer click en la cabecera
+- [x] Test unitario: `PlacesTable` renderiza los datos con formato correcto
+- [x] Test unitario: los datos mock cumplen las interfaces TypeScript (tipos bien formados)
+- [ ] Test de integración: la ruta `/kimo/books` carga, renderiza galería y tabla con toggle
+- [ ] Test de integración: la ruta `/kimo/places` carga y muestra la tabla con los datos
 
 ---
 
@@ -588,9 +614,9 @@ jobs:
 
 **Alcance:** únicamente las capas `basics/` y `combinations/`. Las `compositions/`, páginas, rutas y lógica de negocio no se tocan.
 
-**Condición para abordarla:** el proyecto debe estar estable y la lógica de cada componente bien conocida. Refactorizar sin ese conocimiento previo añade riesgo innecesario.
+**Condición para abordarla:** el proyecto debe estar estable (Fase 4 completada) y la lógica de cada componente bien conocida. Refactorizar sin ese conocimiento previo añade riesgo innecesario.
 
-- [ ] Crear un agente y las skills pertinentes para abordar las migraciones a lit
+- [ ] Crear un agente y las skills pertinentes para abordar las migraciones a Lit
 - [ ] Configurar soporte de Web Components en el proyecto (Vite ya lo soporta nativamente)
 - [ ] Definir el contrato de cada componente (props → atributos/propiedades, eventos)
 - [ ] Migrar `basics/` a Lit uno a uno, verificando que el comportamiento visual no cambia

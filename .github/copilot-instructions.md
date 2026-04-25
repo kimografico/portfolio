@@ -4,19 +4,34 @@
 
 - Usar React 18+ con TypeScript y Vite.
 - Gestor de paquetes: pnpm (no usar npm ni yarn).
-- Instalar todas las dependencias solo en frontend/package.json (no en el package.json raíz).
-- CSS: Tailwind, no usar CSS-in-JS.
+- Dependencias e instalaciones en package.json (en la raíz del proyecto).
+- CSS: Tailwind + archivos CSS externos (no usar CSS-in-JS de más de un parámetro).
 - Testing: Vitest + Testing Library.
 - Estructura de carpetas según spec.md.
-- Los datos se gestionan en archivos JSON en /data.
+- Los datos se gestionan en archivos JSON en /src/data:
+  - `books.json`: Libros leídos con portadas y metadatos.
+  - `places.json`: Lugares visitados con coordenadas y fechas.
+  - `recent-works.json`: Proyectos recientes para landing.
+- Iconos reutilizables en `/src/components/iconos` como componentes React.
+- Scripts disponibles: `pnpm run dev`, `pnpm run build`, `pnpm run lint`, `pnpm run test`, `pnpm run check`.
 
 ## Flujo de trabajo
 
+### Evolutivos y cambios
+
+1. **Primera fase - Monolítico**: Todo el código nuevo se implementa en un único archivo.
+2. **Segunda fase - Plan de componentes**: Se genera un markdown con posibilidades de componentización (decidido por el usuario).
+3. **Tercera fase - Extracción**: Se crean componentes manualmente según el plan, paso a paso.
+4. **Extracción de estilos**: Al refactorizar, se extrae CSS a archivos `.css` con el mismo nombre del componente.
+5. **Interfaces centralizadas**: Las interfaces y tipos se organizan en `/src/interfaces`.
+
+### Gestión de cambios
+
 - Los cambios deben ser atómicos y bien justificados.
-- Los commits deben ser claros y en inglés.
-- No modificar archivos fuera de /portfolio salvo que se indique (por normas de empresa).
+- **NO hacer commit automáticamente**: solo compilar/verificar si se solicita explícitamente en el prompt.
+- Los commits (cuando se hagan) deben ser claros y en inglés.
+- No modificar archivos fuera del proyecto salvo que se indique.
 - No instalar dependencias globales.
-- No usar servicios externos salvo GitHub Actions y GitHub Pages.
 
 ## Estilo de código
 
@@ -49,13 +64,35 @@ Se fomentará el aprendizaje y la comprensión profunda del código, no solo la 
 Es importante seguir las buenas prácticas, convenciones de clean code y SOLID, explicando cómo se aplican en el contexto del proyecto.
 Se usaran comentarios en el código para explicar partes específicas, pero las respuestas de Copilot deben ser completas y no depender exclusivamente de los comentarios para transmitir la información.
 
+## Verificación y completitud de tareas
+
+Para cada tarea, Copilot debe:
+
+1. **Crear un mini-plan** antes de comenzar:
+   - Desglosar la tarea en pasos específicos.
+   - Identificar archivos a modificar o crear.
+   - Prever posibles problemas o dependencias.
+
+2. **Ejecutar la tarea** según el plan.
+
+3. **Verificar completitud y errores** al final:
+   - Ejecutar verificación de tipos (`pnpm run typecheck` si es necesario).
+   - Revisar errores de lint y corregirlos.
+   - Comprobar imports y referencias.
+   - Validar que no haya partes incompletas, código duplicado o fallos.
+   - Confirmar que la funcionalidad implementada es correcta (sin regresiones).
+
+4. **Reportar el resultado**: Explicar brevemente qué se completó y si hay algún ajuste pendiente.
+
+**Nota crítica**: Este proceso es especialmente importante con modelos GPT 4.1 que tienden a romper archivos pegando código en lugares inadecuados. Siempre verificar la integridad del fichero.
+
 ## Lint y revisión automática
 
-- Al finalizar cada cambio, Copilot debe:
-  - Revisar y corregir los errores y warnings reportados por el editor (diagnósticos de lint, formato, imports, etc.).
-  - Optimizar los imports de los archivos modificados.
-  - Corregir cualquier otro problema de formato, importación o warning relevante detectado automáticamente.
-  - Comprobar que no falten etiquetas, paréntesis o llaves abiertas/cerradas después de cada cambio.
-  - Explicar en el diario cualquier corrección automática realizada tras el cambio principal.
+Al finalizar cada cambio, Copilot debe:
+
+- Revisar y corregir los errores y warnings reportados por el editor (diagnósticos de lint, formato, imports, etc.).
+- Optimizar los imports de los archivos modificados.
+- Corregir cualquier otro problema de formato, importación o warning relevante detectado automáticamente.
+- Comprobar que no falten etiquetas, paréntesis o llaves abiertas/cerradas después de cada cambio.
 
 ---
