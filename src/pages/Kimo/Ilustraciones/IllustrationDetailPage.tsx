@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useMemo } from 'react';
+import PrevNextBtns from '../../../components/ui/PrevNextBtns';
 import type { Illustration } from '../../../interfaces/illustration';
 import illustrations from '../../../data/illustrations.json';
 import './IllustrationDetailPage.css';
@@ -14,31 +15,21 @@ export default function IllustrationDetailPage() {
     () => illustrations.find((i) => i.id === id),
     [id],
   );
+  const currentIndex = useMemo(() => illustrations.findIndex((i) => i.id === id), [id]);
+  const prev = currentIndex > 0 ? illustrations[currentIndex - 1] : undefined;
+  const next =
+    currentIndex < illustrations.length - 1 && currentIndex !== -1
+      ? illustrations[currentIndex + 1]
+      : undefined;
 
-  if (!illustration) {
-    return (
-      <div className="flex flex-col gap-12">
-        <section className="border-b border-border">
-          <div className="max-w-7xl mx-auto py-16 md:py-24">
-            <p className="text-muted text-center">Ilustración no encontrada.</p>
-            <button
-              onClick={() => navigate('/kimo/ilustraciones')}
-              className="mt-6 text-accent hover:underline text-sm"
-              type="button"
-            >
-              ← Volver a ilustraciones
-            </button>
-          </div>
-        </section>
-      </div>
-    );
-  }
+  // ...existing code...
 
   return (
     <div className="flex flex-col gap-8">
-      {/* Botón volver */}
+      {/* Cabecera con volver y navegación */}
       <section className="border-b border-border">
-        <div className="max-w-7xl mx-auto py-6">
+        <div className="max-w-7xl mx-auto py-6 flex items-center justify-between gap-4">
+          {/* Botón volver */}
           <button
             onClick={() => navigate('/kimo/ilustraciones')}
             className="text-sm text-muted hover:text-ink transition-colors duration-150"
@@ -46,6 +37,13 @@ export default function IllustrationDetailPage() {
           >
             ← Volver a ilustraciones
           </button>
+          {/* Navegación con componente extraído */}
+          <PrevNextBtns
+            onPrev={() => prev && navigate(`/kimo/ilustraciones/${prev.id}`)}
+            onNext={() => next && navigate(`/kimo/ilustraciones/${next.id}`)}
+            disabledPrev={!prev}
+            disabledNext={!next}
+          />
         </div>
       </section>
 
@@ -53,8 +51,8 @@ export default function IllustrationDetailPage() {
       <section className="border-b border-border">
         <div className="max-w-7xl mx-auto py-12">
           <img
-            src={`${ILLUSTRATIONS_PATH}/${illustration.ilustracion}`}
-            alt={illustration.nombre}
+            src={`${ILLUSTRATIONS_PATH}/${illustration!.ilustracion}`}
+            alt={illustration!.nombre}
             className="illustration-main-image"
           />
         </div>
@@ -68,24 +66,26 @@ export default function IllustrationDetailPage() {
             <div className="space-y-8">
               <div>
                 <h2 className="text-5xl md:text-6xl font-semibold tracking-tighter leading-none text-ink mb-6">
-                  {illustration.nombre}
+                  {illustration!.nombre}
                 </h2>
               </div>
 
-              {(illustration.cliente || illustration.fecha) && (
+              {(illustration!.cliente || illustration!.fecha) && (
                 <div>
-                  {illustration.cliente && (
+                  {illustration!.cliente && (
                     <p className="text-sm text-muted mb-2">
                       <span className="font-mono text-xs tracking-widest uppercase">Cliente</span>
                       <br />
-                      <span className="text-base font-medium text-ink">{illustration.cliente}</span>
+                      <span className="text-base font-medium text-ink">
+                        {illustration!.cliente}
+                      </span>
                     </p>
                   )}
-                  {illustration.fecha && (
+                  {illustration!.fecha && (
                     <p className="text-sm text-muted">
                       <span className="font-mono text-xs tracking-widest uppercase">Fecha</span>
                       <br />
-                      <span className="text-base font-medium text-ink">{illustration.fecha}</span>
+                      <span className="text-base font-medium text-ink">{illustration!.fecha}</span>
                     </p>
                   )}
                 </div>
@@ -93,9 +93,9 @@ export default function IllustrationDetailPage() {
             </div>
 
             {/* Descripción */}
-            {illustration.descripcion && (
+            {illustration!.descripcion && (
               <div>
-                <p className="text-lg leading-relaxed text-muted">{illustration.descripcion}</p>
+                <p className="text-lg leading-relaxed text-muted">{illustration!.descripcion}</p>
               </div>
             )}
           </div>
@@ -103,15 +103,15 @@ export default function IllustrationDetailPage() {
       </section>
 
       {/* Imágenes extra */}
-      {illustration.imagenesExtra && illustration.imagenesExtra.length > 0 && (
+      {illustration!.imagenesExtra && illustration!.imagenesExtra.length > 0 && (
         <section className="border-b border-border">
           <div className="max-w-7xl mx-auto py-16 md:py-20">
             <h3 className="font-mono text-xs tracking-widest uppercase text-muted mb-12">
               Proceso y detalles
             </h3>
             <div className="illustration-extras-grid">
-              {illustration.imagenesExtra.map((extra, i) => (
-                <div key={`${illustration.id}-extra-${i}`} className="illustration-extra">
+              {illustration!.imagenesExtra.map((extra, i) => (
+                <div key={`${illustration!.id}-extra-${i}`} className="illustration-extra">
                   <img
                     src={`${ILLUSTRATIONS_PATH}/${extra.ruta}`}
                     alt={extra.label}
