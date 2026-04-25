@@ -27,6 +27,14 @@ export default function KimoLayout() {
         >
           Lugares visitados
         </NavLink>
+        <NavLink
+          to="iconos"
+          className={({ isActive }) =>
+            `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
+          }
+        >
+          Iconos
+        </NavLink>
       </nav>
       <main id="main-content">
         <Outlet />

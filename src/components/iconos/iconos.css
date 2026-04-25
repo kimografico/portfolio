@@ -1,0 +1,47 @@
+.iconos-demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.iconos-demo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background: #f8fafc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background 1s;
+}
+
+.iconos-demo-item:hover {
+  background: var(--color-accent);
+}
+
+.iconos-demo-item:hover svg {
+  color: #fff;
+  stroke: #fff;
+  transform: scale(1.5);
+  transition:
+    color 2s,
+    stroke 0.5s,
+    transform 0.5s;
+}
+
+.iconos-demo-item:hover .iconos-demo-label {
+  color: #fff;
+  transition: color 0.5s;
+}
+
+.iconos-demo-item svg {
+  transition: 1s;
+}
+.iconos-demo-label {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #64748b;
+  text-align: center;
+  word-break: break-all;
+}

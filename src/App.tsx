@@ -3,11 +3,13 @@ import Home from './pages/Home/Home';
 import KimoLayout from './pages/Kimo/KimoLayout';
 import BooksPage from './pages/Kimo/BooksPage';
 import PlacesPage from './pages/Kimo/PlacesPage';
+
 import NotFoundPage from './pages/NotFoundPage';
 import GraphicDesignHome from './pages/GraphicDesign/GraphicDesignHome';
 import MainLayout from './components/layout/MainLayout';
 import ContactMe from './pages/ContactMe/ContactMe';
 import ScrollToTop from './components/layout/ScrollToTop';
+import IconGallery from './pages/Kimo/IconGallery';
 
 // Componentes placeholder para rutas en desarrollo
 const PlaceholderPage = ({ title }: { title: string }) => (
@@ -28,6 +30,7 @@ export default function App() {
             <Route index element={<BooksPage />} />
             <Route path="books" element={<BooksPage />} />
             <Route path="places" element={<PlacesPage />} />
+            <Route path="iconos" element={<IconGallery />} />
           </Route>
           <Route path="/graphic-design" element={<GraphicDesignHome />} />
           <Route path="/dev" element={<PlaceholderPage title="Desarrollo" />} />
