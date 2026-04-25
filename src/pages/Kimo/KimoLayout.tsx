@@ -1,4 +1,6 @@
 import { Outlet, NavLink } from 'react-router-dom';
+
+import { IconBook, IconBrush, IconWorld, IconIcons } from '../../components/iconos';
 import './espacio-personal.css';
 
 /**
@@ -16,32 +18,40 @@ export default function KimoLayout() {
             `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
           }
           end
+          aria-label="Historial de lectura"
         >
-          Historial de lectura
+          <IconBook className="inline md:hidden" size={32} strokeWidth={1} />
+          <span className="hidden md:inline">Historial de lectura</span>
         </NavLink>
         <NavLink
           to="places"
           className={({ isActive }) =>
             `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
           }
+          aria-label="Lugares visitados"
         >
-          Lugares visitados
+          <IconWorld className="inline md:hidden" size={32} strokeWidth={1} />
+          <span className="hidden md:inline">Lugares visitados</span>
         </NavLink>
         <NavLink
           to="ilustraciones"
           className={({ isActive }) =>
             `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
           }
+          aria-label="Ilustraciones"
         >
-          Ilustraciones
+          <IconBrush className="inline md:hidden" size={32} strokeWidth={1} />
+          <span className="hidden md:inline">Ilustraciones</span>
         </NavLink>
         <NavLink
           to="iconos"
           className={({ isActive }) =>
             `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
           }
+          aria-label="Iconos"
         >
-          Iconos
+          <IconIcons className="inline md:hidden" size={32} strokeWidth={1} />
+          <span className="hidden md:inline">Iconos</span>
         </NavLink>
       </nav>
       <main id="main-content">
