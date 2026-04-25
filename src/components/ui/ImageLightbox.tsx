@@ -11,30 +11,47 @@ interface ImageLightboxProps {
 
 export default function ImageLightbox({ open, src, alt, onClose }: ImageLightboxProps) {
   const modalRef = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
-  const [modalVisible, setModalVisible] = useState(false);
+  const [visible, setVisible] = useState(false); // controla el renderizado
+  const [modalVisible, setModalVisible] = useState(false); // controla la animación
+  const closeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const OVERLAY_DURATION = 400;
   const MODAL_DURATION = 200;
 
-  // Animación de entrada
+  // Efecto para controlar la apertura/cierre del modal
   useEffect(() => {
     if (open) {
-      setVisible(true);
-      const timeout = setTimeout(() => setModalVisible(true), 10);
-      return () => clearTimeout(timeout);
+      // Si se abre, cancelar cualquier cierre pendiente y mostrar el modal
+      if (closeTimeoutRef.current) {
+        clearTimeout(closeTimeoutRef.current);
+        closeTimeoutRef.current = null;
+      }
+      setTimeout(() => setVisible(true), 0);
+      setTimeout(() => setModalVisible(true), 10);
     } else {
-      setModalVisible(false);
-      const timeout = setTimeout(() => setVisible(false), OVERLAY_DURATION);
-      return () => clearTimeout(timeout);
+      setTimeout(() => setModalVisible(false), 0);
+      closeTimeoutRef.current = setTimeout(() => {
+        setVisible(false);
+        closeTimeoutRef.current = null;
+      }, OVERLAY_DURATION);
     }
+    return () => {
+      if (closeTimeoutRef.current) {
+        clearTimeout(closeTimeoutRef.current);
+        closeTimeoutRef.current = null;
+      }
+    };
   }, [open]);
 
-  // Cerrar con animación
+  // Cerrar con animación (al pulsar botón o fondo)
   const handleClose = useCallback(() => {
     setModalVisible(false);
-    setTimeout(() => setVisible(false), MODAL_DURATION);
-    setTimeout(() => onClose(), OVERLAY_DURATION);
-  }, [MODAL_DURATION, OVERLAY_DURATION, onClose]);
+    closeTimeoutRef.current = setTimeout(() => {
+      setVisible(false);
+      closeTimeoutRef.current = null;
+    }, OVERLAY_DURATION);
+    // Llama a onClose inmediatamente para que el padre cierre el modal
+    onClose();
+  }, [onClose, OVERLAY_DURATION]);
 
   // Focus trap simple
   useEffect(() => {
