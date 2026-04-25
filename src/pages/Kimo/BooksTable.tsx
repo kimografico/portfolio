@@ -8,7 +8,7 @@ import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
 
 const columnHelper = createColumnHelper<Book>();
 
-const columns: ColumnDef<Book>[] = [
+const columns: ColumnDef<Book, string>[] = [
   columnHelper.accessor('title', {
     header: 'Título',
     cell: (info) => <span className="font-semibold text-lg">{info.getValue()}</span>,
@@ -48,7 +48,7 @@ export default function BooksTable({ books }: BooksTableProps) {
     <>
       <BooksFilter books={books} onFiltered={setFilteredBooks} />
 
-      <BaseTable<Book>
+      <BaseTable<Book, string>
         data={filteredBooks}
         columns={columns}
         initialSorting={[{ id: 'dateRead', desc: true }]}

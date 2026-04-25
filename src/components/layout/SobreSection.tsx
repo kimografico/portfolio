@@ -2,11 +2,7 @@
  * AboutSection: Sección "Sobre" con contenido flexible.
  * Componente para biografía o descripción general en dos columnas.
  */
-export interface AboutSectionProps {
-  label: string;
-  heading: string;
-  description: string;
-}
+import type { AboutSectionProps } from '../../interfaces/about';
 
 export default function AboutSection({ label, heading, description }: AboutSectionProps) {
   return (

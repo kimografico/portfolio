@@ -1,5 +1,6 @@
 import PlacesTable from './PlacesTable';
-import VisitedWorldMap, { type MapPoint } from '../../components/combinations/VisitedWorldMap';
+import VisitedWorldMap from '../../components/combinations/VisitedWorldMap';
+import type { MapPoint } from '../../interfaces/map';
 import places from '../../data/places.json';
 
 // Mocks locales: puntos destacados. Se podrian añadir al JSON los lugares y crear un array

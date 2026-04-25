@@ -8,14 +8,7 @@
 
 import { useState } from 'react';
 
-export interface SortingState {
-  id: string;
-  desc: boolean;
-}
-
-interface UseTableSortingOptions {
-  initialSorting?: SortingState[];
-}
+import type { SortingState, UseTableSortingOptions } from '../interfaces/table';
 
 export function useTableSorting(options?: UseTableSortingOptions) {
   const defaultSorting = options?.initialSorting ?? [];

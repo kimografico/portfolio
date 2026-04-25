@@ -12,17 +12,7 @@ const mapColors = {
   markerHover: 'yellow',
   border: 'var(--color-border)',
 };
-export interface MapPoint {
-  name: string;
-  lat: number;
-  lon: number;
-}
-
-interface VisitedWorldMapProps {
-  height?: number;
-  highlightedCountries: string[]; // ISO 3166-1 alpha-2 codes, e.g. ['ES', 'FR', 'TH']
-  points: MapPoint[];
-}
+import type { VisitedWorldMapProps } from '../../interfaces/map';
 
 /**
  * Mapa vectorial minimalista de países visitados usando JVM.

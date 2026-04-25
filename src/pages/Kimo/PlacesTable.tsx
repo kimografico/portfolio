@@ -61,7 +61,7 @@ export default function PlacesTable() {
   );
 
   return (
-    <BaseTable<Place>
+    <BaseTable<Place, string | undefined>
       data={data}
       columns={columns}
       initialSorting={[{ id: 'date', desc: true }]}

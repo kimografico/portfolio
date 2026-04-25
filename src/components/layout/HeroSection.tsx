@@ -4,15 +4,8 @@
  */
 
 import UIButton from '../ui/UIButton';
-import type { ReactNode } from 'react';
 
-export interface HeroSectionProps {
-  label?: string;
-  title: ReactNode;
-  description: string;
-  ctas?: Array<{ label: string; href: string }>;
-  decorator?: string;
-}
+import type { HeroSectionProps } from '../../interfaces/hero';
 
 export default function HeroSection({
   label = 'Portfolio — 2026',

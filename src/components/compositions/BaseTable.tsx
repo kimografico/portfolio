@@ -10,9 +10,9 @@ import {
 } from '@tanstack/react-table';
 import '../../styles/table.css';
 
-interface BaseTableProps<T> {
+interface BaseTableProps<T, TValue> {
   data: T[];
-  columns: ColumnDef<T>[];
+  columns: ColumnDef<T, TValue>[];
   initialSorting?: SortingState;
   onRowClick?: (row: T) => void;
   emptyMessage?: ReactNode;
@@ -33,14 +33,14 @@ interface BaseTableProps<T> {
  * />
  * ```
  */
-export default function BaseTable<T extends object>({
+export default function BaseTable<T extends object, TValue = unknown>({
   data,
   columns,
   initialSorting = [],
   onRowClick,
   emptyMessage = 'No hay datos para mostrar.',
   rowClassName = '',
-}: BaseTableProps<T>) {
+}: BaseTableProps<T, TValue>) {
   const [sorting, setSorting] = useState<SortingState>(initialSorting);
 
   const table = useReactTable({

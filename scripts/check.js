@@ -21,7 +21,7 @@ console.log('\n🔍 Running pre-push checks...');
 
 run('pnpm', ['lint'], 'Linting');
 run('pnpm', ['typecheck'], 'Type checking');
-run('pnpm', ['test', '--run'], 'Tests');
+run('pnpm', ['test'], 'Tests');
 run('pnpm', ['build'], 'Build');
 
 console.log(`
