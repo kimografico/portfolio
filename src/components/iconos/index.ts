@@ -1,3 +1,5 @@
+export { IconIcons } from './IconIcons';
+export { IconWorld } from './IconWorld';
 export { default as IconClose } from './IconClose';
 export { IconBook } from './IconBook';
 export { IconBottle } from './IconBottle';
