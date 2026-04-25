@@ -3,7 +3,8 @@ import Home from './pages/Home/Home';
 import KimoLayout from './pages/Kimo/KimoLayout';
 import BooksPage from './pages/Kimo/BooksPage';
 import PlacesPage from './pages/Kimo/PlacesPage';
-
+import IllustrationsPage from './pages/Kimo/Ilustraciones/IllustrationsPage';
+import IllustrationDetailPage from './pages/Kimo/Ilustraciones/IllustrationDetailPage';
 import NotFoundPage from './pages/NotFoundPage';
 import GraphicDesignHome from './pages/GraphicDesign/GraphicDesignHome';
 import MainLayout from './components/layout/MainLayout';
@@ -30,6 +31,8 @@ export default function App() {
             <Route index element={<BooksPage />} />
             <Route path="books" element={<BooksPage />} />
             <Route path="places" element={<PlacesPage />} />
+            <Route path="ilustraciones" element={<IllustrationsPage />} />
+            <Route path="ilustraciones/:id" element={<IllustrationDetailPage />} />
             <Route path="iconos" element={<IconGallery />} />
           </Route>
           <Route path="/graphic-design" element={<GraphicDesignHome />} />

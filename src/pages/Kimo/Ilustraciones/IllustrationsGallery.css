@@ -1,0 +1,93 @@
+.illustrations-gallery {
+  width: 100%;
+}
+
+.illustrations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.illustration-card {
+  display: flex;
+  flex-col: column;
+  gap: 1rem;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.illustration-card:hover {
+  transform: translateY(-2px);
+}
+
+.illustration-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--color-border);
+}
+
+.illustration-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.illustration-card:hover .illustration-image {
+  transform: scale(1.02);
+}
+
+.illustration-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(2px);
+}
+
+.illustration-card:hover .illustration-overlay {
+  opacity: 1;
+}
+
+.illustration-overlay-text {
+  color: #fff;
+  font-size: 0.875rem;
+  letter-spacing: 0.025em;
+  font-weight: 500;
+}
+
+.illustration-info {
+  padding: 0 0.25rem;
+}
+
+.illustration-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  margin: 0 0 0.5rem 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.illustration-meta {
+  font-size: 0.8125rem;
+  color: var(--color-muted);
+  margin: 0.25rem 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

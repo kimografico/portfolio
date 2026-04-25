@@ -1,0 +1,36 @@
+[
+  {
+    "id": "001",
+    "nombre": "Identidad Visual - Studio X",
+    "ilustracion": "001-main.jpg",
+    "fecha": "2024-06",
+    "cliente": "Studio X",
+    "descripcion": "Sistema de identidad visual completo: logotipos, tipografía y paleta cromática para estudio de diseño contemporáneo.",
+    "imagenesExtra": [
+      {
+        "ruta": "001-mockup-1.jpg",
+        "label": "Mockup"
+      },
+      {
+        "ruta": "001-detalle-1.jpg",
+        "label": "Detalle"
+      }
+    ]
+  },
+  {
+    "id": "002",
+    "nombre": "Cartel - Festival Tipográfico",
+    "ilustracion": "002-main.jpg",
+    "fecha": "2024-05",
+    "cliente": "Festival Tipográfico 2024",
+    "descripcion": "Cartel para festival de tipografía. Exploración de formas geométricas y jerarquía visual."
+  },
+  {
+    "id": "003",
+    "nombre": "Portada - Revista Diseño",
+    "ilustracion": "003-main.jpg",
+    "fecha": "2024-04",
+    "cliente": "Revista Diseño",
+    "descripcion": "Portada editorial con ilustración conceptual basada en formas orgánicas."
+  }
+]
