@@ -8,8 +8,9 @@ const mapColors = {
   oceanImage: `url(${UI_IMG_PATH}/map-bg.jpg)`,
   country: 'var(--color-border)',
   countryVisited: 'var(--color-accent)',
-  marker: '#FFF',
-  markerStroke: '#FFF',
+  marker: 'orange',
+  markerSize: 1,
+  markerStroke: '',
   markerHover: 'yellow',
   border: 'var(--color-border)',
 };
@@ -75,7 +76,7 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
           initial: {
             fill: mapColors.marker,
             stroke: mapColors.markerStroke,
-            r: 2,
+            r: mapColors.markerSize,
           },
           hover: {
             fill: mapColors.markerHover,

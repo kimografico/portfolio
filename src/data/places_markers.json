@@ -1,0 +1,204 @@
+[
+  { "name": "Palma", "country": "ES", "lat": 39.5696, "lon": 2.65016 },
+  { "name": "Menorca", "country": "ES", "lat": 39.949629, "lon": 4.110445 },
+  {
+    "name": "Ko Tao, Ko Pha-ngan District, Provincia de Surat Thani",
+    "country": "TH",
+    "lat": 10.09561,
+    "lon": 99.840396
+  },
+  { "name": "Chiang Mai", "country": "TH", "lat": 18.795288, "lon": 98.962 },
+  {
+    "name": "Ko Pha-ngan Sub-district, Ko Pha-ngan District, Provincia de Surat Thani",
+    "country": "TH",
+    "lat": 9.740484,
+    "lon": 100.002139
+  },
+  {
+    "name": "Khao Sok, Nong Yai District, Provincia de Chon Buri",
+    "country": "TH",
+    "lat": 13.069318,
+    "lon": 101.422559
+  },
+  {
+    "name": "Pai, Pai District, Provincia de Mae Hong Son",
+    "country": "TH",
+    "lat": 19.358219,
+    "lon": 98.440486
+  },
+  { "name": "Ámsterdam", "country": "NL", "lat": 52.366697, "lon": 4.89454 },
+  { "name": "Burgos", "country": "ES", "lat": 42.343992, "lon": -3.696906 },
+  { "name": "Asturias", "country": "ES", "lat": 43.361395, "lon": -5.859327 },
+  {
+    "name": "Mesa de los Tres Reyes 64490 Lescun",
+    "country": "FR",
+    "lat": 42.918448,
+    "lon": -0.72337
+  },
+  { "name": "Madrid", "country": "ES", "lat": 40.416775, "lon": -3.70379 },
+  { "name": "Jávea", "country": "ES", "lat": 38.789011, "lon": 0.166081 },
+  { "name": "Denia", "country": "ES", "lat": 38.838799, "lon": 0.105056 },
+  { "name": "Calpe", "country": "ES", "lat": 38.643647, "lon": 0.045688 },
+  { "name": "Jérica", "country": "ES", "lat": 39.911777, "lon": -0.571888 },
+  { "name": "Gestalgar", "country": "ES", "lat": 39.604299, "lon": -0.834758 },
+  { "name": "Montesa", "country": "ES", "lat": 38.9487, "lon": -0.649443 },
+  { "name": "Elche", "country": "ES", "lat": 38.269933, "lon": -0.712561 },
+  { "name": "Andorra", "country": "AD", "lat": 42.506285, "lon": 1.521801 },
+  { "name": "Granada", "country": "ES", "lat": 37.177336, "lon": -3.598557 },
+  { "name": "Teruel", "country": "ES", "lat": 40.345688, "lon": -1.106434 },
+  { "name": "Toledo", "country": "ES", "lat": 39.862832, "lon": -4.027323 },
+  { "name": "Gea de Albarracín", "country": "ES", "lat": 40.411335, "lon": -1.347527 },
+  { "name": "Castellón de la Plana", "country": "ES", "lat": 39.986356, "lon": -0.051325 },
+  { "name": "Játiva", "country": "ES", "lat": 38.989957, "lon": -0.523547 },
+  { "name": "Almansa", "country": "ES", "lat": 38.870279, "lon": -1.099337 },
+  { "name": "Tenerife", "country": "ES", "lat": 28.291564, "lon": -16.62913 },
+  { "name": "París", "country": "FR", "lat": 48.856614, "lon": 2.352222 },
+  { "name": "Kalambaka", "country": "GR", "lat": 39.706618, "lon": 21.628873 },
+  { "name": "Atenas", "country": "GR", "lat": 37.98381, "lon": 23.727539 },
+  { "name": "La Hiruela", "country": "ES", "lat": 41.077485, "lon": -3.455199 },
+  { "name": "Palma", "country": "ES", "lat": 39.5696, "lon": 2.65016 },
+  { "name": "Bolvir", "country": "ES", "lat": 42.418, "lon": 1.879894 },
+  { "name": "Bourg-Madame", "country": "FR", "lat": 42.434397, "lon": 1.944595 },
+  {
+    "name": "Lloret de Mar, la Selva, Girona, Catalunya, 17310",
+    "country": "ES",
+    "lat": 41.6973503,
+    "lon": 2.8392392
+  },
+  { "name": "Javalambre", "country": "ES", "lat": 40.0969975, "lon": -1.0247566 },
+  {
+    "name": "Javalambre, La Puebla de Valverde, Gúdar-Javalambre, Aragón",
+    "country": "ES",
+    "lat": 40.0969975,
+    "lon": -1.0247566
+  },
+  {
+    "name": "Área recreativa Río Cabriel, Carretera de Alicante a Francia por Zaragoza, Cofrentes, El Valle de Cofrentes-Ayora, València / Valencia, Comunitat Valenciana, 46625",
+    "country": "ES",
+    "lat": 39.2303818,
+    "lon": -1.0741629
+  },
+  { "name": "Asturias / Asturies", "country": "ES", "lat": 43.3133868, "lon": -5.94192 },
+  { "name": "Cantabria", "country": "ES", "lat": 43.1595664, "lon": -4.0878382 },
+  { "name": "Ibi, l", "country": "ES", "lat": 38.623288, "lon": -0.5730513 },
+  {
+    "name": "Gorgo de la Escalera, Anna, La Canal de Navarrés, València / Valencia, Comunitat Valenciana",
+    "country": "ES",
+    "lat": 39.0151232,
+    "lon": -0.6442882
+  },
+  {
+    "name": "San Juan de Gaztelugatxe, Bermeo, Bizkaia, Euskadi, 48130",
+    "country": "ES",
+    "lat": 43.4471192,
+    "lon": -2.7846899
+  },
+  {
+    "name": "Landabide, Landa, Torrebarria, Urduliz, Bizkaia, Euskadi, 48610",
+    "country": "ES",
+    "lat": 43.3762892,
+    "lon": -2.9616418
+  },
+  {
+    "name": "Algorta, Getxo, Bizkaia, Euskadi, 48993",
+    "country": "ES",
+    "lat": 43.3530429,
+    "lon": -3.0134081
+  },
+  { "name": "Plentzia, Bizkaia, Euskadi", "country": "ES", "lat": 43.4051753, "lon": -2.9478553 },
+  {
+    "name": "Moreaga, Moreaga kalea, Iturriaga, Berango, Bizkaia, Euskadi, 48640",
+    "country": "ES",
+    "lat": 43.3667315,
+    "lon": -2.9982949
+  },
+  {
+    "name": "Algorta, Getxo, Bizkaia, Euskadi, 48993",
+    "country": "ES",
+    "lat": 43.3530429,
+    "lon": -3.0134081
+  },
+  {
+    "name": "Loiu, Bizkaia, Euskadi, 48180",
+    "country": "ES",
+    "lat": 43.3147645,
+    "lon": -2.9388878
+  },
+  { "name": "Cork, County Cork, Munster", "country": "IE", "lat": 51.8985136, "lon": -8.4726423 },
+  {
+    "name": "Killarney, Killarney Municipal District, County Kerry, Munster",
+    "country": "IE",
+    "lat": 52.0595746,
+    "lon": -9.505322
+  },
+  {
+    "name": "Kenmare, County Kerry, Munster",
+    "country": "IE",
+    "lat": 51.8791008,
+    "lon": -9.583952
+  },
+  {
+    "name": "Adare, The Municipal District of Adare — Rathkeale, County Limerick, Munster",
+    "country": "IE",
+    "lat": 52.5681652,
+    "lon": -8.797929
+  },
+  {
+    "name": "Limerick, County Limerick, Munster",
+    "country": "IE",
+    "lat": 52.661252,
+    "lon": -8.6301239
+  },
+  {
+    "name": "Cliffs of Moher, Ballysteen ED, West Clare Municipal District, County Clare, Munster",
+    "country": "IE",
+    "lat": 52.9595342,
+    "lon": -9.4440647
+  },
+  {
+    "name": "Ballyvaughan, County Clare, Munster",
+    "country": "IE",
+    "lat": 53.1152862,
+    "lon": -9.1487092
+  },
+  { "name": "Galway Bay", "country": "IE", "lat": 53.1908135, "lon": -9.3270496 },
+  { "name": "Conamara", "country": "IE", "lat": 53.423987, "lon": -9.4916357 },
+  {
+    "name": "Letterfrack, Ballynakill ED, Conamara Municipal District, County Galway, Connacht",
+    "country": "IE",
+    "lat": 53.553524,
+    "lon": -9.9483002
+  },
+  {
+    "name": "Árainn, Conamara Municipal District, County Galway, Connacht",
+    "country": "IE",
+    "lat": 53.1203518,
+    "lon": -9.7056319
+  },
+  { "name": "Clonmacnoise, Pilgrim", "country": "IE", "lat": 53.3263135, "lon": -7.9857432 },
+  { "name": "Trim Castle, French", "country": "IE", "lat": 53.5545766, "lon": -6.7900339 },
+  {
+    "name": "Dublin, County Dublin, Leinster",
+    "country": "IE",
+    "lat": 53.3493795,
+    "lon": -6.2605593
+  },
+  {
+    "name": "Drogheda, County Louth, Leinster",
+    "country": "IE",
+    "lat": 53.7149877,
+    "lon": -6.3524183
+  },
+  {
+    "name": "Brú na Bóinne - visitors centre service, Duleek ED, The Municipal District of Laytown — Bettystown, County Meath, Leinster",
+    "country": "IE",
+    "lat": 53.693311,
+    "lon": -6.4501881
+  },
+  {
+    "name": "Illa de Tabarca, Tabarca, Alacant / Alicante, l",
+    "country": "ES",
+    "lat": 38.1649166,
+    "lon": -0.4732438
+  }
+]
