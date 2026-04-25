@@ -86,6 +86,17 @@ Para cada tarea, Copilot debe:
 
 **Nota crítica**: Este proceso es especialmente importante con modelos GPT 4.1 que tienden a romper archivos pegando código en lugares inadecuados. Siempre verificar la integridad del fichero.
 
+## Errores comunes a evitar
+
+- Siempre tipar explícitamente BaseTable y las columnas con el tipo de celda real (por ejemplo, `string`, `number`, `string | undefined`, etc). No usar `any` ni tipos genéricos ambiguos.
+- Si una celda puede devolver JSX, usar `ReactNode` como tipo de celda.
+- El tipo de columna (`ColumnDef<T, TValue>`) debe coincidir exactamente con el tipo de dato que devuelve el accessor o cell.
+- Si se necesita un tipo común para celdas, debe declararse en `/src/interfaces` y usarse de forma explícita.
+- No importar tipos dentro de funciones ni scopes locales: todos los imports de tipos deben ir al toplevel del archivo.
+- Así se evitan errores de tipado, incompatibilidades y problemas de linting con TanStack Table v8 y ESLint.
+- Elimina siempre `import React from 'react'` si no es necesario.
+- Tras cada cambio, revisa y optimiza los imports de todos los archivos modificados, eliminando los que no se usen y ordenando los necesarios.
+
 ## Lint y revisión automática
 
 Al finalizar cada cambio, Copilot debe:
