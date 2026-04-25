@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useRef } from 'react';
 import PrevNextBtns from '../../../components/ui/PrevNextBtns';
 import ImageLightbox from '../../../components/ui/ImageLightbox';
 import type { Illustration } from '../../../interfaces/illustration';
@@ -15,6 +15,10 @@ export default function IllustrationDetailPage() {
   // Estado para lightbox de imagen extra
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxImg, setLightboxImg] = useState<{ src: string; alt?: string } | null>(null);
+
+  // Estado para tamaño natural de la imagen principal
+  const [mainImgSize, setMainImgSize] = useState<{ width: number; height: number } | null>(null);
+  const mainImgRef = useRef<HTMLImageElement>(null);
 
   const handleOpenLightbox = (src: string, alt?: string) => {
     setLightboxImg({ src, alt });
@@ -39,8 +43,8 @@ export default function IllustrationDetailPage() {
   return (
     <div className="flex flex-col gap-8">
       {/* Cabecera con volver y navegación */}
-      <section className="border-b border-border">
-        <div className="max-w-7xl mx-auto py-6 flex items-center justify-between gap-4">
+      <section data-id="header">
+        <div className="max-w-7xl mx-auto pt-6 flex items-center justify-between gap-4">
           {/* Botón volver */}
           <button
             onClick={() => navigate('/kimo/ilustraciones')}
@@ -59,21 +63,10 @@ export default function IllustrationDetailPage() {
         </div>
       </section>
 
-      {/* Imagen principal */}
-      <section className="border-b border-border">
-        <div className="max-w-7xl mx-auto py-12">
-          <img
-            src={`${ILLUSTRATIONS_PATH}/${illustration!.ilustracion}`}
-            alt={illustration!.nombre}
-            className="illustration-main-image"
-          />
-        </div>
-      </section>
-
       {/* Información */}
-      <section className="border-b border-border">
-        <div className="max-w-7xl mx-auto py-16 md:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-20">
+      <section className="border-b border-border" data-id="info">
+        <div className="max-w-7xl mx-auto pb-6">
+          <div className="grid grid-cols-1 gap-12 md:gap-20">
             {/* Metadatos */}
             <div className="space-y-8">
               <div>
@@ -84,6 +77,17 @@ export default function IllustrationDetailPage() {
 
               {(illustration!.cliente || illustration!.fecha) && (
                 <div>
+                  {illustration!.descripcion && (
+                    <p className="text-sm text-muted mb-2">
+                      <span className="font-mono text-xs tracking-widest uppercase">
+                        Descripción
+                      </span>
+                      <br />
+                      <span className="text-base font-medium text-ink">
+                        {illustration!.descripcion}
+                      </span>
+                    </p>
+                  )}
                   {illustration!.cliente && (
                     <p className="text-sm text-muted mb-2">
                       <span className="font-mono text-xs tracking-widest uppercase">Cliente</span>
@@ -94,7 +98,7 @@ export default function IllustrationDetailPage() {
                     </p>
                   )}
                   {illustration!.fecha && (
-                    <p className="text-sm text-muted">
+                    <p className="text-sm text-muted mb-2">
                       <span className="font-mono text-xs tracking-widest uppercase">Fecha</span>
                       <br />
                       <span className="text-base font-medium text-ink">{illustration!.fecha}</span>
@@ -103,31 +107,72 @@ export default function IllustrationDetailPage() {
                 </div>
               )}
             </div>
-
-            {/* Descripción */}
-            {illustration!.descripcion && (
-              <div>
-                <p className="text-lg leading-relaxed text-muted">{illustration!.descripcion}</p>
-              </div>
-            )}
           </div>
+        </div>
+      </section>
+
+      {/* Imagen principal */}
+      <section className="border-b border-border" data-id="main-image">
+        <div className="max-w-7xl mx-auto py-12">
+          <img
+            ref={mainImgRef}
+            src={`${ILLUSTRATIONS_PATH}/${illustration!.ilustracion}`}
+            alt={illustration!.nombre}
+            className="illustration-main-image cursor-zoom-in"
+            data-id="main-image-img"
+            tabIndex={0}
+            role="button"
+            aria-label={`Ampliar imagen: ${illustration!.nombre}`}
+            style={
+              mainImgSize
+                ? {
+                    maxWidth: `${mainImgSize.width}px`,
+                    maxHeight: `${mainImgSize.height}px`,
+                    width: '100%',
+                    height: 'auto',
+                  }
+                : { width: '100%', height: 'auto' }
+            }
+            onClick={() =>
+              handleOpenLightbox(
+                `${ILLUSTRATIONS_PATH}/${illustration!.ilustracion}`,
+                illustration!.nombre,
+              )
+            }
+            onKeyDown={(e) =>
+              (e.key === 'Enter' || e.key === ' ') &&
+              handleOpenLightbox(
+                `${ILLUSTRATIONS_PATH}/${illustration!.ilustracion}`,
+                illustration!.nombre,
+              )
+            }
+            onLoad={(e) => {
+              const img = e.currentTarget;
+              setMainImgSize({ width: img.naturalWidth, height: img.naturalHeight });
+            }}
+          />
         </div>
       </section>
 
       {/* Imágenes extra */}
       {illustration!.imagenesExtra && illustration!.imagenesExtra.length > 0 && (
-        <section className="border-b border-border">
+        <section className="border-b border-border" data-id="extra-images">
           <div className="max-w-7xl mx-auto py-16 md:py-20">
             <h3 className="font-mono text-xs tracking-widest uppercase text-muted mb-12">
               Proceso y detalles
             </h3>
             <div className="illustration-extras-grid">
               {illustration!.imagenesExtra.map((extra, i) => (
-                <div key={`${illustration!.id}-extra-${i}`} className="illustration-extra">
+                <div
+                  key={`${illustration!.id}-extra-${i}`}
+                  className="illustration-extra"
+                  data-id={`extra-image-${i}`}
+                >
                   <img
                     src={`${ILLUSTRATIONS_PATH}/${extra.ruta}`}
                     alt={extra.label}
                     className="illustration-extra-image cursor-zoom-in"
+                    data-id={`extra-image-img-${i}`}
                     onClick={() =>
                       handleOpenLightbox(`${ILLUSTRATIONS_PATH}/${extra.ruta}`, extra.label)
                     }
@@ -149,12 +194,14 @@ export default function IllustrationDetailPage() {
 
       {/* Lightbox de imagen ampliada */}
       {lightboxImg && (
-        <ImageLightbox
-          open={lightboxOpen}
-          src={lightboxImg.src}
-          alt={lightboxImg.alt}
-          onClose={handleCloseLightbox}
-        />
+        <div data-id="lightbox">
+          <ImageLightbox
+            open={lightboxOpen}
+            src={lightboxImg.src}
+            alt={lightboxImg.alt}
+            onClose={handleCloseLightbox}
+          />
+        </div>
       )}
     </div>
   );
