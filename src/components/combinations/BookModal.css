@@ -1,0 +1,119 @@
+/* Raíz del modal para centrar y fijar */
+.bookmodal-root {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botón cerrar */
+.modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 1.25rem;
+  color: var(--color-muted, #9e9c96);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.modal-close:hover {
+  color: var(--color-accent, #d4542a);
+}
+
+/* Portada del libro */
+.modal-cover {
+  object-fit: cover;
+  width: 16rem;
+  height: 24rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Título del libro */
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+
+/* Autor */
+.modal-author {
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Info general */
+.modal-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  margin-top: 0.5rem;
+}
+
+/* Etiquetas de info */
+.modal-label {
+  font-weight: 800;
+}
+/* Estilos para modales - componentización de BookModal.tsx */
+
+/* Overlay del modal - fondo oscuro semitransparente */
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  transition: opacity 0.3s ease-out;
+}
+
+.modal-overlay[data-visible='true'] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-overlay[data-visible='false'] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Contenedor del modal - caja principal */
+.modal-content {
+  position: relative;
+  z-index: 50;
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  max-width: 28rem;
+  width: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1.5rem;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition:
+    opacity 0.3s ease-out,
+    transform 0.3s ease-out;
+}
+
+.modal-content[data-visible='true'] {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal-content[data-visible='false'] {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+}

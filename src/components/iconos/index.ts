@@ -1,3 +1,4 @@
+export { default as IconClose } from './IconClose';
 export { IconBook } from './IconBook';
 export { IconBottle } from './IconBottle';
 export { IconBox } from './IconBox';

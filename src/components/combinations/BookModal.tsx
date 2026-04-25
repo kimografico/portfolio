@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { BookModalProps } from '../../interfaces/books';
-import './modal.css';
+import './BookModal.css';
+import { IconClose } from '../../components/iconos';
 
 // Devuelve la bandera según el idioma
 function getFlag(lang: string): string {
@@ -83,18 +84,14 @@ function BookModal({ book, onClose }: BookModalProps) {
 
   // Overlay animado
   return (
-    <div
-      className="fixed inset-0 z-40 flex items-center justify-center"
-      aria-modal="true"
-      role="dialog"
-    >
+    <div className="bookmodal-root" aria-modal="true" role="dialog">
       {/* Overlay oscuro y desenfoque */}
       <div
-        className={`absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-[${OVERLAY_DURATION}ms] ${modalVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+        className="modal-overlay"
+        data-visible={modalVisible}
         onClick={handleClose}
         aria-hidden="true"
         style={{
-          transitionProperty: 'opacity, backdrop-filter',
           transitionDuration: `${OVERLAY_DURATION}ms`,
         }}
       />
@@ -102,19 +99,15 @@ function BookModal({ book, onClose }: BookModalProps) {
       <div
         ref={modalRef}
         tabIndex={-1}
-        className={`relative z-50 bg-white rounded-xl shadow-2xl max-w-md w-full mx-4 p-6 outline-none flex flex-col items-center transition-all duration-[${MODAL_DURATION}ms] ${modalVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}
+        className="modal-content"
+        data-visible={modalVisible}
         style={{
-          transitionProperty: 'opacity, transform',
           transitionDuration: `${MODAL_DURATION}ms`,
         }}
       >
         {/* Botón cerrar */}
-        <button
-          onClick={handleClose}
-          className="absolute top-3 right-3 text-xl text-muted hover:text-accent focus:outline-none"
-          aria-label="Cerrar"
-        >
-          ×
+        <button onClick={handleClose} className="modal-close" aria-label="Cerrar">
+          <IconClose size={24} strokeWidth={1} color="var(--color-muted)" />
         </button>
         {/* Portada */}
         <img
@@ -125,7 +118,7 @@ function BookModal({ book, onClose }: BookModalProps) {
             return path;
           })()}
           alt={`Portada de ${book.title}`}
-          className="object-cover w-64 h-96 rounded mb-4 shadow"
+          className="modal-cover"
           draggable={false}
           onError={(e) => {
             const target = e.currentTarget;
@@ -134,11 +127,11 @@ function BookModal({ book, onClose }: BookModalProps) {
           }}
         />
         {/* Info */}
-        <h2 className="text-2xl font-bold mb-1 text-center">{book.title}</h2>
-        <div className="text-lg font-medium text-center mb-2">{book.author}</div>
-        <div className="w-full flex flex-col gap-1 text-sm text-muted mt-2">
+        <h2 className="modal-title">{book.title}</h2>
+        <div className="modal-author">{book.author}</div>
+        <div className="modal-info">
           <div>
-            <span className="font-semibold">Fecha de lectura:</span>{' '}
+            <span className="modal-label">Fecha de lectura:</span>{' '}
             {book.dateRead && book.dateRead.trim() !== ''
               ? formatYearMonth(book.dateRead.trim())
               : 'Desconocida'}{' '}
@@ -146,15 +139,16 @@ function BookModal({ book, onClose }: BookModalProps) {
           </div>
           {book.series && book.series.trim() !== '' && (
             <div>
-              <span className="font-semibold">Serie:</span> {book.series}
+              <span className="modal-label">Serie:</span> {book.series}
             </div>
           )}
           <div>
-            <span className="font-semibold">Género:</span> {book.genre}
+            <span className="modal-label">Género:</span> {book.genre}
           </div>
+          <hr />
           {book.synopsis && (
             <div>
-              <span className="font-semibold">Sinopsis:</span> {book.synopsis}
+              <span className="modal-label">Sinopsis:</span> {book.synopsis}
             </div>
           )}
         </div>

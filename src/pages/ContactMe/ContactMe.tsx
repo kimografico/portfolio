@@ -21,6 +21,7 @@ import {
   IconFingerprint,
   IconSkate,
   IconImage,
+  IconClose,
 } from '../../components/iconos/index';
 import './iconos.css';
 
@@ -128,6 +129,10 @@ export default function ContactMe() {
             <div className="iconos-demo-item">
               <IconImage size={48} className="text-primary" />
               <div className="iconos-demo-label">IconImage</div>
+            </div>
+            <div className="iconos-demo-item">
+              <IconClose size={48} className="text-primary" />
+              <div className="iconos-demo-label">IconClose</div>
             </div>
           </div>
         </div>
