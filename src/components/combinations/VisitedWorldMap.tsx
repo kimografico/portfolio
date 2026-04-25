@@ -1,8 +1,17 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import 'jsvectormap';
 import 'jsvectormap/dist/maps/world.js';
-
-// Tipos para los props
+// Paleta única para el mapa (azul o imagen de fondo)
+const mapColors = {
+  ocean: '#f2f7fc',
+  oceanImage: 'url(/portfolio/images/map-bg.jpg)',
+  country: 'var(--color-border)',
+  countryVisited: 'var(--color-accent)',
+  marker: '#FFF',
+  markerStroke: '#FFF',
+  markerHover: 'yellow',
+  border: 'var(--color-border)',
+};
 export interface MapPoint {
   name: string;
   lat: number;
@@ -29,6 +38,8 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
 }) => {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstance = useRef<Record<string, unknown> | null>(null);
+  // antique ahora solo alterna fondo azul/fondo imagen
+  const [antique, setAntique] = useState(false);
 
   useEffect(() => {
     if (!mapRef.current) return;
@@ -45,9 +56,9 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
       }
     }
     // Inicializa JVM
-    // @ts-expect-error jsvectormap types are incomplete
 
     import('jsvectormap').then(({ default: jsVectorMap }) => {
+      // Cambia aquí entre mapColors y mapAntique para el modo deseado
       mapInstance.current = new jsVectorMap({
         showTooltip: false,
         selector: mapRef.current,
@@ -57,11 +68,11 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
         zoomOnTouch: true,
         regionStyle: {
           initial: {
-            fill: '#e9e7e0',
+            fill: mapColors.country,
             'fill-opacity': 1,
           },
           selected: {
-            fill: '#d4542a',
+            fill: mapColors.countryVisited,
           },
         },
         selectedRegions: highlightedCountries,
@@ -71,12 +82,12 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
         })),
         markerStyle: {
           initial: {
-            fill: '#FFF',
-            stroke: '#FFF',
+            fill: mapColors.marker,
+            stroke: mapColors.markerStroke,
             r: 2,
           },
           hover: {
-            fill: 'yellow',
+            fill: mapColors.markerHover,
             cursor: 'pointer',
           },
         },
@@ -86,6 +97,36 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
           },
         },
       });
+      // Forzar fondo imagen y blend multiply en países
+      setTimeout(() => {
+        if (mapRef.current) {
+          const svg = mapRef.current.querySelector('svg');
+          if (svg) {
+            // Limpia cualquier fondo previo
+            svg.style.background = '';
+            svg.style.backgroundImage = '';
+            svg.style.backgroundSize = '';
+            if (antique) {
+              svg.style.backgroundImage = mapColors.oceanImage;
+              svg.style.backgroundSize = 'cover';
+              svg.style.borderRadius = '0';
+              // Aplica blend multiply a los países no seleccionados
+              svg
+                .querySelectorAll('path[data-code]:not([fill="' + mapColors.countryVisited + '"])')
+                .forEach((el) => {
+                  (el as SVGPathElement).style.mixBlendMode = 'multiply';
+                });
+            } else {
+              svg.style.background = mapColors.ocean;
+              svg.style.backgroundSize = '';
+              svg.style.borderRadius = '25rem';
+              svg.querySelectorAll('path[data-code]').forEach((el) => {
+                (el as SVGPathElement).style.mixBlendMode = '';
+              });
+            }
+          }
+        }
+      }, 0);
     });
 
     // Cleanup
@@ -102,17 +143,34 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
         }
       }
     };
-  }, [highlightedCountries, points]);
+  }, [highlightedCountries, points, antique]);
 
   return (
     <div className="relative w-full" style={{ height, overflow: 'hidden' }}>
       <div
+        key={antique ? 'antique' : 'modern'}
         ref={mapRef}
         role="img"
         aria-label="Mapa de países visitados y lugares destacados"
-        className="rounded-lg shadow border border-gray-200 bg-white w-full h-full"
-        style={{ width: '100%', height: '100%', overflow: 'hidden' }}
+        className={`rounded-lg w-full h-full`}
+        style={{
+          width: '100%',
+          height: '100%',
+          overflow: 'hidden',
+          background: 'none',
+          borderRadius: antique ? '0' : '10rem',
+        }}
       />
+      {/* Botón toggle abajo a la derecha */}
+      <button
+        type="button"
+        onClick={() => setAntique((v) => !v)}
+        className="absolute bottom-0 right-0 z-10 w-8 h-8 flex items-center justify-center text-base"
+        aria-pressed={antique}
+        title="Alternar estilo antiguo/moderno"
+      >
+        {antique ? '⚓️' : '☠️'}
+      </button>
     </div>
   );
 };
