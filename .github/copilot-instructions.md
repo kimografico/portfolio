@@ -15,6 +15,30 @@
 - Iconos reutilizables en `/src/components/iconos` como componentes React.
 - Scripts disponibles: `pnpm run dev`, `pnpm run build`, `pnpm run lint`, `pnpm run test`, `pnpm run check`.
 
+### Atributos de Testing y Ubicación (data-id)
+
+Todos los componentes principales, secciones y elementos interactivos deben llevar el atributo `data-id` con un nombre semántico y único. Esto facilita:
+
+- **Tests E2E**: Localizar elementos de forma robusta sin acoplar a clases CSS o estructura visual.
+- **Debugging visual**: Identificar rápidamente qué bloque de código corresponde a cada elemento.
+- **Mantenibilidad**: Los cambios de estilo no rompen los selectores de tests.
+
+**Convenciones de nomenclatura:**
+
+- Usar kebab-case: `data-id="element-name"`
+- Ser específico y descriptivo: `books-page`, `books-gallery-grid`, `places-map`, etc.
+- Para elementos dinámicos con índice, incluirlo: `data-id="illustration-card-${id}"`
+- Nombres comunes: `*-page`, `*-section`, `*-grid`, `*-table`, `*-filter`, `*-modal`, `*-lightbox`, `*-btn`, `*-wrapper`
+
+**Dónde añadir data-id:**
+
+- Secciones principales (`<section>`, `<div>` de contenedor de página)
+- Componentes interactivos (botones, filtros)
+- Grillas y listas (`grid`, `gallery`, `table`)
+- Modales y lightbox
+- Envolturas de componentes complejos
+- Elementos que serán referenciados en tests E2E
+
 ## Flujo de trabajo
 
 ### Evolutivos y cambios

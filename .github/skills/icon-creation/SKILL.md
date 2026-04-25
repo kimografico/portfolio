@@ -29,31 +29,29 @@ Validar que el nombre sigue la convención `Icon<PascalCase>`.
 
 **Ubicación**: `/src/components/iconos/<NombreDelIcono>.tsx`
 
-**Estructura base**:
+**Estructura base** (React 18+ con JSX transform):
 
 ```tsx
-interface IconProps {
-  size?: number;
-  strokeWidth?: number;
-  className?: string;
-}
+import type { IconProps } from '../../types/icons';
 
-export default function IconNombreDelIcono({
+export function IconNombreDelIcono({
   size = 24,
-  strokeWidth = 1.5,
-  className = '',
+  color = 'currentColor',
+  strokeWidth = 2,
+  ...props
 }: IconProps) {
   return (
     <svg
-      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
       width={size}
       height={size}
-      stroke="currentColor"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke={color}
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      fill="none"
-      className={className}
+      {...props}
     >
       {/* SVG paths aquí */}
     </svg>
@@ -61,12 +59,17 @@ export default function IconNombreDelIcono({
 }
 ```
 
-**Notas de estilo SVG**:
+**Notas importantes**:
 
-- Usar `viewBox="0 0 24 24"` como estándar.
-- `stroke="currentColor"` para heredar color del padre.
-- `fill="none"` por defecto (outline icons).
-- Props: `size`, `strokeWidth`, `className` reutilizables.
+- **NO importar React** — React 18+ usa JSX transform automático
+- **Importar IconProps desde** `../../types/icons` (tipo centralizado para consistencia)
+- **Usar `strokeWidth`** (no `stroke` que es para color)
+- **Usar `color`** en lugar de hardcodear `currentColor` para flxibilidad
+- Usar **named export** (`export function`) en lugar de `export default`
+- `viewBox="0 0 24 24"` como estándar
+- Props spread (`...props`) al final para permitir atributos SVG adicionales como `className`
+
+**Type IconProps**: Definición en `/src/types/icons.ts`
 
 ---
 
@@ -74,13 +77,17 @@ export default function IconNombreDelIcono({
 
 **Archivo**: `/src/components/iconos/index.ts`
 
-Añadir el nuevo icono a la lista de exports:
+Añadir el nuevo icono a la lista de exports (named export):
 
 ```tsx
-export { default as IconNombreDelIcono } from './IconNombreDelIcono';
+export { IconNombreDelIcono } from './IconNombreDelIcono';
 ```
 
-**Verificar**: Que no haya duplicados y que el orden sea alfabético.
+**Verificar**:
+
+- ✅ Usar **named export** (`export { IconNombreDelIcono }`)
+- ✅ No hay duplicados en la lista
+- ✅ Orden alfabético
 
 ---
 
@@ -111,3 +118,99 @@ Para que el icono aparezca en la galería, basta con exportarlo correctamente en
 - [ ] Aparece automáticamente en la galería de iconos
 - [ ] Compila sin errores
 - [ ] Funciona correctamente en navegador
+
+---
+
+## Errores Comunes y Soluciones
+
+### ❌ Error: `Property 'className' does not exist on type`
+
+**Causa**: El tipo `IconProps` no extiende `React.SVGProps<SVGSVGElement>`
+
+**Solución**: Usar el tipo centralizado desde `/src/types/icons.ts`:
+
+```tsx
+import type { IconProps } from '../../types/icons';
+```
+
+Asegurar que en `types/icons.ts` esté definido como:
+
+```tsx
+import type React from 'react';
+
+export type IconProps = React.SVGProps<SVGSVGElement> & {
+  size?: number;
+  color?: string;
+  strokeWidth?: number;
+};
+```
+
+### ❌ Error: `React is not defined`
+
+**Causa**: Importar `import * as React from 'react'` innecesariamente
+
+**Solución**: **NO importar React** — React 18+ usa JSX transform automático. Solo imports de tipos son necesarios.
+
+```tsx
+// ❌ No necesario
+import * as React from 'react';
+
+// ✅ Correcto: solo si usas tipos
+import type { IconProps } from '../../types/icons';
+```
+
+### ❌ Error: `'stroke' is assigned but never used`
+
+**Causa**: Usar `stroke` como parámetro en lugar de `strokeWidth`
+
+**Solución**: Usar parámetro `strokeWidth`:
+
+```tsx
+// ❌ Incorrecto
+export function IconNombre({ stroke = 2, ...props }: ...) {
+  return <svg strokeWidth={stroke} ... />;
+}
+
+// ✅ Correcto
+export function IconNombre({ strokeWidth = 2, ...props }: IconProps) {
+  return <svg strokeWidth={strokeWidth} ... />;
+}
+```
+
+### ❌ Error: `Type is not assignable to type 'never'`
+
+**Causa**: Props spread (`...props`) pero IconProps no extiende SVGProps
+
+**Solución**: Asegurar que IconProps extienda `React.SVGProps<SVGSVGElement>`:
+
+```tsx
+// En types/icons.ts
+export type IconProps = React.SVGProps<SVGSVGElement> & {
+  size?: number;
+  color?: string;
+  strokeWidth?: number;
+};
+```
+
+### ❌ Error: Icono no aparece en la galería
+
+**Causa**: No exportado correctamente en `iconos/index.ts`
+
+**Solución**: Verificar que esté en `index.ts` con **named export**:
+
+```tsx
+export { IconNombreDelIcono } from './IconNombreDelIcono';
+```
+
+---
+
+## Resumen de mejores prácticas
+
+| Concepto           | ✅ Correcto                 | ❌ Incorrecto             |
+| ------------------ | --------------------------- | ------------------------- |
+| Import de tipo     | `import type { IconProps }` | `import * as React`       |
+| Tipo props         | `IconProps` centralizado    | Interface local           |
+| Param ancho stroke | `strokeWidth`               | `stroke`                  |
+| Export             | `export function Icon...`   | `export default function` |
+| Props dinámico     | `{...props}` al final       | Atributos hardcodeados    |
+| Color heredado     | `color = 'currentColor'`    | `stroke="currentColor"`   |
