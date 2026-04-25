@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import PrevNextBtns from '../../../components/ui/PrevNextBtns';
+import ImageLightbox from '../../../components/ui/ImageLightbox';
 import type { Illustration } from '../../../interfaces/illustration';
 import illustrations from '../../../data/illustrations.json';
 import './IllustrationDetailPage.css';
@@ -10,6 +11,19 @@ const ILLUSTRATIONS_PATH = import.meta.env.VITE_ILLUSTRATIONS_PATH;
 export default function IllustrationDetailPage() {
   const { id } = useParams();
   const navigate = useNavigate();
+
+  // Estado para lightbox de imagen extra
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxImg, setLightboxImg] = useState<{ src: string; alt?: string } | null>(null);
+
+  const handleOpenLightbox = (src: string, alt?: string) => {
+    setLightboxImg({ src, alt });
+    setLightboxOpen(true);
+  };
+  const handleCloseLightbox = () => {
+    setLightboxOpen(false);
+    setTimeout(() => setLightboxImg(null), 500); // Espera animación
+  };
 
   const illustration = useMemo<Illustration | undefined>(
     () => illustrations.find((i) => i.id === id),
@@ -21,8 +35,6 @@ export default function IllustrationDetailPage() {
     currentIndex < illustrations.length - 1 && currentIndex !== -1
       ? illustrations[currentIndex + 1]
       : undefined;
-
-  // ...existing code...
 
   return (
     <div className="flex flex-col gap-8">
@@ -115,7 +127,17 @@ export default function IllustrationDetailPage() {
                   <img
                     src={`${ILLUSTRATIONS_PATH}/${extra.ruta}`}
                     alt={extra.label}
-                    className="illustration-extra-image"
+                    className="illustration-extra-image cursor-zoom-in"
+                    onClick={() =>
+                      handleOpenLightbox(`${ILLUSTRATIONS_PATH}/${extra.ruta}`, extra.label)
+                    }
+                    tabIndex={0}
+                    role="button"
+                    aria-label={`Ampliar imagen: ${extra.label}`}
+                    onKeyDown={(e) =>
+                      (e.key === 'Enter' || e.key === ' ') &&
+                      handleOpenLightbox(`${ILLUSTRATIONS_PATH}/${extra.ruta}`, extra.label)
+                    }
                   />
                   <p className="text-xs text-muted mt-3">{extra.label}</p>
                 </div>
@@ -123,6 +145,16 @@ export default function IllustrationDetailPage() {
             </div>
           </div>
         </section>
+      )}
+
+      {/* Lightbox de imagen ampliada */}
+      {lightboxImg && (
+        <ImageLightbox
+          open={lightboxOpen}
+          src={lightboxImg.src}
+          alt={lightboxImg.alt}
+          onClose={handleCloseLightbox}
+        />
       )}
     </div>
   );

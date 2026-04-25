@@ -1,0 +1,69 @@
+/* Contenedor relativo para la imagen y el botón */
+.imagelightbox-imgwrap {
+  position: relative;
+  display: inline-block;
+}
+/* Lightbox raíz: igual que bookmodal-root */
+.imagelightbox-root {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Overlay del lightbox: cubre toda la pantalla y permite cerrar al hacer clic fuera */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  transition: opacity 0.3s ease-out;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Asegura que el modal no tenga padding ni margen extra */
+.imagelightbox-content {
+  background: transparent;
+  box-shadow: none;
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* Botón cerrar en la esquina superior derecha de la imagen */
+.imagelightbox-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.imagelightbox-close:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.imagelightbox-image {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.25);
+  background: white;
+  object-fit: contain;
+}
+
+/* Botón cerrar: reutiliza .modal-close */

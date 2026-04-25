@@ -106,4 +106,13 @@ Al finalizar cada cambio, Copilot debe:
 - Corregir cualquier otro problema de formato, importación o warning relevante detectado automáticamente.
 - Comprobar que no falten etiquetas, paréntesis o llaves abiertas/cerradas después de cada cambio.
 
+## Corrección de errores por consola
+
+Si te pego un error de consola, sin preguntarme antes, debes:
+
+1. Analizar el error y entender su causa.
+2. Localizar el código responsable del error.
+3. Corregir el código para resolver el error.
+4. Verificar que el error se ha resuelto y que no se han introducido nuevos errores.
+
 ---
