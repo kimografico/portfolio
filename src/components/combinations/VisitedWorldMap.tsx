@@ -137,7 +137,11 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
   }, [highlightedCountries, points, antique]);
 
   return (
-    <div className="relative w-full" style={{ height, overflow: 'hidden' }}>
+    <div
+      className="relative w-full"
+      style={{ height, overflow: 'hidden' }}
+      data-id="visited-world-map-section"
+    >
       <div
         key={antique ? 'antique' : 'modern'}
         ref={mapRef}

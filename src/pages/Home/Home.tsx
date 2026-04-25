@@ -13,7 +13,7 @@ export default function Home() {
         Saltar al contenido principal
       </a>
 
-      <main id="main-content">
+      <main id="main-content" data-id="home-page">
         <HeroSection
           title={
             <>

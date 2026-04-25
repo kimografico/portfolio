@@ -24,10 +24,14 @@ export default function PlacesPage() {
   // Lista de países únicos extraídos del JSON
   const countries = getUniqueCountries();
   return (
-    <div className="flex flex-col gap-8">
+    <section data-id="places-page" className="flex flex-col gap-8">
       {/* Mapa de países visitados */}
-      <VisitedWorldMap highlightedCountries={countries} points={MOCK_POINTS} height={500} />
-      <PlacesTable />
-    </div>
+      <div data-id="places-map">
+        <VisitedWorldMap highlightedCountries={countries} points={MOCK_POINTS} height={500} />
+      </div>
+      <div data-id="places-table">
+        <PlacesTable />
+      </div>
+    </section>
   );
 }

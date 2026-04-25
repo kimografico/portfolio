@@ -62,7 +62,7 @@ export default function BooksFilter({ books, onFiltered }: BooksFilterProps) {
   }, [books]);
 
   return (
-    <div className="flex flex-wrap gap-4 w-full mb-10 items-end">
+    <div className="flex flex-wrap gap-4 w-full mb-10 items-end" data-id="books-filter-wrapper">
       <div className="flex-[1.5_1.5_0%] min-w-[16rem] md:order-1 order-1 w-full md:w-auto">
         <label className="block text-xs font-semibold text-muted mb-1" htmlFor="filter-title">
           Título

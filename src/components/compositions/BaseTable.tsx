@@ -64,7 +64,7 @@ export default function BaseTable<T extends object, TValue = unknown>({
   }
 
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto" data-id="base-table">
       <table className="table-main">
         <thead>
           {table.getHeaderGroups().map((headerGroup) => (

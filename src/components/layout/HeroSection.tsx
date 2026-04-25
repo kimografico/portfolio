@@ -15,7 +15,11 @@ export default function HeroSection({
   decorator = '01',
 }: HeroSectionProps) {
   return (
-    <section aria-labelledby="hero-heading" className="border-b border-border">
+    <section
+      aria-labelledby="hero-heading"
+      className="border-b border-border"
+      data-id="hero-section"
+    >
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-32">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-end">
           <div className="animate-fade-up">

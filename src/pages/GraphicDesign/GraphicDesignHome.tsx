@@ -50,9 +50,12 @@ const CATEGORIES = [
 
 export default function GraphicDesignHome() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col" data-id="graphic-design-home">
       {/* Hero */}
-      <section className="bg-gradient-to-b from-bg to-surface border-b border-border py-16 px-4 text-center">
+      <section
+        className="bg-gradient-to-b from-bg to-surface border-b border-border py-16 px-4 text-center"
+        data-id="graphic-design-hero"
+      >
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-ink">Diseño Gráfico</h1>
         <p className="max-w-2xl mx-auto text-lg text-muted mb-6">
           Selecciona una categoría para explorar proyectos de diseño gráfico: branding, papelería,
@@ -62,8 +65,14 @@ export default function GraphicDesignHome() {
       </section>
 
       {/* Categorías en rejilla */}
-      <main className="flex-1 max-w-5xl mx-auto w-full px-4 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <main
+        className="flex-1 max-w-5xl mx-auto w-full px-4 py-12"
+        data-id="graphic-design-categories"
+      >
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
+          data-id="categories-grid"
+        >
           {CATEGORIES.map((category) => (
             <Link
               to={`/graphic-design/${category.key}`}

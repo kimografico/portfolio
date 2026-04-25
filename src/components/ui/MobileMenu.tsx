@@ -37,7 +37,7 @@ export default function MobileMenu({ navLinks }: MobileMenuProps) {
   };
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden" data-id="mobile-menu-wrapper">
       {/* Botón hamburguesa accesible */}
       <button
         aria-label={showMenu ? 'Cerrar menú' : 'Abrir menú'}
@@ -49,6 +49,7 @@ export default function MobileMenu({ navLinks }: MobileMenuProps) {
           if (!showMenu) openMenu();
           else closeMenu();
         }}
+        data-id="mobile-menu-button"
       >
         <span className="sr-only">Menú</span>
         {/* Icono hamburguesa animado */}
@@ -72,8 +73,9 @@ export default function MobileMenu({ navLinks }: MobileMenuProps) {
           aria-label="Menú móvil"
           className={`absolute left-0 top-14 w-full bg-bg border-b border-border shadow-md z-50 transition-all duration-200 ease-out
             ${isEntering && !isExiting ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}
+          data-id="mobile-menu-nav"
         >
-          <ul className="flex flex-col items-stretch w-full py-2 px-2">
+          <ul className="flex flex-col items-stretch w-full py-2 px-2" data-id="mobile-menu-list">
             {navLinks.map(({ label, href }, idx) => (
               <React.Fragment key={href}>
                 <li className="w-full">

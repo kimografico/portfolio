@@ -25,6 +25,7 @@ export default function ProjectLine({
       href={href}
       className="group flex items-center gap-6 py-5 hover:pl-1 transition-all duration-200"
       style={{ animationDelay }}
+      data-id={`project-line-${num}`}
     >
       <span className="font-mono text-xs text-muted w-6 shrink-0 group-hover:text-ink transition-colors duration-150">
         {num}

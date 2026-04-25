@@ -46,15 +46,19 @@ export default function BooksTable({ books }: BooksTableProps) {
 
   return (
     <>
-      <BooksFilter books={books} onFiltered={setFilteredBooks} />
+      <div data-id="books-filter">
+        <BooksFilter books={books} onFiltered={setFilteredBooks} />
+      </div>
 
-      <BaseTable<Book, string>
-        data={filteredBooks}
-        columns={columns}
-        initialSorting={[{ id: 'dateRead', desc: true }]}
-        onRowClick={handleRowClick}
-        emptyMessage="No hay libros para mostrar."
-      />
+      <div data-id="books-table">
+        <BaseTable<Book, string>
+          data={filteredBooks}
+          columns={columns}
+          initialSorting={[{ id: 'dateRead', desc: true }]}
+          onRowClick={handleRowClick}
+          emptyMessage="No hay libros para mostrar."
+        />
+      </div>
 
       {selectedBook && <BookModal book={selectedBook} onClose={() => setSelectedBook(null)} />}
     </>

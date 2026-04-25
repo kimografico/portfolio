@@ -84,7 +84,7 @@ function BookModal({ book, onClose }: BookModalProps) {
 
   // Overlay animado
   return (
-    <div className="bookmodal-root" aria-modal="true" role="dialog">
+    <div className="bookmodal-root" aria-modal="true" role="dialog" data-id="book-modal">
       {/* Overlay oscuro y desenfoque */}
       <div
         className="modal-overlay"

@@ -61,12 +61,14 @@ export default function PlacesTable() {
   );
 
   return (
-    <BaseTable<Place, string | undefined>
-      data={data}
-      columns={columns}
-      initialSorting={[{ id: 'date', desc: true }]}
-      onRowClick={() => {}}
-      emptyMessage="No hay lugares para mostrar."
-    />
+    <div data-id="places-table-wrapper">
+      <BaseTable<Place, string | undefined>
+        data={data}
+        columns={columns}
+        initialSorting={[{ id: 'date', desc: true }]}
+        onRowClick={() => {}}
+        emptyMessage="No hay lugares para mostrar."
+      />
+    </div>
   );
 }

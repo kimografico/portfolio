@@ -6,7 +6,11 @@ import type { AboutSectionProps } from '../../interfaces/about';
 
 export default function AboutSection({ label, heading, description }: AboutSectionProps) {
   return (
-    <section aria-labelledby="sobre-heading" className="border-b border-border">
+    <section
+      aria-labelledby="sobre-heading"
+      className="border-b border-border"
+      data-id="about-section"
+    >
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-20">
           <div>

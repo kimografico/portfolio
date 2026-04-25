@@ -16,8 +16,8 @@ export default function IllustrationsGallery({
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   return (
-    <div className="illustrations-gallery">
-      <div className="illustrations-grid">
+    <div className="illustrations-gallery" data-id="illustrations-gallery">
+      <div className="illustrations-grid" data-id="illustrations-gallery-grid">
         {illustrations.map((illustration) => (
           <button
             key={illustration.id}
@@ -27,6 +27,7 @@ export default function IllustrationsGallery({
             onClick={() => onSelectIllustration?.(illustration.id)}
             type="button"
             aria-label={`Ver ilustración: ${illustration.nombre}`}
+            data-id={`illustration-card-${illustration.id}`}
           >
             <div className="illustration-image-wrapper">
               <img

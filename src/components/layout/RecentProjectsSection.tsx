@@ -12,7 +12,11 @@ export default function RecentProjectsSection({
   viewAllHref = '/diseno',
 }: RecentProjectsSectionProps) {
   return (
-    <section aria-labelledby="proyectos-heading" className="border-b border-border">
+    <section
+      aria-labelledby="proyectos-heading"
+      className="border-b border-border"
+      data-id="recent-projects-section"
+    >
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-20">
         <div className="flex items-baseline justify-between mb-8">
           <h2
@@ -24,11 +28,12 @@ export default function RecentProjectsSection({
           <a
             href={viewAllHref}
             className="text-xs text-muted hover:text-ink transition-colors duration-150"
+            data-id="recent-projects-view-all-link"
           >
             Ver todos →
           </a>
         </div>
-        <ul className="divide-y divide-border list-none m-0 p-0">
+        <ul className="divide-y divide-border list-none m-0 p-0" data-id="recent-projects-list">
           {projects.map((project, i) => (
             <li key={project.num}>
               <ProjectLine

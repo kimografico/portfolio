@@ -3,7 +3,7 @@ import '../styles/buttonStyles.css';
 
 export default function NotFoundPage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col" data-id="not-found-page">
       {/* Main content */}
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-16">
         <div className="flex flex-col items-center gap-6">

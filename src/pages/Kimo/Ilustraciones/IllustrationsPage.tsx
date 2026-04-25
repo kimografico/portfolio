@@ -14,7 +14,7 @@ export default function IllustrationsPage() {
   return (
     <div className="flex flex-col gap-12">
       {/* Sección principal */}
-      <section className="border-b border-border">
+      <section className="border-b border-border" data-id="illustrations-page">
         <div className="max-w-7xl mx-auto py-16 md:py-24">
           <div className="mb-12">
             <h1 className="text-5xl md:text-6xl font-semibold tracking-tighter leading-none text-ink mb-6">

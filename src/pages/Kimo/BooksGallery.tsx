@@ -19,9 +19,11 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
       {/* Modal reutilizable: solo se monta si hay libro seleccionado */}
       {selected && <BookModal book={selected} onClose={closeModal} />}
       {/* Filtros reutilizables */}
-      <BooksFilter books={books} onFiltered={setFilteredBooks} />
+      <div data-id="books-filter">
+        <BooksFilter books={books} onFiltered={setFilteredBooks} />
+      </div>
       {/* Galería de portadas */}
-      <div className="bookshelf-grid">
+      <div className="bookshelf-grid" data-id="books-gallery-grid">
         {[...filteredBooks]
           .sort((a, b) => {
             if (a.dateRead && a.dateRead.trim() !== '' && b.dateRead && b.dateRead.trim() !== '') {
