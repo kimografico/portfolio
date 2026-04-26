@@ -7,18 +7,17 @@ import IllustrationsPage from './pages/Kimo/Ilustraciones/IllustrationsPage';
 import IllustrationDetailPage from './pages/Kimo/Ilustraciones/IllustrationDetailPage';
 import NotFoundPage from './pages/NotFoundPage';
 import GraphicDesignHome from './pages/GraphicDesign/GraphicDesignHome';
+import DeveloperHome from './pages/Developer/DeveloperHome';
+import DeveloperWordpress from './pages/Developer/DeveloperWordpress';
+import DeveloperWordpressDetail from './pages/Developer/DeveloperWordpressDetail';
+import DeveloperVanilla from './pages/Developer/DeveloperVanilla';
+import DeveloperVanillaDetail from './pages/Developer/DeveloperVanillaDetail';
+import DeveloperFrameworks from './pages/Developer/DeveloperFrameworks';
+import DeveloperFrameworksDetail from './pages/Developer/DeveloperFrameworksDetail';
 import MainLayout from './components/layout/MainLayout';
 import ContactMe from './pages/ContactMe/ContactMe';
 import ScrollToTop from './components/layout/ScrollToTop';
 import IconGallery from './pages/Kimo/IconGallery';
-
-// Componentes placeholder para rutas en desarrollo
-const PlaceholderPage = ({ title }: { title: string }) => (
-  <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '4rem 2rem' }}>
-    <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>{title}</h1>
-    <p style={{ color: '#666' }}>Esta sección está en desarrollo.</p>
-  </div>
-);
 
 export default function App() {
   return (
@@ -36,8 +35,13 @@ export default function App() {
             <Route path="iconos" element={<IconGallery />} />
           </Route>
           <Route path="/graphic-design" element={<GraphicDesignHome />} />
-          <Route path="/dev" element={<PlaceholderPage title="Desarrollo" />} />
-          <Route path="/dev/:id" element={<PlaceholderPage title="Proyecto de Desarrollo" />} />
+          <Route path="/dev" element={<DeveloperHome />} />
+          <Route path="/dev/wordpress" element={<DeveloperWordpress />} />
+          <Route path="/dev/wordpress/:id" element={<DeveloperWordpressDetail />} />
+          <Route path="/dev/vanilla" element={<DeveloperVanilla />} />
+          <Route path="/dev/vanilla/:id" element={<DeveloperVanillaDetail />} />
+          <Route path="/dev/frameworks" element={<DeveloperFrameworks />} />
+          <Route path="/dev/frameworks/:id" element={<DeveloperFrameworksDetail />} />
           <Route path="/contacto" element={<ContactMe />} />
           {/* Fallback 404 */}
           <Route path="*" element={<NotFoundPage />} />

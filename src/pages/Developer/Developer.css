@@ -1,0 +1,39 @@
+/* Developer.css: estilos para la sección de desarrollo web */
+
+/* Icono de categoría con animación de hover */
+.icono-dev {
+  @apply transition-colors duration-300 text-muted;
+}
+
+.group:hover .icono-dev {
+  @apply stroke-blue-500;
+}
+
+/* Thumbnail de tarjeta de proyecto */
+.wp-card-image {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Imagen en la galería de detalle */
+.wp-gallery-image {
+  width: 100%;
+  display: block;
+  cursor: zoom-in;
+  transition: opacity 0.2s ease;
+}
+
+.wp-gallery-image:hover {
+  opacity: 0.85;
+}
+
+/* Iframe embebido de YouTube */
+.wp-embed-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border: none;
+}
