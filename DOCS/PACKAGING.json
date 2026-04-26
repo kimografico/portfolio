@@ -6,17 +6,50 @@
     "cliente": "PierdeLoss90",
     "descripcion": "PierdeLoss90 Pack para un programa de pérdida de peso",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Registro-de-Entrenamiento.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Iman-Nevera.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/IMAN.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_B.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/CAJA-CERRADA.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/CAJA-ABIERTA.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_A.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/CAJAS-v2-07.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/CAJAS-v2-02.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/CAJAS-v2-05.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Registro-de-Entrenamiento.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Iman-Nevera.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/IMAN.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_B.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/CAJA-CERRADA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/CAJA-ABIERTA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_A.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/CAJAS-v2-07.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/CAJAS-v2-02.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/CAJAS-v2-05.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -30,10 +63,22 @@
     "cliente": "Ida2",
     "descripcion": "Taco de notas personalizado para regalar a clientes. En la caja y en cada hoja aparece el nombre del cliente, produciéndose una comunicación 1:1 mucho más efectiva y con mas retorno que con una campaña publicitaria al uso.",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2017/09/Pack-hojas-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/09/Pack-hojas-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/09/Hoja.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/TACOS-PERSONALIZADOS.png"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/09/Pack-hojas-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/09/Pack-hojas-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/09/Hoja.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/TACOS-PERSONALIZADOS.png",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -45,19 +90,58 @@
     "cliente": "Aceite Ozonizado",
     "descripcion": "Ozolife",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-aceite-de-oliva-ozonizado.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/crema-antiaging-unisex-noche-50-ml-ozolife.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-mucotrofin-aftas-bucales.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/capsulas-ozolife-caja-60-unidades.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-jabon-artesano-con-ozono.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-serum-contornos-de-ojos-unisex.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-crema-de-pies.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-neonervial-nucleotidos-colina-vitaminas-b1-y-b6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-crema-de-manos.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/condropep.png",
-      "https://kimografico.com/wp-content/uploads/2019/12/Ozolife.jpg",
-      "https://kimografico.com/wp-content/uploads/elementor/thumbs/Crema-para-celulitis-Ozolife-scaled-pwdw3cpp6774jicxedxgtbx7rchzisn4m56qh6ckui.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/12/ozolife-1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-aceite-de-oliva-ozonizado.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/crema-antiaging-unisex-noche-50-ml-ozolife.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-mucotrofin-aftas-bucales.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/capsulas-ozolife-caja-60-unidades.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-jabon-artesano-con-ozono.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-serum-contornos-de-ojos-unisex.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-crema-de-pies.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-neonervial-nucleotidos-colina-vitaminas-b1-y-b6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-crema-de-manos.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/condropep.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/12/Ozolife.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/Crema-para-celulitis-Ozolife-scaled-pwdw3cpp6774jicxedxgtbx7rchzisn4m56qh6ckui.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/12/ozolife-1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [

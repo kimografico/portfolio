@@ -6,15 +6,42 @@
     "cliente": "Natural Climb",
     "descripcion": "Díptico XXL Natural Climb DÍPTICO GIGANTE, ENFOCADO A COLEGIOS",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-9.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-12.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-11.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-6.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-12.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-11.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-6.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -29,9 +56,18 @@
     "cliente": "Ida2",
     "descripcion": "Tríptico Ida2",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Triptico-Ida2-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Triptico-Ida2-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Triptico-Ida2-3.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Triptico-Ida2-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Triptico-Ida2-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Triptico-Ida2-3.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -43,10 +79,22 @@
     "cliente": "Mar Howi",
     "descripcion": "Díptico Ruddersail System DÍPTICO PARA COLORDMAR",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Dipticocolordmarmockup-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Dipticocolordmarmockup-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Dipticocolordmarmockup-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Dipticocolordmarmockup-1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Dipticocolordmarmockup-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Dipticocolordmarmockup-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Dipticocolordmarmockup-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Dipticocolordmarmockup-1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -60,11 +108,26 @@
     "cliente": "PierdeLoss90",
     "descripcion": "Tablas de ejercicios para un sistema de pérdida de peso",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/1-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/5-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/2-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/4-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/3-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/1-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/5-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/2-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/4-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/3-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -76,10 +139,22 @@
     "cliente": "Odín Hidromiel",
     "descripcion": "Flyer informativo para la venta en el extranjero de Hidromiel Odín",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Odin-Flyer-Distribuciones-extranjeras-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Odin-Flyer-Distribuciones-extranjeras-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Odin-Flyer-Distribuciones-extranjeras-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Odin-Flyer-Distribuciones-extranjeras-3.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Odin-Flyer-Distribuciones-extranjeras-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Odin-Flyer-Distribuciones-extranjeras-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Odin-Flyer-Distribuciones-extranjeras-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Odin-Flyer-Distribuciones-extranjeras-3.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -91,10 +166,22 @@
     "cliente": "ReyMono",
     "descripcion": "Conjunto de tríptico y tarifa para un productor de vinos en Francia. Ilustraciones de ReyMono",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/MeltingPotes-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/MeltingPotes-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/MeltingPotes-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/MeltingPotes-5.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/MeltingPotes-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/MeltingPotes-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/MeltingPotes-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/MeltingPotes-5.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -106,8 +193,14 @@
     "cliente": "PierdeLoss90",
     "descripcion": "Flyer promocional de un producto de pérdida de peso",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Flyer-Pierdeloss90-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Flyer-Pierdeloss90-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Flyer-Pierdeloss90-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Flyer-Pierdeloss90-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -119,7 +212,10 @@
     "cliente": "KIMO",
     "descripcion": "Felicitación de cumpleaños",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Petasextos-1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Petasextos-1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -133,9 +229,18 @@
     "cliente": "Asefilco",
     "descripcion": "Calendario Asefilco Calendario corporativo",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Calendario-Asefilco-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Calendario-Asefilco-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Calendario-Asefilco-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Calendario-Asefilco-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Calendario-Asefilco-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Calendario-Asefilco-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -147,8 +252,14 @@
     "cliente": "PierdeLoss90",
     "descripcion": "Flyer promocional de un producto de pérdida de peso",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Flyer-Pierdeloss90-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Flyer-Pierdeloss90-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Flyer-Pierdeloss90-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Flyer-Pierdeloss90-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -160,12 +271,30 @@
     "cliente": "Equilibrium",
     "descripcion": "Flyers para distintas campañas de Equilibrium",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/07/1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/07/2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/07/3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/07/5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/07/4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/07/6.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/07/1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/07/2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/07/3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/07/5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/07/4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/07/6.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -177,13 +306,34 @@
     "cliente": "Ida2",
     "descripcion": "Rollups de oferta para una imprenta digital",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/4-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/XBANNER-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Rollups-scaled.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/1463648176-123x75.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/4-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/XBANNER-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Rollups-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/1463648176-123x75.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -198,15 +348,42 @@
     "cliente": "Varios",
     "descripcion": "Currículum de un psicólogo",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_JUANJO.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_SA.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_RECO.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_RECONDITA.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_CURRICULUM-RECONDITA_Página_1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_CURRICULUM-RECONDITA_Página_2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Ombu.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Curriculum-Ombuena_Página_5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Curriculum-Ombuena_Página_6.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_JUANJO.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_SA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_RECO.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_RECONDITA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_CURRICULUM-RECONDITA_Página_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_CURRICULUM-RECONDITA_Página_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Ombu.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Curriculum-Ombuena_Página_5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Curriculum-Ombuena_Página_6.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -223,11 +400,26 @@
     "cliente": "Equilibrium",
     "descripcion": "Libreto Casos de Éxito",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2021/02/1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/5.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/5.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -241,9 +433,18 @@
     "cliente": "Equilibrium",
     "descripcion": "Tríptico de Equilibrium",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2021/02/EquilibriumTriptico0.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/EquilibriumTriptico1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/EquilibriumTriptico2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/EquilibriumTriptico0.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/EquilibriumTriptico1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/EquilibriumTriptico2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -255,13 +456,34 @@
     "cliente": "Ida2",
     "descripcion": "Papelería corporativa para una imprenta digital",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Hoja-de-factura-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Hoja-de-factura-2-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Tarjetas3-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Tarjetas4-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Tarjetas2-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Tarjetas1-scaled.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Papeleria-Ida2_-scaled.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Hoja-de-factura-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Hoja-de-factura-2-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Tarjetas3-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Tarjetas4-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Tarjetas2-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Tarjetas1-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Papeleria-Ida2_-scaled.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -278,11 +500,26 @@
     "cliente": "Ida2",
     "descripcion": "Libretas y agendas de la imprenta digital Ida2. Las primeras páginas contienen información comercial de la empresa, y las páginas están personalizadas con el nombre de los clientes a los que se le van a regalar, y el pie de cada página hay una frase motivacional diferente.",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/2-1-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/1-1-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/3-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/4.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/2-1-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/1-1-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/3-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/4.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -294,12 +531,30 @@
     "cliente": "Recóndita Ilustración",
     "descripcion": "Calendario 2017 Recóndita Rick, Ilustración",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2017_0.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2017_1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2017_2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2017_4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2017_3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2017_5.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2017_0.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2017_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2017_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2017_4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2017_3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2017_5.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -311,13 +566,34 @@
     "cliente": "L'Ermità Café Cultural",
     "descripcion": "Calendario 2016 L'Ermità Café Cultural",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-E_2016_0.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-E_2016_1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-E_2016_5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-E_2016_3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-E_2016_4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-E_2016_2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-LERMITA.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-E_2016_0.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-E_2016_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-E_2016_5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-E_2016_3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-E_2016_4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-E_2016_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-LERMITA.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -332,10 +608,22 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "Tríptico para la Catedral de Albacete INAUGURACIÓN DEL NUEVO ROSETÓN",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/TriptRos-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/TriptRos-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/TriptRos-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/TriptRos-8.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/TriptRos-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/TriptRos-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/TriptRos-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/TriptRos-8.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -349,11 +637,26 @@
     "cliente": "Lidia Aparicio",
     "descripcion": "Currículum Lidia Aparicio Currículum-portfolio tipo revista para una fotógrafa creativa",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2015/03/CURR-LIDIA-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2015/03/CURR-LIDIA-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2015/03/CURR-LIDIA-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2015/03/CURR-LIDIA-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2015/03/CURR-LIDIA-3.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2015/03/CURR-LIDIA-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2015/03/CURR-LIDIA-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2015/03/CURR-LIDIA-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2015/03/CURR-LIDIA-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2015/03/CURR-LIDIA-3.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -365,13 +668,34 @@
     "cliente": "Equilibrium",
     "descripcion": "Trípticos, tarifas y encuestas personales de la campaña 2015 de Equilibrium Personal Training Studio",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/3-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/2-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Procedimientos.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/TA4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Tarifas.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2015/01/TARIFAS2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2015/01/TARIFAS1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/3-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/2-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Procedimientos.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/TA4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Tarifas.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2015/01/TARIFAS2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2015/01/TARIFAS1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -383,9 +707,18 @@
     "cliente": "Pau Benedito",
     "descripcion": "Tarjetas de visita de un entrenador personal",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/01/250514_Tarjetas-Pauer-2-1-copia.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/250514_Tarjetas-Pauer-2-2-copia.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Tarjetas.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/250514_Tarjetas-Pauer-2-1-copia.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/250514_Tarjetas-Pauer-2-2-copia.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Tarjetas.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -397,11 +730,26 @@
     "cliente": "MagVi",
     "descripcion": "Tríptico explicando los servicios de una pareja de magos",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/1-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/2-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/3-8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/4-5.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/1-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/2-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/3-8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/4-5.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -413,10 +761,22 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "Políptico de 5 palas Exposición antológica de Pilar Belmonte",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5dtco-0.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5dtco-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5dtco-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5dtco-1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5dtco-0.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5dtco-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5dtco-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5dtco-1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -430,12 +790,30 @@
     "cliente": "Recóndita Ilustración",
     "descripcion": "Calendario 2014 Recóndita Rick, Ilustración",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2014_0.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2014_1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2014_5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2014_2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2014_3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2014_4.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2014_0.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2014_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2014_5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2014_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2014_3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2014_4.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -447,14 +825,38 @@
     "cliente": "SAPEC",
     "descripcion": "Dípticos SAPEC Productos para el campo",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Algaegreen-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Algaegreen-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Algaegreen-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Kaos-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2012/10/Kaos-2-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Vigoter-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Vigoter-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Vigoter-3.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Algaegreen-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Algaegreen-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Algaegreen-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Kaos-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2012/10/Kaos-2-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Vigoter-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Vigoter-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Vigoter-3.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -466,10 +868,22 @@
     "cliente": "Gondamar & Fish S.L.",
     "descripcion": "Tríptico explicando el catálogo de una empresa de elaboración de pescados",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/1-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/4-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/3-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/2-scaled.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/1-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/4-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/3-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/2-scaled.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -481,9 +895,18 @@
     "cliente": "SAPEC",
     "descripcion": "Guía de tratamientos frutales DÍPTICO PARA SAPEC AGRO",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Sapec-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Sapec-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Sapec-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Sapec-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Sapec-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Sapec-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -497,9 +920,18 @@
     "cliente": "La Brigada Gráfica",
     "descripcion": "Díptico para Guillermo del Toro PROYECTO DOCUMENTAL",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/LBG-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/LBG-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/LBG-3.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/LBG-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/LBG-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/LBG-3.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -513,8 +945,14 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "Invitación Horizontes Cercanos e Infinitos EXPOSICIÓN DE PILAR BELMONTE",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/01/Invita-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Invita-0.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Invita-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Invita-0.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -528,9 +966,18 @@
     "cliente": "Admedical",
     "descripcion": "Fichas técnicas para los productos de una empresa de material médico",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Double-Sided-4x6-Inch-Flyer-Mockup-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Admedical-Ficha-081110-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Admedical-Ficha-081110-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Double-Sided-4x6-Inch-Flyer-Mockup-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Admedical-Ficha-081110-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Admedical-Ficha-081110-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []

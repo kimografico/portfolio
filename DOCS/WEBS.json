@@ -6,21 +6,60 @@
     "cliente": "IES Serpis",
     "descripcion": "Web para Arroces de pecado MAR 2024",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2024/03/AP_5.jpg",
-      "https://kimografico.com/wp-content/uploads/2024/03/AP_4.jpg",
-      "https://kimografico.com/wp-content/uploads/2024/03/AP_3.jpg",
-      "https://kimografico.com/wp-content/uploads/2024/03/AP_2.jpg",
-      "https://kimografico.com/wp-content/uploads/2024/03/AP_1.jpg",
-      "https://kimografico.com/wp-content/uploads/2024/03/AP_9.jpg",
-      "https://kimografico.com/wp-content/uploads/2024/03/AP_8.jpg",
-      "https://kimografico.com/wp-content/uploads/2024/03/AP_7.jpg",
-      "https://kimografico.com/wp-content/uploads/2024/03/AP_6.jpg",
-      "https://kimografico.com/wp-content/uploads/2024/03/AP_screen.jpg",
-      "https://kimografico.com/wp-content/uploads/2024/03/Arroces-de-Pecado-LOGO.png",
-      "https://kimografico.com/wp-content/uploads/elementor/thumbs/paella_screens-scaled-qmvn35yok56naogrhas6j99x578iz6nv17pi9w8gns.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_screen.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/Arroces-de-Pecado-LOGO.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/paella_screens-scaled-qmvn35yok56naogrhas6j99x578iz6nv17pi9w8gns.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://www.youtube.com/watch?v=w3D5EnX-Yho"
+      {
+        "ruta": "https://www.youtube.com/watch?v=w3D5EnX-Yho",
+        "label": ""
+      }
     ],
     "extras": [
       "Web ficticia, como proyecto para un módulo superior de estudios de desarrollo web CSS y HTML",
@@ -51,23 +90,68 @@
     "cliente": "Xerri",
     "descripcion": "Xerri Espumas y Transformados ENE 2021 – ACTUALIDAD",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-10.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-13.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-14.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-16.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-17.jpg",
-      "https://kimografico.com/wp-content/uploads/2021/01/xerriespumasMockup2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-10.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-13.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-14.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-16.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-17.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2021/01/xerriespumasMockup2.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://www.youtube.com/watch?v=AjybgUwQIII",
-      "https://www.youtube.com/watch?v=nh7x4-RPjgM"
+      {
+        "ruta": "https://www.youtube.com/watch?v=AjybgUwQIII",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=nh7x4-RPjgM",
+        "label": ""
+      }
     ],
     "extras": [
       "Web/catálogo creada para una empresa de venta de espumas Programada mediante CMS WordPress, CSS y HTML.",
@@ -94,16 +178,46 @@
     "cliente": "Mar Howi",
     "descripcion": "COLORDMAR DIC 2020 – ACTUALIDAD",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_9.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_2.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/colordmarMockup2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/colordmarMockup2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -127,13 +241,34 @@
     "cliente": "Crece tu Empresa",
     "descripcion": "Crece tu Empresa ABR 2020 – ACTUALIDAD",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/9NgmWSmNYM.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/AdAN2PmnaY.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/ddn5eQjIsY.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/ojah383Gcw.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/EkIOK64pw4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/cYkjcZXUKn.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/CTE.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/9NgmWSmNYM.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/AdAN2PmnaY.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/ddn5eQjIsY.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/ojah383Gcw.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/EkIOK64pw4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/cYkjcZXUKn.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/CTE.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -154,14 +289,38 @@
     "cliente": "Juan Mas",
     "descripcion": "Juan Mas OCT – ACTUALIDAD",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-curriculum.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-criticas.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-contacto.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-galeria-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-expos.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-bibliografia.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-Obra-scaled.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/12/Juanmas-monitor-juanmas.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-curriculum.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-criticas.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-contacto.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-galeria-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-expos.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-bibliografia.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-Obra-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/12/Juanmas-monitor-juanmas.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -183,16 +342,46 @@
     "cliente": "Alba García",
     "descripcion": "Cache Croche AGO 2019 – ACTUALIDAD",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-inicio.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-atelier.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-prensa.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-colecciones.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-blog.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-productos.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-celebrities.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-contacto.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/08/Cachecroche-vestidos.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/10/monitor-cachecroche-scaled-113x75.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-inicio.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-atelier.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-prensa.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-colecciones.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-blog.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-productos.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-celebrities.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-contacto.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/08/Cachecroche-vestidos.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/10/monitor-cachecroche-scaled-113x75.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -216,19 +405,52 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "Pilar Belmonte ENE 2019 – ACTUALIDAD",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-inicio.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-venta.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-vidrieras.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-papel.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-curriculum1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-eventos.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/01/PB3-obra.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-curriculum-mini.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-contacto.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-inicio.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-venta.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-vidrieras.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-papel.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-curriculum1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-eventos.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/01/PB3-obra.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-curriculum-mini.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-contacto.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://www.youtube.com/watch?v=Qewh6X4FcFM",
-      "https://youtu.be/KFRlakMTyGY"
+      {
+        "ruta": "https://www.youtube.com/watch?v=Qewh6X4FcFM",
+        "label": ""
+      },
+      {
+        "ruta": "https://youtu.be/KFRlakMTyGY",
+        "label": ""
+      }
     ],
     "extras": [
       "Web creada para la artista Pilar Belmonte, como portfolio personal y fuente de información sobre la misma. Programada mediante CMS WordPress, Javascript, CSS y HTML.",
@@ -252,22 +474,64 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "Pilar Belmonte ENE 2016 – ENE 2019",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/02/foto.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-39.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-47.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-54.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-48-28.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-57.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-48-12.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-44.png",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-01-26_00-47-14.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-21.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/02/Gigabyte-AORUS-AD27QD-2.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-44.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/foto.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-39.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-47.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-54.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-48-28.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-57.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-48-12.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-44.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-01-26_00-47-14.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-21.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/Gigabyte-AORUS-AD27QD-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-44.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/ViyDzREWzPo",
-      "https://youtu.be/Tet8RboZuFo"
+      {
+        "ruta": "https://youtu.be/ViyDzREWzPo",
+        "label": ""
+      },
+      {
+        "ruta": "https://youtu.be/Tet8RboZuFo",
+        "label": ""
+      }
     ],
     "extras": [
       "Web creada para la artista Pilar Belmonte, como portfolio personal y fuente de información sobre la misma. Programada mediante HTML, CSS, PHP, AJAX, JAVASCRIPT y TPV Virtual.",
@@ -291,16 +555,40 @@
     "cliente": "Casa Rural Román",
     "descripcion": "La web consiste en una página de inicio con carrusel de fotos, descripción de la casa, formulario de contacto con google maps integrado, tabla de precios, oferta de actividades con sus respectivas descripciones y galería de fotos con lightbox",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-06-40.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-05-49.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-02-19_22-07-45.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-06-14.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-06-53.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-06-20.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/11/1000_F_28832587_P6mUjsdIOwwtsJqdYggp47KRMnHreaot.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-06-40.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-05-49.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-02-19_22-07-45.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-06-14.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-06-53.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-06-20.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/11/1000_F_28832587_P6mUjsdIOwwtsJqdYggp47KRMnHreaot.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/5sQAndJn6Jc"
+      {
+        "ruta": "https://youtu.be/5sQAndJn6Jc",
+        "label": ""
+      }
     ],
     "extras": [
       "Casa Rural Román ENE 2016 – JUL 2016",
@@ -320,16 +608,40 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "Museo de cerámica nacional DIC 2015 – ACTUALIDAD",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0005_Fondo.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0002_Capa-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0004_Capa-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0001_Capa-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0003_Capa-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0000_Capa-5.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/02/monitorceramica.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0005_Fondo.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0002_Capa-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0004_Capa-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0001_Capa-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0003_Capa-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0000_Capa-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/monitorceramica.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/3nchX8okeME"
+      {
+        "ruta": "https://youtu.be/3nchX8okeME",
+        "label": ""
+      }
     ],
     "extras": [
       "Web creada para el Museo de Cerámica Nacional de Chinchilla de Montearagón Programada mediante HTML, CSS y JAVASCRIPT",
@@ -349,9 +661,18 @@
     "cliente": "Odín Hidromiel",
     "descripcion": "JUN 2015 Web creada para la marca de hidromiel ODIN, para la promoción de diversos productos. Programada mediante CMS WordPress, HTML, CSS y JAVASCRIPT.",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2015/06/clean-computer-station-setup-one-laptop-and-one-monitor.jpg",
-      "https://kimografico.com/wp-content/uploads/2015/06/Odin-logo-cabecera.png",
-      "https://kimografico.com/wp-content/uploads/2019/01/philips_258b6qu_front_web.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2015/06/clean-computer-station-setup-one-laptop-and-one-monitor.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2015/06/Odin-logo-cabecera.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/01/philips_258b6qu_front_web.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -365,18 +686,48 @@
     "cliente": "Equilibrium",
     "descripcion": "Equilibrium Personal Training Studio NOV 2014 – AGO 2015",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Portada.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Equipo.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Contacto.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Servicios.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Visita.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Contacto2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Galeria.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Testimonios.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Portada.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Equipo.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Contacto.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Servicios.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Visita.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Contacto2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Galeria.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Testimonios.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/aernp6Gppz8",
-      "https://youtu.be/-IceYJwop-Y"
+      {
+        "ruta": "https://youtu.be/aernp6Gppz8",
+        "label": ""
+      },
+      {
+        "ruta": "https://youtu.be/-IceYJwop-Y",
+        "label": ""
+      }
     ],
     "extras": [
       "Web creada para un centro de entrenamiento personal de Torrente Programada mediante HTML, CSS, PHP, AJAX y JAVASCRIPT.",
@@ -400,15 +751,36 @@
     "cliente": "MagVi",
     "descripcion": "Miranda de Picas NOV 2014 – ACTUALIDAD",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-14-20.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-14-34.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-14-27.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-15-29.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-15-50.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/02/monitor-miranda.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-14-20.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-14-34.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-14-27.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-15-29.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-15-50.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/monitor-miranda.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/SBkNqlQjbpw"
+      {
+        "ruta": "https://youtu.be/SBkNqlQjbpw",
+        "label": ""
+      }
     ],
     "extras": [
       "Web creada para la maga y payasa Miranda de Picas con la colaboración como fotógrafa de Lidia Aparicio Programada mediante HTML, CSS, AJAX y JAVASCRIPT.",
@@ -428,17 +800,44 @@
     "cliente": "MagVi",
     "descripcion": "MagVi OCT 2014 – ACTUALIDAD",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-18-05.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-19-06.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-18-54.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-19-30.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-18-23.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-19-39.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/02/monitor-MagVi.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-18-05.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-19-06.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-18-54.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-19-30.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-18-23.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-19-39.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/monitor-MagVi.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/NU6-wxT1QCE",
-      "https://youtu.be/bLE-hrVjqaY"
+      {
+        "ruta": "https://youtu.be/NU6-wxT1QCE",
+        "label": ""
+      },
+      {
+        "ruta": "https://youtu.be/bLE-hrVjqaY",
+        "label": ""
+      }
     ],
     "extras": [
       "Web creada para el mago MagVi, con la colaboración como fotógrafa de Lidia Aparicio Programada mediante HTML, CSS, PHP, AJAX y JAVASCRIPT.",
@@ -459,16 +858,40 @@
     "cliente": "Gondamar & Fish S.L.",
     "descripcion": "La web consiste en un menú inicio con su fotografía corporativa de los fiordos noruegos. Desde ahí accedemos a Quienes somos, Localización, Productos y Contacto. En el menú de productos podemos acceder a sus tres familias ofertadas, Frescos, Ahumados y Salazones, con una selección de ejemplos.",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-15.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-47.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-22.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-28-11.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-43.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-28.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/02/monitor-gondamar.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-15.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-47.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-22.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-28-11.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-43.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-28.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/monitor-gondamar.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/WN4vVi_X03M"
+      {
+        "ruta": "https://youtu.be/WN4vVi_X03M",
+        "label": ""
+      }
     ],
     "extras": [
       "Gondamar ENE 2014 – ACTUALIDAD",
@@ -488,26 +911,80 @@
     "cliente": "Ida2",
     "descripcion": "Ida2 Impresión Digital DIC 2013 – ACTUALIDAD",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/02/MMD-Philips-275P4VYKEB.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-16-43.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-03.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-20.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-16-50.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-08.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-56.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-16-53.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-14.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-18-48.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-21-30.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-21-43.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-22-24.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-21-54.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-23-08.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-21-50.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/02/monitor_ida2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/MMD-Philips-275P4VYKEB.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-16-43.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-03.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-20.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-16-50.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-08.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-56.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-16-53.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-14.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-18-48.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-21-30.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-21-43.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-22-24.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-21-54.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-23-08.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-21-50.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/monitor_ida2.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/W2lkm16yXHw"
+      {
+        "ruta": "https://youtu.be/W2lkm16yXHw",
+        "label": ""
+      }
     ],
     "extras": [
       "Web creada para la empresa de impresión digital IDA2 Programada mediante HTML, CSS, PHP, AJAX, JAVASCRIPT.",
@@ -531,10 +1008,22 @@
     "cliente": "Soy gay y me caso",
     "descripcion": "Soy gay y me caso JUN 2013",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0001_Capa-11.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0002_Capa-10.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0000_Capa-12.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/02/SGYMC.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0001_Capa-11.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0002_Capa-10.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0000_Capa-12.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/SGYMC.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -552,10 +1041,22 @@
     "cliente": "Sintac Recycling",
     "descripcion": "Sintac Recycling NOV 2012 – JUL 2017",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/11/sintac1-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/sintac2-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/sintac3-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/11/blur-close-up-computer-927629.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/sintac1-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/sintac2-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/sintac3-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/11/blur-close-up-computer-927629.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -573,12 +1074,30 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "La web consiste en una página de inicio con la información más relevante, varias secciones informando de las características de la finca, e información de contacto. El cliente prefirió no indicar ubicación. La página fue traducida al Inglés y al Francés",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/11/2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/5.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/11/1.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/11/201B40_00H-IMS-en_SG.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/11/1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/11/201B40_00H-IMS-en_SG.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -597,10 +1116,22 @@
     "cliente": "Nakama Customs",
     "descripcion": "Nakama Customs AGO 2012 – OCT 2015",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/02/nakama1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/nakama3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/nakama2.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/02/NAKAMA.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/nakama1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/nakama3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/nakama2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/NAKAMA.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -617,10 +1148,22 @@
     "cliente": "Díez Caudet",
     "descripcion": "Díez Caudet DIC 2011 – FEB 2015",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0010_Fondo.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0009_Capa-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0008_Capa-4.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/02/DIEZCAUDET.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0010_Fondo.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0009_Capa-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0008_Capa-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/DIEZCAUDET.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -638,12 +1181,30 @@
     "cliente": "RapidTyres",
     "descripcion": "RapidTyres OCT 2011 – ENE 2016 – AGO 2018",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/11/rapid1-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/rapid2-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/rapid3-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/rapid4-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2011/10/Homewheels.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/11/benq-sw2700pt-monitor-hero-1500x1000.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/rapid1-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/rapid2-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/rapid3-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/rapid4-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2011/10/Homewheels.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/11/benq-sw2700pt-monitor-hero-1500x1000.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -663,12 +1224,30 @@
     "cliente": "Cronaval",
     "descripcion": "Cronaval OCT 2011 – FEB 2015",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0007_Capa-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0006_Capa-5-copia-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0004_Capa-5-copia-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0003_Capa-5-copia-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0005_Capa-5-copia.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/02/CRONAVAL.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0007_Capa-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0006_Capa-5-copia-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0004_Capa-5-copia-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0003_Capa-5-copia-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0005_Capa-5-copia.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/CRONAVAL.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -688,15 +1267,36 @@
     "cliente": "La Brigada Gráfica",
     "descripcion": "La Brigada Gráfica FEB 2011 – JUL 2014",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-09-40.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-10-02.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-09-45.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-10-35.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-09-48.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-10-42.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-09-40.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-10-02.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-09-45.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-10-35.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-09-48.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-10-42.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/WqCBnDDpPDI"
+      {
+        "ruta": "https://youtu.be/WqCBnDDpPDI",
+        "label": ""
+      }
     ],
     "extras": [
       "Web creada para un estudio de diseño Programada mediante HTML, CSS, Actionscript, Javascript, Ajax y PHP",
@@ -716,16 +1316,40 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "Pilar Belmonte NOV 2010 – ENE 2016",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-21-28.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-12_22-20-47.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-20-30.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-20-39.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-20-33.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-20-52.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/02/PB1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-21-28.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-12_22-20-47.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-20-30.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-20-39.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-20-33.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-20-52.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/PB1.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/YfbhV7BJf5U"
+      {
+        "ruta": "https://youtu.be/YfbhV7BJf5U",
+        "label": ""
+      }
     ],
     "extras": [
       "Web creada en colaboración con Esther Navalón Wamba, para la artista Pilar Belmonte, como portfolio personal y fuente de información sobre la misma. Programada mediante Actionscript 2.0, HTML, CSS y Javascript",
@@ -745,15 +1369,36 @@
     "cliente": "ReyMono",
     "descripcion": "Randes i Brodats OCT 2010 – JUN 2013",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-36-50.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-37-02.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-36-52.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-37-23.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-36-59.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-37-05.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-36-50.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-37-02.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-36-52.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-37-23.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-36-59.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-37-05.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/jPKJIGFXlio"
+      {
+        "ruta": "https://youtu.be/jPKJIGFXlio",
+        "label": ""
+      }
     ],
     "extras": [
       "Web creada para una empresa de confección de ropa de fallera, en colaboración con ReyMono Programada mediante HTML, CSS y FLASH",
@@ -773,22 +1418,64 @@
     "cliente": "Precocinados Tia Teresa",
     "descripcion": "La web consiste en dos secciones: Fábrica y Tiendas. La sección de fábrica incluye un contacto, un mapa de ubicación de la misma, los productos estrella de la misma, para su venta a grandes superficies y la historia de la empresa junto con una galería de imágenes. La sección de tienda incluye la ubicación de cada tienda o puesto en el mapa, junto con una galería de imágenes de cada una de ellas. También tiene una selección de productos de elaboración propia, una breve historia con galería de imágenes, y un apartado de recetas para descargar.",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-20.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-37.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-47-20.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-48-02.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-47-10.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-59.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-47-33.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-48-12.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-29.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-42.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-47-47.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-48-17.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/02/lgw1943tbmonitor1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-20.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-37.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-47-20.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-48-02.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-47-10.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-59.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-47-33.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-48-12.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-29.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-42.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-47-47.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-48-17.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/lgw1943tbmonitor1.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/_lBI4L7h5Pc"
+      {
+        "ruta": "https://youtu.be/_lBI4L7h5Pc",
+        "label": ""
+      }
     ],
     "extras": [
       "Precocinados Tía Teresa ENE 2010 – SEP 2015",
@@ -814,19 +1501,52 @@
     "cliente": "Acid Skateboards",
     "descripcion": "Acid Skateboards 2008 - Web creada para una pequeña empresa de venta de material de skateboarding Programada mediante Actionscript 2.0, HTML, CSS, JAVASCRIPT.La web consiste en un menú inicio interactivo donde controlamos un monopatín que se mueve horizontalmente por la escena, dejando ver las diferentes partes de la web. De forma paralela tenemos un menú inferior para un acceso más sencillo",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-30.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-46-24.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-08.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-46-04.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-46-10.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-12.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-58.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-46-18.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-21.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-30.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-46-24.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-08.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-46-04.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-46-10.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-12.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-58.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-46-18.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-21.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/2NeuuMDB_Og",
-      "https://youtu.be/y-Yleb5PVbk"
+      {
+        "ruta": "https://youtu.be/2NeuuMDB_Og",
+        "label": ""
+      },
+      {
+        "ruta": "https://youtu.be/y-Yleb5PVbk",
+        "label": ""
+      }
     ],
     "extras": [
       "Historia – Una breve presentación de la empresa",

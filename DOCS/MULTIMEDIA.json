@@ -6,8 +6,14 @@
     "cliente": "Eduard Farran",
     "descripcion": "SAICA – YAMAHA • e-Mail MAILING COMERCIAL",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2021/02/OKR0RO1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/MAILING_kimo.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/OKR0RO1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/MAILING_kimo.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -20,10 +26,22 @@
     "descripcion": "COLORDMAR Logo reveal para una empresa de material deportivo",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=pgSh4HzMBrE",
-      "https://www.youtube.com/watch?v=SDj-oGSF6k4",
-      "https://youtu.be/6HpQ_DPxFqc",
-      "https://youtu.be/-XgtI6ep5FE"
+      {
+        "ruta": "https://www.youtube.com/watch?v=pgSh4HzMBrE",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=SDj-oGSF6k4",
+        "label": ""
+      },
+      {
+        "ruta": "https://youtu.be/6HpQ_DPxFqc",
+        "label": ""
+      },
+      {
+        "ruta": "https://youtu.be/-XgtI6ep5FE",
+        "label": ""
+      }
     ],
     "extras": [
       "Logo Completo",
@@ -40,7 +58,10 @@
     "descripcion": "Resilent Video promocional de un bioestimulante para la empresa Ascenza",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=nIxaglwZWXQ"
+      {
+        "ruta": "https://www.youtube.com/watch?v=nIxaglwZWXQ",
+        "label": ""
+      }
     ],
     "extras": []
   },
@@ -52,8 +73,14 @@
     "descripcion": "Neón Teaser del single «NEÓN» del disco «La Senda del Agua» de Pilar McCarthy. Hecho con After Effects y Premiere Pro",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=V0YvcFsMlqU",
-      "https://www.youtube.com/watch?v=9fybH_B-RXU"
+      {
+        "ruta": "https://www.youtube.com/watch?v=V0YvcFsMlqU",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=9fybH_B-RXU",
+        "label": ""
+      }
     ],
     "extras": [
       "NEÓN – Primer Teaser",
@@ -68,8 +95,14 @@
     "descripcion": "Contracciones Sonoras Logo reveal para un proyecto musical a cargo de Pilar McCarthy",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=RDnTpwjAaZ4&amp;feature=youtu.be",
-      "https://www.youtube.com/watch?v=402-5JAj024"
+      {
+        "ruta": "https://www.youtube.com/watch?v=RDnTpwjAaZ4&amp;feature=youtu.be",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=402-5JAj024",
+        "label": ""
+      }
     ],
     "extras": [
       "Contracciones Sonoras – Versión oscura",
@@ -83,65 +116,242 @@
     "cliente": "Ida2",
     "descripcion": "Ida2 • e-Mail PLANTILLAS Y FIRMAS CORPORATIVAS",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/MockUp.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/13.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/9.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/14.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/16.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/4.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/CMYK-FRIDAY.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/LIBRETAS-FRESADAS.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/NUEVO-HORARIO.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/VOLVEMOS-CON-LAS-PILAS-CARGADAS.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Vacaciones-2020-v2.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2020-01-10-ROLLUP2020.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2019-12-17-Navidad-2019.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2019-06-26-VERANO-2019.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2019-05-15-MAQUINAS-UVI-Y-CORTE.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2019-02-26-ROLLUP2019.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2018-09-20-LASERCUT.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2018-04-03-TAMAÑO-IMPORTA.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2018-04-03-BLANCO.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2018-03-20-Packaging-sorpresa.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2018-01-15-IGEN5.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2017-09-28-TACOS-NOTAS.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2017-06-30-Vacaciones-2017.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2017-04-21-XBANNER.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2017-03-08-RIGIDOS4.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2016-10-31-66x36-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2016-04-25-RIGIDOS2.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2016-01-27-ROLLUP2016.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2016-01-11-CATALOGOPRODUCTOS-2016.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2016-01-11-AMPLIACIÓN2.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2015-11-12-NAVIDAD2015.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2015-03-13-VINILOPARED.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2014-02-11-RIGIDOS.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2014-01-27-SANVALENTIN.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2013-09-06-LIBROS.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2013-01-08-REDES.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2012-10-10-Calendarios.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2012-08-31-TROQUEL3.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2012-08-31-TROQUEL2.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2012-08-31-MARKUNOAUNO.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2012-08-31-CATALOGOPRODUCTOS.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2012-07-19-VINILO.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2012-07-19-LONA.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/2012-07-19-BARAJA.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/CMYK-FRIDAY-CUADRADO.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/ESPECIALISTAS-EN-URGENCIAS.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/LIBRETAS-FRESADAS-1-scaled.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Furgoneta-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Libros.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Revista.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Logo-Robot-Rollups.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Slogan-Robot-Poster.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Slogan-Tarjeta.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/MockUp.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/13.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/14.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/16.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/CMYK-FRIDAY.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/LIBRETAS-FRESADAS.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/NUEVO-HORARIO.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/VOLVEMOS-CON-LAS-PILAS-CARGADAS.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Vacaciones-2020-v2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2020-01-10-ROLLUP2020.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2019-12-17-Navidad-2019.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2019-06-26-VERANO-2019.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2019-05-15-MAQUINAS-UVI-Y-CORTE.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2019-02-26-ROLLUP2019.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2018-09-20-LASERCUT.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2018-04-03-TAMAÑO-IMPORTA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2018-04-03-BLANCO.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2018-03-20-Packaging-sorpresa.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2018-01-15-IGEN5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2017-09-28-TACOS-NOTAS.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2017-06-30-Vacaciones-2017.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2017-04-21-XBANNER.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2017-03-08-RIGIDOS4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2016-10-31-66x36-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2016-04-25-RIGIDOS2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2016-01-27-ROLLUP2016.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2016-01-11-CATALOGOPRODUCTOS-2016.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2016-01-11-AMPLIACIÓN2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2015-11-12-NAVIDAD2015.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2015-03-13-VINILOPARED.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2014-02-11-RIGIDOS.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2014-01-27-SANVALENTIN.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2013-09-06-LIBROS.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2013-01-08-REDES.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2012-10-10-Calendarios.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2012-08-31-TROQUEL3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2012-08-31-TROQUEL2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2012-08-31-MARKUNOAUNO.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2012-08-31-CATALOGOPRODUCTOS.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2012-07-19-VINILO.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2012-07-19-LONA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/2012-07-19-BARAJA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/CMYK-FRIDAY-CUADRADO.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/ESPECIALISTAS-EN-URGENCIAS.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/LIBRETAS-FRESADAS-1-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Furgoneta-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Libros.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Revista.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Logo-Robot-Rollups.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Slogan-Robot-Poster.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Slogan-Tarjeta.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -157,14 +367,38 @@
     "descripcion": "Ida2 Impresión Digital Logo animado para entradillas de video",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=riLp4eLyebg",
-      "https://www.youtube.com/watch?v=z6vPE8w2r3g",
-      "https://www.youtube.com/watch?v=JZaAHyEDd4c",
-      "https://www.youtube.com/watch?v=yL6Qu2gVVEM",
-      "https://www.youtube.com/watch?v=2JeaVYw7djs",
-      "https://www.youtube.com/watch?v=AfcV23Ee_Hw",
-      "https://www.youtube.com/watch?v=6_NHUojN018",
-      "https://www.youtube.com/watch?v=4CMevHQK9Wc"
+      {
+        "ruta": "https://www.youtube.com/watch?v=riLp4eLyebg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=z6vPE8w2r3g",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=JZaAHyEDd4c",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=yL6Qu2gVVEM",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=2JeaVYw7djs",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=AfcV23Ee_Hw",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=6_NHUojN018",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=4CMevHQK9Wc",
+        "label": ""
+      }
     ],
     "extras": [
       "Entradillas animadas – Logo Reveal hechos en After Effects mediante templates adaptados"
@@ -178,8 +412,14 @@
     "descripcion": "Recóndita Logo animado para entradillas de video",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=KuAuIgIISig",
-      "https://www.youtube.com/watch?v=m5wWtWWHbQE"
+      {
+        "ruta": "https://www.youtube.com/watch?v=KuAuIgIISig",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=m5wWtWWHbQE",
+        "label": ""
+      }
     ],
     "extras": [
       "Entradillas animadas – Logo Reveal hecho en After Effects mediante template adaptado"
@@ -193,7 +433,10 @@
     "descripcion": "Lidia Aparicio Logo animado para entradillas de video",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=sRxDOqfilJU"
+      {
+        "ruta": "https://www.youtube.com/watch?v=sRxDOqfilJU",
+        "label": ""
+      }
     ],
     "extras": [
       "Entradilla animada – Logo Reveal hecho en After Effects mediante template adaptado"
@@ -207,23 +450,74 @@
     "descripcion": "Kimográfico Logo animado para entradillas de video",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=jsZZMKVd7qs",
-      "https://www.youtube.com/watch?v=IuMru8yqkxU",
-      "https://www.youtube.com/watch?v=uZdRf0POick",
-      "https://www.youtube.com/watch?v=yX05K14v5ms",
-      "https://www.youtube.com/watch?v=18Miz5swcEI",
-      "https://www.youtube.com/watch?v=n16oxKhJYhk",
-      "https://www.youtube.com/watch?v=apON_qxUgmg",
-      "https://www.youtube.com/watch?v=0D5Gbt6BYKA",
-      "https://www.youtube.com/watch?v=rcbLZWAiEbM",
-      "https://www.youtube.com/watch?v=tUvND5nDNf0",
-      "https://www.youtube.com/watch?v=PDdT2Vr8eAs",
-      "https://www.youtube.com/watch?v=Xe7eQ0EUOgU",
-      "https://www.youtube.com/watch?v=MMpegYS3D5g",
-      "https://www.youtube.com/watch?v=dRMczyNZ6Zs",
-      "https://www.youtube.com/watch?v=wPsfPw-kDrM",
-      "https://www.youtube.com/watch?v=dMMGjQq0kJo",
-      "https://www.youtube.com/watch?v=rZQIL7E9SmY"
+      {
+        "ruta": "https://www.youtube.com/watch?v=jsZZMKVd7qs",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=IuMru8yqkxU",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=uZdRf0POick",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=yX05K14v5ms",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=18Miz5swcEI",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=n16oxKhJYhk",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=apON_qxUgmg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=0D5Gbt6BYKA",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=rcbLZWAiEbM",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=tUvND5nDNf0",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=PDdT2Vr8eAs",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=Xe7eQ0EUOgU",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=MMpegYS3D5g",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=dRMczyNZ6Zs",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=wPsfPw-kDrM",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=dMMGjQq0kJo",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=rZQIL7E9SmY",
+        "label": ""
+      }
     ],
     "extras": [
       "Entradillas animadas – Logo Reveal hechos en After Effects mediante templates adaptados"
@@ -237,8 +531,14 @@
     "descripcion": "Estaca Video promocional de un herbicida para la empresa Sapec Agro / Ascenza",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=taCo0YxCE7U",
-      "https://www.youtube.com/watch?v=KB2M5_H6Efs&amp;t=13s"
+      {
+        "ruta": "https://www.youtube.com/watch?v=taCo0YxCE7U",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=KB2M5_H6Efs&amp;t=13s",
+        "label": ""
+      }
     ],
     "extras": [
       "Estaca – Video infografía para Sapec Agro, explicando de forma amena las características del producto 2 de Enero de 2018",
@@ -252,16 +552,40 @@
     "cliente": "Jorge Carrasco",
     "descripcion": "Jorge Carrasco Títulos para una serie de videodocumentales y píldoras promocionales para redes sociales de un conjunto de cursos Vídeo y fotografía: Lidia Aparicio",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/04/J-Carrasco-Píldora-CDH.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/J-Carrasco-Píldora-RQE.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/J-Carrasco-Pildora-Valores.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/J-Carrasco-Píldora-CDH-INSTA.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/J-Carrasco-Píldora-RQE-INSTA.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/J-Carrasco-Pildora-Valores-INSTAGRAM.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/J-Carrasco-Píldora-CDH.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/J-Carrasco-Píldora-RQE.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/J-Carrasco-Pildora-Valores.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/J-Carrasco-Píldora-CDH-INSTA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/J-Carrasco-Píldora-RQE-INSTA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/J-Carrasco-Pildora-Valores-INSTAGRAM.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://www.youtube.com/watch?v=jaRvV274Vsg",
-      "https://www.youtube.com/watch?v=XsLxSETAuJA"
+      {
+        "ruta": "https://www.youtube.com/watch?v=jaRvV274Vsg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=XsLxSETAuJA",
+        "label": ""
+      }
     ],
     "extras": [
       "Versión original para soportes digitales",
@@ -276,10 +600,22 @@
     "descripcion": "Juegos PC PRUEBAS Y TOMA DE CONTACTO",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=oOWYo4txBpI",
-      "https://www.youtube.com/watch?v=VmJjW96Jwm4",
-      "https://www.youtube.com/watch?v=FGfJyvHS7RM",
-      "https://www.youtube.com/watch?v=TZDBH2J5bCQ"
+      {
+        "ruta": "https://www.youtube.com/watch?v=oOWYo4txBpI",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=VmJjW96Jwm4",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=FGfJyvHS7RM",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=TZDBH2J5bCQ",
+        "label": ""
+      }
     ],
     "extras": [
       "Prueba de juego de plataformas con colores planos",
@@ -296,7 +632,10 @@
     "descripcion": "Missylk Video promocional de un bioestimulante para la empresa Sapec Agro S.A.U.",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=q1LzPf4hqsA"
+      {
+        "ruta": "https://www.youtube.com/watch?v=q1LzPf4hqsA",
+        "label": ""
+      }
     ],
     "extras": [
       "Missylk – Videoentrevista a un agricultor sobre los beneficios de utilizar el producto"
@@ -309,10 +648,22 @@
     "cliente": "PierdeLoss90",
     "descripcion": "Newsletter Pierdeloss90 Newsletter que forman parte de un producto entrenamiento y dieta para pérdida de peso.",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-0.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-3.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-0.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-3.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -329,7 +680,10 @@
     "descripcion": "PierdeLoss90 Logo animado para entradillas de video",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=CVL5Dd49yVQ"
+      {
+        "ruta": "https://www.youtube.com/watch?v=CVL5Dd49yVQ",
+        "label": ""
+      }
     ],
     "extras": [
       "Entradilla animada – Logo Reveal hecho en After Effects mediante template adaptado"
@@ -343,7 +697,10 @@
     "descripcion": "Register 25WG Video promocional de un herbicida para la empresa Sapec Agro S.A.U.",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=QEscUC-fJmI"
+      {
+        "ruta": "https://www.youtube.com/watch?v=QEscUC-fJmI",
+        "label": ""
+      }
     ],
     "extras": [
       "Register 25WG – Infografía animada explicando las características y ventajas del herbicida Register 25WG"
@@ -357,17 +714,50 @@
     "descripcion": "Cuñas Equilibrium Cuñas realizadas para la promoción en un sistema audiovisual presente en las instalaciones del cliente",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=ZxTiYptIzak",
-      "https://www.youtube.com/watch?v=7MVse0EY0iY",
-      "https://www.youtube.com/watch?v=-ubgXU8ld48",
-      "https://www.youtube.com/watch?v=FfvptX75sd8",
-      "https://www.youtube.com/watch?v=ct4J9Id6aqY",
-      "https://www.youtube.com/watch?v=Icdd3tPHXvc",
-      "https://www.youtube.com/watch?v=IilraJF2RQ0",
-      "https://www.youtube.com/watch?v=h9wHxvCQQKI",
-      "https://www.youtube.com/watch?v=rGL5amkZAsU",
-      "https://www.youtube.com/watch?v=3BE7WWNjh40",
-      "https://www.youtube.com/watch?v=pkpU0WRqQEQ"
+      {
+        "ruta": "https://www.youtube.com/watch?v=ZxTiYptIzak",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=7MVse0EY0iY",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=-ubgXU8ld48",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=FfvptX75sd8",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=ct4J9Id6aqY",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=Icdd3tPHXvc",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=IilraJF2RQ0",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=h9wHxvCQQKI",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=rGL5amkZAsU",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=3BE7WWNjh40",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=pkpU0WRqQEQ",
+        "label": ""
+      }
     ],
     "extras": []
   },
@@ -379,8 +769,14 @@
     "descripcion": "Felicitaciones de Navidad Sapec Agro // Ascenza",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=MnCwaZAwdOI",
-      "https://www.youtube.com/watch?v=mZImbfAUfS8"
+      {
+        "ruta": "https://www.youtube.com/watch?v=MnCwaZAwdOI",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=mZImbfAUfS8",
+        "label": ""
+      }
     ],
     "extras": [
       "2013/2014 – Felicitación de Navidad para Sapec Agro. Diseñada en Premiere Pro",
@@ -394,21 +790,66 @@
     "cliente": "Equilibrium",
     "descripcion": "Encuestas interactivas para Equilibrium Encuesta inicial que se le hace a los clientes cuando se apuntan, para ofrecer el servicio más ajustado a las necesidades del mismo Los campos son interactivos para que el personal del gimnasio pueda rellenarlos de forma fácil y ágil, resultando en un servicio más rápido, menos errores, y una imagen de modernidad y alta calidad del servicio.",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/6.png",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5.png",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/4.png",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/3.png",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/2.png",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/1.png",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-2-EVALUACIÓN-ANTROPOMÉTRICA-MENSUAL-1p.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-VALORACIÓN-DE-PROPIOCEPCIÓN-en-proceso-de-reforma-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-Consumo-máximo-de-Oxígeno-Escalón-de-Mc-Ardle.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-VALORACIÓN-DE-PROPIOCEPCIÓN-en-proceso-de-reforma-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-VALORACIÓN-DE-FLEXIBILIDAD-en-procedimiento-de-mejora.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-VALORACIÓN-DE-PROPIOCEPCIÓN-en-proceso-de-reforma-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-EVALUACIÓN-ANTROPOMÉTRICA-MENSUAL-1p.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-valoración-resistencia-aeróbica-cinta.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/5_.png"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/6.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/4.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/3.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/2.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/1.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-2-EVALUACIÓN-ANTROPOMÉTRICA-MENSUAL-1p.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-VALORACIÓN-DE-PROPIOCEPCIÓN-en-proceso-de-reforma-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-Consumo-máximo-de-Oxígeno-Escalón-de-Mc-Ardle.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-VALORACIÓN-DE-PROPIOCEPCIÓN-en-proceso-de-reforma-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-VALORACIÓN-DE-FLEXIBILIDAD-en-procedimiento-de-mejora.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-VALORACIÓN-DE-PROPIOCEPCIÓN-en-proceso-de-reforma-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-EVALUACIÓN-ANTROPOMÉTRICA-MENSUAL-1p.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/291114_TABLET-valoración-resistencia-aeróbica-cinta.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/5_.png",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -421,8 +862,14 @@
     "descripcion": "Videoinfografías para Ida2 Videotutoriales explicativos para facilitar la comprensión del cliente en cuestiones técnicinfo",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=Xz_IjiIZnPg",
-      "https://www.youtube.com/watch?v=CqW7Zj_pQss"
+      {
+        "ruta": "https://www.youtube.com/watch?v=Xz_IjiIZnPg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=CqW7Zj_pQss",
+        "label": ""
+      }
     ],
     "extras": [
       "Digital vs. Offset – Diferencias entre las dos técnicas de impresión, y en que casos es mejor o peor cada una de ellas",
@@ -437,7 +884,10 @@
     "descripcion": "Digital vs. Offset Videoinfografía explicativa con las diferencias entre las dos técnicas de impresión, y en que casos es mejor o peor cada una de ellas",
     "imagenes": [],
     "videos": [
-      "https://www.youtube.com/watch?v=4P0bLjXrjPc"
+      {
+        "ruta": "https://www.youtube.com/watch?v=4P0bLjXrjPc",
+        "label": ""
+      }
     ],
     "extras": [
       "Digital vs. Offset – Version en Español"

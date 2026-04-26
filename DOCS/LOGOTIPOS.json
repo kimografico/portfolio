@@ -6,16 +6,46 @@
     "cliente": "ProFishing Charter",
     "descripcion": "Logotipo para una empresa de charter de pesca",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/12/Profishing_Barco-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/ProFishingCharter2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_Barco-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_Barco-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_Barco-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_Barco-3.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Profishing_Barco-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/ProFishingCharter2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_Barco-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_Barco-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_Barco-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Profishing_Barco-3.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -27,7 +57,10 @@
     "cliente": "Mar Howi",
     "descripcion": "Logotipo para una producto innovador para Paddle Surf",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/09/Ruddersail-system.png"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/09/Ruddersail-system.png",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -39,14 +72,32 @@
     "cliente": "Mar Howi",
     "descripcion": "Logotipo para una empresa de productos relacionados con deportes acuáticos y navegación",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/09/Windsurf.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/09/ColordeMar.png",
-      "https://www.kimografico.com/wp-content/uploads/2020/09/CDM.png",
-      "https://kimografico.com/wp-content/uploads/elementor/thumbs/ColordeMar-pwdvdi5ojcd0dmwd2zsp4p0f92uqy0zf2gn5uhw8o8.png"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/09/Windsurf.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/09/ColordeMar.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/09/CDM.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/ColordeMar-pwdvdi5ojcd0dmwd2zsp4p0f92uqy0zf2gn5uhw8o8.png",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://www.youtube.com/watch?v=pgSh4HzMBrE",
-      "https://www.youtube.com/watch?v=SDj-oGSF6k4"
+      {
+        "ruta": "https://www.youtube.com/watch?v=pgSh4HzMBrE",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.youtube.com/watch?v=SDj-oGSF6k4",
+        "label": ""
+      }
     ],
     "extras": []
   },
@@ -57,10 +108,22 @@
     "cliente": "Eduard Farran",
     "descripcion": "Logotipo para una empresa de exportación de guantes a gran escala",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/12/Logo-Horizontal.png",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/1-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/2-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/3-4.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Logo-Horizontal.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/1-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/2-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/3-4.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -72,7 +135,10 @@
     "cliente": "Vuit Climbing Club",
     "descripcion": "Logotipo para un grupo de escalada deportiva",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Logo-Petasextos.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Logo-Petasextos.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -84,13 +150,34 @@
     "cliente": "Eduard Farran",
     "descripcion": "Logotipo para un grupo de Networking empresarial Durante el proyecto se barajaron varios nombres, optando finalmente por REM",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/07/Logo-fondo-blanco.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/07/kimografico_CONECTA.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/07/kimografico_ARCO.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/07/kimografico_OTROS.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/07/kimografico_NEGRO.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/07/kimografico_BLANCO.jpg",
-      "https://kimografico.com/wp-content/uploads/elementor/thumbs/Logo-fondo-blanco-pwdvdk199g54ht1v7neqkz6b927lrlfn2rnshn0ng8.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/07/Logo-fondo-blanco.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/07/kimografico_CONECTA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/07/kimografico_ARCO.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/07/kimografico_OTROS.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/07/kimografico_NEGRO.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/07/kimografico_BLANCO.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/Logo-fondo-blanco-pwdvdk199g54ht1v7neqkz6b927lrlfn2rnshn0ng8.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -102,15 +189,42 @@
     "cliente": "Pi McCarthy",
     "descripcion": "Logotipo para un proyecto musical a cargo de Pi McCarthy. También se hizo una entradilla animada para Youtube",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Render-Contracciones-Sonoras.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Bocetos-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Bocetos-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/2.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/05/0.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Render-Contracciones-Sonoras.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Bocetos-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Bocetos-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/05/0.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -122,16 +236,46 @@
     "cliente": "Mar Soler",
     "descripcion": "Logotipo para una cuenta de Instagram de costura",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Retalyto.png",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_retalyto-bocetos.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Retalyto-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Retalyto0.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Retalyto7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Retalyto-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Retalyto3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Retalyto-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Retalyto5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_SEW2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Retalyto.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_retalyto-bocetos.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Retalyto-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Retalyto0.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Retalyto7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Retalyto-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Retalyto3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Retalyto-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Retalyto5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_SEW2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -143,10 +287,22 @@
     "cliente": "Crece tu Empresa",
     "descripcion": "Logotipo para una empresa de marketing digital",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/03/CTE-papel.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/03/CTE-rotulo.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/03/CTE-bocetos-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/03/CTE-bocetos-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/03/CTE-papel.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/03/CTE-rotulo.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/03/CTE-bocetos-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/03/CTE-bocetos-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -158,14 +314,38 @@
     "cliente": "Aida Vidal",
     "descripcion": "Logotipo para una profesional del estilismo, maquillaje y peluquería, enfocada principalmente a caracterización para el mundo del cine.",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/AV_Bocetos-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/AV_Bocetos-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/AV_Boceto.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/AV_Plata.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/AV_Cuero.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/AV_Cristal.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/AV_Cuño.jpg",
-      "https://kimografico.com/wp-content/uploads/elementor/thumbs/Aida-Vidal-Logotipo-pwdvzr03uhba8cz215mskgeh7x1862r7cerok8l8kg.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/AV_Bocetos-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/AV_Bocetos-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/AV_Boceto.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/AV_Plata.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/AV_Cuero.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/AV_Cristal.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/AV_Cuño.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/Aida-Vidal-Logotipo-pwdvzr03uhba8cz215mskgeh7x1862r7cerok8l8kg.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -177,9 +357,18 @@
     "cliente": "Hogar 900",
     "descripcion": "Logotipo para una empresa inmobiliaria",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/12/hogar900-bocetos.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/Hogar900-Mock-Up-1-scaled.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/12/Logomockup.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/hogar900-bocetos.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Hogar900-Mock-Up-1-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/12/Logomockup.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -191,11 +380,26 @@
     "cliente": "Arcos Reformas",
     "descripcion": "Logotipo para una empresa de reformas. El cliente trajo una idea muy clara, por lo que el proceso de bocetado fue muy rápido. La A y la R forman el capitel de una columna, especialidad de la empresa",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/12/AR-bocetos-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/AR-luminoso-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/AR-stone-2-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/12/AR-foam.jpg",
-      "https://kimografico.com/wp-content/uploads/elementor/thumbs/Arco-pwdvzry1ovoqgsqbg9a0ez105mn2t9jq4y70fsxkeg.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/AR-bocetos-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/AR-luminoso-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/AR-stone-2-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/AR-foam.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/Arco-pwdvzry1ovoqgsqbg9a0ez105mn2t9jq4y70fsxkeg.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -207,10 +411,22 @@
     "cliente": "Recóndita Ilustración",
     "descripcion": "Logotipo para una profesional de la comunicación animal",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/12/Logo-Comunicadora-Animal.png",
-      "https://kimografico.com/wp-content/uploads/2020/12/2-5.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Logo-Comunicadora-Interespecie.png",
-      "https://kimografico.com/wp-content/uploads/2020/12/1-5.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Logo-Comunicadora-Animal.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/2-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Logo-Comunicadora-Interespecie.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/1-5.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -225,9 +441,18 @@
     "cliente": "Mondjeli",
     "descripcion": "Logotipo para una empresa de compraventa de maquinaria para la construcción",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/09/BOCETOS.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/09/MOCKUP.jpg",
-      "https://kimografico.com/wp-content/uploads/elementor/thumbs/MONDJELI_LOGO-pwdw21pswc4x5t6kdmttwyhzjcf8tu5z4uwef9bue8.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/09/BOCETOS.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/09/MOCKUP.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/MONDJELI_LOGO-pwdw21pswc4x5t6kdmttwyhzjcf8tu5z4uwef9bue8.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -239,11 +464,26 @@
     "cliente": "RG Inox",
     "descripcion": "Logotipo para una empresa de productos de acero inoxidable",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2019/05/BOCETOS.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/05/PREVIEW-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/05/PREVIEW-2.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/05/Logo.jpg",
-      "https://kimografico.com/wp-content/uploads/2019/05/Pared.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/05/BOCETOS.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/05/PREVIEW-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/05/PREVIEW-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/05/Logo.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/05/Pared.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -255,10 +495,22 @@
     "cliente": "Alba García",
     "descripcion": "Logotipo para una diseñadora de moda vanguardista",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2019/04/B.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/04/A.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2019/04/C.jpg",
-      "https://kimografico.com/wp-content/uploads/elementor/thumbs/B-pwduverlev8q6jjb2u0n8wbre1hjtsh716g9ov1w7g.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/04/B.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/04/A.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/04/C.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/B-pwduverlev8q6jjb2u0n8wbre1hjtsh716g9ov1w7g.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -273,9 +525,18 @@
     "cliente": "Equipo Humano",
     "descripcion": "Logotipo para un programa de la empresa de contratación «Equipo Humano»",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Mockup.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Executiva.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Bocetos-Logo.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Mockup.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Executiva.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Bocetos-Logo.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -287,9 +548,18 @@
     "cliente": "Daniele Ciargo",
     "descripcion": "Logotipo para un artista tatuador",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Daniele2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Daniele1-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Daniele2-1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Daniele2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Daniele1-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Daniele2-1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -301,9 +571,18 @@
     "cliente": "Mimas Estilistas",
     "descripcion": "Logotipo para un estilista",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Mimas-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Mimas-2-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Mimas.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Mimas-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Mimas-2-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Mimas.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -315,9 +594,18 @@
     "cliente": "Port Valencia",
     "descripcion": "Logotipo para una cadena de hoteles",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/PortValencia1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/port-valencia.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Port-Valencia-1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/PortValencia1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/port-valencia.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Port-Valencia-1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -329,12 +617,24 @@
     "cliente": "Sally Kärlek",
     "descripcion": "Logotipo para la sección de novias de una maquilladora",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Bridal.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Bridal-2.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Sally-Karlek-1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Bridal.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Bridal-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Sally-Karlek-1.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/jlJqysTa6Nk"
+      {
+        "ruta": "https://youtu.be/jlJqysTa6Nk",
+        "label": ""
+      }
     ],
     "extras": []
   },
@@ -345,11 +645,26 @@
     "cliente": "Menchu",
     "descripcion": "Logotipo para una tienda online de atrapasueños artesanales",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Menchuquencraft.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Menchuquencraft5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Menchuquencraft3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Menchuquencraft4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Menchuquencraft2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Menchuquencraft.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Menchuquencraft5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Menchuquencraft3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Menchuquencraft4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Menchuquencraft2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -361,13 +676,34 @@
     "cliente": "PierdeLoss90",
     "descripcion": "Marca gráfica para un método de perdida de peso",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/PierdeLoss90.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/PierdeLoss90_2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/FB_Avatar.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/FB2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Pierdeloss90-newsletter.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/pierdelossclub.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/PierdeLoss-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/PierdeLoss90.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/PierdeLoss90_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/FB_Avatar.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/FB2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Pierdeloss90-newsletter.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/pierdelossclub.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/PierdeLoss-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -379,8 +715,14 @@
     "cliente": "Sort Estilistas",
     "descripcion": "Logotipo para una estilista",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/SORT.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Sort.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/SORT.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Sort.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -392,8 +734,14 @@
     "cliente": "Grupo Hersauto",
     "descripcion": "Logotipo para un grupo empresarial dedicado a la automoción",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2018/10/Hersauto-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Hersauto-pruebas.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Hersauto-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Hersauto-pruebas.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -405,11 +753,26 @@
     "cliente": "Odín Hidromiel ",
     "descripcion": "Logotipo para una hidromiel con especias, producto de Hidromiel Odin.",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Loki-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Loki-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Loki-1-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Loki-3.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Loki-2-1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Loki-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Loki-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Loki-1-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Loki-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Loki-2-1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -421,10 +784,22 @@
     "cliente": "Odín Hidromiel ",
     "descripcion": "Logotipo para una bebida alcoholica, de la marca Odin Hidromiel.",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/01/zeus-mini.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Zeus-Logo-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Zeus-Logo-3.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Zeus-Logo-4.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/zeus-mini.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Zeus-Logo-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Zeus-Logo-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Zeus-Logo-4.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -436,9 +811,18 @@
     "cliente": "Trick n Roll",
     "descripcion": "Restyling de un logo para una tienda de material de skate",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/TrickNroll-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/IMG-20161205-WA0003.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/TrickNroll.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/TrickNroll-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/IMG-20161205-WA0003.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/TrickNroll.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -450,10 +834,22 @@
     "cliente": "Odín Hidromiel ",
     "descripcion": "Logotipo para una hidromiel con manzana, producto de Hidromiel Odin.",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2016/06/14680918_1185855981489103_4988918038823489072_o.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Lola-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Lola-3-botellas.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Lola.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2016/06/14680918_1185855981489103_4988918038823489072_o.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Lola-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Lola-3-botellas.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Lola.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -465,10 +861,22 @@
     "cliente": "Caramelizhada",
     "descripcion": "Logotipo para una tienda online de venta de ropa",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/CARAMELIZHADA2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/CARAMELIZHADA.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/CARAMELIZHADA3.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Caramelizhada-1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/CARAMELIZHADA2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/CARAMELIZHADA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/CARAMELIZHADA3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Caramelizhada-1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -480,8 +888,14 @@
     "cliente": "Vicente Ombuena",
     "descripcion": "Restyling del logo para un videoclub",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/ombu-kiosko.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Weekend.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/ombu-kiosko.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Weekend.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -493,10 +907,22 @@
     "cliente": "Recóndita Ilustración",
     "descripcion": "Logotipo para una ilustradora de fantasía",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Recondita2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/recondita.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Recondita-Rick-2.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Recondita-Rick.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Recondita2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/recondita.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Recondita-Rick-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Recondita-Rick.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -508,12 +934,24 @@
     "cliente": "Lidia Aparicio",
     "descripcion": "Logotipo para un estudio visual especializado en la fotografía",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Lidia-Aparicio.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Lidia-Aparicio-2-1.jpg",
-      "https://kimografico.com/wp-content/uploads/elementor/thumbs/Lidia-Aparicio-2-pwdus59qr8ti25h7tyfj8x04x9pwvkwlc4ywtkzn4g.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Lidia-Aparicio.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Lidia-Aparicio-2-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/Lidia-Aparicio-2-pwdus59qr8ti25h7tyfj8x04x9pwvkwlc4ywtkzn4g.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://www.youtube.com/watch?v=sRxDOqfilJU"
+      {
+        "ruta": "https://www.youtube.com/watch?v=sRxDOqfilJU",
+        "label": ""
+      }
     ],
     "extras": []
   },
@@ -524,7 +962,10 @@
     "cliente": "LaserGame",
     "descripcion": "Logotipo para un laberinto de laser tag",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2018/11/LASERGAME.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/11/LASERGAME.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -536,8 +977,14 @@
     "cliente": "LaFlama",
     "descripcion": "Rediseño de la marca corporativa de un Pub céntrico de Valencia",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2018/10/LaFlama.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/LaFlama-2.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/LaFlama.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/LaFlama-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -549,13 +996,34 @@
     "cliente": "Odín Hidromiel ",
     "descripcion": "Logotipo para una marca de hidromieles",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Odin.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/ODIN1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/ODIN2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Loki-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/ODIN3.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Odin-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Odin.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/ODIN1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/ODIN2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Loki-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/ODIN3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Odin-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -567,10 +1035,22 @@
     "cliente": "EntreRevs",
     "descripcion": "Logotipo realizado para una empresa de teatro y eventos de rol en vivo.",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/EntreRevs-2-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/EntreRevs-3.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Entrerevs-tira.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/EntreRevs-1-1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/EntreRevs-2-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/EntreRevs-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Entrerevs-tira.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/EntreRevs-1-1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -582,18 +1062,54 @@
     "cliente": "Equilibrium",
     "descripcion": "Diseño de marca corporativa para una cadena de gimnasios",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2018/10/Equilibrium-3.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/EQUILIBRIUM-LOGO-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/EQUILIBRIUM-LOGO-2.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/EQUILIBRIUM-LOGO-3.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Logos-EQUILIBRIUM.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Equilibrium-2-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/EQUILIBRIUM-LOGO-4.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/TARJETAS-REGALO-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/TARJETAS-REGALO-3.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/TARJETAS-REGALO-6.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/fondo-app-blanco.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Bono10-EP.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Equilibrium-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/EQUILIBRIUM-LOGO-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/EQUILIBRIUM-LOGO-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/EQUILIBRIUM-LOGO-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Logos-EQUILIBRIUM.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Equilibrium-2-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/EQUILIBRIUM-LOGO-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/TARJETAS-REGALO-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/TARJETAS-REGALO-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/TARJETAS-REGALO-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/fondo-app-blanco.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Bono10-EP.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -608,9 +1124,18 @@
     "cliente": "Pau Benedito",
     "descripcion": "Logotipo para un entrenador personal con una amplia gama de servicios.",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/PAU-BENEDITO.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Pau-Benedito-Bocetos.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Pau-Benedito.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/PAU-BENEDITO.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Pau-Benedito-Bocetos.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Pau-Benedito.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -622,7 +1147,10 @@
     "cliente": "Quirobert",
     "descripcion": "Logotipo para una clínica de masaje deportivo y quiromasaje",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2018/10/Quirobert.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Quirobert.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -634,13 +1162,34 @@
     "cliente": "Anartxy",
     "descripcion": "Logotipo para una cadena de joyerías",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Anartxy.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2013/11/Adaptación-logotipo-11.jpg",
-      "https://kimografico.com/wp-content/uploads/2013/11/Adaptación-logotipo-2.jpg",
-      "https://kimografico.com/wp-content/uploads/2013/11/Adaptación-logotipo-4.jpg",
-      "https://kimografico.com/wp-content/uploads/2013/11/Adaptación-logotipo-3.jpg",
-      "https://kimografico.com/wp-content/uploads/2013/11/Adaptación-logotipo-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2013/11/Adaptación-logotipo-7.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Anartxy.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2013/11/Adaptación-logotipo-11.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2013/11/Adaptación-logotipo-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2013/11/Adaptación-logotipo-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2013/11/Adaptación-logotipo-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2013/11/Adaptación-logotipo-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2013/11/Adaptación-logotipo-7.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -652,7 +1201,10 @@
     "cliente": "Tono Color",
     "descripcion": "Restyling de un logotipo para una empresa de pinturas",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2018/10/TonoColor.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/TonoColor.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -664,7 +1216,10 @@
     "cliente": "Vici de Bici",
     "descripcion": "Logotipo para una empresa de reparación de bicicletas",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2018/10/Vici-de-Bici.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Vici-de-Bici.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -676,8 +1231,14 @@
     "cliente": "Green Box Festival",
     "descripcion": "Logotipo para un festival de música en Gilet, colaboración con ReyMono",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2012/06/Greenbox.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Greenbox-Festival.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2012/06/Greenbox.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Greenbox-Festival.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -689,12 +1250,30 @@
     "cliente": "Ceres Medioambiente",
     "descripcion": "Logotipo para una empresa de proyectos para la optimización de los recursos naturales y residuos urbanos e industriales. Especializada en cultivar Launia (un clon híbrido de especies de Paulownia, desarrollado y patentado para Ceres Medioambiente)",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Ceres-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Ceres-1-1.jpg",
-      "https://kimografico.com/wp-content/uploads/elementor/thumbs/Ceres-1-1-pwdur6hgwv5xyv374umn6jo7mljggjxakv1wsqju1o.jpg",
-      "https://kimografico.com/wp-content/uploads/elementor/thumbs/Ceres-2-1-pwdur7fb3p78ah1tzd19r1fo7zeto910wzpea0ifvg.jpg",
-      "https://kimografico.com/wp-content/uploads/elementor/thumbs/Ceres-3-1-pwdur8d5aj8im30gtvfwbj74tda6vy4r94cvrah1p8.jpg",
-      "https://kimografico.com/wp-content/uploads/elementor/thumbs/Ceres-1-4-pwduo0qzxwu8y1oekzgsaudfqz41l6drt845q98gyk.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Ceres-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Ceres-1-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/Ceres-1-1-pwdur6hgwv5xyv374umn6jo7mljggjxakv1wsqju1o.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/Ceres-2-1-pwdur7fb3p78ah1tzd19r1fo7zeto910wzpea0ifvg.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/Ceres-3-1-pwdur8d5aj8im30gtvfwbj74tda6vy4r94cvrah1p8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/Ceres-1-4-pwduo0qzxwu8y1oekzgsaudfqz41l6drt845q98gyk.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -706,10 +1285,22 @@
     "cliente": "Margama Estructuras",
     "descripcion": "Logotipo para una empresa de preparación y montaje estructuras y cubiertas en edificaciones",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Margama-3-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Margama-2-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Margama-1-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2011/11/Margama.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Margama-3-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Margama-2-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Margama-1-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2011/11/Margama.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -721,8 +1312,14 @@
     "cliente": "Dorgyss",
     "descripcion": "Logotipo para una empresa de intermediación en la compra y venta de bienes y servicios",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2011/09/Dorgyss.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Dorgyss-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2011/09/Dorgyss.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Dorgyss-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -734,15 +1331,42 @@
     "cliente": "Sintac Recycling",
     "descripcion": "Logotipo para una empresa de reciclaje",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/11/SINTAC-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/SINTAC-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/SINTAC-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2011/08/sintac-equipo.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2011/08/sintacparedcesped.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/11/SINTAC.jpg",
-      "https://kimografico.com/wp-content/uploads/2011/08/sintacfachada.jpg",
-      "https://kimografico.com/wp-content/uploads/2011/08/sintacporexpan.jpg",
-      "https://kimografico.com/wp-content/uploads/2011/08/sintac-estuche.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/SINTAC-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/SINTAC-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/SINTAC-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2011/08/sintac-equipo.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2011/08/sintacparedcesped.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/11/SINTAC.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2011/08/sintacfachada.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2011/08/sintacporexpan.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2011/08/sintac-estuche.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -756,26 +1380,80 @@
     "cliente": "Acid Skateboards",
     "descripcion": "Logotipo para una empresa de accesorios para skateboarding.",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Acid-Estudio.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Acid-Bocetos.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Acid-Pruebas.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Acid2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Acid3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Acid1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/ACID_Llavero.png",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/ACID_usb.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/ACID_T-tool.png",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/ACID_Percha2.png",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/ACID_Percha.png",
-      "https://kimografico.com/wp-content/uploads/2018/10/Acid-1-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Acid-2-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Acid-3-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Acid-4-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Skate.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Acid-Estudio.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Acid-Bocetos.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Acid-Pruebas.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Acid2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Acid3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Acid1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/ACID_Llavero.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/ACID_usb.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/ACID_T-tool.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/ACID_Percha2.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/ACID_Percha.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Acid-1-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Acid-2-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Acid-3-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Acid-4-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Skate.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/KHxqfGAITNk",
-      "https://youtu.be/y-Yleb5PVbk"
+      {
+        "ruta": "https://youtu.be/KHxqfGAITNk",
+        "label": ""
+      },
+      {
+        "ruta": "https://youtu.be/y-Yleb5PVbk",
+        "label": ""
+      }
     ],
     "extras": [
       "Se hizo un estudio de mercado para elegir la gama de colores del logotipo, de forma que se identificara fácilmente con el público objetivo, sin caer en la copia. Para ello se obvió el color más utilizado, y se usaron los dos siguientes.",
@@ -791,9 +1469,18 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "Colaboración con Pilar Belmonte para un logotipo de la Sociedad Oftalmológica de Castilla la Mancha",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/socam.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/socam2.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/SOCAM-1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/socam.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/socam2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/SOCAM-1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -807,8 +1494,14 @@
     "cliente": "EASD",
     "descripcion": "Propuesta de logotipo para la Entidad Valenciana de Salud Pública",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2018/10/Evasp-2-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Evasp-1.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Evasp-2-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Evasp-1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -820,8 +1513,14 @@
     "cliente": "Destino Clandestino",
     "descripcion": "Logotipo para un grupo de música valenciano",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Destino-Clandestino-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/destino-clandestino.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Destino-Clandestino-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/destino-clandestino.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -833,15 +1532,42 @@
     "cliente": "EASD",
     "descripcion": "Logotipo para un evento de teatro sobre Ramón María del Valle-Inclán",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Valleinclan.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Valleinclan2.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/ValleInclán.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/5185012624_7214bfac2f_b.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/5185011548_b1cf2c5623_b.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/5184998438_33cbfbc4a7_b.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/5184999092_2effa79553_b.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/5184408153_6e7d776dcf_b.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/5184408913_f75cd7ee52_b.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Valleinclan.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Valleinclan2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/ValleInclán.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/5185012624_7214bfac2f_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/5185011548_b1cf2c5623_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/5184998438_33cbfbc4a7_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/5184999092_2effa79553_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/5184408153_6e7d776dcf_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/5184408913_f75cd7ee52_b.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [

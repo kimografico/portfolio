@@ -6,10 +6,22 @@
     "cliente": "Sort Estilistas",
     "descripcion": "Cartel para una peluquería",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Peluqueria-ecologica-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Peluqueria-ecologica-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Peluqueria-ecologica-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Peluqueria-ecologica-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Peluqueria-ecologica-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Peluqueria-ecologica-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Peluqueria-ecologica-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Peluqueria-ecologica-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -21,9 +33,18 @@
     "cliente": "CASMARA",
     "descripcion": "Calendario 2021 Calendario-pizarra de pared para la empresa de cosméticos CASMARA El cliente necesitaba un calendario donde poder escribir y controlar de un vistazo las acciones pasadas y futuras del año completo, para colocar en un lugar visible para todo el equipo de trabajo de la oficina Se le hizo también uno similar para 2020",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/CALENDARIO-PIZARRA-CASMARA-2021.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/CALENDARIO-PIZARRA-CASMARA-2021-B.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/CALENDARIO-PIZARRA-CASMARA-2021-A.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/CALENDARIO-PIZARRA-CASMARA-2021.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/CALENDARIO-PIZARRA-CASMARA-2021-B.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/CALENDARIO-PIZARRA-CASMARA-2021-A.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -35,11 +56,26 @@
     "cliente": "DATADEC",
     "descripcion": "Cartel de información interna para la empresa de gestión empresarial DATADEC",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/12/DATADEC-3-carteles.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Datadec-cartel-2.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Datadec-cartel-6.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Datadec-cartel-3.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Datadec-cartel-5.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/DATADEC-3-carteles.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Datadec-cartel-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Datadec-cartel-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Datadec-cartel-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Datadec-cartel-5.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -53,11 +89,26 @@
     "cliente": "Juanjo Sáez",
     "descripcion": "Cartel de presentación de un TFC para la Universidad de Valencia Autor: Juanjo Sáez",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Cartel.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_C.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/05/kimografico_2.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/05/kimografico_1.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/05/kimografico_B.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Cartel.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_C.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/05/kimografico_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/05/kimografico_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/05/kimografico_B.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -72,8 +123,14 @@
     "cliente": "Conecta Networking",
     "descripcion": "Imagen para RR.SS. y dos modelos de roll-up para una gala de Networking",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2021/02/Valencia-Conecta-Instagram.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/Valencia-Conecta-Rollups.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/Valencia-Conecta-Instagram.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/Valencia-Conecta-Rollups.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -85,16 +142,46 @@
     "cliente": "FICSA",
     "descripcion": "Papelería para FICSA",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_TRIPTICO-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_TRIPTICO-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_TRIPTICO-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_TRIPTICO-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_A5-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_A5-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_A5-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_A5-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_A5-6.jpg",
-      "https://kimografico.com/wp-content/uploads/2017/10/Ficsa_Rollups.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_TRIPTICO-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_TRIPTICO-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_TRIPTICO-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_TRIPTICO-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_A5-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_A5-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_A5-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_A5-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/10/FICSA_A5-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2017/10/Ficsa_Rollups.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -106,14 +193,38 @@
     "cliente": "Equilibrium",
     "descripcion": "Diseño de caballo para la pared de Equilibrium",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2017/08/Caballo.png",
-      "https://kimografico.com/wp-content/uploads/2017/08/Pared-Caballo.jpg",
-      "https://kimografico.com/wp-content/uploads/2017/08/1.jpg",
-      "https://kimografico.com/wp-content/uploads/2017/08/ff14b508-1b15-4ffb-9c3e-e861587d8b51.jpg",
-      "https://kimografico.com/wp-content/uploads/2017/08/3.jpg",
-      "https://kimografico.com/wp-content/uploads/2017/08/Logo2_METACRILATO-ROJO.jpg",
-      "https://kimografico.com/wp-content/uploads/2017/08/2.jpg",
-      "https://kimografico.com/wp-content/uploads/2017/08/Logo2_ACERO-PEQUENO.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2017/08/Caballo.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2017/08/Pared-Caballo.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2017/08/1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2017/08/ff14b508-1b15-4ffb-9c3e-e861587d8b51.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2017/08/3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2017/08/Logo2_METACRILATO-ROJO.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2017/08/2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2017/08/Logo2_ACERO-PEQUENO.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -125,14 +236,38 @@
     "cliente": "Decathlon Campanar",
     "descripcion": "Cartel de plantilla y señalética de la tienda Decathlon de Campanar",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2017/05/resized_PANEL-FOTOS-v3_SCREEN.jpg",
-      "https://kimografico.com/wp-content/uploads/2017/05/resized_Vinilo-Decathlon-Garaje-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/05/resized_Vinilo-Decathlon-Garaje-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/05/resized_Vinilo-Decathlon-Garaje-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/05/Escaleras.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/05/resized_Forex-5mm-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/05/resized_Forex-5mm-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2017/05/resized_Forex-5mm-3.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2017/05/resized_PANEL-FOTOS-v3_SCREEN.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2017/05/resized_Vinilo-Decathlon-Garaje-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/05/resized_Vinilo-Decathlon-Garaje-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/05/resized_Vinilo-Decathlon-Garaje-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/05/Escaleras.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/05/resized_Forex-5mm-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/05/resized_Forex-5mm-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/05/resized_Forex-5mm-3.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -144,11 +279,26 @@
     "cliente": "Equilibrium",
     "descripcion": "Horarios del centro de entrenamiento personal Equilibrium, en Torrent",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v7.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v6.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v5.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v4.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v3.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v3.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -162,23 +312,74 @@
     "cliente": "Decathlon Alfafar",
     "descripcion": "Ilustración para la sala de empleados de Decathlon de Alfafar. En ella están incluidos todos los empleados, cada uno en su disciplina, aparte de elementos de la comarca de Valencia y relativos a los distintos campos que aborda el comercio",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Decathlon_mockup.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2016/03/IMG-20160528-WA0008.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2016/03/IMG-20160528-WA0011.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_11.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_04.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_08.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_12.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_07.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_03.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_10.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_06.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_02.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_09.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_05.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_01.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Decathlon-Valencia-scaled-150x75.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Decathlon-Valencia-monigotes-BIRDSEYE.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Decathlon_mockup.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2016/03/IMG-20160528-WA0008.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2016/03/IMG-20160528-WA0011.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_11.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_04.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_08.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_12.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_07.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_03.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_10.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_06.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_02.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_09.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_05.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon_zoom_01.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon-Valencia-scaled-150x75.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon-Valencia-monigotes-BIRDSEYE.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -194,17 +395,50 @@
     "cliente": "Trail",
     "descripcion": "Cartelería sobre un curso de Trail",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2021/01/resized_Mockups_CARTEL_A3.jpg",
-      "https://kimografico.com/wp-content/uploads/2021/01/resized_Mockup_Cartel-Nutricion-y-actividad-fisica.jpg",
-      "https://kimografico.com/wp-content/uploads/2021/01/resized_eq-8.jpg",
-      "https://kimografico.com/wp-content/uploads/2021/01/resized_eq-9.jpg",
-      "https://kimografico.com/wp-content/uploads/2021/01/resized_eq-7.jpg",
-      "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-3.jpg",
-      "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-2.jpg",
-      "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-1.jpg",
-      "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-6.jpg",
-      "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-5.jpg",
-      "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-4.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_Mockups_CARTEL_A3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_Mockup_Cartel-Nutricion-y-actividad-fisica.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_eq-8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_eq-9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_eq-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-4.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -227,10 +461,22 @@
     "cliente": "Alpine Training",
     "descripcion": "Cartel de cursos y webminars de preparación física para Alpine Training",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/06/CARTEL-310716-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/06/Cartel-CLIMATOLOGÍA-EXTREMA-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/06/CARTEL_A3-scaled.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/06/AT_Mockup-scaled-115x75.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/06/CARTEL-310716-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/06/Cartel-CLIMATOLOGÍA-EXTREMA-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/06/CARTEL_A3-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/06/AT_Mockup-scaled-115x75.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -242,10 +488,22 @@
     "cliente": "Consellería de Educació",
     "descripcion": "Diseño de carteles fruta y verdura de los mercados municipales de Valencia, encargado por la Consellería de Educació de la Generalitat Valenciana para el fomento del valenciano.",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2014/05/resized_Poster-fruita-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2014/05/resized_Poster-verdura.jpg",
-      "https://kimografico.com/wp-content/uploads/2014/05/Carteles-fruita-y-verdura-mockup.jpg",
-      "https://kimografico.com/wp-content/uploads/2014/05/gv_conselleria_educacio_rgb_val.png"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2014/05/resized_Poster-fruita-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2014/05/resized_Poster-verdura.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2014/05/Carteles-fruita-y-verdura-mockup.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2014/05/gv_conselleria_educacio_rgb_val.png",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -257,12 +515,30 @@
     "cliente": "La Brigada Gráfica",
     "descripcion": "Cartelería para el evento de presentación del libro Ashes & Blood",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/04/Poster-Ashes-2.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/AB-Poster-tubo.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/Poster-Ashes-3.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/Poster-Ashes-5.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/Poster-Ashes-4.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/Poster-Ashes.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/Poster-Ashes-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/AB-Poster-tubo.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/Poster-Ashes-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/Poster-Ashes-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/Poster-Ashes-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/Poster-Ashes.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -274,7 +550,10 @@
     "cliente": "La Brigada Gráfica",
     "descripcion": "Cartel para un festival de música en Gilet, colaboración con ReyMono",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2012/06/greenbox-cartel.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2012/06/greenbox-cartel.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -286,8 +565,14 @@
     "cliente": "La Brigada Gráfica",
     "descripcion": "Cartel para el cumpleaños de un compañero ilustrador",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2012/06/Cartel-Reymonografico.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2012/06/reymono_mockup.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2012/06/Cartel-Reymonografico.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2012/06/reymono_mockup.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -299,8 +584,14 @@
     "cliente": "La Brigada Gráfica",
     "descripcion": "Cartel para un concurso",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_EhToro.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2012/06/ehtoro_mockup.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_EhToro.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2012/06/ehtoro_mockup.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -312,8 +603,14 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "Cartelería para una exposición de Pilar Belmonte en el Museo Municipal de Albacete",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/04/Albacete_mockup.jpg",
-      "https://kimografico.com/wp-content/uploads/elementor/thumbs/PANCARTA-MUSEO-2-pwdv74sr92rq5akn0qxc0wdus2xz2zmb4f5g01l8n4.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/Albacete_mockup.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/PANCARTA-MUSEO-2-pwdv74sr92rq5akn0qxc0wdus2xz2zmb4f5g01l8n4.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -325,11 +622,26 @@
     "cliente": "EASD",
     "descripcion": "Greetings estacionales",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Otoño.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Primavera.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Invierno.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Verano.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Estaciones.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Otoño.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Primavera.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Invierno.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Verano.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Estaciones.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -341,12 +653,30 @@
     "cliente": "Pub África",
     "descripcion": "Cartelería para el distintos eventos del pub África de Punta Umbría",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/5184403533_7e5b54f9b5_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/5185001116_2fe8908786_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/5184402661_424fda3bd4_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/5184400569_a5738edfe2_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/5184401701_0308283bb8_b.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/elpatio.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/5184403533_7e5b54f9b5_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/5185001116_2fe8908786_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/5184402661_424fda3bd4_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/5184400569_a5738edfe2_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/5184401701_0308283bb8_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/elpatio.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -358,9 +688,18 @@
     "cliente": "EASD",
     "descripcion": "Cartelería para el evento de fotografía Sextas Jornadas Latentes de la EASD",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/04/jornadas-latentes.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/5184404957_d1685d9a26_b.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/5184405961_2da6129b12_b.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/jornadas-latentes.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/5184404957_d1685d9a26_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/5184405961_2da6129b12_b.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -372,10 +711,22 @@
     "cliente": "EASD",
     "descripcion": "Cartelería y diseño de cubierta para la ópera L'Elisir d'amore de Donizetti",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/04/5185007644_df87fb27ff_b.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/Vinyl-Record-PSD-MockUp.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/5185008202_bcf1893b62_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/5184407259_f44dd7b940_b.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/5185007644_df87fb27ff_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/Vinyl-Record-PSD-MockUp.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/5185008202_bcf1893b62_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/5184407259_f44dd7b940_b.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -387,8 +738,14 @@
     "cliente": "Destino Clandestino",
     "descripcion": "Cartelería para un concierto",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/04/5184396813_a86c076303_b.jpg",
-      "https://kimografico.com/wp-content/uploads/2007/03/DC_mockup.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/5184396813_a86c076303_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2007/03/DC_mockup.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []

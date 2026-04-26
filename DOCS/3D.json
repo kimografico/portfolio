@@ -6,11 +6,26 @@
     "cliente": "La Rosa Visual",
     "descripcion": "Visualización 3D de un Totem a modo de pre-maqueta, subcontratado por el estudio de diseño La Rosa Visual",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2020/01/Totem-perfil-2-scaled.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Totem-trasera-scaled.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Totem-frontal-scaled.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Totem-perfil-scaled.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Totem-scaled.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Totem-perfil-2-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Totem-trasera-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Totem-frontal-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Totem-perfil-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Totem-scaled.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -22,13 +37,28 @@
     "cliente": "Andrea",
     "descripcion": "Realización de un render 3D de un local, según planos facilitados por el cliente, para la presentación de un proyecto de interiorismo",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/3-2-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/190000-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/21-scaled.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/230000-scaled.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/3-2-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/190000-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/21-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/230000-scaled.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://www.youtube.com/watch?v=CdsMe1iQLSI"
+      {
+        "ruta": "https://www.youtube.com/watch?v=CdsMe1iQLSI",
+        "label": ""
+      }
     ],
     "extras": []
   },
@@ -39,12 +69,30 @@
     "cliente": "Tech-Telecom",
     "descripcion": "Render 3D de una caseta de telecomunicaciones de Airtel, para la empresa Tech-Telecom",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/11/3d_Fuera_2_SolarAIRTEL.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/caseta-techo-chapa.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/3d_Fuera_2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/3d_Fuera_1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/3d_Fuera_2_Solar.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/macro.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/3d_Fuera_2_SolarAIRTEL.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/caseta-techo-chapa.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/3d_Fuera_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/3d_Fuera_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/3d_Fuera_2_Solar.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/macro.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -56,8 +104,14 @@
     "cliente": "Tech-Telecom",
     "descripcion": "Render 3D de una habitación, para la empresa Tech-Telecom",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2018/11/3d_Habitacion.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/esquema-habitacion.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/11/3d_Habitacion.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/esquema-habitacion.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -69,12 +123,24 @@
     "cliente": "La Brigada Gráfica",
     "descripcion": "Animacion 3D del logotipo de La Brigada Gráfica",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/11/estrella-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/estrella-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://youtu.be/hD98oKScpyc",
-      "https://youtu.be/Lgfl02tG7Qk",
-      "https://youtu.be/fDTkha7QZQg"
+      {
+        "ruta": "https://youtu.be/hD98oKScpyc",
+        "label": ""
+      },
+      {
+        "ruta": "https://youtu.be/Lgfl02tG7Qk",
+        "label": ""
+      },
+      {
+        "ruta": "https://youtu.be/fDTkha7QZQg",
+        "label": ""
+      }
     ],
     "extras": []
   },
@@ -85,18 +151,48 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "Paseo virtual 3D por el Museo Municipal de Albacete Aplicación diseñada para organización de las obras en la exposición «Horizontes cercanos e infinitos» de Pilar Belmonte Se hizo un plano 3D de la sala del Museo en la que se iba a organizar la exposición, y se organizaron los cuadros sobre los render, de forma que se pudiera hacer una visita virtual por la exposición y así comprobar que la organización de los mismos era la adecuada para la artista.",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/resized_5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/resized_4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/resized_1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/resized_2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/resized_3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/resized_7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2011/02/Museo3D_APP.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2011/02/IMG_5884-ajustada-scaled.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Museo3D-1.png"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2011/02/Museo3D_APP.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2011/02/IMG_5884-ajustada-scaled.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Museo3D-1.png",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://www.youtube.com/watch?v=gjB2e34vKnA"
+      {
+        "ruta": "https://www.youtube.com/watch?v=gjB2e34vKnA",
+        "label": ""
+      }
     ],
     "extras": [
       "En el vídeo se puede observar la utilización del programa, los puntos de vista 3D superpuestos en un plano de la planta de cada piso, y un triángulo que muestra la dirección a la que se está mirando en el visor.",
@@ -110,14 +206,32 @@
     "cliente": "Acid Skateboards",
     "descripcion": "ACID SKATEBOARDS ———————————- Representación de productos y merchandising de la marca de ACID SKATEBOARDS Se crearon para la página web, y presentan una animación interactiva de giro 360º y, en el caso del USB, también de como se abre y cierra el mismo.",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2018/10/ACID_Llavero.png",
-      "https://kimografico.com/wp-content/uploads/2018/10/ACID_Percha2.png",
-      "https://kimografico.com/wp-content/uploads/2018/10/ACID_usb.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/ACID_Percha.png",
-      "https://kimografico.com/wp-content/uploads/2018/10/ACID_T-tool.png"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/ACID_Llavero.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/ACID_Percha2.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/ACID_usb.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/ACID_Percha.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/ACID_T-tool.png",
+        "label": ""
+      }
     ],
     "videos": [
-      "https://www.youtube.com/watch?v=y-Yleb5PVbk"
+      {
+        "ruta": "https://www.youtube.com/watch?v=y-Yleb5PVbk",
+        "label": ""
+      }
     ],
     "extras": []
   },
@@ -128,10 +242,22 @@
     "cliente": "EASD",
     "descripcion": "Cartelería para el evento Breaking Stereotypes de la Generalitat Valenciana",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/5184997514_e438fa2819_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/5184395745_6e4815a074_b.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/04/BStereotypes.jpg",
-      "https://kimografico.com/wp-content/uploads/2008/12/unnamed.png"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/5184997514_e438fa2819_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/5184395745_6e4815a074_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/BStereotypes.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2008/12/unnamed.png",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -145,26 +271,86 @@
     "cliente": "Teatro Rialto",
     "descripcion": "Cartelería para unas obras teatrales del Teatro Rialto",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2007/05/BUS_Carteles2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2007/05/BUS_Carteles1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/5185012624_7214bfac2f_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/5185010560_906f78e73a_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/5185000322_f7a10a4374_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5184410173_0d290e0235_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5184408153_6e7d776dcf_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5184998902_63cdfc4f24_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5184409787_d3254a79af_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5185009036_6188d8cc3f_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5184999092_2effa79553_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5184410875_caf1c365ae_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5184408913_f75cd7ee52_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5184398347_400630ceb7_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5185010822_766c891aa2_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5185008826_4de0cc5b01_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5184998438_33cbfbc4a7_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5185011548_b1cf2c5623_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5185009488_6c806e2614_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5184397281_85d0e6e5c0_b.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2007/05/BUS_Carteles2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2007/05/BUS_Carteles1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/5185012624_7214bfac2f_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/5185010560_906f78e73a_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/5185000322_f7a10a4374_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184410173_0d290e0235_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184408153_6e7d776dcf_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184998902_63cdfc4f24_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184409787_d3254a79af_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185009036_6188d8cc3f_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184999092_2effa79553_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184410875_caf1c365ae_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184408913_f75cd7ee52_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184398347_400630ceb7_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185010822_766c891aa2_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185008826_4de0cc5b01_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184998438_33cbfbc4a7_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185011548_b1cf2c5623_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185009488_6c806e2614_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184397281_85d0e6e5c0_b.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [

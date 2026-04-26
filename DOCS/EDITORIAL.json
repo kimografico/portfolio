@@ -6,20 +6,62 @@
     "cliente": "Eduard Farran",
     "descripcion": "REM – Catálogo de empresas Catálogo de empresas que constituyen la asociación «Relaciones Empresariales del Mediterráneo«",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/REM-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/REM-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/REM-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/REM-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/REM-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/REM-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/REM-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/8M-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/8M-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/8M-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/8M-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/8M-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/8M-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/8M-6.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/REM-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/REM-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/REM-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/REM-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/REM-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/REM-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/REM-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/8M-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/8M-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/8M-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/8M-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/8M-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/8M-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/8M-6.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -33,13 +75,34 @@
     "cliente": "Timë",
     "descripcion": "Timë – Catálogo Catálogo de productos especializados en la desinfección de Covid-19",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/2-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/1-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/3-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/4-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/5-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/6-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/7.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/2-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/1-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/3-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/4-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/5-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/6-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/7.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -51,17 +114,50 @@
     "cliente": "Eduard Farran",
     "descripcion": "Libro de poemas «Zeta» Libro de poemas de Eduard Farran",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Z-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/PORTADA-Z-papel-foto-lapiz.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Z-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Z-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Z-8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Z-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Z-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Z-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Z-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Z-9.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Z-10.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Z-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/PORTADA-Z-papel-foto-lapiz.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Z-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Z-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Z-8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Z-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Z-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Z-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Z-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Z-9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Z-10.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -73,25 +169,82 @@
     "cliente": "PierdeLoss90",
     "descripcion": "Libreto PierdeLoss90 Libreto de 24 páginas con la explicación del proceso de dieta y ejercicio del sistema PierdeLoss90",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_A.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_C.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_01.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_04.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_07.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_10.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_02.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_05.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_08.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_11.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_03.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_06.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_09.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Registro-de-Entrenamiento.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Iman-Nevera.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/IMAN.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_B.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/CAJA-CERRADA.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/CAJA-ABIERTA.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_A.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_C.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_01.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_04.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_07.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_10.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_02.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_05.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_08.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_11.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_03.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_06.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_09.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Registro-de-Entrenamiento.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Iman-Nevera.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/IMAN.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_B.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/CAJA-CERRADA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/CAJA-ABIERTA.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -105,46 +258,166 @@
     "cliente": "Pau Benedito",
     "descripcion": "Ni milagros ni hostias PAU BENEDITO",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_B_.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-11.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-9.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-12.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-10.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-13.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_C_-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_NMNH-EBOOK-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_NMNH-EBOOK-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_NMNH-EBOOK-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_primeros-bocetos_PORTADA.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_primeros-bocetos_PORTADA-copia.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_primeros-bocetos_0-04.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_primeros-bocetos_0-03.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_primeros-bocetos_0-02.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_1b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_PORTADA_Mesa-de-trabajo-1-copia.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_PORTADA_Mesa-de-trabajo-1-copia-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_PORTADA_Mesa-de-trabajo-1-copia-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_PORTADA-v2_Mesa-de-trabajo-1-copia.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_PORTADA-v3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/BESTSELLER.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/BESTSELLER2.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/BANNER-PIERDELOSS90-2.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/12/VENDIDO.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_B_.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-11.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-12.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-10.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-13.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_C_-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_NMNH-EBOOK-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_NMNH-EBOOK-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_NMNH-EBOOK-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_primeros-bocetos_PORTADA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_primeros-bocetos_PORTADA-copia.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_primeros-bocetos_0-04.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_primeros-bocetos_0-03.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_primeros-bocetos_0-02.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_1b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_PORTADA_Mesa-de-trabajo-1-copia.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_PORTADA_Mesa-de-trabajo-1-copia-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_PORTADA_Mesa-de-trabajo-1-copia-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_PORTADA-v2_Mesa-de-trabajo-1-copia.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_PORTADA-v3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/BESTSELLER.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/BESTSELLER2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/BANNER-PIERDELOSS90-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/VENDIDO.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -165,12 +438,30 @@
     "cliente": "ZIMMER BIOMET",
     "descripcion": "The Mission Wall LIBRO DE CITAS PARA LA EMPRESA DE DISPOSITIVOS MÉDICOS ZIMMER BIOMET",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/12/1-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/2-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/4-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/3-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/12/5.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/1-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/2-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/4-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/3-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/5.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -184,13 +475,34 @@
     "cliente": "Juan Antonio Cebrián",
     "descripcion": "En el umbral del primer remanso LIBRO DE POESÍA",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/06/UPR_MockUp.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/06/kimografico_UPR_2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/06/kimografico_UPR_1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/06/kimografico_UPR_3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/06/kimografico_UPR_5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/06/kimografico_UPR_4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/06/kimografico_UPR_6.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/06/UPR_MockUp.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/06/kimografico_UPR_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/06/kimografico_UPR_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/06/kimografico_UPR_3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/06/kimografico_UPR_5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/06/kimografico_UPR_4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/06/kimografico_UPR_6.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -204,14 +516,38 @@
     "cliente": "Isabel",
     "descripcion": "Las fantásticas aventuras de Isabel Cuento conmemorativo del 30 cumpleaños.. Cuentos el Ilustraciones de Carmen Alonso y Julia Tartaj",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2021/02/ISA_PORTADA.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/ISA_CONTRAPORTADA.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/CuentoIsa1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/CuentoIsa4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/CuentoIsa2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/CuentoIsa5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/CuentoIsa3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/CuentoIsa6.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/ISA_PORTADA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/ISA_CONTRAPORTADA.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/CuentoIsa1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/CuentoIsa4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/CuentoIsa2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/CuentoIsa5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/CuentoIsa3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/CuentoIsa6.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -223,15 +559,42 @@
     "cliente": "Hipos Tattoo",
     "descripcion": "Catálogo de Tatuajes PORTFOLIO DE HIPOS (Joan Casany)",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_3-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_6_.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_H_interior.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_1-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-5.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_3-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_6_.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_H_interior.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_1-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-5.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -246,21 +609,66 @@
     "cliente": "Elisa Belmonte",
     "descripcion": "TESIS DOCTORAL Canto, Bases y Método AUTORA: ELISA BELMONTE",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/kimografico_Portada-Elisa-Canto-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_00.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-9.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/kimografico_Portada-Elisa-Canto-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-9.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-9.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_0-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_11-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_9-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_12-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_8-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-7.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/kimografico_Portada-Elisa-Canto-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_00.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/kimografico_Portada-Elisa-Canto-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_0-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_11-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_9-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_12-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_8-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-7.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -274,23 +682,74 @@
     "cliente": "Falla Prado",
     "descripcion": "Falla Prado LLIBRET – 24&#215;28 – 142 pag",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_10-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_13.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_16.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_8-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_12.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_14.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_17.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_9-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_11-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_15.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_18.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_10-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_13.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_16.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_8-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_12.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_14.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_17.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_9-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_11-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_15.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_18.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -302,15 +761,42 @@
     "cliente": "Stephan",
     "descripcion": "30 años de Stephan Memorias de un madurito makarrister Recopilación de comics, historias e ilustraciones conmemorativas, realizadas expresamente para la ocasión por un grupo de amigos La portada la realizó Joan Quirós, artista del lettering",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_9.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_9.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -322,11 +808,26 @@
     "cliente": "Lidia Aparicio",
     "descripcion": "Foto-currículum para la fotógrafa Lidia Aparicio",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/Lidia_0-1.png",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/2-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/4-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/3-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/5-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Lidia_0-1.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/2-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/4-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/3-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -338,16 +839,46 @@
     "cliente": "Ida2",
     "descripcion": "Pantonera de colores CMYK Ida2 • Impresión Digital",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Portada.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Portada-y-Contra.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Portada-e-Interior.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-Diagonal.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-6.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Portada.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Portada-y-Contra.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Portada-e-Interior.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-Diagonal.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-6.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -361,12 +892,30 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "Exposición Antológica AUTORA: PILAR BELMONTE",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-3.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-3.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -380,16 +929,46 @@
     "cliente": "Recóndita Ilustración",
     "descripcion": "La noche de las calabazas AUTORA: RECÓNDITA MARTÍNEZ",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_10-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_8-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_11-1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_10-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_8-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_11-1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -404,16 +983,46 @@
     "cliente": "Recóndita Ilustración",
     "descripcion": "Cuentos Dulces AUTORA: RECÓNDITA MARTÍNEZ",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-9.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-10.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-10.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -428,16 +1037,46 @@
     "cliente": "Ida2",
     "descripcion": "Catálogo de Productos Ida2 • Impresión Digital",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Portada.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Portada-y-Contra.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Portada-e-Interior.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-Diagonal.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-8.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Portada.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Portada-y-Contra.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Portada-e-Interior.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-Diagonal.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-8.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -451,28 +1090,94 @@
     "cliente": "La Brigada Gráfica",
     "descripcion": "Catálogo de camisetas LA BRIGADA GRÁFICA A4 / A5, 296 pág",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized__1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_23.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_22.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_18.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_14.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_10.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_21.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_17.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_13.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_9.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_20.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_16.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_12.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_19.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_15.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_11.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized__1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_23.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_22.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_18.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_14.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_10.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_21.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_17.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_13.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_20.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_16.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_12.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_19.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_15.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_11.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/LBG_2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -484,14 +1189,38 @@
     "cliente": "La Brigada Gráfica",
     "descripcion": "Ashes & Blood LIBRO FOTOGRÁFICO BENÉFICO",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_AB_avatar.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_6-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_5-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-10.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-11.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-11.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_AB_avatar.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_6-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_5-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-10.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-11.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-11.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -505,14 +1234,38 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "Apuntes de dibujo AUTORA: PILAR BELMONTE",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_8-1.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_8-1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -526,14 +1279,38 @@
     "cliente": "Naranjas Torres",
     "descripcion": "Catálogo Naranjas Torres A4 – 18 pág",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_8-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_8-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -545,12 +1322,30 @@
     "cliente": "Tamara Fernández",
     "descripcion": "7 LIBRO FOTOGRÁFICO SOBRE LOS 7 PECADOS CAPITALES",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Portada.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Digipack_Mockup_4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Dos-libros.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-Pecados-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-Pecados-0.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-Pecados-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Portada.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Digipack_Mockup_4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Dos-libros.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-Pecados-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-Pecados-0.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-Pecados-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -564,14 +1359,38 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "Horizontes cercanos e infinitos AUTORA: PILAR BELMONTE",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized__HCI_avatar.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_5-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_6-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_1-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-4.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized__HCI_avatar.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_5-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_6-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_1-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-4.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -586,18 +1405,54 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "COLOR Apuntes AUTORA: PILAR BELMONTE",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_0.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/3_.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_9.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_10.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_11.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_0.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/3_.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_10.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_11.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -611,29 +1466,98 @@
     "cliente": "Pilar Belmonte",
     "descripcion": "Ver el Color / Seeing Color AUTORA: PILAR BELMONTE USEROS",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-copia.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-10.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-9.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_8-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_10-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_13-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_17-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_20.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_9-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_11-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_15-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_18-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_21.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_23.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_25.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_12-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_26.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_19.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_22.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/resized_24.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-copia.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-10.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_6-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_5-8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_4-9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_8-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_10-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_13-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_17-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_20.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_9-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_11-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_15-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_18-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_21.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_23.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_25.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_12-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_26.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_19.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_22.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_24.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -649,7 +1573,10 @@
     "cliente": "EASD",
     "descripcion": "Proyectos Final de Carrera Maquetación del recopilatorio de PFCs de la EASD de 2006-2007",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/05/5526705659_aa81c3142b_b.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/5526705659_aa81c3142b_b.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -661,7 +1588,10 @@
     "cliente": "EASD",
     "descripcion": "Artículo sobre Goya Las pinturas negras bajo sospecha",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/05/5527296208_eee0ef99ef_b.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/5527296208_eee0ef99ef_b.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -673,7 +1603,10 @@
     "cliente": "RCN Torrevieja",
     "descripcion": "Revista Socio Maquetación y diseño de portada de un número de la revista Socio del RCN Torrevieja",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/05/5526707151_a22e3d1c09_b.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/5526707151_a22e3d1c09_b.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []

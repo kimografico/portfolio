@@ -6,8 +6,14 @@
     "cliente": "KIMO",
     "descripcion": "Diseño de personaje para un juego de rol",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Tafling_cuadrado.png",
-      "https://www.kimografico.com/wp-content/uploads/2020/04/Tafling.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Tafling_cuadrado.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/Tafling.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -19,9 +25,18 @@
     "cliente": "KIMO",
     "descripcion": "Ilustración de un fauno",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Fauno-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Fauno-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Fauno-4.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Fauno-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Fauno-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Fauno-4.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -33,10 +48,22 @@
     "cliente": "Mar Howi",
     "descripcion": "Ilustraciones para el equipo de una  de kayak-polo",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2021/02/0ef3f64c-97bd-492a-835e-4473ade4001d.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/Serpiente-Howi-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/Serpiente-Howi-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2021/02/Serpiente-Howi.jpg.png"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/0ef3f64c-97bd-492a-835e-4473ade4001d.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/Serpiente-Howi-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/Serpiente-Howi-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/Serpiente-Howi.jpg.png",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -48,8 +75,14 @@
     "cliente": "KIMO",
     "descripcion": "Felicitación de cumpleaños",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Tarjeton_Menchu-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/05/Tarjeton_Menchu-2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Tarjeton_Menchu-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Tarjeton_Menchu-2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -61,9 +94,18 @@
     "cliente": "KIMO",
     "descripcion": "Ilustraciones ambientadas en Star Wars™",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/11/StarWars1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2016/01/StarWars2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2016/01/StarWars3.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/StarWars1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2016/01/StarWars2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2016/01/StarWars3.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -75,11 +117,26 @@
     "cliente": "Dra. Vanessa Paredes",
     "descripcion": "Ilustración de corte infantil para la felicitación de Navidad de una dentista",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2020/01/INVITACION.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/INVITACION3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/INVITACION4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2020/01/INVITACION2.jpg",
-      "https://kimografico.com/wp-content/uploads/2020/01/Wood-Photo-Frame-Navidad.png"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/INVITACION.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/INVITACION3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/INVITACION4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/INVITACION2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Wood-Photo-Frame-Navidad.png",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -91,9 +148,18 @@
     "cliente": "Pintamones",
     "descripcion": "Ilustración de gorila para una exposición con motivo de la inauguración de una tienda de arte",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2014/10/Monete4-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Monete2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Monete3.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2014/10/Monete4-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Monete2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Monete3.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -105,8 +171,14 @@
     "cliente": "La Brigada Gráfica",
     "descripcion": "Ilustración vectorial de un ciervo alado – Be Different",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Ciervo.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Ciervo2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Ciervo.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Ciervo2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -118,12 +190,30 @@
     "cliente": "La Brigada Gráfica",
     "descripcion": "Ilustraciones de personajes de Ashes & Blood para postales y láminas",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2012/07/Poster-Guille-SIMPLE.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2012/07/Poster-Jose.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2012/07/Poster-Manu.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2012/07/Poster-Reco.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2012/07/Poster-Guille.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2012/07/Poster-Kimo.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2012/07/Poster-Guille-SIMPLE.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2012/07/Poster-Jose.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2012/07/Poster-Manu.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2012/07/Poster-Reco.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2012/07/Poster-Guille.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2012/07/Poster-Kimo.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -135,8 +225,14 @@
     "cliente": "KIMO",
     "descripcion": "Ilustración pacifista",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Arma1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Arma2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Arma1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Arma2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -148,8 +244,14 @@
     "cliente": "KIMO",
     "descripcion": "Ilustración Anon",
     "imagenes": [
-      "https://kimografico.com/wp-content/uploads/2018/11/Anonymous2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Anonymous1.jpg"
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/11/Anonymous2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Anonymous1.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -161,9 +263,18 @@
     "cliente": "KIMO",
     "descripcion": "Ilustración de un dragón",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Dragon-negro-1.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Dragon-negro-2.jpg",
-      "https://kimografico.com/wp-content/uploads/2018/10/Dragon-negro.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Dragon-negro-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Dragon-negro-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Dragon-negro.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -175,9 +286,18 @@
     "cliente": "Benéfico",
     "descripcion": "Todos con Japón, cartel para una recopilación a favor de las victimas del Tsunami del 11 de marzo de 2011",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/11/5574125061_173f76116e_b.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-27.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/c4ef30ee-9d60-419e-a85f-fccbd3b4f636_879_586.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/5574125061_173f76116e_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-27.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/c4ef30ee-9d60-419e-a85f-fccbd3b4f636_879_586.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -189,7 +309,10 @@
     "cliente": "La Brigada Gráfica",
     "descripcion": "Ilustración para promocionar una sesión fotográfica",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2011/03/Totem2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2011/03/Totem2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -201,11 +324,26 @@
     "cliente": "KIMO",
     "descripcion": "Ilustración vectorial de distintos animales",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Animales-Parches-Lobo.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Animales-Parches-Fossa.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Animales-Parches-Tucan.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Animales-Parches-Fossa2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/11/Animales-Parches-Tucan2.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Animales-Parches-Lobo.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Animales-Parches-Fossa.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Animales-Parches-Tucan.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Animales-Parches-Fossa2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/Animales-Parches-Tucan2.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
@@ -217,40 +355,142 @@
     "cliente": "KIMO",
     "descripcion": "Creación de una línea de personajes de tinta plana, para varios formatos (principalmente camisetas)",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-papeles.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-2.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-3.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-4.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-31.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-6.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-7.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-8.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-9.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-30.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-15.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-10.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-20.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-11.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-16.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-21.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-26.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-12.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-19.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-17.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-22.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-13.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-18.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-23.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-28.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-25.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-33.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-14.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-24.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-32.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-27.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2011/02/Monstruete-Spray.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2011/02/Cartel-monstruitos.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-papeles.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-31.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-6.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-7.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-8.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-9.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-30.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-15.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-10.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-20.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-11.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-16.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-21.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-26.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-12.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-19.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-17.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-22.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-13.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-18.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-23.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-28.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-25.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-33.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-14.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-24.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-32.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-27.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2011/02/Monstruete-Spray.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2011/02/Cartel-monstruitos.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": [
@@ -264,13 +504,34 @@
     "cliente": "KIMO",
     "descripcion": "Distintas ilustraciones siguiendo un mismo estilo",
     "imagenes": [
-      "https://www.kimografico.com/wp-content/uploads/2010/11/Alta-sociedad.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2010/11/Familia-Merche.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2010/11/Zakk-Wylde.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2010/11/Afro-70s.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2010/11/Guiri.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2010/11/Perfec.jpg",
-      "https://www.kimografico.com/wp-content/uploads/2010/11/Cocinero.jpg"
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2010/11/Alta-sociedad.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2010/11/Familia-Merche.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2010/11/Zakk-Wylde.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2010/11/Afro-70s.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2010/11/Guiri.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2010/11/Perfec.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2010/11/Cocinero.jpg",
+        "label": ""
+      }
     ],
     "videos": [],
     "extras": []
