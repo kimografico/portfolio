@@ -1,6 +1,7 @@
 [
   {
     "id": 4920,
+    "date": "2021-02-17 17:43",
     "title": "Mailing SAICA - YAMAHA",
     "cliente": "Eduard Farran",
     "descripcion": "SAICA – YAMAHA • e-Mail MAILING COMERCIAL",
@@ -13,6 +14,7 @@
   },
   {
     "id": 4161,
+    "date": "2020-12-09 09:33",
     "title": "Logo Reveal - COLORDMAR",
     "cliente": "Mar Howi",
     "descripcion": "COLORDMAR Logo reveal para una empresa de material deportivo",
@@ -23,19 +25,28 @@
       "https://youtu.be/6HpQ_DPxFqc",
       "https://youtu.be/-XgtI6ep5FE"
     ],
-    "extras": ["Logo Completo", "Anagrama", "Logo Splash", "Logo Agua"]
+    "extras": [
+      "Logo Completo",
+      "Anagrama",
+      "Logo Splash",
+      "Logo Agua"
+    ]
   },
   {
     "id": 4026,
+    "date": "2020-07-28 09:11",
     "title": "Resilent",
     "cliente": "Ascenza",
     "descripcion": "Resilent Video promocional de un bioestimulante para la empresa Ascenza",
     "imagenes": [],
-    "videos": ["https://www.youtube.com/watch?v=nIxaglwZWXQ"],
+    "videos": [
+      "https://www.youtube.com/watch?v=nIxaglwZWXQ"
+    ],
     "extras": []
   },
   {
     "id": 3972,
+    "date": "2020-06-05 17:56",
     "title": "Neon - Teasers",
     "cliente": "Pi McCarthy",
     "descripcion": "Neón Teaser del single «NEÓN» del disco «La Senda del Agua» de Pilar McCarthy. Hecho con After Effects y Premiere Pro",
@@ -44,10 +55,14 @@
       "https://www.youtube.com/watch?v=V0YvcFsMlqU",
       "https://www.youtube.com/watch?v=9fybH_B-RXU"
     ],
-    "extras": ["NEÓN – Primer Teaser", "NEÓN – Segundo Teaser"]
+    "extras": [
+      "NEÓN – Primer Teaser",
+      "NEÓN – Segundo Teaser"
+    ]
   },
   {
     "id": 3948,
+    "date": "2020-05-24 21:34",
     "title": "Logo Reveal - Contracciones Sonoras",
     "cliente": "Pi McCarthy",
     "descripcion": "Contracciones Sonoras Logo reveal para un proyecto musical a cargo de Pilar McCarthy",
@@ -63,6 +78,7 @@
   },
   {
     "id": 3633,
+    "date": "2020-04-26 14:43",
     "title": "Faldones de correo Ida2",
     "cliente": "Ida2",
     "descripcion": "Ida2 • e-Mail PLANTILLAS Y FIRMAS CORPORATIVAS",
@@ -135,6 +151,7 @@
   },
   {
     "id": 3242,
+    "date": "2020-04-08 12:07",
     "title": "Entradillas Ida2",
     "cliente": "Ida2",
     "descripcion": "Ida2 Impresión Digital Logo animado para entradillas de video",
@@ -155,6 +172,7 @@
   },
   {
     "id": 3057,
+    "date": "2020-04-05 19:45",
     "title": "Entradillas Recóndita",
     "cliente": "Recóndita Ilustración",
     "descripcion": "Recóndita Logo animado para entradillas de video",
@@ -169,15 +187,21 @@
   },
   {
     "id": 3052,
+    "date": "2020-04-03 19:33",
     "title": "Entradilla Lidia Aparicio",
     "cliente": "Lidia Aparicio",
     "descripcion": "Lidia Aparicio Logo animado para entradillas de video",
     "imagenes": [],
-    "videos": ["https://www.youtube.com/watch?v=sRxDOqfilJU"],
-    "extras": ["Entradilla animada – Logo Reveal hecho en After Effects mediante template adaptado"]
+    "videos": [
+      "https://www.youtube.com/watch?v=sRxDOqfilJU"
+    ],
+    "extras": [
+      "Entradilla animada – Logo Reveal hecho en After Effects mediante template adaptado"
+    ]
   },
   {
     "id": 3065,
+    "date": "2020-04-02 20:21",
     "title": "Entradillas Kimográfico",
     "cliente": "KIMO",
     "descripcion": "Kimográfico Logo animado para entradillas de video",
@@ -207,6 +231,7 @@
   },
   {
     "id": 2432,
+    "date": "2019-11-02 10:20",
     "title": "Estaca",
     "cliente": "Ascenza",
     "descripcion": "Estaca Video promocional de un herbicida para la empresa Sapec Agro / Ascenza",
@@ -222,6 +247,7 @@
   },
   {
     "id": 3731,
+    "date": "2019-08-26 21:18",
     "title": "Títulos para Jorge Carrasco",
     "cliente": "Jorge Carrasco",
     "descripcion": "Jorge Carrasco Títulos para una serie de videodocumentales y píldoras promocionales para redes sociales de un conjunto de cursos Vídeo y fotografía: Lidia Aparicio",
@@ -237,10 +263,14 @@
       "https://www.youtube.com/watch?v=jaRvV274Vsg",
       "https://www.youtube.com/watch?v=XsLxSETAuJA"
     ],
-    "extras": ["Versión original para soportes digitales", "Versión cuadrada para redes sociales"]
+    "extras": [
+      "Versión original para soportes digitales",
+      "Versión cuadrada para redes sociales"
+    ]
   },
   {
     "id": 3713,
+    "date": "2018-10-01 19:32",
     "title": "Pruebas de juegos de ordenador",
     "cliente": "KIMO",
     "descripcion": "Juegos PC PRUEBAS Y TOMA DE CONTACTO",
@@ -260,17 +290,21 @@
   },
   {
     "id": 2429,
+    "date": "2018-06-29 09:51",
     "title": "Missylk",
     "cliente": "SAPEC",
     "descripcion": "Missylk Video promocional de un bioestimulante para la empresa Sapec Agro S.A.U.",
     "imagenes": [],
-    "videos": ["https://www.youtube.com/watch?v=q1LzPf4hqsA"],
+    "videos": [
+      "https://www.youtube.com/watch?v=q1LzPf4hqsA"
+    ],
     "extras": [
       "Missylk – Videoentrevista a un agricultor sobre los beneficios de utilizar el producto"
     ]
   },
   {
     "id": 4373,
+    "date": "2018-05-18 09:14",
     "title": "Newsletter PierdeLoss90",
     "cliente": "PierdeLoss90",
     "descripcion": "Newsletter Pierdeloss90 Newsletter que forman parte de un producto entrenamiento y dieta para pérdida de peso.",
@@ -289,26 +323,35 @@
   },
   {
     "id": 3727,
+    "date": "2018-05-06 21:03",
     "title": "Entradilla PierdeLoss90",
     "cliente": "PierdeLoss90",
     "descripcion": "PierdeLoss90 Logo animado para entradillas de video",
     "imagenes": [],
-    "videos": ["https://www.youtube.com/watch?v=CVL5Dd49yVQ"],
-    "extras": ["Entradilla animada – Logo Reveal hecho en After Effects mediante template adaptado"]
+    "videos": [
+      "https://www.youtube.com/watch?v=CVL5Dd49yVQ"
+    ],
+    "extras": [
+      "Entradilla animada – Logo Reveal hecho en After Effects mediante template adaptado"
+    ]
   },
   {
     "id": 2425,
+    "date": "2018-02-19 16:42",
     "title": "Register",
     "cliente": "SAPEC",
     "descripcion": "Register 25WG Video promocional de un herbicida para la empresa Sapec Agro S.A.U.",
     "imagenes": [],
-    "videos": ["https://www.youtube.com/watch?v=QEscUC-fJmI"],
+    "videos": [
+      "https://www.youtube.com/watch?v=QEscUC-fJmI"
+    ],
     "extras": [
       "Register 25WG – Infografía animada explicando las características y ventajas del herbicida Register 25WG"
     ]
   },
   {
     "id": 3738,
+    "date": "2017-12-30 23:08",
     "title": "Cuñas de Equilibrium",
     "cliente": "Equilibrium",
     "descripcion": "Cuñas Equilibrium Cuñas realizadas para la promoción en un sistema audiovisual presente en las instalaciones del cliente",
@@ -330,6 +373,7 @@
   },
   {
     "id": 2407,
+    "date": "2014-12-25 07:59",
     "title": "Navidad Sapec/Ascenza",
     "cliente": "Ascenza",
     "descripcion": "Felicitaciones de Navidad Sapec Agro // Ascenza",
@@ -345,6 +389,7 @@
   },
   {
     "id": 2519,
+    "date": "2014-11-29 10:59",
     "title": "Encuesta Equilibrium",
     "cliente": "Equilibrium",
     "descripcion": "Encuestas interactivas para Equilibrium Encuesta inicial que se le hace a los clientes cuando se apuntan, para ofrecer el servicio más ajustado a las necesidades del mismo Los campos son interactivos para que el personal del gimnasio pueda rellenarlos de forma fácil y ágil, resultando en un servicio más rápido, menos errores, y una imagen de modernidad y alta calidad del servicio.",
@@ -370,6 +415,7 @@
   },
   {
     "id": 2417,
+    "date": "2014-07-18 09:33",
     "title": "Video FAQs Ida2",
     "cliente": "Ida2",
     "descripcion": "Videoinfografías para Ida2 Videotutoriales explicativos para facilitar la comprensión del cliente en cuestiones técnicinfo",
@@ -385,11 +431,16 @@
   },
   {
     "id": 3098,
+    "date": "2013-10-18 11:59",
     "title": "Video Digital vs Offset - Ida2",
     "cliente": "Ida2",
     "descripcion": "Digital vs. Offset Videoinfografía explicativa con las diferencias entre las dos técnicas de impresión, y en que casos es mejor o peor cada una de ellas",
     "imagenes": [],
-    "videos": ["https://www.youtube.com/watch?v=4P0bLjXrjPc"],
-    "extras": ["Digital vs. Offset – Version en Español"]
+    "videos": [
+      "https://www.youtube.com/watch?v=4P0bLjXrjPc"
+    ],
+    "extras": [
+      "Digital vs. Offset – Version en Español"
+    ]
   }
 ]

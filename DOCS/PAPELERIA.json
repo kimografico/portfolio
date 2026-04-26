@@ -1,6 +1,7 @@
 [
   {
     "id": 4934,
+    "date": "2021-05-28 14:15",
     "title": "Tríptico Natural Climb",
     "cliente": "Natural Climb",
     "descripcion": "Díptico XXL Natural Climb DÍPTICO GIGANTE, ENFOCADO A COLEGIOS",
@@ -23,6 +24,7 @@
   },
   {
     "id": 3831,
+    "date": "2020-12-31 11:42",
     "title": "Tríptico productos Ida2",
     "cliente": "Ida2",
     "descripcion": "Tríptico Ida2",
@@ -36,6 +38,7 @@
   },
   {
     "id": 4604,
+    "date": "2020-12-30 12:27",
     "title": "Díptico CDM",
     "cliente": "Mar Howi",
     "descripcion": "Díptico Ruddersail System DÍPTICO PARA COLORDMAR",
@@ -52,6 +55,7 @@
   },
   {
     "id": 4430,
+    "date": "2020-12-22 08:11",
     "title": "Tablas de Ejercicios",
     "cliente": "PierdeLoss90",
     "descripcion": "Tablas de ejercicios para un sistema de pérdida de peso",
@@ -67,6 +71,7 @@
   },
   {
     "id": 4411,
+    "date": "2020-12-21 15:16",
     "title": "Hidromiel Odín - Flyer para distribuciones extranjeras",
     "cliente": "Odín Hidromiel",
     "descripcion": "Flyer informativo para la venta en el extranjero de Hidromiel Odín",
@@ -81,6 +86,7 @@
   },
   {
     "id": 4405,
+    "date": "2020-12-21 11:49",
     "title": "Tríptico Melting Potes",
     "cliente": "ReyMono",
     "descripcion": "Conjunto de tríptico y tarifa para un productor de vinos en Francia. Ilustraciones de ReyMono",
@@ -95,6 +101,7 @@
   },
   {
     "id": 4406,
+    "date": "2020-12-21 11:47",
     "title": "Flyer PierdeLoss90",
     "cliente": "PierdeLoss90",
     "descripcion": "Flyer promocional de un producto de pérdida de peso",
@@ -107,10 +114,13 @@
   },
   {
     "id": 4124,
+    "date": "2020-07-08 14:34",
     "title": "Felicitación Ares",
     "cliente": "KIMO",
     "descripcion": "Felicitación de cumpleaños",
-    "imagenes": ["https://www.kimografico.com/wp-content/uploads/2020/12/Petasextos-1.jpg"],
+    "imagenes": [
+      "https://www.kimografico.com/wp-content/uploads/2020/12/Petasextos-1.jpg"
+    ],
     "videos": [],
     "extras": [
       "Felicitación de cumpleaños encargada por un grupo de escalada deportiva. El diseño del personaje corrió a cargo de @sarafcuesta_"
@@ -118,6 +128,7 @@
   },
   {
     "id": 3118,
+    "date": "2020-01-08 13:55",
     "title": "Calendario Asefilco",
     "cliente": "Asefilco",
     "descripcion": "Calendario Asefilco Calendario corporativo",
@@ -131,6 +142,7 @@
   },
   {
     "id": 4250,
+    "date": "2019-12-15 15:22",
     "title": "Flyer PierdeLoss90",
     "cliente": "PierdeLoss90",
     "descripcion": "Flyer promocional de un producto de pérdida de peso",
@@ -143,6 +155,7 @@
   },
   {
     "id": 4840,
+    "date": "2019-07-05 11:08",
     "title": "Flyers Equilibrium",
     "cliente": "Equilibrium",
     "descripcion": "Flyers para distintas campañas de Equilibrium",
@@ -159,6 +172,7 @@
   },
   {
     "id": 2460,
+    "date": "2019-02-02 11:16",
     "title": "Rollups Ida2",
     "cliente": "Ida2",
     "descripcion": "Rollups de oferta para una imprenta digital",
@@ -179,6 +193,7 @@
   },
   {
     "id": 3857,
+    "date": "2018-09-12 13:09",
     "title": "Currículums Varios",
     "cliente": "Varios",
     "descripcion": "Currículum de un psicólogo",
@@ -203,6 +218,7 @@
   },
   {
     "id": 4796,
+    "date": "2018-07-03 07:40",
     "title": "Casos de éxito EQUILIBRIUM",
     "cliente": "Equilibrium",
     "descripcion": "Libreto Casos de Éxito",
@@ -220,6 +236,7 @@
   },
   {
     "id": 4897,
+    "date": "2017-12-22 09:26",
     "title": "Tríptico Equilibrium",
     "cliente": "Equilibrium",
     "descripcion": "Tríptico de Equilibrium",
@@ -233,6 +250,7 @@
   },
   {
     "id": 2447,
+    "date": "2017-05-02 10:56",
     "title": "Papelería Ida2",
     "cliente": "Ida2",
     "descripcion": "Papelería corporativa para una imprenta digital",
@@ -255,6 +273,7 @@
   },
   {
     "id": 2748,
+    "date": "2017-01-08 17:31",
     "title": "Libretas y Agendas de Ida2",
     "cliente": "Ida2",
     "descripcion": "Libretas y agendas de la imprenta digital Ida2. Las primeras páginas contienen información comercial de la empresa, y las páginas están personalizadas con el nombre de los clientes a los que se le van a regalar, y el pie de cada página hay una frase motivacional diferente.",
@@ -270,6 +289,7 @@
   },
   {
     "id": 3911,
+    "date": "2016-11-01 21:43",
     "title": "Calendario Recóndita 2017",
     "cliente": "Recóndita Ilustración",
     "descripcion": "Calendario 2017 Recóndita Rick, Ilustración",
@@ -286,6 +306,7 @@
   },
   {
     "id": 3886,
+    "date": "2015-12-01 21:11",
     "title": "Calendario L'Ermità 2016",
     "cliente": "L'Ermità Café Cultural",
     "descripcion": "Calendario 2016 L'Ermità Café Cultural",
@@ -306,6 +327,7 @@
   },
   {
     "id": 2826,
+    "date": "2015-05-04 09:36",
     "title": "Tríptico Catedral de Albacete",
     "cliente": "Pilar Belmonte",
     "descripcion": "Tríptico para la Catedral de Albacete INAUGURACIÓN DEL NUEVO ROSETÓN",
@@ -322,6 +344,7 @@
   },
   {
     "id": 3125,
+    "date": "2015-03-02 14:44",
     "title": "Curriculum Lidia Aparicio",
     "cliente": "Lidia Aparicio",
     "descripcion": "Currículum Lidia Aparicio Currículum-portfolio tipo revista para una fotógrafa creativa",
@@ -337,6 +360,7 @@
   },
   {
     "id": 2711,
+    "date": "2015-01-08 12:17",
     "title": "Equilibrium 2015",
     "cliente": "Equilibrium",
     "descripcion": "Trípticos, tarifas y encuestas personales de la campaña 2015 de Equilibrium Personal Training Studio",
@@ -354,6 +378,7 @@
   },
   {
     "id": 2705,
+    "date": "2014-05-25 12:13",
     "title": "Tarjetas Pau Benedito",
     "cliente": "Pau Benedito",
     "descripcion": "Tarjetas de visita de un entrenador personal",
@@ -367,6 +392,7 @@
   },
   {
     "id": 2738,
+    "date": "2014-02-26 17:21",
     "title": "Tríptico MagVi y Miranda de Picas",
     "cliente": "MagVi",
     "descripcion": "Tríptico explicando los servicios de una pareja de magos",
@@ -382,6 +408,7 @@
   },
   {
     "id": 2824,
+    "date": "2013-12-15 09:49",
     "title": "Políptico Antología Pilar Belmonte",
     "cliente": "Pilar Belmonte",
     "descripcion": "Políptico de 5 palas Exposición antológica de Pilar Belmonte",
@@ -398,6 +425,7 @@
   },
   {
     "id": 3914,
+    "date": "2013-11-01 21:46",
     "title": "Calendario Recóndita 2014",
     "cliente": "Recóndita Ilustración",
     "descripcion": "Calendario 2014 Recóndita Rick, Ilustración",
@@ -414,6 +442,7 @@
   },
   {
     "id": 3104,
+    "date": "2012-10-18 13:46",
     "title": "Dípticos de productos para el campo",
     "cliente": "SAPEC",
     "descripcion": "Dípticos SAPEC Productos para el campo",
@@ -432,6 +461,7 @@
   },
   {
     "id": 4078,
+    "date": "2012-09-24 08:26",
     "title": "Tríptico Gondamar",
     "cliente": "Gondamar & Fish S.L.",
     "descripcion": "Tríptico explicando el catálogo de una empresa de elaboración de pescados",
@@ -446,6 +476,7 @@
   },
   {
     "id": 2829,
+    "date": "2012-06-13 09:25",
     "title": "Díptico Tratamientos frutales",
     "cliente": "SAPEC",
     "descripcion": "Guía de tratamientos frutales DÍPTICO PARA SAPEC AGRO",
@@ -461,6 +492,7 @@
   },
   {
     "id": 2822,
+    "date": "2012-02-12 09:48",
     "title": "Díptico Guillermo del Toro",
     "cliente": "La Brigada Gráfica",
     "descripcion": "Díptico para Guillermo del Toro PROYECTO DOCUMENTAL",
@@ -476,6 +508,7 @@
   },
   {
     "id": 2840,
+    "date": "2011-02-14 10:04",
     "title": "Invitación Horizontes Cercanos e Infinitos",
     "cliente": "Pilar Belmonte",
     "descripcion": "Invitación Horizontes Cercanos e Infinitos EXPOSICIÓN DE PILAR BELMONTE",
@@ -484,10 +517,13 @@
       "https://www.kimografico.com/wp-content/uploads/2020/01/Invita-0.jpg"
     ],
     "videos": [],
-    "extras": ["Invitación para una exposición en el Museo Municipal de Albacete"]
+    "extras": [
+      "Invitación para una exposición en el Museo Municipal de Albacete"
+    ]
   },
   {
     "id": 2719,
+    "date": "2010-11-08 12:21",
     "title": "Fichas Admedical",
     "cliente": "Admedical",
     "descripcion": "Fichas técnicas para los productos de una empresa de material médico",

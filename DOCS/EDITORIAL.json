@@ -1,6 +1,7 @@
 [
   {
     "id": 4438,
+    "date": "2020-12-22 09:03",
     "title": "REM - Catálogo de Empresas",
     "cliente": "Eduard Farran",
     "descripcion": "REM – Catálogo de empresas Catálogo de empresas que constituyen la asociación «Relaciones Empresariales del Mediterráneo«",
@@ -27,6 +28,7 @@
   },
   {
     "id": 4425,
+    "date": "2020-12-21 15:27",
     "title": "Timë",
     "cliente": "Timë",
     "descripcion": "Timë – Catálogo Catálogo de productos especializados en la desinfección de Covid-19",
@@ -44,6 +46,7 @@
   },
   {
     "id": 4416,
+    "date": "2020-12-21 15:20",
     "title": "Zeta",
     "cliente": "Eduard Farran",
     "descripcion": "Libro de poemas «Zeta» Libro de poemas de Eduard Farran",
@@ -65,6 +68,7 @@
   },
   {
     "id": 4391,
+    "date": "2020-12-21 11:25",
     "title": "Libreto Pierdeloss90",
     "cliente": "PierdeLoss90",
     "descripcion": "Libreto PierdeLoss90 Libreto de 24 páginas con la explicación del proceso de dieta y ejercicio del sistema PierdeLoss90",
@@ -96,6 +100,7 @@
   },
   {
     "id": 4188,
+    "date": "2020-12-09 11:32",
     "title": "Ni milagros ni hostias",
     "cliente": "Pau Benedito",
     "descripcion": "Ni milagros ni hostias PAU BENEDITO",
@@ -155,6 +160,7 @@
   },
   {
     "id": 4107,
+    "date": "2020-12-04 15:01",
     "title": "The Mission Wall",
     "cliente": "ZIMMER BIOMET",
     "descripcion": "The Mission Wall LIBRO DE CITAS PARA LA EMPRESA DE DISPOSITIVOS MÉDICOS ZIMMER BIOMET",
@@ -173,6 +179,7 @@
   },
   {
     "id": 4002,
+    "date": "2020-06-09 22:32",
     "title": "En el umbral del primer remanso",
     "cliente": "Juan Antonio Cebrián",
     "descripcion": "En el umbral del primer remanso LIBRO DE POESÍA",
@@ -192,6 +199,7 @@
   },
   {
     "id": 4909,
+    "date": "2019-02-19 09:32",
     "title": "Cuento Isa 30 cumpleaños",
     "cliente": "Isabel",
     "descripcion": "Las fantásticas aventuras de Isabel Cuento conmemorativo del 30 cumpleaños.. Cuentos el Ilustraciones de Carmen Alonso y Julia Tartaj",
@@ -210,6 +218,7 @@
   },
   {
     "id": 3634,
+    "date": "2018-03-16 14:18",
     "title": "Catálogo de Tatuajes",
     "cliente": "Hipos Tattoo",
     "descripcion": "Catálogo de Tatuajes PORTFOLIO DE HIPOS (Joan Casany)",
@@ -225,10 +234,14 @@
       "https://www.kimografico.com/wp-content/uploads/2020/04/resized_3-5.jpg"
     ],
     "videos": [],
-    "extras": ["Formato: 32 x 21 cm Páginas: 40", "ALGUNOS EJEMPLOS DE PÁGINAS INTERIORES"]
+    "extras": [
+      "Formato: 32 x 21 cm Páginas: 40",
+      "ALGUNOS EJEMPLOS DE PÁGINAS INTERIORES"
+    ]
   },
   {
     "id": 3629,
+    "date": "2017-02-14 22:43",
     "title": "Canto, Bases y Método",
     "cliente": "Elisa Belmonte",
     "descripcion": "TESIS DOCTORAL Canto, Bases y Método AUTORA: ELISA BELMONTE",
@@ -256,6 +269,7 @@
   },
   {
     "id": 3630,
+    "date": "2017-02-10 22:36",
     "title": "Llibret Falla Prado",
     "cliente": "Falla Prado",
     "descripcion": "Falla Prado LLIBRET – 24&#215;28 – 142 pag",
@@ -283,6 +297,7 @@
   },
   {
     "id": 4769,
+    "date": "2016-03-03 09:54",
     "title": "30 años de Stephan",
     "cliente": "Stephan",
     "descripcion": "30 años de Stephan Memorias de un madurito makarrister Recopilación de comics, historias e ilustraciones conmemorativas, realizadas expresamente para la ocasión por un grupo de amigos La portada la realizó Joan Quirós, artista del lettering",
@@ -302,6 +317,7 @@
   },
   {
     "id": 2726,
+    "date": "2015-03-02 12:39",
     "title": "Fotocurriculum Lidia Aparicio",
     "cliente": "Lidia Aparicio",
     "descripcion": "Foto-currículum para la fotógrafa Lidia Aparicio",
@@ -317,6 +333,7 @@
   },
   {
     "id": 3782,
+    "date": "2014-05-01 02:15",
     "title": "Pantonera Ida2",
     "cliente": "Ida2",
     "descripcion": "Pantonera de colores CMYK Ida2 • Impresión Digital",
@@ -333,10 +350,13 @@
       "https://www.kimografico.com/wp-content/uploads/2020/05/Pantonera-Ida2-Interiores-6.jpg"
     ],
     "videos": [],
-    "extras": ["ALGUNOS EJEMPLOS DE PÁGINAS INTERIORES"]
+    "extras": [
+      "ALGUNOS EJEMPLOS DE PÁGINAS INTERIORES"
+    ]
   },
   {
     "id": 3637,
+    "date": "2014-04-10 13:21",
     "title": "Exposición Antológica",
     "cliente": "Pilar Belmonte",
     "descripcion": "Exposición Antológica AUTORA: PILAR BELMONTE",
@@ -355,6 +375,7 @@
   },
   {
     "id": 3631,
+    "date": "2013-10-21 22:24",
     "title": "La noche de las calabazas",
     "cliente": "Recóndita Ilustración",
     "descripcion": "La noche de las calabazas AUTORA: RECÓNDITA MARTÍNEZ",
@@ -378,6 +399,7 @@
   },
   {
     "id": 3752,
+    "date": "2013-08-30 21:32",
     "title": "Cuentos dulces",
     "cliente": "Recóndita Ilustración",
     "descripcion": "Cuentos Dulces AUTORA: RECÓNDITA MARTÍNEZ",
@@ -401,6 +423,7 @@
   },
   {
     "id": 3767,
+    "date": "2013-04-30 23:58",
     "title": "Catálogo de Productos Ida2",
     "cliente": "Ida2",
     "descripcion": "Catálogo de Productos Ida2 • Impresión Digital",
@@ -417,10 +440,13 @@
       "https://www.kimografico.com/wp-content/uploads/2020/04/Ida2-Interiores-8.jpg"
     ],
     "videos": [],
-    "extras": ["ALGUNOS EJEMPLOS DE PÁGINAS INTERIORES"]
+    "extras": [
+      "ALGUNOS EJEMPLOS DE PÁGINAS INTERIORES"
+    ]
   },
   {
     "id": 3636,
+    "date": "2013-01-22 13:45",
     "title": "Catálogo de camisetas LBG",
     "cliente": "La Brigada Gráfica",
     "descripcion": "Catálogo de camisetas LA BRIGADA GRÁFICA A4 / A5, 296 pág",
@@ -453,6 +479,7 @@
   },
   {
     "id": 3638,
+    "date": "2012-11-28 12:05",
     "title": "Ashes & Blood",
     "cliente": "La Brigada Gráfica",
     "descripcion": "Ashes & Blood LIBRO FOTOGRÁFICO BENÉFICO",
@@ -473,6 +500,7 @@
   },
   {
     "id": 3639,
+    "date": "2012-03-11 11:52",
     "title": "Apuntes de dibujo",
     "cliente": "Pilar Belmonte",
     "descripcion": "Apuntes de dibujo AUTORA: PILAR BELMONTE",
@@ -493,6 +521,7 @@
   },
   {
     "id": 3632,
+    "date": "2011-04-07 18:34",
     "title": "Catálogo Naranjas Torres",
     "cliente": "Naranjas Torres",
     "descripcion": "Catálogo Naranjas Torres A4 – 18 pág",
@@ -511,6 +540,7 @@
   },
   {
     "id": 3628,
+    "date": "2011-03-18 11:00",
     "title": "7 pecados",
     "cliente": "Tamara Fernández",
     "descripcion": "7 LIBRO FOTOGRÁFICO SOBRE LOS 7 PECADOS CAPITALES",
@@ -523,10 +553,13 @@
       "https://www.kimografico.com/wp-content/uploads/2020/04/resized_7-Pecados-2.jpg"
     ],
     "videos": [],
-    "extras": ["Título: 7 Autora: Tamara Fernández Formato: A4 Páginas: 56"]
+    "extras": [
+      "Título: 7 Autora: Tamara Fernández Formato: A4 Páginas: 56"
+    ]
   },
   {
     "id": 3635,
+    "date": "2011-01-26 13:56",
     "title": "Horizontes cercanos e infinitos",
     "cliente": "Pilar Belmonte",
     "descripcion": "Horizontes cercanos e infinitos AUTORA: PILAR BELMONTE",
@@ -548,6 +581,7 @@
   },
   {
     "id": 3640,
+    "date": "2009-12-21 11:24",
     "title": "Apuntes de Color",
     "cliente": "Pilar Belmonte",
     "descripcion": "COLOR Apuntes AUTORA: PILAR BELMONTE",
@@ -572,6 +606,7 @@
   },
   {
     "id": 3574,
+    "date": "2008-12-13 11:24",
     "title": "Ver el color / Seeing Color",
     "cliente": "Pilar Belmonte",
     "descripcion": "Ver el Color / Seeing Color AUTORA: PILAR BELMONTE USEROS",
@@ -609,6 +644,7 @@
   },
   {
     "id": 3822,
+    "date": "2007-06-01 11:06",
     "title": "PFC 2006-2007",
     "cliente": "EASD",
     "descripcion": "Proyectos Final de Carrera Maquetación del recopilatorio de PFCs de la EASD de 2006-2007",
@@ -620,6 +656,7 @@
   },
   {
     "id": 3812,
+    "date": "2007-05-01 10:59",
     "title": "Artículo sobre Goya",
     "cliente": "EASD",
     "descripcion": "Artículo sobre Goya Las pinturas negras bajo sospecha",
@@ -631,6 +668,7 @@
   },
   {
     "id": 3821,
+    "date": "2006-02-01 11:05",
     "title": "Revista Socio",
     "cliente": "RCN Torrevieja",
     "descripcion": "Revista Socio Maquetación y diseño de portada de un número de la revista Socio del RCN Torrevieja",

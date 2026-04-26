@@ -1,15 +1,19 @@
 [
   {
     "id": 4681,
+    "date": "2021-01-01 20:00",
     "title": "Descanso Padre",
     "cliente": "KIMO",
     "descripcion": "Lugar de descanso de mi padre",
-    "imagenes": ["https://www.kimografico.com/wp-content/uploads/2021/01/Descanso-Padre.jpg"],
+    "imagenes": [
+      "https://www.kimografico.com/wp-content/uploads/2021/01/Descanso-Padre.jpg"
+    ],
     "videos": [],
     "extras": []
   },
   {
     "id": 3882,
+    "date": "2020-12-31 18:58",
     "title": "Botellines de cerveza personalizados",
     "cliente": "KIMO",
     "descripcion": "Botellínes de cerveza PERSONALIZADOS PARA UN CUMPLEAÑOS",
@@ -22,6 +26,7 @@
   },
   {
     "id": 4520,
+    "date": "2020-12-26 19:44",
     "title": "Etiquetas para hidromiel Loki",
     "cliente": "Odín Hidromiel",
     "descripcion": "Etiquetas para una marca de hidromieles",
@@ -42,6 +47,7 @@
   },
   {
     "id": 4502,
+    "date": "2020-12-26 19:36",
     "title": "Etiquetas para hidromiel Odín",
     "cliente": "Odín Hidromiel",
     "descripcion": "Etiquetas para una marca de hidromieles",
@@ -60,6 +66,7 @@
   },
   {
     "id": 4467,
+    "date": "2020-12-22 10:38",
     "title": "Etiquetas para Mathematic",
     "cliente": "Odín Hidromiel",
     "descripcion": "Etiquetas para una cerveza de Hierbabuena, Limón y Jengibre",
@@ -73,6 +80,7 @@
   },
   {
     "id": 4457,
+    "date": "2020-12-22 10:33",
     "title": "Etiquetas para Ginger Ale",
     "cliente": "Odín Hidromiel",
     "descripcion": "Etiquetas para una bebida de Jengibre",
@@ -86,6 +94,7 @@
   },
   {
     "id": 4452,
+    "date": "2020-12-22 09:59",
     "title": "Etiquetas para Hidromiel Odín (YULE EDITION)",
     "cliente": "Odín Hidromiel",
     "descripcion": "Odín Hidromiel Etiqueta de la edición especial Yule, una versión con jengibre para la campaña navideña",
@@ -100,24 +109,31 @@
   },
   {
     "id": 3878,
+    "date": "2020-05-01 18:44",
     "title": "Botellas de agua personalizadas",
     "cliente": "KIMO",
     "descripcion": "Botella de agua PERSONALIZADA",
-    "imagenes": ["https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Agua-2.jpg"],
+    "imagenes": [
+      "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Agua-2.jpg"
+    ],
     "videos": [],
     "extras": []
   },
   {
     "id": 3077,
+    "date": "2020-03-12 21:08",
     "title": "Furgoneta SAICA",
     "cliente": "Eduard Farran",
     "descripcion": "Cartelería para la rotulación de un furgón de la empresa SAICA",
-    "imagenes": ["https://kimografico.com/wp-content/uploads/2020/04/Boceto-1.png"],
+    "imagenes": [
+      "https://kimografico.com/wp-content/uploads/2020/04/Boceto-1.png"
+    ],
     "videos": [],
     "extras": []
   },
   {
     "id": 3323,
+    "date": "2020-01-10 22:23",
     "title": "Aceite de Oliva",
     "cliente": "Pilar Belmonte",
     "descripcion": "Etiquetas para una marca de aceite de oliva artesanal",
@@ -133,6 +149,7 @@
   },
   {
     "id": 4807,
+    "date": "2019-10-03 07:46",
     "title": "Contenedores de Reciclaje",
     "cliente": "Eduard Farran",
     "descripcion": "Contenedores soterrados de Castalla",
@@ -152,6 +169,7 @@
   },
   {
     "id": 2677,
+    "date": "2019-03-07 18:26",
     "title": "Trofeo concurso de paellas",
     "cliente": "Ida2",
     "descripcion": "Trofeo para la VII edición del concurso de paellas organizado por Grupo Electrostocks. Se realizaron estatuillas para el 1er, 2º y 3er premio. El trofeo está realizado en metacrilato de 10mm, grabado y con peana adherida con cianocrilato, y una cuchara de madera grabada a láser.",
@@ -167,6 +185,7 @@
   },
   {
     "id": 2698,
+    "date": "2017-09-08 11:47",
     "title": "Minipapelera",
     "cliente": "Ida2",
     "descripcion": "Papelera de cartón para Ida2",
@@ -179,6 +198,7 @@
   },
   {
     "id": 3988,
+    "date": "2017-03-10 18:26",
     "title": "Coche Nemesio",
     "cliente": "Asesoria Nemesio",
     "descripcion": "Cartelería para la rotulación de un coche de empresa de la asesoría Nemesio",
@@ -191,6 +211,7 @@
   },
   {
     "id": 2688,
+    "date": "2016-10-11 11:12",
     "title": "Puertas Trocathlon",
     "cliente": "Decathlon Aldaia",
     "descripcion": "Vinilos para las puertas de Decathlon Aldaia, con motivo de la campaña Trocathlon, y algunos carteles para señalética.",
@@ -207,6 +228,7 @@
   },
   {
     "id": 3625,
+    "date": "2016-05-22 11:16",
     "title": "CD Música recopilada",
     "cliente": "Vic",
     "descripcion": "CD recopilatorio de música Regalo de aniversario de una pareja que vivian separados, Londres y Barcelona",
@@ -222,6 +244,7 @@
   },
   {
     "id": 2620,
+    "date": "2014-12-02 13:58",
     "title": "Camisetas LaFlama",
     "cliente": "LaFlama",
     "descripcion": "Diseño para los uniformes y camisetas promocionales del Pub «La Flama» del barrio del Carmen de Valencia",
@@ -243,10 +266,13 @@
       "https://kimografico.com/wp-content/uploads/2020/01/2-2.jpg"
     ],
     "videos": [],
-    "extras": ["Diferentes bocetos"]
+    "extras": [
+      "Diferentes bocetos"
+    ]
   },
   {
     "id": 2666,
+    "date": "2014-05-23 18:09",
     "title": "Bolsa frutas y verduras",
     "cliente": "Consellería de Educació",
     "descripcion": "Diseño para las bolsas para fruta y verdura de los mercados municipales de Valencia, encargado por la Consellería de Educació de la Generalitat Valenciana para el fomento del valenciano. El trabajo se realizó en dos tamaños, bolsa grande y pequeña.",
@@ -262,6 +288,7 @@
   },
   {
     "id": 2656,
+    "date": "2012-10-30 17:22",
     "title": "Baraja LBG",
     "cliente": "La Brigada Gráfica",
     "descripcion": "Baraja de cartas promocional para La Brigada Gráfica",
@@ -280,6 +307,7 @@
   },
   {
     "id": 3332,
+    "date": "2011-04-20 12:44",
     "title": "Panografías",
     "cliente": "KIMO",
     "descripcion": "Panografías Imágenes unidas para formar una imágen en gran angular",
@@ -305,6 +333,7 @@
   },
   {
     "id": 3355,
+    "date": "2010-04-20 13:16",
     "title": "Birdseyes",
     "cliente": "KIMO",
     "descripcion": "Birdseyes Imágenes unidas en un panorama y curvado para formar una imagen que recuerda a un pequeño planeta",
@@ -322,6 +351,7 @@
   },
   {
     "id": 3158,
+    "date": "2008-12-16 21:20",
     "title": "Calendario Generalitat",
     "cliente": "Generalitat Valenciana",
     "descripcion": "Diseño de tres meses del calendario de la Conselleria de Sanitat de 2009",

@@ -1,6 +1,7 @@
 [
   {
     "id": 3143,
+    "date": "2020-04-05 20:18",
     "title": "Tafling",
     "cliente": "KIMO",
     "descripcion": "Diseño de personaje para un juego de rol",
@@ -13,6 +14,7 @@
   },
   {
     "id": 302,
+    "date": "2017-08-13 15:45",
     "title": "Fauno",
     "cliente": "KIMO",
     "descripcion": "Ilustración de un fauno",
@@ -26,6 +28,7 @@
   },
   {
     "id": 4903,
+    "date": "2017-05-11 09:29",
     "title": "Ilustración para una deportista",
     "cliente": "Mar Howi",
     "descripcion": "Ilustraciones para el equipo de una  de kayak-polo",
@@ -40,6 +43,7 @@
   },
   {
     "id": 3797,
+    "date": "2016-03-14 02:26",
     "title": "Felicitación Menchu",
     "cliente": "KIMO",
     "descripcion": "Felicitación de cumpleaños",
@@ -52,6 +56,7 @@
   },
   {
     "id": 1196,
+    "date": "2016-01-08 14:12",
     "title": "Ilustraciones ambientadas en Star Wars",
     "cliente": "KIMO",
     "descripcion": "Ilustraciones ambientadas en Star Wars™",
@@ -65,6 +70,7 @@
   },
   {
     "id": 2612,
+    "date": "2015-12-02 13:48",
     "title": "Sonríe, es Navidad",
     "cliente": "Dra. Vanessa Paredes",
     "descripcion": "Ilustración de corte infantil para la felicitación de Navidad de una dentista",
@@ -80,6 +86,7 @@
   },
   {
     "id": 1205,
+    "date": "2014-10-20 14:23",
     "title": "Pintamones",
     "cliente": "Pintamones",
     "descripcion": "Ilustración de gorila para una exposición con motivo de la inauguración de una tienda de arte",
@@ -93,6 +100,7 @@
   },
   {
     "id": 1216,
+    "date": "2012-10-02 17:54",
     "title": "Be different - Deer",
     "cliente": "La Brigada Gráfica",
     "descripcion": "Ilustración vectorial de un ciervo alado – Be Different",
@@ -105,6 +113,7 @@
   },
   {
     "id": 3148,
+    "date": "2012-07-16 20:24",
     "title": "Ilustraciones para postales Ashes &#038; Blood",
     "cliente": "La Brigada Gráfica",
     "descripcion": "Ilustraciones de personajes de Ashes & Blood para postales y láminas",
@@ -121,6 +130,7 @@
   },
   {
     "id": 1228,
+    "date": "2012-06-13 18:23",
     "title": "Peace",
     "cliente": "KIMO",
     "descripcion": "Ilustración pacifista",
@@ -133,6 +143,7 @@
   },
   {
     "id": 1221,
+    "date": "2012-06-05 18:10",
     "title": "Anonymous",
     "cliente": "KIMO",
     "descripcion": "Ilustración Anon",
@@ -145,6 +156,7 @@
   },
   {
     "id": 304,
+    "date": "2012-05-26 15:46",
     "title": "Dragón negro",
     "cliente": "KIMO",
     "descripcion": "Ilustración de un dragón",
@@ -158,6 +170,7 @@
   },
   {
     "id": 1171,
+    "date": "2011-03-30 11:29",
     "title": "Todos con Japón, Tsunami 2011",
     "cliente": "Benéfico",
     "descripcion": "Todos con Japón, cartel para una recopilación a favor de las victimas del Tsunami del 11 de marzo de 2011",
@@ -171,15 +184,19 @@
   },
   {
     "id": 1178,
+    "date": "2011-03-01 11:37",
     "title": "Totem La Brigada",
     "cliente": "La Brigada Gráfica",
     "descripcion": "Ilustración para promocionar una sesión fotográfica",
-    "imagenes": ["https://www.kimografico.com/wp-content/uploads/2011/03/Totem2.jpg"],
+    "imagenes": [
+      "https://www.kimografico.com/wp-content/uploads/2011/03/Totem2.jpg"
+    ],
     "videos": [],
     "extras": []
   },
   {
     "id": 1234,
+    "date": "2011-02-16 18:32",
     "title": "Animales LineArt",
     "cliente": "KIMO",
     "descripcion": "Ilustración vectorial de distintos animales",
@@ -195,6 +212,7 @@
   },
   {
     "id": 306,
+    "date": "2011-02-13 15:46",
     "title": "Ink monsters",
     "cliente": "KIMO",
     "descripcion": "Creación de una línea de personajes de tinta plana, para varios formatos (principalmente camisetas)",
@@ -241,6 +259,7 @@
   },
   {
     "id": 1244,
+    "date": "2010-11-30 18:43",
     "title": "Bichirris",
     "cliente": "KIMO",
     "descripcion": "Distintas ilustraciones siguiendo un mismo estilo",

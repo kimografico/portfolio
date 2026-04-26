@@ -1,6 +1,7 @@
 [
   {
     "id": 2551,
+    "date": "2018-06-17 11:49",
     "title": "Totem 3D",
     "cliente": "La Rosa Visual",
     "descripcion": "Visualización 3D de un Totem a modo de pre-maqueta, subcontratado por el estudio de diseño La Rosa Visual",
@@ -16,6 +17,7 @@
   },
   {
     "id": 2578,
+    "date": "2012-04-24 12:59",
     "title": "Render de interiorismo",
     "cliente": "Andrea",
     "descripcion": "Realización de un render 3D de un local, según planos facilitados por el cliente, para la presentación de un proyecto de interiorismo",
@@ -25,11 +27,14 @@
       "https://www.kimografico.com/wp-content/uploads/2020/01/21-scaled.jpg",
       "https://www.kimografico.com/wp-content/uploads/2020/01/230000-scaled.jpg"
     ],
-    "videos": ["https://www.youtube.com/watch?v=CdsMe1iQLSI"],
+    "videos": [
+      "https://www.youtube.com/watch?v=CdsMe1iQLSI"
+    ],
     "extras": []
   },
   {
     "id": 1296,
+    "date": "2012-03-30 14:04",
     "title": "Caseta Airtel",
     "cliente": "Tech-Telecom",
     "descripcion": "Render 3D de una caseta de telecomunicaciones de Airtel, para la empresa Tech-Telecom",
@@ -46,6 +51,7 @@
   },
   {
     "id": 1309,
+    "date": "2012-03-13 14:10",
     "title": "Interior de una habitación",
     "cliente": "Tech-Telecom",
     "descripcion": "Render 3D de una habitación, para la empresa Tech-Telecom",
@@ -58,10 +64,13 @@
   },
   {
     "id": 1255,
+    "date": "2011-11-10 18:54",
     "title": "Logo de La Brigada Gráfica",
     "cliente": "La Brigada Gráfica",
     "descripcion": "Animacion 3D del logotipo de La Brigada Gráfica",
-    "imagenes": ["https://www.kimografico.com/wp-content/uploads/2018/11/estrella-2.jpg"],
+    "imagenes": [
+      "https://www.kimografico.com/wp-content/uploads/2018/11/estrella-2.jpg"
+    ],
     "videos": [
       "https://youtu.be/hD98oKScpyc",
       "https://youtu.be/Lgfl02tG7Qk",
@@ -71,6 +80,7 @@
   },
   {
     "id": 2560,
+    "date": "2011-02-08 12:29",
     "title": "Museo 3D",
     "cliente": "Pilar Belmonte",
     "descripcion": "Paseo virtual 3D por el Museo Municipal de Albacete Aplicación diseñada para organización de las obras en la exposición «Horizontes cercanos e infinitos» de Pilar Belmonte Se hizo un plano 3D de la sala del Museo en la que se iba a organizar la exposición, y se organizaron los cuadros sobre los render, de forma que se pudiera hacer una visita virtual por la exposición y así comprobar que la organización de los mismos era la adecuada para la artista.",
@@ -85,7 +95,9 @@
       "https://www.kimografico.com/wp-content/uploads/2011/02/IMG_5884-ajustada-scaled.jpg",
       "https://kimografico.com/wp-content/uploads/2020/01/Museo3D-1.png"
     ],
-    "videos": ["https://www.youtube.com/watch?v=gjB2e34vKnA"],
+    "videos": [
+      "https://www.youtube.com/watch?v=gjB2e34vKnA"
+    ],
     "extras": [
       "En el vídeo se puede observar la utilización del programa, los puntos de vista 3D superpuestos en un plano de la planta de cada piso, y un triángulo que muestra la dirección a la que se está mirando en el visor.",
       "Resultado final – Prediseño en el programa y exposición una vez montada"
@@ -93,6 +105,7 @@
   },
   {
     "id": 2786,
+    "date": "2009-03-27 09:59",
     "title": "Productos ACID",
     "cliente": "Acid Skateboards",
     "descripcion": "ACID SKATEBOARDS ———————————- Representación de productos y merchandising de la marca de ACID SKATEBOARDS Se crearon para la página web, y presentan una animación interactiva de giro 360º y, en el caso del USB, también de como se abre y cierra el mismo.",
@@ -103,11 +116,14 @@
       "https://kimografico.com/wp-content/uploads/2018/10/ACID_Percha.png",
       "https://kimografico.com/wp-content/uploads/2018/10/ACID_T-tool.png"
     ],
-    "videos": ["https://www.youtube.com/watch?v=y-Yleb5PVbk"],
+    "videos": [
+      "https://www.youtube.com/watch?v=y-Yleb5PVbk"
+    ],
     "extras": []
   },
   {
     "id": 3167,
+    "date": "2008-04-16 21:47",
     "title": "Breaking Stereotypes",
     "cliente": "EASD",
     "descripcion": "Cartelería para el evento Breaking Stereotypes de la Generalitat Valenciana",
@@ -118,10 +134,13 @@
       "https://kimografico.com/wp-content/uploads/2008/12/unnamed.png"
     ],
     "videos": [],
-    "extras": ["El diseño se realizó mediante 3D Studi Max y Photoshop"]
+    "extras": [
+      "El diseño se realizó mediante 3D Studi Max y Photoshop"
+    ]
   },
   {
     "id": 1266,
+    "date": "2007-05-07 19:44",
     "title": "Cartelería obras de Valle Inclán",
     "cliente": "Teatro Rialto",
     "descripcion": "Cartelería para unas obras teatrales del Teatro Rialto",

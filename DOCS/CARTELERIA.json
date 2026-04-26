@@ -1,6 +1,7 @@
 [
   {
     "id": 3800,
+    "date": "2020-12-31 10:36",
     "title": "Rótulo Peluquería",
     "cliente": "Sort Estilistas",
     "descripcion": "Cartel para una peluquería",
@@ -15,6 +16,7 @@
   },
   {
     "id": 4087,
+    "date": "2020-12-04 08:10",
     "title": "Calendario-pizarra de pared 2021",
     "cliente": "CASMARA",
     "descripcion": "Calendario 2021 Calendario-pizarra de pared para la empresa de cosméticos CASMARA El cliente necesitaba un calendario donde poder escribir y controlar de un vistazo las acciones pasadas y futuras del año completo, para colocar en un lugar visible para todo el equipo de trabajo de la oficina Se le hizo también uno similar para 2020",
@@ -28,6 +30,7 @@
   },
   {
     "id": 4130,
+    "date": "2020-10-07 15:21",
     "title": "Carteles internos Datadec",
     "cliente": "DATADEC",
     "descripcion": "Cartel de información interna para la empresa de gestión empresarial DATADEC",
@@ -39,10 +42,13 @@
       "https://kimografico.com/wp-content/uploads/2020/12/Datadec-cartel-5.jpg"
     ],
     "videos": [],
-    "extras": ["Diferentes propuestas según briefing"]
+    "extras": [
+      "Diferentes propuestas según briefing"
+    ]
   },
   {
     "id": 3847,
+    "date": "2019-07-08 12:36",
     "title": "Cartel TFC",
     "cliente": "Juanjo Sáez",
     "descripcion": "Cartel de presentación de un TFC para la Universidad de Valencia Autor: Juanjo Sáez",
@@ -54,10 +60,14 @@
       "https://kimografico.com/wp-content/uploads/2020/05/kimografico_B.jpg"
     ],
     "videos": [],
-    "extras": ["Guía de ejemplo en cuanto a organización", "Diagrama de flujo, parte del trabajo"]
+    "extras": [
+      "Guía de ejemplo en cuanto a organización",
+      "Diagrama de flujo, parte del trabajo"
+    ]
   },
   {
     "id": 4891,
+    "date": "2018-12-10 09:15",
     "title": "Valencia Conecta",
     "cliente": "Conecta Networking",
     "descripcion": "Imagen para RR.SS. y dos modelos de roll-up para una gala de Networking",
@@ -70,6 +80,7 @@
   },
   {
     "id": 4821,
+    "date": "2017-10-05 10:41",
     "title": "Papelería corporativa FICSA",
     "cliente": "FICSA",
     "descripcion": "Papelería para FICSA",
@@ -90,6 +101,7 @@
   },
   {
     "id": 4852,
+    "date": "2017-08-07 12:07",
     "title": "Caballo para la pared de Equilibrium",
     "cliente": "Equilibrium",
     "descripcion": "Diseño de caballo para la pared de Equilibrium",
@@ -108,6 +120,7 @@
   },
   {
     "id": 3174,
+    "date": "2017-05-01 22:01",
     "title": "Señalética Decathlon",
     "cliente": "Decathlon Campanar",
     "descripcion": "Cartel de plantilla y señalética de la tienda Decathlon de Campanar",
@@ -126,6 +139,7 @@
   },
   {
     "id": 4178,
+    "date": "2016-04-02 11:22",
     "title": "Horarios Equilibrium",
     "cliente": "Equilibrium",
     "descripcion": "Horarios del centro de entrenamiento personal Equilibrium, en Torrent",
@@ -137,10 +151,13 @@
       "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v3.jpg"
     ],
     "videos": [],
-    "extras": ["Diferentes modelos según las necesidades de cada momento"]
+    "extras": [
+      "Diferentes modelos según las necesidades de cada momento"
+    ]
   },
   {
     "id": 2588,
+    "date": "2016-03-18 13:31",
     "title": "Plantilla Decathlon",
     "cliente": "Decathlon Alfafar",
     "descripcion": "Ilustración para la sala de empleados de Decathlon de Alfafar. En ella están incluidos todos los empleados, cada uno en su disciplina, aparte de elementos de la comarca de Valencia y relativos a los distintos campos que aborda el comercio",
@@ -172,6 +189,7 @@
   },
   {
     "id": 4736,
+    "date": "2016-02-01 13:49",
     "title": "Cartelería variada Equilibrium",
     "cliente": "Trail",
     "descripcion": "Cartelería sobre un curso de Trail",
@@ -204,6 +222,7 @@
   },
   {
     "id": 3978,
+    "date": "2015-11-03 18:07",
     "title": "Alpine Training",
     "cliente": "Alpine Training",
     "descripcion": "Cartel de cursos y webminars de preparación física para Alpine Training",
@@ -218,6 +237,7 @@
   },
   {
     "id": 3203,
+    "date": "2014-05-16 22:14",
     "title": "Bolsa frutas y verduras",
     "cliente": "Consellería de Educació",
     "descripcion": "Diseño de carteles fruta y verdura de los mercados municipales de Valencia, encargado por la Consellería de Educació de la Generalitat Valenciana para el fomento del valenciano.",
@@ -232,6 +252,7 @@
   },
   {
     "id": 3134,
+    "date": "2012-07-16 20:05",
     "title": "Carteles Ashes &#038; Blood",
     "cliente": "La Brigada Gráfica",
     "descripcion": "Cartelería para el evento de presentación del libro Ashes & Blood",
@@ -248,15 +269,19 @@
   },
   {
     "id": 4020,
+    "date": "2012-06-22 21:24",
     "title": "Green Box Festival",
     "cliente": "La Brigada Gráfica",
     "descripcion": "Cartel para un festival de música en Gilet, colaboración con ReyMono",
-    "imagenes": ["https://kimografico.com/wp-content/uploads/2012/06/greenbox-cartel.jpg"],
+    "imagenes": [
+      "https://kimografico.com/wp-content/uploads/2012/06/greenbox-cartel.jpg"
+    ],
     "videos": [],
     "extras": []
   },
   {
     "id": 3279,
+    "date": "2012-06-17 19:41",
     "title": "ReyMono",
     "cliente": "La Brigada Gráfica",
     "descripcion": "Cartel para el cumpleaños de un compañero ilustrador",
@@ -269,6 +294,7 @@
   },
   {
     "id": 3270,
+    "date": "2012-06-17 19:24",
     "title": "eh toro!",
     "cliente": "La Brigada Gráfica",
     "descripcion": "Cartel para un concurso",
@@ -281,6 +307,7 @@
   },
   {
     "id": 3291,
+    "date": "2011-03-15 20:20",
     "title": "Expo Pilar Belmonte",
     "cliente": "Pilar Belmonte",
     "descripcion": "Cartelería para una exposición de Pilar Belmonte en el Museo Municipal de Albacete",
@@ -293,6 +320,7 @@
   },
   {
     "id": 308,
+    "date": "2011-02-11 15:50",
     "title": "Estaciones",
     "cliente": "EASD",
     "descripcion": "Greetings estacionales",
@@ -308,6 +336,7 @@
   },
   {
     "id": 3230,
+    "date": "2010-04-16 22:59",
     "title": "El Patio",
     "cliente": "Pub África",
     "descripcion": "Cartelería para el distintos eventos del pub África de Punta Umbría",
@@ -324,6 +353,7 @@
   },
   {
     "id": 3216,
+    "date": "2008-05-10 22:35",
     "title": "Jornadas Latentes EASD",
     "cliente": "EASD",
     "descripcion": "Cartelería para el evento de fotografía Sextas Jornadas Latentes de la EASD",
@@ -337,6 +367,7 @@
   },
   {
     "id": 3223,
+    "date": "2008-04-16 22:46",
     "title": "L'Elisir d'amore",
     "cliente": "EASD",
     "descripcion": "Cartelería y diseño de cubierta para la ópera L'Elisir d'amore de Donizetti",
@@ -351,6 +382,7 @@
   },
   {
     "id": 3285,
+    "date": "2007-03-15 19:55",
     "title": "Concierto Destino Clandestino",
     "cliente": "Destino Clandestino",
     "descripcion": "Cartelería para un concierto",
