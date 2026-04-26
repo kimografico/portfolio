@@ -117,9 +117,9 @@
   },
   {
     "id": 3017,
-    "title": "Crece Tu Empresa",
-    "cliente": "Crece Tu Empresa",
-    "descripcion": "Crece Tu Empresa ABR 2020 – ACTUALIDAD",
+    "title": "Crece tu Empresa",
+    "cliente": "Crece tu Empresa",
+    "descripcion": "Crece tu Empresa ABR 2020 – ACTUALIDAD",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/04/9NgmWSmNYM.jpg",
       "https://www.kimografico.com/wp-content/uploads/2020/04/AdAN2PmnaY.jpg",
@@ -144,7 +144,7 @@
   {
     "id": 2187,
     "title": "Juan Mas",
-    "cliente": "carrusel",
+    "cliente": "Juan Mas",
     "descripcion": "Juan Mas OCT – ACTUALIDAD",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-curriculum.jpg",
@@ -172,7 +172,7 @@
   {
     "id": 2186,
     "title": "Cache Croche",
-    "cliente": "carrusel",
+    "cliente": "Alba García",
     "descripcion": "Cache Croche AGO 2019 – ACTUALIDAD",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-inicio.jpg",
@@ -204,7 +204,7 @@
   {
     "id": 1509,
     "title": "Pilar Belmonte 3",
-    "cliente": "inicio tipo escritorio",
+    "cliente": "Pilar Belmonte",
     "descripcion": "Pilar Belmonte ENE 2019 – ACTUALIDAD",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-inicio.jpg",
@@ -236,7 +236,7 @@
   {
     "id": 1507,
     "title": "Pilar Belmonte 2",
-    "cliente": "trayectoria profesional",
+    "cliente": "Pilar Belmonte",
     "descripcion": "Pilar Belmonte ENE 2016 – ENE 2019",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/02/foto.jpg",
@@ -271,7 +271,7 @@
   {
     "id": 1485,
     "title": "Casa Rural Román",
-    "cliente": "inicio",
+    "cliente": "Casa Rural Román",
     "descripcion": "La web consiste en una página de inicio con carrusel de fotos, descripción de la casa, formulario de contacto con google maps integrado, tabla de precios, oferta de actividades con sus respectivas descripciones y galería de fotos con lightbox",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-06-40.jpg",
@@ -297,7 +297,7 @@
   {
     "id": 1564,
     "title": "Museo nacional de cerámica",
-    "cliente": "inicio",
+    "cliente": "Pilar Belmonte",
     "descripcion": "Museo de cerámica nacional DIC 2015 – ACTUALIDAD",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0005_Fondo.jpg",
@@ -338,7 +338,7 @@
   {
     "id": 1503,
     "title": "Equilibrium Personal Training Studio",
-    "cliente": "carrusel",
+    "cliente": "Equilibrium",
     "descripcion": "Equilibrium Personal Training Studio NOV 2014 – AGO 2015",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Portada.jpg",
@@ -369,7 +369,7 @@
   {
     "id": 1499,
     "title": "Miranda de Picas",
-    "cliente": "inicio",
+    "cliente": "MagVi",
     "descripcion": "Miranda de Picas NOV 2014 – ACTUALIDAD",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-14-20.jpg",
@@ -394,7 +394,7 @@
   {
     "id": 1497,
     "title": "Magvi",
-    "cliente": "Mago",
+    "cliente": "MagVi",
     "descripcion": "MagVi OCT 2014 – ACTUALIDAD",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-18-05.jpg",
@@ -421,7 +421,7 @@
   {
     "id": 1491,
     "title": "Gondamar",
-    "cliente": "fotografía corporativa",
+    "cliente": "Gondamar & Fish S.L.",
     "descripcion": "La web consiste en un menú inicio con su fotografía corporativa de los fiordos noruegos. Desde ahí accedemos a Quienes somos, Localización, Productos y Contacto. En el menú de productos podemos acceder a sus tres familias ofertadas, Frescos, Ahumados y Salazones, con una selección de ejemplos.",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-15.jpg",
@@ -447,7 +447,7 @@
   {
     "id": 1493,
     "title": "Ida2",
-    "cliente": "imprenta física",
+    "cliente": "Ida2",
     "descripcion": "Ida2 Impresión Digital DIC 2013 – ACTUALIDAD",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/02/MMD-Philips-275P4VYKEB.jpg",
@@ -487,7 +487,7 @@
   {
     "id": 1487,
     "title": "Soy gay y me caso",
-    "cliente": "Quiénes somos",
+    "cliente": "Soy gay y me caso",
     "descripcion": "Soy gay y me caso JUN 2013",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0001_Capa-11.jpg",
@@ -507,7 +507,7 @@
   {
     "id": 2044,
     "title": "Sintac",
-    "cliente": "Menú Inicio",
+    "cliente": "Sintac Recycling",
     "descripcion": "Sintac Recycling NOV 2012 – JUL 2017",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/11/sintac1-1.jpg",
@@ -527,7 +527,7 @@
   {
     "id": 1483,
     "title": "Casa del Olivar",
-    "cliente": "Energias renovables",
+    "cliente": "Pilar Belmonte",
     "descripcion": "La web consiste en una página de inicio con la información más relevante, varias secciones informando de las características de la finca, e información de contacto. El cliente prefirió no indicar ubicación. La página fue traducida al Inglés y al Francés",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/11/2.jpg",
@@ -550,7 +550,7 @@
   {
     "id": 1476,
     "title": "Nakama Customs",
-    "cliente": "Menú Inicio",
+    "cliente": "Nakama Customs",
     "descripcion": "Nakama Customs AGO 2012 – OCT 2015",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/02/nakama1.jpg",
@@ -569,7 +569,7 @@
   {
     "id": 1479,
     "title": "Díez Caudet",
-    "cliente": "Menú Inicio",
+    "cliente": "Díez Caudet",
     "descripcion": "Díez Caudet DIC 2011 – FEB 2015",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0010_Fondo.jpg",
@@ -589,7 +589,7 @@
   {
     "id": 2055,
     "title": "Rapidtyres",
-    "cliente": "dos ofertas",
+    "cliente": "RapidTyres",
     "descripcion": "RapidTyres OCT 2011 – ENE 2016 – AGO 2018",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/11/rapid1-1.jpg",
@@ -613,7 +613,7 @@
   {
     "id": 1468,
     "title": "Cronaval",
-    "cliente": "Menú Inicio",
+    "cliente": "Cronaval",
     "descripcion": "Cronaval OCT 2011 – FEB 2015",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0007_Capa-5.jpg",
@@ -637,7 +637,7 @@
   {
     "id": 1481,
     "title": "La Brigada Gráfica",
-    "cliente": "navegación vertical",
+    "cliente": "La Brigada Gráfica",
     "descripcion": "La Brigada Gráfica FEB 2011 – JUL 2014",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-09-40.jpg",
@@ -662,7 +662,7 @@
   {
     "id": 1505,
     "title": "Pilar Belmonte 1",
-    "cliente": "Idioma",
+    "cliente": "Pilar Belmonte",
     "descripcion": "Pilar Belmonte NOV 2010 – ENE 2016",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-21-28.jpg",
@@ -713,7 +713,7 @@
   {
     "id": 1472,
     "title": "Precocinados Tia Teresa",
-    "cliente": "Fábrica",
+    "cliente": "Precocinados Tia Teresa",
     "descripcion": "La web consiste en dos secciones: Fábrica y Tiendas. La sección de fábrica incluye un contacto, un mapa de ubicación de la misma, los productos estrella de la misma, para su venta a grandes superficies y la historia de la empresa junto con una galería de imágenes. La sección de tienda incluye la ubicación de cada tienda o puesto en el mapa, junto con una galería de imágenes de cada una de ellas. También tiene una selección de productos de elaboración propia, una breve historia con galería de imágenes, y un apartado de recetas para descargar.",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-20.jpg",
@@ -751,8 +751,8 @@
   {
     "id": 1474,
     "title": "Acid Skateboards",
-    "cliente": "Historia",
-    "descripcion": "Acid Skateboards 2008",
+    "cliente": "Acid Skateboards",
+    "descripcion": "Acid Skateboards 2008 - Web creada para una pequeña empresa de venta de material de skateboarding Programada mediante Actionscript 2.0, HTML, CSS, JAVASCRIPT.La web consiste en un menú inicio interactivo donde controlamos un monopatín que se mueve horizontalmente por la escena, dejando ver las diferentes partes de la web. De forma paralela tenemos un menú inferior para un acceso más sencillo",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-30.jpg",
       "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-46-24.jpg",
@@ -766,8 +766,6 @@
     ],
     "videos": ["https://youtu.be/2NeuuMDB_Og", "https://youtu.be/y-Yleb5PVbk"],
     "extras": [
-      "Web creada para una pequeña empresa de venta de material de skateboarding Programada mediante Actionscript 2.0, HTML, CSS, JAVASCRIPT.",
-      "La web consiste en un menú inicio interactivo donde controlamos un monopatín que se mueve horizontalmente por la escena, dejando ver las diferentes partes de la web. De forma paralela tenemos un menú inferior para un acceso más sencillo",
       "Historia – Una breve presentación de la empresa",
       "Videos – Grabaciones de skaters utilizando los productos de la marca",
       "Catálogo – Los diferentes tipos de productos",

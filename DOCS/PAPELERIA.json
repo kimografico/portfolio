@@ -67,8 +67,8 @@
   },
   {
     "id": 4411,
-    "title": "Hidromiel Odín &#8211; Flyer para distribuciones extranjeras",
-    "cliente": "Hidromiel Odín",
+    "title": "Hidromiel Odín - Flyer para distribuciones extranjeras",
+    "cliente": "Odín Hidromiel",
     "descripcion": "Flyer informativo para la venta en el extranjero de Hidromiel Odín",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/12/Odin-Flyer-Distribuciones-extranjeras-2.jpg",
@@ -144,8 +144,8 @@
   {
     "id": 4840,
     "title": "Flyers Equilibrium",
-    "cliente": "Flyers para distintas campañas de Equilibrium",
-    "descripcion": "Equilibrium",
+    "cliente": "Equilibrium",
+    "descripcion": "Flyers para distintas campañas de Equilibrium",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2019/07/1.jpg",
       "https://www.kimografico.com/wp-content/uploads/2019/07/2.jpg",
@@ -204,7 +204,7 @@
   {
     "id": 4796,
     "title": "Casos de éxito EQUILIBRIUM",
-    "cliente": "Éxito",
+    "cliente": "Equilibrium",
     "descripcion": "Libreto Casos de Éxito",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2021/02/1.jpg",
@@ -271,7 +271,7 @@
   {
     "id": 3911,
     "title": "Calendario Recóndita 2017",
-    "cliente": "Calendario 2017",
+    "cliente": "Recóndita Ilustración",
     "descripcion": "Calendario 2017 Recóndita Rick, Ilustración",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2017_0.jpg",
@@ -286,8 +286,8 @@
   },
   {
     "id": 3886,
-    "title": "Calendario L&#8217;Ermità 2016",
-    "cliente": "Calendario 2016",
+    "title": "Calendario L'Ermità 2016",
+    "cliente": "L'Ermità Café Cultural",
     "descripcion": "Calendario 2016 L'Ermità Café Cultural",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-E_2016_0.jpg",
@@ -338,7 +338,7 @@
   {
     "id": 2711,
     "title": "Equilibrium 2015",
-    "cliente": "Equilibrium Personal Training Studio",
+    "cliente": "Equilibrium",
     "descripcion": "Trípticos, tarifas y encuestas personales de la campaña 2015 de Equilibrium Personal Training Studio",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/01/3-6.jpg",
@@ -399,7 +399,7 @@
   {
     "id": 3914,
     "title": "Calendario Recóndita 2014",
-    "cliente": "Calendario 2014",
+    "cliente": "Recóndita Ilustración",
     "descripcion": "Calendario 2014 Recóndita Rick, Ilustración",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-R_2014_0.jpg",
@@ -433,7 +433,7 @@
   {
     "id": 4078,
     "title": "Tríptico Gondamar",
-    "cliente": "Gondamar",
+    "cliente": "Gondamar & Fish S.L.",
     "descripcion": "Tríptico explicando el catálogo de una empresa de elaboración de pescados",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/12/1-scaled.jpg",
@@ -462,7 +462,7 @@
   {
     "id": 2822,
     "title": "Díptico Guillermo del Toro",
-    "cliente": "Recóndita Rick",
+    "cliente": "La Brigada Gráfica",
     "descripcion": "Díptico para Guillermo del Toro PROYECTO DOCUMENTAL",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/01/LBG-1.jpg",

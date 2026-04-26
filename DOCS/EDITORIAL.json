@@ -1,7 +1,7 @@
 [
   {
     "id": 4438,
-    "title": "REM &#8211; Catálogo de Empresas",
+    "title": "REM - Catálogo de Empresas",
     "cliente": "Eduard Farran",
     "descripcion": "REM – Catálogo de empresas Catálogo de empresas que constituyen la asociación «Relaciones Empresariales del Mediterráneo«",
     "imagenes": [
@@ -97,7 +97,7 @@
   {
     "id": 4188,
     "title": "Ni milagros ni hostias",
-    "cliente": "Páginas",
+    "cliente": "Pau Benedito",
     "descripcion": "Ni milagros ni hostias PAU BENEDITO",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_B_.jpg",
@@ -174,7 +174,7 @@
   {
     "id": 4002,
     "title": "En el umbral del primer remanso",
-    "cliente": "Título:",
+    "cliente": "Juan Antonio Cebrián",
     "descripcion": "En el umbral del primer remanso LIBRO DE POESÍA",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/06/UPR_MockUp.jpg",
@@ -211,7 +211,7 @@
   {
     "id": 3634,
     "title": "Catálogo de Tatuajes",
-    "cliente": "Páginas",
+    "cliente": "Hipos Tattoo",
     "descripcion": "Catálogo de Tatuajes PORTFOLIO DE HIPOS (Joan Casany)",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Perfect_Binding_Brochure_Mockup_3-2.jpg",
@@ -230,7 +230,7 @@
   {
     "id": 3629,
     "title": "Canto, Bases y Método",
-    "cliente": "Título:",
+    "cliente": "Elisa Belmonte",
     "descripcion": "TESIS DOCTORAL Canto, Bases y Método AUTORA: ELISA BELMONTE",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/04/kimografico_Portada-Elisa-Canto-1.jpg",
@@ -338,7 +338,7 @@
   {
     "id": 3637,
     "title": "Exposición Antológica",
-    "cliente": "Título:",
+    "cliente": "Pilar Belmonte",
     "descripcion": "Exposición Antológica AUTORA: PILAR BELMONTE",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-3.jpg",
@@ -356,7 +356,7 @@
   {
     "id": 3631,
     "title": "La noche de las calabazas",
-    "cliente": "Título:",
+    "cliente": "Recóndita Ilustración",
     "descripcion": "La noche de las calabazas AUTORA: RECÓNDITA MARTÍNEZ",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-7.jpg",
@@ -379,7 +379,7 @@
   {
     "id": 3752,
     "title": "Cuentos dulces",
-    "cliente": "Título:",
+    "cliente": "Recóndita Ilustración",
     "descripcion": "Cuentos Dulces AUTORA: RECÓNDITA MARTÍNEZ",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/04/Cuentos-Dulces-2.jpg",
@@ -453,8 +453,8 @@
   },
   {
     "id": 3638,
-    "title": "Ashes &#038; Blood",
-    "cliente": "Título:",
+    "title": "Ashes & Blood",
+    "cliente": "La Brigada Gráfica",
     "descripcion": "Ashes & Blood LIBRO FOTOGRÁFICO BENÉFICO",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/04/resized_AB_avatar.jpg",
@@ -474,7 +474,7 @@
   {
     "id": 3639,
     "title": "Apuntes de dibujo",
-    "cliente": "Título:",
+    "cliente": "Pilar Belmonte",
     "descripcion": "Apuntes de dibujo AUTORA: PILAR BELMONTE",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-1.jpg",
@@ -512,7 +512,7 @@
   {
     "id": 3628,
     "title": "7 pecados",
-    "cliente": "Título:",
+    "cliente": "Tamara Fernández",
     "descripcion": "7 LIBRO FOTOGRÁFICO SOBRE LOS 7 PECADOS CAPITALES",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Portada.jpg",
@@ -528,7 +528,7 @@
   {
     "id": 3635,
     "title": "Horizontes cercanos e infinitos",
-    "cliente": "Título:",
+    "cliente": "Pilar Belmonte",
     "descripcion": "Horizontes cercanos e infinitos AUTORA: PILAR BELMONTE",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/04/resized__HCI_avatar.jpg",
@@ -542,14 +542,14 @@
     ],
     "videos": [],
     "extras": [
-      "Título: Horizontes cercanos e infinitos Autora: Pilar Blemonte Formato: 25,5 x 20,5 cm Páginas: 24",
+      "Título: Horizontes cercanos e infinitos Autora: Pilar Belmonte Formato: 25,5 x 20,5 cm Páginas: 24",
       "ALGUNOS EJEMPLOS DE PÁGINAS INTERIORES"
     ]
   },
   {
     "id": 3640,
     "title": "Apuntes de Color",
-    "cliente": "Título:",
+    "cliente": "Pilar Belmonte",
     "descripcion": "COLOR Apuntes AUTORA: PILAR BELMONTE",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/04/resized_0.jpg",
@@ -573,7 +573,7 @@
   {
     "id": 3574,
     "title": "Ver el color / Seeing Color",
-    "cliente": "Ver el Color",
+    "cliente": "Pilar Belmonte",
     "descripcion": "Ver el Color / Seeing Color AUTORA: PILAR BELMONTE USEROS",
     "imagenes": [
       "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-copia.jpg",
