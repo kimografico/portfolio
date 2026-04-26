@@ -177,11 +177,11 @@
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2011/02/Museo3D_APP.jpg",
-        "label": ""
+        "label": "Resultado final – Prediseño en el programa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2011/02/IMG_5884-ajustada-scaled.jpg",
-        "label": ""
+        "label": "Resultado final – Exposición una vez montada"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Museo3D-1.png",
@@ -191,13 +191,10 @@
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=gjB2e34vKnA",
-        "label": ""
+        "label": "En el vídeo se puede observar la utilización del programa, los puntos de vista 3D superpuestos en un plano de la planta de cada piso, y un triángulo que muestra la dirección a la que se está mirando en el visor."
       }
     ],
-    "extras": [
-      "En el vídeo se puede observar la utilización del programa, los puntos de vista 3D superpuestos en un plano de la planta de cada piso, y un triángulo que muestra la dirección a la que se está mirando en el visor.",
-      "Resultado final – Prediseño en el programa y exposición una vez montada"
-    ]
+    "extras": []
   },
   {
     "id": 2786,
@@ -240,7 +237,7 @@
     "date": "2008-04-16 21:47",
     "title": "Breaking Stereotypes",
     "cliente": "EASD",
-    "descripcion": "Cartelería para el evento Breaking Stereotypes de la Generalitat Valenciana",
+    "descripcion": "Cartelería para el evento Breaking Stereotypes de la Generalitat Valenciana. El diseño se realizó mediante 3D Studio Max y Photoshop",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/5184997514_e438fa2819_b.jpg",
@@ -260,9 +257,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "El diseño se realizó mediante 3D Studi Max y Photoshop"
-    ]
+    "extras": []
   },
   {
     "id": 1266,
@@ -281,85 +276,78 @@
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/5185012624_7214bfac2f_b.jpg",
-        "label": ""
+        "label": "Versión en Modelado 3D"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/5185010560_906f78e73a_b.jpg",
-        "label": ""
+        "label": "Versión en Modelado 3D"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/5185000322_f7a10a4374_b.jpg",
-        "label": ""
+        "label": "Versión en Modelado 3D"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184410173_0d290e0235_b.jpg",
-        "label": ""
+        "label": "Versión grunge"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184408153_6e7d776dcf_b.jpg",
-        "label": ""
+        "label": "Versión grunge"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184998902_63cdfc4f24_b.jpg",
-        "label": ""
+        "label": "Versión grunge"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184409787_d3254a79af_b.jpg",
-        "label": ""
+        "label": "Versión sombra"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185009036_6188d8cc3f_b.jpg",
-        "label": ""
+        "label": "Versión sombra"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184999092_2effa79553_b.jpg",
-        "label": ""
+        "label": "Versión sombra"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184410875_caf1c365ae_b.jpg",
-        "label": ""
+        "label": "Versión en Collage Digital"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184408913_f75cd7ee52_b.jpg",
-        "label": ""
+        "label": "Versión en Collage Digital"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184398347_400630ceb7_b.jpg",
-        "label": ""
+        "label": "Versión en Collage Digital"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185010822_766c891aa2_b.jpg",
-        "label": ""
+        "label": "Versión en Silueta"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185008826_4de0cc5b01_b.jpg",
-        "label": ""
+        "label": "Versión en Silueta"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184998438_33cbfbc4a7_b.jpg",
-        "label": ""
+        "label": "Versión en Silueta"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185011548_b1cf2c5623_b.jpg",
-        "label": ""
+        "label": "Versión en Pintura"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185009488_6c806e2614_b.jpg",
-        "label": ""
+        "label": "Versión en Pintura"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184397281_85d0e6e5c0_b.jpg",
-        "label": ""
+        "label": "Versión en Pintura"
       }
     ],
     "videos": [],
-    "extras": [
-      "Versión en Modelado 3D",
-      "Versión grunge",
-      "Versión sombra",
-      "Versión en Collage Digital",
-      "Versión Silueta",
-      "Versión Pintura"
-    ]
+    "extras": []
   }
 ]

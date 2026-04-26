@@ -413,7 +413,7 @@
     "imagenes": [
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Logo-Comunicadora-Animal.png",
-        "label": ""
+        "label": "Primera versión del logotipo"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/2-5.jpg",
@@ -421,7 +421,7 @@
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Logo-Comunicadora-Interespecie.png",
-        "label": ""
+        "label": "Versión posterior revisada del logotipo"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/1-5.jpg",
@@ -429,10 +429,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Primera versión del logotipo",
-      "Versión posterior revisada del logotipo"
-    ]
+    "extras": []
   },
   {
     "id": 1768,
@@ -501,11 +498,11 @@
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/04/A.jpg",
-        "label": ""
+        "label": "Diferentes bocetos preliminares"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/04/C.jpg",
-        "label": ""
+        "label": "Versiones para distintos tamaños, y sus negativos"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/B-pwduverlev8q6jjb2u0n8wbre1hjtsh716g9ov1w7g.jpg",
@@ -513,10 +510,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Diferentes bocetos preliminares",
-      "Versiones para distintos tamaños, y sus negativos"
-    ]
+    "extras": []
   },
   {
     "id": 3840,
@@ -1060,7 +1054,7 @@
     "date": "2014-08-23 21:46",
     "title": "Equilibrium Personal Training Studio",
     "cliente": "Equilibrium",
-    "descripcion": "Diseño de marca corporativa para una cadena de gimnasios",
+    "descripcion": "Diseño de marca corporativa para una cadena de gimnasios. Además de la versión circular y la versión horizontal del logotipo, también se crearon distintas versiones con colores diferentes para cada una de las áreas de negocio que abarcaba el gimnasio, para facilitar una asociación rápida del cliente. Asimismo, se creó una versión simplificada del logotipo, sin texto, para su utilización en fondos, bonos, vales regalo, etc.",
     "imagenes": [
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2018/10/Equilibrium-3.jpg",
@@ -1112,10 +1106,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Además de la versión circular y la versión horizontal del logotipo, también se crearon distintas versiones con colores diferentes para cada una de las áreas de negocio que abarcaba el gimnasio, para facilitar una asociación rápida del cliente.",
-      "Asimismo, se creó una versión simplificada del logotipo, sin texto, para su utilización en fondos, bonos, vales regalo, etc."
-    ]
+    "extras": []
   },
   {
     "id": 866,
@@ -1369,16 +1360,14 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Distintas aplicaciones"
-    ]
+    "extras": []
   },
   {
     "id": 826,
     "date": "2009-03-27 22:05",
     "title": "Acid Skateboards",
     "cliente": "Acid Skateboards",
-    "descripcion": "Logotipo para una empresa de accesorios para skateboarding.",
+    "descripcion": "Logotipo para una empresa de accesorios para skateboarding. Se realizaron también sesiones de foto y vídeo para promocionar la marca. Se hizo un estudio de mercado para elegir la gama de colores del logotipo, de forma que se identificara fácilmente con el público objetivo, sin caer en la copia. Para ello se obvió el color más utilizado, y se usaron los dos siguientes. Se proyectaron productos con la marca. También se realizaron diseños para ruedas, tablas, lijas y merchandising. Por último, se diseñó una tienda on-line completa completamente interactiva. La tecnología elegida fue Flash con Actionscript 2.0 (puntero en ese momento, aunque obsoleto ahora mismo) e implementado con HTML, PHP y CSS, con algunos addons en Javascript. Por el menú principal, un skate en miniatura seguía al ratón, interactuando con los elementos del mismo. Y el catálogo de productos era completo, con muestras en tiempo real del producto.",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Acid-Estudio.jpg",
@@ -1455,19 +1444,14 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Se hizo un estudio de mercado para elegir la gama de colores del logotipo, de forma que se identificara fácilmente con el público objetivo, sin caer en la copia. Para ello se obvió el color más utilizado, y se usaron los dos siguientes.",
-      "Se realizaron también sesiones de foto y vídeo para promocionar la marca",
-      "Se proyectaron productos con la marca. También se realizaron diseños para ruedas, tablas, lijas y merchandising",
-      "Por último, se diseñó una tienda on-line completa completamente interactiva. La tecnología elegida fue Flash con Actionscript 2.0 (puntero en ese momento, aunque obsoleto ahora mismo) e implementado con HTML, PHP y CSS, con algunos addons en Javascript. Por el menú principal, un skate en miniatura seguía al ratón, interactuando con los elementos del mismo. Y el catálogo de productos era completo, con muestras en tiempo real del producto."
-    ]
+    "extras": []
   },
   {
     "id": 739,
     "date": "2009-02-04 20:11",
     "title": "Socam",
     "cliente": "Pilar Belmonte",
-    "descripcion": "Colaboración con Pilar Belmonte para un logotipo de la Sociedad Oftalmológica de Castilla la Mancha",
+    "descripcion": "Colaboración con Pilar Belmonte para un logotipo de la Sociedad Oftalmológica de Castilla la Mancha. Para la realización del logotipo se utilizaron los colores de Castilla la Mancha, las espigas y el sol característicos de la zona.",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/socam.jpg",
@@ -1483,9 +1467,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Para la realización del logotipo se utilizaron los colores de Castilla la Mancha, las espigas y el sol característicos de la zona. Enlace a la web de Pilar Belmonte"
-    ]
+    "extras": []
   },
   {
     "id": 804,
@@ -1530,7 +1512,7 @@
     "date": "2007-05-07 20:08",
     "title": "Valle Inclán",
     "cliente": "EASD",
-    "descripcion": "Logotipo para un evento de teatro sobre Ramón María del Valle-Inclán",
+    "descripcion": "Logotipo para un evento de teatro sobre Ramón María del Valle-Inclán. Se realizaron también 6 propuestas de cartel para cada obra, con distintas técnicas",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Valleinclan.jpg",
@@ -1546,32 +1528,30 @@
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2018/10/5185012624_7214bfac2f_b.jpg",
-        "label": ""
+        "label": "Propuesta de cartel"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2018/10/5185011548_b1cf2c5623_b.jpg",
-        "label": ""
+        "label": "Propuesta de cartel"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2018/10/5184998438_33cbfbc4a7_b.jpg",
-        "label": ""
+        "label": "Propuesta de cartel"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2018/10/5184999092_2effa79553_b.jpg",
-        "label": ""
+        "label": "Propuesta de cartel"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2018/10/5184408153_6e7d776dcf_b.jpg",
-        "label": ""
+        "label": "Propuesta de cartel"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2018/10/5184408913_f75cd7ee52_b.jpg",
-        "label": ""
+        "label": "Propuesta de cartel"
       }
     ],
     "videos": [],
-    "extras": [
-      "Se realizaron también 6 propuestas de cartel para cada obra, con distintas técnicas"
-    ]
+    "extras": []
   }
 ]

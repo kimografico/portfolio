@@ -4,7 +4,7 @@
     "date": "2020-12-22 09:03",
     "title": "REM - Catálogo de Empresas",
     "cliente": "Eduard Farran",
-    "descripcion": "REM – Catálogo de empresas Catálogo de empresas que constituyen la asociación «Relaciones Empresariales del Mediterráneo«",
+    "descripcion": "Catálogo de empresas que constituyen la asociación «Relaciones Empresariales del Mediterráneo». Algunos bocetos se empezaron a diseñar con la antigua marca corporativa de la asociación, que era «Unidos ocho de Marzo» pero durante el diseño se decidió cambiar el nombre y la imagen corporativa, por lo que diseñamos un logotipo nuevo.",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/REM-1.jpg",
@@ -64,9 +64,12 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Antes de eso se empezó a diseñar con la antigua marca corporativa de la asociación, que era «Unidos ocho de Marzo»"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": ""
+    }
   },
   {
     "id": 4425,
@@ -105,7 +108,12 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": ""
+    }
   },
   {
     "id": 4416,
@@ -160,14 +168,19 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": ""
+    }
   },
   {
     "id": 4391,
     "date": "2020-12-21 11:25",
     "title": "Libreto Pierdeloss90",
     "cliente": "PierdeLoss90",
-    "descripcion": "Libreto PierdeLoss90 Libreto de 24 páginas con la explicación del proceso de dieta y ejercicio del sistema PierdeLoss90",
+    "descripcion": "Libreto PierdeLoss90 Libreto de 24 páginas con la explicación del proceso de dieta y ejercicio del sistema PierdeLoss90. El libro es parte del pack que incluye un registro de entrenamiento, un imán motivador, un reloj inteligente MiBand, adhesivos corporativos y un ebook con la información del libreto en formato PDF",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_A.jpg",
@@ -247,16 +260,19 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "El libro es parte del pack que incluye un registro de entrenamiento, un imán motivador, un reloj inteligente MiBand, adhesivos corporativos y un ebook con la información del libreto en formato PDF"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": ""
+    }
   },
   {
     "id": 4188,
     "date": "2020-12-09 11:32",
     "title": "Ni milagros ni hostias",
     "cliente": "Pau Benedito",
-    "descripcion": "Ni milagros ni hostias PAU BENEDITO",
+    "descripcion": "Miles de personas cada día, con la voluntad de hacer las cosas bien y adelgazar de una vez por todas, son presa de la venta de productos, dietas y sistemas milagrosos que prometen un cambio radical sin mover un dedo. Obviamente sus resultados acaban cayendo en saco roto.Harto de la situación, con este libro, el autor quiere dar un golpe sobre la mesa para poner punto y final a esta estafa colectiva, encabezada por empresarios con más interés por el dinero que por la salud de las personas. A través del descubrimiento personal, la educación alimentaria y el ejercicio físico, entre otros temas, pondrás en marcha un cambio que no sólo garantiza el éxito de tu transformación, sino que además, esta vez los resultados llegarán para quedarse. Se realizó también una versión del libro en eBook, adaptando las imágenes y sustituyendo las de mayor complejidad por códigos QR para poder visualizar con detalle vía internet. El formato es universal (EPUB), pero se adecuó especialmente para Kindle, exportando y mejorando lo necesario para el formato MOBI. El texto es adaptable a varios tamaños y tanto el índice como las anotaciones de fin de capítulo son totalmente interactivas.",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_B_.jpg",
@@ -420,23 +436,20 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Autor: Pau Benedito Formato: 25 x 17 cm / eBook Páginas: 277 Enlace a Amazon: Ni milagros ni hostias 🛒 Sinópsis: Miles de personas cada día, con la voluntad de hacer las cosas bien y adelgazar de una vez por todas, son presa de la venta de productos, dietas y sistemas milagrosos que prometen un cambio radical sin mover un dedo. Obviamente sus resultados acaban cayendo en saco roto.Harto de la situación, con este libro, el autor quiere dar un golpe sobre la mesa para poner punto y final a esta estafa colectiva, encabezada por empresarios con más interés por el dinero que por la salud de las personas. A través del descubrimiento personal, la educación alimentaria y el ejercicio físico, entre otros temas, pondrás en marcha un cambio que no sólo garantiza el éxito de tu transformación, sino que además, esta vez los resultados llegarán para quedarse.",
-      "VERSIÓN EN EBOOK",
-      "Se realizó también una versión del libro en eBook, adaptando las imágenes y sustituyendo las de mayor complejidad por códigos QR para poder visualizar con detalle vía internet. El formato es universal (EPUB), pero se adecuó especialmente para Kindle, exportando y mejorando lo necesario para el formato MOBI. El texto es adaptable a varios tamaños y tanto el índice como las anotaciones de fin de capítulo son totalmente interactivas.",
-      "PRUEBAS DE PORTADA",
-      "En primera instancia se optó por un color amarillo, muy llamativo, y el juego de mostrar cómicamente el rechazo a la salida fácil o «milagro»",
-      "Se hicieron distintas aproximaciones a la idea del genio y el deseo o milagro (intentando siempre huir de la iconografía religiosa)",
-      "Finalmente elegimos una portada más sencilla, únicamente el logo con alguna imagen integrada en el juego tipográfico. También se decidió cambiar el color amarillo por un verde, más en la línea de lo natural y la salud.",
-      "BEST SELLER EN AMAZON VERSIÓN IMPRESA Y EN EBOOK"
-    ]
+    "extras": [],
+    "metadata": {
+      "titulo": "Ni milagros ni hostias",
+      "formato": "25 x 17 cm / eBook",
+      "paginas": "277",
+      "informacion": ""
+    }
   },
   {
     "id": 4107,
     "date": "2020-12-04 15:01",
     "title": "The Mission Wall",
     "cliente": "ZIMMER BIOMET",
-    "descripcion": "The Mission Wall LIBRO DE CITAS PARA LA EMPRESA DE DISPOSITIVOS MÉDICOS ZIMMER BIOMET",
+    "descripcion": "The Mission Wall LIBRO DE CITAS PARA LA EMPRESA DE DISPOSITIVOS MÉDICOS ZIMMER BIOMET. El cliente quería un libro bilingüe, que por cada cara se encuentra un idioma, quedando la página central boca abajo.",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/1-1.jpg",
@@ -464,16 +477,19 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "El cliente quería un libro bilingüe, que por cada cara se encuentra un idioma, quedando la página central boca abajo."
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": ""
+    }
   },
   {
     "id": 4002,
     "date": "2020-06-09 22:32",
     "title": "En el umbral del primer remanso",
     "cliente": "Juan Antonio Cebrián",
-    "descripcion": "En el umbral del primer remanso LIBRO DE POESÍA",
+    "descripcion": "Libro de poesía",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/06/UPR_MockUp.jpg",
@@ -505,16 +521,19 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Título: En el umbral del primer remanso Textos: Juan Antonio Cebrián Ilustraciones: Alejandro Mata Cebrián Formato: 25,5 x 16,5 cm Páginas: 52"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "25,5 x 16,5 cm",
+      "paginas": "52",
+      "informacion": "Ilustraciones: Alejandro Mata Cebrián"
+    }
   },
   {
     "id": 4909,
     "date": "2019-02-19 09:32",
     "title": "Cuento Isa 30 cumpleaños",
     "cliente": "Isabel",
-    "descripcion": "Las fantásticas aventuras de Isabel Cuento conmemorativo del 30 cumpleaños.. Cuentos el Ilustraciones de Carmen Alonso y Julia Tartaj",
+    "descripcion": "Las fantásticas aventuras de Isabel. Cuento conmemorativo del 30 cumpleaños",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/ISA_PORTADA.jpg",
@@ -550,7 +569,12 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": "Ilustraciones de Carmen Alonso y Julia Tartaj"
+    }
   },
   {
     "id": 3634,
@@ -597,17 +621,19 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Formato: 32 x 21 cm Páginas: 40",
-      "ALGUNOS EJEMPLOS DE PÁGINAS INTERIORES"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "32 x 21 cm",
+      "paginas": "40",
+      "informacion": ""
+    }
   },
   {
     "id": 3629,
     "date": "2017-02-14 22:43",
     "title": "Canto, Bases y Método",
     "cliente": "Elisa Belmonte",
-    "descripcion": "TESIS DOCTORAL Canto, Bases y Método AUTORA: ELISA BELMONTE",
+    "descripcion": "TESIS DOCTORAL. Canto, Bases y Método de ELISA BELMONTE",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/kimografico_Portada-Elisa-Canto-1.jpg",
@@ -671,16 +697,19 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Título: Canto, Bases y Método Autora: Elisa Belmonte Ilustraciones: Pilar Belmonte Ilustraciones vectoriales: Carlos Sáez (Kimo) Formato: 16,5 x 25 cm Páginas: 198"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "16,5 x 25 cm",
+      "paginas": "198",
+      "informacion": "Ilustraciones: Pilar Belmonte Ilustraciones vectoriales: Carlos Sáez (Kimo)"
+    }
   },
   {
     "id": 3630,
     "date": "2017-02-10 22:36",
     "title": "Llibret Falla Prado",
     "cliente": "Falla Prado",
-    "descripcion": "Falla Prado LLIBRET – 24&#215;28 – 142 pag",
+    "descripcion": "Llibret Falla Prado Llibret de la falla del Prado de Valencia",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_2-8.jpg",
@@ -752,14 +781,19 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "metadata": {
+      "formato": "24x28 cm",
+      "paginas": "142",
+      "informacion": ""
+    }
   },
   {
     "id": 4769,
     "date": "2016-03-03 09:54",
     "title": "30 años de Stephan",
     "cliente": "Stephan",
-    "descripcion": "30 años de Stephan Memorias de un madurito makarrister Recopilación de comics, historias e ilustraciones conmemorativas, realizadas expresamente para la ocasión por un grupo de amigos La portada la realizó Joan Quirós, artista del lettering",
+    "descripcion": "30 años de Stephan Memorias de un madurito makarrister Recopilación de comics, historias e ilustraciones conmemorativas, realizadas expresamente para la ocasión por un grupo de amigos",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/resized_SIQ_1.jpg",
@@ -799,7 +833,12 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": "Portada por Joan Quirós, artista del lettering"
+    }
   },
   {
     "id": 2726,
@@ -830,7 +869,12 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": ""
+    }
   },
   {
     "id": 3782,
@@ -881,9 +925,12 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "ALGUNOS EJEMPLOS DE PÁGINAS INTERIORES"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": ""
+    }
   },
   {
     "id": 3637,
@@ -918,9 +965,12 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Título: Exposición Antológica Autora: Pilar Belmonte Formato: 14 x 29,7 cm Páginas: 40"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "14 x 29,7 cm",
+      "paginas": "40",
+      "informacion": ""
+    }
   },
   {
     "id": 3631,
@@ -971,10 +1021,12 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Título: La noche de las calabazas Autora: Recóndita Martínez Formato: 25,5 x 16,5 cm Páginas: 28",
-      "ALGUNOS EJEMPLOS DE PÁGINAS INTERIORES"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "25,5 x 16,5 cm",
+      "paginas": "28",
+      "informacion": ""
+    }
   },
   {
     "id": 3752,
@@ -1025,10 +1077,12 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Título: Cuentos Dulces Autora: Recóndita Martínez Formato: 25,5 x 16,5 cm Páginas: 56",
-      "ALGUNOS EJEMPLOS DE PÁGINAS INTERIORES"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "25,5 x 16,5 cm",
+      "paginas": "56",
+      "informacion": ""
+    }
   },
   {
     "id": 3767,
@@ -1079,9 +1133,12 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "ALGUNOS EJEMPLOS DE PÁGINAS INTERIORES"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": ""
+    }
   },
   {
     "id": 3636,
@@ -1180,7 +1237,12 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": ""
+    }
   },
   {
     "id": 3638,
@@ -1223,9 +1285,12 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Título: Ashes & Blood Textos: Pablo Núñez Fotografía y retoque: Lidia Aparicio Peck Gonzalez Formato: 25,5 x 16,5 cm Páginas: 28"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "25,5 x 16,5 cm",
+      "paginas": "28",
+      "informacion": "Textos: Pablo Núñez Fotografía y retoque: Lidia Aparicio Peck Gonzalez"
+    }
   },
   {
     "id": 3639,
@@ -1268,9 +1333,12 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Título: Apuntes de dibujo. Aprender a ver, aprender a dibujar Autora: Pilar Belmonte Formato: A5 Páginas: 40"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "A5",
+      "paginas": "40",
+      "informacion": ""
+    }
   },
   {
     "id": 3632,
@@ -1313,7 +1381,12 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": ""
+    }
   },
   {
     "id": 3628,
@@ -1348,9 +1421,12 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Título: 7 Autora: Tamara Fernández Formato: A4 Páginas: 56"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "A4",
+      "paginas": "56",
+      "informacion": ""
+    }
   },
   {
     "id": 3635,
@@ -1393,10 +1469,12 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Título: Horizontes cercanos e infinitos Autora: Pilar Belmonte Formato: 25,5 x 20,5 cm Páginas: 24",
-      "ALGUNOS EJEMPLOS DE PÁGINAS INTERIORES"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "25,5 x 20,5 cm",
+      "paginas": "24",
+      "informacion": ""
+    }
   },
   {
     "id": 3640,
@@ -1455,16 +1533,19 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Título: COLOR Apuntes Notes on COLOR Autora: Pilar Belmonte Formato: A4 Páginas: 40"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "A4",
+      "paginas": "40",
+      "informacion": ""
+    }
   },
   {
     "id": 3574,
     "date": "2008-12-13 11:24",
-    "title": "Ver el color / Seeing Color",
+    "title": "VER EL COLOR, Observación crítica // SEEING COLOR, Critical Observation",
     "cliente": "Pilar Belmonte",
-    "descripcion": "Ver el Color / Seeing Color AUTORA: PILAR BELMONTE USEROS",
+    "descripcion": "Ver el Color es una incursión guiada por la naturaleza integrando la visión sensible. Proporciona la base de los criterios para criticar, juzgar y contribuir a mejorar los ambientes que son obra del ser humano. La observación crítica del color en el medio artificial es el núcleo principal del libro. Se llega a este núcleo a través de un viaje placentero por la naturaleza. Se incluye también una breve guía de conceptos teóricos y científicos de mas actualidad y mayor aceptación por los especialistas como ayuda al lector para una mejor comprensión de esta investigación, así como la descripción de unas experiencias académicas que refrendan y validan todo el discurso.",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_1-copia.jpg",
@@ -1560,11 +1641,12 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ver el Color es una incursión guiada por la naturaleza integrando la visión sensible. Proporciona la base de los criterios para criticar, juzgar y contribuir a mejorar los ambientes que son obra del ser humano. La observación crítica del color en el medio artificial es el núcleo principal del libro. Se llega a este núcleo a través de un viaje placentero por la naturaleza. Se incluye también una breve guía de conceptos teóricos y científicos de mas actualidad y mayor aceptación por los especialistas como ayuda al lector para una mejor comprensión de esta investigación, así como la descripción de unas experiencias académicas que refrendan y validan todo el discurso.",
-      "Título: VER EL COLOR, Observación crítica SEEING COLOR, Critical Observation Autora: Pilar Belmonte Useros Formato: 25 x 25 cm Páginas: 388 Impresión: a todo color Texto: Español e Inglés Fotografías: Pilar Belmonte Useros Diseño y maquetación: Carlos Sáez Blanco Víctor Rubio Jiménez Dirección y coordinación: Pilar Belmonte Useros Traduccion: Daniel Soltice",
-      "ALGUNOS EJEMPLOS DE PÁGINAS INTERIORES"
-    ]
+    "extras": [],
+    "metadata": {
+      "formato": "25 x 25 cm",
+      "paginas": "388",
+      "informacion": "Impresión: a todo color Texto: Español e Inglés Fotografías: Pilar Belmonte Useros Diseño y maquetación: Carlos Sáez Blanco Víctor Rubio Jiménez Dirección y coordinación: Pilar Belmonte Useros Traduccion: Daniel Soltice"
+    }
   },
   {
     "id": 3822,
@@ -1579,7 +1661,12 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": ""
+    }
   },
   {
     "id": 3812,
@@ -1594,7 +1681,12 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": ""
+    }
   },
   {
     "id": 3821,
@@ -1609,6 +1701,11 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "metadata": {
+      "formato": "",
+      "paginas": "",
+      "informacion": ""
+    }
   }
 ]

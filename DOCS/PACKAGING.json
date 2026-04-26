@@ -52,9 +52,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Puedes ver el diseño de parte de los contenidos de este Pack: Libreto explicativo Newsletter Tablas de entrenamiento"
-    ]
+    "extras": []
   },
   {
     "id": 2476,
@@ -92,51 +90,51 @@
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-aceite-de-oliva-ozonizado.jpg",
-        "label": ""
+        "label": "Aceite Ozonizado – Impresión digital + Serigrafía plateada. Frasco serigrafiado a una tinta"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/crema-antiaging-unisex-noche-50-ml-ozolife.jpg",
-        "label": ""
+        "label": "Crema Antiedad – Impresión digital + Frasco y tapa serigrafiados a una tinta"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-mucotrofin-aftas-bucales.jpg",
-        "label": ""
+        "label": "Mucotrofin – Impresión digital + Serigrafía plateada. Etiqueta impresa para el frasco"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/capsulas-ozolife-caja-60-unidades.jpg",
-        "label": ""
+        "label": "SoftGels – Impresión digital"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-jabon-artesano-con-ozono.jpg",
-        "label": ""
+        "label": "Jabón Artesano – Impresión digital y marcado bajorrelieve en el jabón"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-serum-contornos-de-ojos-unisex.jpg",
-        "label": ""
+        "label": "Contorno de ojos – Impresión digital + Serigrafía plateada. Bote serigrafiado a una tinta"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-crema-de-pies.jpg",
-        "label": ""
+        "label": "Crema de pies – Impresión digital + Serigrafía plateada. Frasco impreso en CMYK"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-neonervial-nucleotidos-colina-vitaminas-b1-y-b6.jpg",
-        "label": ""
+        "label": "Neonervial – Impresión digital + Serigrafía plateada."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-crema-de-manos.jpg",
-        "label": ""
+        "label": "Crema de manos – Impresión digital + Serigrafía plateada. Frasco impreso en CMYK"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/condropep.png",
-        "label": ""
+        "label": "Condropep Plus – Impresión digital, sobre impreso a una tinta"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/12/Ozolife.jpg",
-        "label": ""
+        "label": "Diseño global del packaging primario y secundario de las ramas de biocosmética y de nutrición de la empresa Ozolife Group"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/Crema-para-celulitis-Ozolife-scaled-pwdw3cpp6774jicxedxgtbx7rchzisn4m56qh6ckui.jpg",
-        "label": ""
+        "label": "Crema anticelulítica – Impresión digital + Serigrafía plateada. Frasco impreso en CMYK"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/12/ozolife-1.jpg",
@@ -144,20 +142,6 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Packaging de cosméticos y suplementos alimenticios",
-      "Diseño global del packaging primario y secundario de las ramas de biocosmética y de nutrición de la empresa Ozolife Group.",
-      "Aceite Ozonizado – Impresión digital + Serigrafía plateada. Frasco serigrafiado a una tinta",
-      "Crema Antiedad – Impresión digital + Frasco y tapa serigrafiados a una tinta",
-      "Mucotrofin – Impresión digital + Serigrafía plateada. Etiqueta impresa para el frasco",
-      "SoftGels – Impresión digital",
-      "Jabón Artesano – Impresión digital y marcado bajorrelieve en el jabón",
-      "Contorno de ojos – Impresión digital + Serigrafía plateada. Bote serigrafiado a una tinta",
-      "Crema de pies – Impresión digital + Serigrafía plateada. Frasco impreso en CMYK",
-      "Neonervial – Impresión digital + Serigrafía plateada.",
-      "Crema anticelulítica – Impresión digital + Serigrafía plateada. Frasco impreso en CMYK",
-      "Crema de manos – Impresión digital + Serigrafía plateada. Frasco impreso en CMYK",
-      "Condropep Plus – Impresión digital, sobre impreso a una tinta"
-    ]
+    "extras": []
   }
 ]

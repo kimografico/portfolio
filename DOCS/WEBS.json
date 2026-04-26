@@ -4,51 +4,48 @@
     "date": "2024-03-10 09:20",
     "title": "Paellas de Pecado",
     "cliente": "IES Serpis",
-    "descripcion": "Web para Arroces de pecado MAR 2024",
+    "descripcion": "Web ficticia, como proyecto para un módulo superior de estudios de desarrollo web CSS y HTML calificada con un 10. La web consiste en una página principal tipo One Page con la información básica, un apartado de menú con los platos organizados por tarjetas, y un apartado de contacto. Se diseñó también un logo sencillo para crear una armonía en el conjunto. Para la realización de los recursos gráficos de la página web se hizo uso de IA, con resultados muy curiosos",
+    "stack": "html + css",
     "imagenes": [
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_5.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_4.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_3.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_2.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_1.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_9.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_8.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_7.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_6.jpg",
-        "label": ""
-      },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_screen.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/Arroces-de-Pecado-LOGO.png",
-        "label": ""
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_5.jpg",
+        "label": "Página principal, estilo one page Información principal en navegación vertical"
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_4.jpg",
+        "label": "Página principal, estilo one page Apartado Quienes somos"
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_3.jpg",
+        "label": "Página principal, estilo one page Testimonios y Nuestras instalaciones"
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_2.jpg",
+        "label": "Footer – Con shortcuts de navegación y enlaces de interés"
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_1.jpg",
+        "label": "Carta, navegación vertical – Explicación y bebidas"
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_9.jpg",
+        "label": "Carta, navegación vertical – Entrantes Cada recuadro está animado al pasar el cursor"
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_8.jpg",
+        "label": "Carta, navegación vertical – Arroces"
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_7.jpg",
+        "label": "Carta, navegación vertical – Postres"
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_6.jpg",
+        "label": "Contacto – Formulario de contacto y mapa de ubicación"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/paella_screens-scaled-qmvn35yok56naogrhas6j99x578iz6nv17pi9w8gns.jpg",
@@ -58,85 +55,66 @@
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=w3D5EnX-Yho",
-        "label": ""
+        "label": "Visualización en video de la navegación por la web"
       }
     ],
-    "extras": [
-      "Web ficticia, como proyecto para un módulo superior de estudios de desarrollo web CSS y HTML",
-      "Calificación del proyecto: 10",
-      "La web consiste en una página principal tipo One Page con la información básica, un apartado de menú con los platos organizados por tarjetas, y un apartado de contacto. Se diseñó también un logo sencillo para crear una armonía en el conjunto.",
-      "Página principal, estilo one page Información principal en navegación vertical",
-      "Página principal, estilo one page Apartado Quienes somos",
-      "Página principal, estilo one page Testimonios y Nuestras instalaciones",
-      "Footer – Con shortcuts de navegación y enlaces de interés",
-      "Carta, navegación vertical – Explicación y bebidas",
-      "Carta, navegación vertical – Entrantes Cada recuadro está animado al pasar el cursor",
-      "Carta, navegación vertical – Arroces",
-      "Carta, navegación vertical – Postres",
-      "Contacto – Formulario de contacto y mapa de ubicación",
-      "Visualización en video de la navegación por la web",
-      "Para la realización de los recursos gráficos de la página web se hizo uso de IA, con resultados muy curiosos. Aquí podemos ver una galería con algunos de los ejemplos:",
-      "Menciones especiales",
-      "Arroces",
-      "Platos variados",
-      "Cocineros",
-      "Restaurante"
-    ]
+    "extras": []
   },
   {
     "id": 4694,
     "date": "2021-01-20 08:44",
-    "title": "Xerri Espumas y Transformados",
+    "title": "Web/catálogo creada para una empresa de venta de espumas Programada mediante CMS WordPress, CSS y HTML.",
     "cliente": "Xerri",
-    "descripcion": "Xerri Espumas y Transformados ENE 2021 – ACTUALIDAD",
+    "descripcion": "La web consiste en una página principal con información de la empresa y productos destacados, un catálogo de productos y otro de materiales, fichas técnicas y formulario de contacto con mapa interactivo.",
+    "stack": "",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-1.jpg",
-        "label": ""
+        "label": "Portada – Con toda la información organizada en navegación vertical."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-3.jpg",
-        "label": ""
+        "label": "Portada – Apartado «Quienes somos» con carrusel de productos. Se puede apreciar el menú desplegable con los diferentes apartados"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-2.jpg",
-        "label": ""
+        "label": "Portada – Selección de productos destacados."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-4.jpg",
-        "label": ""
+        "label": "Catálogo – Catálogo de productos jerarquizado."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-5.jpg",
-        "label": ""
+        "label": "Producto – Página de producto con galería de fotos con lightbox, información del producto, tablas de tamaños y grosores y enlaces a materiales y contacto"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-6.jpg",
-        "label": ""
+        "label": "Producto – Tabla en formato vectorial para poder hacer zoom"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-7.jpg",
-        "label": ""
+        "label": "Producto – Galería-carrusel de piezas troqueladas."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-10.jpg",
-        "label": ""
+        "label": "Materiales – Página de material, con galería de imágenes, ficha técnica, y enlace a productos fabricados con dicho material."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-13.jpg",
-        "label": ""
+        "label": "Productos deportivos – Página de productos deportivos fabricados por la empresa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-14.jpg",
-        "label": ""
+        "label": "Lightbox – En cada galería, al clicar en la imagen lleva a un lightbox donde se puede ver la imagen en grande, y hacer zoom."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-16.jpg",
-        "label": ""
+        "label": "Contacto – Página de contacto con formulario, aceptación de Políticas de privacidad y mapa interactivo con la localización de la empresa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Xerriweb-17.jpg",
-        "label": ""
+        "label": "Búsqueda – Al ser un catálogo extenso, se implementó un sistema de búsqueda para encontrar el producto deseado fácilmente"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2021/01/xerriespumasMockup2.jpg",
@@ -146,73 +124,58 @@
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=AjybgUwQIII",
-        "label": ""
+        "label": "Visualización en video de la navegación por la web"
       },
       {
         "ruta": "https://www.youtube.com/watch?v=nh7x4-RPjgM",
-        "label": ""
+        "label": "Visualización en video de la navegación por la web"
       }
     ],
-    "extras": [
-      "Web/catálogo creada para una empresa de venta de espumas Programada mediante CMS WordPress, CSS y HTML.",
-      "La web consiste en una página principal con información de la empresa y productos destacados, un catálogo de productos y otro de materiales, fichas técnicas y formulario de contacto con mapa interactivo.",
-      "Portada – Con toda la información organizada en navegación vertical.",
-      "Portada – Apartado «Quienes somos» con carrusel de productos. Se puede apreciar el menú desplegable con los diferentes apartados",
-      "Portada – Selección de productos destacados.",
-      "Catálogo – Catálogo de productos jerarquizado.",
-      "Producto – Página de producto con galería de fotos con lightbox, información del producto, tablas de tamaños y grosores y enlaces a materiales y contacto",
-      "Producto – Tabla en formato vectorial para poder hacer zoom",
-      "Producto – Galería-carrusel de piezas troqueladas.",
-      "Materiales – Página de material, con galería de imágenes, ficha técnica, y enlace a productos fabricados con dicho material.",
-      "Productos deportivos – Página de productos deportivos fabricados por la empresa",
-      "Lightbox – En cada galería, al clicar en la imagen lleva a un lightbox donde se puede ver la imagen en grande, y hacer zoom.",
-      "Contacto – Página de contacto con formulario, aceptación de Políticas de privacidad y mapa interactivo con la localización de la empresa",
-      "Búsqueda – Al ser un catálogo extenso, se implementó un sistema de búsqueda para encontrar el producto deseado fácilmente",
-      "Visualización en video de la navegación por la web"
-    ]
+    "extras": []
   },
   {
     "id": 4594,
     "date": "2020-12-31 07:54",
     "title": "Colordmar",
     "cliente": "Mar Howi",
-    "descripcion": "COLORDMAR DIC 2020 – ACTUALIDAD",
+    "descripcion": "Web/Tienda online creada para la empresa de venta e material deportivo CDM Programada mediante CMS WordPress, woocommerce, Javascript, CSS y HTML. La web consiste en una portada tipo one-page, un apartado para el producto estrella, apartados para velería y reparación, tienda y formulario de contacto.",
+    "stack": "",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_8.jpg",
-        "label": ""
+        "label": "Portada – Con toda la información organizada en navegación vertical."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_7.jpg",
-        "label": ""
+        "label": "Producto estrella – Información sobre el Ruddersail system y acceso a su compra"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_5.jpg",
-        "label": ""
+        "label": "Vela ligera – Información sobre el servicio de confección de velas"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_4.jpg",
-        "label": ""
+        "label": "Reparación de velas – Página con información sobre el servicio de reparación de velas, con un formulario de contacto específico para ello."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_3.jpg",
-        "label": ""
+        "label": "Tienda – Productos en venta en tienda online, categorizados en distintos apartados."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_1.jpg",
-        "label": ""
+        "label": "Opciones – Algunos productos presentan variaciones de precio según color, forma o tamaño."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_6.jpg",
-        "label": ""
+        "label": "Descripción – En cada producto tenemos una amplia descripción, con medidas, imágenes y un apartado con valoraciones de otros compradores."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_9.jpg",
-        "label": ""
+        "label": "Carrito – Al finalizar el pago se puede aplicar cupones de descuento, cambiar la cantidad o eliminar algún producto en el último momento"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/colordmarweb_2.jpg",
-        "label": ""
+        "label": "Contacto – Formulario de contacto general, con seguridad anti-spam invisible, para evitar los molestos «captchas»"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/colordmarMockup2.jpg",
@@ -220,50 +183,39 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Web/Tienda online creada para la empresa de venta e material deportivo CDM Programada mediante CMS WordPress, woocommerce, Javascript, CSS y HTML.",
-      "La web consiste en una portada tipo one-page, un apartado para el producto estrella, apartados para velería y reparación, tienda y formulario de contacto.",
-      "Portada – Con toda la información organizada en navegación vertical.",
-      "Producto estrella – Información sobre el Ruddersail system y acceso a su compra",
-      "Vela ligera – Información sobre el servicio de confección de velas",
-      "Reparación de velas – Página con información sobre el servicio de reparación de velas, con un formulario de contacto específico para ello.",
-      "Tienda – Productos en venta en tienda online, categorizados en distintos apartados.",
-      "Opciones – Algunos productos presentan variaciones de precio según color, forma o tamaño.",
-      "Descripción – En cada producto tenemos una amplia descripción, con medidas, imágenes y un apartado con valoraciones de otros compradores.",
-      "Carrito – Al finalizar el pago se puede aplicar cupones de descuento, cambiar la cantidad o eliminar algún producto en el último momento",
-      "Contacto – Formulario de contacto general, con seguridad anti-spam invisible, para evitar los molestos «captchas»"
-    ]
+    "extras": []
   },
   {
     "id": 3017,
     "date": "2020-04-14 18:01",
     "title": "Crece tu Empresa",
     "cliente": "Crece tu Empresa",
-    "descripcion": "Crece tu Empresa ABR 2020 – ACTUALIDAD",
+    "descripcion": "Web para una empresa de marketing digital. La web consiste en una portada tipo one-page con casitoda la información importante en el inicio, un quienes somos, un menú de servicios con la explicación pormenorizada de cada uno de ellos en una lista de iconos, y una sección de contacto con formulario.",
+    "stack": "CMS WordPress, Javascript, CSS y HTML",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/9NgmWSmNYM.jpg",
-        "label": ""
+        "label": "Portada – Con toda la información organizada en navegación vertical."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/AdAN2PmnaY.jpg",
-        "label": ""
+        "label": "Servicios – En cada apartado dedicado a un servicio hay un texto explicativo general, y una columna de iconos con la explicación de cada apartado del mismo"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/ddn5eQjIsY.jpg",
-        "label": ""
+        "label": "Portada – Más información y contadores con información sobre el recorrido de la empresa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/ojah383Gcw.jpg",
-        "label": ""
+        "label": "Servicios – La web se presenta con bloques de información que entran con una animación fluída, haciendo la navegación amena."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/EkIOK64pw4.jpg",
-        "label": ""
+        "label": "Nosotros – Apartado de quienes somos, con un breve texto explicativo"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/cYkjcZXUKn.jpg",
-        "label": ""
+        "label": "Footer – Con un sitemap de la web e información de contacto"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/04/CTE.jpg",
@@ -271,47 +223,39 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Web creada para la empresa de marketing digital CreceTuEmpresa, Programada mediante CMS WordPress, Javascript, CSS y HTML.",
-      "La web consiste en una portada tipo one-page con casitoda la información importante en el inicio, un quienes somos, un menú de servicios con la explicación pormenorizada de cada uno de ellos en una lista de iconos, y una sección de contacto con formulario.",
-      "Portada – Con toda la información organizada en navegación vertical.",
-      "Servicios – En cada apartado dedicado a un servicio hay un texto explicativo general, y una columna de iconos con la explicación de cada apartado del mismo",
-      "Portada – Más información y contadores con información sobre el recorrido de la empresa",
-      "Servicios – La web se presenta con bloques de información que entran con una animación fluída, haciendo la navegación amena.",
-      "Nosotros – Apartado de quienes somos, con un breve texto explicativo",
-      "Footer – Con un sitemap de la web e información de contacto"
-    ]
+    "extras": []
   },
   {
     "id": 2187,
     "date": "2019-10-15 20:05",
     "title": "Juan Mas",
     "cliente": "Juan Mas",
-    "descripcion": "Juan Mas OCT – ACTUALIDAD",
+    "descripcion": "Web creada para el artista Juan Mas, como portfolio personal y fuente de información. La web consiste en una portada con carrusel, una biografía del artista, con currículum, índice de exposiciones y bibliografía sobre el artista. Una galería jerarquizada por temática de su obra pictórica, con opción a compra de obras disponibles, críticas de los medios y una sección de contacto.",
+    "stack": "CMS WordPress, Javascript, CSS y HTML",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-curriculum.jpg",
-        "label": ""
+        "label": "Biografía – Sección con tres subsecciones: Exposiciones, Currículum y Bibliografía"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-criticas.jpg",
-        "label": ""
+        "label": "Críticas – Criticas en diversos medios"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-contacto.jpg",
-        "label": ""
+        "label": "Contacto – Con seguridad Honeypot y política de privacidad."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-galeria-6.jpg",
-        "label": ""
+        "label": "Obra – Dividida en secciones según temática, con información de cada obra, y un apartado de venta"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-expos.jpg",
-        "label": ""
+        "label": "Exposiciones – Expos en las que ha participado"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-bibliografia.jpg",
-        "label": ""
+        "label": "Bibliografía – Libros en los que ha sido mencionado el artista"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-Obra-scaled.jpg",
@@ -319,64 +263,55 @@
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/12/Juanmas-monitor-juanmas.jpg",
-        "label": ""
+        "label": "Galería – Navegación vertical por páginas y con posibilidad de ver la obra completa o por temática"
       }
     ],
     "videos": [],
-    "extras": [
-      "Web creada para el artista Juan Mas, como portfolio personal y fuente de información. Programada mediante CMS WordPress, Javascript, CSS y HTML.",
-      "La web consiste en una portada con carrusel, una biografía del artista, con currículum, índice de exposiciones y bibliografía sobre el artista. Una galería jerarquizada por temática de su obra pictórica, con opción a compra de obras disponibles, críticas de los medios y una sección de contacto.",
-      "Biografía – Sección con tres subsecciones: Exposiciones, Currículum y Bibliografía",
-      "Críticas – Criticas en diversos medios",
-      "Contacto – Con seguridad Honeypot y política de privacidad.",
-      "Obra – Dividida en secciones según temática, con información de cada obra, y un apartado de venta",
-      "Exposiciones – Expos en las que ha participado",
-      "Bibliografía – Libros en los que ha sido mencionado el artista",
-      "Galería – Navegación vertical por páginas y con posibilidad de ver la obra completa o por temática"
-    ]
+    "extras": []
   },
   {
     "id": 2186,
     "date": "2019-08-15 00:41",
     "title": "Cache Croche",
     "cliente": "Alba García",
-    "descripcion": "Cache Croche AGO 2019 – ACTUALIDAD",
+    "descripcion": "Web creada para la diseñadora de moda Alba García, con la colaboración como fotógrafa de Lidia Aparicio. La página web consiste en un carrusel de imágenes al inicio, con un menú superior que nos lleva a sus colecciones, una tienda online, un contacto de atelier para encargos, un blog, una sección My World, donde podemos leer la historia de la marca, celebridades que la han llevado, pasarelas en las que ha participado la diseñadora, y colaboraciones. También podemos acceder a entradas de prensa sobre la marca , tanto en televisión como en radio y prensa escrita, y una sección contacto, preguntas frecuentes e información legal.",
+    "stack": "CMS WordPress, Prestashop, Javascript, CSS y HTML",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-inicio.jpg",
-        "label": ""
+        "label": "Menú Inicio – Con carrusel de imágenes"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-atelier.jpg",
-        "label": ""
+        "label": "Atelier – Localización y contacto del taller"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-prensa.jpg",
-        "label": ""
+        "label": "Prensa – Extractos de prensa, TV y radio"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-colecciones.jpg",
-        "label": ""
+        "label": "Colecciones – Entradas explicativas de cada una"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-blog.jpg",
-        "label": ""
+        "label": "Blog – Entradas de blog categorizadas"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-productos.jpg",
-        "label": ""
+        "label": "Tienda Online – Con base en CMS Prestashop"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-celebrities.jpg",
-        "label": ""
+        "label": "Celebrities – Famosos con ropa de la diseñadora"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/10/Cachecroche-contacto.jpg",
-        "label": ""
+        "label": "Contacto – Formulario de contacto y horario"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/08/Cachecroche-vestidos.jpg",
-        "label": ""
+        "label": "Tienda Online – Ejemplo de sección"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/10/monitor-cachecroche-scaled-113x75.jpg",
@@ -384,62 +319,51 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Web creada para la diseñadora de moda Alba García, con la colaboración como fotógrafa de Lidia Aparicio. Programada mediante CMS WordPress, Prestashop, Javascript, CSS y HTML.",
-      "La página web consiste en un carrusel de imágenes al inicio, con un menú superior que nos lleva a sus colecciones, una tienda online, un contacto de atelier para encargos, un blog, una sección My World, donde podemos leer la historia de la marca, celebridades que la han llevado, pasarelas en las que ha participado la diseñadora, y colaboraciones. También podemos acceder a entradas de prensa sobre la marca , tanto en televisión como en radio y prensa escrita, y una sección contacto, preguntas frecuentes e información legal.",
-      "Menú Inicio – Con carrusel de imágenes",
-      "Atelier – Localización y contacto del taller",
-      "Prensa – Extractos de prensa, TV y radio",
-      "Colecciones – Entradas explicativas de cada una",
-      "Blog – Entradas de blog categorizadas",
-      "Tienda Online – Con base en CMS Prestashop",
-      "Celebrities – Famosos con ropa de la diseñadora",
-      "Contacto – Formulario de contacto y horario",
-      "Tienda Online – Ejemplo de sección"
-    ]
+    "extras": []
   },
   {
     "id": 1509,
     "date": "2019-01-15 13:40",
     "title": "Pilar Belmonte 3",
     "cliente": "Pilar Belmonte",
-    "descripcion": "Pilar Belmonte ENE 2019 – ACTUALIDAD",
+    "descripcion": "Web creada para la artista Pilar Belmonte, como portfolio personal y fuente de información sobre la misma. Programada mediante CMS WordPress, Javascript, CSS y HTML. La web consiste en una página de inicio tipo escritorio, con un menú lateral común a toda la web. En este aparecen iconos a los apartados más relevantes. En Obra Reciente podemos navegar por los distintos apartados de su obra artística, así como de la parte más antigua de la misma en el apartado de Obra de otras épocas. Tenemos un apartado EN VENTA para las obras que se pueden adquirir, con una leyenda con el rango de precios. Se puede entrar a cada obra para ver más información de la misma, o imágenes de la realización, montaje, o en el caso de obras escultóricas, varias vistas de la misma. Luego tenemos más información relevante, como Currículum, publicaciones o eventos a los que ha asistido u organizado. Por último, el apartado contacto, con seguridad Honeypot contra SPAM.",
+    "stack": "",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-inicio.jpg",
-        "label": ""
+        "label": "Menú Inicio – Con un breve texto de introducción e iconos de lo más relevante"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-venta.jpg",
-        "label": ""
+        "label": "Venta – En este aparatado vemos las obras que están en venta, y su rango de precios"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-vidrieras.jpg",
-        "label": ""
+        "label": "Ejemplo de un apartado – Ordenado por fecha"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-papel.jpg",
-        "label": ""
+        "label": "Galería – Obras jerarquizadas por técnica, se puede entrar a cada una para mas información"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-curriculum1.jpg",
-        "label": ""
+        "label": "Currículum – Extenso currículum jerarquizado por apartados, con exposiciones, publicaciones, etc."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-eventos.jpg",
-        "label": ""
+        "label": "Eventos – Con videos de algunos eventos"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/01/PB3-obra.jpg",
-        "label": ""
+        "label": "Ejemplo de obra – Donde podemos ver el proceso de creación y montaje de este rosetón."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-curriculum-mini.jpg",
-        "label": ""
+        "label": "Currículum resumido – Resumen redactado del currículum para facilitar la búsqueda de info"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/PB3-contacto.jpg",
-        "label": ""
+        "label": "Contacto – Formulario de contacto"
       }
     ],
     "videos": [
@@ -452,67 +376,55 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Web creada para la artista Pilar Belmonte, como portfolio personal y fuente de información sobre la misma. Programada mediante CMS WordPress, Javascript, CSS y HTML.",
-      "La web consiste en una página de inicio tipo escritorio, con un menú lateral común a toda la web. En este aparecen iconos a los apartados más relevantes. En Obra Reciente podemos navegar por los distintos apartados de su obra artística, así como de la parte más antigua de la misma en el apartado de Obra de otras épocas. Tenemos un apartado EN VENTA para las obras que se pueden adquirir, con una leyenda con el rango de precios. Se puede entrar a cada obra para ver más información de la misma, o imágenes de la realización, montaje, o en el caso de obras escultóricas, varias vistas de la misma. Luego tenemos más información relevante, como Currículum, publicaciones o eventos a los que ha asistido u organizado. Por último, el apartado contacto, con seguridad Honeypot contra SPAM.",
-      "Menú Inicio – Con un breve texto de introducción e iconos de lo más relevante",
-      "Venta – En este aparatado vemos las obras que están en venta, y su rango de precios",
-      "Ejemplo de un apartado – Ordenado por fecha",
-      "Galería – Obras jerarquizadas por técnica, se puede entrar a cada una para mas información",
-      "Currículum – Extenso currículum jerarquizado por apartados, con exposiciones, publicaciones, etc.",
-      "Eventos – Con videos de algunos eventos",
-      "Ejemplo de obra – Donde podemos ver el proceso de creación y montaje de este rosetón.",
-      "Currículum resumido – Resumen redactado del currículum para facilitar la búsqueda de info",
-      "Contacto – Formulario de contacto",
-      "Vídeo de muestra de la navegación por el sitio web"
-    ]
+    "extras": []
   },
   {
     "id": 1507,
     "date": "2016-01-11 13:39",
     "title": "Pilar Belmonte 2",
     "cliente": "Pilar Belmonte",
-    "descripcion": "Pilar Belmonte ENE 2016 – ENE 2019",
+    "descripcion": "Web creada para la artista Pilar Belmonte, como portfolio personal y fuente de información sobre la misma. Programada mediante HTML, CSS, PHP, AJAX, JAVASCRIPT y TPV Virtual. La web consiste en una página de Inicio con el menú troncal del sitio, una breve introducción a la trayectoria profesional de la artista, y accesos directos a enlaces de interés dentro de la web. Después tenemos un extenso portfolio de navegación horizontal ordenado por categorías. Cada cuadro está mostrado en un tamaño proporcional a sus dimensiones con respecto al resto de cuadros. El currículum, debido a su extensión, está organizado por secciones, con su propio submenú, para facilitar al lector encontrar la información de interés de forma rápida. Asimísmo, hay secciones dedicadas a las publicaciones realizadas por la artista, así como a los eventos en los que ha participado. Dispone también de una sección de contacto con seguridad honeypot para evitar SPAM, Toda la página es bilingüe, pudiendo cambiar de idioma en cualquier momento sin volver al Inicio, lo que facilita la navegación.",
+    "stack": "",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/foto.jpg",
-        "label": ""
+        "label": "Menú Inicio – Entrada a la web"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-39.jpg",
-        "label": ""
+        "label": "Portfolio – Navegación horizontal"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-47.jpg",
-        "label": ""
+        "label": "Publicaciones – Con información precisa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-54.jpg",
-        "label": ""
+        "label": "Anotaciones – Información sobre la artista"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-48-28.jpg",
-        "label": ""
+        "label": "Imagen – Con información de la obra"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-57.jpg",
-        "label": ""
+        "label": "Venta – Vía TPV virtual"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-48-12.jpg",
-        "label": ""
+        "label": "Eventos en los que ha participado"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-44.png",
-        "label": ""
+        "label": "Currículum – Muy jerarquizado"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-01-26_00-47-14.jpg",
-        "label": ""
+        "label": "Contacto – Simple y seguro"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-21.jpg",
-        "label": ""
+        "label": "Vídeo de muestra de la navegación por el sitio web"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/02/Gigabyte-AORUS-AD27QD-2.jpg",
@@ -533,51 +445,39 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Web creada para la artista Pilar Belmonte, como portfolio personal y fuente de información sobre la misma. Programada mediante HTML, CSS, PHP, AJAX, JAVASCRIPT y TPV Virtual.",
-      "La web consiste en una página de Inicio con el menú troncal del sitio, una breve introducción a la trayectoria profesional de la artista, y accesos directos a enlaces de interés dentro de la web. Después tenemos un extenso portfolio de navegación horizontal ordenado por categorías. Cada cuadro está mostrado en un tamaño proporcional a sus dimensiones con respecto al resto de cuadros. El currículum, debido a su extensión, está organizado por secciones, con su propio submenú, para facilitar al lector encontrar la información de interés de forma rápida. Asimísmo, hay secciones dedicadas a las publicaciones realizadas por la artista, así como a los eventos en los que ha participado. Dispone también de una sección de contacto con seguridad honeypot para evitar SPAM, Toda la página es bilingüe, pudiendo cambiar de idioma en cualquier momento sin volver al Inicio, lo que facilita la navegación.",
-      "Menú Inicio – Entrada a la web",
-      "Portfolio – Navegación horizontal",
-      "Publicaciones – Con información precisa",
-      "Anotaciones – Información sobre la artista",
-      "Imagen – Con información de la obra",
-      "Venta – Vía TPV virtual",
-      "Eventos en los que ha participado",
-      "Currículum – Muy jerarquizado",
-      "Contacto – Simple y seguro",
-      "Vídeo de muestra de la navegación por el sitio web"
-    ]
+    "extras": []
   },
   {
     "id": 1485,
     "date": "2016-01-11 13:27",
     "title": "Casa Rural Román",
     "cliente": "Casa Rural Román",
-    "descripcion": "La web consiste en una página de inicio con carrusel de fotos, descripción de la casa, formulario de contacto con google maps integrado, tabla de precios, oferta de actividades con sus respectivas descripciones y galería de fotos con lightbox",
+    "descripcion": "Web creada para un particular que ofrece una casa rural para alquiler vacacional. La web consiste en una página de inicio con carrusel de fotos, descripción de la casa, formulario de contacto con google maps integrado, tabla de precios, oferta de actividades con sus respectivas descripciones y galería de fotos con lightbox",
+    "stack": "HTML, CSS, PHP, AJAX, JAVASCRIPT y TPV Virtual.",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-06-40.jpg",
-        "label": ""
+        "label": "Descripción – Historia de la casa, características de la misma y hoja de normas a seguir durante la estancia."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-05-49.jpg",
-        "label": ""
+        "label": "Actividades – Diferentes actividades con sus respectivas descripciones, fotos, etc."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-02-19_22-07-45.jpg",
-        "label": ""
+        "label": "Contacto – Formulario de contacto con google maps integrado. El formulario tiene un sistema honeypot de seguridad anti-spam"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-06-14.jpg",
-        "label": ""
+        "label": "Galería – Fotos de las diferentes estancias de la casa, asi como de los alrededores."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-06-53.jpg",
-        "label": ""
+        "label": "Precios – Tabla de precios"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-06-20.jpg",
-        "label": ""
+        "label": "Lightbox – Integrado en la galería"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/11/1000_F_28832587_P6mUjsdIOwwtsJqdYggp47KRMnHreaot.jpg",
@@ -590,47 +490,39 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Casa Rural Román ENE 2016 – JUL 2016",
-      "Web creada para un particular que ofrece una casa rural para alquiler vacacional. Programada mediante HTML, CSS, PHP, AJAX, JAVASCRIPT y TPV Virtual.",
-      "Descripción – Historia de la casa, características de la misma y hoja de normas a seguir durante la estancia.",
-      "Actividades – Diferentes actividades con sus respectivas descripciones, fotos, etc.",
-      "Contacto – Formulario de contacto con google maps integrado. El formulario tiene un sistema honeypot de seguridad anti-spam",
-      "Galería – Fotos de las diferentes estancias de la casa, asi como de los alrededores.",
-      "Precios – Tabla de precios",
-      "Lightbox – Integrado en la galería"
-    ]
+    "extras": []
   },
   {
     "id": 1564,
     "date": "2015-12-13 11:45",
     "title": "Museo nacional de cerámica",
     "cliente": "Pilar Belmonte",
-    "descripcion": "Museo de cerámica nacional DIC 2015 – ACTUALIDAD",
+    "descripcion": "Web creada para el Museo de Cerámica Nacional de Chinchilla de Montearagón Programada mediante HTML, CSS y JAVASCRIPT. Esta sencilla web consiste en un inicio, breve historia del museo, Información de contacto y localización, una galería con lightbox e información de venta de un libro-catálogo. Paralelamente también se realizó un programa de ordenador para catalogar y recopilar información sobre las más de 2000 piezas cerámicas de la colección.",
+    "stack": "",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0005_Fondo.jpg",
-        "label": ""
+        "label": "Menú Inicio – Entrada a la web y breve descripción del museo y sus funciones"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0002_Capa-3.jpg",
-        "label": ""
+        "label": "Galería – Recopilación de imágenes del museo"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0004_Capa-1.jpg",
-        "label": ""
+        "label": "Historia – Breve texto resumiendo la historia del museo, su arquitectura y su contenido"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0001_Capa-4.jpg",
-        "label": ""
+        "label": "Lightbox – Muestra cada imagen en grande"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0003_Capa-2.jpg",
-        "label": ""
+        "label": "Contacto – Localización, horarios, precio y contacto, así como un mapa de los alrededores"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0000_Capa-5.jpg",
-        "label": ""
+        "label": "Catálogo – Información para la venta del catálogo de piezas del museo"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/02/monitorceramica.jpg",
@@ -643,23 +535,15 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Web creada para el Museo de Cerámica Nacional de Chinchilla de Montearagón Programada mediante HTML, CSS y JAVASCRIPT",
-      "Esta sencilla web consiste en un inicio, breve historia del museo, Información de contacto y localización, una galería con lightbox e información de venta de un libro-catálogo. Paralelamente también se realizó un programa de ordenador para catalogar y recopilar información sobre las más de 2000 piezas cerámicas de la colección.",
-      "Menú Inicio – Entrada a la web y breve descripción del museo y sus funciones",
-      "Galería – Recopilación de imágenes del museo",
-      "Historia – Breve texto resumiendo la historia del museo, su arquitectura y su contenido",
-      "Lightbox – Muestra cada imagen en grande",
-      "Contacto – Localización, horarios, precio y contacto, así como un mapa de los alrededores",
-      "Catálogo – Información para la venta del catálogo de piezas del museo"
-    ]
+    "extras": []
   },
   {
     "id": 1454,
     "date": "2015-06-01 15:00",
     "title": "Odín Hidromiel",
     "cliente": "Odín Hidromiel",
-    "descripcion": "JUN 2015 Web creada para la marca de hidromiel ODIN, para la promoción de diversos productos. Programada mediante CMS WordPress, HTML, CSS y JAVASCRIPT.",
+    "descripcion": "JUN 2015 Web creada para la marca de hidromiel ODIN, para la promoción de diversos productos. La web consiste en una página de Inicio con el menú, un carrusel con las últimas noticias, la información de más importancia, y una breve historia de la empresa. Después tenemos una tienda online con sus bebidas y productos de merchandising, un quienes somos, un formulario de contacto con seguridad antispam, y un mapa interactivo con los centros de distribución de la marca. El CMS de la misma permite una fácil actualización de noticias e imágenes, para que el cliente pueda subir las últimas noticias sin dificultad.",
+    "stack": "CMS WordPress, HTML, CSS y JAVASCRIPT",
     "imagenes": [
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2015/06/clean-computer-station-setup-one-laptop-and-one-monitor.jpg",
@@ -675,48 +559,47 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "La web consiste en una página de Inicio con el menú, un carrusel con las últimas noticias, la información de más importancia, y una breve historia de la empresa. Después tenemos una tienda online con sus bebidas y productos de merchandising, un quienes somos, un formulario de contacto con seguridad antispam, y un mapa interactivo con los centros de distribución de la marca. El CMS de la misma permite una fácil actualización de noticias e imágenes, para que el cliente pueda subir las últimas noticias sin dificultad."
-    ]
+    "extras": []
   },
   {
     "id": 1503,
     "date": "2014-11-11 13:39",
     "title": "Equilibrium Personal Training Studio",
     "cliente": "Equilibrium",
-    "descripcion": "Equilibrium Personal Training Studio NOV 2014 – AGO 2015",
+    "descripcion": "Web creada para un centro de entrenamiento personal de Torrente. Es una web de desplazamiento vertical con un carrusel de imágenes y ofertas, distintas secciones con los servicios, galería, integrantes de la empresa, y visita virtual al centro, testimonios de clientes satisfechos, mapa gmaps y contacto. La web se hizo con estética «agresiva», colores oscuros y texturas de piedra, ya que el centro iba principalmente dirigido a musculación. Más tarde el objetivo de la empresa se amplió y se cambió por una web más aséptica.",
+    "stack": "HTML, CSS, PHP, AJAX y JAVASCRIPT",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Portada.jpg",
-        "label": ""
+        "label": "Inicio – Entrada a la web con carrusel de imágenes y ofertas"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Equipo.jpg",
-        "label": ""
+        "label": "Quiénes somos – Integrantes de la empresa, con un resumen de su curriculum"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Contacto.jpg",
-        "label": ""
+        "label": "Contacto – Con mapa interactivo de como llegar"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Servicios.jpg",
-        "label": ""
+        "label": "Servicios – Cada servicio tiene una versión del logotipo en un color diferente"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Visita.jpg",
-        "label": ""
+        "label": "Visita virtual – Imágenes en 360º del centro, interactivas para manejarlas con el ratón"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Contacto2.jpg",
-        "label": ""
+        "label": "Contacto – Con seguridad honeypot y aviso legal a aceptar"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Galeria.jpg",
-        "label": ""
+        "label": "Galería – Imágenes del centro, con visualización lightbox para ampliar cada una"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/Equilibrium-Testimonios.jpg",
-        "label": ""
+        "label": "Testimonios – Testimonios pop-up de algunos clientes satisfechos"
       }
     ],
     "videos": [
@@ -729,47 +612,35 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Web creada para un centro de entrenamiento personal de Torrente Programada mediante HTML, CSS, PHP, AJAX y JAVASCRIPT.",
-      "Es una web de desplazamiento vertical con un carrusel de imágenes y ofertas, distintas secciones con los servicios, galería, integrantes de la empresa, y visita virtual al centro, testimonios de clientes satisfechos, mapa gmaps y contacto.",
-      "La web se hizo con estética «agresiva», colores oscuros y texturas de piedra, ya que el centro iba principalmente dirigido a musculación. Más tarde el objetivo de la empresa se amplió y se cambió por una web más aséptica.",
-      "Inicio – Entrada a la web con carrusel de imágenes y ofertas",
-      "Quiénes somos – Integrantes de la empresa, con un resumen de su curriculum",
-      "Contacto – Con mapa interactivo de como llegar",
-      "Servicios – Cada servicio tiene una versión del logotipo en un color diferente",
-      "Visita virtual – Imágenes en 360º del centro, interactivas para manejarlas con el ratón",
-      "Contacto – Con seguridad honeypot y aviso legal a aceptar",
-      "Galería – Imágenes del centro, con visualización lightbox para ampliar cada una",
-      "Testimonios – Testimonios pop-up de algunos clientes satisfechos",
-      "Vídeo de muestra de la navegación por la web"
-    ]
+    "extras": []
   },
   {
     "id": 1499,
     "date": "2014-11-11 13:38",
     "title": "Miranda de Picas",
     "cliente": "MagVi",
-    "descripcion": "Miranda de Picas NOV 2014 – ACTUALIDAD",
+    "descripcion": "Web creada para la maga y payasa Miranda de Picas con la colaboración como fotógrafa de Lidia Aparicio. La web, enfocada a servicios de ámbito infantil, consta de un menú inicio marcado por los palos de la baraja, un menú de servicios con tipos de magia que domina la artista, los colaboradores con los que participa, los lugares y días donde actúa y un apartado de contacto. También tiene una sección videocurrículum donde explica quién es y que servicios ofrece personalmente.",
+    "stack": "HTML, CSS, AJAX y JAVASCRIPT",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-14-20.jpg",
-        "label": ""
+        "label": "Menú Inicio – Entrada a la web"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-14-34.jpg",
-        "label": ""
+        "label": "Colaboradores – Otros artistas que trabajan con Miranda"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-14-27.jpg",
-        "label": ""
+        "label": "Servicios – Tipos de magia que domina la artista"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-15-29.jpg",
-        "label": ""
+        "label": "Contacto – Con privacidad de datos y seguridad honeypot"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-15-50.jpg",
-        "label": ""
+        "label": "Video – Original currículum tipo entrevista"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/02/monitor-miranda.jpg",
@@ -779,50 +650,42 @@
     "videos": [
       {
         "ruta": "https://youtu.be/SBkNqlQjbpw",
-        "label": ""
+        "label": "Vídeo de muestra de la navegación por la web"
       }
     ],
-    "extras": [
-      "Web creada para la maga y payasa Miranda de Picas con la colaboración como fotógrafa de Lidia Aparicio Programada mediante HTML, CSS, AJAX y JAVASCRIPT.",
-      "La web, enfocada a servicios de ámbito infantil, consta de un menú inicio marcado por los palos de la baraja, un menú de servicios con tipos de magia que domina la artista, los colaboradores con los que participa, los lugares y días donde actúa y un apartado de contacto. También tiene una sección videocurrículum donde explica quién es y que servicios ofrece personalmente.",
-      "Menú Inicio – Entrada a la web",
-      "Colaboradores – Otros artistas que trabajan con Miranda",
-      "Servicios – Tipos de magia que domina la artista",
-      "Contacto – Con privacidad de datos y seguridad honeypot",
-      "Video – Original currículum tipo entrevista",
-      "Vídeo de muestra de la navegación por la web"
-    ]
+    "extras": []
   },
   {
     "id": 1497,
     "date": "2014-10-11 13:37",
     "title": "Magvi",
     "cliente": "MagVi",
-    "descripcion": "MagVi OCT 2014 – ACTUALIDAD",
+    "descripcion": "Web creada para el mago MagVi, con la colaboración como fotógrafa de Lidia Aparicio. La web consiste en un menú inicio con las tres especialidades de Vicent, Mago, Maestro y Mediador En la sección de Mago vemos todos los ámbitos de la magia que domina, con pop-ups explicativos de cada uno Luego tenemos unas secciones explicativas de sus facetas de Maestro y Mediador, y una sección de contacto",
+    "stack": "HTML, CSS, PHP, AJAX y JAVASCRIPT",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-18-05.jpg",
-        "label": ""
+        "label": "Menú Inicio – Entrada con sus tres especialidades"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-19-06.jpg",
-        "label": ""
+        "label": "Maestro – Faceta de maestro de Vicent"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-18-54.jpg",
-        "label": ""
+        "label": "Mago – Tipos de magia que se oferta"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-19-30.jpg",
-        "label": ""
+        "label": "Mediador – Explicación del servicio de mediación"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-18-23.jpg",
-        "label": ""
+        "label": "Especialidades – Ejemplo de pop-up explicativo"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-19-39.jpg",
-        "label": ""
+        "label": "Contacto – Con privacidad y seguridad honeypot"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/02/monitor-MagVi.jpg",
@@ -832,24 +695,14 @@
     "videos": [
       {
         "ruta": "https://youtu.be/NU6-wxT1QCE",
-        "label": ""
+        "label": "Vídeos de muestra de la navegación por el sitio web"
       },
       {
         "ruta": "https://youtu.be/bLE-hrVjqaY",
-        "label": ""
+        "label": "Vídeos de muestra de la navegación por el sitio web"
       }
     ],
-    "extras": [
-      "Web creada para el mago MagVi, con la colaboración como fotógrafa de Lidia Aparicio Programada mediante HTML, CSS, PHP, AJAX y JAVASCRIPT.",
-      "La web consiste en un menú inicio con las tres especialidades de Vicent, Mago, Maestro y Mediador En la sección de Mago vemos todos los ámbitos de la magia que domina, con pop-ups explicativos de cada uno Luego tenemos unas secciones explicativas de sus facetas de Maestro y Mediador, y una sección de contacto",
-      "Menú Inicio – Entrada con sus tres especialidades",
-      "Maestro – Faceta de maestro de Vicent",
-      "Mago – Tipos de magia que se oferta",
-      "Mediador – Explicación del servicio de mediación",
-      "Especialidades – Ejemplo de pop-up explicativo",
-      "Contacto – Con privacidad y seguridad honeypot",
-      "Vídeos de muestra de la navegación por el sitio web"
-    ]
+    "extras": []
   },
   {
     "id": 1491,
@@ -857,30 +710,31 @@
     "title": "Gondamar",
     "cliente": "Gondamar & Fish S.L.",
     "descripcion": "La web consiste en un menú inicio con su fotografía corporativa de los fiordos noruegos. Desde ahí accedemos a Quienes somos, Localización, Productos y Contacto. En el menú de productos podemos acceder a sus tres familias ofertadas, Frescos, Ahumados y Salazones, con una selección de ejemplos.",
+    "stack": "HTML, CSS, AJAX y JAVASCRIPT",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-15.jpg",
-        "label": ""
+        "label": "Menú Inicio – Entrada a la web"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-47.jpg",
-        "label": ""
+        "label": "Ejemplo – Productos frescos que ofertan"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-22.jpg",
-        "label": ""
+        "label": "Quienes somos – Explicación e historia"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-28-11.jpg",
-        "label": ""
+        "label": "Contacto – Formulario con seguridad honeypot"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-43.jpg",
-        "label": ""
+        "label": "Productos – Las tres familias de productos"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-27-28.jpg",
-        "label": ""
+        "label": "Localización – Foto, explicación y mapa interactivo gMaps"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/02/monitor-gondamar.jpg",
@@ -890,90 +744,78 @@
     "videos": [
       {
         "ruta": "https://youtu.be/WN4vVi_X03M",
-        "label": ""
+        "label": "Vídeo de muestra de la navegación por la web"
       }
     ],
-    "extras": [
-      "Gondamar ENE 2014 – ACTUALIDAD",
-      "Web creada para la empresa Gondamar & Fish S.L. Programada mediante HTML, CSS, AJAX y JAVASCRIPT",
-      "Menú Inicio – Entrada a la web",
-      "Ejemplo – Productos frescos que ofertan",
-      "Quienes somos – Explicación e historia",
-      "Contacto – Formulario con seguridad honeypot",
-      "Productos – Las tres familias de productos",
-      "Localización – Foto, explicación y mapa interactivo gMaps"
-    ]
+    "extras": []
   },
   {
     "id": 1493,
     "date": "2013-12-11 13:33",
     "title": "Ida2",
     "cliente": "Ida2",
-    "descripcion": "Ida2 Impresión Digital DIC 2013 – ACTUALIDAD",
+    "descripcion": "Web creada para la empresa de impresión digital IDA2 Programada mediante. La web consiste en un menú inicial que nos lleva a la imprenta física, o a la parte de tienda online. Este menú tiene un efecto 3D que interactúa con el ratón, muy vistoso La parte de imprenta física consiste en una web vertical encabezada por un carrusel de ofertas. Tras él podemos ver el horario, un quienes somos, historia de la imprenta, secciones de la misma (gran formato, acabados, estudio, asesoría...) Un mapa interactivo con la localización, formulario de contacto, tutoriales en vídeo y varios catálogos. La navegación es fluida y muy vistosa ya que tenemos un efecto parallax a la derecha con imágenes relacionadas con cada sección.",
+    "stack": "HTML, CSS, PHP, AJAX, JAVASCRIPT",
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/MMD-Philips-275P4VYKEB.jpg",
-        "label": ""
-      },
-      {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-16-43.jpg",
-        "label": ""
+        "label": "Menú Inicio – Menú lateral y carrusel de ofertas"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-03.jpg",
-        "label": ""
+        "label": "Localización – Interactiva, con google maps"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-20.jpg",
-        "label": ""
+        "label": "Productos – Galería de productos y servicios, con filtro para hacer búsquedas"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-16-50.jpg",
-        "label": ""
+        "label": "Secciones – Con efecto parallax"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-08.jpg",
-        "label": ""
+        "label": "Contacto – Formulario con seguridad honeypot"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-56.jpg",
-        "label": ""
+        "label": "Producto – Dentro de la galería podemos acceder a descripciones personalizadas de cada producto"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-16-53.jpg",
-        "label": ""
+        "label": "Secciones – Con efecto parallax"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-17-14.jpg",
-        "label": ""
+        "label": "Videotutoriales – Para resolver dudas frecuentes"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-18-48.jpg",
-        "label": ""
+        "label": "Catálogos – Catálogos interactivos, versión digital de catálogos físicos"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-21-30.jpg",
-        "label": ""
+        "label": "WebAPPs – De forma paralela, se hicieron varias aplicaciones web para el manejo de los trabajos en la imprenta: Una hoja de trabajos por cada sección de la imprenta (Pequeño formato, Acabados, materiales rígidos y flexibles en Gran formato, Corte y Diseño) en base GoogleSpreadsheets + Javascript. "
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-21-43.jpg",
-        "label": ""
+        "label": "También se hizo una calculadora de grosor de lomos de papel, para libros."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-22-24.jpg",
-        "label": ""
+        "label": "Hoja de trabajos – Para cada sección de la imprenta, con filtros para organizar los trabajos por fecha, cliente, etc."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-21-54.jpg",
-        "label": ""
+        "label": "Y aplicaciones sencillas personalizadas como un cronómetro con memoria."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-23-08.jpg",
-        "label": ""
+        "label": "Fragmento de codigo de la hoja de trabajos"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2019-02-19_22-21-50.jpg",
-        "label": ""
+        "label": "Una calculadora de reglas de tres"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/02/monitor_ida2.jpg",
@@ -986,39 +828,27 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Web creada para la empresa de impresión digital IDA2 Programada mediante HTML, CSS, PHP, AJAX, JAVASCRIPT.",
-      "La web consiste en un menú inicial que nos lleva a la imprenta física, o a la parte de tienda online. Este menú tiene un efecto 3D que interactúa con el ratón, muy vistoso La parte de imprenta física consiste en una web vertical encabezada por un carrusel de ofertas. Tras él podemos ver el horario, un quienes somos, historia de la imprenta, secciones de la misma (gran formato, acabados, estudio, asesoría&#8230;) Un mapa interactivo con la localización, formulario de contacto, tutoriales en vídeo y varios catálogos. La navegación es fluida y muy vistosa ya que tenemos un efecto parallax a la derecha con imágenes relacionadas con cada sección.",
-      "Menú Inicio – Menú lateral y carrusel de ofertas",
-      "Localización – Interactiva, con google maps",
-      "Productos – Galería de productos y servicios, con filtro para hacer búsquedas",
-      "Secciones – Con efecto parallax",
-      "Contacto – Formulario con seguridad honeypot",
-      "Producto – Dentro de la galería podemos acceder a descripciones personalizadas de cada producto",
-      "Secciones – Con efecto parallax",
-      "Videotutoriales – Para resolver dudas frecuentes",
-      "Catálogos – Catálogos interactivos, versión digital de catálogos físicos",
-      "WebAPPs – De forma paralela, se hicieron varias aplicaciones web para el manejo de los trabajos en la imprenta: Una hoja de trabajos por cada sección de la imprenta (Pequeño formato, Acabados, materiales rígidos y flexibles en Gran formato, Corte y Diseño) en base GoogleSpreadsheets + Javascript. También se hizo una calculadora de grosor de lomos de papel, para libros, y aplicaciones sencillas personalizadas como un cronómetro con memoria y una calculadora de reglas de tres. También se preparó una plantilla de correo Outlook con banner automático, de forma que cuando cambiaran las ofertas de la empresa, todos los faldones de correo de los diferentes empleados se actualizaran instantáneamente con la nueva oferta."
-    ]
+    "extras": []
   },
   {
     "id": 1487,
     "date": "2013-06-11 13:30",
     "title": "Soy gay y me caso",
     "cliente": "Soy gay y me caso",
-    "descripcion": "Soy gay y me caso JUN 2013",
+    "descripcion": "Web creada para una empresa de organización de bodas temáticas. Funciona como tarjeta de presentación, principalmente para tener presencia on-line como empresa y facilitar al cliente potencial encontrarla vía internet. La web consta de los apartados básicos y de una galería de imágenes de sus proyectos más destacados. También consta de un apartado de Blog externo y enlace a su Facebook",
+    "stack": "HTML, CSS, AJAX, JAVASCRIPT",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0001_Capa-11.jpg",
-        "label": ""
+        "label": "Quiénes somos – Con vídeo explicativo"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0002_Capa-10.jpg",
-        "label": ""
+        "label": "Menú Inicio – Entrada a la web"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0000_Capa-12.jpg",
-        "label": ""
+        "label": "Contacto – Formulario"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/02/SGYMC.jpg",
@@ -1026,32 +856,27 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Web creada para una empresa de organización de bodas temáticas. Programada mediante HTML, CSS, AJAX, JAVASCRIPT.",
-      "Web que funciona como tarjeta de presentación, principalmente para tener presencia on-line como empresa y facilitar al cliente potencial encontrarla vía internet. La web consta de los apartados básicos y de una galería de imágenes de sus proyectos más destacados. También consta de un apartado de Blog externo y enlace a su Facebook",
-      "Quiénes somos – Con vídeo explicativo",
-      "Menú Inicio – Entrada a la web",
-      "Contacto – Formulario"
-    ]
+    "extras": []
   },
   {
     "id": 2044,
     "date": "2012-11-30 14:53",
     "title": "Sintac",
     "cliente": "Sintac Recycling",
-    "descripcion": "Sintac Recycling NOV 2012 – JUL 2017",
+    "descripcion": "Web creada para una empresa de reciclaje de plásticos. Es una web muy sencilla donde se detallan los Productos y servicios de esta empresa de reciclaje.",
+    "stack": "HTML, CSS, JAVASCRIPT",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/sintac1-1.jpg",
-        "label": ""
+        "label": "Menú Inicio – Entrada a la web con explicación de la empresa y sus distribuidores"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/sintac2-1.jpg",
-        "label": ""
+        "label": "Productos – Fichas técnicas de los productos que maneja la empresa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/sintac3-1.jpg",
-        "label": ""
+        "label": "Contacto – Formulario de contacto con capacidad para enviar archivos"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/11/blur-close-up-computer-927629.jpg",
@@ -1059,36 +884,31 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Web creada para una empresa de reciclaje de plásticos",
-      "Es una web muy sencilla donde se detallan los Productos y servicios de esta empresa de reciclaje.",
-      "Menú Inicio – Entrada a la web con explicación de la empresa y sus distribuidores",
-      "Productos – Fichas técnicas de los productos que maneja la empresa",
-      "Contacto – Formulario de contacto con capacidad para enviar archivos"
-    ]
+    "extras": []
   },
   {
     "id": 1483,
     "date": "2012-11-25 13:00",
     "title": "Casa del Olivar",
     "cliente": "Pilar Belmonte",
-    "descripcion": "La web consiste en una página de inicio con la información más relevante, varias secciones informando de las características de la finca, e información de contacto. El cliente prefirió no indicar ubicación. La página fue traducida al Inglés y al Francés",
+    "descripcion": "Web creada para la familia Belmonte, para la promoción de una finca rural. La web consiste en una página de inicio con la información más relevante, varias secciones informando de las características de la finca, e información de contacto. El cliente prefirió no indicar ubicación. La página fue traducida al Inglés y al Francés",
+    "stack": "HTML, Actionscript y CSS",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/2.jpg",
-        "label": ""
+        "label": "Energias renovables"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/4.jpg",
-        "label": ""
+        "label": "Agricultura"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/3.jpg",
-        "label": ""
+        "label": "Explotación"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/5.jpg",
-        "label": ""
+        "label": "Caza"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/11/1.jpg",
@@ -1100,33 +920,27 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Casa del Olivar NOV 2012",
-      "Web creada para la familia Belmonte, para la promoción de una finca rural Programada mediante HTML, Actionscript y CSS",
-      "Energias renovables",
-      "Agricultura",
-      "Explotación",
-      "Caza"
-    ]
+    "extras": []
   },
   {
     "id": 1476,
     "date": "2012-08-19 13:25",
     "title": "Nakama Customs",
     "cliente": "Nakama Customs",
-    "descripcion": "Nakama Customs AGO 2012 – OCT 2015",
+    "descripcion": "Web creada para una empresa mixta, estudio de tatuaje y pintura mural. La web cuenta con dos secciones, una para cada especialidad de la empresa.",
+    "stack": "HTML, CSS, JAVASCRIPT",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/nakama1.jpg",
-        "label": ""
+        "label": "Menú Inicio – Entrada a la web Al entrar a la página web, tenemos dos imágenes que se colorean al pasar por encima. Cada una nos llevará a una sección de la empresa."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/nakama3.jpg",
-        "label": ""
+        "label": "Nakama Tattoos – Parte web dedicada a la sección de tatuaje de la empresa. Tenemos sección Quienes somos, Galería enlazada a un álbum de facebook para facilidad de uso del cliente, formulario de contacto y mapa de google maps con la localización"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/nakama2.jpg",
-        "label": ""
+        "label": "Nakama Pintura y aerografías – Parte web dedicada a la sección de pintura mural de la empresa. Tenemos sección Quienes somos, Galería enlazada a un álbum de facebook para facilidad de uso del cliente, formulario de contacto y mapa de google maps con la localización"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/02/NAKAMA.jpg",
@@ -1134,31 +948,27 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Web creada para una empresa mixta, estudio de tatuaje y pintura mural. La web cuenta con dos secciones, una para cada especialidad de la empresa. Programada mediante HTML, CSS, JAVASCRIPT.",
-      "Menú Inicio – Entrada a la web Al entrar a la página web, tenemos dos imágenes que se colorean al pasar por encima. Cada una nos llevará a una sección de la empresa.",
-      "Nakama Tattoos – Parte web dedicada a la sección de tatuaje de la empresa. Tenemos sección Quienes somos, Galería enlazada a un álbum de facebook para facilidad de uso del cliente, formulario de contacto y mapa de google maps con la localización",
-      "Nakama Pintura y aerografías – Parte web dedicada a la sección de pintura mural de la empresa. Tenemos sección Quienes somos, Galería enlazada a un álbum de facebook para facilidad de uso del cliente, formulario de contacto y mapa de google maps con la localización"
-    ]
+    "extras": []
   },
   {
     "id": 1479,
     "date": "2011-12-11 13:26",
     "title": "Díez Caudet",
     "cliente": "Díez Caudet",
-    "descripcion": "Díez Caudet DIC 2011 – FEB 2015",
+    "descripcion": "Web creada para una empresa de construcción. Funciona como tarjeta de presentación, principalmente para tener presencia on-line como empresa y facilitar al cliente potencial encontrarla vía internet. La web consta de los apartados básicos (Quiénes sómos, Qué haacemos y contacto) así como de una galería de imágenes de sus proyectos más destacados.",
+    "stack": "HTML, CSS y JAVASCRIPT",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0010_Fondo.jpg",
-        "label": ""
+        "label": "Menú Inicio – El Quiénes somos actúa como entrada a la web."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0009_Capa-3.jpg",
-        "label": ""
+        "label": "Más información – Qúe hace la empresa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0008_Capa-4.jpg",
-        "label": ""
+        "label": "Contacto – Formulario de contacto"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/02/DIEZCAUDET.jpg",
@@ -1166,40 +976,35 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Web creada para una empresa de construcción Programada mediante HTML, CSS y JAVASCRIPT",
-      "Web que funciona como tarjeta de presentación, principalmente para tener presencia on-line como empresa y facilitar al cliente potencial encontrarla vía internet. La web consta de los apartados básicos (Quiénes sómos, Qué haacemos y contacto) así como de una galería de imágenes de sus proyectos más destacados.",
-      "Menú Inicio – El Quiénes somos actúa como entrada a la web.",
-      "Más información – Qúe hace la empresa",
-      "Contacto – Formulario de contacto"
-    ]
+    "extras": []
   },
   {
     "id": 2055,
     "date": "2011-10-30 17:01",
     "title": "Rapidtyres",
     "cliente": "RapidTyres",
-    "descripcion": "RapidTyres OCT 2011 – ENE 2016 – AGO 2018",
+    "descripcion": "Web creada para la empresa de material para automóviles RapidTyres. La web consiste en una página de inicio con espacio para dos ofertas, cuatro apartados, Dos para los productos (Llantas y Neumáticos), información sobre la empresa y contacto.",
+    "stack": "HTML, CSS, PHP, AJAX y JAVASCRIPT",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/rapid1-1.jpg",
-        "label": ""
+        "label": "Menú Inicio – Entrada a la web con dos ads para promociones"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/rapid2-1.jpg",
-        "label": ""
+        "label": "Empresa – Historia y información sobre la empresa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/rapid3-1.jpg",
-        "label": ""
+        "label": "Llantas – Marcas y modelos de llantas"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/rapid4-1.jpg",
-        "label": ""
+        "label": "Neumáticos – Marcas de neumáticos que maneja la empresa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2011/10/Homewheels.jpg",
-        "label": ""
+        "label": "En 2016 la empresa pasó a llamarse HomeWheels, cambiando de dominio y actualizando los logos e imágenes."
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/11/benq-sw2700pt-monitor-hero-1500x1000.jpg",
@@ -1207,42 +1012,35 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Web creada para la empresa de material para automóviles RapidTyres Programada mediante HTML, CSS, PHP, AJAX y JAVASCRIPT",
-      "La web consiste en una página de inicio con espacio para dos ofertas, cuatro apartados, Dos para los productos (Llantas y Neumáticos), información sobre la empresa y contacto.",
-      "Menú Inicio – Entrada a la web con dos ads para promociones",
-      "Empresa – Historia y información sobre la empresa",
-      "Llantas – Marcas y modelos de llantas",
-      "Neumáticos – Marcas de neumáticos que maneja la empresa",
-      "En 2016 la empresa pasó a llamarse HomeWheels, cambiando de dominio y actualizando los logos e imágenes."
-    ]
+    "extras": []
   },
   {
     "id": 1468,
     "date": "2011-10-11 13:23",
     "title": "Cronaval",
     "cliente": "Cronaval",
-    "descripcion": "Cronaval OCT 2011 – FEB 2015",
+    "descripcion": "Web creada para una distribuidora de productos para el automóvil. Tienda Online de una distribuidora de productos para limpieza del automóvil. La web consta de una página de inicio, cuatro secciones distintas de productos, con sus explicaciones pormenorizadas, una página de contacto, y una tienda on-line",
+    "stack": "HTML, CSS, PHP, AJAX, JAVASCRIPT y Prestashop",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0007_Capa-5.jpg",
-        "label": ""
+        "label": "Menú Inicio – Entrada a la web"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0006_Capa-5-copia-4.jpg",
-        "label": ""
+        "label": "Página de productos – Explicación pormenorizada de los productos que venden"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0004_Capa-5-copia-2.jpg",
-        "label": ""
+        "label": "Contacto – Formulario con seguridad Honeypot"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0003_Capa-5-copia-3.jpg",
-        "label": ""
+        "label": "Tienda On-line – Venta on-line de productos para limpieza del automóvil"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0005_Capa-5-copia.jpg",
-        "label": ""
+        "label": "Página de productos – Explicación pormenorizada de los productos que venden"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/02/CRONAVAL.jpg",
@@ -1250,46 +1048,39 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Web creada para una distribuidora de productos para el automóvil Programada mediante HTML, CSS, PHP, AJAX, JAVASCRIPT y Prestashop.",
-      "Tienda Online de una distribuidora de productos para limpieza del automóvil. La web consta de una página de inicio, cuatro secciones distintas de productos, con sus explicaciones pormenorizadas, una página de contacto, y una tienda on-line",
-      "Menú Inicio – Entrada a la web",
-      "Página de productos – Explicación pormenorizada de los productos que venden",
-      "Contacto – Formulario con seguridad Honeypot",
-      "Tienda On-line – Venta on-line de productos para limpieza del automóvil",
-      "Página de productos – Explicación pormenorizada de los productos que venden"
-    ]
+    "extras": []
   },
   {
     "id": 1481,
     "date": "2011-02-11 13:26",
     "title": "La Brigada Gráfica",
     "cliente": "La Brigada Gráfica",
-    "descripcion": "La Brigada Gráfica FEB 2011 – JUL 2014",
+    "descripcion": "Web creada para un estudio de diseño. La web consiste en una página de navegación vertical integrada por módulos hechos en Flash (Historia de la asociación, patrocinadores, objetivo&#8230;) Una galería enlazada a Flickr para cada integrante, un blog, una tienda online en base Prestashop y un formulario de contacto.",
+    "stack": "HTML, CSS, Actionscript, Javascript, Ajax y PHP",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-09-40.jpg",
-        "label": ""
+        "label": "Portada – Entrada a la web con imagen de la tienda física"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-10-02.jpg",
-        "label": ""
+        "label": "Galerías – Enlace a cada galería. Las imágenes de la misma se cargan desde una cuenta de flickr"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-09-45.jpg",
-        "label": ""
+        "label": "Historia – Módulo diseñado en flash"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-10-35.jpg",
-        "label": ""
+        "label": "Blog – Con eventos a los que asistíamos o que organizábamos como brigadistas"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-09-48.jpg",
-        "label": ""
+        "label": "Objetivos – Módulo diseñado en flash"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/2019-11-30_19-10-42.jpg",
-        "label": ""
+        "label": "Contacto – Con seguridad honeypot y acceso a las redes sociales"
       }
     ],
     "videos": [
@@ -1298,47 +1089,39 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Web creada para un estudio de diseño Programada mediante HTML, CSS, Actionscript, Javascript, Ajax y PHP",
-      "La web consiste en una página de navegación vertical integrada por módulos hechos en Flash (Historia de la asociación, patrocinadores, objetivo&#8230;) Una galería enlazada a Flickr para cada integrante, un blog, una tienda online en base Prestashop y un formulario de contacto.",
-      "Portada – Entrada a la web con imagen de la tienda física",
-      "Galerías – Enlace a cada galería. Las imágenes de la misma se cargan desde una cuenta de flickr",
-      "Historia – Módulo diseñado en flash",
-      "Blog – Con eventos a los que asistíamos o que organizábamos como brigadistas",
-      "Objetivos – Módulo diseñado en flash",
-      "Contacto – Con seguridad honeypot y acceso a las redes sociales"
-    ]
+    "extras": []
   },
   {
     "id": 1505,
     "date": "2010-11-11 13:39",
     "title": "Pilar Belmonte 1",
     "cliente": "Pilar Belmonte",
-    "descripcion": "Pilar Belmonte NOV 2010 – ENE 2016",
+    "descripcion": "Web creada en colaboración con Esther Navalón Wamba, para la artista Pilar Belmonte, como portfolio personal y fuente de información sobre la misma. La web consiste en un catálogo interactivo de las obras de la artista, tanto en el campo de la pintura como de la creación de vidrieras, asi como sus obras bibliográficas y eventos que ha realizado. También tiene un apartado de venta de libros autopublicados.",
+    "stack": "Actionscript 2.0, HTML, CSS y Javascript",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-21-28.jpg",
-        "label": ""
+        "label": "Idioma – Entrada a la web y elección de idioma"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-12_22-20-47.jpg",
-        "label": ""
+        "label": "Menús secundarios"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-20-30.jpg",
-        "label": ""
+        "label": "Menú Inicio – Con las distintas categorías"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-20-39.jpg",
-        "label": ""
+        "label": "Galería – Muestra de las obras de la artista"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-20-33.jpg",
-        "label": ""
+        "label": "Menús secundarios"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-20-52.jpg",
-        "label": ""
+        "label": "Currículum – Breve resumen del currículum"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/02/PB1.jpg",
@@ -1351,47 +1134,39 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Web creada en colaboración con Esther Navalón Wamba, para la artista Pilar Belmonte, como portfolio personal y fuente de información sobre la misma. Programada mediante Actionscript 2.0, HTML, CSS y Javascript",
-      "La web consiste en un catálogo interactivo de las obras de la artista, tanto en el campo de la pintura como de la creación de vidrieras, asi como sus obras bibliográficas y eventos que ha realizado. También tiene un apartado de venta de libros autopublicados.",
-      "Idioma – Entrada a la web y elección de idioma",
-      "Menús secundarios",
-      "Menú Inicio – Con las distintas categorías",
-      "Galería – Muestra de las obras de la artista",
-      "Menús secundarios",
-      "Currículum – Breve resumen del currículum"
-    ]
+    "extras": []
   },
   {
     "id": 1470,
     "date": "2010-10-11 13:24",
     "title": "Randes i Brodats",
     "cliente": "ReyMono",
-    "descripcion": "Randes i Brodats OCT 2010 – JUN 2013",
+    "descripcion": "Web creada para una empresa de confección de ropa de fallera, en colaboración con ReyMono. La web consiste en una portada, una sección «Quiénes somos«, un»Dónde encontrarnos» con mapa interactivo, dos catálogos interactivos de productos, y una sección contacto",
+    "stack": "HTML, CSS y FLASH",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-36-50.jpg",
-        "label": ""
+        "label": "Menú Inicio – Entrada a la web"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-37-02.jpg",
-        "label": ""
+        "label": "Catálogo interactivo – Dividido en secciones"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-36-52.jpg",
-        "label": ""
+        "label": "Quiénes somos – Información sobre la empresa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-37-23.jpg",
-        "label": ""
+        "label": "Catálogo interactivo – Con pase de diapositivas"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-36-59.jpg",
-        "label": ""
+        "label": "Dónde encontrarnos – Dirección, horario y mapa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-19_21-37-05.jpg",
-        "label": ""
+        "label": "Contacto – Mail y teléfonos"
       }
     ],
     "videos": [
@@ -1400,71 +1175,63 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Web creada para una empresa de confección de ropa de fallera, en colaboración con ReyMono Programada mediante HTML, CSS y FLASH",
-      "La web consiste en una portada, una sección «Quiénes somos«, un»Dónde encontrarnos» con mapa interactivo, dos catálogos interactivos de productos, y una sección contacto",
-      "Menú Inicio – Entrada a la web",
-      "Catálogo interactivo – Dividido en secciones",
-      "Quiénes somos – Información sobre la empresa",
-      "Catálogo interactivo – Con pase de diapositivas",
-      "Dónde encontrarnos – Dirección, horario y mapa",
-      "Contacto – Mail y teléfonos"
-    ]
+    "extras": []
   },
   {
     "id": 1472,
     "date": "2010-01-11 13:24",
     "title": "Precocinados Tia Teresa",
     "cliente": "Precocinados Tia Teresa",
-    "descripcion": "La web consiste en dos secciones: Fábrica y Tiendas. La sección de fábrica incluye un contacto, un mapa de ubicación de la misma, los productos estrella de la misma, para su venta a grandes superficies y la historia de la empresa junto con una galería de imágenes. La sección de tienda incluye la ubicación de cada tienda o puesto en el mapa, junto con una galería de imágenes de cada una de ellas. También tiene una selección de productos de elaboración propia, una breve historia con galería de imágenes, y un apartado de recetas para descargar.",
+    "descripcion": "Web creada para la cadena de carnicerías Tía Teresa, en colaboración con Joan Ráez. La web consiste en dos secciones: Fábrica y Tiendas. La sección de fábrica incluye un contacto, un mapa de ubicación de la misma, los productos estrella de la misma, para su venta a grandes superficies y la historia de la empresa junto con una galería de imágenes. La sección de tienda incluye la ubicación de cada tienda o puesto en el mapa, junto con una galería de imágenes de cada una de ellas. También tiene una selección de productos de elaboración propia, una breve historia con galería de imágenes, y un apartado de recetas para descargar.",
+    "stack": "HTML, CSS y FLASH",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-20.jpg",
-        "label": ""
+        "label": "Historia – Breve historia de la empresa, con galería de imágenes."
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-37.jpg",
-        "label": ""
+        "label": "Menú productos – Lista de productos de la fábrica, menú desplegable transparente"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-47-20.jpg",
-        "label": ""
+        "label": "Historia tienda – Historia de la cadena de tiendas Tia Teresa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-48-02.jpg",
-        "label": ""
+        "label": "Productos – Especialidades de la tienda"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-47-10.jpg",
-        "label": ""
+        "label": "Contacto – Enlace a correo electrónico"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-59.jpg",
-        "label": ""
+        "label": "Productos congelados – Ejemplo de fotografía de uno de los productos"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-47-33.jpg",
-        "label": ""
+        "label": "Ubicación – Cada tienda o puesto de la cadena, con su dirección"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-48-12.jpg",
-        "label": ""
+        "label": "Productos – Especialidades de la tienda"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-29.jpg",
-        "label": ""
+        "label": "Mapa – Mapa estático y dirección de la fábrica Tia Teresa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-46-42.jpg",
-        "label": ""
+        "label": "Productos frescos – Ejemplo de fotografía de uno de los productos"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-47-47.jpg",
-        "label": ""
+        "label": "Galería – Cada tienda o puesto tiene su galería propia, separada en especialidad"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-48-17.jpg",
-        "label": ""
+        "label": "Productos – Especialidades de la tienda"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/02/lgw1943tbmonitor1.jpg",
@@ -1477,22 +1244,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Precocinados Tía Teresa ENE 2010 – SEP 2015",
-      "Web creada para la cadena de carnicerías Tía Teresa, en colaboración con Joan Ráez Programada mediante HTML, CSS y FLASH",
-      "Historia – Breve historia de la empresa, con galería de imágenes.",
-      "Menú productos – Lista de productos de la fábrica, menú desplegable transparente",
-      "Historia tienda – Historia de la cadena de tiendas Tia Teresa",
-      "Productos – Especialidades de la tienda",
-      "Contacto – Enlace a correo electrónico",
-      "Productos congelados – Ejemplo de fotografía de uno de los productos",
-      "Ubicación – Cada tienda o puesto de la cadena, con su dirección",
-      "Productos – Especialidades de la tienda",
-      "Mapa – Mapa estático y dirección de la fábrica Tia Teresa",
-      "Productos frescos – Ejemplo de fotografía de uno de los productos",
-      "Galería – Cada tienda o puesto tiene su galería propia, separada en especialidad",
-      "Productos – Especialidades de la tienda"
-    ]
+    "extras": []
   },
   {
     "id": 1474,
@@ -1500,38 +1252,39 @@
     "title": "Acid Skateboards",
     "cliente": "Acid Skateboards",
     "descripcion": "Acid Skateboards 2008 - Web creada para una pequeña empresa de venta de material de skateboarding Programada mediante Actionscript 2.0, HTML, CSS, JAVASCRIPT.La web consiste en un menú inicio interactivo donde controlamos un monopatín que se mueve horizontalmente por la escena, dejando ver las diferentes partes de la web. De forma paralela tenemos un menú inferior para un acceso más sencillo",
+    "stack": "HTML, CSS y FLASH",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-30.jpg",
-        "label": ""
+        "label": "Historia – Una breve presentación de la empresa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-46-24.jpg",
-        "label": ""
+        "label": "Videos – Grabaciones de skaters utilizando los productos de la marca"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-08.jpg",
-        "label": ""
+        "label": "Catálogo – Los diferentes tipos de productos"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-46-04.jpg",
-        "label": ""
+        "label": "Tienda / Ruedas – Diseños de ruedas en venta"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-46-10.jpg",
-        "label": ""
+        "label": "Tienda / Lijas – Diseños de lijas para adeshivar a la tabla de skate"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-12.jpg",
-        "label": ""
+        "label": "Skaters – Skaters patrocinados por la marca"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-58.jpg",
-        "label": ""
+        "label": "Tienda / Tablas – Diferentes tablas de la marca"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-46-18.jpg",
-        "label": ""
+        "label": "Tienda / Accesorios – Accesorios, merchandising y herramientas de la marca"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-13_14-45-21.jpg",
@@ -1541,23 +1294,13 @@
     "videos": [
       {
         "ruta": "https://youtu.be/2NeuuMDB_Og",
-        "label": ""
+        "label": "Vídeo de muestra de la navegación por el sitio web"
       },
       {
         "ruta": "https://youtu.be/y-Yleb5PVbk",
-        "label": ""
+        "label": "Vídeo de muestra de la navegación por el sitio web"
       }
     ],
-    "extras": [
-      "Historia – Una breve presentación de la empresa",
-      "Videos – Grabaciones de skaters utilizando los productos de la marca",
-      "Catálogo – Los diferentes tipos de productos",
-      "Tienda / Ruedas – Diseños de ruedas en venta",
-      "Tienda / Lijas – Diseños de lijas para adeshivar a la tabla de skate",
-      "Skaters – Skaters patrocinados por la marca",
-      "Tienda / Tablas – Diferentes tablas de la marca",
-      "Tienda / Accesorios – Accesorios, merchandising y herramientas de la marca",
-      "Vídeo de muestra de la navegación por el sitio web"
-    ]
+    "extras": []
   }
 ]

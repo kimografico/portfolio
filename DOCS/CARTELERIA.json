@@ -58,43 +58,37 @@
     "imagenes": [
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/DATADEC-3-carteles.jpg",
-        "label": ""
+        "label": "Diferentes propuestas"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Datadec-cartel-2.jpg",
-        "label": ""
+        "label": "Diferentes propuestas"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Datadec-cartel-6.jpg",
-        "label": ""
+        "label": "Diferentes propuestas"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Datadec-cartel-3.jpg",
-        "label": ""
+        "label": "Diferentes propuestas"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Datadec-cartel-5.jpg",
-        "label": ""
+        "label": "Diferentes propuestas"
       }
     ],
     "videos": [],
-    "extras": [
-      "Diferentes propuestas según briefing"
-    ]
+    "extras": []
   },
   {
     "id": 3847,
     "date": "2019-07-08 12:36",
     "title": "Cartel TFC",
     "cliente": "Juanjo Sáez",
-    "descripcion": "Cartel de presentación de un TFC para la Universidad de Valencia Autor: Juanjo Sáez",
+    "descripcion": "Cartel de presentación de un TFC para la Universidad de Valencia. Autor: Juanjo Sáez",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Cartel.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_C.jpg",
         "label": ""
       },
       {
@@ -107,14 +101,15 @@
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/05/kimografico_B.jpg",
-        "label": ""
+        "label": "Guía de ejemplo en cuanto a organización"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_C.jpg",
+        "label": "Diagrama de flujo, parte del trabajo"
       }
     ],
     "videos": [],
-    "extras": [
-      "Guía de ejemplo en cuanto a organización",
-      "Diagrama de flujo, parte del trabajo"
-    ]
+    "extras": []
   },
   {
     "id": 4891,
@@ -281,36 +276,34 @@
     "imagenes": [
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v7.jpg",
-        "label": ""
+        "label": "Version monoclase"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v6.jpg",
-        "label": ""
+        "label": "Versión diferenciada por colores"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v5.jpg",
-        "label": ""
+        "label": "Versión diferenciada por iconos"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v4.jpg",
-        "label": ""
+        "label": "Versión con iconos más grandes"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Horario-Equilibirum-v3.jpg",
-        "label": ""
+        "label": "Version monoclase"
       }
     ],
     "videos": [],
-    "extras": [
-      "Diferentes modelos según las necesidades de cada momento"
-    ]
+    "extras": []
   },
   {
     "id": 2588,
     "date": "2016-03-18 13:31",
     "title": "Plantilla Decathlon",
     "cliente": "Decathlon Alfafar",
-    "descripcion": "Ilustración para la sala de empleados de Decathlon de Alfafar. En ella están incluidos todos los empleados, cada uno en su disciplina, aparte de elementos de la comarca de Valencia y relativos a los distintos campos que aborda el comercio",
+    "descripcion": "Ilustración para la sala de empleados de Decathlon de Alfafar. En ella están incluidos todos los empleados, cada uno en su disciplina, aparte de elementos de la comarca de Valencia y relativos a los distintos campos que aborda el comercio. En un primer momento el cliente quería algo tipo planeta, redondo. Pero tras un primer boceto inicial y la aportación de otras ideas, se optó por un diseño tipo isla, más sencillo, con unos acabados geométricos que le aportan claridad y modernidad.",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Decathlon_mockup.jpg",
@@ -373,8 +366,12 @@
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon-Valencia-scaled-150x75.jpg",
-        "label": ""
+        "ruta": "https://kimografico.com/wp-content/uploads/2016/03/IMG-20160528-WA0008-1024x638.jpg",
+        "label": "Fotografías del trabajo instalado en las oficinas"
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2016/03/IMG-20160528-WA0011.jpg",
+        "label": "Fotografías del trabajo instalado en las oficinas"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Decathlon-Valencia-monigotes-BIRDSEYE.jpg",
@@ -382,11 +379,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Detalles de la ilustración",
-      "En un primer momento el cliente quería algo tipo planeta, redondo. Pero tras un primer boceto inicial y la aportación de otras ideas, se optó por un diseño tipo isla, más sencillo, con unos acabados geométricos que le aportan claridad y modernidad.",
-      "Fotografías del trabajo instalado en las oficinas"
-    ]
+    "extras": []
   },
   {
     "id": 4736,
@@ -397,62 +390,51 @@
     "imagenes": [
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_Mockups_CARTEL_A3.jpg",
-        "label": ""
+        "label": "Cartelería sobre un curso de Trail"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_Mockup_Cartel-Nutricion-y-actividad-fisica.jpg",
-        "label": ""
+        "label": "MasterClass sobre nutrición"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_eq-8.jpg",
-        "label": ""
+        "label": "Lona de próxima apertura"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_eq-9.jpg",
-        "label": ""
+        "label": "Lona de próxima apertura"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_eq-7.jpg",
-        "label": ""
+        "label": "Lona felicitando la navidad"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-3.jpg",
-        "label": ""
+        "label": "Taller de masaje"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-2.jpg",
-        "label": ""
+        "label": "Taller de masaje"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-1.jpg",
-        "label": ""
+        "label": "Cartelería promocionando un evento deportivo"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-6.jpg",
-        "label": ""
+        "label": "Cartelería promocional de merchandising"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-5.jpg",
-        "label": ""
+        "label": "Cartelería promocional de merchandising"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2021/01/resized_EQ-4.jpg",
-        "label": ""
+        "label": "Cartelería promocional de la app"
       }
     ],
     "videos": [],
-    "extras": [
-      "MasterClass sobre nutrición",
-      "Lona de próxima apertura",
-      "Lona de próxima apertura",
-      "Lona felicitando la navidad",
-      "Taller de masaje",
-      "Taller de masaje",
-      "Cartelería promocionando un evento deportivo",
-      "Cartelería promocional de merchandising",
-      "Cartelería promocional de merchandising",
-      "Cartelería promocionando de la app"
-    ]
+    "extras": []
   },
   {
     "id": 3978,

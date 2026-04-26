@@ -2,9 +2,9 @@
   {
     "id": 4934,
     "date": "2021-05-28 14:15",
-    "title": "Tríptico Natural Climb",
+    "title": "Tríptico XXL para colegios",
     "cliente": "Natural Climb",
-    "descripcion": "Díptico XXL Natural Climb DÍPTICO GIGANTE, ENFOCADO A COLEGIOS",
+    "descripcion": "Díptico diseñado para el rocódromo Natural Climb, de Valencia. Está enfocado a clases para colegios, y proporciona información sobre el local, las actividades ofertadas, filosofía de la empresa y beneficios del deporte para los más pequeños. Tiene también fotografías de clases y un mapa de ubicación. Se hicieron varios bocetos, respetando el estilo gráfico del local, pero adaptando el mismo al lenguaje infantil requerido por el destinatario final. Se mimetizaron los colores del interior del rocódromo, dándole más protagonismo al naranja-amarillento de la zona de clases del mismo.",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-8.jpg",
@@ -44,10 +44,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Díptico diseñado para el rocódromo Natural Climb, de Valencia. Está enfocado a clases para colegios, y proporciona información sobre el local, las actividades ofertadas, filosofía de la empresa y beneficios del deporte para los más pequeños. Tiene también fotografías de clases y un mapa de ubicación.",
-      "Se hicieron varios bocetos, respetando el estilo gráfico del local, pero adaptando el mismo al lenguaje infantil requerido por el destinatario final. Se mimetizaron los colores del interior del rocódromo, dándole más protagonismo al naranja-amarillento de la zona de clases del mismo."
-    ]
+    "extras": []
   },
   {
     "id": 3831,
@@ -75,9 +72,9 @@
   {
     "id": 4604,
     "date": "2020-12-30 12:27",
-    "title": "Díptico CDM",
+    "title": "Díptico Ruddersail System",
     "cliente": "Mar Howi",
-    "descripcion": "Díptico Ruddersail System DÍPTICO PARA COLORDMAR",
+    "descripcion": "Díptico diseñado para la empresa Colordmar, promocionando un producto para convertir una tabla de paddel surf en una pequeña embarcación de vela.",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Dipticocolordmarmockup-4.jpg",
@@ -97,9 +94,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Díptico diseñado para la empresa Colordmar, promocionando un producto para convertir una tabla de paddel surf en una pequeña embarcación de vela."
-    ]
+    "extras": []
   },
   {
     "id": 4430,
@@ -210,7 +205,7 @@
     "date": "2020-07-08 14:34",
     "title": "Felicitación Ares",
     "cliente": "KIMO",
-    "descripcion": "Felicitación de cumpleaños",
+    "descripcion": "Felicitación de cumpleaños encargada por un grupo de escalada deportiva. El diseño del personaje corrió a cargo de @sarafcuesta_",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Petasextos-1.jpg",
@@ -218,9 +213,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Felicitación de cumpleaños encargada por un grupo de escalada deportiva. El diseño del personaje corrió a cargo de @sarafcuesta_"
-    ]
+    "extras": []
   },
   {
     "id": 3118,
@@ -331,74 +324,66 @@
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/1463648176-123x75.jpg",
-        "label": ""
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/1463648176-1024x627.jpg",
+        "label": "También se hizo un diseño para X-Banner (Display parecido al rollup pero no enrollable)"
       }
     ],
     "videos": [],
-    "extras": [
-      "Se han ido haciendo diversos diseños y adaptaciones conforme se iba mejorando la oferta a lo largo del tiempo.",
-      "También se hizo un diseño para X-Banner (Display parecido al rollup pero no enrollable)"
-    ]
+    "extras": []
   },
   {
     "id": 3857,
     "date": "2018-09-12 13:09",
     "title": "Currículums Varios",
     "cliente": "Varios",
-    "descripcion": "Currículum de un psicólogo",
+    "descripcion": "Currículums para distintas personas",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_JUANJO.jpg",
-        "label": ""
+        "label": "Currículum de un psicólogo"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_SA.jpg",
-        "label": ""
+        "label": "Currículum de un comercial de coches"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_RECO.jpg",
-        "label": ""
+        "label": "Currículum para un puesto de dependienta"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_RECONDITA.jpg",
-        "label": ""
+        "label": "Currículum de una ilustradora"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_CURRICULUM-RECONDITA_Página_1.jpg",
-        "label": ""
+        "label": "Currículum de una ilustradora"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_CURRICULUM-RECONDITA_Página_2.jpg",
-        "label": ""
+        "label": "Currículum de una ilustradora"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Ombu.jpg",
-        "label": ""
+        "label": "Currículum de un delineante"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Curriculum-Ombuena_Página_5.jpg",
-        "label": ""
+        "label": "Currículum de un delineante"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Curriculum-Ombuena_Página_6.jpg",
-        "label": ""
+        "label": "Currículum de un delineante"
       }
     ],
     "videos": [],
-    "extras": [
-      "Currículum de un comercial de coches",
-      "Currículum para un puesto de dependienta",
-      "Currículum de una ilustradora",
-      "Currículum de un delineante"
-    ]
+    "extras": []
   },
   {
     "id": 4796,
     "date": "2018-07-03 07:40",
     "title": "Casos de éxito EQUILIBRIUM",
     "cliente": "Equilibrium",
-    "descripcion": "Libreto Casos de Éxito",
+    "descripcion": "Libreto de 20 páginas con algunos de los casos de éxito del sistema de entrenamiento personal de Equilibrium PTS",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/1.jpg",
@@ -422,9 +407,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Libreto de 20 páginas con algunos de los casos de éxito del sistema de entrenamiento personal de Equilibrium PTS"
-    ]
+    "extras": []
   },
   {
     "id": 4897,
@@ -452,9 +435,9 @@
   {
     "id": 2447,
     "date": "2017-05-02 10:56",
-    "title": "Papelería Ida2",
+    "title": "Papelería corporativa para una imprenta digital",
     "cliente": "Ida2",
-    "descripcion": "Papelería corporativa para una imprenta digital",
+    "descripcion": "Las hojas de carta se imprimen a todo color, con el fondo a sangre, para dar una imagen moderna y diferenciarse de el resto de proveedores de las empresas a las que se dirige. Se hizo una versión en blanco y negro para abaratar costes en las ocasiones en las que así se considerara.",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Hoja-de-factura-scaled.jpg",
@@ -486,12 +469,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Las hojas de carta se imprimen a todo color, con el fondo a sangre, para dar una imagen moderna y diferenciarse de el resto de proveedores de las empresas a las que se dirige.",
-      "Se hizo una versión en blanco y negro para abaratar costes en las ocasiones en las que así se considerara.",
-      "Las hojas de carta se imprimen a todo color, con el fondo a sangre, para dar una imagen moderna y diferenciarse de el resto de proveedores de las empresas a las que se dirige.",
-      "Se hizo una versión en blanco y negro para abaratar costes en las ocasiones en las que así se considerara."
-    ]
+    "extras": []
   },
   {
     "id": 2748,
@@ -562,9 +540,9 @@
   {
     "id": 3886,
     "date": "2015-12-01 21:11",
-    "title": "Calendario L'Ermità 2016",
+    "title": "Calendario L'Ermità - 2016",
     "cliente": "L'Ermità Café Cultural",
-    "descripcion": "Calendario 2016 L'Ermità Café Cultural",
+    "descripcion": "Calendario hecho a raíz de las ilustraciones de los participantes en el Drink&Draw, iniciativa de ReyMono en la que un grupo abierto de ilustradores se reúne semanalmente a dibujar respecto a un tema en concreto. Ilustradores: Manuel Ros Pablo Valls Natu The Rafus Diego Monllau Miguel Guerra Jaume Palop Runninmen Isaías Escudero ReyMono Migue Dobon",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/Calendario-E_2016_0.jpg",
@@ -596,17 +574,14 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Calendario hecho a raíz de las ilustraciones de los participantes en el Drink&Draw, iniciativa de ReyMono en la que un grupo abierto de ilustradores se reúne semanalmente a dibujar respecto a un tema en concreto.",
-      "Ilustradores: Manuel Ros Pablo Valls Natu The Rafus Diego Monllau Miguel Guerra Jaume Palop Runninmen Isaías Escudero ReyMono Migue Dobon"
-    ]
+    "extras": []
   },
   {
     "id": 2826,
     "date": "2015-05-04 09:36",
     "title": "Tríptico Catedral de Albacete",
     "cliente": "Pilar Belmonte",
-    "descripcion": "Tríptico para la Catedral de Albacete INAUGURACIÓN DEL NUEVO ROSETÓN",
+    "descripcion": "En 2015, la artista Pilar Belmonte realizó una vidriera para el rosetón principal de la catedral de Albacete, de un diámetro de 4,40m. Para la inauguración, se diseñó este díptico de formato cuadrado con explicaciones del encargo, el proceso de fabricación y de montaje, fotografías del antes y el después, y la historia de la catedral. Además del diseño, se utilizó tecnología de fusión de fotografías en HDR para retratar la vidriera en todo su esplendor, manteniendo visible la penumbra del interior del edificio religioso.",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/TriptRos-6.jpg",
@@ -626,9 +601,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "En 2015, la artista Pilar Belmonte realizó una vidriera para el rosetón principal de la catedral de Albacete, de un diámetro de 4,40m. Para la inauguración, se diseñó este díptico de formato cuadrado con explicaciones del encargo, el proceso de fabricación y de montaje, fotografías del antes y el después, y la historia de la catedral. Además del diseño, se utilizó tecnología de fusión de fotografías en HDR para retratar la vidriera en todo su esplendor, manteniendo visible la penumbra del interior del edificio religioso."
-    ]
+    "extras": []
   },
   {
     "id": 3125,
@@ -757,9 +730,9 @@
   {
     "id": 2824,
     "date": "2013-12-15 09:49",
-    "title": "Políptico Antología Pilar Belmonte",
+    "title": "Políptico de 5 palas Exposición antológica",
     "cliente": "Pilar Belmonte",
-    "descripcion": "Políptico de 5 palas Exposición antológica de Pilar Belmonte",
+    "descripcion": "Se realizó un folleto que recorre toda la carrera de la artista, dividida por décadas, de forma amena y con ejemplos de cada etapa pictórica. Se eligió un formato diferente al usual, adaptado a los tamaños máximos de hoja de imprenta, para que quedara un brochure original y práctico",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5dtco-0.jpg",
@@ -779,9 +752,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Se realizó un folleto que recorre toda la carrera de la artista, dividida por décadas, de forma amena y con ejemplos de cada etapa pictórica. Se eligió un formato diferente al usual, adaptado a los tamaños máximos de hoja de imprenta, para que quedara un brochure original y práctico"
-    ]
+    "extras": []
   },
   {
     "id": 3914,
@@ -891,9 +862,9 @@
   {
     "id": 2829,
     "date": "2012-06-13 09:25",
-    "title": "Díptico Tratamientos frutales",
+    "title": "Guía de Tratamientos frutales",
     "cliente": "SAPEC",
-    "descripcion": "Guía de tratamientos frutales DÍPTICO PARA SAPEC AGRO",
+    "descripcion": "Díptico diseñado para la empresa de productos para el campo SAPEC AGRO. En el se recogen distintos productos específicos para árboles frutales, con una explicación de sus principios activos y características principales, de una forma muy visual y atractiva.",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Sapec-1.jpg",
@@ -909,16 +880,14 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Díptico diseñado para la empresa de productos para el campo SAPEC AGRO. En el se recogen distintos productos específicos para árboles frutales, con una explicación de sus principios activos y características principales, de una forma muy visual y atractiva."
-    ]
+    "extras": []
   },
   {
     "id": 2822,
     "date": "2012-02-12 09:48",
     "title": "Díptico Guillermo del Toro",
     "cliente": "La Brigada Gráfica",
-    "descripcion": "Díptico para Guillermo del Toro PROYECTO DOCUMENTAL",
+    "descripcion": "Se realizó un folleto explicativo de un proyecto de documental sobre su carrera, enfocado principalmente en su metodología y su imaginación. El recurso que se utilizó fue su «yo» actual diseccionando la mente de su «yo» más joven, analizando su proceso desde un punto de vista más maduro. El proyecto se realizó conjuntamente en La Brigada Gráfica, con ilustración de Recóndita Rick",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/LBG-1.jpg",
@@ -934,16 +903,14 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Se realizó un folleto explicativo de un proyecto de documental sobre su carrera, enfocado principalmente en su metodología y su imaginación. El recurso que se utilizó fue su «yo» actual diseccionando la mente de su «yo» más joven, analizando su proceso desde un punto de vista más maduro. El proyecto se realizó conjuntamente en La Brigada Gráfica, con ilustración de Recóndita Rick"
-    ]
+    "extras": []
   },
   {
     "id": 2840,
     "date": "2011-02-14 10:04",
     "title": "Invitación Horizontes Cercanos e Infinitos",
     "cliente": "Pilar Belmonte",
-    "descripcion": "Invitación Horizontes Cercanos e Infinitos EXPOSICIÓN DE PILAR BELMONTE",
+    "descripcion": "Invitación para una exposición en el Museo Municipal de Albacete",
     "imagenes": [
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Invita-4.jpg",
@@ -955,9 +922,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Invitación para una exposición en el Museo Municipal de Albacete"
-    ]
+    "extras": []
   },
   {
     "id": 2719,

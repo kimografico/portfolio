@@ -28,27 +28,22 @@
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=pgSh4HzMBrE",
-        "label": ""
+        "label": "Logo Completo"
       },
       {
         "ruta": "https://www.youtube.com/watch?v=SDj-oGSF6k4",
-        "label": ""
+        "label": "Anagrama"
       },
       {
         "ruta": "https://youtu.be/6HpQ_DPxFqc",
-        "label": ""
+        "label": "Logo Splash"
       },
       {
         "ruta": "https://youtu.be/-XgtI6ep5FE",
-        "label": ""
+        "label": "Logo Agua"
       }
     ],
-    "extras": [
-      "Logo Completo",
-      "Anagrama",
-      "Logo Splash",
-      "Logo Agua"
-    ]
+    "extras": []
   },
   {
     "id": 4026,
@@ -75,17 +70,14 @@
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=V0YvcFsMlqU",
-        "label": ""
+        "label": "NEÓN – Primer Teaser"
       },
       {
         "ruta": "https://www.youtube.com/watch?v=9fybH_B-RXU",
-        "label": ""
+        "label": "NEÓN – Segundo Teaser"
       }
     ],
-    "extras": [
-      "NEÓN – Primer Teaser",
-      "NEÓN – Segundo Teaser"
-    ]
+    "extras": []
   },
   {
     "id": 3948,
@@ -97,17 +89,14 @@
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=RDnTpwjAaZ4&amp;feature=youtu.be",
-        "label": ""
+        "label": "Contracciones Sonoras – Versión oscura"
       },
       {
         "ruta": "https://www.youtube.com/watch?v=402-5JAj024",
-        "label": ""
+        "label": "Contracciones Sonoras – Versión clara (Elegida por el cliente)"
       }
     ],
-    "extras": [
-      "Contracciones Sonoras – Versión oscura",
-      "Contracciones Sonoras – Versión clara (Elegida por el cliente)"
-    ]
+    "extras": []
   },
   {
     "id": 3633,
@@ -354,10 +343,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "ALGUNOS EJEMPLOS DE BANNERS COMERCIALES",
-      "ALGUNOS EJEMPLOS DE IMÁGENES PARA REDES SOCIALES"
-    ]
+    "extras": []
   },
   {
     "id": 3242,
@@ -400,16 +386,14 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Entradillas animadas – Logo Reveal hechos en After Effects mediante templates adaptados"
-    ]
+    "extras": []
   },
   {
     "id": 3057,
     "date": "2020-04-05 19:45",
     "title": "Entradillas Recóndita",
     "cliente": "Recóndita Ilustración",
-    "descripcion": "Recóndita Logo animado para entradillas de video",
+    "descripcion": "Recóndita Logo animado para entradillas de video. Logo Reveal hecho en After Effects mediante template adaptado",
     "imagenes": [],
     "videos": [
       {
@@ -421,16 +405,14 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Entradillas animadas – Logo Reveal hecho en After Effects mediante template adaptado"
-    ]
+    "extras": []
   },
   {
     "id": 3052,
     "date": "2020-04-03 19:33",
     "title": "Entradilla Lidia Aparicio",
     "cliente": "Lidia Aparicio",
-    "descripcion": "Lidia Aparicio Logo animado para entradillas de video",
+    "descripcion": "Lidia Aparicio Logo animado para entradillas de video. Logo Reveal hecho en After Effects mediante template adaptado",
     "imagenes": [],
     "videos": [
       {
@@ -438,16 +420,14 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Entradilla animada – Logo Reveal hecho en After Effects mediante template adaptado"
-    ]
+    "extras": []
   },
   {
     "id": 3065,
     "date": "2020-04-02 20:21",
     "title": "Entradillas Kimográfico",
     "cliente": "KIMO",
-    "descripcion": "Kimográfico Logo animado para entradillas de video",
+    "descripcion": "Kimográfico Logo animado para entradillas de video. Logo Reveal hecho en After Effects mediante template adaptado",
     "imagenes": [],
     "videos": [
       {
@@ -519,9 +499,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Entradillas animadas – Logo Reveal hechos en After Effects mediante templates adaptados"
-    ]
+    "extras": []
   },
   {
     "id": 2432,
@@ -533,17 +511,14 @@
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=taCo0YxCE7U",
-        "label": ""
+        "label": "Video infografía para Sapec Agro, explicando de forma amena las características del producto 2 de Enero de 2018"
       },
       {
         "ruta": "https://www.youtube.com/watch?v=KB2M5_H6Efs&amp;t=13s",
-        "label": ""
+        "label": "Versión actualizada al cambio de nombre/imagen de la empresa a Ascenza 5 de Noviembre de 2019"
       }
     ],
-    "extras": [
-      "Estaca – Video infografía para Sapec Agro, explicando de forma amena las características del producto 2 de Enero de 2018",
-      "Estaca – Versión actualizada al cambio de nombre/imagen de la empresa a Ascenza 5 de Noviembre de 2019"
-    ]
+    "extras": []
   },
   {
     "id": 3731,
@@ -580,17 +555,14 @@
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=jaRvV274Vsg",
-        "label": ""
+        "label": "Versión original para soportes digitales"
       },
       {
         "ruta": "https://www.youtube.com/watch?v=XsLxSETAuJA",
-        "label": ""
+        "label": "Versión cuadrada para redes sociales"
       }
     ],
-    "extras": [
-      "Versión original para soportes digitales",
-      "Versión cuadrada para redes sociales"
-    ]
+    "extras": []
   },
   {
     "id": 3713,
@@ -602,27 +574,22 @@
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=oOWYo4txBpI",
-        "label": ""
+        "label": "Prueba de juego de plataformas con colores planos"
       },
       {
         "ruta": "https://www.youtube.com/watch?v=VmJjW96Jwm4",
-        "label": ""
+        "label": "Simple prueba de movimientos (dibujos de ReyMono)"
       },
       {
         "ruta": "https://www.youtube.com/watch?v=FGfJyvHS7RM",
-        "label": ""
+        "label": "Prueba de juego de plataformas de temática vikinga"
       },
       {
         "ruta": "https://www.youtube.com/watch?v=TZDBH2J5bCQ",
-        "label": ""
+        "label": "Prueba de juego infinito"
       }
     ],
-    "extras": [
-      "Prueba de juego de plataformas con colores planos",
-      "Simple prueba de movimientos (dibujos de ReyMono)",
-      "Prueba de juego de plataformas de temática vikinga",
-      "Prueba de juego infinito"
-    ]
+    "extras": []
   },
   {
     "id": 2429,
@@ -634,12 +601,10 @@
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=q1LzPf4hqsA",
-        "label": ""
+        "label": "Videoentrevista a un agricultor sobre los beneficios de utilizar el producto"
       }
     ],
-    "extras": [
-      "Missylk – Videoentrevista a un agricultor sobre los beneficios de utilizar el producto"
-    ]
+    "extras": []
   },
   {
     "id": 4373,
@@ -654,30 +619,26 @@
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-1.jpg",
-        "label": ""
+        "label": "Los newsletter te envían de forma periódica, con consejos e instrucciones para realizar un seguimiento personalizado del cliente"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-2.jpg",
-        "label": ""
+        "label": "Se realizaron un total de 91 módulos diferentes para conformar los newsletters"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-3.jpg",
-        "label": ""
+        "label": "Estos se combinan en 13 envíos, coincidiendo con las 13 semanas que dura el entrenamiento"
       }
     ],
     "videos": [],
-    "extras": [
-      "Los newsletter te envían de forma periódica, con consejos e instrucciones para realizar un seguimiento personalizado del cliente",
-      "Se realizaron un total de 91 módulos diferentes para conformar los newsletters",
-      "Estos se combinan en 13 envíos, coincidiendo con las 13 semanas que dura el entrenamiento"
-    ]
+    "extras": []
   },
   {
     "id": 3727,
     "date": "2018-05-06 21:03",
     "title": "Entradilla PierdeLoss90",
     "cliente": "PierdeLoss90",
-    "descripcion": "PierdeLoss90 Logo animado para entradillas de video",
+    "descripcion": "PierdeLoss90 Logo animado para entradillas de video. Logo Reveal hecho en After Effects mediante template adaptado",
     "imagenes": [],
     "videos": [
       {
@@ -685,9 +646,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Entradilla animada – Logo Reveal hecho en After Effects mediante template adaptado"
-    ]
+    "extras": []
   },
   {
     "id": 2425,
@@ -699,12 +658,10 @@
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=QEscUC-fJmI",
-        "label": ""
+        "label": "Infografía animada explicando las características y ventajas del herbicida Register 25WG"
       }
     ],
-    "extras": [
-      "Register 25WG – Infografía animada explicando las características y ventajas del herbicida Register 25WG"
-    ]
+    "extras": []
   },
   {
     "id": 3738,
@@ -771,17 +728,14 @@
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=MnCwaZAwdOI",
-        "label": ""
+        "label": "Diseñada en Premiere Pro"
       },
       {
         "ruta": "https://www.youtube.com/watch?v=mZImbfAUfS8",
-        "label": ""
+        "label": "Diseñada en After Effects"
       }
     ],
-    "extras": [
-      "2013/2014 – Felicitación de Navidad para Sapec Agro. Diseñada en Premiere Pro",
-      "2014/2015 – Felicitación de Navidad para Sapec Agro. Diseñada en After Effects"
-    ]
+    "extras": []
   },
   {
     "id": 2519,
@@ -864,17 +818,14 @@
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=Xz_IjiIZnPg",
-        "label": ""
+        "label": "Digital vs. Offset – Diferencias entre las dos técnicas de impresión, y en que casos es mejor o peor cada una de ellas"
       },
       {
         "ruta": "https://www.youtube.com/watch?v=CqW7Zj_pQss",
-        "label": ""
+        "label": "Preparación de artes finales – Consideraciones a tener en cuenta a la hora de preparar un arte final correctamente para imprenta"
       }
     ],
-    "extras": [
-      "Digital vs. Offset – Diferencias entre las dos técnicas de impresión, y en que casos es mejor o peor cada una de ellas",
-      "Preparación de artes finales – Consideraciones a tener en cuenta a la hora de preparar un arte final correctamente para imprenta"
-    ]
+    "extras": []
   },
   {
     "id": 3098,
@@ -886,11 +837,9 @@
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=4P0bLjXrjPc",
-        "label": ""
+        "label": "Digital vs. Offset – Version en Español"
       }
     ],
-    "extras": [
-      "Digital vs. Offset – Version en Español"
-    ]
+    "extras": []
   }
 ]

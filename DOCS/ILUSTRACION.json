@@ -477,11 +477,11 @@
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-32.jpg",
-        "label": ""
+        "label": "Línea de personajes para un videojuego"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Monstruetes-27.jpg",
-        "label": ""
+        "label": "Cartel conmemorativo por las víctimas del tsunami de Japón del 11 de marzo de 2011"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2011/02/Monstruete-Spray.jpg",
@@ -493,9 +493,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "También se realizó un cartel conmemorativo por las víctimas del tsunami de Japón del 11 de marzo de 2011, y una línea de personajes para un videojuego"
-    ]
+    "extras": []
   },
   {
     "id": 1244,

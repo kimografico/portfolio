@@ -264,9 +264,9 @@
   {
     "id": 4807,
     "date": "2019-10-03 07:46",
-    "title": "Contenedores de Reciclaje",
+    "title": "Contenedores soterrados de Castalla",
     "cliente": "Eduard Farran",
-    "descripcion": "Contenedores soterrados de Castalla",
+    "descripcion": "Señalización de los mismos con información sobre su utilización, ejemplos de residuos que acepta cada contenedor, información municipal y una indiana con iconos representando distintos tipos de elementos que se pueden tirar en cada uno",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/CONTENEDORES.jpg",
@@ -298,9 +298,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Señalización de los mismos con información sobre su utilización, ejemplos de residuos que acepta cada contenedor, información municipal y una indiana con iconos representando distintos tipos de elementos que se pueden tirar en cada uno"
-    ]
+    "extras": []
   },
   {
     "id": 2677,
@@ -506,9 +504,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Diferentes bocetos"
-    ]
+    "extras": []
   },
   {
     "id": 2666,
@@ -546,7 +542,7 @@
     "date": "2012-10-30 17:22",
     "title": "Baraja LBG",
     "cliente": "La Brigada Gráfica",
-    "descripcion": "Baraja de cartas promocional para La Brigada Gráfica",
+    "descripcion": "Baraja de cartas promocional para La Brigada Gráfica. La temática de cada palo tiene que ver con los gustos y personalidad de cada integrante del estudio de arte que es La Brigada Gráfica",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/30-10-2012.jpg",
@@ -558,25 +554,23 @@
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/01/4-3-scaled.jpg",
-        "label": ""
+        "label": "Baraja completa"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Cartas2.jpg",
-        "label": ""
+        "label": "Figuras"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Cartas.jpg",
-        "label": ""
+        "label": "Ases"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/3-4.jpg",
-        "label": ""
+        "label": "Desplegado de la caja"
       }
     ],
     "videos": [],
-    "extras": [
-      "Desplegado de la caja y algunas de las figuras de la baraja. La temática de cada palo tiene que ver con los gustos y personalidad de cada integrante del estudio de arte que es La Brigada Gráfica"
-    ]
+    "extras": []
   },
   {
     "id": 3332,
