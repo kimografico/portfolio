@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { IconCode } from '../../components/iconos';
+import { IconCode, IconReact, IconWP } from '../../components/iconos';
 import './Developer.css';
 
 const CATEGORIES = [
@@ -7,7 +7,7 @@ const CATEGORIES = [
     key: 'wordpress',
     title: 'WordPress',
     description: 'Webs con CMS WordPress: catálogos, tiendas online y portfolios.',
-    icon: IconCode,
+    icon: IconWP,
   },
   {
     key: 'vanilla',
@@ -19,7 +19,7 @@ const CATEGORIES = [
     key: 'frameworks',
     title: 'Frameworks',
     description: 'Proyectos con React, Vue u otros frameworks modernos.',
-    icon: IconCode,
+    icon: IconReact,
   },
 ];
 

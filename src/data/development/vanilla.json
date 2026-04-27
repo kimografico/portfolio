@@ -61,6 +61,51 @@
     "extras": []
   },
   {
+    "id": 1564,
+    "date": "2015-12-13 11:45",
+    "title": "Museo nacional de cerámica",
+    "cliente": "Pilar Belmonte",
+    "descripcion": "Web creada para el Museo de Cerámica Nacional de Chinchilla de Montearagón. Esta sencilla web consiste en un inicio, breve historia del museo, Información de contacto y localización, una galería con lightbox e información de venta de un libro-catálogo. Paralelamente también se realizó un programa de ordenador para catalogar y recopilar información sobre las más de 2000 piezas cerámicas de la colección.",
+    "stack": "HTML, CSS y JAVASCRIPT",
+    "imagenes": [
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0005_Fondo.jpg",
+        "label": "Menú Inicio – Entrada a la web y breve descripción del museo y sus funciones"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0002_Capa-3.jpg",
+        "label": "Galería – Recopilación de imágenes del museo"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0004_Capa-1.jpg",
+        "label": "Historia – Breve texto resumiendo la historia del museo, su arquitectura y su contenido"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0001_Capa-4.jpg",
+        "label": "Lightbox – Muestra cada imagen en grande"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0003_Capa-2.jpg",
+        "label": "Contacto – Localización, horarios, precio y contacto, así como un mapa de los alrededores"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/Screenshots_0000_Capa-5.jpg",
+        "label": "Catálogo – Información para la venta del catálogo de piezas del museo"
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/monitorceramica.jpg",
+        "label": ""
+      }
+    ],
+    "videos": [
+      {
+        "ruta": "https://youtu.be/3nchX8okeME",
+        "label": ""
+      }
+    ],
+    "extras": []
+  },
+  {
     "id": 1507,
     "date": "2016-01-11 13:39",
     "title": "Pilar Belmonte 2",
@@ -523,7 +568,7 @@
     "date": "2011-12-11 13:26",
     "title": "Díez Caudet",
     "cliente": "Díez Caudet",
-    "descripcion": "Web creada para una empresa de construcción. Funciona como tarjeta de presentación, principalmente para tener presencia on-line como empresa y facilitar al cliente potencial encontrarla vía internet. La web consta de los apartados básicos (Quiénes sómos, Qué haacemos y contacto) así como de una galería de imágenes de sus proyectos más destacados.",
+    "descripcion": "Web creada para una empresa de construcción. Funciona como tarjeta de presentación, principalmente para tener presencia on-line como empresa y facilitar al cliente potencial encontrarla vía internet. La web consta de los apartados básicos (Quiénes sómos, Qué hacemos y contacto) así como de una galería de imágenes de sus proyectos más destacados.",
     "stack": "HTML, CSS y JAVASCRIPT",
     "imagenes": [
       {

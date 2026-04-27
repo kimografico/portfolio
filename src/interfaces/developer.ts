@@ -14,7 +14,7 @@ export interface WordpressProject {
   title: string;
   cliente: string;
   descripcion: string;
-  stack: string;
+  stack: string[];
   imagenes: DevImage[];
   videos: DevVideo[];
   extras: string[];
