@@ -41,6 +41,8 @@ export default function DeveloperFrameworks() {
         dataId="developer-frameworks-hero"
         color="green"
         opacity={0.1}
+        backLink="/dev"
+        backLinkText="Volver a Desarrollo"
       />
 
       {/* Grid de proyectos o estado vacío */}

@@ -43,6 +43,8 @@ export default function DeveloperVanilla() {
         color="yellow"
         opacity={0.15}
         dataId="developer-vanilla-hero"
+        backLink="/dev"
+        backLinkText="Volver a Desarrollo"
       />
 
       {/* Grid de proyectos o estado vacío */}

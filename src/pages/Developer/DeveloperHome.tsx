@@ -1,5 +1,6 @@
 import { IconCode, IconReact, IconWP } from '../../components/iconos';
 import { CategoryCard } from '../../components/ui/CategoryCard';
+import CategoryHero from '../../components/ui/CategoryHero';
 
 const CATEGORIES = [
   {
@@ -25,18 +26,11 @@ const CATEGORIES = [
 export default function DeveloperHome() {
   return (
     <div className="min-h-screen flex flex-col" data-id="developer-home">
-      {/* Hero */}
-      <section
-        className="bg-gradient-to-b from-bg to-surface border-b border-border py-16 px-4 text-center"
-        data-id="developer-hero"
-      >
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-ink">Desarrollo Web</h1>
-        <p className="max-w-2xl mx-auto text-lg text-muted mb-6">
-          Proyectos de desarrollo web: WordPress, JavaScript vanilla y frameworks modernos. Cada
-          sección muestra ejemplos reales con capturas, tecnologías utilizadas y descripción del
-          proyecto.
-        </p>
-      </section>
+      <CategoryHero
+        title="Desarrollo Web"
+        description="Proyectos de desarrollo web: WordPress, JavaScript vanilla y frameworks modernos. Cada sección muestra ejemplos reales con capturas, tecnologías utilizadas y descripción del proyecto."
+        dataId="developer-hero"
+      />
 
       {/* Categorías */}
       <main className="flex-1 max-w-5xl mx-auto w-full px-4 py-12" data-id="developer-categories">

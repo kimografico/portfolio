@@ -9,32 +9,32 @@ const UI_IMG_PATH = import.meta.env.VITE_UI_IMG_PATH || '/images/ui';
 /**
  * CategoryHero
  * Componente mejorado y reutilizable para el hero/header de secciones de categorías.
- * Muestra título, descripción, icono y enlace de retroceso con imagen de fondo opcional.
+ * Muestra título, descripción, icono (opcional) y enlace de retroceso (opcional) con imagen de fondo.
+ * Perfectamente adaptable para secciones principales o subsecciones.
  *
  * Mejoras visuales:
- * - Icono representativo de la categoría (con animación float)
+ * - Icono representativo (opcional, con animación float)
  * - Imagen de fondo parametrizada con offset vertical aleatorio
  * - Colores y overlay parametrizables
- * - Gradiente sofisticado
- * - Mejor spacing y tipografía
- * - Overlay oscuro controlado para legibilidad
+ * - Enlace de retroceso opcional
+ * - Overlay con animación cíclica suave
  */
 interface CategoryHeroProps {
   /** Título principal de la sección */
   title: string;
   /** Descripción o subtitle */
   description: string;
-  /** Icono representativo de la categoría */
+  /** Icono representativo de la categoría (opcional) */
   icon?: React.FC<IconProps>;
   /** URL de imagen de fondo (opcional, usa fallback si no se proporciona) */
   backgroundImage?: string;
-  /** Color del overlay (--color-bg) */
+  /** Color del overlay (default: --color-bg) */
   color?: string;
   /** Opacidad del overlay oscuro (0-1, default: 0.25) */
   opacity?: number;
-  /** Ruta a la que vuelve el enlace de retroceso (default: "/dev") */
+  /** Ruta a la que vuelve el enlace de retroceso (opcional, si no se proporciona no se muestra) */
   backLink?: string;
-  /** Texto del enlace de retroceso (default: "← Desarrollo web") */
+  /** Texto del enlace de retroceso (default: "← Atrás") */
   backLinkText?: string;
   /** ID para atributos data-id (tests/debugging) */
   dataId?: string;
@@ -47,8 +47,8 @@ export default function CategoryHero({
   backgroundImage,
   color = 'var(--color-bg)',
   opacity = 0.25,
-  backLink = '/dev',
-  backLinkText = '← Desarrollo web',
+  backLink,
+  backLinkText = 'Atrás',
   dataId = 'category-hero',
 }: CategoryHeroProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -104,14 +104,6 @@ export default function CategoryHero({
 
       {/* Contenido con z-index para aparecer sobre decoración */}
       <div className="relative z-10">
-        {/* Enlace de retroceso */}
-        <Link
-          to={backLink}
-          className="text-sm text-muted hover:text-ink transition-colors mb-8 inline-block"
-        >
-          {backLinkText}
-        </Link>
-
         {/* Icono + Título centrados */}
         <div className="flex items-center justify-center gap-4 mb-6">
           {Icon && (
@@ -124,6 +116,28 @@ export default function CategoryHero({
 
         {/* Descripción con mejor tipografía */}
         <p className="max-w-2xl mx-auto text-lg text-muted mb-8 leading-relaxed">{description}</p>
+
+        {/* Enlace de retroceso (opcional) - Debajo de la descripción con flecha */}
+        {backLink && (
+          <Link
+            to={backLink}
+            className="inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-4 h-4"
+            >
+              <path d="M15 19l-7-7 7-7" />
+            </svg>
+            {backLinkText}
+          </Link>
+        )}
       </div>
     </section>
   );

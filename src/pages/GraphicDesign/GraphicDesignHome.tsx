@@ -7,6 +7,7 @@ import {
   IconBottle,
 } from '../../components/iconos';
 import { CategoryCard } from '../../components/ui/CategoryCard';
+import CategoryHero from '../../components/ui/CategoryHero';
 
 const CATEGORIES = [
   {
@@ -50,18 +51,11 @@ const CATEGORIES = [
 export default function GraphicDesignHome() {
   return (
     <div className="min-h-screen flex flex-col" data-id="graphic-design-home">
-      {/* Hero */}
-      <section
-        className="bg-gradient-to-b from-bg to-surface border-b border-border py-16 px-4 text-center"
-        data-id="graphic-design-hero"
-      >
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-ink">Diseño Gráfico</h1>
-        <p className="max-w-2xl mx-auto text-lg text-muted mb-6">
-          Selecciona una categoría para explorar proyectos de diseño gráfico: branding, papelería,
-          cartelería, multimedia, ilustración, packaging y más. Cada sección muestra ejemplos
-          reales, procesos y resultados.
-        </p>
-      </section>
+      <CategoryHero
+        title="Diseño Gráfico"
+        description="Selecciona una categoría para explorar proyectos de diseño gráfico: branding, papelería, cartelería, multimedia, ilustración, packaging y más. Cada sección muestra ejemplos reales, procesos y resultados."
+        dataId="graphic-design-hero"
+      />
 
       {/* Categorías en rejilla */}
       <main

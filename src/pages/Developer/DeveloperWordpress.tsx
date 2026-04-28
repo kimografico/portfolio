@@ -53,6 +53,8 @@ export default function DeveloperWordpress() {
         dataId="developer-wordpress-hero"
         color="blue"
         opacity={0.075}
+        backLink="/dev"
+        backLinkText="Volver a Desarrollo"
       />
 
       {/* Grid de proyectos o estado vacío */}
