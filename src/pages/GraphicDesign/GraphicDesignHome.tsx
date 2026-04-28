@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import {
   IconPlant,
   IconFlyer,
@@ -7,7 +6,7 @@ import {
   IconBox,
   IconImage,
 } from '../../components/iconos';
-import './GraphicDesign.css';
+import { CategoryCard } from '../../components/ui/CategoryCard';
 
 const CATEGORIES = [
   {
@@ -74,22 +73,14 @@ export default function GraphicDesignHome() {
           data-id="categories-grid"
         >
           {CATEGORIES.map((category) => (
-            <Link
-              to={`/graphic-design/${category.key}`}
+            <CategoryCard
               key={category.key}
-              className="group flex flex-col items-center p-8 bg-bg rounded-xl transition-shadow hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary"
-            >
-              <span
-                className="text-6xl mb-4 transition-transform duration-300 ease-out group-hover:scale-150 group-hover:-rotate-6 group-hover:text-red-600"
-                aria-hidden="true"
-              >
-                <category.icon size={96} strokeWidth={0.75} className="icono-categoria" />
-              </span>
-              <h2 className="text-xl font-semibold text-ink mb-2 group-hover:text-primary transition-colors">
-                {category.title}
-              </h2>
-              <p className="text-sm text-muted text-center">{category.description}</p>
-            </Link>
+              icon={category.icon}
+              title={category.title}
+              description={category.description}
+              to={`/graphic-design/${category.key}`}
+              hoverColor="#dc2626"
+            />
           ))}
         </div>
       </main>

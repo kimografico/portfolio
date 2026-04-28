@@ -1,14 +1,5 @@
 /* Developer.css: estilos para la sección de desarrollo web */
 
-/* Icono de categoría con animación de hover */
-.icono-dev {
-  @apply transition-colors duration-300 text-muted;
-}
-
-.group:hover .icono-dev {
-  @apply stroke-blue-500;
-}
-
 /* Thumbnail de tarjeta de proyecto */
 .wp-card-image {
   aspect-ratio: 16 / 9;
