@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import vanillaData from '../../data/development/vanilla.json';
 import type { WebProject } from '../../interfaces/developer';
 import { ProjectCard } from '../../components/ui/ProjectCard';
+import EmptyState from '../../components/ui/EmptyState';
 import './Developer.css';
 
 // Importar iconos relevantes
@@ -56,19 +57,10 @@ export default function DeveloperVanilla() {
       {/* Grid de proyectos o estado vacío */}
       <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-12" data-id="vanilla-projects-main">
         {projects.length === 0 ? (
-          <div
-            className="flex flex-col items-center justify-center py-24 text-center"
-            data-id="vanilla-empty"
-          >
-            <p className="text-5xl mb-6" aria-hidden="true">
-              🚧
-            </p>
-            <p className="text-lg font-semibold text-ink mb-2">Próximamente</p>
-            <p className="text-sm text-muted max-w-sm">
-              Esta sección está en preparación. Pronto encontrarás aquí los proyectos desarrollados
-              en Vanilla JS.
-            </p>
-          </div>
+          <EmptyState
+            description="Esta sección está en preparación. Pronto encontrarás aquí los proyectos desarrollados en Vanilla JS."
+            dataId="vanilla-empty"
+          />
         ) : (
           <div
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"

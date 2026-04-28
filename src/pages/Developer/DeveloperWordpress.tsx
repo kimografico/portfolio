@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import wordpressData from '../../data/development/wordpress.json';
 import type { WebProject } from '../../interfaces/developer';
 import { ProjectCard } from '../../components/ui/ProjectCard';
+import EmptyState from '../../components/ui/EmptyState';
 import './Developer.css';
 
 // Importar iconos relevantes
@@ -70,19 +71,10 @@ export default function DeveloperWordpress() {
         data-id="wordpress-projects-main"
       >
         {projects.length === 0 ? (
-          <div
-            className="flex flex-col items-center justify-center py-24 text-center"
-            data-id="wordpress-empty"
-          >
-            <p className="text-5xl mb-6" aria-hidden="true">
-              🚧
-            </p>
-            <p className="text-lg font-semibold text-ink mb-2">Próximamente</p>
-            <p className="text-sm text-muted max-w-sm">
-              Esta sección está en preparación. Pronto encontrarás aquí los proyectos desarrollados
-              con WordPress.
-            </p>
-          </div>
+          <EmptyState
+            description="Esta sección está en preparación. Pronto encontrarás aquí los proyectos desarrollados con WordPress."
+            dataId="wordpress-empty"
+          />
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" data-id="wp-grid">
             {projects.map((project) => (
