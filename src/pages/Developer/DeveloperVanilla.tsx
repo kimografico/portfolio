@@ -39,6 +39,9 @@ export default function DeveloperVanilla() {
       <CategoryHero
         title="Vanilla JS"
         description="Webs desarrolladas con HTML, CSS y JavaScript puro, sin depender de frameworks ni CMS."
+        icon={IconCode}
+        color="yellow"
+        opacity={0.15}
         dataId="developer-vanilla-hero"
       />
 

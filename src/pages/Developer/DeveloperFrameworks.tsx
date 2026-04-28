@@ -37,7 +37,10 @@ export default function DeveloperFrameworks() {
       <CategoryHero
         title="Frameworks"
         description="Proyectos desarrollados con frameworks modernos: React, Vue y otros."
+        icon={LogoReact}
         dataId="developer-frameworks-hero"
+        color="green"
+        opacity={0.1}
       />
 
       {/* Grid de proyectos o estado vacío */}

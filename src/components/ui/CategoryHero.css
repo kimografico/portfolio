@@ -1,0 +1,45 @@
+/* CategoryHero Styles */
+
+/* Imagen de fondo */
+.category-hero-background {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+/* Animación cíclica del overlay */
+@keyframes pulseOverlay {
+  0%,
+  100% {
+    opacity: 0.025;
+  }
+  50% {
+    opacity: var(--overlay-max-opacity);
+  }
+}
+
+/* Overlay oscuro para legibilidad */
+.category-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  animation: pulseOverlay 6s ease-in-out infinite;
+}
+
+/* Animación float para el icono */
+.category-hero-icon {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}

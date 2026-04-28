@@ -49,7 +49,10 @@ export default function DeveloperWordpress() {
       <CategoryHero
         title="WordPress"
         description="Webs desarrolladas con CMS WordPress: catálogos, tiendas online, portfolios y webs corporativas."
+        icon={LogoWordpress}
         dataId="developer-wordpress-hero"
+        color="blue"
+        opacity={0.075}
       />
 
       {/* Grid de proyectos o estado vacío */}
