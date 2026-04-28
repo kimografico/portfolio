@@ -2,11 +2,18 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import ImageLightbox from '../../components/ui/ImageLightbox';
 import PrevNextBtns from '../../components/ui/PrevNextBtns';
+import frameworksData from '../../data/development/frameworks.json';
 import vanillaData from '../../data/development/vanilla.json';
+import wordpressData from '../../data/development/wordpress.json';
 import type { WebProject } from '../../interfaces/developer';
 import './Developer.css';
 
-const projects = vanillaData as WebProject[];
+// Mapeo de parent a datos y etiqueta
+const projectDataMap: Record<string, { data: WebProject[]; label: string }> = {
+  frameworks: { data: frameworksData as WebProject[], label: 'Frameworks' },
+  vanilla: { data: vanillaData as WebProject[], label: 'Vanilla' },
+  wordpress: { data: wordpressData as WebProject[], label: 'WordPress' },
+};
 
 function getYouTubeEmbedUrl(url: string): string | null {
   const watchMatch = url.match(/[?&]v=([^&]+)/);
@@ -20,8 +27,8 @@ function getYear(date: string): string {
   return date.slice(0, 4);
 }
 
-export default function DeveloperVanillaDetail() {
-  const { id } = useParams();
+export default function DeveloperProjectDetail() {
+  const { parent, id } = useParams();
   const navigate = useNavigate();
 
   const [lightbox, setLightbox] = useState<{ open: boolean; src: string; alt: string }>({
@@ -29,6 +36,27 @@ export default function DeveloperVanillaDetail() {
     src: '',
     alt: '',
   });
+
+  // Validar que parent sea válido
+  const parentConfig = parent && parent in projectDataMap ? projectDataMap[parent] : null;
+
+  // Si parent no es válido, renderizar error
+  if (!parentConfig) {
+    return (
+      <div className="max-w-7xl mx-auto py-16 px-4" data-id="project-detail-invalid-parent">
+        <p className="text-muted mb-4">Categoría no encontrada.</p>
+        <button
+          onClick={() => navigate('/dev')}
+          className="text-sm text-muted hover:text-ink transition-colors"
+          type="button"
+        >
+          ← Volver a Desarrollo
+        </button>
+      </div>
+    );
+  }
+
+  const { data: projects, label } = parentConfig;
 
   const currentIndex = projects.findIndex((p) => p.id.toString() === id);
   const project: WebProject | undefined = currentIndex !== -1 ? projects[currentIndex] : undefined;
@@ -47,36 +75,37 @@ export default function DeveloperVanillaDetail() {
     setLightbox((s) => ({ ...s, open: false }));
   };
 
+  // Si proyecto no existe, renderizar error (parent ya fue validado arriba)
   if (!project) {
     return (
-      <div className="max-w-7xl mx-auto py-16 px-4" data-id="vanilla-detail-not-found">
+      <div className="max-w-7xl mx-auto py-16 px-4" data-id={`${parent}-detail-not-found`}>
         <p className="text-muted mb-4">Proyecto no encontrado.</p>
         <button
-          onClick={() => navigate('/dev/vanilla')}
+          onClick={() => navigate(`/dev/${parent}`)}
           className="text-sm text-muted hover:text-ink transition-colors"
           type="button"
         >
-          ← Volver a Vanilla JS
+          ← Volver a {label}
         </button>
       </div>
     );
   }
 
   return (
-    <div className="flex flex-col" data-id="developer-vanilla-detail">
+    <div className="flex flex-col" data-id={`developer-${parent}-detail`}>
       {/* Cabecera de navegación */}
       <section data-id="detail-nav">
         <div className="max-w-7xl mx-auto pt-6 px-4 flex items-center justify-between gap-4">
           <button
-            onClick={() => navigate('/dev/vanilla')}
+            onClick={() => navigate(`/dev/${parent}`)}
             className="text-sm text-muted hover:text-ink transition-colors duration-150"
             type="button"
           >
-            ← Volver a Vanilla JS
+            ← Volver a {label}
           </button>
           <PrevNextBtns
-            onPrev={() => prev && navigate(`/dev/vanilla/${prev.id}`)}
-            onNext={() => next && navigate(`/dev/vanilla/${next.id}`)}
+            onPrev={() => prev && navigate(`/dev/${parent}/${prev.id}`)}
+            onNext={() => next && navigate(`/dev/${parent}/${next.id}`)}
             disabledPrev={!prev}
             disabledNext={!next}
           />
@@ -135,7 +164,7 @@ export default function DeveloperVanillaDetail() {
           <div className="max-w-7xl mx-auto px-4 py-10">
             <div
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
-              data-id="vanilla-gallery-grid"
+              data-id={`${parent}-gallery-grid`}
             >
               {project.imagenes.map((img, i) => (
                 <figure key={i} className="flex flex-col gap-2" data-id={`gallery-item-${i}`}>
@@ -169,7 +198,10 @@ export default function DeveloperVanillaDetail() {
         <section data-id="detail-videos">
           <div className="max-w-7xl mx-auto px-4 py-10">
             <p className="font-mono text-xs text-muted uppercase tracking-widest mb-6">Vídeos</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6" data-id="vanilla-videos-grid">
+            <div
+              className="grid grid-cols-1 md:grid-cols-2 gap-6"
+              data-id={`${parent}-videos-grid`}
+            >
               {project.videos.map((video, i) => {
                 const embedUrl = getYouTubeEmbedUrl(video.ruta);
                 if (!embedUrl) return null;
@@ -191,6 +223,7 @@ export default function DeveloperVanillaDetail() {
         </section>
       )}
 
+      {/* Lightbox */}
       <ImageLightbox
         open={lightbox.open}
         src={lightbox.src}

@@ -9,11 +9,9 @@ import NotFoundPage from './pages/NotFoundPage';
 import GraphicDesignHome from './pages/GraphicDesign/GraphicDesignHome';
 import DeveloperHome from './pages/Developer/DeveloperHome';
 import DeveloperWordpress from './pages/Developer/DeveloperWordpress';
-import DeveloperWordpressDetail from './pages/Developer/DeveloperWordpressDetail';
 import DeveloperVanilla from './pages/Developer/DeveloperVanilla';
-import DeveloperVanillaDetail from './pages/Developer/DeveloperVanillaDetail';
 import DeveloperFrameworks from './pages/Developer/DeveloperFrameworks';
-import DeveloperFrameworksDetail from './pages/Developer/DeveloperFrameworksDetail';
+import DeveloperProjectDetail from './pages/Developer/DeveloperProjectDetail';
 import MainLayout from './components/layout/MainLayout';
 import ContactMe from './pages/ContactMe/ContactMe';
 import ScrollToTop from './components/layout/ScrollToTop';
@@ -37,11 +35,9 @@ export default function App() {
           <Route path="/graphic-design" element={<GraphicDesignHome />} />
           <Route path="/dev" element={<DeveloperHome />} />
           <Route path="/dev/wordpress" element={<DeveloperWordpress />} />
-          <Route path="/dev/wordpress/:id" element={<DeveloperWordpressDetail />} />
           <Route path="/dev/vanilla" element={<DeveloperVanilla />} />
-          <Route path="/dev/vanilla/:id" element={<DeveloperVanillaDetail />} />
           <Route path="/dev/frameworks" element={<DeveloperFrameworks />} />
-          <Route path="/dev/frameworks/:id" element={<DeveloperFrameworksDetail />} />
+          <Route path="/dev/:parent/:id" element={<DeveloperProjectDetail />} />
           <Route path="/contacto" element={<ContactMe />} />
           {/* Fallback 404 */}
           <Route path="*" element={<NotFoundPage />} />
