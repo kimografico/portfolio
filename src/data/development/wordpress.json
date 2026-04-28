@@ -2,9 +2,9 @@
   {
     "id": 4694,
     "date": "2021-01-20 08:44",
-    "title": "Web/catálogo creada para una empresa de venta de espumas.",
+    "title": "Xerri espumas",
     "cliente": "Xerri",
-    "descripcion": "La web consiste en una página principal con información de la empresa y productos destacados, un catálogo de productos y otro de materiales, fichas técnicas y formulario de contacto con mapa interactivo.",
+    "descripcion": "Web/catálogo creada para una empresa de venta de espumas. \nLa web consiste en una página principal con información de la empresa y productos destacados, un catálogo de productos y otro de materiales, fichas técnicas y formulario de contacto con mapa interactivo.",
     "stack": ["WordPress", "CSS", "HTML"],
     "imagenes": [
       {
@@ -198,11 +198,11 @@
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/Juanmas-Obra-scaled.jpg",
-        "label": ""
+        "label": "Galería – Navegación vertical por páginas y con posibilidad de ver la obra completa o por temática"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/12/Juanmas-monitor-juanmas.jpg",
-        "label": "Galería – Navegación vertical por páginas y con posibilidad de ver la obra completa o por temática"
+        "label": ""
       }
     ],
     "videos": [],

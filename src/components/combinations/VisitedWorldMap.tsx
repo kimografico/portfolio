@@ -101,7 +101,6 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
             if (antique) {
               svg.style.backgroundImage = mapColors.oceanImage;
               svg.style.backgroundSize = 'cover';
-              svg.style.borderRadius = '0';
               // Aplica blend multiply a los países no seleccionados
               svg
                 .querySelectorAll('path[data-code]:not([fill="' + mapColors.countryVisited + '"])')
@@ -111,7 +110,6 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
             } else {
               svg.style.background = mapColors.ocean;
               svg.style.backgroundSize = '';
-              svg.style.borderRadius = '25rem';
               svg.querySelectorAll('path[data-code]').forEach((el) => {
                 (el as SVGPathElement).style.mixBlendMode = '';
               });
@@ -154,7 +152,6 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
           height: '100%',
           overflow: 'hidden',
           background: 'none',
-          borderRadius: antique ? '0' : '10rem',
         }}
       />
       {/* Botón toggle abajo a la derecha */}
