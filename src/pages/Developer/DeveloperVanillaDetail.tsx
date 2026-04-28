@@ -106,7 +106,7 @@ export default function DeveloperVanillaDetail() {
                 <span className="font-mono text-xs text-muted uppercase tracking-widest block mb-1">
                   Tecnologías
                 </span>
-                <span className="text-sm text-ink">{project.stack}</span>
+                <span className="text-sm text-ink">{project.stack.join(', ')}</span>
               </div>
             )}
             <div>
