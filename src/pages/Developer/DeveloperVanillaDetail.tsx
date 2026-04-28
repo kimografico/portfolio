@@ -116,7 +116,16 @@ export default function DeveloperVanillaDetail() {
             </div>
           </div>
 
-          <p className="text-base text-muted leading-relaxed max-w-3xl">{project.descripcion}</p>
+          <div className="max-w-3xl">
+            {project.descripcion
+              .split('\n')
+              .filter(Boolean)
+              .map((paragraph, i) => (
+                <p key={i} className="text-base text-muted leading-relaxed mb-4">
+                  {paragraph.trim()}
+                </p>
+              ))}
+          </div>
         </div>
       </section>
 
