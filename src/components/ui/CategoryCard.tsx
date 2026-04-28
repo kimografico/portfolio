@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FC, ComponentType } from 'react';
+import type { FC, ComponentType } from 'react';
 import './CategoryCard.css';
 
 interface CategoryCardProps {
@@ -40,7 +40,7 @@ export const CategoryCard: FC<CategoryCardProps> = ({
       style={{ '--hover-color': hoverColor } as React.CSSProperties}
     >
       <span className="category-card__icon" aria-hidden="true">
-        <Icon size={96} strokeWidth={0.75} />
+        <Icon size={96} strokeWidth={0.75} className="" />
       </span>
       <h2 className="category-card__title">{title}</h2>
       <p className="category-card__description">{description}</p>

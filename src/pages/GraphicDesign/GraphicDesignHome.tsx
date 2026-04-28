@@ -11,19 +11,19 @@ import CategoryHero from '../../components/ui/CategoryHero';
 
 const CATEGORIES = [
   {
-    key: 'branding',
+    key: 'logotipos',
     title: 'Branding & Logotipos',
     description: 'Identidad visual, logotipos y sistemas de marca.',
     icon: IconPen,
   },
   {
-    key: 'stationery',
+    key: 'papeleria',
     title: 'Papelería Corporativa',
     description: 'Tarjetas, sobres, carpetas y material corporativo.',
     icon: IconFlyer,
   },
   {
-    key: 'posters',
+    key: 'carteleria',
     title: 'Cartelería',
     description: 'Posters, flyers y material promocional.',
     icon: IconPoster,
@@ -41,9 +41,9 @@ const CATEGORIES = [
     icon: IconBox,
   },
   {
-    key: 'other',
+    key: 'proyectos-especiales',
     title: 'Proyectos especiales',
-    description: 'Proyectos diversos de diseño gráfico.',
+    description: 'Proyectos gráficos singulares, personalizados o fuera de categoría.',
     icon: IconBottle,
   },
 ];
