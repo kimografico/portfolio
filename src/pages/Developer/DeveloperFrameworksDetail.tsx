@@ -3,10 +3,10 @@ import { useState } from 'react';
 import ImageLightbox from '../../components/ui/ImageLightbox';
 import PrevNextBtns from '../../components/ui/PrevNextBtns';
 import frameworksData from '../../data/development/frameworks.json';
-import type { WordpressProject } from '../../interfaces/developer';
+import type { WebProject } from '../../interfaces/developer';
 import './Developer.css';
 
-const projects = frameworksData as WordpressProject[];
+const projects = frameworksData as WebProject[];
 
 function getYouTubeEmbedUrl(url: string): string | null {
   const watchMatch = url.match(/[?&]v=([^&]+)/);
@@ -31,8 +31,7 @@ export default function DeveloperFrameworksDetail() {
   });
 
   const currentIndex = projects.findIndex((p) => p.id.toString() === id);
-  const project: WordpressProject | undefined =
-    currentIndex !== -1 ? projects[currentIndex] : undefined;
+  const project: WebProject | undefined = currentIndex !== -1 ? projects[currentIndex] : undefined;
 
   const prev = currentIndex > 0 ? projects[currentIndex - 1] : undefined;
   const next =

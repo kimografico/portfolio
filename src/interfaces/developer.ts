@@ -8,7 +8,7 @@ export interface DevVideo {
   label: string;
 }
 
-export interface WordpressProject {
+export interface WebProject {
   id: number;
   date: string;
   title: string;

@@ -3,10 +3,10 @@ import { useState } from 'react';
 import ImageLightbox from '../../components/ui/ImageLightbox';
 import PrevNextBtns from '../../components/ui/PrevNextBtns';
 import wordpressData from '../../data/development/wordpress.json';
-import type { WordpressProject } from '../../interfaces/developer';
+import type { WebProject } from '../../interfaces/developer';
 import './Developer.css';
 
-const projects = wordpressData as WordpressProject[];
+const projects = wordpressData as WebProject[];
 
 // Extrae la URL de embed de YouTube a partir de varios formatos de URL
 function getYouTubeEmbedUrl(url: string): string | null {
@@ -34,8 +34,7 @@ export default function DeveloperWordpressDetail() {
   });
 
   const currentIndex = projects.findIndex((p) => p.id.toString() === id);
-  const project: WordpressProject | undefined =
-    currentIndex !== -1 ? projects[currentIndex] : undefined;
+  const project: WebProject | undefined = currentIndex !== -1 ? projects[currentIndex] : undefined;
 
   const prev = currentIndex > 0 ? projects[currentIndex - 1] : undefined;
   const next =
