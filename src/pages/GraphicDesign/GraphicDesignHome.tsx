@@ -1,10 +1,10 @@
 import {
-  IconPlant,
+  IconPen,
   IconFlyer,
   IconPoster,
-  IconScreen,
+  IconLaptop,
   IconBox,
-  IconImage,
+  IconBottle,
 } from '../../components/iconos';
 import { CategoryCard } from '../../components/ui/CategoryCard';
 
@@ -13,7 +13,7 @@ const CATEGORIES = [
     key: 'branding',
     title: 'Branding & Logotipos',
     description: 'Identidad visual, logotipos y sistemas de marca.',
-    icon: IconPlant,
+    icon: IconPen,
   },
   {
     key: 'stationery',
@@ -31,7 +31,7 @@ const CATEGORIES = [
     key: 'multimedia',
     title: 'Digital & Multimedia',
     description: 'Diseño para vídeo, web y presentaciones.',
-    icon: IconScreen,
+    icon: IconLaptop,
   },
   {
     key: 'packaging',
@@ -43,7 +43,7 @@ const CATEGORIES = [
     key: 'other',
     title: 'Proyectos especiales',
     description: 'Proyectos diversos de diseño gráfico.',
-    icon: IconImage,
+    icon: IconBottle,
   },
 ];
 

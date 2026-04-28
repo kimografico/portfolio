@@ -7,7 +7,7 @@ import './Developer.css';
 
 // Importar iconos relevantes
 import {
-  LogoWP,
+  LogoWordpress,
   LogoWoo,
   LogoPHP,
   LogoJS,
@@ -16,35 +16,29 @@ import {
   LogoReact,
   LogoAngular,
   LogoVue,
-  LogoNodeJS,
   LogoPrestashop,
   LogoFlash,
   IconCode,
-  IconRefresh,
+  LogoAjax,
   IconTPV,
 } from '../../components/iconos';
 
 // Mapeo de tecnologías a iconos
 const stackIconMap: Record<string, React.FC<{ size?: number; className?: string }>> = {
-  WordPress: LogoWP,
-  WooCommerce: LogoWoo,
-  woocommerce: LogoWoo,
+  WORDPRESS: LogoWordpress,
+  WOOCOMMERCE: LogoWoo,
   PHP: LogoPHP,
   JS: LogoJS,
-  Javascript: LogoJS,
   JAVASCRIPT: LogoJS,
-  JavaScript: LogoJS,
   CSS: LogoCSS,
   HTML: LogoHTML,
-  React: LogoReact,
-  Angular: LogoAngular,
-  Vue: LogoVue,
-  NodeJS: LogoNodeJS,
-  Prestashop: LogoPrestashop,
+  REACT: LogoReact,
+  ANGULAR: LogoAngular,
+  VUE: LogoVue,
+  PRESTASHOP: LogoPrestashop,
   FLASH: LogoFlash,
-  Flash: LogoFlash,
-  AJAX: IconRefresh,
-  'TPV Virtual': IconTPV,
+  AJAX: LogoAjax,
+  'TPV VIRTUAL': IconTPV,
 };
 
 const projects = wordpressData as WordpressProject[];
@@ -85,7 +79,7 @@ function ProjectCard({ project }: { project: WordpressProject }) {
         {project.stack && (
           <div className="flex flex-row gap-2 mt-1 items-center" data-id="wp-stack-icons">
             {project.stack.map((tech) => {
-              const key = tech.trim();
+              const key = tech.trim().toUpperCase();
               const Icon = stackIconMap[key] || IconCode;
               return (
                 <span
@@ -103,7 +97,7 @@ function ProjectCard({ project }: { project: WordpressProject }) {
               );
             })}
             <div className="ml-auto text-xs text-muted min-w-[80px] text-right">
-              {hoveredTech && <span>{hoveredTech}</span>}
+              {hoveredTech && <span>{hoveredTech.toUpperCase()}</span>}
             </div>
           </div>
         )}

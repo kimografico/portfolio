@@ -14,7 +14,7 @@ import {
   LogoPrestashop,
   LogoFlash,
   IconCode,
-  IconRefresh,
+  LogoAjax,
   IconTPV,
 } from '../../components/iconos';
 
@@ -22,20 +22,13 @@ import {
 const stackIconMap: Record<string, React.FC<{ size?: number; className?: string }>> = {
   HTML: LogoHTML,
   CSS: LogoCSS,
-  JavaScript: LogoJS,
   JAVASCRIPT: LogoJS,
-  Javascript: LogoJS,
   JS: LogoJS,
   PHP: LogoPHP,
-  php: LogoPHP,
-  Prestashop: LogoPrestashop,
-  AJAX: IconRefresh,
-  Ajax: IconRefresh,
-  'TPV Virtual': IconTPV,
-  Actionscript: IconCode,
-  'Actionscript 2.0': IconCode,
+  PRESTASHOP: LogoPrestashop,
+  AJAX: LogoAjax,
+  'TPV VIRTUAL': IconTPV,
   FLASH: LogoFlash,
-  Flash: LogoFlash,
 };
 
 const projects = vanillaData as WordpressProject[];
@@ -76,7 +69,7 @@ function ProjectCard({ project }: { project: WordpressProject }) {
         {project.stack && (
           <div className="flex flex-row gap-2 mt-1 items-center" data-id="vanilla-stack-icons">
             {project.stack.map((tech) => {
-              const key = tech.trim();
+              const key = tech.trim().toUpperCase();
               const Icon = stackIconMap[key] || IconCode;
               return (
                 <span
@@ -94,7 +87,7 @@ function ProjectCard({ project }: { project: WordpressProject }) {
               );
             })}
             <div className="ml-auto text-xs text-muted min-w-[80px] text-right">
-              {hoveredTech && <span>{hoveredTech}</span>}
+              {hoveredTech && <span>{hoveredTech.toUpperCase()}</span>}
             </div>
           </div>
         )}

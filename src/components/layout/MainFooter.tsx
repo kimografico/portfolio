@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { IconSkull as IconFooter } from '../iconos';
+import { IconPirateCoin as IconFooter } from '../iconos';
 
 const FOOTER_LINKS = [{ label: 'personal', href: '/kimo' }];
 
@@ -17,7 +17,11 @@ export default function MainFooter() {
                   className="text-xl text-muted hover:text-ink transition-colors duration-150 flex items-center"
                 >
                   {label === 'personal' ? (
-                    <IconFooter size={24} strokeWidth={1} className="inline-block align-middle" />
+                    <IconFooter
+                      size={32}
+                      strokeWidth={0.75}
+                      className="inline-block align-middle"
+                    />
                   ) : (
                     label
                   )}
