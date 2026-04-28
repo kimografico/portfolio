@@ -1,6 +1,5 @@
 export { IconIcons } from './IconIcons';
 export { IconWorld } from './IconWorld';
-export { default as IconClose } from './IconClose';
 export { IconBook } from './IconBook';
 export { LogoCSS } from './LogoCSS';
 export { LogoHTML } from './IconHTML';
@@ -40,3 +39,4 @@ export { IconUser } from './IconUser';
 export { IconReact } from './IconReact';
 export { IconWP } from './IconWP';
 export { LogoAjax } from './LogoAjax';
+export { default as IconClose } from './IconClose';
