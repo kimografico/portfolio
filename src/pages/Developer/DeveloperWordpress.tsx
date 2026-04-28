@@ -1,8 +1,7 @@
-import { Link } from 'react-router-dom';
-
 import wordpressData from '../../data/development/wordpress.json';
 import type { WebProject } from '../../interfaces/developer';
 import { ProjectCard } from '../../components/ui/ProjectCard';
+import CategoryHero from '../../components/ui/CategoryHero';
 import EmptyState from '../../components/ui/EmptyState';
 import './Developer.css';
 
@@ -47,23 +46,11 @@ const projects = wordpressData as WebProject[];
 export default function DeveloperWordpress() {
   return (
     <div className="min-h-screen flex flex-col" data-id="developer-wordpress">
-      {/* Hero */}
-      <section
-        className="bg-gradient-to-b from-bg to-surface border-b border-border py-16 px-4 text-center"
-        data-id="developer-wordpress-hero"
-      >
-        <Link
-          to="/dev"
-          className="text-sm text-muted hover:text-ink transition-colors mb-6 inline-block"
-        >
-          ← Desarrollo web
-        </Link>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-ink">WordPress</h1>
-        <p className="max-w-2xl mx-auto text-lg text-muted">
-          Webs desarrolladas con CMS WordPress: catálogos, tiendas online, portfolios y webs
-          corporativas.
-        </p>
-      </section>
+      <CategoryHero
+        title="WordPress"
+        description="Webs desarrolladas con CMS WordPress: catálogos, tiendas online, portfolios y webs corporativas."
+        dataId="developer-wordpress-hero"
+      />
 
       {/* Grid de proyectos o estado vacío */}
       <main

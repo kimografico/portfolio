@@ -1,8 +1,7 @@
-import { Link } from 'react-router-dom';
-
 import frameworksData from '../../data/development/frameworks.json';
 import type { WebProject } from '../../interfaces/developer';
 import { ProjectCard } from '../../components/ui/ProjectCard';
+import CategoryHero from '../../components/ui/CategoryHero';
 import EmptyState from '../../components/ui/EmptyState';
 import './Developer.css';
 
@@ -35,22 +34,11 @@ const projects = frameworksData as WebProject[];
 export default function DeveloperFrameworks() {
   return (
     <div className="min-h-screen flex flex-col" data-id="developer-frameworks">
-      {/* Hero */}
-      <section
-        className="bg-gradient-to-b from-bg to-surface border-b border-border py-16 px-4 text-center"
-        data-id="developer-frameworks-hero"
-      >
-        <Link
-          to="/dev"
-          className="text-sm text-muted hover:text-ink transition-colors mb-6 inline-block"
-        >
-          ← Desarrollo web
-        </Link>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-ink">Frameworks</h1>
-        <p className="max-w-2xl mx-auto text-lg text-muted">
-          Proyectos desarrollados con frameworks modernos: React, Vue y otros.
-        </p>
-      </section>
+      <CategoryHero
+        title="Frameworks"
+        description="Proyectos desarrollados con frameworks modernos: React, Vue y otros."
+        dataId="developer-frameworks-hero"
+      />
 
       {/* Grid de proyectos o estado vacío */}
       <main

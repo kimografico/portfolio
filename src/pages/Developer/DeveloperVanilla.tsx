@@ -1,8 +1,7 @@
-import { Link } from 'react-router-dom';
-
 import vanillaData from '../../data/development/vanilla.json';
 import type { WebProject } from '../../interfaces/developer';
 import { ProjectCard } from '../../components/ui/ProjectCard';
+import CategoryHero from '../../components/ui/CategoryHero';
 import EmptyState from '../../components/ui/EmptyState';
 import './Developer.css';
 
@@ -37,22 +36,11 @@ const projects = vanillaData as WebProject[];
 export default function DeveloperVanilla() {
   return (
     <div className="min-h-screen flex flex-col" data-id="developer-vanilla">
-      {/* Hero */}
-      <section
-        className="bg-gradient-to-b from-bg to-surface border-b border-border py-16 px-4 text-center"
-        data-id="developer-vanilla-hero"
-      >
-        <Link
-          to="/dev"
-          className="text-sm text-muted hover:text-ink transition-colors mb-6 inline-block"
-        >
-          ← Desarrollo web
-        </Link>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-ink">Vanilla JS</h1>
-        <p className="max-w-2xl mx-auto text-lg text-muted">
-          Webs desarrolladas con HTML, CSS y JavaScript puro, sin depender de frameworks ni CMS.
-        </p>
-      </section>
+      <CategoryHero
+        title="Vanilla JS"
+        description="Webs desarrolladas con HTML, CSS y JavaScript puro, sin depender de frameworks ni CMS."
+        dataId="developer-vanilla-hero"
+      />
 
       {/* Grid de proyectos o estado vacío */}
       <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-12" data-id="vanilla-projects-main">
