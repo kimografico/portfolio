@@ -16,7 +16,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4161,
@@ -43,7 +44,8 @@
         "label": "Logo Agua"
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4026,
@@ -58,7 +60,8 @@
         "label": ""
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3972,
@@ -77,7 +80,8 @@
         "label": "NEÓN – Segundo Teaser"
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3948,
@@ -96,7 +100,8 @@
         "label": "Contracciones Sonoras – Versión clara (Elegida por el cliente)"
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3633,
@@ -343,7 +348,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3242,
@@ -386,7 +392,8 @@
         "label": ""
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3057,
@@ -405,7 +412,8 @@
         "label": ""
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3052,
@@ -420,7 +428,8 @@
         "label": ""
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3065,
@@ -499,7 +508,8 @@
         "label": ""
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2432,
@@ -518,7 +528,8 @@
         "label": "Versión actualizada al cambio de nombre/imagen de la empresa a Ascenza 5 de Noviembre de 2019"
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3731,
@@ -562,7 +573,8 @@
         "label": "Versión cuadrada para redes sociales"
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3713,
@@ -589,7 +601,8 @@
         "label": "Prueba de juego infinito"
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2429,
@@ -604,7 +617,8 @@
         "label": "Videoentrevista a un agricultor sobre los beneficios de utilizar el producto"
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4373,
@@ -631,7 +645,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3727,
@@ -646,7 +661,8 @@
         "label": ""
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2425,
@@ -661,7 +677,8 @@
         "label": "Infografía animada explicando las características y ventajas del herbicida Register 25WG"
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3738,
@@ -716,7 +733,8 @@
         "label": ""
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2407,
@@ -735,7 +753,8 @@
         "label": "Diseñada en After Effects"
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2519,
@@ -806,7 +825,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2417,
@@ -825,7 +845,8 @@
         "label": "Preparación de artes finales – Consideraciones a tener en cuenta a la hora de preparar un arte final correctamente para imprenta"
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3098,
@@ -840,6 +861,7 @@
         "label": "Digital vs. Offset – Version en Español"
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   }
 ]

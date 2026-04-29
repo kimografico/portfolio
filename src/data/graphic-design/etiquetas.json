@@ -28,7 +28,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3882,
@@ -47,7 +48,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4520,
@@ -98,7 +100,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4502,
@@ -141,7 +144,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4467,
@@ -164,7 +168,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4457,
@@ -187,7 +192,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4452,
@@ -214,7 +220,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3878,
@@ -229,6 +236,7 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   }
 ]

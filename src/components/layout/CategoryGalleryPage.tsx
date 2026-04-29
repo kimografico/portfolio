@@ -73,7 +73,10 @@ export default function CategoryGalleryPage<T extends BaseProject>({
   dataIdPrefix = 'gallery',
 }: CategoryGalleryPageProps<T>) {
   // Ordenar proyectos por fecha descendente (más nuevo primero)
-  const sortedProjects = [...projects].sort((a, b) => b.date.localeCompare(a.date));
+  // y filtrar los que tengan visible !== false (por defecto se muestran)
+  const sortedProjects = [...projects]
+    .filter((p) => (p as BaseProject & { visible?: boolean }).visible !== false)
+    .sort((a, b) => b.date.localeCompare(a.date));
 
   return (
     <div className="min-h-screen flex flex-col" data-id={`${dataIdPrefix}-page`}>

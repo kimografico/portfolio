@@ -28,7 +28,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2578,
@@ -60,7 +61,8 @@
         "label": ""
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 1296,
@@ -95,7 +97,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 1309,
@@ -114,7 +117,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 1255,
@@ -142,7 +146,8 @@
         "label": ""
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2560,
@@ -194,7 +199,8 @@
         "label": "En el vídeo se puede observar la utilización del programa, los puntos de vista 3D superpuestos en un plano de la planta de cada piso, y un triángulo que muestra la dirección a la que se está mirando en el visor."
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2786,
@@ -230,7 +236,8 @@
         "label": ""
       }
     ],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3167,
@@ -257,7 +264,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4681,
@@ -272,7 +280,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3077,
@@ -287,7 +296,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4807,
@@ -326,7 +336,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2677,
@@ -357,7 +368,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2698,
@@ -376,7 +388,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3988,
@@ -395,7 +408,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2688,
@@ -430,7 +444,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3625,
@@ -461,7 +476,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2620,
@@ -532,7 +548,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2666,
@@ -563,7 +580,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2656,
@@ -598,7 +616,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3332,
@@ -669,7 +688,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3355,
@@ -708,6 +728,7 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   }
 ]

@@ -24,7 +24,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4087,
@@ -47,7 +48,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4130,
@@ -78,7 +80,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3847,
@@ -109,7 +112,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4891,
@@ -128,7 +132,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4821,
@@ -179,7 +184,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4852,
@@ -222,7 +228,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3174,
@@ -265,7 +272,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4178,
@@ -296,7 +304,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2588,
@@ -379,7 +388,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4736,
@@ -434,7 +444,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3978,
@@ -461,7 +472,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3203,
@@ -488,7 +500,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3134,
@@ -523,7 +536,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4020,
@@ -538,7 +552,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3279,
@@ -557,7 +572,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3270,
@@ -576,7 +592,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3291,
@@ -595,7 +612,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 308,
@@ -626,7 +644,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3230,
@@ -661,7 +680,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3216,
@@ -684,7 +704,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3223,
@@ -711,7 +732,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3285,
@@ -730,7 +752,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 1266,
@@ -821,7 +844,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3158,
@@ -848,6 +872,7 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   }
 ]

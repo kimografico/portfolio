@@ -44,7 +44,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3831,
@@ -67,7 +68,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4604,
@@ -94,7 +96,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4430,
@@ -125,7 +128,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4411,
@@ -152,7 +156,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4405,
@@ -179,7 +184,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4406,
@@ -198,7 +204,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4124,
@@ -213,7 +220,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3118,
@@ -236,7 +244,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4250,
@@ -255,7 +264,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4840,
@@ -290,7 +300,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2460,
@@ -329,7 +340,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3857,
@@ -376,7 +388,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4796,
@@ -407,7 +420,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4897,
@@ -430,7 +444,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2447,
@@ -469,7 +484,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2748,
@@ -500,7 +516,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3911,
@@ -535,7 +552,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3886,
@@ -574,7 +592,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2826,
@@ -601,7 +620,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3125,
@@ -632,7 +652,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2711,
@@ -671,7 +692,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2705,
@@ -694,7 +716,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2738,
@@ -725,7 +748,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2824,
@@ -752,7 +776,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3914,
@@ -787,7 +812,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 3104,
@@ -830,7 +856,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 4078,
@@ -857,7 +884,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2829,
@@ -880,7 +908,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2822,
@@ -903,7 +932,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2840,
@@ -922,7 +952,8 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   },
   {
     "id": 2719,
@@ -945,6 +976,7 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "visible": true
   }
 ]
