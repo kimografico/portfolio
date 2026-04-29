@@ -4,7 +4,8 @@ import type { IconProps } from '../../types/icons';
 import './CategoryHero.css';
 
 // Obtener la ruta base para imágenes UI desde variables de entorno
-const UI_IMG_PATH = import.meta.env.VITE_UI_IMG_PATH || '/images/ui';
+// const UI_IMG_PATH = import.meta.env.VITE_UI_IMG_PATH || '/images/ui';
+const UI_IMG_PATH = `${import.meta.env.BASE_URL}images/ui`;
 
 /**
  * CategoryHero
@@ -58,9 +59,10 @@ export default function CategoryHero({
   useEffect(() => {
     if (sectionRef.current) {
       const containerHeight = sectionRef.current.offsetHeight;
-      // Offset aleatorio entre 0 y la altura del contenedor
-      const randomOffset = Math.floor(Math.random() * containerHeight);
-      setBackgroundOffset(randomOffset);
+      // Offset aleatorio entre 0 y -containerHeight/2
+      const maxNegativeOffset = containerHeight / 2;
+      const randomOffset = Math.floor(Math.random() * maxNegativeOffset);
+      setBackgroundOffset(-randomOffset);
     }
   }, []);
 
@@ -70,7 +72,7 @@ export default function CategoryHero({
   return (
     <section
       ref={sectionRef}
-      className="category-hero relative overflow-hidden py-24 px-4 text-center border-b border-border"
+      className="category-hero relative overflow-hidden py-12 md:py-24 px-4 text-center border-b border-border"
       data-id={dataId}
     >
       {/* Imagen de fondo con offset vertical aleatorio */}
@@ -81,7 +83,7 @@ export default function CategoryHero({
             typeof finalBackgroundImage === 'string' && !finalBackgroundImage.startsWith('url(')
               ? `url('${finalBackgroundImage}')`
               : finalBackgroundImage,
-          backgroundPosition: `center -${backgroundOffset}px`,
+          backgroundPosition: `center ${backgroundOffset}px`,
         }}
       />
 
