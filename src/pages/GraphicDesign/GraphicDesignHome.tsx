@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   IconPen,
   IconFlyer,
@@ -8,6 +9,10 @@ import {
 } from '../../components/iconos';
 import { CategoryCard } from '../../components/ui/CategoryCard';
 import CategoryHero from '../../components/ui/CategoryHero';
+import HeroSection from '../../components/layout/HeroSection';
+import RecentProjectsSection from '../../components/layout/RecentProjectsSection';
+import recentWorks from '../../data/recent-works.json';
+import type { Project } from '../../interfaces/project';
 
 const CATEGORIES = [
   {
@@ -49,14 +54,52 @@ const CATEGORIES = [
 ];
 
 export default function GraphicDesignHome() {
+  // Calcular acceso directo usando inicializador de estado
+  // Evita el warning de setState en efecto
+  const [isDirectAccess] = useState(() => window.history.length === 2);
+
+  // Filtrar proyectos recientes por categoría GraphicDesign
+  const graphicDesignProjects = (recentWorks as Project[]).filter(
+    (project) => project.category === 'GraphicDesign',
+  );
+
   return (
     <div className="min-h-screen flex flex-col" data-id="graphic-design-home">
-      <CategoryHero
-        title="Diseño Gráfico"
-        description="Selecciona una categoría para explorar proyectos de diseño gráfico: branding, papelería, cartelería, multimedia, ilustración, packaging y más. Cada sección muestra ejemplos reales, procesos y resultados."
-        dataId="graphic-design-hero"
-      />
-
+      {/* Mostrar HeroSection solo si acceso es directo/externo */}
+      {isDirectAccess && (
+        <HeroSection
+          label="Diseño Gráfico"
+          title={
+            <>
+              Diseñador gráfico
+              <br />
+              afincado en Valencia
+            </>
+          }
+          description="Diseño soluciones visuales a medida, fusionando estrategia y detalle. Ayudo a marcas a proyectar su esencia con coherencia, desde la identidad hasta la web. Mi objetivo es acompañar la evolución de tu empresa, transformando sus fortalezas en una comunicación impecable."
+          image={`${import.meta.env.BASE_URL}images/ui/K1.png`}
+          separator="orange"
+        />
+      )}
+      {/* CategoryHero siempre visible */}
+      {!isDirectAccess && (
+        <CategoryHero
+          title="Diseño Gráfico"
+          description="Selecciona una categoría para explorar proyectos de diseño gráfico: branding, papelería, cartelería, multimedia, ilustración, packaging y más. Cada sección muestra ejemplos reales, procesos y resultados."
+          dataId="graphic-design-hero"
+        />
+      )}{' '}
+      {/* Mostrar RecentProjectsSection y SobreSection solo si acceso es directo/externo */}
+      {isDirectAccess && (
+        <>
+          {graphicDesignProjects.length > 0 && (
+            <RecentProjectsSection
+              projects={graphicDesignProjects}
+              viewAllHref="/portfolio/graphic-design"
+            />
+          )}
+        </>
+      )}
       {/* Categorías en rejilla */}
       <main
         className="flex-1 max-w-5xl mx-auto w-full px-4 py-12"

@@ -4,6 +4,7 @@
     "title": "Montanejos",
     "tipo": "Logotipo",
     "year": "2024",
+    "category": "GraphicDesign",
     "href": "/portfolio/graphic-design/montanejos"
   },
   {
@@ -11,6 +12,7 @@
     "title": "kimografico",
     "tipo": "Web",
     "year": "2026",
+    "category": "Developer",
     "href": "/portfolio/dev/kimografico"
   },
   {
@@ -18,6 +20,7 @@
     "title": "Campaña editorial",
     "tipo": "Editorial",
     "year": "2023",
+    "category": "GraphicDesign",
     "href": "/portfolio/graphic-design/campana-editorial"
   }
 ]

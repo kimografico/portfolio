@@ -32,8 +32,7 @@ export default function Home() {
           decorator="01"
         />
 
-        <RecentProjectsSection projects={recentWorks} viewAllHref="/portfolio/graphic-design" />
-
+        <RecentProjectsSection projects={recentWorks} />
         <SobreSection
           label="Sobre"
           heading="Diseñador gráfico de formación, desarrollador de software por convicción."

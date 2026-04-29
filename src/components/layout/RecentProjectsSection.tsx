@@ -7,10 +7,7 @@ import ProjectLine from '../ui/ProjectLine';
 
 import type { RecentProjectsSectionProps } from '../../interfaces/project';
 
-export default function RecentProjectsSection({
-  projects,
-  viewAllHref = '/diseno',
-}: RecentProjectsSectionProps) {
+export default function RecentProjectsSection({ projects }: RecentProjectsSectionProps) {
   return (
     <section
       aria-labelledby="proyectos-heading"
@@ -25,13 +22,6 @@ export default function RecentProjectsSection({
           >
             Proyectos recientes
           </h2>
-          <a
-            href={viewAllHref}
-            className="text-xs text-muted hover:text-ink transition-colors duration-150"
-            data-id="recent-projects-view-all-link"
-          >
-            Ver todos →
-          </a>
         </div>
         <ul className="divide-y divide-border list-none m-0 p-0" data-id="recent-projects-list">
           {projects.map((project, i) => (

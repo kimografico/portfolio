@@ -3,6 +3,7 @@ export interface Project {
   title: string;
   tipo: string;
   year: string;
+  category?: string;
   href: string;
 }
 
