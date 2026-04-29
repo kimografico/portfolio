@@ -14,6 +14,7 @@ import MainLayout from './components/layout/MainLayout';
 import ContactMe from './pages/ContactMe/ContactMe';
 import ScrollToTop from './components/layout/ScrollToTop';
 import IconGallery from './pages/Kimo/IconGallery';
+import DataPage from './pages/Kimo/DataPage';
 import CategoryGalleryPage from './components/layout/CategoryGalleryPage';
 import { graphicDesignGalleries } from './config/graphicDesignGalleries';
 import { developerGalleries } from './config/developerGalleries';
@@ -32,6 +33,7 @@ export default function App() {
             <Route path="ilustraciones" element={<IllustrationsPage />} />
             <Route path="ilustraciones/:id" element={<IllustrationDetailPage />} />
             <Route path="iconos" element={<IconGallery />} />
+            <Route path="data" element={<DataPage />} />
           </Route>
           <Route path="/graphic-design" element={<GraphicDesignHome />} />
           {/* Galerías de Diseño Gráfico: generadas dinámicamente desde la configuración */}

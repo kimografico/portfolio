@@ -15,6 +15,7 @@ interface BaseTableProps<T, TValue> {
   columns: ColumnDef<T, TValue>[];
   initialSorting?: SortingState;
   onRowClick?: (row: T) => void;
+  onSortingChange?: (sorting: SortingState) => void;
   emptyMessage?: ReactNode;
   rowClassName?: string;
 }
@@ -38,6 +39,7 @@ export default function BaseTable<T extends object, TValue = unknown>({
   columns,
   initialSorting = [],
   onRowClick,
+  onSortingChange,
   emptyMessage = 'No hay datos para mostrar.',
   rowClassName = '',
 }: BaseTableProps<T, TValue>) {
@@ -50,7 +52,10 @@ export default function BaseTable<T extends object, TValue = unknown>({
     onSortingChange: (updater) => {
       const newSorting = typeof updater === 'function' ? updater(sorting) : updater;
       setSorting(newSorting);
+      onSortingChange?.(newSorting);
     },
+    // Desactiva el tercer estado "sin ordenar": al hacer clic alterna solo entre asc y desc
+    enableSortingRemoval: false,
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
   });

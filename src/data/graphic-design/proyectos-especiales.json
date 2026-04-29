@@ -1,20 +1,5 @@
 [
   {
-    "id": 4681,
-    "date": "2021-01-01 20:00",
-    "title": "Descanso Padre",
-    "cliente": "KIMO",
-    "descripcion": "Lugar de descanso de mi padre",
-    "imagenes": [
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Descanso-Padre.jpg",
-        "label": ""
-      }
-    ],
-    "videos": [],
-    "extras": []
-  },
-  {
     "id": 2551,
     "date": "2018-06-17 11:49",
     "title": "Totem 3D",

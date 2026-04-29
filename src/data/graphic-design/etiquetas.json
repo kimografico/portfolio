@@ -1,39 +1,5 @@
 [
   {
-    "id": 3882,
-    "date": "2020-12-31 18:58",
-    "title": "Botellines de cerveza personalizados",
-    "cliente": "KIMO",
-    "descripcion": "Botellines de cerveza PERSONALIZADOS PARA UN CUMPLEAÑOS",
-    "imagenes": [
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_beer-bottle.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/logo-franziskaner.png",
-        "label": ""
-      }
-    ],
-    "videos": [],
-    "extras": []
-  },
-  {
-    "id": 4520,
-    "date": "2020-12-26 19:44",
-    "title": "Etiquetas para hidromiel Loki",
-    "cliente": "Odín Hidromiel",
-    "descripcion": "Etiquetas para la marca de hidromiel Loki, diseño especial para edición limitada.",
-    "imagenes": [
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/loki-label.jpg",
-        "label": ""
-      }
-    ],
-    "videos": [],
-    "extras": []
-  },
-  {
     "id": 3323,
     "date": "2020-01-10 22:23",
     "title": "Aceite de Oliva",
