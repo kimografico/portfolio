@@ -11,10 +11,16 @@
     "test": "vitest --run",
     "test:watch": "vitest",
     "preview": "vite preview",
-    "check": "node scripts/check.js"
+    "check": "node scripts/check.js",
+    "backend": "node api/server.cjs",
+    "backend:dev": "nodemon api/server.cjs",
+    "start": "concurrently \"pnpm dev\" \"pnpm backend:dev\""
   },
   "dependencies": {
     "@tanstack/react-table": "^8.21.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
     "jsvectormap": "^1.7.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -30,6 +36,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "autoprefixer": "^10.5.0",
+    "concurrently": "^8.2.2",
     "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-react": "^7.37.5",
@@ -40,6 +47,7 @@
     "jiti": "^2.6.1",
     "jsdom": "^29.0.2",
     "lint-staged": "^15.2.2",
+    "nodemon": "^3.0.2",
     "postcss": "^8.5.10",
     "prettier": "^3.8.3",
     "tailwindcss": "^3.4.19",

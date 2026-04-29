@@ -1,7 +1,8 @@
-import { useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
 import BaseTable from '../../components/compositions/BaseTable';
 import { useShowHidden } from '../../hooks/useShowHidden';
+import { updateVisibilityBatch } from '../../api/apiClient';
 
 // --- Importación de todos los JSON de diseño gráfico y desarrollo ---
 import carteleria from '../../data/graphic-design/carteleria.json';
@@ -67,39 +68,8 @@ const ALL_ENTRIES: DataEntry[] = SOURCES.flatMap(({ data, type, category }) =>
   })),
 );
 
-// --- Columnas de la tabla ---
+// Necesario para crear columnas tipadas
 const columnHelper = createColumnHelper<DataEntry>();
-
-const columns: ColumnDef<DataEntry, string>[] = [
-  columnHelper.accessor('id', {
-    header: 'ID',
-    cell: (info) => <span className="text-muted text-sm">{String(info.getValue())}</span>,
-  }),
-  columnHelper.accessor('title', {
-    header: 'Título',
-    cell: (info) => <span className="font-semibold">{info.getValue()}</span>,
-  }),
-  columnHelper.accessor('cliente', {
-    header: 'Cliente',
-    cell: (info) => info.getValue() || <span className="text-muted">—</span>,
-  }),
-  columnHelper.accessor('date', {
-    header: 'Fecha',
-    cell: (info) => {
-      // Las fechas vienen como "YYYY-MM-DD HH:MM", mostramos solo la parte de fecha
-      const raw = info.getValue();
-      return raw ? raw.slice(0, 10) : <span className="text-muted">—</span>;
-    },
-  }),
-  columnHelper.accessor('type', {
-    header: 'Tipo',
-    cell: (info) => <span className="text-sm">{info.getValue()}</span>,
-  }),
-  columnHelper.accessor('category', {
-    header: 'Categoría',
-    cell: (info) => <span className="text-sm">{info.getValue()}</span>,
-  }),
-];
 
 /**
  * DataPage
@@ -111,6 +81,13 @@ const columns: ColumnDef<DataEntry, string>[] = [
  * - Tipo: "Diseño Gráfico" | "Desarrollo" (selector exclusivo)
  * - Categoría: subcategoría del tipo seleccionado
  * - Cliente: clientes únicos del subconjunto filtrado
+ * - Visibilidad: todos / solo visibles / solo ocultos
+ *
+ * Selección de filas:
+ * - Checkbox en cada fila para seleccionarla
+ * - Barra de acciones al seleccionar: marcar visible/oculto
+ * - Los cambios se aplican vía API y se reflejan inmediatamente en la tabla
+ *   (sin necesidad de recargar la página)
  */
 // Opciones del filtro de visibilidad de la tabla
 type VisibilityFilter = 'all' | 'visible' | 'hidden';
@@ -122,6 +99,24 @@ export default function DataPage() {
   const [filterVisibility, setFilterVisibility] = useState<VisibilityFilter>('all');
   // showHidden controla la galería (persiste en localStorage); no afecta a esta tabla
   const [showHidden, setShowHidden] = useShowHidden();
+
+  /**
+   * Registro de overrides locales de visibilidad.
+   * Cuando el usuario cambia la visibilidad de un proyecto vía API, guardamos
+   * el nuevo valor aquí para que la tabla lo refleje sin recargar.
+   * Estructura: { [projectId]: boolean }
+   */
+  const [localVisibility, setLocalVisibility] = useState<Record<string | number, boolean>>({});
+
+  /**
+   * IDs seleccionados actualmente en la tabla.
+   * Usamos Set para búsquedas eficientes de O(1).
+   */
+  const [selectedIds, setSelectedIds] = useState<Set<string | number>>(new Set());
+
+  /** Estado de la operación bulk (loading / error) */
+  const [bulkStatus, setBulkStatus] = useState<'idle' | 'loading' | 'error'>('idle');
+  const [bulkError, setBulkError] = useState('');
 
   // Opciones de categoría: dependen del tipo seleccionado
   const categoryOptions = useMemo(() => {
@@ -142,18 +137,21 @@ export default function DataPage() {
     return Array.from(new Set(clients)).sort();
   }, [filterType, filterCategory]);
 
-  // Datos finales tras aplicar todos los filtros
+  // Datos finales tras aplicar todos los filtros, con overrides de visibilidad
   const filteredEntries = useMemo(() => {
-    return ALL_ENTRIES.filter(
-      (e) =>
+    return ALL_ENTRIES.filter((e) => {
+      // La visibilidad real incluye posibles cambios locales
+      const isVisible = e.id in localVisibility ? localVisibility[e.id] : e.visible;
+      return (
         (filterVisibility === 'all' ||
-          (filterVisibility === 'visible' && e.visible) ||
-          (filterVisibility === 'hidden' && !e.visible)) &&
+          (filterVisibility === 'visible' && isVisible) ||
+          (filterVisibility === 'hidden' && !isVisible)) &&
         (!filterType || e.type === filterType) &&
         (!filterCategory || e.category === filterCategory) &&
-        (!filterCliente || e.cliente === filterCliente),
-    );
-  }, [filterVisibility, filterType, filterCategory, filterCliente]);
+        (!filterCliente || e.cliente === filterCliente)
+      );
+    });
+  }, [filterVisibility, filterType, filterCategory, filterCliente, localVisibility]);
 
   // Calcular IDs duplicados en todo el dataset (no solo filtrados)
   const duplicateIds = useMemo(() => {
@@ -165,28 +163,180 @@ export default function DataPage() {
       .filter(([, count]) => count > 1)
       .map(([id]) => id)
       .sort((a, b) => {
-        // Ordenar numéricamente si son números
         const numA = Number(a);
         const numB = Number(b);
         return isNaN(numA) || isNaN(numB) ? String(a).localeCompare(String(b)) : numA - numB;
       });
   }, []);
 
-  // Si cambia el tipo, resetear categoría y cliente
+  // --- Handlers de selección ---
+
+  const handleSelectRow = useCallback((id: string | number, checked: boolean) => {
+    setSelectedIds((prev) => {
+      const next = new Set(prev);
+      if (checked) {
+        next.add(id);
+      } else {
+        next.delete(id);
+      }
+      return next;
+    });
+  }, []);
+
+  /** Seleccionar / deseleccionar todos los visibles en la tabla actual */
+  const allCurrentSelected =
+    filteredEntries.length > 0 && filteredEntries.every((e) => selectedIds.has(e.id));
+
+  const toggleSelectAll = useCallback(() => {
+    if (allCurrentSelected) {
+      // Deseleccionar todos los de la vista actual
+      setSelectedIds((prev) => {
+        const next = new Set(prev);
+        filteredEntries.forEach((e) => next.delete(e.id));
+        return next;
+      });
+    } else {
+      // Seleccionar todos los de la vista actual
+      setSelectedIds((prev) => {
+        const next = new Set(prev);
+        filteredEntries.forEach((e) => next.add(e.id));
+        return next;
+      });
+    }
+  }, [allCurrentSelected, filteredEntries]);
+
+  // --- Acción bulk: cambiar visibilidad ---
+
+  async function handleBulkVisibility(visible: boolean) {
+    if (selectedIds.size === 0) return;
+    setBulkStatus('loading');
+    setBulkError('');
+
+    try {
+      // Convertir a array de números (los IDs son numéricos en los JSON)
+      const ids = Array.from(selectedIds)
+        .map(Number)
+        .filter((n) => !isNaN(n));
+      await updateVisibilityBatch(ids, visible);
+
+      // Aplicar override local para reflejar el cambio sin recargar
+      setLocalVisibility((prev) => {
+        const next = { ...prev };
+        ids.forEach((id) => (next[id] = visible));
+        return next;
+      });
+
+      // Limpiar selección
+      setSelectedIds(new Set());
+      setBulkStatus('idle');
+    } catch (err) {
+      setBulkStatus('error');
+      setBulkError(err instanceof Error ? err.message : 'Error al actualizar');
+    }
+  }
+
+  // --- Helpers de filtros ---
+
   function handleTypeChange(value: string) {
     setFilterType(value);
     setFilterCategory('');
     setFilterCliente('');
   }
 
-  const hasActiveFilters =
-    filterType || filterCategory || filterCliente || filterVisibility !== 'all';
-
-  // Si cambia la categoría, resetear cliente
   function handleCategoryChange(value: string) {
     setFilterCategory(value);
     setFilterCliente('');
   }
+
+  const hasActiveFilters =
+    filterType || filterCategory || filterCliente || filterVisibility !== 'all';
+
+  /**
+   * Columnas de la tabla.
+   * Las definimos dentro del componente con useMemo para poder incluir
+   * el estado de selección (selectedIds) y los overrides de visibilidad.
+   *
+   * Usamos ColumnDef<DataEntry, unknown> porque la columna de checkbox y la de
+   * visible no devuelven string, y TanStack permite widening del tipo TValue.
+   */
+  const columns = useMemo(
+    (): ColumnDef<DataEntry, unknown>[] =>
+      [
+        // Columna de selección: checkbox
+        {
+          id: 'select',
+          header: () => (
+            <input
+              type="checkbox"
+              checked={allCurrentSelected}
+              onChange={toggleSelectAll}
+              aria-label="Seleccionar todos"
+              className="w-4 h-4"
+            />
+          ),
+          cell: ({ row }) => (
+            <input
+              type="checkbox"
+              checked={selectedIds.has(row.original.id)}
+              onChange={(e) => {
+                e.stopPropagation();
+                handleSelectRow(row.original.id, e.target.checked);
+              }}
+              onClick={(e) => e.stopPropagation()}
+              aria-label={`Seleccionar ${row.original.title}`}
+              className="w-4 h-4"
+            />
+          ),
+          enableSorting: false,
+        },
+        // Columna de visibilidad actual
+        columnHelper.display({
+          id: 'visible',
+          header: 'Vis.',
+          cell: ({ row }) => {
+            const id = row.original.id;
+            const isVisible = id in localVisibility ? localVisibility[id] : row.original.visible;
+            return (
+              <span
+                className={`text-xs font-bold ${isVisible ? 'text-green-500' : 'text-red-400'}`}
+                title={isVisible ? 'Visible' : 'Oculto'}
+              >
+                {isVisible ? '●' : '○'}
+              </span>
+            );
+          },
+          enableSorting: false,
+        }),
+        columnHelper.accessor('id', {
+          header: 'ID',
+          cell: (info) => <span className="text-muted text-sm">{String(info.getValue())}</span>,
+        }),
+        columnHelper.accessor('title', {
+          header: 'Título',
+          cell: (info) => <span className="font-semibold">{info.getValue() as string}</span>,
+        }),
+        columnHelper.accessor('cliente', {
+          header: 'Cliente',
+          cell: (info) => (info.getValue() as string) || <span className="text-muted">—</span>,
+        }),
+        columnHelper.accessor('date', {
+          header: 'Fecha',
+          cell: (info) => {
+            const raw = info.getValue() as string;
+            return raw ? raw.slice(0, 10) : <span className="text-muted">—</span>;
+          },
+        }),
+        columnHelper.accessor('type', {
+          header: 'Tipo',
+          cell: (info) => <span className="text-sm">{info.getValue() as string}</span>,
+        }),
+        columnHelper.accessor('category', {
+          header: 'Categoría',
+          cell: (info) => <span className="text-sm">{info.getValue() as string}</span>,
+        }),
+      ] as ColumnDef<DataEntry>[],
+    [selectedIds, localVisibility, allCurrentSelected, handleSelectRow, toggleSelectAll],
+  );
 
   return (
     <section data-id="data-page">
@@ -211,7 +361,7 @@ export default function DataPage() {
       </div>
 
       {/* Filtros */}
-      <div className="flex flex-wrap gap-4 mb-8 items-end" data-id="data-filter">
+      <div className="flex flex-wrap gap-4 mb-6 items-end" data-id="data-filter">
         {/* Filtro Tipo */}
         <div className="flex flex-col min-w-[12rem]">
           <label className="block text-xs font-semibold text-muted mb-1" htmlFor="filter-type">
@@ -316,9 +466,48 @@ export default function DataPage() {
         </div>
       </div>
 
+      {/* Barra de acciones (solo visible al seleccionar filas) */}
+      {selectedIds.size > 0 && (
+        <div
+          className="flex items-center gap-3 mb-4 p-3 bg-gray-50 border rounded"
+          data-id="data-action-bar"
+        >
+          <span className="text-sm font-semibold">
+            {selectedIds.size}{' '}
+            {selectedIds.size === 1 ? 'proyecto seleccionado' : 'proyectos seleccionados'}
+          </span>
+          <button
+            onClick={() => handleBulkVisibility(false)}
+            disabled={bulkStatus === 'loading'}
+            className="text-xs px-3 py-1.5 bg-red-50 text-red-600 border border-red-300 rounded hover:bg-red-100 disabled:opacity-50 transition-colors"
+            data-id="data-mark-hidden-btn"
+          >
+            ○ Marcar como ocultos
+          </button>
+          <button
+            onClick={() => handleBulkVisibility(true)}
+            disabled={bulkStatus === 'loading'}
+            className="text-xs px-3 py-1.5 bg-green-50 text-green-700 border border-green-300 rounded hover:bg-green-100 disabled:opacity-50 transition-colors"
+            data-id="data-mark-visible-btn"
+          >
+            ● Marcar como visibles
+          </button>
+          <button
+            onClick={() => setSelectedIds(new Set())}
+            className="text-xs text-muted hover:text-accent transition-colors ml-auto"
+          >
+            Cancelar
+          </button>
+          {bulkStatus === 'loading' && <span className="text-xs text-muted">Guardando…</span>}
+          {bulkStatus === 'error' && (
+            <span className="text-xs text-red-600">❌ {bulkError}. ¿El backend está activo?</span>
+          )}
+        </div>
+      )}
+
       {/* Tabla */}
       <div data-id="data-table">
-        <BaseTable<DataEntry, string>
+        <BaseTable<DataEntry, unknown>
           data={filteredEntries}
           columns={columns}
           initialSorting={[{ id: 'date', desc: true }]}

@@ -1,6 +1,13 @@
 import { Outlet, NavLink } from 'react-router-dom';
 
-import { IconBook, IconBrush, IconWorld, IconIcons, IconFile } from '../../components/iconos';
+import {
+  IconBook,
+  IconBrush,
+  IconWorld,
+  IconIcons,
+  IconFile,
+  IconPen,
+} from '../../components/iconos';
 import './espacio-personal.css';
 
 /**
@@ -62,6 +69,16 @@ export default function KimoLayout() {
         >
           <IconFile className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Datos</span>
+        </NavLink>
+        <NavLink
+          to="add-project"
+          className={({ isActive }) =>
+            `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
+          }
+          aria-label="Añadir proyecto"
+        >
+          <IconPen className="inline md:hidden" size={32} strokeWidth={1} />
+          <span className="hidden md:inline">Añadir proyecto</span>
         </NavLink>
       </nav>
       <main id="main-content">

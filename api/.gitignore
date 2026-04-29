@@ -1,0 +1,6 @@
+# Backend-specific ignores
+.env
+.env.local
+.env.*.local
+node_modules/
+*.log
