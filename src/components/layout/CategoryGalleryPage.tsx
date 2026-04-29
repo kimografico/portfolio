@@ -2,6 +2,7 @@ import { ProjectCard, type BaseProject } from '../ui/ProjectCard';
 import CategoryHero from '../ui/CategoryHero';
 import EmptyState from '../ui/EmptyState';
 import type { IconProps } from '../../types/icons';
+import { useShowHidden } from '../../hooks/useShowHidden';
 
 /**
  * CategoryGalleryPage
@@ -72,10 +73,13 @@ export default function CategoryGalleryPage<T extends BaseProject>({
   emptyStateDescription = 'Esta sección está en preparación. Pronto encontrarás proyectos aquí.',
   dataIdPrefix = 'gallery',
 }: CategoryGalleryPageProps<T>) {
+  // Lee desde localStorage si el usuario quiere ver proyectos ocultos
+  const [showHidden] = useShowHidden();
+
   // Ordenar proyectos por fecha descendente (más nuevo primero)
-  // y filtrar los que tengan visible !== false (por defecto se muestran)
+  // y filtrar según la preferencia de visibilidad
   const sortedProjects = [...projects]
-    .filter((p) => (p as BaseProject & { visible?: boolean }).visible !== false)
+    .filter((p) => showHidden || (p as BaseProject & { visible?: boolean }).visible !== false)
     .sort((a, b) => b.date.localeCompare(a.date));
 
   return (

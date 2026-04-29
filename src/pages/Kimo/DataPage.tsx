@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
 import BaseTable from '../../components/compositions/BaseTable';
+import { useShowHidden } from '../../hooks/useShowHidden';
 
 // --- Importación de todos los JSON de diseño gráfico y desarrollo ---
 import carteleria from '../../data/graphic-design/carteleria.json';
@@ -26,6 +27,7 @@ interface DataEntry {
   cliente: string;
   type: string;
   category: string;
+  visible: boolean;
 }
 
 /**
@@ -61,6 +63,7 @@ const ALL_ENTRIES: DataEntry[] = SOURCES.flatMap(({ data, type, category }) =>
     cliente: item.cliente ?? '',
     type,
     category,
+    visible: item.visible !== false,
   })),
 );
 
@@ -109,10 +112,16 @@ const columns: ColumnDef<DataEntry, string>[] = [
  * - Categoría: subcategoría del tipo seleccionado
  * - Cliente: clientes únicos del subconjunto filtrado
  */
+// Opciones del filtro de visibilidad de la tabla
+type VisibilityFilter = 'all' | 'visible' | 'hidden';
+
 export default function DataPage() {
   const [filterType, setFilterType] = useState('');
   const [filterCategory, setFilterCategory] = useState('');
   const [filterCliente, setFilterCliente] = useState('');
+  const [filterVisibility, setFilterVisibility] = useState<VisibilityFilter>('all');
+  // showHidden controla la galería (persiste en localStorage); no afecta a esta tabla
+  const [showHidden, setShowHidden] = useShowHidden();
 
   // Opciones de categoría: dependen del tipo seleccionado
   const categoryOptions = useMemo(() => {
@@ -137,11 +146,14 @@ export default function DataPage() {
   const filteredEntries = useMemo(() => {
     return ALL_ENTRIES.filter(
       (e) =>
+        (filterVisibility === 'all' ||
+          (filterVisibility === 'visible' && e.visible) ||
+          (filterVisibility === 'hidden' && !e.visible)) &&
         (!filterType || e.type === filterType) &&
         (!filterCategory || e.category === filterCategory) &&
         (!filterCliente || e.cliente === filterCliente),
     );
-  }, [filterType, filterCategory, filterCliente]);
+  }, [filterVisibility, filterType, filterCategory, filterCliente]);
 
   // Calcular IDs duplicados en todo el dataset (no solo filtrados)
   const duplicateIds = useMemo(() => {
@@ -167,6 +179,9 @@ export default function DataPage() {
     setFilterCliente('');
   }
 
+  const hasActiveFilters =
+    filterType || filterCategory || filterCliente || filterVisibility !== 'all';
+
   // Si cambia la categoría, resetear cliente
   function handleCategoryChange(value: string) {
     setFilterCategory(value);
@@ -175,11 +190,24 @@ export default function DataPage() {
 
   return (
     <section data-id="data-page">
-      <div className="flex items-center mb-8">
-        <h2 className="text-xl">
+      <div className="flex items-center mb-8 gap-4">
+        <h2 className="text-xl flex-1">
           Todos los proyectos{' '}
           <span className="text-muted text-base font-normal">({filteredEntries.length})</span>
         </h2>
+        {/* Toggle privado para la visibilidad en las GALERÍAS (no afecta a esta tabla) */}
+        <button
+          onClick={() => setShowHidden(!showHidden)}
+          className={`text-xs px-3 py-1 rounded border transition-colors ${
+            showHidden
+              ? 'bg-amber-100 border-amber-400 text-amber-700'
+              : 'border-gray-300 text-muted hover:border-gray-400'
+          }`}
+          data-id="data-show-hidden-btn"
+          title={showHidden ? 'Galerías: mostrando todos' : 'Galerías: solo visibles'}
+        >
+          {showHidden ? '🖼 Galerías: todos' : '🖼 Galerías: visibles'}
+        </button>
       </div>
 
       {/* Filtros */}
@@ -241,14 +269,35 @@ export default function DataPage() {
           </select>
         </div>
 
+        {/* Filtro Visibilidad */}
+        <div className="flex flex-col min-w-[10rem]">
+          <label
+            className="block text-xs font-semibold text-muted mb-1"
+            htmlFor="filter-visibility"
+          >
+            Visibilidad
+          </label>
+          <select
+            id="filter-visibility"
+            className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+            value={filterVisibility}
+            onChange={(e) => setFilterVisibility(e.target.value as VisibilityFilter)}
+          >
+            <option value="all">Todos</option>
+            <option value="visible">Solo visibles</option>
+            <option value="hidden">Solo ocultos</option>
+          </select>
+        </div>
+
         {/* Botón de reset */}
-        {(filterType || filterCategory || filterCliente) && (
+        {hasActiveFilters && (
           <button
             className="text-sm text-muted underline self-end pb-[5px] hover:text-accent transition-colors"
             onClick={() => {
               setFilterType('');
               setFilterCategory('');
               setFilterCliente('');
+              setFilterVisibility('all');
             }}
             data-id="data-filter-reset-btn"
           >
