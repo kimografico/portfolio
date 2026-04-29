@@ -72,6 +72,9 @@ export default function CategoryGalleryPage<T extends BaseProject>({
   emptyStateDescription = 'Esta sección está en preparación. Pronto encontrarás proyectos aquí.',
   dataIdPrefix = 'gallery',
 }: CategoryGalleryPageProps<T>) {
+  // Ordenar proyectos por fecha descendente (más nuevo primero)
+  const sortedProjects = [...projects].sort((a, b) => b.date.localeCompare(a.date));
+
   return (
     <div className="min-h-screen flex flex-col" data-id={`${dataIdPrefix}-page`}>
       <CategoryHero
@@ -86,14 +89,14 @@ export default function CategoryGalleryPage<T extends BaseProject>({
       />
 
       <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-12" data-id={`${dataIdPrefix}-main`}>
-        {projects.length === 0 ? (
+        {sortedProjects.length === 0 ? (
           <EmptyState description={emptyStateDescription} dataId={`${dataIdPrefix}-empty`} />
         ) : (
           <div
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
             data-id={`${dataIdPrefix}-grid`}
           >
-            {projects.map((project) => (
+            {sortedProjects.map((project) => (
               <ProjectCard
                 key={project.id}
                 project={project}

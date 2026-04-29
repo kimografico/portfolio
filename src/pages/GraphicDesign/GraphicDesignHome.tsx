@@ -6,7 +6,8 @@ import {
   IconLaptop,
   IconBox,
   IconBottle,
-  IconFile,
+  IconBook,
+  IconImage,
 } from '../../components/iconos';
 import { CategoryCard } from '../../components/ui/CategoryCard';
 import CategoryHero from '../../components/ui/CategoryHero';
@@ -23,6 +24,18 @@ const CATEGORIES = [
     icon: IconPen,
   },
   {
+    key: 'editorial',
+    title: 'Editorial',
+    description: 'Diseño de publicaciones, revistas y materiales editoriales.',
+    icon: IconBook,
+  },
+  {
+    key: 'etiquetas',
+    title: 'Etiquetas',
+    description: 'Diseño de etiquetas, pegatinas y elementos gráficos para packaging.',
+    icon: IconBottle,
+  },
+  {
     key: 'papeleria',
     title: 'Papelería Corporativa',
     description: 'Tarjetas, sobres, carpetas y material corporativo.',
@@ -35,34 +48,22 @@ const CATEGORIES = [
     icon: IconPoster,
   },
   {
-    key: 'multimedia',
-    title: 'Digital & Multimedia',
-    description: 'Diseño para vídeo, web y presentaciones.',
-    icon: IconLaptop,
-  },
-  {
     key: 'packaging',
     title: 'Packaging',
     description: 'Envases, etiquetas y diseño de producto.',
     icon: IconBox,
   },
   {
+    key: 'multimedia',
+    title: 'Digital & Multimedia',
+    description: 'Diseño para vídeo, web y presentaciones.',
+    icon: IconLaptop,
+  },
+  {
     key: 'proyectos-especiales',
     title: 'Proyectos especiales',
     description: 'Proyectos gráficos singulares, personalizados o fuera de categoría.',
-    icon: IconBottle,
-  },
-  {
-    key: 'etiquetas',
-    title: 'Etiquetas',
-    description: 'Diseño de etiquetas, pegatinas y elementos gráficos para packaging.',
-    icon: IconBottle,
-  },
-  {
-    key: 'editorial',
-    title: 'Editorial',
-    description: 'Diseño de publicaciones, revistas y materiales editoriales.',
-    icon: IconFile,
+    icon: IconImage,
   },
 ];
 

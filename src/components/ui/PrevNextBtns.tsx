@@ -22,7 +22,7 @@ export default function PrevNextBtns({
         aria-label="Anterior ilustración"
         disabled={disabledPrev}
         onClick={onPrev}
-        className={`w-10 h-10 aspect-square rounded-full flex items-center justify-center transition-colors duration-150 border border-border text-lg ${disabledPrev ? 'opacity-40 cursor-not-allowed' : 'hover:bg-accent/10 text-accent'}`}
+        className={`w-10 h-10 aspect-square rounded-full flex items-center justify-center transition-colors duration-150 border border-border text-lg ${disabledPrev ? 'opacity-20 cursor-not-allowed' : 'hover:bg-accent/10 text-accent'}`}
       >
         {/* Flecha izquierda SVG */}
         <svg
@@ -46,7 +46,7 @@ export default function PrevNextBtns({
         aria-label="Siguiente ilustración"
         disabled={disabledNext}
         onClick={onNext}
-        className={`w-10 h-10 aspect-square rounded-full flex items-center justify-center transition-colors duration-150 border border-border text-lg ${disabledNext ? 'opacity-40 cursor-not-allowed' : 'hover:bg-accent/10 text-accent'}`}
+        className={`w-10 h-10 aspect-square rounded-full flex items-center justify-center transition-colors duration-150 border border-border text-lg ${disabledNext ? 'opacity-20 cursor-not-allowed' : 'hover:bg-accent/10 text-accent'}`}
       >
         {/* Flecha derecha SVG */}
         <svg
