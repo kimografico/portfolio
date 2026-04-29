@@ -6,5 +6,5 @@ export interface GraphicDesignProject {
   descripcion: string;
   imagenes: { ruta: string; label: string }[];
   videos?: { ruta: string; label: string }[];
-  extras?: never[];
+  extras?: unknown[];
 }

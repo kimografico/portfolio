@@ -1,0 +1,112 @@
+import { ProjectCard, type BaseProject } from '../ui/ProjectCard';
+import CategoryHero from '../ui/CategoryHero';
+import EmptyState from '../ui/EmptyState';
+import type { IconProps } from '../../types/icons';
+
+/**
+ * CategoryGalleryPage
+ *
+ * Componente genérico para páginas de galería de proyectos.
+ * Unifica el patrón repetido en GraphicDesignLogotipos, DeveloperWordpress, etc.
+ *
+ * Recibe los proyectos ya cargados desde el exterior, por lo que es agnóstico
+ * del origen de datos y del tipo de proyecto (GraphicDesign, Developer...).
+ *
+ * ¿Por qué genérico con <T extends BaseProject>?
+ * TypeScript necesita saber que los proyectos tienen al menos { id, date, title }.
+ * El tipo genérico T permite que ProjectCard reciba el tipo exacto sin perder
+ * información de tipado, aunque en runtime no cambia nada.
+ */
+
+interface CategoryGalleryPageProps<T extends BaseProject> {
+  // --- Datos ---
+  /** Array de proyectos a mostrar */
+  projects: T[];
+  /** Ruta base para construir el enlace de cada proyecto. Ej: "/graphic-design/logotipos" */
+  basePath: string;
+
+  // --- CategoryHero ---
+  title: string;
+  description: string;
+  /** Icono del hero (componente React, opcional) */
+  icon?: React.FC<IconProps>;
+  /** Color del overlay del hero */
+  color?: string;
+  /** Opacidad del overlay del hero */
+  opacity?: number;
+  /** Ruta del enlace de retroceso */
+  backLink?: string;
+  /** Texto del enlace de retroceso */
+  backLinkText?: string;
+
+  // --- ProjectCard ---
+  /** Icono fallback para tarjetas sin imagen */
+  IconFallback?: React.FC<IconProps>;
+  /** Si true, muestra barra de tecnologías (modo Developer) */
+  webProject?: boolean;
+  /** Mapeo de tecnologías a iconos (solo necesario si webProject=true) */
+  stackIconMap?: Record<string, React.FC<IconProps>>;
+
+  // --- Mensajes ---
+  /** Texto del EmptyState cuando no hay proyectos */
+  emptyStateDescription?: string;
+
+  // --- data-id ---
+  /** Prefijo para los atributos data-id de los elementos clave */
+  dataIdPrefix?: string;
+}
+
+export default function CategoryGalleryPage<T extends BaseProject>({
+  projects,
+  basePath,
+  title,
+  description,
+  icon,
+  color,
+  opacity,
+  backLink,
+  backLinkText = 'Atrás',
+  IconFallback,
+  webProject = false,
+  stackIconMap,
+  emptyStateDescription = 'Esta sección está en preparación. Pronto encontrarás proyectos aquí.',
+  dataIdPrefix = 'gallery',
+}: CategoryGalleryPageProps<T>) {
+  return (
+    <div className="min-h-screen flex flex-col" data-id={`${dataIdPrefix}-page`}>
+      <CategoryHero
+        title={title}
+        description={description}
+        icon={icon}
+        color={color}
+        opacity={opacity}
+        dataId={`${dataIdPrefix}-hero`}
+        backLink={backLink}
+        backLinkText={backLinkText}
+      />
+
+      <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-12" data-id={`${dataIdPrefix}-main`}>
+        {projects.length === 0 ? (
+          <EmptyState description={emptyStateDescription} dataId={`${dataIdPrefix}-empty`} />
+        ) : (
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+            data-id={`${dataIdPrefix}-grid`}
+          >
+            {projects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                to={`${basePath}/${project.id}`}
+                dataId={`${dataIdPrefix}-card-${project.id}`}
+                IconFallback={IconFallback}
+                webProject={webProject}
+                stackIconMap={stackIconMap}
+              />
+            ))}
+          </div>
+        )}
+      </main>
+    </div>
+  );
+}
