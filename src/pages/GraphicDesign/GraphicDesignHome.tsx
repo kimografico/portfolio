@@ -6,6 +6,7 @@ import {
   IconLaptop,
   IconBox,
   IconBottle,
+  IconFile,
 } from '../../components/iconos';
 import { CategoryCard } from '../../components/ui/CategoryCard';
 import CategoryHero from '../../components/ui/CategoryHero';
@@ -50,6 +51,18 @@ const CATEGORIES = [
     title: 'Proyectos especiales',
     description: 'Proyectos gráficos singulares, personalizados o fuera de categoría.',
     icon: IconBottle,
+  },
+  {
+    key: 'etiquetas',
+    title: 'Etiquetas',
+    description: 'Diseño de etiquetas, pegatinas y elementos gráficos para packaging.',
+    icon: IconBottle,
+  },
+  {
+    key: 'editorial',
+    title: 'Editorial',
+    description: 'Diseño de publicaciones, revistas y materiales editoriales.',
+    icon: IconFile,
   },
 ];
 

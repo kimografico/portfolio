@@ -8,6 +8,8 @@ import carteriaData from '../../data/graphic-design/carteleria.json';
 import multimediaData from '../../data/graphic-design/multimedia.json';
 import packagingData from '../../data/graphic-design/packaging.json';
 import proyectosEspecialesData from '../../data/graphic-design/proyectos-especiales.json';
+import etiquetasData from '../../data/graphic-design/etiquetas.json';
+import editorialData from '../../data/graphic-design/editorial.json';
 import type { GraphicDesignProject } from '../../interfaces/graphicDesign';
 import '../Developer/Developer.css';
 
@@ -22,6 +24,8 @@ const projectDataMap: Record<string, { data: GraphicDesignProject[]; label: stri
     data: proyectosEspecialesData as GraphicDesignProject[],
     label: 'Proyectos especiales',
   },
+  etiquetas: { data: etiquetasData as GraphicDesignProject[], label: 'Etiquetas' },
+  editorial: { data: editorialData as GraphicDesignProject[], label: 'Editorial' },
 };
 
 function getYouTubeEmbedUrl(url: string): string | null {

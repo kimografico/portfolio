@@ -731,5 +731,123 @@
     ],
     "videos": [],
     "extras": []
+  },
+  {
+    "id": 1266,
+    "date": "2007-05-07 19:44",
+    "title": "Cartelería obras de Valle Inclán",
+    "cliente": "Teatro Rialto",
+    "descripcion": "Cartelería para unas obras teatrales del Teatro Rialto",
+    "imagenes": [
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2007/05/BUS_Carteles2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2007/05/BUS_Carteles1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/5185012624_7214bfac2f_b.jpg",
+        "label": "Versión en Modelado 3D"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/5185010560_906f78e73a_b.jpg",
+        "label": "Versión en Modelado 3D"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/5185000322_f7a10a4374_b.jpg",
+        "label": "Versión en Modelado 3D"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184410173_0d290e0235_b.jpg",
+        "label": "Versión grunge"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184408153_6e7d776dcf_b.jpg",
+        "label": "Versión grunge"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184998902_63cdfc4f24_b.jpg",
+        "label": "Versión grunge"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184409787_d3254a79af_b.jpg",
+        "label": "Versión sombra"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185009036_6188d8cc3f_b.jpg",
+        "label": "Versión sombra"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184999092_2effa79553_b.jpg",
+        "label": "Versión sombra"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184410875_caf1c365ae_b.jpg",
+        "label": "Versión en Collage Digital"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184408913_f75cd7ee52_b.jpg",
+        "label": "Versión en Collage Digital"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184398347_400630ceb7_b.jpg",
+        "label": "Versión en Collage Digital"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185010822_766c891aa2_b.jpg",
+        "label": "Versión en Silueta"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185008826_4de0cc5b01_b.jpg",
+        "label": "Versión en Silueta"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184998438_33cbfbc4a7_b.jpg",
+        "label": "Versión en Silueta"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185011548_b1cf2c5623_b.jpg",
+        "label": "Versión en Pintura"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5185009488_6c806e2614_b.jpg",
+        "label": "Versión en Pintura"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5184397281_85d0e6e5c0_b.jpg",
+        "label": "Versión en Pintura"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 3158,
+    "date": "2008-12-16 21:20",
+    "title": "Calendario Generalitat",
+    "cliente": "Generalitat Valenciana",
+    "descripcion": "Diseño de tres meses del calendario de la Conselleria de Sanitat de 2009",
+    "imagenes": [
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2008/12/5184997350_d189f3865d_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2008/12/5184997656_99c6a833db_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2008/12/5184396493_71e9813b5d_b.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2008/12/unnamed.png",
+        "label": ""
+      }
+    ],
+    "videos": [],
+    "extras": []
   }
 ]

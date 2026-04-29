@@ -1,4 +1,6 @@
 import GraphicDesignProyectosEspeciales from './pages/GraphicDesign/GraphicDesignProyectosEspeciales';
+import GraphicDesignEtiquetas from './pages/GraphicDesign/GraphicDesignEtiquetas';
+import GraphicDesignEditorial from './pages/GraphicDesign/GraphicDesignEditorial';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import KimoLayout from './pages/Kimo/KimoLayout';
@@ -49,6 +51,8 @@ export default function App() {
             path="/graphic-design/proyectos-especiales"
             element={<GraphicDesignProyectosEspeciales />}
           />
+          <Route path="/graphic-design/etiquetas" element={<GraphicDesignEtiquetas />} />
+          <Route path="/graphic-design/editorial" element={<GraphicDesignEditorial />} />
           <Route path="/graphic-design/:category/:id" element={<GraphicDesignProjectDetail />} />
           <Route path="/dev" element={<DeveloperHome />} />
           <Route path="/dev/wordpress" element={<DeveloperWordpress />} />
