@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useRef, useEffect, useState } from 'react';
 import type { IconProps } from '../../types/icons';
+import { useTheme } from '../../hooks/useTheme';
 import './CategoryHero.css';
 
 // Obtener la ruta base para imágenes UI desde variables de entorno
@@ -54,6 +55,7 @@ export default function CategoryHero({
 }: CategoryHeroProps) {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [backgroundOffset, setBackgroundOffset] = useState(0);
+  const [theme] = useTheme();
 
   // Calcular offset vertical aleatorio basado en la altura del contenedor
   useEffect(() => {
@@ -66,8 +68,12 @@ export default function CategoryHero({
     }
   }, []);
 
-  // Usar imagen personalizada o fallback
-  const finalBackgroundImage = backgroundImage || `url(${UI_IMG_PATH}/category-bg.jpeg)`;
+  // Usar imagen personalizada o fallback (condicionada al tema)
+  const defaultBg =
+    theme === 'dark'
+      ? `url(${UI_IMG_PATH}/category-bg-dark.jpeg)`
+      : `url(${UI_IMG_PATH}/category-bg.jpeg)`;
+  const finalBackgroundImage = backgroundImage || defaultBg;
 
   return (
     <section

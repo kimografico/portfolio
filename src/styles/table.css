@@ -9,7 +9,8 @@
 
 /* Fila de tabla */
 .table-row {
-  @apply bg-white transition-colors;
+  background-color: var(--color-surface);
+  @apply transition-colors;
 }
 
 /* Fila interactiva (con clic) - hover blanco con transición suave */
@@ -50,11 +51,11 @@
 
 /* Flecha inactiva (gris) */
 .sort-arrow-inactive {
-  color: #d1d5db; /* text-gray-300 */
+  color: var(--color-border);
   transition: color 0.2s;
 }
 
 /* Flecha inactiva en hover */
 .sort-arrow-inactive:hover {
-  color: #9ca3af; /* text-gray-400 */
+  color: var(--color-muted);
 }
