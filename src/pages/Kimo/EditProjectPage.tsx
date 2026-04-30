@@ -94,6 +94,10 @@ export default function EditProjectPage() {
         const result = await getProject(projectId);
         if (cancelled) return;
         const p = result.data as ProjectData;
+        // Los videos y extras pueden venir como string[] o como { ruta, label }[]
+        // según el JSON. Normalizamos a string[] extrayendo la ruta si es objeto.
+        const normalizeStringArray = (arr: unknown[]): string[] =>
+          arr.map((v) => (typeof v === 'string' ? v : ((v as { ruta?: string })?.ruta ?? '')));
         setForm({
           type: p.type,
           category: p.category,
@@ -102,8 +106,8 @@ export default function EditProjectPage() {
           descripcion: p.descripcion ?? '',
           visible: p.visible !== false,
           imagenes: p.imagenes?.length ? p.imagenes : [emptyImagen()],
-          videos: p.videos?.length ? p.videos : [''],
-          extras: p.extras?.length ? p.extras : [''],
+          videos: p.videos?.length ? normalizeStringArray(p.videos) : [''],
+          extras: p.extras?.length ? normalizeStringArray(p.extras) : [''],
           stack: p.stack ?? [],
         });
         setLoadStatus('loaded');
