@@ -7,15 +7,15 @@
     "descripcion": "Díptico diseñado para el rocódromo Natural Climb, de Valencia. Está enfocado a clases para colegios, y proporciona información sobre el local, las actividades ofertadas, filosofía de la empresa y beneficios del deporte para los más pequeños. Tiene también fotografías de clases y un mapa de ubicación. Se hicieron varios bocetos, respetando el estilo gráfico del local, pero adaptando el mismo al lenguaje infantil requerido por el destinatario final. Se mimetizaron los colores del interior del rocódromo, dándole más protagonismo al naranja-amarillento de la zona de clases del mismo.",
     "imagenes": [
       {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-3.jpg",
+        "label": ""
+      },
+      {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-8.jpg",
         "label": ""
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-9.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/05/NaturalClimb-3.jpg",
         "label": ""
       },
       {
@@ -45,7 +45,9 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "papeleria"
   },
   {
     "id": 3831,

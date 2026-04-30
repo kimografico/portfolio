@@ -1,4 +1,5 @@
 import { useCallback, useMemo, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
 import BaseTable from '../../components/compositions/BaseTable';
 import { useShowHidden } from '../../hooks/useShowHidden';
@@ -93,6 +94,7 @@ const columnHelper = createColumnHelper<DataEntry>();
 type VisibilityFilter = 'all' | 'visible' | 'hidden';
 
 export default function DataPage() {
+  const navigate = useNavigate();
   const [filterType, setFilterType] = useState('');
   const [filterCategory, setFilterCategory] = useState('');
   const [filterCliente, setFilterCliente] = useState('');
@@ -511,6 +513,7 @@ export default function DataPage() {
           data={filteredEntries}
           columns={columns}
           initialSorting={[{ id: 'date', desc: true }]}
+          onRowClick={(row) => navigate(`/kimo/edit-project/${row.id}`)}
           emptyMessage="No hay proyectos que coincidan con los filtros."
         />
       </div>

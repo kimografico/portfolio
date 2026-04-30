@@ -48,6 +48,17 @@ export interface ProjectPayload {
   stack?: string[];
 }
 
+/** Respuesta completa de un proyecto individual del backend */
+export interface ProjectData extends ProjectPayload {
+  id: number;
+  date: string;
+}
+
+/** Obtiene un proyecto por su ID */
+export function getProject(id: number) {
+  return apiFetch<ProjectData>(`/api/projects/${id}`);
+}
+
 /** Crea un nuevo proyecto enviando un POST a /api/projects */
 export function createProject(data: ProjectPayload) {
   return apiFetch('/api/projects', {
@@ -70,4 +81,46 @@ export function updateVisibilityBatch(ids: number[], visible: boolean) {
     method: 'PATCH',
     body: JSON.stringify({ ids, visible }),
   });
+}
+
+// --- Upload de imágenes ---
+
+export interface UploadedImage {
+  ruta: string;
+  label: string;
+}
+
+/**
+ * Sube archivos de imagen al backend.
+ * Los guarda en public/images/portfolio/{design|web}/{category}/{slug}{NNN}.{ext}
+ * Devuelve las rutas públicas de las imágenes guardadas.
+ *
+ * Nota: NO usa apiFetch porque el Content-Type es multipart/form-data
+ * (lo gestiona el navegador automáticamente al enviar FormData).
+ */
+export async function uploadImages(
+  files: File[],
+  type: 'gd' | 'dev',
+  category: string,
+  title: string,
+): Promise<UploadedImage[]> {
+  const formData = new FormData();
+  formData.append('type', type);
+  formData.append('category', category);
+  formData.append('title', title);
+  files.forEach((file) => formData.append('images', file));
+
+  const res = await fetch(`${API_BASE}/api/upload`, {
+    method: 'POST',
+    body: formData,
+    // No establecer Content-Type: el navegador pone el boundary automáticamente
+  });
+
+  const json = await res.json();
+
+  if (!json.success) {
+    throw new Error(json.error ?? 'Error al subir imágenes');
+  }
+
+  return json.data as UploadedImage[];
 }
