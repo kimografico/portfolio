@@ -14,11 +14,12 @@ Portfolio personal de diseño gráfico y desarrollo web. Una aplicación React c
 6. [Sección pública: Diseño Gráfico](#6-sección-pública-diseño-gráfico)
 7. [Sección pública: Desarrollo Web](#7-sección-pública-desarrollo-web)
 8. [Mi espacio personal (`/kimo`)](#8-mi-espacio-personal-kimo)
-9. [Backend API REST](#9-backend-api-rest)
-10. [Scripts disponibles](#10-scripts-disponibles)
-11. [Variables de entorno](#11-variables-de-entorno)
-12. [Primeros pasos tras clonar](#12-primeros-pasos-tras-clonar)
-13. [Convenciones y arquitectura](#13-convenciones-y-arquitectura)
+9. [Sistema de temas (claro/oscuro)](#9-sistema-de-temas-clarooscuro)
+10. [Backend API REST](#10-backend-api-rest)
+11. [Scripts disponibles](#11-scripts-disponibles)
+12. [Variables de entorno](#12-variables-de-entorno)
+13. [Primeros pasos tras clonar](#13-primeros-pasos-tras-clonar)
+14. [Convenciones y arquitectura](#14-convenciones-y-arquitectura)
 
 ---
 
@@ -26,7 +27,7 @@ Portfolio personal de diseño gráfico y desarrollo web. Una aplicación React c
 
 **kimografico** es un portfolio personal construido como SPA (Single Page Application) con React 18 + TypeScript + Vite. Está pensado para mostrar trabajos de diseño gráfico y desarrollo web de forma pública, y al mismo tiempo sirve como herramienta de gestión de contenido en la sección privada `/kimo`.
 
-El proyecto integra un **backend Express ligero** (en el mismo repositorio) que expone una API REST para crear y editar proyectos directamente desde el espacio personal, sin tocar los archivos JSON a mano.
+El proyecto integra un **backend Express ligero** (en el mismo repositorio) que expone una API REST para crear, editar y subir imágenes de proyectos directamente desde el espacio personal, sin tocar los archivos JSON a mano.
 
 ---
 
@@ -47,14 +48,15 @@ El proyecto integra un **backend Express ligero** (en el mismo repositorio) que 
 
 ### Backend
 
-| Herramienta  | Versión | Uso                                     |
-| ------------ | ------- | --------------------------------------- |
-| Node.js      | ≥18     | Runtime del servidor                    |
-| Express      | 4       | Framework HTTP                          |
-| cors         | 2.8     | Cabeceras CORS para Vite local          |
-| dotenv       | 16      | Variables de entorno                    |
-| nodemon      | 3       | Recarga automática en desarrollo        |
-| concurrently | 8       | Arrancar frontend y backend en paralelo |
+| Herramienta  | Versión | Uso                                      |
+| ------------ | ------- | ---------------------------------------- |
+| Node.js      | ≥18     | Runtime del servidor                     |
+| Express      | 4       | Framework HTTP                           |
+| multer       | 2.1     | Subida de imágenes (multipart/form-data) |
+| cors         | 2.8     | Cabeceras CORS para Vite local           |
+| dotenv       | 16      | Variables de entorno                     |
+| nodemon      | 3       | Recarga automática en desarrollo         |
+| concurrently | 8       | Arrancar frontend y backend en paralelo  |
 
 ### Herramientas de calidad
 
@@ -72,9 +74,11 @@ portfolio/
 ├── api/                        # Backend Express (CommonJS .cjs)
 │   ├── server.cjs              # Punto de entrada del servidor
 │   ├── routes/
-│   │   └── projects.cjs        # Todas las rutas /api/projects
+│   │   ├── projects.cjs        # Rutas /api/projects y /api/categories
+│   │   └── upload.cjs          # Ruta /api/upload (subida de imágenes)
 │   ├── controllers/
-│   │   └── projectController.cjs
+│   │   ├── projectController.cjs  # Lógica CRUD de proyectos
+│   │   └── uploadController.cjs   # Lógica de subida y almacenamiento de imágenes
 │   ├── utils/
 │   │   ├── fileSystem.cjs      # Lectura/escritura de JSONs
 │   │   └── validation.cjs      # Validación de campos
@@ -87,7 +91,10 @@ portfolio/
 │   ├── images/
 │   │   ├── books/              # Portadas de libros (JPG, nombre = id del libro)
 │   │   ├── illustrations/      # Imágenes de ilustraciones
-│   │   └── ui/                 # Imágenes de interfaz (mapas, fondos...)
+│   │   ├── portfolio/          # Imágenes subidas desde el formulario
+│   │   │   ├── design/         # Imágenes de proyectos de diseño gráfico
+│   │   │   └── web/            # Imágenes de proyectos de desarrollo
+│   │   └── ui/                 # Imágenes de interfaz (fondos, mapas...)
 │   └── robots.txt
 │
 ├── src/
@@ -98,7 +105,7 @@ portfolio/
 │   ├── components/
 │   │   ├── combinations/       # Componentes que combinan otros (BookModal, WorldMap...)
 │   │   ├── compositions/       # Composiciones complejas (BaseTable)
-│   │   ├── iconos/             # ~50 iconos SVG como componentes React
+│   │   ├── iconos/             # ~48 iconos SVG como componentes React
 │   │   ├── layout/             # Header, Footer, HeroSection, MainLayout...
 │   │   └── ui/                 # CategoryCard, CategoryHero, ProjectLine...
 │   ├── config/
@@ -113,6 +120,7 @@ portfolio/
 │   │   ├── graphic-design/     # 8 JSONs de categorías de diseño gráfico
 │   │   └── development/        # 3 JSONs de categorías de desarrollo
 │   ├── hooks/
+│   │   ├── useTheme.ts         # Hook de tema claro/oscuro con store compartido
 │   │   ├── useTableSorting.ts  # Hook reutilizable para ordenación de tablas
 │   │   └── useShowHidden.ts    # Toggle "mostrar ocultos" persistido en localStorage
 │   ├── interfaces/             # Tipos e interfaces TypeScript centralizados
@@ -159,6 +167,7 @@ portfolio/
 | `/kimo/iconos`                   | `IconGallery`                | Galería de todos los iconos del proyecto           |
 | `/kimo/data`                     | `DataPage`                   | Tabla de gestión de todos los proyectos            |
 | `/kimo/add-project`              | `AddProjectPage`             | Formulario para crear un nuevo proyecto            |
+| `/kimo/edit-project/:id`         | `EditProjectPage`            | Formulario para editar un proyecto existente       |
 
 ---
 
@@ -289,7 +298,7 @@ Las galerías están configuradas dinámicamente en `src/config/graphicDesignGal
 Accesible desde `/dev`. Organizada en 3 categorías (WordPress, Vanilla JS, Frameworks):
 
 - Misma arquitectura que Diseño Gráfico.
-- El detalle de proyecto mostrará adicionalmente el **stack tecnológico** si está definido en el JSON.
+- El detalle de proyecto muestra adicionalmente el **stack tecnológico** si está definido en el JSON.
 - Configuración dinámica en `src/config/developerGalleries.ts`.
 
 ---
@@ -319,7 +328,7 @@ Dos componentes en la misma página:
 
 ### `/kimo/iconos` — Galería de iconos
 
-Muestra todos los componentes SVG del proyecto (más de 50 iconos) en un grid visual. Útil como referencia durante el desarrollo para ver todos los iconos disponibles, sus nombres y aspecto.
+Muestra todos los componentes SVG del proyecto (~48 iconos y logos) en un grid visual. Útil como referencia durante el desarrollo para ver todos los iconos disponibles, sus nombres y aspecto.
 
 ### `/kimo/data` — Gestión de proyectos
 
@@ -329,6 +338,7 @@ Tabla central con **todos los proyectos** de los 11 JSONs (8 de diseño + 3 de d
 - **Ordenar** por cualquier columna.
 - **Seleccionar filas** individualmente o con "seleccionar todo".
 - **Cambiar visibilidad en lote**: botones "Marcar como oculto" / "Marcar como visible" que llaman a la API backend y actualizan la UI de forma inmediata (sin recargar).
+- **Navegar al editor**: al hacer clic en una fila se abre el formulario de edición del proyecto (`/kimo/edit-project/:id`).
 - Ver **proyectos duplicados** (IDs repetidos) destacados en el filtro.
 - Toggle para ver proyectos ocultos o solo los visibles.
 
@@ -340,18 +350,59 @@ Formulario completo para crear un nuevo proyecto sin editar JSON a mano:
 
 - Selector de **tipo** (Diseño Gráfico / Desarrollo) y **categoría** (se actualiza dinámicamente).
 - Campos: título, cliente, descripción, visibilidad.
-- **Imágenes**: lista dinámica de pares `ruta + label`, con botones para añadir/eliminar.
+- **Imágenes con drag & drop**: zona de arrastre para subir imágenes desde el explorador de archivos. Muestra miniaturas de previsualización. Las imágenes se almacenan temporalmente como `blob:` URLs y al enviar el formulario se suben al servidor en `public/images/portfolio/{design|web}/{categoría}/`.
 - **Vídeos** y **extras**: listas dinámicas de URLs.
-- **Stack tecnológico** (solo para proyectos de desarrollo): botones de selección rápida (HTML, CSS, JavaScript, TypeScript, React, Vue, WordPress, PHP, Node.js, Vite, Prestashop) más entrada manual.
-- Al enviar, hace `POST /api/projects` y muestra el ID generado automáticamente.
+- **Stack tecnológico** (solo para proyectos de desarrollo): botones de selección rápida (HTML, CSS, JavaScript, TypeScript, React, Vue, Angular, WordPress, PHP, Node.js, Vite, Prestashop) más entrada manual.
+- Al enviar, sube las imágenes vía `POST /api/upload`, reemplaza las URLs temporales por las rutas reales y crea el proyecto con `POST /api/projects`.
 
 > Esta sección requiere el backend arrancado.
 
+### `/kimo/edit-project/:id` — Editar proyecto
+
+Mismo formulario que "Añadir proyecto", pero precargado con los datos del proyecto existente obtenidos vía `GET /api/projects/:id`. Al guardar, actualiza el proyecto con `PUT /api/projects/:id`. Normaliza automáticamente campos como vídeos y extras que en el JSON pueden ser objetos `{ ruta, label }` en vez de strings.
+
+> Accesible directamente o desde la tabla de gestión (`/kimo/data`) al hacer clic en una fila.
+
 ---
 
-## 9. Backend API REST
+## 9. Sistema de temas (claro/oscuro)
 
-El backend es un servidor **Express.js** escrito en CommonJS (`.cjs`) que convive en el mismo repositorio. Se ejecuta en el puerto **3001** y expone una API REST para gestionar los archivos JSON de proyectos.
+La aplicación soporta **tema claro y oscuro** con persistencia en `localStorage`.
+
+### Funcionamiento
+
+- El tema se gestiona mediante el hook `useTheme()` (`src/hooks/useTheme.ts`).
+- Se aplica el atributo `data-theme="light"` o `data-theme="dark"` en el elemento `<html>`.
+- Las variables CSS en `src/variables.css` cambian automáticamente según el tema activo.
+- Un botón de toggle con iconos sol/luna está ubicado en el header (`MainHeader`).
+
+### Sincronización entre componentes
+
+El hook `useTheme()` utiliza un **store compartido a nivel de módulo** (un `Set` de listeners) para que todos los componentes que consuman el hook se actualicen simultáneamente cuando cualquiera de ellos cambie el tema. Sin este patrón, cada `useState` sería independiente y componentes como `CategoryHero` no se enterarían del cambio hecho desde `MainHeader`.
+
+### Variables CSS
+
+| Variable          | Claro (`:root`) | Oscuro (`[data-theme='dark']`) |
+| ----------------- | --------------- | ------------------------------ |
+| `--color-bg`      | `#f8f7f4`       | `#1e1e1e`                      |
+| `--color-surface` | `#ffffff`       | `#2a2a2a`                      |
+| `--color-border`  | `#e5e4e0`       | `#3a3a3a`                      |
+| `--color-muted`   | `#9e9c96`       | `#8a8a8a`                      |
+| `--color-text`    | `#1a1917`       | `#e8e8e8`                      |
+| `--color-accent`  | `#d4542a`       | `#e0673f`                      |
+
+Los estilos de componentes (`table.css`, `buttonStyles.css`, etc.) usan estas variables en lugar de colores hardcodeados, asegurando que el tema se aplique de forma global y consistente.
+
+### Componentes con adaptación al tema
+
+- **`CategoryHero`**: Cambia la imagen de fondo entre `category-bg.jpeg` (claro) y `category-bg-dark.jpeg` (oscuro).
+- **`MainHeader`**: Contiene el botón de toggle con iconos SVG inline (luna para cambiar a oscuro, sol para cambiar a claro).
+
+---
+
+## 10. Backend API REST
+
+El backend es un servidor **Express.js** escrito en CommonJS (`.cjs`) que convive en el mismo repositorio. Se ejecuta en el puerto **3001** y expone una API REST para gestionar los archivos JSON de proyectos y subir imágenes.
 
 > **¿Por qué `.cjs`?** El `package.json` del proyecto tiene `"type": "module"`, lo que hace que Node.js interprete los `.js` como ESM. Para el backend se eligió CommonJS (más simple para I/O síncrono con `require`/`module.exports`). Renombrando los archivos a `.cjs` se fuerza a Node.js a tratarlos como CommonJS independientemente del `package.json`.
 
@@ -359,16 +410,18 @@ El backend es un servidor **Express.js** escrito en CommonJS (`.cjs`) que conviv
 
 ```
 api/
-├── server.cjs              # Express app + middleware + rutas
+├── server.cjs                 # Express app + middleware + rutas
 ├── routes/
-│   └── projects.cjs        # Definición de endpoints
+│   ├── projects.cjs           # Endpoints /api/projects y /api/categories
+│   └── upload.cjs             # Endpoint /api/upload (multer + subida de imágenes)
 ├── controllers/
-│   └── projectController.cjs  # Lógica de negocio
+│   ├── projectController.cjs  # Lógica CRUD de proyectos
+│   └── uploadController.cjs   # Lógica de subida: slugify, numeración, escritura en disco
 ├── utils/
-│   ├── fileSystem.cjs      # Lectura y escritura de JSONs
-│   └── validation.cjs      # Validación de campos
+│   ├── fileSystem.cjs         # Lectura y escritura de JSONs
+│   └── validation.cjs         # Validación de campos
 └── middleware/
-    └── errorHandler.cjs    # Manejo de errores centralizado
+    └── errorHandler.cjs       # Manejo de errores centralizado
 ```
 
 **Flujo de una petición:**
@@ -376,16 +429,17 @@ api/
 
 ### Endpoints disponibles
 
-| Método   | Ruta                       | Descripción                              |
-| -------- | -------------------------- | ---------------------------------------- |
-| `GET`    | `/health`                  | Estado del servidor                      |
-| `GET`    | `/api/categories`          | Lista de todas las categorías            |
-| `GET`    | `/api/projects`            | Todos los proyectos (filtros opcionales) |
-| `GET`    | `/api/projects/:id`        | Un proyecto por ID                       |
-| `POST`   | `/api/projects`            | Crear nuevo proyecto                     |
-| `PUT`    | `/api/projects/:id`        | Actualizar proyecto (parcial)            |
-| `DELETE` | `/api/projects/:id`        | Eliminar proyecto                        |
-| `PATCH`  | `/api/projects/visibility` | Cambiar visibilidad en lote              |
+| Método   | Ruta                       | Descripción                                 |
+| -------- | -------------------------- | ------------------------------------------- |
+| `GET`    | `/health`                  | Estado del servidor                         |
+| `GET`    | `/api/categories`          | Lista de todas las categorías               |
+| `GET`    | `/api/projects`            | Todos los proyectos (filtros opcionales)    |
+| `GET`    | `/api/projects/:id`        | Un proyecto por ID                          |
+| `POST`   | `/api/projects`            | Crear nuevo proyecto                        |
+| `PUT`    | `/api/projects/:id`        | Actualizar proyecto (parcial)               |
+| `DELETE` | `/api/projects/:id`        | Eliminar proyecto                           |
+| `PATCH`  | `/api/projects/visibility` | Cambiar visibilidad en lote                 |
+| `POST`   | `/api/upload`              | Subir imágenes a `public/images/portfolio/` |
 
 #### Filtros en `GET /api/projects`
 
@@ -407,7 +461,7 @@ curl -X POST http://localhost:3001/api/projects \
     "title": "Mi nuevo cartel",
     "cliente": "Cliente XYZ",
     "descripcion": "Descripción del proyecto",
-    "imagenes": [{ "ruta": "https://...", "label": "" }],
+    "imagenes": [{ "ruta": "/images/portfolio/design/carteleria/mi-nuevo-cartel001.jpg", "label": "" }],
     "videos": [],
     "extras": [],
     "visible": true
@@ -418,13 +472,48 @@ Campos obligatorios: `type`, `category`, `title`, `cliente`.
 
 El ID se genera automáticamente (`max(id) + 1` del JSON de destino).
 
-**Respuesta (201):**Respuesta (201):
+**Respuesta (201):**
 
 ```json
 {
   "success": true,
-  "data": { "id": 9999, "title": "Mi nuevo cartel", ... },
+  "data": { "id": 9999, "title": "Mi nuevo cartel", "...": "..." },
   "message": "Project created successfully"
+}
+```
+
+#### Subir imágenes — `POST /api/upload`
+
+Endpoint de subida de archivos (multipart/form-data) que guarda las imágenes en el sistema de archivos:
+
+```bash
+curl -X POST http://localhost:3001/api/upload \
+  -F "type=gd" \
+  -F "category=carteleria" \
+  -F "title=Mi nuevo cartel" \
+  -F "images=@foto1.jpg" \
+  -F "images=@foto2.png"
+```
+
+**Configuración:**
+
+- **Almacenamiento**: multer en modo memoria (sin archivos temporales en disco).
+- **Máximo por archivo**: 10 MB.
+- **Máximo archivos**: 20 por petición.
+- **Extensiones permitidas**: `.jpg`, `.jpeg`, `.png`, `.gif`, `.webp`, `.svg`, `.avif`.
+- **Nombre del archivo**: el título se convierte a slug y se numera secuencialmente (`mi-nuevo-cartel001.jpg`, `mi-nuevo-cartel002.png`...).
+- **Ruta de destino**: `public/images/portfolio/{design|web}/{categoría}/`.
+
+**Respuesta (200):**
+
+```json
+{
+  "success": true,
+  "data": [
+    { "ruta": "/images/portfolio/design/carteleria/mi-nuevo-cartel001.jpg", "label": "foto1.jpg" },
+    { "ruta": "/images/portfolio/design/carteleria/mi-nuevo-cartel002.png", "label": "foto2.png" }
+  ],
+  "message": "2 imagen(es) subida(s) correctamente"
 }
 ```
 
@@ -460,11 +549,18 @@ El cliente HTTP en `src/api/apiClient.ts` centraliza todas las llamadas:
 // Crear un proyecto
 await createProject({ type: 'gd', category: 'logotipos', title: '...', cliente: '...' });
 
+// Editar un proyecto existente
+await updateProject(3800, { title: 'Nuevo título', descripcion: '...' });
+
+// Subir imágenes al servidor
+const uploaded = await uploadImages(files, 'gd', 'carteleria', 'Mi cartel');
+// → [{ ruta: '/images/portfolio/design/carteleria/mi-cartel001.jpg', label: '...' }]
+
 // Cambiar visibilidad de varios proyectos
 await updateVisibilityBatch([3800, 3801], false);
 ```
 
-CORS está configurado para aceptar peticiones desde `localhost:5173` (Vite) y `localhost:3000`.
+CORS está configurado para aceptar peticiones desde `localhost:5173` (Vite), `localhost:3000`, y sus equivalentes con `127.0.0.1`.
 
 ### Arrancar el backend
 
@@ -493,7 +589,7 @@ curl http://localhost:3001/health
 
 ---
 
-## 10. Scripts disponibles
+## 11. Scripts disponibles
 
 ```bash
 pnpm dev            # Servidor de desarrollo Vite (solo frontend)
@@ -513,7 +609,7 @@ pnpm start          # Frontend + Backend en paralelo (modo desarrollo)
 
 ---
 
-## 11. Variables de entorno
+## 12. Variables de entorno
 
 ### Frontend (`.env` en la raíz)
 
@@ -539,7 +635,7 @@ Copiar `api/.env.example` como `api/.env` antes de arrancar el backend.
 
 ---
 
-## 12. Primeros pasos tras clonar
+## 13. Primeros pasos tras clonar
 
 ```bash
 # 1. Clonar el repositorio
@@ -556,13 +652,13 @@ cp api/.env.example api/.env  # necesario para el backend
 # 4a. Solo frontend (para ver el portfolio)
 pnpm dev
 
-# 4b. Frontend + backend (para usar /kimo/data y /kimo/add-project)
+# 4b. Frontend + backend (para usar /kimo/data, /kimo/add-project y /kimo/edit-project)
 pnpm start
 ```
 
 ---
 
-## 13. Convenciones y arquitectura
+## 14. Convenciones y arquitectura
 
 ### Iconos
 
@@ -570,13 +666,14 @@ Todos los iconos son componentes React SVG en `src/components/iconos/`. Aceptan 
 
 ### Atributos `data-id`
 
-Todos los componentes principales llevan `data-id` con un nombre semántico (`data-id="books-page"`, `data-id="places-map"`...). Facilitan los tests E2E y el debugging visual sin acoplarse a clases CSS.
+Todos los componentes principales llevan `data-id` con un nombre semántico (`data-id="books-page"`, `data-id="places-map"`, `data-id="theme-toggle-btn"`...). Facilitan los tests E2E y el debugging visual sin acoplarse a clases CSS.
 
 ### Estilos
 
 - **Tailwind** para utilidades de uso único.
 - **Archivos `.css`** para estilos complejos, multi-propiedad, pseudo-clases o media queries.
-- **Variables CSS** para el tema: `--color-ink`, `--color-accent`, `--color-border`, `--color-muted`...
+- **Variables CSS** para el tema: `--color-bg`, `--color-surface`, `--color-text`, `--color-accent`, `--color-border`, `--color-muted`...
+- Los estilos de componentes usan variables CSS en lugar de colores hardcodeados para soportar el tema claro/oscuro.
 
 ### Interfaces TypeScript
 
