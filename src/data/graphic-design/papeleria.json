@@ -190,26 +190,6 @@
     "visible": true
   },
   {
-    "id": 199,
-    "date": "2020-12-21 11:47",
-    "title": "Flyer PierdeLoss90",
-    "cliente": "PierdeLoss90",
-    "descripcion": "Flyer promocional de un producto de pérdida de peso",
-    "imagenes": [
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Flyer-Pierdeloss90-1.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Flyer-Pierdeloss90-2.jpg",
-        "label": ""
-      }
-    ],
-    "videos": [],
-    "extras": [],
-    "visible": true
-  },
-  {
     "id": 187,
     "date": "2020-07-08 14:34",
     "title": "Felicitación Ares",
@@ -247,7 +227,7 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": false
   },
   {
     "id": 166,
@@ -267,7 +247,7 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": false
   },
   {
     "id": 156,
@@ -303,7 +283,7 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": false
   },
   {
     "id": 151,
@@ -312,6 +292,10 @@
     "cliente": "Ida2",
     "descripcion": "Rollups de oferta para una imprenta digital",
     "imagenes": [
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Rollups-scaled.jpg",
+        "label": ""
+      },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/1.jpg",
         "label": ""
@@ -333,17 +317,15 @@
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Rollups-scaled.jpg",
-        "label": ""
-      },
-      {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/01/1463648176-1024x627.jpg",
         "label": "También se hizo un diseño para X-Banner (Display parecido al rollup pero no enrollable)"
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "papeleria"
   },
   {
     "id": 144,
@@ -387,38 +369,6 @@
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_Curriculum-Ombuena_Página_6.jpg",
         "label": "Currículum de un delineante"
-      }
-    ],
-    "videos": [],
-    "extras": [],
-    "visible": true
-  },
-  {
-    "id": 142,
-    "date": "2018-07-03 07:40",
-    "title": "Casos de éxito EQUILIBRIUM",
-    "cliente": "Equilibrium",
-    "descripcion": "Libreto de 20 páginas con algunos de los casos de éxito del sistema de entrenamiento personal de Equilibrium PTS",
-    "imagenes": [
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/1.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/2.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/4.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/3.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/5.jpg",
-        "label": ""
       }
     ],
     "videos": [],
@@ -497,6 +447,10 @@
     "descripcion": "Libretas y agendas de la imprenta digital Ida2. Las primeras páginas contienen información comercial de la empresa, y las páginas están personalizadas con el nombre de los clientes a los que se le van a regalar, y el pie de cada página hay una frase motivacional diferente.",
     "imagenes": [
       {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/3-1.jpg",
+        "label": ""
+      },
+      {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/2-1-scaled.jpg",
         "label": ""
       },
@@ -509,17 +463,15 @@
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/3-1.jpg",
-        "label": ""
-      },
-      {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/4.jpg",
         "label": ""
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "papeleria"
   },
   {
     "id": 115,
@@ -705,21 +657,23 @@
     "descripcion": "Tarjetas de visita de un entrenador personal",
     "imagenes": [
       {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Tarjetas.jpg",
+        "label": ""
+      },
+      {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/01/250514_Tarjetas-Pauer-2-1-copia.jpg",
         "label": ""
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/01/250514_Tarjetas-Pauer-2-2-copia.jpg",
         "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Tarjetas.jpg",
-        "label": ""
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "papeleria"
   },
   {
     "id": 74,
@@ -750,8 +704,10 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": ["Hacer Mockup de ambos juntos"],
+    "visible": true,
+    "type": "gd",
+    "category": "papeleria"
   },
   {
     "id": 71,

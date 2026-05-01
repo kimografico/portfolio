@@ -11,10 +11,6 @@
     ],
     "imagenes": [
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_screen.jpg",
-        "label": ""
-      },
-      {
         "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_5.jpg",
         "label": "Página principal, estilo one page Información principal en navegación vertical"
       },
@@ -51,6 +47,10 @@
         "label": "Contacto – Formulario de contacto y mapa de ubicación"
       },
       {
+        "ruta": "https://kimografico.com/wp-content/uploads/2024/03/AP_screen.jpg",
+        "label": ""
+      },
+      {
         "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/paella_screens-scaled-qmvn35yok56naogrhas6j99x578iz6nv17pi9w8gns.jpg",
         "label": ""
       }
@@ -62,7 +62,9 @@
       }
     ],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   },
   {
     "id": 102,
@@ -112,7 +114,9 @@
       }
     ],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   },
   {
     "id": 105,
@@ -130,66 +134,60 @@
     ],
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/foto.jpg",
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-39.jpg",
         "label": "Menú Inicio – Entrada a la web"
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-39.jpg",
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-47.jpg",
         "label": "Portfolio – Navegación horizontal"
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-47.jpg",
-        "label": "Publicaciones – Con información precisa"
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-54.jpg",
-        "label": "Anotaciones – Información sobre la artista"
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-48-28.jpg",
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-57.jpg",
         "label": "Imagen – Con información de la obra"
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-46-57.jpg",
-        "label": "Venta – Vía TPV virtual"
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-48-12.jpg",
-        "label": "Eventos en los que ha participado"
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-44.png",
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-01-26_00-47-14.jpg",
         "label": "Currículum – Muy jerarquizado"
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-01-26_00-47-14.jpg",
-        "label": "Contacto – Simple y seguro"
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-48-28.jpg",
+        "label": "Anotaciones – Información sobre la artista"
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-21.jpg",
-        "label": "Vídeo de muestra de la navegación por el sitio web"
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/Gigabyte-AORUS-AD27QD-2.jpg",
-        "label": ""
+        "label": "Contacto – Simple y seguro"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-44.jpg",
+        "label": "Eventos en los que ha participado"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-47-54.jpg",
+        "label": "Publicaciones – Con información precisa"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-01-26_00-48-12.jpg",
+        "label": "Venta – Vía TPV virtual"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/foto.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
         "ruta": "https://youtu.be/ViyDzREWzPo",
-        "label": ""
+        "label": "Vídeo de muestra de la navegación por el sitio web"
       },
       {
         "ruta": "https://youtu.be/Tet8RboZuFo",
-        "label": ""
+        "label": "Vídeo de muestra de la navegación por el sitio web"
       }
     ],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   },
   {
     "id": 88,
@@ -402,8 +400,12 @@
         "label": "Vídeo de muestra de la navegación por la web"
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar imagen principal a 16/9 y quitar tip abajo a la izquierda"
+    ],
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   },
   {
     "id": 70,
@@ -550,15 +552,13 @@
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/sintac3-1.jpg",
         "label": "Contacto – Formulario de contacto con capacidad para enviar archivos"
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2019/11/blur-close-up-computer-927629.jpg",
-        "label": ""
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   },
   {
     "id": 58,
@@ -591,15 +591,15 @@
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/11/1.jpg",
         "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2019/11/201B40_00H-IMS-en_SG.jpg",
-        "label": ""
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar a 16/9"
+    ],
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   },
   {
     "id": 53,
@@ -624,15 +624,13 @@
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/nakama2.jpg",
         "label": "Nakama Pintura y aerografías – Parte web dedicada a la sección de pintura mural de la empresa. Tenemos sección Quienes somos, Galería enlazada a un álbum de facebook para facilidad de uso del cliente, formulario de contacto y mapa de google maps con la localización"
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/NAKAMA.jpg",
-        "label": ""
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   },
   {
     "id": 40,
@@ -657,15 +655,13 @@
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0008_Capa-4.jpg",
         "label": "Contacto – Formulario de contacto"
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/DIEZCAUDET.jpg",
-        "label": ""
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   },
   {
     "id": 37,
@@ -690,8 +686,8 @@
         "label": "Empresa – Historia y información sobre la empresa"
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/rapid3-1.jpg",
-        "label": "Llantas – Marcas y modelos de llantas"
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/11/benq-sw2700pt-monitor-hero-1500x1000.jpg",
+        "label": ""
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/rapid4-1.jpg",
@@ -702,13 +698,17 @@
         "label": "En 2016 la empresa pasó a llamarse HomeWheels, cambiando de dominio y actualizando los logos e imágenes."
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2019/11/benq-sw2700pt-monitor-hero-1500x1000.jpg",
-        "label": ""
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/rapid3-1.jpg",
+        "label": "Llantas – Marcas y modelos de llantas"
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar a 16/9 y ajustar tamaños de imagenes"
+    ],
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   },
   {
     "id": 36,
@@ -744,15 +744,15 @@
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/webs_0005_Capa-5-copia.jpg",
         "label": "Página de productos – Explicación pormenorizada de los productos que venden"
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/CRONAVAL.jpg",
-        "label": ""
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar a 16/9"
+    ],
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   },
   {
     "id": 27,
@@ -800,8 +800,12 @@
         "label": ""
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar a 16/9"
+    ],
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   },
   {
     "id": 24,
@@ -839,10 +843,6 @@
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/02/chrome_2019-02-12_22-20-52.jpg",
         "label": "Currículum – Breve resumen del currículum"
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/PB1.jpg",
-        "label": ""
       }
     ],
     "videos": [
@@ -851,8 +851,12 @@
         "label": ""
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar a 16/9"
+    ],
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   },
   {
     "id": 22,
@@ -897,8 +901,12 @@
         "label": ""
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar a 16/9"
+    ],
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   },
   {
     "id": 19,
@@ -959,10 +967,6 @@
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/11/chrome_2019-02-19_21-48-17.jpg",
         "label": "Productos – Especialidades de la tienda"
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2019/02/lgw1943tbmonitor1.jpg",
-        "label": ""
       }
     ],
     "videos": [
@@ -971,8 +975,12 @@
         "label": ""
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar a 16/9"
+    ],
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   },
   {
     "id": 12,
@@ -1033,7 +1041,11 @@
         "label": "Vídeo de muestra de la navegación por el sitio web"
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar a 16/9"
+    ],
+    "visible": true,
+    "type": "dev",
+    "category": "vanilla"
   }
 ]

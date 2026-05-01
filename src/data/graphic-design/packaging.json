@@ -7,22 +7,6 @@
     "descripcion": "PierdeLoss90 Pack para un programa de pérdida de peso",
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Registro-de-Entrenamiento.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Iman-Nevera.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/IMAN.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_B.jpg",
-        "label": ""
-      },
-      {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/CAJA-CERRADA.jpg",
         "label": ""
       },
@@ -31,15 +15,7 @@
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_A.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-1.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/CAJAS-v2-07.jpg",
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/CAJAS-v2-05.jpg",
         "label": ""
       },
       {
@@ -47,13 +23,39 @@
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/CAJAS-v2-05.jpg",
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/IMAN.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Iman-Nevera.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Registro-de-Entrenamiento.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_B.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Libreto_Pierdeloss90_A.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/CAJAS-v2-07.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-1.jpg",
         "label": ""
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "packaging"
   },
   {
     "id": 128,
@@ -62,6 +64,10 @@
     "cliente": "Ida2",
     "descripcion": "Taco de notas personalizado para regalar a clientes. En la caja y en cada hoja aparece el nombre del cliente, produciéndose una comunicación 1:1 mucho más efectiva y con mas retorno que con una campaña publicitaria al uso.",
     "imagenes": [
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/TACOS-PERSONALIZADOS.png",
+        "label": ""
+      },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2017/09/Pack-hojas-3.jpg",
         "label": ""
@@ -73,15 +79,13 @@
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2017/09/Hoja.jpg",
         "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/TACOS-PERSONALIZADOS.png",
-        "label": ""
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "packaging"
   },
   {
     "id": 93,
@@ -90,6 +94,14 @@
     "cliente": "Aceite Ozonizado",
     "descripcion": "Ozolife",
     "imagenes": [
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/condropep.png",
+        "label": "Condropep Plus – Impresión digital, sobre impreso a una tinta"
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/12/Ozolife.jpg",
+        "label": "Diseño global del packaging primario y secundario de las ramas de biocosmética y de nutrición de la empresa Ozolife Group"
+      },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/ozolife-aceite-de-oliva-ozonizado.jpg",
         "label": "Aceite Ozonizado – Impresión digital + Serigrafía plateada. Frasco serigrafiado a una tinta"
@@ -127,19 +139,33 @@
         "label": "Crema de manos – Impresión digital + Serigrafía plateada. Frasco impreso en CMYK"
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2019/12/condropep.png",
-        "label": "Condropep Plus – Impresión digital, sobre impreso a una tinta"
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2019/12/Ozolife.jpg",
-        "label": "Diseño global del packaging primario y secundario de las ramas de biocosmética y de nutrición de la empresa Ozolife Group"
-      },
-      {
         "ruta": "https://kimografico.com/wp-content/uploads/elementor/thumbs/Crema-para-celulitis-Ozolife-scaled-pwdw3cpp6774jicxedxgtbx7rchzisn4m56qh6ckui.jpg",
         "label": "Crema anticelulítica – Impresión digital + Serigrafía plateada. Frasco impreso en CMYK"
       },
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/12/ozolife-1.jpg",
+        "label": ""
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "visible": true,
+    "type": "gd",
+    "category": "packaging"
+  },
+  {
+    "id": 129,
+    "date": "2017-09-08 11:47",
+    "title": "Minipapelera",
+    "cliente": "Ida2",
+    "descripcion": "Papelera de cartón para Ida2",
+    "imagenes": [
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Minipapelera-Ida2-small.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/09/Minipapelera3D-186x300-1.png",
         "label": ""
       }
     ],

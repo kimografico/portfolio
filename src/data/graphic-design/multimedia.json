@@ -44,8 +44,12 @@
         "label": "Logo Agua"
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 188,
@@ -60,8 +64,12 @@
         "label": ""
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 183,
@@ -80,8 +88,12 @@
         "label": "NEÓN – Segundo Teaser"
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 181,
@@ -100,8 +112,12 @@
         "label": "Contracciones Sonoras – Versión clara (Elegida por el cliente)"
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 179,
@@ -392,8 +408,12 @@
         "label": ""
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 175,
@@ -412,8 +432,12 @@
         "label": ""
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 174,
@@ -428,8 +452,12 @@
         "label": ""
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 173,
@@ -508,8 +536,12 @@
         "label": ""
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 164,
@@ -528,8 +560,12 @@
         "label": "Versión actualizada al cambio de nombre/imagen de la empresa a Ascenza 5 de Noviembre de 2019"
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 159,
@@ -601,8 +637,12 @@
         "label": "Prueba de juego infinito"
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 141,
@@ -617,8 +657,12 @@
         "label": "Videoentrevista a un agricultor sobre los beneficios de utilizar el producto"
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 139,
@@ -627,6 +671,10 @@
     "cliente": "PierdeLoss90",
     "descripcion": "Newsletter Pierdeloss90 Newsletter que forman parte de un producto entrenamiento y dieta para pérdida de peso.",
     "imagenes": [
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-3.jpg",
+        "label": "Estos se combinan en 13 envíos, coincidiendo con las 13 semanas que dura el entrenamiento"
+      },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-0.jpg",
         "label": ""
@@ -638,15 +686,13 @@
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-2.jpg",
         "label": "Se realizaron un total de 91 módulos diferentes para conformar los newsletters"
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-Pierdeloss90-Newsletter-3.jpg",
-        "label": "Estos se combinan en 13 envíos, coincidiendo con las 13 semanas que dura el entrenamiento"
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 138,
@@ -661,8 +707,12 @@
         "label": ""
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 135,
@@ -677,8 +727,12 @@
         "label": "Infografía animada explicando las características y ventajas del herbicida Register 25WG"
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 133,
@@ -733,8 +787,12 @@
         "label": ""
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 91,
@@ -753,8 +811,12 @@
         "label": "Diseñada en After Effects"
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 89,
@@ -764,15 +826,15 @@
     "descripcion": "Encuestas interactivas para Equilibrium Encuesta inicial que se le hace a los clientes cuando se apuntan, para ofrecer el servicio más ajustado a las necesidades del mismo Los campos son interactivos para que el personal del gimnasio pueda rellenarlos de forma fácil y ágil, resultando en un servicio más rápido, menos errores, y una imagen de modernidad y alta calidad del servicio.",
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/6.png",
-        "label": ""
-      },
-      {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/5.png",
         "label": ""
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/4.png",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/6.png",
         "label": ""
       },
       {
@@ -826,7 +888,9 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 81,
@@ -861,7 +925,62 @@
         "label": "Digital vs. Offset – Version en Español"
       }
     ],
+    "extras": [
+      "Imagen para miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
+  },
+  {
+    "id": 26,
+    "date": "2011-02-08 12:29",
+    "title": "Museo 3D",
+    "cliente": "Pilar Belmonte",
+    "descripcion": "Paseo virtual 3D por el Museo Municipal de Albacete Aplicación diseñada para organización de las obras en la exposición «Horizontes cercanos e infinitos» de Pilar Belmonte Se hizo un plano 3D de la sala del Museo en la que se iba a organizar la exposición, y se organizaron los cuadros sobre los render, de forma que se pudiera hacer una visita virtual por la exposición y así comprobar que la organización de los mismos era la adecuada para la artista.",
+    "imagenes": [
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2011/02/Museo3D_APP.jpg",
+        "label": "Resultado final – Prediseño en el programa"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2011/02/IMG_5884-ajustada-scaled.jpg",
+        "label": "Resultado final – Exposición una vez montada"
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_5.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_7.jpg",
+        "label": ""
+      }
+    ],
+    "videos": [
+      {
+        "ruta": "https://www.youtube.com/watch?v=gjB2e34vKnA",
+        "label": "En el vídeo se puede observar la utilización del programa, los puntos de vista 3D superpuestos en un plano de la planta de cada piso, y un triángulo que muestra la dirección a la que se está mirando en el visor."
+      }
+    ],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   }
 ]

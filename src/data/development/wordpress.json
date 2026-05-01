@@ -133,8 +133,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar la proporción 16/9 de la imagen principal"
+    ],
+    "visible": true,
+    "type": "dev",
+    "category": "wordpress"
   },
   {
     "id": 177,
@@ -283,13 +287,15 @@
         "label": "Tienda Online – Ejemplo de sección"
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2019/10/monitor-cachecroche-scaled-113x75.jpg",
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/10/monitor-cachecroche.jpg",
         "label": ""
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "dev",
+    "category": "wordpress"
   },
   {
     "id": 149,
@@ -404,8 +410,12 @@
         "label": ""
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Añadir imagen principal 16/9"
+    ],
+    "visible": true,
+    "type": "dev",
+    "category": "wordpress"
   },
   {
     "id": 98,
@@ -425,16 +435,16 @@
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2015/06/Odin-logo-cabecera.png",
-        "label": ""
-      },
-      {
         "ruta": "https://kimografico.com/wp-content/uploads/2019/01/philips_258b6qu_front_web.jpg",
         "label": ""
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Añadir imagenes"
+    ],
+    "visible": true,
+    "type": "dev",
+    "category": "wordpress"
   }
 ]

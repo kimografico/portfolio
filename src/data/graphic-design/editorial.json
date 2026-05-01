@@ -283,6 +283,10 @@
         "label": ""
       },
       {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_C_-1.jpg",
+        "label": ""
+      },
+      {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-1.jpg",
         "label": ""
       },
@@ -332,10 +336,6 @@
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Mockup-13.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/kimografico_C_-1.jpg",
         "label": ""
       },
       {
@@ -423,31 +423,29 @@
         "label": ""
       },
       {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/BANNER-PIERDELOSS90-2.jpg",
+        "label": ""
+      },
+      {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/BESTSELLER.jpg",
         "label": ""
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/BESTSELLER2.jpg",
         "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/BANNER-PIERDELOSS90-2.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/VENDIDO.jpg",
-        "label": ""
       }
     ],
     "videos": [],
-    "extras": [],
+    "extras": ["Agrupar bocetos en imagenes"],
     "metadata": {
       "titulo": "Ni milagros ni hostias",
       "formato": "25 x 17 cm / eBook",
       "paginas": "277",
       "informacion": ""
     },
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "editorial"
   },
   {
     "id": 194,
@@ -576,13 +574,15 @@
       }
     ],
     "videos": [],
-    "extras": [],
+    "extras": ["Ajustar tamaño de miniatura"],
     "metadata": {
       "formato": "",
       "paginas": "",
       "informacion": "Ilustraciones de Carmen Alonso y Julia Tartaj"
     },
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "editorial"
   },
   {
     "id": 137,
@@ -706,13 +706,15 @@
       }
     ],
     "videos": [],
-    "extras": [],
+    "extras": ["Ajustar tamaño de miniatura"],
     "metadata": {
       "formato": "16,5 x 25 cm",
       "paginas": "198",
       "informacion": "Ilustraciones: Pilar Belmonte Ilustraciones vectoriales: Carlos Sáez (Kimo)"
     },
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "editorial"
   },
   {
     "id": 119,
@@ -887,7 +889,7 @@
       "paginas": "",
       "informacion": ""
     },
-    "visible": true
+    "visible": false
   },
   {
     "id": 76,
@@ -944,7 +946,7 @@
       "paginas": "",
       "informacion": ""
     },
-    "visible": true
+    "visible": false
   },
   {
     "id": 75,
@@ -1693,7 +1695,7 @@
       "paginas": "",
       "informacion": ""
     },
-    "visible": true
+    "visible": false
   },
   {
     "id": 3,
@@ -1708,13 +1710,15 @@
       }
     ],
     "videos": [],
-    "extras": [],
+    "extras": ["Suavizar imagen de Goya de fondo"],
     "metadata": {
       "formato": "",
       "paginas": "",
       "informacion": ""
     },
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "editorial"
   },
   {
     "id": 1,
@@ -1735,6 +1739,38 @@
       "paginas": "",
       "informacion": ""
     },
+    "visible": true
+  },
+  {
+    "id": 142,
+    "date": "2018-07-03 07:40",
+    "title": "Casos de éxito EQUILIBRIUM",
+    "cliente": "Equilibrium",
+    "descripcion": "Libreto de 20 páginas con algunos de los casos de éxito del sistema de entrenamiento personal de Equilibrium PTS",
+    "imagenes": [
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/4.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/5.jpg",
+        "label": ""
+      }
+    ],
+    "videos": [],
+    "extras": [],
     "visible": true
   }
 ]

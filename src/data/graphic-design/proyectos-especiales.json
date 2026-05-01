@@ -29,7 +29,7 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": false
   },
   {
     "id": 46,
@@ -62,7 +62,7 @@
       }
     ],
     "extras": [],
-    "visible": true
+    "visible": false
   },
   {
     "id": 45,
@@ -118,7 +118,7 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": false
   },
   {
     "id": 38,
@@ -147,60 +147,7 @@
       }
     ],
     "extras": [],
-    "visible": true
-  },
-  {
-    "id": 26,
-    "date": "2011-02-08 12:29",
-    "title": "Museo 3D",
-    "cliente": "Pilar Belmonte",
-    "descripcion": "Paseo virtual 3D por el Museo Municipal de Albacete Aplicación diseñada para organización de las obras en la exposición «Horizontes cercanos e infinitos» de Pilar Belmonte Se hizo un plano 3D de la sala del Museo en la que se iba a organizar la exposición, y se organizaron los cuadros sobre los render, de forma que se pudiera hacer una visita virtual por la exposición y así comprobar que la organización de los mismos era la adecuada para la artista.",
-    "imagenes": [
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_5.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_4.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_1.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_2.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_3.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_7.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2011/02/Museo3D_APP.jpg",
-        "label": "Resultado final – Prediseño en el programa"
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2011/02/IMG_5884-ajustada-scaled.jpg",
-        "label": "Resultado final – Exposición una vez montada"
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Museo3D-1.png",
-        "label": ""
-      }
-    ],
-    "videos": [
-      {
-        "ruta": "https://www.youtube.com/watch?v=gjB2e34vKnA",
-        "label": "En el vídeo se puede observar la utilización del programa, los puntos de vista 3D superpuestos en un plano de la planta de cada piso, y un triángulo que muestra la dirección a la que se está mirando en el visor."
-      }
-    ],
-    "extras": [],
-    "visible": true
+    "visible": false
   },
   {
     "id": 16,
@@ -265,7 +212,7 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": false
   },
   {
     "id": 217,
@@ -281,7 +228,7 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": false
   },
   {
     "id": 171,
@@ -296,8 +243,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Dejar algo más de aire, y añadir una imagen del diseño"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "proyectos-especiales"
   },
   {
     "id": 161,
@@ -347,6 +298,10 @@
     "descripcion": "Trofeo para la VII edición del concurso de paellas organizado por Grupo Electrostocks. Se realizaron estatuillas para el 1er, 2º y 3er premio. El trofeo está realizado en metacrilato de 10mm, grabado y con peana adherida con cianocrilato, y una cuchara de madera grabada a láser.",
     "imagenes": [
       {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_IMG_20190307_190827.jpg",
+        "label": ""
+      },
+      {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_IMG_20190307_190833.jpg",
         "label": ""
       },
@@ -355,41 +310,19 @@
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_IMG_20190307_190827.jpg",
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_IMG_20190307_190604.jpg",
         "label": ""
       },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_IMG_20190307_190631.jpg",
         "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_IMG_20190307_190604.jpg",
-        "label": ""
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
-  },
-  {
-    "id": 129,
-    "date": "2017-09-08 11:47",
-    "title": "Minipapelera",
-    "cliente": "Ida2",
-    "descripcion": "Papelera de cartón para Ida2",
-    "imagenes": [
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Minipapelera-Ida2-small.png",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2017/09/Minipapelera3D-186x300-1.png",
-        "label": ""
-      }
-    ],
-    "videos": [],
-    "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "proyectos-especiales"
   },
   {
     "id": 121,
@@ -419,6 +352,18 @@
     "descripcion": "Vinilos para las puertas de Decathlon Aldaia, con motivo de la campaña Trocathlon, y algunos carteles para señalética.",
     "imagenes": [
       {
+        "ruta": "https://kimografico.com/wp-content/uploads/2016/10/111016_MOCKUP-Puertas.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2016/10/decathln2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2016/10/decathln.jpg",
+        "label": ""
+      },
+      {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2016/10/111016_Puertas-v2.png",
         "label": ""
       },
@@ -427,25 +372,15 @@
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2016/10/decathln.jpg",
-        "label": ""
-      },
-      {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2016/10/111016_Vinilos-Campanar-v2-4-scaled.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2016/10/decathln2.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2016/10/111016_MOCKUP-Puertas.jpg",
         "label": ""
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "proyectos-especiales"
   },
   {
     "id": 112,
@@ -477,7 +412,7 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": false
   },
   {
     "id": 90,
@@ -486,6 +421,26 @@
     "cliente": "LaFlama",
     "descripcion": "Diseño para los uniformes y camisetas promocionales del Pub «La Flama» del barrio del Carmen de Valencia",
     "imagenes": [
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/5-1.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/3-3.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/2-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/1-2.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/4-2.jpg",
+        "label": ""
+      },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/1-3.jpg",
         "label": ""
@@ -521,35 +476,13 @@
       {
         "ruta": "https://kimografico.com/wp-content/uploads/2020/01/resized_Camisetas-18.jpg",
         "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/5-1.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/3-3.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/4-2.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/1-2.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/6-scaled-80x80.jpg",
-        "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/2-2.jpg",
-        "label": ""
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "proyectos-especiales"
   },
   {
     "id": 78,
@@ -689,7 +622,7 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": false
   },
   {
     "id": 21,
@@ -729,6 +662,6 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": false
   }
 ]

@@ -34,9 +34,9 @@
   {
     "id": 216,
     "date": "2020-12-31 18:58",
-    "title": "Botellines de cerveza personalizados",
+    "title": "Botellines de cerveza para un Cumpleaños",
     "cliente": "KIMO",
-    "descripcion": "Botellínes de cerveza PERSONALIZADOS PARA UN CUMPLEAÑOS",
+    "descripcion": "Botellínes de cerveza personalizados para el cumpleaños de un amigo",
     "imagenes": [
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/05/kimografico_beer-bottle.jpg",
@@ -49,15 +49,21 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": false
+    "visible": false,
+    "type": "gd",
+    "category": "etiquetas"
   },
   {
     "id": 210,
     "date": "2020-12-26 19:44",
-    "title": "Etiquetas para hidromiel Loki",
+    "title": "Botellín Hidromiel Loki",
     "cliente": "Odín Hidromiel",
     "descripcion": "Etiquetas para una marca de hidromieles",
     "imagenes": [
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Etiqueta-13.jpg",
+        "label": ""
+      },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Etiqueta-7.jpg",
         "label": ""
@@ -93,23 +99,25 @@
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Loki-3.jpg",
         "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Etiqueta-13.jpg",
-        "label": ""
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "etiquetas"
   },
   {
     "id": 209,
     "date": "2020-12-26 19:36",
-    "title": "Etiquetas para hidromiel Odín",
+    "title": "Botellín hidromiel Odín",
     "cliente": "Odín Hidromiel",
     "descripcion": "Etiquetas para una marca de hidromieles",
     "imagenes": [
+      {
+        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Etiqueta-6.jpg",
+        "label": ""
+      },
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Etiqueta-5.jpg",
         "label": ""
@@ -137,20 +145,18 @@
       {
         "ruta": "https://www.kimografico.com/wp-content/uploads/2018/10/Loki-3.jpg",
         "label": ""
-      },
-      {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/12/Etiqueta-6.jpg",
-        "label": ""
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "etiquetas"
   },
   {
     "id": 208,
     "date": "2020-12-22 10:38",
-    "title": "Etiquetas para Mathematic",
+    "title": "Cerveza Mathematic",
     "cliente": "Odín Hidromiel",
     "descripcion": "Etiquetas para una cerveza de Hierbabuena, Limón y Jengibre",
     "imagenes": [
@@ -169,12 +175,14 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "etiquetas"
   },
   {
     "id": 207,
     "date": "2020-12-22 10:33",
-    "title": "Etiquetas para Ginger Ale",
+    "title": "Ginger Ale",
     "cliente": "Odín Hidromiel",
     "descripcion": "Etiquetas para una bebida de Jengibre",
     "imagenes": [
@@ -193,21 +201,23 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "etiquetas"
   },
   {
     "id": 206,
     "date": "2020-12-22 09:59",
-    "title": "Etiquetas para Hidromiel Odín (YULE EDITION)",
+    "title": "Hidromiel Odín (YULE EDITION)",
     "cliente": "Odín Hidromiel",
     "descripcion": "Odín Hidromiel Etiqueta de la edición especial Yule, una versión con jengibre para la campaña navideña",
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/INSTAGRAM-YULE.jpg",
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Ginger-Ale-Mockup.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/Ginger-Ale-Mockup.jpg",
+        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/12/INSTAGRAM-YULE.jpg",
         "label": ""
       },
       {
@@ -221,7 +231,9 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "etiquetas"
   },
   {
     "id": 180,

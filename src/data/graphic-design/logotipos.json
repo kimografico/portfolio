@@ -48,8 +48,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Añadir algunos ejemplos de bocetos"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 191,
@@ -64,8 +68,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar tamaño de la imagen miniatura y ponerle fondo blanco"
+    ],
+    "visible": false,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 190,
@@ -97,8 +105,12 @@
         "label": ""
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar tamaño de la imagen miniatura y ponerle fondo blanco"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 189,
@@ -125,8 +137,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar tamaño de la imagen miniatura y ponerla en jpg"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 186,
@@ -141,8 +157,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Darle margen blanco a la imagen en miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 185,
@@ -225,8 +245,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar tamaño de la imagen miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 178,
@@ -277,8 +301,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar tamaño de la imagen miniatura y ponerla en JPG con fondo blanco"
+    ],
+    "visible": false,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 172,
@@ -353,8 +381,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Dar un poco más de margen blanco a la imagen miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 167,
@@ -441,8 +473,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar tamaño de la imagen miniatura y poner fondo blanco"
+    ],
+    "visible": false,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 160,
@@ -466,7 +502,9 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": false,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 155,
@@ -497,8 +535,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar tamaño de la imagen miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 154,
@@ -508,7 +550,7 @@
     "descripcion": "Logotipo para una diseñadora de moda vanguardista",
     "imagenes": [
       {
-        "ruta": "CacheCroche-768x576.jpg",
+        "ruta": "https://kimografico.com/wp-content/uploads/2019/04/CacheCroche.jpg",
         "label": ""
       },
       {
@@ -526,7 +568,9 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 150,
@@ -742,8 +786,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar contraste"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 125,
@@ -769,7 +817,7 @@
     "id": 124,
     "date": "2017-05-08 21:36",
     "title": "Hidromiel Loki",
-    "cliente": "Odín Hidromiel ",
+    "cliente": "Odín Hidromiel",
     "descripcion": "Logotipo para una hidromiel con especias, producto de Hidromiel Odin.",
     "imagenes": [
       {
@@ -794,8 +842,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar tamaño de la imagen miniatura y ajustar contraste"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 117,
@@ -823,7 +875,7 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": false
   },
   {
     "id": 116,
@@ -853,7 +905,7 @@
     "id": 113,
     "date": "2016-06-20 20:23",
     "title": "Lola Hidromiel con manzana",
-    "cliente": "Odín Hidromiel ",
+    "cliente": "Odín Hidromiel",
     "descripcion": "Logotipo para una hidromiel con manzana, producto de Hidromiel Odin.",
     "imagenes": [
       {
@@ -874,8 +926,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar tamaño de la imagen miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 107,
@@ -903,7 +959,7 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": false
   },
   {
     "id": 106,
@@ -979,8 +1035,12 @@
         "label": ""
       }
     ],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Poner una version vertical"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 94,
@@ -1022,7 +1082,7 @@
     "id": 84,
     "date": "2014-10-06 20:16",
     "title": "Hidromiel Odin",
-    "cliente": "Odín Hidromiel ",
+    "cliente": "Odín Hidromiel",
     "descripcion": "Logotipo para una marca de hidromieles",
     "imagenes": [
       {
@@ -1055,8 +1115,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar tamaño de la imagen miniatura"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 83,
@@ -1143,8 +1207,12 @@
       }
     ],
     "videos": [],
-    "extras": [],
-    "visible": true
+    "extras": [
+      "Ajustar contraste en varias imagenes"
+    ],
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 80,
@@ -1189,7 +1257,7 @@
   {
     "id": 69,
     "date": "2013-11-18 13:52",
-    "title": "Anartxy",
+    "title": "Joyería Anartxy",
     "cliente": "Anartxy",
     "descripcion": "Logotipo para una cadena de joyerías",
     "imagenes": [
@@ -1224,7 +1292,9 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 62,
@@ -1240,7 +1310,7 @@
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": false
   },
   {
     "id": 54,
