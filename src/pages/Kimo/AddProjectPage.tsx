@@ -17,7 +17,7 @@ const CATEGORIES_BY_TYPE: Record<string, { label: string; value: string }[]> = {
     { value: 'proyectos-especiales', label: 'Proyectos especiales' },
   ],
   dev: [
-    { value: 'vanilla', label: 'Vanilla JS' },
+    { value: 'vanilla', label: 'Vanilla' },
     { value: 'wordpress', label: 'WordPress' },
     { value: 'frameworks', label: 'Frameworks' },
   ],
@@ -42,6 +42,9 @@ const STACK_QUICK_OPTIONS = [
 /** Devuelve un objeto imagen vacío */
 const emptyImagen = () => ({ ruta: '', label: '' });
 
+/** Devuelve un objeto video vacío */
+const emptyVideo = () => ({ ruta: '', label: '' });
+
 /** Estado inicial del formulario */
 const initialForm = {
   type: '' as '' | 'gd' | 'dev',
@@ -51,12 +54,23 @@ const initialForm = {
   descripcion: '',
   visible: true,
   imagenes: [emptyImagen()],
-  videos: [''],
+  videos: [emptyVideo()],
   extras: [''],
   stack: [] as string[],
 };
 
-type FormState = typeof initialForm;
+type FormState = {
+  type: '' | 'gd' | 'dev';
+  category: string;
+  title: string;
+  cliente: string;
+  descripcion: string;
+  visible: boolean;
+  imagenes: { ruta: string; label: string }[];
+  videos: { ruta: string; label: string }[];
+  extras: string[];
+  stack: string[];
+};
 
 /**
  * AddProjectPage: Formulario para añadir un proyecto nuevo.
@@ -179,21 +193,39 @@ export default function AddProjectPage() {
     e.target.value = '';
   }
 
-  // --- Videos y extras (arrays de strings) ---
+  // --- Videos (array de objetos) ---
 
-  function handleArrayChange(key: 'videos' | 'extras', index: number, value: string) {
-    const updated = form[key].map((v, i) => (i === index ? value : v));
-    handleField(key, updated);
+  function handleVideoChange(index: number, field: 'ruta' | 'label', value: string) {
+    const updated = form.videos.map((v, i) => (i === index ? { ...v, [field]: value } : v));
+    handleField('videos', updated);
   }
 
-  function addArrayItem(key: 'videos' | 'extras') {
-    handleField(key, [...form[key], '']);
+  function addVideo() {
+    handleField('videos', [...form.videos, emptyVideo()]);
   }
 
-  function removeArrayItem(key: 'videos' | 'extras', index: number) {
+  function removeVideo(index: number) {
     handleField(
-      key,
-      form[key].filter((_, i) => i !== index),
+      'videos',
+      form.videos.filter((_, i) => i !== index),
+    );
+  }
+
+  // --- Extras (arrays de strings) ---
+
+  function handleExtrasChange(index: number, value: string) {
+    const updated = form.extras.map((v, i) => (i === index ? value : v));
+    handleField('extras', updated);
+  }
+
+  function addExtras() {
+    handleField('extras', [...form.extras, '']);
+  }
+
+  function removeExtras(index: number) {
+    handleField(
+      'extras',
+      form.extras.filter((_, i) => i !== index),
     );
   }
 
@@ -227,7 +259,7 @@ export default function AddProjectPage() {
 
       // Limpiar arrays: eliminar entradas vacías
       let imagenes = form.imagenes.filter((img) => img.ruta.trim() !== '');
-      const videos = form.videos.filter((v) => v.trim() !== '');
+      const videos = form.videos.filter((v) => v.ruta.trim() !== '');
       const extras = form.extras.filter((e) => e.trim() !== '');
 
       // Subir archivos pendientes (blob URLs) al backend
@@ -600,7 +632,7 @@ export default function AddProjectPage() {
             <p className="text-xs font-semibold text-muted">Videos</p>
             <button
               type="button"
-              onClick={() => addArrayItem('videos')}
+              onClick={() => addVideo()}
               className="text-xs text-accent hover:underline"
             >
               + Añadir video
@@ -613,13 +645,20 @@ export default function AddProjectPage() {
                   type="url"
                   className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="URL del video"
-                  value={v}
-                  onChange={(e) => handleArrayChange('videos', i, e.target.value)}
+                  value={v.ruta}
+                  onChange={(e) => handleVideoChange(i, 'ruta', e.target.value)}
+                />
+                <input
+                  type="text"
+                  className="w-36 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                  placeholder="Descripción"
+                  value={v.label}
+                  onChange={(e) => handleVideoChange(i, 'label', e.target.value)}
                 />
                 {form.videos.length > 1 && (
                   <button
                     type="button"
-                    onClick={() => removeArrayItem('videos', i)}
+                    onClick={() => removeVideo(i)}
                     className="text-muted hover:text-red-500 transition-colors text-lg leading-none pb-0.5"
                     aria-label="Eliminar video"
                   >
@@ -637,7 +676,7 @@ export default function AddProjectPage() {
             <p className="text-xs font-semibold text-muted">Extras / Links</p>
             <button
               type="button"
-              onClick={() => addArrayItem('extras')}
+              onClick={() => addExtras()}
               className="text-xs text-accent hover:underline"
             >
               + Añadir link
@@ -651,12 +690,12 @@ export default function AddProjectPage() {
                   className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="URL o texto extra"
                   value={ex}
-                  onChange={(e) => handleArrayChange('extras', i, e.target.value)}
+                  onChange={(e) => handleExtrasChange(i, e.target.value)}
                 />
                 {form.extras.length > 1 && (
                   <button
                     type="button"
-                    onClick={() => removeArrayItem('extras', i)}
+                    onClick={() => removeExtras(i)}
                     className="text-muted hover:text-red-500 transition-colors text-lg leading-none pb-0.5"
                     aria-label="Eliminar extra"
                   >

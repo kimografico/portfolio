@@ -48,7 +48,7 @@ const SOURCES = [
   { data: proyectosEspeciales, type: 'Diseño Gráfico', category: 'Proyectos especiales' },
   // Desarrollo
   { data: frameworks, type: 'Desarrollo', category: 'Frameworks' },
-  { data: vanilla, type: 'Desarrollo', category: 'Vanilla JS' },
+  { data: vanilla, type: 'Desarrollo', category: 'Vanilla' },
   { data: wordpress, type: 'Desarrollo', category: 'WordPress' },
 ];
 

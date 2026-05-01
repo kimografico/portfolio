@@ -79,7 +79,7 @@ export const developerGalleries: GalleryRouteConfig[] = [
     props: {
       projects: vanillaData as WebProject[] as BaseProject[],
       basePath: '/dev/vanilla',
-      title: 'Vanilla JS',
+      title: 'Vanilla',
       description:
         'Webs desarrolladas con HTML, CSS y JavaScript puro, sin depender de frameworks ni CMS.',
       icon: IconCode,
@@ -91,7 +91,7 @@ export const developerGalleries: GalleryRouteConfig[] = [
       webProject: true,
       stackIconMap,
       emptyStateDescription:
-        'Esta sección está en preparación. Pronto encontrarás aquí los proyectos en Vanilla JS.',
+        'Esta sección está en preparación. Pronto encontrarás aquí los proyectos en Vanilla.',
       dataIdPrefix: 'vanilla',
     },
   },

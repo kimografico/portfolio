@@ -16,7 +16,7 @@ const CATEGORIES = [
   },
   {
     key: 'vanilla',
-    title: 'Vanilla JS',
+    title: 'Vanilla',
     description: 'Webs con HTML, CSS y JavaScript puro, sin frameworks.',
     icon: IconCode,
   },
@@ -31,7 +31,7 @@ const CATEGORIES = [
 export default function DeveloperHome() {
   // Calcular acceso directo usando inicializador de estado
   // Evita el warning de setState en efecto
-  const [isDirectAccess] = useState(() => window.history.length === 2);
+  const [isDirectAccess] = useState(() => window.history.length === 1);
 
   // Filtrar proyectos recientes por categoría Developer
   const developerProjects = (recentWorks as Project[]).filter(

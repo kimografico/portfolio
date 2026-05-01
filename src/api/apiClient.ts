@@ -43,7 +43,7 @@ export interface ProjectPayload {
   descripcion?: string;
   visible?: boolean;
   imagenes?: { ruta: string; label: string }[];
-  videos?: string[];
+  videos?: { ruta: string; label: string }[];
   extras?: string[];
   stack?: string[];
 }

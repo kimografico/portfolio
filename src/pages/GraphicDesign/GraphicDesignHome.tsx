@@ -70,7 +70,7 @@ const CATEGORIES = [
 export default function GraphicDesignHome() {
   // Calcular acceso directo usando inicializador de estado
   // Evita el warning de setState en efecto
-  const [isDirectAccess] = useState(() => window.history.length === 2);
+  const [isDirectAccess] = useState(() => window.history.length === 1);
 
   // Filtrar proyectos recientes por categoría GraphicDesign
   const graphicDesignProjects = (recentWorks as Project[]).filter(

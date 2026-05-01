@@ -18,7 +18,7 @@ const CATEGORIES_BY_TYPE: Record<string, { label: string; value: string }[]> = {
     { value: 'proyectos-especiales', label: 'Proyectos especiales' },
   ],
   dev: [
-    { value: 'vanilla', label: 'Vanilla JS' },
+    { value: 'vanilla', label: 'Vanilla' },
     { value: 'wordpress', label: 'WordPress' },
     { value: 'frameworks', label: 'Frameworks' },
   ],
@@ -43,6 +43,9 @@ const STACK_QUICK_OPTIONS = [
 /** Devuelve un objeto imagen vacío */
 const emptyImagen = () => ({ ruta: '', label: '' });
 
+/** Devuelve un objeto video vacío */
+const emptyVideo = () => ({ ruta: '', label: '' });
+
 interface FormState {
   type: '' | 'gd' | 'dev';
   category: string;
@@ -51,7 +54,7 @@ interface FormState {
   descripcion: string;
   visible: boolean;
   imagenes: { ruta: string; label: string }[];
-  videos: string[];
+  videos: { ruta: string; label: string }[];
   extras: string[];
   stack: string[];
 }
@@ -94,10 +97,22 @@ export default function EditProjectPage() {
         const result = await getProject(projectId);
         if (cancelled) return;
         const p = result.data as ProjectData;
-        // Los videos y extras pueden venir como string[] o como { ruta, label }[]
-        // según el JSON. Normalizamos a string[] extrayendo la ruta si es objeto.
+        // Los videos pueden venir como string[] o como { ruta, label }[]
+        // según si el JSON es antiguo o nuevo. Normalizamos a { ruta, label }[].
+        const normalizeVideos = (arr: unknown[]): { ruta: string; label: string }[] =>
+          arr.map((v) =>
+            typeof v === 'string'
+              ? { ruta: v, label: '' }
+              : {
+                  ruta: (v as { ruta?: string })?.ruta ?? '',
+                  label: (v as { label?: string })?.label ?? '',
+                },
+          );
+
+        // Los extras siempre son strings.
         const normalizeStringArray = (arr: unknown[]): string[] =>
           arr.map((v) => (typeof v === 'string' ? v : ((v as { ruta?: string })?.ruta ?? '')));
+
         setForm({
           type: p.type,
           category: p.category,
@@ -106,7 +121,7 @@ export default function EditProjectPage() {
           descripcion: p.descripcion ?? '',
           visible: p.visible !== false,
           imagenes: p.imagenes?.length ? p.imagenes : [emptyImagen()],
-          videos: p.videos?.length ? normalizeStringArray(p.videos) : [''],
+          videos: p.videos?.length ? normalizeVideos(p.videos) : [emptyVideo()],
           extras: p.extras?.length ? normalizeStringArray(p.extras) : [''],
           stack: p.stack ?? [],
         });
@@ -243,21 +258,39 @@ export default function EditProjectPage() {
     e.target.value = '';
   }
 
-  // --- Videos y extras ---
+  // --- Videos (array de objetos) ---
 
-  function handleArrayChange(key: 'videos' | 'extras', index: number, value: string) {
-    const updated = f[key].map((v, i) => (i === index ? value : v));
-    handleField(key, updated);
+  function handleVideoChange(index: number, field: 'ruta' | 'label', value: string) {
+    const updated = f.videos.map((v, i) => (i === index ? { ...v, [field]: value } : v));
+    handleField('videos', updated);
   }
 
-  function addArrayItem(key: 'videos' | 'extras') {
-    handleField(key, [...f[key], '']);
+  function addVideo() {
+    handleField('videos', [...f.videos, emptyVideo()]);
   }
 
-  function removeArrayItem(key: 'videos' | 'extras', index: number) {
+  function removeVideo(index: number) {
     handleField(
-      key,
-      f[key].filter((_, i) => i !== index),
+      'videos',
+      f.videos.filter((_, i) => i !== index),
+    );
+  }
+
+  // --- Extras (arrays de strings) ---
+
+  function handleExtrasChange(index: number, value: string) {
+    const updated = f.extras.map((v, i) => (i === index ? value : v));
+    handleField('extras', updated);
+  }
+
+  function addExtras() {
+    handleField('extras', [...f.extras, '']);
+  }
+
+  function removeExtras(index: number) {
+    handleField(
+      'extras',
+      f.extras.filter((_, i) => i !== index),
     );
   }
 
@@ -290,7 +323,7 @@ export default function EditProjectPage() {
       if (!f.cliente.trim()) throw new Error('El cliente es obligatorio');
 
       let imagenes = f.imagenes.filter((img) => img.ruta.trim() !== '');
-      const videos = f.videos.filter((v) => v.trim() !== '');
+      const videos = f.videos.filter((v) => v.ruta.trim() !== '');
       const extras = f.extras.filter((ex) => ex.trim() !== '');
 
       // Subir archivos pendientes (blob URLs) al backend
@@ -361,30 +394,7 @@ export default function EditProjectPage() {
         </h2>
       </div>
 
-      {/* Feedback de éxito */}
-      {status === 'success' && (
-        <div
-          className="mb-6 p-4 bg-green-50 border border-green-300 text-green-800 rounded"
-          data-id="edit-project-success"
-        >
-          ✅ Proyecto actualizado correctamente
-          <p className="text-xs mt-1 text-green-600">
-            Recarga la página o reinicia el servidor para ver los cambios en la tabla.
-          </p>
-        </div>
-      )}
-
-      {/* Feedback de error */}
-      {status === 'error' && (
-        <div
-          className="mb-6 p-4 bg-red-50 border border-red-300 text-red-800 rounded"
-          data-id="edit-project-error"
-        >
-          ❌ {errorMsg}
-        </div>
-      )}
-
-      <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl" data-id="edit-project-form">
+      <form onSubmit={handleSubmit} className="space-y-6 max-w-100" data-id="edit-project-form">
         {/* Tipo y categoría */}
         <div className="grid grid-cols-2 gap-4">
           <div>
@@ -612,10 +622,10 @@ export default function EditProjectPage() {
                   )}
                 </div>
 
-                <div className="flex-1 flex gap-2">
+                <div className="flex gap-2 w-full">
                   <input
                     type="text"
-                    className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                     placeholder="URL de la imagen"
                     value={img.ruta}
                     onChange={(e) => {
@@ -625,7 +635,7 @@ export default function EditProjectPage() {
                   />
                   <input
                     type="text"
-                    className="w-36 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                     placeholder="Etiqueta"
                     value={img.label}
                     onChange={(e) => handleImagenChange(i, 'label', e.target.value)}
@@ -654,7 +664,7 @@ export default function EditProjectPage() {
             <p className="text-xs font-semibold text-muted">Videos</p>
             <button
               type="button"
-              onClick={() => addArrayItem('videos')}
+              onClick={() => addVideo()}
               className="text-xs text-accent hover:underline"
             >
               + Añadir video
@@ -665,15 +675,22 @@ export default function EditProjectPage() {
               <div key={i} className="flex gap-2">
                 <input
                   type="url"
-                  className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                  className="w-1/2  border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="URL del video"
-                  value={v}
-                  onChange={(e) => handleArrayChange('videos', i, e.target.value)}
+                  value={v.ruta}
+                  onChange={(e) => handleVideoChange(i, 'ruta', e.target.value)}
+                />
+                <input
+                  type="text"
+                  className="w-1/2  border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                  placeholder="Descripción"
+                  value={v.label}
+                  onChange={(e) => handleVideoChange(i, 'label', e.target.value)}
                 />
                 {f.videos.length > 1 && (
                   <button
                     type="button"
-                    onClick={() => removeArrayItem('videos', i)}
+                    onClick={() => removeVideo(i)}
                     className="text-muted hover:text-red-500 transition-colors text-lg leading-none pb-0.5"
                     aria-label="Eliminar video"
                   >
@@ -691,7 +708,7 @@ export default function EditProjectPage() {
             <p className="text-xs font-semibold text-muted">Extras / Links</p>
             <button
               type="button"
-              onClick={() => addArrayItem('extras')}
+              onClick={() => addExtras()}
               className="text-xs text-accent hover:underline"
             >
               + Añadir link
@@ -705,12 +722,12 @@ export default function EditProjectPage() {
                   className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="URL o texto extra"
                   value={ex}
-                  onChange={(e) => handleArrayChange('extras', i, e.target.value)}
+                  onChange={(e) => handleExtrasChange(i, e.target.value)}
                 />
                 {f.extras.length > 1 && (
                   <button
                     type="button"
-                    onClick={() => removeArrayItem('extras', i)}
+                    onClick={() => removeExtras(i)}
                     className="text-muted hover:text-red-500 transition-colors text-lg leading-none pb-0.5"
                     aria-label="Eliminar extra"
                   >
@@ -758,6 +775,29 @@ export default function EditProjectPage() {
             <code className="font-mono bg-gray-100 px-1 py-0.5 rounded">pnpm backend:dev</code>
           </p>
         </div>
+
+        {/* Feedback de éxito */}
+        {status === 'success' && (
+          <div
+            className="mb-6 p-4 bg-green-50 border border-green-300 text-green-800 rounded"
+            data-id="edit-project-success"
+          >
+            ✅ Proyecto actualizado correctamente
+            <p className="text-xs mt-1 text-green-600">
+              Recarga la página o reinicia el servidor para ver los cambios en la tabla.
+            </p>
+          </div>
+        )}
+
+        {/* Feedback de error */}
+        {status === 'error' && (
+          <div
+            className="mb-6 p-4 bg-red-50 border border-red-300 text-red-800 rounded"
+            data-id="edit-project-error"
+          >
+            ❌ {errorMsg}
+          </div>
+        )}
       </form>
     </section>
   );
