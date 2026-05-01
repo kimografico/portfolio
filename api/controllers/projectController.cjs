@@ -132,6 +132,14 @@ async function updateProject(req, res) {
     // Actualizar proyecto
     const updated = fs.updateProject(id, updates);
 
+    // Regenerar thumb automáticamente
+    const { spawn } = require('child_process');
+    spawn('node', ['scripts/generate-thumbs.cjs', '--id', String(id)], {
+      stdio: 'inherit',
+      cwd: process.cwd(),
+      detached: true,
+    });
+
     // Remover campo interno _filePath
     const { _filePath, ...safeProject } = updated;
 
