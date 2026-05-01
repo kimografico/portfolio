@@ -295,7 +295,7 @@ Las galerías están configuradas dinámicamente en `src/config/graphicDesignGal
 
 ## 7. Sección pública: Desarrollo Web
 
-Accesible desde `/dev`. Organizada en 3 categorías (WordPress, Vanilla JS, Frameworks):
+Accesible desde `/dev`. Organizada en 3 categorías (WordPress, Vanilla, Frameworks):
 
 - Misma arquitectura que Diseño Gráfico.
 - El detalle de proyecto muestra adicionalmente el **stack tecnológico** si está definido en el JSON.

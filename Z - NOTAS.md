@@ -7,8 +7,4 @@ Reescribir ultimos proyectos
 Intentar automatizar la captura de imagenes de wordpress a github
 Sustituir todos los thumb
 
-reescribir README de backend
-
 ---
-
-manejo de idioma por literales y archivos .yaml de idioma, por ahora español/valenciano/inglés
