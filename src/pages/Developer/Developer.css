@@ -2,7 +2,7 @@
 
 /* Thumbnail de tarjeta de proyecto */
 .wp-card-image {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16/9;
   object-fit: cover;
   object-position: top;
   width: 100%;
@@ -24,7 +24,7 @@
 
 /* Iframe embebido de YouTube */
 .wp-embed-video {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16/9;
   width: 100%;
   border: none;
 }

@@ -47,7 +47,8 @@ interface CategoryGalleryPageProps<T extends BaseProject> {
   webProject?: boolean;
   /** Mapeo de tecnologías a iconos (solo necesario si webProject=true) */
   stackIconMap?: Record<string, React.FC<IconProps>>;
-
+  /** Si true, usa proporción 16:9 para el thumbnail. Si false, usa 4:3. */
+  widescreen?: boolean;
   // --- Mensajes ---
   /** Texto del EmptyState cuando no hay proyectos */
   emptyStateDescription?: string;
@@ -70,6 +71,7 @@ export default function CategoryGalleryPage<T extends BaseProject>({
   IconFallback,
   webProject = false,
   stackIconMap,
+  widescreen = false,
   emptyStateDescription = 'Esta sección está en preparación. Pronto encontrarás proyectos aquí.',
   dataIdPrefix = 'gallery',
 }: CategoryGalleryPageProps<T>) {
@@ -112,6 +114,7 @@ export default function CategoryGalleryPage<T extends BaseProject>({
                 IconFallback={IconFallback}
                 webProject={webProject}
                 stackIconMap={stackIconMap}
+                widescreen={widescreen}
               />
             ))}
           </div>

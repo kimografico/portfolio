@@ -69,6 +69,7 @@ export const developerGalleries: GalleryRouteConfig[] = [
       IconFallback: IconCode,
       webProject: true,
       stackIconMap,
+      widescreen: true,
       emptyStateDescription:
         'Esta sección está en preparación. Pronto encontrarás aquí los proyectos desarrollados con WordPress.',
       dataIdPrefix: 'wordpress',
@@ -90,6 +91,7 @@ export const developerGalleries: GalleryRouteConfig[] = [
       IconFallback: IconCode,
       webProject: true,
       stackIconMap,
+      widescreen: true,
       emptyStateDescription:
         'Esta sección está en preparación. Pronto encontrarás aquí los proyectos en Vanilla.',
       dataIdPrefix: 'vanilla',
@@ -110,6 +112,7 @@ export const developerGalleries: GalleryRouteConfig[] = [
       IconFallback: IconCode,
       webProject: true,
       stackIconMap,
+      widescreen: true,
       emptyStateDescription:
         'Esta sección está en preparación. Pronto encontrarás aquí los proyectos con frameworks modernos.',
       dataIdPrefix: 'frameworks',

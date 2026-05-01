@@ -30,6 +30,8 @@ interface ProjectCardProps<T extends BaseProject> {
   dataId?: string;
   /** Componente de icono fallback */
   IconFallback?: React.FC<IconProps>;
+  /** Si true, el thumbnail usa proporción 16:9. Si false (default), usa 4:3 */
+  widescreen?: boolean;
 }
 
 /**
@@ -52,6 +54,7 @@ export const ProjectCard = <T extends BaseProject>({
   webProject = false,
   dataId = `project-card-${project.id}`,
   IconFallback,
+  widescreen = false,
 }: ProjectCardProps<T>) => {
   const [hoveredTech, setHoveredTech] = useState<string | null>(null);
 
@@ -67,7 +70,11 @@ export const ProjectCard = <T extends BaseProject>({
     >
       {/* Thumbnail */}
       {thumbnail && (
-        <div className="overflow-hidden flex items-center justify-center aspect-video h-64 bg-gray-100">
+        <div
+          className={`overflow-hidden flex items-center justify-center bg-gray-100 ${
+            widescreen ? 'aspect-video' : 'aspect-[4/3]'
+          }`}
+        >
           <img
             src={thumbnail}
             alt={project.title}
