@@ -436,9 +436,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Agrupar bocetos en imagenes"
-    ],
+    "extras": ["Agrupar bocetos en imagenes"],
     "metadata": {
       "titulo": "Ni milagros ni hostias",
       "formato": "25 x 17 cm / eBook",
@@ -576,9 +574,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar tamaño de miniatura"
-    ],
+    "extras": [],
     "metadata": {
       "formato": "",
       "paginas": "",
@@ -710,9 +706,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar tamaño de miniatura"
-    ],
+    "extras": [],
     "metadata": {
       "formato": "16,5 x 25 cm",
       "paginas": "198",
@@ -868,7 +862,7 @@
     "descripcion": "Foto-currículum para la fotógrafa Lidia Aparicio",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/editorial/fotocurriculum-lidia-aparicio001.png",
+        "ruta": "/portfolio/images/portfolio/design/editorial/fotocurriculum-lidia-aparicio001.jpg",
         "label": ""
       },
       {
@@ -1716,9 +1710,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Suavizar imagen de Goya de fondo"
-    ],
+    "extras": [],
     "metadata": {
       "formato": "",
       "paginas": "",

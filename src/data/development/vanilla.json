@@ -5,10 +5,7 @@
     "title": "Paellas de Pecado",
     "cliente": "IES Serpis",
     "descripcion": "Web ficticia, como proyecto para un módulo superior de estudios de desarrollo web CSS y HTML calificada con un 10. La web consiste en una página principal tipo One Page con la información básica, un apartado de menú con los platos organizados por tarjetas, y un apartado de contacto. Se diseñó también un logo sencillo para crear una armonía en el conjunto. Para la realización de los recursos gráficos de la página web se hizo uso de IA, con resultados muy curiosos",
-    "stack": [
-      "HTML",
-      "CSS"
-    ],
+    "stack": ["HTML", "CSS"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/paellas-de-pecado001.jpg",
@@ -72,11 +69,7 @@
     "title": "Museo nacional de cerámica",
     "cliente": "Pilar Belmonte",
     "descripcion": "Web creada para el Museo de Cerámica Nacional de Chinchilla de Montearagón. Esta sencilla web consiste en un inicio, breve historia del museo, Información de contacto y localización, una galería con lightbox e información de venta de un libro-catálogo. Paralelamente también se realizó un programa de ordenador para catalogar y recopilar información sobre las más de 2000 piezas cerámicas de la colección.",
-    "stack": [
-      "HTML",
-      "CSS",
-      "JAVASCRIPT"
-    ],
+    "stack": ["HTML", "CSS", "JAVASCRIPT"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/museo-nacional-de-ceramica001.jpg",
@@ -124,14 +117,7 @@
     "title": "Pilar Belmonte 2",
     "cliente": "Pilar Belmonte",
     "descripcion": "Web creada para la artista Pilar Belmonte, como portfolio personal y fuente de información sobre la misma. La web consiste en una página de Inicio con el menú troncal del sitio, una breve introducción a la trayectoria profesional de la artista, y accesos directos a enlaces de interés dentro de la web. Después tenemos un extenso portfolio de navegación horizontal ordenado por categorías. Cada cuadro está mostrado en un tamaño proporcional a sus dimensiones con respecto al resto de cuadros. El currículum, debido a su extensión, está organizado por secciones, con su propio submenú, para facilitar al lector encontrar la información de interés de forma rápida. Asimísmo, hay secciones dedicadas a las publicaciones realizadas por la artista, así como a los eventos en los que ha participado. Dispone también de una sección de contacto con seguridad honeypot para evitar SPAM, Toda la página es bilingüe, pudiendo cambiar de idioma en cualquier momento sin volver al Inicio, lo que facilita la navegación.",
-    "stack": [
-      "HTML",
-      "CSS",
-      "PHP",
-      "AJAX",
-      "JAVASCRIPT",
-      "TPV Virtual"
-    ],
+    "stack": ["HTML", "CSS", "PHP", "AJAX", "JAVASCRIPT", "TPV Virtual"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-2001.jpg",
@@ -195,13 +181,7 @@
     "title": "Equilibrium Personal Training Studio",
     "cliente": "Equilibrium",
     "descripcion": "Web creada para un centro de entrenamiento personal de Torrente. Es una web de desplazamiento vertical con un carrusel de imágenes y ofertas, distintas secciones con los servicios, galería, integrantes de la empresa, y visita virtual al centro, testimonios de clientes satisfechos, mapa gmaps y contacto. La web se hizo con estética «agresiva», colores oscuros y texturas de piedra, ya que el centro iba principalmente dirigido a musculación. Más tarde el objetivo de la empresa se amplió y se cambió por una web más aséptica.",
-    "stack": [
-      "HTML",
-      "CSS",
-      "PHP",
-      "AJAX",
-      "JAVASCRIPT"
-    ],
+    "stack": ["HTML", "CSS", "PHP", "AJAX", "JAVASCRIPT"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/equilibrium-personal-training-studio001.jpg",
@@ -255,12 +235,7 @@
     "title": "Miranda de Picas",
     "cliente": "MagVi",
     "descripcion": "Web creada para la maga y payasa Miranda de Picas con la colaboración como fotógrafa de Lidia Aparicio. La web, enfocada a servicios de ámbito infantil, consta de un menú inicio marcado por los palos de la baraja, un menú de servicios con tipos de magia que domina la artista, los colaboradores con los que participa, los lugares y días donde actúa y un apartado de contacto. También tiene una sección videocurrículum donde explica quién es y que servicios ofrece personalmente.",
-    "stack": [
-      "HTML",
-      "CSS",
-      "AJAX",
-      "JAVASCRIPT"
-    ],
+    "stack": ["HTML", "CSS", "AJAX", "JAVASCRIPT"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/miranda-de-picas001.jpg",
@@ -302,13 +277,7 @@
     "title": "Magvi",
     "cliente": "MagVi",
     "descripcion": "Web creada para el mago MagVi, con la colaboración como fotógrafa de Lidia Aparicio. La web consiste en un menú inicio con las tres especialidades de Vicent, Mago, Maestro y Mediador En la sección de Mago vemos todos los ámbitos de la magia que domina, con pop-ups explicativos de cada uno Luego tenemos unas secciones explicativas de sus facetas de Maestro y Mediador, y una sección de contacto",
-    "stack": [
-      "HTML",
-      "CSS",
-      "PHP",
-      "AJAX",
-      "JAVASCRIPT"
-    ],
+    "stack": ["HTML", "CSS", "PHP", "AJAX", "JAVASCRIPT"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/magvi001.jpg",
@@ -358,12 +327,7 @@
     "title": "Gondamar",
     "cliente": "Gondamar & Fish S.L.",
     "descripcion": "La web consiste en un menú inicio con su fotografía corporativa de los fiordos noruegos. Desde ahí accedemos a Quienes somos, Localización, Productos y Contacto. En el menú de productos podemos acceder a sus tres familias ofertadas, Frescos, Ahumados y Salazones, con una selección de ejemplos.",
-    "stack": [
-      "HTML",
-      "CSS",
-      "AJAX",
-      "JAVASCRIPT"
-    ],
+    "stack": ["HTML", "CSS", "AJAX", "JAVASCRIPT"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/gondamar001.jpg",
@@ -400,9 +364,7 @@
         "label": "Vídeo de muestra de la navegación por la web"
       }
     ],
-    "extras": [
-      "Ajustar imagen principal a 16/9 y quitar tip abajo a la izquierda"
-    ],
+    "extras": [],
     "visible": true,
     "type": "dev",
     "category": "vanilla"
@@ -413,13 +375,7 @@
     "title": "Ida2",
     "cliente": "Ida2",
     "descripcion": "Web creada para la empresa de impresión digital IDA2 Programada mediante. La web consiste en un menú inicial que nos lleva a la imprenta física, o a la parte de tienda online. Este menú tiene un efecto 3D que interactúa con el ratón, muy vistoso La parte de imprenta física consiste en una web vertical encabezada por un carrusel de ofertas. Tras él podemos ver el horario, un quienes somos, historia de la imprenta, secciones de la misma (gran formato, acabados, estudio, asesoría...) Un mapa interactivo con la localización, formulario de contacto, tutoriales en vídeo y varios catálogos. La navegación es fluida y muy vistosa ya que tenemos un efecto parallax a la derecha con imágenes relacionadas con cada sección.",
-    "stack": [
-      "HTML",
-      "CSS",
-      "PHP",
-      "AJAX",
-      "JAVASCRIPT"
-    ],
+    "stack": ["HTML", "CSS", "PHP", "AJAX", "JAVASCRIPT"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/ida2001.jpg",
@@ -501,12 +457,7 @@
     "title": "Soy gay y me caso",
     "cliente": "Soy gay y me caso",
     "descripcion": "Web creada para una empresa de organización de bodas temáticas. Funciona como tarjeta de presentación, principalmente para tener presencia on-line como empresa y facilitar al cliente potencial encontrarla vía internet. La web consta de los apartados básicos y de una galería de imágenes de sus proyectos más destacados. También consta de un apartado de Blog externo y enlace a su Facebook",
-    "stack": [
-      "HTML",
-      "CSS",
-      "AJAX",
-      "JAVASCRIPT"
-    ],
+    "stack": ["HTML", "CSS", "AJAX", "JAVASCRIPT"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/soy-gay-y-me-caso001.jpg",
@@ -535,11 +486,7 @@
     "title": "Sintac",
     "cliente": "Sintac Recycling",
     "descripcion": "Web creada para una empresa de reciclaje de plásticos. Es una web muy sencilla donde se detallan los Productos y servicios de esta empresa de reciclaje.",
-    "stack": [
-      "HTML",
-      "CSS",
-      "JAVASCRIPT"
-    ],
+    "stack": ["HTML", "CSS", "JAVASCRIPT"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/sintac001.jpg",
@@ -566,11 +513,7 @@
     "title": "Casa del Olivar",
     "cliente": "Pilar Belmonte",
     "descripcion": "Web creada para la familia Belmonte, para la promoción de una finca rural. La web consiste en una página de inicio con la información más relevante, varias secciones informando de las características de la finca, e información de contacto. El cliente prefirió no indicar ubicación. La página fue traducida al Inglés y al Francés",
-    "stack": [
-      "HTML",
-      "FLASH",
-      "CSS"
-    ],
+    "stack": ["HTML", "FLASH", "CSS"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/casa-del-olivar001.jpg",
@@ -594,9 +537,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar a 16/9"
-    ],
+    "extras": [],
     "visible": true,
     "type": "dev",
     "category": "vanilla"
@@ -607,11 +548,7 @@
     "title": "Nakama Customs",
     "cliente": "Nakama Customs",
     "descripcion": "Web creada para una empresa mixta, estudio de tatuaje y pintura mural. La web cuenta con dos secciones, una para cada especialidad de la empresa.",
-    "stack": [
-      "HTML",
-      "CSS",
-      "JAVASCRIPT"
-    ],
+    "stack": ["HTML", "CSS", "JAVASCRIPT"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/nakama-customs001.jpg",
@@ -638,11 +575,7 @@
     "title": "Díez Caudet",
     "cliente": "Díez Caudet",
     "descripcion": "Web creada para una empresa de construcción. Funciona como tarjeta de presentación, principalmente para tener presencia on-line como empresa y facilitar al cliente potencial encontrarla vía internet. La web consta de los apartados básicos (Quiénes sómos, Qué hacemos y contacto) así como de una galería de imágenes de sus proyectos más destacados.",
-    "stack": [
-      "HTML",
-      "CSS",
-      "JAVASCRIPT"
-    ],
+    "stack": ["HTML", "CSS", "JAVASCRIPT"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/diez-caudet001.jpg",
@@ -669,13 +602,7 @@
     "title": "Rapidtyres",
     "cliente": "RapidTyres",
     "descripcion": "Web creada para la empresa de material para automóviles RapidTyres. La web consiste en una página de inicio con espacio para dos ofertas, cuatro apartados, Dos para los productos (Llantas y Neumáticos), información sobre la empresa y contacto.",
-    "stack": [
-      "HTML",
-      "CSS",
-      "PHP",
-      "AJAX",
-      "JAVASCRIPT"
-    ],
+    "stack": ["HTML", "CSS", "PHP", "AJAX", "JAVASCRIPT"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/rapidtyres001.jpg",
@@ -703,9 +630,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar a 16/9 y ajustar tamaños de imagenes"
-    ],
+    "extras": [],
     "visible": true,
     "type": "dev",
     "category": "vanilla"
@@ -716,14 +641,7 @@
     "title": "Cronaval",
     "cliente": "Cronaval",
     "descripcion": "Web creada para una distribuidora de productos para el automóvil. Tienda Online de una distribuidora de productos para limpieza del automóvil. La web consta de una página de inicio, cuatro secciones distintas de productos, con sus explicaciones pormenorizadas, una página de contacto, y una tienda on-line",
-    "stack": [
-      "HTML",
-      "CSS",
-      "PHP",
-      "AJAX",
-      "JAVASCRIPT",
-      "Prestashop"
-    ],
+    "stack": ["HTML", "CSS", "PHP", "AJAX", "JAVASCRIPT", "Prestashop"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/cronaval001.jpg",
@@ -747,9 +665,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar a 16/9"
-    ],
+    "extras": [],
     "visible": true,
     "type": "dev",
     "category": "vanilla"
@@ -760,14 +676,7 @@
     "title": "La Brigada Gráfica",
     "cliente": "La Brigada Gráfica",
     "descripcion": "Web creada para un estudio de diseño. La web consiste en una página de navegación vertical integrada por módulos hechos en Flash (Historia de la asociación, patrocinadores, objetivo&#8230;) Una galería enlazada a Flickr para cada integrante, un blog, una tienda online en base Prestashop y un formulario de contacto.",
-    "stack": [
-      "HTML",
-      "CSS",
-      "FLASH",
-      "Javascript",
-      "Ajax",
-      "PHP"
-    ],
+    "stack": ["HTML", "CSS", "FLASH", "Javascript", "Ajax", "PHP"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/la-brigada-grafica001.jpg",
@@ -800,9 +709,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Ajustar a 16/9"
-    ],
+    "extras": [],
     "visible": true,
     "type": "dev",
     "category": "vanilla"
@@ -813,12 +720,7 @@
     "title": "Pilar Belmonte 1",
     "cliente": "Pilar Belmonte",
     "descripcion": "Web creada en colaboración con Esther Navalón Wamba, para la artista Pilar Belmonte, como portfolio personal y fuente de información sobre la misma. La web consiste en un catálogo interactivo de las obras de la artista, tanto en el campo de la pintura como de la creación de vidrieras, asi como sus obras bibliográficas y eventos que ha realizado. También tiene un apartado de venta de libros autopublicados.",
-    "stack": [
-      "FLASH",
-      "HTML",
-      "CSS",
-      "Javascript"
-    ],
+    "stack": ["FLASH", "HTML", "CSS", "Javascript"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-1001.jpg",
@@ -851,9 +753,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Ajustar a 16/9"
-    ],
+    "extras": [],
     "visible": true,
     "type": "dev",
     "category": "vanilla"
@@ -864,11 +764,7 @@
     "title": "Randes i Brodats",
     "cliente": "ReyMono",
     "descripcion": "Web creada para una empresa de confección de ropa de fallera, en colaboración con ReyMono. La web consiste en una portada, una sección «Quiénes somos«, un»Dónde encontrarnos» con mapa interactivo, dos catálogos interactivos de productos, y una sección contacto",
-    "stack": [
-      "HTML",
-      "CSS",
-      "FLASH"
-    ],
+    "stack": ["HTML", "CSS", "FLASH"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/randes-i-brodats001.jpg",
@@ -901,9 +797,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Ajustar a 16/9"
-    ],
+    "extras": [],
     "visible": true,
     "type": "dev",
     "category": "vanilla"
@@ -914,12 +808,12 @@
     "title": "Precocinados Tia Teresa",
     "cliente": "Precocinados Tia Teresa",
     "descripcion": "Web creada para la cadena de carnicerías Tía Teresa, en colaboración con Joan Ráez. La web consiste en dos secciones: Fábrica y Tiendas. La sección de fábrica incluye un contacto, un mapa de ubicación de la misma, los productos estrella de la misma, para su venta a grandes superficies y la historia de la empresa junto con una galería de imágenes. La sección de tienda incluye la ubicación de cada tienda o puesto en el mapa, junto con una galería de imágenes de cada una de ellas. También tiene una selección de productos de elaboración propia, una breve historia con galería de imágenes, y un apartado de recetas para descargar.",
-    "stack": [
-      "HTML",
-      "CSS",
-      "FLASH"
-    ],
+    "stack": ["HTML", "CSS", "FLASH"],
     "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa006.jpg",
+        "label": "Productos congelados – Ejemplo de fotografía de uno de los productos"
+      },
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa001.jpg",
         "label": "Historia – Breve historia de la empresa, con galería de imágenes."
@@ -939,10 +833,6 @@
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa005.jpg",
         "label": "Contacto – Enlace a correo electrónico"
-      },
-      {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa006.jpg",
-        "label": "Productos congelados – Ejemplo de fotografía de uno de los productos"
       },
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa007.jpg",
@@ -975,9 +865,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Ajustar a 16/9"
-    ],
+    "extras": [],
     "visible": true,
     "type": "dev",
     "category": "vanilla"
@@ -988,12 +876,12 @@
     "title": "Acid Skateboards",
     "cliente": "Acid Skateboards",
     "descripcion": "Acid Skateboards 2008 - Web creada para una pequeña empresa de venta de material de skateboarding Programada mediante FLASH 2.0, HTML, CSS, JAVASCRIPT.La web consiste en un menú inicio interactivo donde controlamos un monopatín que se mueve horizontalmente por la escena, dejando ver las diferentes partes de la web. De forma paralela tenemos un menú inferior para un acceso más sencillo",
-    "stack": [
-      "HTML",
-      "CSS",
-      "FLASH"
-    ],
+    "stack": ["HTML", "CSS", "FLASH"],
     "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/web/vanilla/acid-skateboards009.jpg",
+        "label": ""
+      },
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/acid-skateboards001.jpg",
         "label": "Historia – Una breve presentación de la empresa"
@@ -1025,10 +913,6 @@
       {
         "ruta": "/portfolio/images/portfolio/web/vanilla/acid-skateboards008.jpg",
         "label": "Tienda / Accesorios – Accesorios, merchandising y herramientas de la marca"
-      },
-      {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/acid-skateboards009.jpg",
-        "label": ""
       }
     ],
     "videos": [
@@ -1041,9 +925,7 @@
         "label": "Vídeo de muestra de la navegación por el sitio web"
       }
     ],
-    "extras": [
-      "Ajustar a 16/9"
-    ],
+    "extras": [],
     "visible": true,
     "type": "dev",
     "category": "vanilla"

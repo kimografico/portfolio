@@ -44,9 +44,7 @@
         "label": "Logo Agua"
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -64,9 +62,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -88,9 +84,7 @@
         "label": "NEÓN – Segundo Teaser"
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -112,9 +106,7 @@
         "label": "Contracciones Sonoras – Versión clara (Elegida por el cliente)"
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -408,9 +400,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -432,9 +422,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -452,9 +440,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -536,9 +522,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -560,9 +544,7 @@
         "label": "Versión actualizada al cambio de nombre/imagen de la empresa a Ascenza 5 de Noviembre de 2019"
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -637,9 +619,7 @@
         "label": "Prueba de juego infinito"
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -657,9 +637,7 @@
         "label": "Videoentrevista a un agricultor sobre los beneficios de utilizar el producto"
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -707,9 +685,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -727,9 +703,7 @@
         "label": "Infografía animada explicando las características y ventajas del herbicida Register 25WG"
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -787,9 +761,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -811,9 +783,7 @@
         "label": "Diseñada en After Effects"
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -826,27 +796,27 @@
     "descripcion": "Encuestas interactivas para Equilibrium Encuesta inicial que se le hace a los clientes cuando se apuntan, para ofrecer el servicio más ajustado a las necesidades del mismo Los campos son interactivos para que el personal del gimnasio pueda rellenarlos de forma fácil y ágil, resultando en un servicio más rápido, menos errores, y una imagen de modernidad y alta calidad del servicio.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium001.png",
+        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium002.png",
+        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium003.png",
+        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium004.png",
+        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium005.png",
+        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium006.png",
+        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium006.jpg",
         "label": ""
       },
       {
@@ -882,7 +852,7 @@
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium015.png",
+        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium015.jpg",
         "label": ""
       }
     ],
@@ -925,9 +895,7 @@
         "label": "Digital vs. Offset – Version en Español"
       }
     ],
-    "extras": [
-      "Imagen para miniatura"
-    ],
+    "extras": ["Imagen para miniatura"],
     "visible": true,
     "type": "gd",
     "category": "multimedia"

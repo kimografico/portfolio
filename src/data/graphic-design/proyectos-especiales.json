@@ -157,11 +157,11 @@
     "descripcion": "ACID SKATEBOARDS ———————————- Representación de productos y merchandising de la marca de ACID SKATEBOARDS Se crearon para la página web, y presentan una animación interactiva de giro 360º y, en el caso del USB, también de como se abre y cierra el mismo.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid001.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid002.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid002.jpg",
         "label": ""
       },
       {
@@ -169,11 +169,11 @@
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid004.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid005.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid005.jpg",
         "label": ""
       }
     ],
@@ -206,7 +206,7 @@
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/breaking-stereotypes004.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/breaking-stereotypes004.jpg",
         "label": ""
       }
     ],
@@ -238,14 +238,12 @@
     "descripcion": "Cartelería para la rotulación de un furgón de la empresa SAICA",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/furgoneta-saica001.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/furgoneta-saica001.jpg",
         "label": ""
       }
     ],
     "videos": [],
-    "extras": [
-      "Dejar algo más de aire, y añadir una imagen del diseño"
-    ],
+    "extras": ["añadir una imagen del diseño"],
     "visible": true,
     "type": "gd",
     "category": "proyectos-especiales"
@@ -364,7 +362,7 @@
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/puertas-trocathlon004.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/puertas-trocathlon004.jpg",
         "label": ""
       },
       {
@@ -508,7 +506,7 @@
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/bolsa-frutas-y-verduras005.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/bolsa-frutas-y-verduras005.jpg",
         "label": ""
       }
     ],

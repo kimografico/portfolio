@@ -48,9 +48,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Añadir algunos ejemplos de bocetos"
-    ],
+    "extras": ["Añadir algunos ejemplos de bocetos"],
     "visible": true,
     "type": "gd",
     "category": "logotipos"
@@ -63,14 +61,12 @@
     "descripcion": "Logotipo para una producto innovador para Paddle Surf",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/ruddersail-system001.png",
+        "ruta": "/portfolio/images/portfolio/design/logotipos/ruddersail-system001.jpg",
         "label": ""
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar tamaño de la imagen miniatura y ponerle fondo blanco"
-    ],
+    "extras": [],
     "visible": false,
     "type": "gd",
     "category": "logotipos"
@@ -83,7 +79,11 @@
     "descripcion": "Logotipo para una empresa de productos relacionados con deportes acuáticos y navegación",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/color-d-mar001.png",
+        "ruta": "/portfolio/images/portfolio/design/logotipos/color-d-mar000.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "/portfolio/images/portfolio/design/logotipos/color-d-mar001.jpg",
         "label": ""
       },
       {
@@ -91,7 +91,7 @@
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/color-d-mar003.png",
+        "ruta": "/portfolio/images/portfolio/design/logotipos/color-d-mar003.jpg",
         "label": ""
       }
     ],
@@ -105,9 +105,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Ajustar tamaño de la imagen miniatura y ponerle fondo blanco"
-    ],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "logotipos"
@@ -120,7 +118,7 @@
     "descripcion": "Logotipo para una empresa de exportación de guantes a gran escala",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/around-the-glove001.png",
+        "ruta": "/portfolio/images/portfolio/design/logotipos/around-the-glove001.jpg",
         "label": ""
       },
       {
@@ -137,9 +135,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar tamaño de la imagen miniatura y ponerla en jpg"
-    ],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "logotipos"
@@ -157,9 +153,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Darle margen blanco a la imagen en miniatura"
-    ],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "logotipos"
@@ -245,9 +239,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar tamaño de la imagen miniatura"
-    ],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "logotipos"
@@ -260,7 +252,7 @@
     "descripcion": "Logotipo para una cuenta de Instagram de costura",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/retal-y-to001.png",
+        "ruta": "/portfolio/images/portfolio/design/logotipos/retal-y-to001.jpg",
         "label": ""
       },
       {
@@ -301,9 +293,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar tamaño de la imagen miniatura y ponerla en JPG con fondo blanco"
-    ],
+    "extras": [],
     "visible": false,
     "type": "gd",
     "category": "logotipos"
@@ -381,9 +371,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Dar un poco más de margen blanco a la imagen miniatura"
-    ],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "logotipos"
@@ -456,11 +444,11 @@
     "descripcion": "Logotipo para una profesional de la comunicación animal",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/comunicadora-animal001.png",
+        "ruta": "/portfolio/images/portfolio/design/logotipos/comunicadora-animal001.jpg",
         "label": "Versión posterior revisada del logotipo"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/comunicadora-animal002.png",
+        "ruta": "/portfolio/images/portfolio/design/logotipos/comunicadora-animal002.jpg",
         "label": "Primera versión del logotipo"
       },
       {
@@ -473,9 +461,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar tamaño de la imagen miniatura y poner fondo blanco"
-    ],
+    "extras": [],
     "visible": false,
     "type": "gd",
     "category": "logotipos"
@@ -535,9 +521,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar tamaño de la imagen miniatura"
-    ],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "logotipos"
@@ -786,9 +770,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar contraste"
-    ],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "logotipos"
@@ -842,9 +824,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar tamaño de la imagen miniatura y ajustar contraste"
-    ],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "logotipos"
@@ -926,9 +906,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar tamaño de la imagen miniatura"
-    ],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "logotipos"
@@ -1017,6 +995,10 @@
     "descripcion": "Logotipo para un estudio visual especializado en la fotografía",
     "imagenes": [
       {
+        "ruta": "/portfolio/images/portfolio/design/logotipos/lidia-aparicio-visual-studio004.jpg",
+        "label": ""
+      },
+      {
         "ruta": "/portfolio/images/portfolio/design/logotipos/lidia-aparicio-visual-studio001.jpg",
         "label": ""
       },
@@ -1035,9 +1017,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Poner una version vertical"
-    ],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "logotipos"
@@ -1115,9 +1095,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar tamaño de la imagen miniatura"
-    ],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "logotipos"
@@ -1207,9 +1185,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar contraste en varias imagenes"
-    ],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "logotipos"
@@ -1512,7 +1488,7 @@
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards008.png",
+        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards008.jpg",
         "label": ""
       },
       {
@@ -1520,15 +1496,15 @@
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards010.png",
+        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards010.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards011.png",
+        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards011.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards012.png",
+        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards012.jpg",
         "label": ""
       },
       {

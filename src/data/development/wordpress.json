@@ -5,11 +5,7 @@
     "title": "Xerri espumas",
     "cliente": "Xerri",
     "descripcion": "Web/catálogo creada para una empresa de venta de espumas. \nLa web consiste en una página principal con información de la empresa y productos destacados, un catálogo de productos y otro de materiales, fichas técnicas y formulario de contacto con mapa interactivo.",
-    "stack": [
-      "WordPress",
-      "CSS",
-      "HTML"
-    ],
+    "stack": ["WordPress", "CSS", "HTML"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas001.jpg",
@@ -83,13 +79,7 @@
     "title": "Colordmar",
     "cliente": "Mar Howi",
     "descripcion": "Web/Tienda online creada para la empresa de venta e material deportivo CDM Programada mediante. La web consiste en una portada tipo one-page, un apartado para el producto estrella, apartados para velería y reparación, tienda y formulario de contacto.",
-    "stack": [
-      "WordPress",
-      "woocommerce",
-      "Javascript",
-      "CSS",
-      "HTML"
-    ],
+    "stack": ["WordPress", "woocommerce", "Javascript", "CSS", "HTML"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/wordpress/colordmar001.jpg",
@@ -133,9 +123,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar la proporción 16/9 de la imagen principal"
-    ],
+    "extras": [],
     "visible": true,
     "type": "dev",
     "category": "wordpress"
@@ -146,12 +134,7 @@
     "title": "Crece tu Empresa",
     "cliente": "Crece tu Empresa",
     "descripcion": "Web para una empresa de marketing digital. La web consiste en una portada tipo one-page con casitoda la información importante en el inicio, un quienes somos, un menú de servicios con la explicación pormenorizada de cada uno de ellos en una lista de iconos, y una sección de contacto con formulario.",
-    "stack": [
-      "WordPress",
-      "Javascript",
-      "CSS",
-      "HTML"
-    ],
+    "stack": ["WordPress", "Javascript", "CSS", "HTML"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/wordpress/crece-tu-empresa001.jpg",
@@ -192,12 +175,7 @@
     "title": "Juan Mas",
     "cliente": "Juan Mas",
     "descripcion": "Web creada para el artista Juan Mas, como portfolio personal y fuente de información. La web consiste en una portada con carrusel, una biografía del artista, con currículum, índice de exposiciones y bibliografía sobre el artista. Una galería jerarquizada por temática de su obra pictórica, con opción a compra de obras disponibles, críticas de los medios y una sección de contacto.",
-    "stack": [
-      "WordPress",
-      "Javascript",
-      "CSS",
-      "HTML"
-    ],
+    "stack": ["WordPress", "Javascript", "CSS", "HTML"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/wordpress/juan-mas001.jpg",
@@ -242,13 +220,7 @@
     "title": "Cache Croche",
     "cliente": "Alba García",
     "descripcion": "Web creada para la diseñadora de moda Alba García, con la colaboración como fotógrafa de Lidia Aparicio. La página web consiste en un carrusel de imágenes al inicio, con un menú superior que nos lleva a sus colecciones, una tienda online, un contacto de atelier para encargos, un blog, una sección My World, donde podemos leer la historia de la marca, celebridades que la han llevado, pasarelas en las que ha participado la diseñadora, y colaboraciones. También podemos acceder a entradas de prensa sobre la marca , tanto en televisión como en radio y prensa escrita, y una sección contacto, preguntas frecuentes e información legal.",
-    "stack": [
-      "WordPress",
-      "Prestashop",
-      "Javascript",
-      "CSS",
-      "HTML"
-    ],
+    "stack": ["WordPress", "Prestashop", "Javascript", "CSS", "HTML"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/wordpress/cache-croche001.jpg",
@@ -303,12 +275,7 @@
     "title": "Pilar Belmonte 3",
     "cliente": "Pilar Belmonte",
     "descripcion": "Web creada para la artista Pilar Belmonte, como portfolio personal y fuente de información sobre la misma. La web consiste en una página de inicio tipo escritorio, con un menú lateral común a toda la web. En este aparecen iconos a los apartados más relevantes. En Obra Reciente podemos navegar por los distintos apartados de su obra artística, así como de la parte más antigua de la misma en el apartado de Obra de otras épocas. Tenemos un apartado EN VENTA para las obras que se pueden adquirir, con una leyenda con el rango de precios. Se puede entrar a cada obra para ver más información de la misma, o imágenes de la realización, montaje, o en el caso de obras escultóricas, varias vistas de la misma. Luego tenemos más información relevante, como Currículum, publicaciones o eventos a los que ha asistido u organizado. Por último, el apartado contacto, con seguridad Honeypot contra SPAM.",
-    "stack": [
-      "WordPress",
-      "Javascript",
-      "CSS",
-      "HTML"
-    ],
+    "stack": ["WordPress", "Javascript", "CSS", "HTML"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/wordpress/pilar-belmonte-3001.jpg",
@@ -366,14 +333,7 @@
     "title": "Casa Rural Román",
     "cliente": "Casa Rural Román",
     "descripcion": "Web creada para un particular que ofrece una casa rural para alquiler vacacional. La web consiste en una página de inicio con carrusel de fotos, descripción de la casa, formulario de contacto con google maps integrado, tabla de precios, oferta de actividades con sus respectivas descripciones y galería de fotos con lightbox",
-    "stack": [
-      "HTML",
-      "CSS",
-      "PHP",
-      "AJAX",
-      "JAVASCRIPT",
-      "TPV Virtual"
-    ],
+    "stack": ["HTML", "CSS", "PHP", "AJAX", "JAVASCRIPT", "TPV Virtual"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/wordpress/casa-rural-roman001.jpg",
@@ -410,9 +370,7 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Añadir imagen principal 16/9"
-    ],
+    "extras": [],
     "visible": true,
     "type": "dev",
     "category": "wordpress"
@@ -423,12 +381,7 @@
     "title": "Odín Hidromiel",
     "cliente": "Odín Hidromiel",
     "descripcion": "JUN 2015 Web creada para la marca de hidromiel ODIN, para la promoción de diversos productos. La web consiste en una página de Inicio con el menú, un carrusel con las últimas noticias, la información de más importancia, y una breve historia de la empresa. Después tenemos una tienda online con sus bebidas y productos de merchandising, un quienes somos, un formulario de contacto con seguridad antispam, y un mapa interactivo con los centros de distribución de la marca. El CMS de la misma permite una fácil actualización de noticias e imágenes, para que el cliente pueda subir las últimas noticias sin dificultad.",
-    "stack": [
-      "WordPress",
-      "HTML",
-      "CSS",
-      "JAVASCRIPT"
-    ],
+    "stack": ["WordPress", "HTML", "CSS", "JAVASCRIPT"],
     "imagenes": [
       {
         "ruta": "/portfolio/images/portfolio/web/wordpress/odin-hidromiel001.jpg",
@@ -440,9 +393,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Añadir imagenes"
-    ],
+    "extras": ["Añadir imagenes"],
     "visible": true,
     "type": "dev",
     "category": "wordpress"

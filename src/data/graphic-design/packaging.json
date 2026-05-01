@@ -65,7 +65,7 @@
     "descripcion": "Taco de notas personalizado para regalar a clientes. En la caja y en cada hoja aparece el nombre del cliente, produciéndose una comunicación 1:1 mucho más efectiva y con mas retorno que con una campaña publicitaria al uso.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/packaging/tacos-de-notas001.png",
+        "ruta": "/portfolio/images/portfolio/design/packaging/tacos-de-notas001.jpg",
         "label": ""
       },
       {
@@ -95,7 +95,7 @@
     "descripcion": "Ozolife",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/packaging/ozolife001.png",
+        "ruta": "/portfolio/images/portfolio/design/packaging/ozolife001.jpg",
         "label": "Condropep Plus – Impresión digital, sobre impreso a una tinta"
       },
       {
@@ -161,11 +161,11 @@
     "descripcion": "Papelera de cartón para Ida2",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/packaging/minipapelera001.png",
+        "ruta": "/portfolio/images/portfolio/design/packaging/minipapelera001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/packaging/minipapelera002.png",
+        "ruta": "/portfolio/images/portfolio/design/packaging/minipapelera002.jpg",
         "label": ""
       }
     ],

@@ -211,7 +211,7 @@
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/caballo-para-la-pared-de-equilibrium002.png",
+        "ruta": "/portfolio/images/portfolio/design/carteleria/caballo-para-la-pared-de-equilibrium002.jpg",
         "label": ""
       },
       {
@@ -240,9 +240,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Añadir alguna foto actual"
-    ],
+    "extras": ["Añadir alguna foto actual"],
     "visible": true,
     "type": "gd",
     "category": "carteleria"
@@ -288,9 +286,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Hacer mockups"
-    ],
+    "extras": ["Hacer mockups"],
     "visible": true,
     "type": "gd",
     "category": "carteleria"
@@ -324,9 +320,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Añadir ejemplos más actuales"
-    ],
+    "extras": ["Añadir ejemplos más actuales"],
     "visible": true,
     "type": "gd",
     "category": "carteleria"
@@ -468,9 +462,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Comprobar si hay cartelería más nueva"
-    ],
+    "extras": ["Comprobar si hay cartelería más nueva"],
     "visible": true,
     "type": "gd",
     "category": "carteleria"
@@ -648,9 +640,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar contraste"
-    ],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "carteleria"
@@ -916,9 +906,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Mockup de los tres"
-    ],
+    "extras": ["Mockup de los tres"],
     "visible": true,
     "type": "gd",
     "category": "carteleria"
