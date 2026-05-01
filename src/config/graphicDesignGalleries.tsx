@@ -41,6 +41,8 @@ export interface GalleryRouteConfig {
     dataIdPrefix?: string;
     webProject?: boolean;
     stackIconMap?: Record<string, React.FC<IconProps>>;
+    /** Si true, usa proporción 16:9 en ProjectCard */
+    widescreen?: boolean;
   };
 }
 

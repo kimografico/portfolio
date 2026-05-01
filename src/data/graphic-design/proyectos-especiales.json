@@ -7,23 +7,23 @@
     "descripcion": "Visualización 3D de un Totem a modo de pre-maqueta, subcontratado por el estudio de diseño La Rosa Visual",
     "imagenes": [
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Totem-perfil-2-scaled.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/totem-3d001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Totem-trasera-scaled.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/totem-3d002.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Totem-frontal-scaled.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/totem-3d003.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Totem-perfil-scaled.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/totem-3d004.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/Totem-scaled.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/totem-3d005.jpg",
         "label": ""
       }
     ],
@@ -39,19 +39,19 @@
     "descripcion": "Realización de un render 3D de un local, según planos facilitados por el cliente, para la presentación de un proyecto de interiorismo",
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/3-2-scaled.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/render-de-interiorismo001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/190000-scaled.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/render-de-interiorismo002.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/21-scaled.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/render-de-interiorismo003.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/230000-scaled.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/render-de-interiorismo004.jpg",
         "label": ""
       }
     ],
@@ -72,27 +72,27 @@
     "descripcion": "Render 3D de una caseta de telecomunicaciones de Airtel, para la empresa Tech-Telecom",
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/3d_Fuera_2_SolarAIRTEL.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/caseta-airtel001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/caseta-techo-chapa.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/caseta-airtel002.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/3d_Fuera_2.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/caseta-airtel003.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/3d_Fuera_1.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/caseta-airtel004.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/3d_Fuera_2_Solar.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/caseta-airtel005.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/macro.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/caseta-airtel006.jpg",
         "label": ""
       }
     ],
@@ -108,11 +108,11 @@
     "descripcion": "Render 3D de una habitación, para la empresa Tech-Telecom",
     "imagenes": [
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2018/11/3d_Habitacion.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/interior-de-una-habitacion001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/esquema-habitacion.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/interior-de-una-habitacion002.jpg",
         "label": ""
       }
     ],
@@ -128,7 +128,7 @@
     "descripcion": "Animacion 3D del logotipo de La Brigada Gráfica",
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2018/11/estrella-2.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/logo-de-la-brigada-grafica001.jpg",
         "label": ""
       }
     ],
@@ -157,23 +157,23 @@
     "descripcion": "ACID SKATEBOARDS ———————————- Representación de productos y merchandising de la marca de ACID SKATEBOARDS Se crearon para la página web, y presentan una animación interactiva de giro 360º y, en el caso del USB, también de como se abre y cierra el mismo.",
     "imagenes": [
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/ACID_Llavero.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid001.png",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/ACID_Percha2.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid002.png",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/ACID_usb.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid003.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/ACID_Percha.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid004.png",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2018/10/ACID_T-tool.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid005.png",
         "label": ""
       }
     ],
@@ -194,19 +194,19 @@
     "descripcion": "Cartelería para el evento Breaking Stereotypes de la Generalitat Valenciana. El diseño se realizó mediante 3D Studio Max y Photoshop",
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/5184997514_e438fa2819_b.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/breaking-stereotypes001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/5184395745_6e4815a074_b.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/breaking-stereotypes002.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/BStereotypes.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/breaking-stereotypes003.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2008/12/unnamed.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/breaking-stereotypes004.png",
         "label": ""
       }
     ],
@@ -222,7 +222,7 @@
     "descripcion": "Lugar de descanso de mi padre",
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/01/Descanso-Padre.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/descanso-padre001.jpg",
         "label": ""
       }
     ],
@@ -238,7 +238,7 @@
     "descripcion": "Cartelería para la rotulación de un furgón de la empresa SAICA",
     "imagenes": [
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/Boceto-1.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/furgoneta-saica001.png",
         "label": ""
       }
     ],
@@ -258,31 +258,31 @@
     "descripcion": "Señalización de los mismos con información sobre su utilización, ejemplos de residuos que acepta cada contenedor, información municipal y una indiana con iconos representando distintos tipos de elementos que se pueden tirar en cada uno",
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/CONTENEDORES.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/contenedores-soterrados-de-castalla001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/CONTENEDORES_Pagina_5.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/contenedores-soterrados-de-castalla002.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/CONTENEDORES_Pagina_3.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/contenedores-soterrados-de-castalla003.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/CONTENEDORES_Pagina_1.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/contenedores-soterrados-de-castalla004.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/CONTENEDORES_Pagina_6.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/contenedores-soterrados-de-castalla005.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/CONTENEDORES_Pagina_4.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/contenedores-soterrados-de-castalla006.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2021/02/CONTENEDORES_Pagina_2.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/contenedores-soterrados-de-castalla007.jpg",
         "label": ""
       }
     ],
@@ -298,23 +298,23 @@
     "descripcion": "Trofeo para la VII edición del concurso de paellas organizado por Grupo Electrostocks. Se realizaron estatuillas para el 1er, 2º y 3er premio. El trofeo está realizado en metacrilato de 10mm, grabado y con peana adherida con cianocrilato, y una cuchara de madera grabada a láser.",
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_IMG_20190307_190827.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/trofeo-concurso-de-paellas001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_IMG_20190307_190833.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/trofeo-concurso-de-paellas002.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_IMG_20190307_190821.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/trofeo-concurso-de-paellas003.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_IMG_20190307_190604.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/trofeo-concurso-de-paellas004.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/resized_IMG_20190307_190631.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/trofeo-concurso-de-paellas005.jpg",
         "label": ""
       }
     ],
@@ -332,11 +332,11 @@
     "descripcion": "Cartelería para la rotulación de un coche de empresa de la asesoría Nemesio",
     "imagenes": [
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2017/03/vinilo-tipo3.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/coche-nemesio001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2017/03/vinilo-tipo2.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/coche-nemesio002.jpg",
         "label": ""
       }
     ],
@@ -352,27 +352,27 @@
     "descripcion": "Vinilos para las puertas de Decathlon Aldaia, con motivo de la campaña Trocathlon, y algunos carteles para señalética.",
     "imagenes": [
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2016/10/111016_MOCKUP-Puertas.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/puertas-trocathlon001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2016/10/decathln2.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/puertas-trocathlon002.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2016/10/decathln.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/puertas-trocathlon003.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2016/10/111016_Puertas-v2.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/puertas-trocathlon004.png",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2016/10/111016_Vinilos-Campanar-v2-5-scaled.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/puertas-trocathlon005.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2016/10/111016_Vinilos-Campanar-v2-4-scaled.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/puertas-trocathlon006.jpg",
         "label": ""
       }
     ],
@@ -390,23 +390,23 @@
     "descripcion": "CD recopilatorio de música Regalo de aniversario de una pareja que vivian separados, Londres y Barcelona",
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_CDVIC_DVD_Case_Mockup_4.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/cd-musica-recopilada001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_CDVIC_DVD_Case_Mockup_5.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/cd-musica-recopilada002.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_CDVIC_DVD_Case_Mockup_2.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/cd-musica-recopilada003.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_CDVIC_DVD_Case_Mockup_1.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/cd-musica-recopilada004.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/04/resized_Vic-CD-Musica.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/cd-musica-recopilada005.jpg",
         "label": ""
       }
     ],
@@ -422,59 +422,59 @@
     "descripcion": "Diseño para los uniformes y camisetas promocionales del Pub «La Flama» del barrio del Carmen de Valencia",
     "imagenes": [
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/5-1.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/3-3.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama002.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/2-2.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama003.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/1-2.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama004.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/4-2.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama005.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/1-3.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama006.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/resized_Camisetas-19.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama007.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/resized_Camisetas-17.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama008.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/resized_Camisetas-7.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama009.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/resized_Camisetas-8.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama010.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/resized_Camisetas-12.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama011.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/resized_Camisetas-13.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama012.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/resized_Camisetas-20.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama013.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/resized_Camisetas-18.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama014.jpg",
         "label": ""
       }
     ],
@@ -492,23 +492,23 @@
     "descripcion": "Diseño para las bolsas para fruta y verdura de los mercados municipales de Valencia, encargado por la Consellería de Educació de la Generalitat Valenciana para el fomento del valenciano. El trabajo se realizó en dos tamaños, bolsa grande y pequeña.",
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Bolsa-fruta-y-verdura-tex.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/bolsa-frutas-y-verduras001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/3-5.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/bolsa-frutas-y-verduras002.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/2-4.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/bolsa-frutas-y-verduras003.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/23-05-2014.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/bolsa-frutas-y-verduras004.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2014/05/gv_conselleria_educacio_rgb_val.png",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/bolsa-frutas-y-verduras005.png",
         "label": ""
       }
     ],
@@ -524,27 +524,27 @@
     "descripcion": "Baraja de cartas promocional para La Brigada Gráfica. La temática de cada palo tiene que ver con los gustos y personalidad de cada integrante del estudio de arte que es La Brigada Gráfica",
     "imagenes": [
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/30-10-2012.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/baraja-lbg001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/2-3.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/baraja-lbg002.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/01/4-3-scaled.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/baraja-lbg003.jpg",
         "label": "Baraja completa"
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Cartas2.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/baraja-lbg004.jpg",
         "label": "Figuras"
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/Cartas.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/baraja-lbg005.jpg",
         "label": "Ases"
       },
       {
-        "ruta": "https://www.kimografico.com/wp-content/uploads/2020/01/3-4.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/baraja-lbg006.jpg",
         "label": "Desplegado de la caja"
       }
     ],
@@ -560,63 +560,63 @@
     "descripcion": "Panografías Imágenes unidas para formar una imágen en gran angular",
     "imagenes": [
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/resized__PANOGRAFIA-cueva-de-las-Palomas-3.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/resized_Casa-1.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias002.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/resized__Panografía-Superpuestas-estirada.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias003.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/resized__Panografia-5a.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias004.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2011/04/resized__Panografia-3.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias005.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2011/04/5550037227_053de617d8_b.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias006.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2011/04/resized__Panografia-1.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias007.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2011/04/resized__Panografia-6.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias008.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2011/04/resized__Panografia-2.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias009.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2011/04/resized__Panorama1.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias010.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2011/04/resized__Panografia-10.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias011.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2011/04/resized_Panografia-1.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias012.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2010/04/resized__5550618930_3eac2a1836_b.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias013.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2010/04/resized__3671167975_627186d4d9_z.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias014.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2010/04/resized_Pulpo-2.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias015.jpg",
         "label": ""
       }
     ],
@@ -632,31 +632,31 @@
     "descripcion": "Birdseyes Imágenes unidas en un panorama y curvado para formar una imagen que recuerda a un pequeño planeta",
     "imagenes": [
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/3671973466_a125c04871_z.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/birdseyes001.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/resized_Tejado-Birdseye.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/birdseyes002.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/resized_Habitacion-Birdseye.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/birdseyes003.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/resized_BirdseyeAlcoi.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/birdseyes004.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/resized_Birdseye.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/birdseyes005.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2010/04/resized_Birdseye-5.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/birdseyes006.jpg",
         "label": ""
       },
       {
-        "ruta": "https://kimografico.com/wp-content/uploads/2020/04/resized_Birdseye-Gulliver3.jpg",
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/birdseyes007.jpg",
         "label": ""
       }
     ],

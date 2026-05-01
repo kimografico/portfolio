@@ -3,6 +3,7 @@ import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
 import BaseTable from '../../components/compositions/BaseTable';
 import { useShowHidden } from '../../hooks/useShowHidden';
 import { updateVisibilityBatch, deleteProjectsBatch } from '../../api/apiClient';
+import { APP_BASENAME } from '../../config/app';
 import {
   ALL_ENTRIES,
   type DataEntry,
@@ -483,7 +484,7 @@ export default function DataPage() {
           initialSorting={[{ id: 'date', desc: true }]}
           // onRowClick={(row) => navigate(`/kimo/edit-project/${row.id}`)}
           onRowClick={(row) => {
-            window.open(`/portfolio/kimo/edit-project/${row.id}`, '_blank');
+            window.open(`${APP_BASENAME}/kimo/edit-project/${row.id}`, '_blank');
           }}
           emptyMessage="No hay proyectos que coincidan con los filtros."
         />
@@ -498,7 +499,7 @@ export default function DataPage() {
               <button
                 key={id}
                 onClick={() => {
-                  window.open(`/portfolio/kimo/edit-project/${id}`, '_blank');
+                  window.open(`${APP_BASENAME}/kimo/edit-project/${id}`, '_blank');
                 }}
                 className="px-3 py-1.5 text-sm bg-accent text-white rounded hover:opacity-90 transition-opacity"
                 title={`Editar proyecto ${id}`}
