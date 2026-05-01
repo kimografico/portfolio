@@ -83,6 +83,19 @@ export function updateVisibilityBatch(ids: number[], visible: boolean) {
   });
 }
 
+/** Elimina múltiples proyectos en lote */
+export async function deleteProjectsBatch(ids: number[]) {
+  // Elimina proyectos en paralelo llamando a DELETE para cada ID
+  const results = await Promise.all(
+    ids.map((id) =>
+      apiFetch(`/api/projects/${id}`, {
+        method: 'DELETE',
+      }),
+    ),
+  );
+  return results;
+}
+
 // --- Upload de imágenes ---
 
 export interface UploadedImage {

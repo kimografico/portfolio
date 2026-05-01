@@ -1,73 +1,17 @@
 import { useCallback, useMemo, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
 import BaseTable from '../../components/compositions/BaseTable';
 import { useShowHidden } from '../../hooks/useShowHidden';
-import { updateVisibilityBatch } from '../../api/apiClient';
-
-// --- Importación de todos los JSON de diseño gráfico y desarrollo ---
-import carteleria from '../../data/graphic-design/carteleria.json';
-import editorial from '../../data/graphic-design/editorial.json';
-import etiquetas from '../../data/graphic-design/etiquetas.json';
-import logotipos from '../../data/graphic-design/logotipos.json';
-import multimedia from '../../data/graphic-design/multimedia.json';
-import packaging from '../../data/graphic-design/packaging.json';
-import papeleria from '../../data/graphic-design/papeleria.json';
-import proyectosEspeciales from '../../data/graphic-design/proyectos-especiales.json';
-import frameworks from '../../data/development/frameworks.json';
-import vanilla from '../../data/development/vanilla.json';
-import wordpress from '../../data/development/wordpress.json';
-
-/**
- * DataEntry: tipo normalizado para todas las entradas de todos los JSON.
- * Añadimos `type` y `category` para poder filtrar por origen del proyecto.
- */
-interface DataEntry {
-  id: number | string;
-  date: string;
-  title: string;
-  cliente: string;
-  type: string;
-  category: string;
-  visible: boolean;
-}
-
-/**
- * Definición de las fuentes de datos.
- * Para añadir un nuevo JSON, solo hay que añadir un objeto aquí.
- */
-const SOURCES = [
-  // Diseño Gráfico
-  { data: carteleria, type: 'Diseño Gráfico', category: 'Cartelería' },
-  { data: editorial, type: 'Diseño Gráfico', category: 'Editorial' },
-  { data: etiquetas, type: 'Diseño Gráfico', category: 'Etiquetas' },
-  { data: logotipos, type: 'Diseño Gráfico', category: 'Logotipos' },
-  { data: multimedia, type: 'Diseño Gráfico', category: 'Multimedia' },
-  { data: packaging, type: 'Diseño Gráfico', category: 'Packaging' },
-  { data: papeleria, type: 'Diseño Gráfico', category: 'Papelería' },
-  { data: proyectosEspeciales, type: 'Diseño Gráfico', category: 'Proyectos especiales' },
-  // Desarrollo
-  { data: frameworks, type: 'Desarrollo', category: 'Frameworks' },
-  { data: vanilla, type: 'Desarrollo', category: 'Vanilla' },
-  { data: wordpress, type: 'Desarrollo', category: 'WordPress' },
-];
-
-/**
- * Combina todos los JSON en un único array normalizado.
- * Se hace fuera del componente para que no se recalcule en cada render.
- */
-const ALL_ENTRIES: DataEntry[] = SOURCES.flatMap(({ data, type, category }) =>
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (data as any[]).map((item) => ({
-    id: item.id,
-    date: item.date ?? '',
-    title: item.title ?? '',
-    cliente: item.cliente ?? '',
-    type,
-    category,
-    visible: item.visible !== false,
-  })),
-);
+import { updateVisibilityBatch, deleteProjectsBatch } from '../../api/apiClient';
+import {
+  ALL_ENTRIES,
+  type DataEntry,
+  getCategoryOptions,
+  getClienteOptions,
+  applyFilters,
+  calculateDuplicateIds,
+  getEntriesWithExtras,
+} from './DataPageHelpers';
 
 // Necesario para crear columnas tipadas
 const columnHelper = createColumnHelper<DataEntry>();
@@ -94,7 +38,6 @@ const columnHelper = createColumnHelper<DataEntry>();
 type VisibilityFilter = 'all' | 'visible' | 'hidden';
 
 export default function DataPage() {
-  const navigate = useNavigate();
   const [filterType, setFilterType] = useState('');
   const [filterCategory, setFilterCategory] = useState('');
   const [filterCliente, setFilterCliente] = useState('');
@@ -120,56 +63,35 @@ export default function DataPage() {
   const [bulkStatus, setBulkStatus] = useState<'idle' | 'loading' | 'error'>('idle');
   const [bulkError, setBulkError] = useState('');
 
+  /** IDs de proyectos que han sido eliminados localmente */
+  const [deletedIds, setDeletedIds] = useState<Set<string | number>>(new Set());
+
   // Opciones de categoría: dependen del tipo seleccionado
-  const categoryOptions = useMemo(() => {
-    const categories = SOURCES.filter((s) => !filterType || s.type === filterType).map(
-      (s) => s.category,
-    );
-    return Array.from(new Set(categories)).sort();
-  }, [filterType]);
+  const categoryOptions = useMemo(() => getCategoryOptions(filterType), [filterType]);
 
   // Opciones de cliente: dependen del tipo + categoría seleccionados
-  const clienteOptions = useMemo(() => {
-    const filtered = ALL_ENTRIES.filter(
-      (e) =>
-        (!filterType || e.type === filterType) &&
-        (!filterCategory || e.category === filterCategory),
-    );
-    const clients = filtered.map((e) => e.cliente).filter(Boolean);
-    return Array.from(new Set(clients)).sort();
-  }, [filterType, filterCategory]);
+  const clienteOptions = useMemo(
+    () => getClienteOptions(filterType, filterCategory),
+    [filterType, filterCategory],
+  );
 
-  // Datos finales tras aplicar todos los filtros, con overrides de visibilidad
+  // Datos finales tras aplicar todos los filtros, con overrides de visibilidad y excluyendo eliminados
   const filteredEntries = useMemo(() => {
-    return ALL_ENTRIES.filter((e) => {
-      // La visibilidad real incluye posibles cambios locales
-      const isVisible = e.id in localVisibility ? localVisibility[e.id] : e.visible;
-      return (
-        (filterVisibility === 'all' ||
-          (filterVisibility === 'visible' && isVisible) ||
-          (filterVisibility === 'hidden' && !isVisible)) &&
-        (!filterType || e.type === filterType) &&
-        (!filterCategory || e.category === filterCategory) &&
-        (!filterCliente || e.cliente === filterCliente)
-      );
+    const withoutDeleted = ALL_ENTRIES.filter((e) => !deletedIds.has(e.id));
+    return applyFilters(withoutDeleted, {
+      filterVisibility,
+      filterType,
+      filterCategory,
+      filterCliente,
+      localVisibility,
     });
-  }, [filterVisibility, filterType, filterCategory, filterCliente, localVisibility]);
+  }, [filterVisibility, filterType, filterCategory, filterCliente, localVisibility, deletedIds]);
 
   // Calcular IDs duplicados en todo el dataset (no solo filtrados)
-  const duplicateIds = useMemo(() => {
-    const idCount: Record<string | number, number> = {};
-    ALL_ENTRIES.forEach((entry) => {
-      idCount[entry.id] = (idCount[entry.id] || 0) + 1;
-    });
-    return Object.entries(idCount)
-      .filter(([, count]) => count > 1)
-      .map(([id]) => id)
-      .sort((a, b) => {
-        const numA = Number(a);
-        const numB = Number(b);
-        return isNaN(numA) || isNaN(numB) ? String(a).localeCompare(String(b)) : numA - numB;
-      });
-  }, []);
+  const duplicateIds = useMemo(() => calculateDuplicateIds(), []);
+
+  // Calcular IDs que tienen extras no vacío
+  const idsWithExtras = useMemo(() => getEntriesWithExtras(), []);
 
   // --- Handlers de selección ---
 
@@ -234,6 +156,43 @@ export default function DataPage() {
     } catch (err) {
       setBulkStatus('error');
       setBulkError(err instanceof Error ? err.message : 'Error al actualizar');
+    }
+  }
+
+  // --- Acción bulk: eliminar proyectos ---
+
+  async function handleBulkDelete() {
+    if (selectedIds.size === 0) return;
+
+    // Pedir confirmación al usuario
+    const confirmed = window.confirm(
+      `¿Estás seguro de que quieres eliminar ${selectedIds.size} proyecto${selectedIds.size === 1 ? '' : 's'}? Esta acción no se puede deshacer.`,
+    );
+    if (!confirmed) return;
+
+    setBulkStatus('loading');
+    setBulkError('');
+
+    try {
+      // Convertir a array de números
+      const ids = Array.from(selectedIds)
+        .map(Number)
+        .filter((n) => !isNaN(n));
+      await deleteProjectsBatch(ids);
+
+      // Marcar los IDs como eliminados localmente
+      setDeletedIds((prev) => {
+        const next = new Set(prev);
+        ids.forEach((id) => next.add(id));
+        return next;
+      });
+
+      // Limpiar selección
+      setSelectedIds(new Set());
+      setBulkStatus('idle');
+    } catch (err) {
+      setBulkStatus('error');
+      setBulkError(err instanceof Error ? err.message : 'Error al eliminar');
     }
   }
 
@@ -356,9 +315,9 @@ export default function DataPage() {
               : 'border-gray-300 text-muted hover:border-gray-400'
           }`}
           data-id="data-show-hidden-btn"
-          title={showHidden ? 'Galerías: mostrando todos' : 'Galerías: solo visibles'}
+          title={showHidden ? 'Mostrar todos los proyectos' : 'Mostrar solo proyectos visibles'}
         >
-          {showHidden ? '🖼 Galerías: todos' : '🖼 Galerías: visibles'}
+          {showHidden ? '👁️ Mostrar todos los proyectos' : '👁️ Mostrar solo proyectos visibles'}
         </button>
       </div>
 
@@ -495,6 +454,15 @@ export default function DataPage() {
             ● Marcar como visibles
           </button>
           <button
+            onClick={handleBulkDelete}
+            disabled={bulkStatus === 'loading'}
+            className="text-xs px-3 py-1.5 bg-red-100 text-red-700 border border-red-400 rounded hover:bg-red-200 disabled:opacity-50 transition-colors"
+            data-id="data-delete-btn"
+            title="Eliminar proyecto(s) seleccionado(s) - no se puede deshacer"
+          >
+            🗑️ Eliminar
+          </button>
+          <button
             onClick={() => setSelectedIds(new Set())}
             className="text-xs text-muted hover:text-accent transition-colors ml-auto"
           >
@@ -513,10 +481,34 @@ export default function DataPage() {
           data={filteredEntries}
           columns={columns}
           initialSorting={[{ id: 'date', desc: true }]}
-          onRowClick={(row) => navigate(`/kimo/edit-project/${row.id}`)}
+          // onRowClick={(row) => navigate(`/kimo/edit-project/${row.id}`)}
+          onRowClick={(row) => {
+            window.open(`/portfolio/kimo/edit-project/${row.id}`, '_blank');
+          }}
           emptyMessage="No hay proyectos que coincidan con los filtros."
         />
       </div>
+
+      {/* Botones para IDs con extras no vacío */}
+      {idsWithExtras.length > 0 && (
+        <div className="mt-8 pt-6 border-t" data-id="data-extras-buttons">
+          <p className="text-xs font-semibold text-muted mb-3">Proyectos para revisar:</p>
+          <div className="flex flex-wrap gap-2">
+            {idsWithExtras.map((id) => (
+              <button
+                key={id}
+                onClick={() => {
+                  window.open(`/portfolio/kimo/edit-project/${id}`, '_blank');
+                }}
+                className="px-3 py-1.5 text-sm bg-accent text-white rounded hover:opacity-90 transition-opacity"
+                title={`Editar proyecto ${id}`}
+              >
+                {String(id)}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </section>
   );
 }

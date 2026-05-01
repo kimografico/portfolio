@@ -609,12 +609,21 @@ export default function EditProjectPage() {
 
                 <div className="w-16 h-12 bg-gray-100 rounded overflow-hidden flex-shrink-0 border border-gray-200">
                   {img.ruta && !imgErrors[i] ? (
-                    <img
-                      src={img.ruta}
-                      alt={img.label || `Imagen ${i + 1}`}
-                      className="w-full h-full object-cover"
-                      onError={() => setImgErrors((prev) => ({ ...prev, [i]: true }))}
-                    />
+                    <a
+                      href={img.ruta}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={img.label || `Abrir imagen ${i + 1} en nueva pestaña`}
+                      tabIndex={0}
+                      data-id={`edit-project-img-link-${i}`}
+                    >
+                      <img
+                        src={img.ruta}
+                        alt={img.label || `Imagen ${i + 1}`}
+                        className="w-full h-full object-cover"
+                        onError={() => setImgErrors((prev) => ({ ...prev, [i]: true }))}
+                      />
+                    </a>
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-muted text-lg">
                       🖼
@@ -705,13 +714,13 @@ export default function EditProjectPage() {
         {/* Extras */}
         <div>
           <div className="flex items-center justify-between mb-2">
-            <p className="text-xs font-semibold text-muted">Extras / Links</p>
+            <p className="text-xs font-semibold text-muted">Extras / Tareas por hacer</p>
             <button
               type="button"
               onClick={() => addExtras()}
               className="text-xs text-accent hover:underline"
             >
-              + Añadir link
+              + Añadir tarea
             </button>
           </div>
           <div className="space-y-2">

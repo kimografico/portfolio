@@ -67,11 +67,11 @@ export const ProjectCard = <T extends BaseProject>({
     >
       {/* Thumbnail */}
       {thumbnail && (
-        <div className="overflow-hidden">
+        <div className="overflow-hidden flex items-center justify-center aspect-video h-64 bg-gray-100">
           <img
             src={thumbnail}
             alt={project.title}
-            className="wp-card-image group-hover:scale-105"
+            className="object-cover w-full h-full group-hover:scale-125 transition-transform"
             loading="lazy"
           />
         </div>
