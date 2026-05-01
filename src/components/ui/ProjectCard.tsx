@@ -58,8 +58,11 @@ export const ProjectCard = <T extends BaseProject>({
 }: ProjectCardProps<T>) => {
   const [hoveredTech, setHoveredTech] = useState<string | null>(null);
 
-  // Extraer thumbnail de forma agnóstica
-  const thumbnail = project.imagenes?.[0]?.ruta;
+  // Usar thumbnail optimizado si existe, fallback a imagen original
+  const thumbUrl = `/portfolio/images/portfolio/thumbs/${project.id}.jpg`;
+  const fallbackThumb = project.imagenes?.[0]?.ruta;
+  const thumbnail = thumbUrl || fallbackThumb;
+
   const year = project.date?.slice(0, 4);
 
   return (

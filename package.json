@@ -14,7 +14,10 @@
     "check": "node scripts/check.js",
     "backend": "node api/server.cjs",
     "backend:dev": "nodemon api/server.cjs",
-    "start": "concurrently \"pnpm dev\" \"pnpm backend:dev\""
+    "start": "concurrently \"pnpm dev\" \"pnpm backend:dev\"",
+    "thumbs": "node scripts/generate-thumbs.cjs",
+    "thumbs:new": "node scripts/generate-thumbs.cjs --new",
+    "thumbs:id": "node scripts/generate-thumbs.cjs --id"
   },
   "dependencies": {
     "@tanstack/react-table": "^8.21.3",
@@ -51,6 +54,7 @@
     "nodemon": "^3.0.2",
     "postcss": "^8.5.10",
     "prettier": "^3.8.3",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.19",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.58.2",
