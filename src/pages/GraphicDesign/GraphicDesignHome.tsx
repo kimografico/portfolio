@@ -1,76 +1,15 @@
 import { useState } from 'react';
-import {
-  IconPen,
-  IconFlyer,
-  IconPoster,
-  IconLaptop,
-  IconBox,
-  IconBottle,
-  IconBook,
-  IconImage,
-} from '../../components/iconos';
 import { CategoryCard } from '../../components/ui/CategoryCard';
 import CategoryHero from '../../components/ui/CategoryHero';
 import HeroSection from '../../components/layout/HeroSection';
 import RecentProjectsSection from '../../components/layout/RecentProjectsSection';
+import { GRAPHIC_DESIGN_CATEGORIES } from './categories';
 import recentWorks from '../../data/recent-works.json';
 import type { Project } from '../../interfaces/project';
 
-const CATEGORIES = [
-  {
-    key: 'logotipos',
-    title: 'Branding & Logotipos',
-    description: 'Identidad visual, logotipos y sistemas de marca.',
-    icon: IconPen,
-  },
-  {
-    key: 'editorial',
-    title: 'Editorial',
-    description: 'Diseño de publicaciones, revistas y materiales editoriales.',
-    icon: IconBook,
-  },
-  {
-    key: 'etiquetas',
-    title: 'Etiquetas',
-    description: 'Diseño de etiquetas, pegatinas y elementos gráficos para packaging.',
-    icon: IconBottle,
-  },
-  {
-    key: 'papeleria',
-    title: 'Papelería Corporativa',
-    description: 'Tarjetas, sobres, carpetas y material corporativo.',
-    icon: IconFlyer,
-  },
-  {
-    key: 'carteleria',
-    title: 'Cartelería',
-    description: 'Posters, flyers y material promocional.',
-    icon: IconPoster,
-  },
-  {
-    key: 'packaging',
-    title: 'Packaging',
-    description: 'Envases, etiquetas y diseño de producto.',
-    icon: IconBox,
-  },
-  {
-    key: 'multimedia',
-    title: 'Digital & Multimedia',
-    description: 'Diseño para vídeo, web y presentaciones.',
-    icon: IconLaptop,
-  },
-  {
-    key: 'proyectos-especiales',
-    title: 'Proyectos especiales',
-    description: 'Proyectos gráficos singulares, personalizados o fuera de categoría.',
-    icon: IconImage,
-  },
-];
-
 export default function GraphicDesignHome() {
-  // Calcular acceso directo usando inicializador de estado
-  // Evita el warning de setState en efecto
-  const [isDirectAccess] = useState(() => window.history.length === 1);
+  // Detectar acceso directo usando sessionStorage. Si no hay flag de acceso interno, es acceso directo/externo
+  const [isDirectAccess] = useState(() => !sessionStorage.getItem('isInternal'));
 
   // Filtrar proyectos recientes por categoría GraphicDesign
   const graphicDesignProjects = (recentWorks as Project[]).filter(
@@ -123,7 +62,7 @@ export default function GraphicDesignHome() {
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
           data-id="categories-grid"
         >
-          {CATEGORIES.map((category) => (
+          {GRAPHIC_DESIGN_CATEGORIES.map((category) => (
             <CategoryCard
               key={category.key}
               icon={category.icon}

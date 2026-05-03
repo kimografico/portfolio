@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import '../../styles/buttonStyles.css';
 import './home.css';
 import recentWorks from '../../data/recent-works.json';
@@ -6,6 +7,10 @@ import RecentProjectsSection from '../../components/layout/RecentProjectsSection
 import SobreSection from '../../components/layout/SobreSection';
 
 export default function Home() {
+  // Marcar acceso interno para futuras navegaciones
+  useEffect(() => {
+    sessionStorage.setItem('isInternal', 'true');
+  }, []);
   return (
     <>
       {/* Skip link */}

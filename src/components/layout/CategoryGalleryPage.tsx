@@ -4,7 +4,7 @@ import EmptyState from '../ui/EmptyState';
 import type { IconProps } from '../../types/icons';
 import { useShowHidden } from '../../hooks/useShowHidden';
 
-/**
+/*
  * CategoryGalleryPage
  *
  * Componente genérico para páginas de galería de proyectos.
@@ -21,41 +21,28 @@ import { useShowHidden } from '../../hooks/useShowHidden';
 
 interface CategoryGalleryPageProps<T extends BaseProject> {
   // --- Datos ---
-  /** Array de proyectos a mostrar */
-  projects: T[];
-  /** Ruta base para construir el enlace de cada proyecto. Ej: "/graphic-design/logotipos" */
-  basePath: string;
+  projects: T[]; // Array de proyectos a mostrar
+  basePath: string; // Ruta base para construir el enlace de cada proyecto. Ej: "/graphic-design/logotipos"
 
   // --- CategoryHero ---
   title: string;
   description: string;
-  /** Icono del hero (componente React, opcional) */
-  icon?: React.FC<IconProps>;
-  /** Color del overlay del hero */
-  color?: string;
-  /** Opacidad del overlay del hero */
-  opacity?: number;
-  /** Ruta del enlace de retroceso */
-  backLink?: string;
-  /** Texto del enlace de retroceso */
-  backLinkText?: string;
+  icon?: React.FC<IconProps>; // Icono del hero (componente React, opcional)
+  color?: string; // Color del overlay del hero
+  opacity?: number; // Opacidad del overlay del hero
+  backLink?: string; // Ruta del enlace de retroceso
+  backLinkText?: string; // Texto del enlace de retroceso
 
   // --- ProjectCard ---
-  /** Icono fallback para tarjetas sin imagen */
-  IconFallback?: React.FC<IconProps>;
-  /** Si true, muestra barra de tecnologías (modo Developer) */
-  webProject?: boolean;
-  /** Mapeo de tecnologías a iconos (solo necesario si webProject=true) */
-  stackIconMap?: Record<string, React.FC<IconProps>>;
-  /** Si true, usa proporción 16:9 para el thumbnail. Si false, usa 4:3. */
-  widescreen?: boolean;
+  IconFallback?: React.FC<IconProps>; // Icono fallback para tarjetas sin imagen
+  webProject?: boolean; // Si true, muestra barra de tecnologías (modo Developer)
+  stackIconMap?: Record<string, React.FC<IconProps>>; // Mapeo de tecnologías a iconos (solo necesario si webProject=true)
+  widescreen?: boolean; // Si true, usa proporción 16:9 para el thumbnail. Si false, usa 4:3.
   // --- Mensajes ---
-  /** Texto del EmptyState cuando no hay proyectos */
-  emptyStateDescription?: string;
+  emptyStateDescription?: string; // Texto del EmptyState cuando no hay proyectos
 
   // --- data-id ---
-  /** Prefijo para los atributos data-id de los elementos clave */
-  dataIdPrefix?: string;
+  dataIdPrefix?: string; // Prefijo para los atributos data-id de los elementos clave
 }
 
 export default function CategoryGalleryPage<T extends BaseProject>({
@@ -75,11 +62,9 @@ export default function CategoryGalleryPage<T extends BaseProject>({
   emptyStateDescription = 'Esta sección está en preparación. Pronto encontrarás proyectos aquí.',
   dataIdPrefix = 'gallery',
 }: CategoryGalleryPageProps<T>) {
-  // Lee desde localStorage si el usuario quiere ver proyectos ocultos
-  const [showHidden] = useShowHidden();
+  const [showHidden] = useShowHidden(); // Lee desde localStorage si el usuario quiere ver proyectos ocultos
 
-  // Ordenar proyectos por fecha descendente (más nuevo primero)
-  // y filtrar según la preferencia de visibilidad
+  // Ordenar proyectos por fecha descendente (más nuevo primero) y filtrar según la preferencia de visibilidad
   const sortedProjects = [...projects]
     .filter((p) => showHidden || (p as BaseProject & { visible?: boolean }).visible !== false)
     .sort((a, b) => b.date.localeCompare(a.date));

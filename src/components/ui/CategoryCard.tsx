@@ -3,16 +3,11 @@ import type { FC, ComponentType } from 'react';
 import './CategoryCard.css';
 
 interface CategoryCardProps {
-  /** Componente de icono (ej: IconPlant, IconCode, etc.) */
-  icon: ComponentType<{ size: number; strokeWidth: number; className: string }>;
-  /** Título de la categoría */
-  title: string;
-  /** Descripción breve de la categoría */
-  description: string;
-  /** Ruta a la que navega al hacer clic */
-  to: string;
-  /** Color de hover opcional (CSS variable o valor). Por defecto: var(--color-accent) */
-  hoverColor?: string;
+  icon: ComponentType<{ size: number; strokeWidth: number; className: string }>; // Componente de icono (ej: IconPlant, IconCode, etc.)
+  title: string; // Título de la categoría
+  description: string; // Descripción breve de la categoría
+  to: string; // Ruta a la que navega al hacer clic
+  hoverColor?: string; // Color de hover opcional (CSS variable o valor). Por defecto: var(--color-accent)
 }
 
 /**

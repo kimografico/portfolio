@@ -14,7 +14,6 @@ const UI_IMG_PATH = `${import.meta.env.BASE_URL}images/ui`;
  * Muestra título, descripción, icono (opcional) y enlace de retroceso (opcional) con imagen de fondo.
  * Perfectamente adaptable para secciones principales o subsecciones.
  *
- * Mejoras visuales:
  * - Icono representativo (opcional, con animación float)
  * - Imagen de fondo parametrizada con offset vertical aleatorio
  * - Colores y overlay parametrizables
@@ -22,24 +21,15 @@ const UI_IMG_PATH = `${import.meta.env.BASE_URL}images/ui`;
  * - Overlay con animación cíclica suave
  */
 interface CategoryHeroProps {
-  /** Título principal de la sección */
-  title: string;
-  /** Descripción o subtitle */
-  description: string;
-  /** Icono representativo de la categoría (opcional) */
-  icon?: React.FC<IconProps>;
-  /** URL de imagen de fondo (opcional, usa fallback si no se proporciona) */
-  backgroundImage?: string;
-  /** Color del overlay (default: --color-bg) */
-  color?: string;
-  /** Opacidad del overlay oscuro (0-1, default: 0.25) */
-  opacity?: number;
-  /** Ruta a la que vuelve el enlace de retroceso (opcional, si no se proporciona no se muestra) */
-  backLink?: string;
-  /** Texto del enlace de retroceso (default: "← Atrás") */
-  backLinkText?: string;
-  /** ID para atributos data-id (tests/debugging) */
-  dataId?: string;
+  title: string; // Título principal de la sección
+  description: string; // Descripción o subtitle
+  icon?: React.FC<IconProps>; // Icono representativo de la categoría (opcional)
+  backgroundImage?: string; // URL de imagen de fondo (opcional, usa fallback si no se proporciona)
+  color?: string; // Color del overlay (default: --color-bg)
+  opacity?: number; // Opacidad del overlay oscuro (0-1, default: 0.25)
+  backLink?: string; // Ruta a la que vuelve el enlace de retroceso (opcional, si no se proporciona no se muestra)
+  backLinkText?: string; // Texto del enlace de retroceso (default: "← Atrás")
+  dataId?: string; // ID para atributos data-id (tests/debugging)
 }
 
 export default function CategoryHero({
