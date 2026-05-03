@@ -1,3 +1,4 @@
+export default LogoFavicon;
 import type { IconProps } from '../../types/icons';
 
 export function LogoFavicon({ size = 48, ...props }: IconProps) {

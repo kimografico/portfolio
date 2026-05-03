@@ -1,3 +1,4 @@
+export { LogoFavicon } from './LogoFavicon';
 export { IconIcons } from './IconIcons';
 export { IconWorld } from './IconWorld';
 export { IconBook } from './IconBook';
