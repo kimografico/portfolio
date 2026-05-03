@@ -30,7 +30,7 @@ export default function DeveloperHome() {
             </>
           }
           description="Creo soluciones web modernas, escalables y performantes. Especializado en React, vanilla JavaScript y WordPress. Cada proyecto es diseñado pensando en experiencia de usuario, accesibilidad y calidad de código."
-          separator="#225cba"
+          separator="var(--color-dev)"
           image={`${import.meta.env.BASE_URL}images/ui/K3.png`}
         />
       )}

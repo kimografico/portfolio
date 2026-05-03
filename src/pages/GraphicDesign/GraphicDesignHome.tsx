@@ -31,7 +31,7 @@ export default function GraphicDesignHome() {
           }
           description="Diseño soluciones visuales a medida, fusionando estrategia y detalle. Ayudo a marcas a proyectar su esencia con coherencia, desde la identidad hasta la web. Mi objetivo es acompañar la evolución de tu empresa, transformando sus fortalezas en una comunicación impecable."
           image={`${import.meta.env.BASE_URL}images/ui/K2.png`}
-          separator="orange"
+          separator="var(--color-design)"
         />
       )}
       {/* CategoryHero siempre visible */}

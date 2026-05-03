@@ -5,6 +5,8 @@
   --color-muted: #9e9c96;
   --color-text: #1a1917;
   --color-accent: #d4542a;
+  --color-dev: #225cba;
+  --color-design: #ea920e;
   --font-sans: 'DM Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
@@ -16,4 +18,6 @@
   --color-muted: #8a8a8a;
   --color-text: #e8e8e8;
   --color-accent: #e0673f;
+  --color-dev: #225cba;
+  --color-design: #935901;
 }
