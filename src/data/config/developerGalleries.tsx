@@ -5,13 +5,13 @@
  * Para añadir una nueva categoría: añade un objeto a este array.
  */
 
-import type { WebProject } from '../interfaces/developer';
-import type { BaseProject } from '../components/ui/ProjectCard';
-import type { IconProps } from '../types/icons';
+import type { WebProject } from '../../interfaces/developer';
+import type { BaseProject } from '../../components/ui/ProjectCard';
+import type { IconProps } from '../../types/icons';
 
-import wordpressData from '../data/development/wordpress.json';
-import vanillaData from '../data/development/vanilla.json';
-import frameworksData from '../data/development/frameworks.json';
+import wordpressData from '../development/wordpress.json';
+import vanillaData from '../development/vanilla.json';
+import frameworksData from '../development/frameworks.json';
 
 import {
   LogoWordpress,
@@ -28,7 +28,7 @@ import {
   IconCode,
   LogoAjax,
   IconTPV,
-} from '../components/iconos';
+} from '../../components/iconos';
 // Mapa centralizado de iconos para stacks tecnológicos
 const stackIconMap: Record<string, React.FC<IconProps>> = {
   WORDPRESS: LogoWordpress,

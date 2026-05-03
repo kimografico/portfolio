@@ -18,8 +18,8 @@ import DataPage from './pages/Kimo/DataPage';
 import AddProjectPage from './pages/Kimo/AddProjectPage';
 import EditProjectPage from './pages/Kimo/EditProjectPage';
 import CategoryGalleryPage from './components/layout/CategoryGalleryPage';
-import { graphicDesignGalleries } from './config/graphicDesignGalleries';
-import { developerGalleries } from './config/developerGalleries';
+import { graphicDesignGalleries } from './data/config/graphicDesignGalleries';
+import { developerGalleries } from './data/config/developerGalleries';
 
 export default function App() {
   return (

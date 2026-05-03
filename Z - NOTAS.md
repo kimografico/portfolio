@@ -7,3 +7,8 @@ Reescribir recent-works
 ---
 
 Parece que el editar no esta añadiendo el prefijo portfolio
+
+---
+
+mover carpeta /config dentro de /data
+usar APP_BASENAME de config/app.ts en toda la app

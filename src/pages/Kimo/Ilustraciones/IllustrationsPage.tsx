@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useMemo } from 'react';
 import IllustrationsGallery from './IllustrationsGallery';
-import illustrations from '../../../data/illustrations.json';
+import illustrations from '../../../data/kimo/illustrations.json';
 
 export default function IllustrationsPage() {
   const navigate = useNavigate();

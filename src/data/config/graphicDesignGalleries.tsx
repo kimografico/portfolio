@@ -8,20 +8,20 @@
  * Para añadir una nueva categoría: añade un objeto a este array.
  */
 
-import type { GraphicDesignProject } from '../interfaces/graphicDesign';
-import type { BaseProject } from '../components/ui/ProjectCard';
-import type { IconProps } from '../types/icons';
+import type { GraphicDesignProject } from '../../interfaces/graphicDesign';
+import type { BaseProject } from '../../components/ui/ProjectCard';
+import type { IconProps } from '../../types/icons';
 
-import logotypesData from '../data/graphic-design/logotipos.json';
-import papeleriaData from '../data/graphic-design/papeleria.json';
-import carteriaData from '../data/graphic-design/carteleria.json';
-import multimediaData from '../data/graphic-design/multimedia.json';
-import packagingData from '../data/graphic-design/packaging.json';
-import OtrosData from '../data/graphic-design/proyectos-especiales.json';
-import etiquetasData from '../data/graphic-design/etiquetas.json';
-import editorialData from '../data/graphic-design/editorial.json';
+import logotypesData from '../graphic-design/logotipos.json';
+import papeleriaData from '../graphic-design/papeleria.json';
+import carteriaData from '../graphic-design/carteleria.json';
+import multimediaData from '../graphic-design/multimedia.json';
+import packagingData from '../graphic-design/packaging.json';
+import OtrosData from '../graphic-design/proyectos-especiales.json';
+import etiquetasData from '../graphic-design/etiquetas.json';
+import editorialData from '../graphic-design/editorial.json';
 
-import { IconPirateCoin } from '../components/iconos';
+import { IconPirateCoin } from '../../components/iconos';
 
 export interface GalleryRouteConfig {
   /** Segmento de URL, ej. "carteleria" → ruta /graphic-design/carteleria */

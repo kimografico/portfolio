@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { View } from '../../types';
 import '../../styles/components/buttonStyles.css';
-import booksData from '../../data/books.json';
+import booksData from '../../data/kimo/books.json';
 import BooksTable from './BooksTable';
 import BooksGallery from './BooksGallery';
 

@@ -3,7 +3,7 @@ import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
 import BaseTable from '../../components/compositions/BaseTable';
 import { useShowHidden } from '../../hooks/useShowHidden';
 import { updateVisibilityBatch, deleteProjectsBatch } from '../../api/apiClient';
-import { APP_BASENAME } from '../../config/app';
+import { APP_BASENAME } from '../../data/config/app';
 import {
   ALL_ENTRIES,
   type DataEntry,
