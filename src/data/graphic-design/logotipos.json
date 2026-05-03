@@ -41,14 +41,10 @@
       {
         "ruta": "/portfolio/images/portfolio/design/logotipos/profishing-charter009.jpg",
         "label": ""
-      },
-      {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/profishing-charter010.jpg",
-        "label": ""
       }
     ],
     "videos": [],
-    "extras": ["Añadir algunos ejemplos de bocetos"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "logotipos"

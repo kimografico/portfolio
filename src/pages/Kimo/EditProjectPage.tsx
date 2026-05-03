@@ -349,7 +349,10 @@ export default function EditProjectPage() {
           const blobIdx = blobUrlsToReplace.indexOf(img.ruta);
           if (blobIdx !== -1 && uploaded[blobIdx]) {
             URL.revokeObjectURL(img.ruta);
-            return { ruta: uploaded[blobIdx].ruta, label: img.label || uploaded[blobIdx].label };
+            return {
+              ruta: `/portfolio${uploaded[blobIdx].ruta}`,
+              label: img.label || uploaded[blobIdx].label,
+            };
           }
           return img;
         });

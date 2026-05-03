@@ -384,6 +384,18 @@
     "stack": ["WordPress", "HTML", "CSS", "JAVASCRIPT"],
     "imagenes": [
       {
+        "ruta": "/portfolio/images/portfolio/web/wordpress/odin-hidromiel003.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "/portfolio/images/portfolio/web/wordpress/odin-hidromiel004.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "/portfolio/images/portfolio/web/wordpress/odin-hidromiel005.jpg",
+        "label": ""
+      },
+      {
         "ruta": "/portfolio/images/portfolio/web/wordpress/odin-hidromiel001.jpg",
         "label": ""
       },
@@ -393,7 +405,7 @@
       }
     ],
     "videos": [],
-    "extras": ["Añadir imagenes"],
+    "extras": [],
     "visible": true,
     "type": "dev",
     "category": "wordpress"

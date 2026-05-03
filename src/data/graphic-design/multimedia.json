@@ -25,7 +25,12 @@
     "title": "Logo Reveal - COLORDMAR",
     "cliente": "Mar Howi",
     "descripcion": "COLORDMAR Logo reveal para una empresa de material deportivo",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/logo-reveal-colordmar001.jpg",
+        "label": "17"
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=pgSh4HzMBrE",
@@ -44,7 +49,7 @@
         "label": "Logo Agua"
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -55,14 +60,19 @@
     "title": "Resilent",
     "cliente": "Ascenza",
     "descripcion": "Resilent Video promocional de un bioestimulante para la empresa Ascenza",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/resilent001.jpg",
+        "label": "16"
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=nIxaglwZWXQ",
         "label": ""
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -73,7 +83,12 @@
     "title": "Neon - Teasers",
     "cliente": "Pi McCarthy",
     "descripcion": "Neón Teaser del single «NEÓN» del disco «La Senda del Agua» de Pilar McCarthy. Hecho con After Effects y Premiere Pro",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/neon-teasers001.jpg",
+        "label": "15"
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=V0YvcFsMlqU",
@@ -84,7 +99,7 @@
         "label": "NEÓN – Segundo Teaser"
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -95,7 +110,12 @@
     "title": "Logo Reveal - Contracciones Sonoras",
     "cliente": "Pi McCarthy",
     "descripcion": "Contracciones Sonoras Logo reveal para un proyecto musical a cargo de Pilar McCarthy",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/logo-reveal-contracciones-sonoras001.jpg",
+        "label": "14"
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=RDnTpwjAaZ4&amp;feature=youtu.be",
@@ -106,7 +126,7 @@
         "label": "Contracciones Sonoras – Versión clara (Elegida por el cliente)"
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -365,7 +385,12 @@
     "title": "Entradillas Ida2",
     "cliente": "Ida2",
     "descripcion": "Ida2 Impresión Digital Logo animado para entradillas de video",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/entradillas-ida2001.jpg",
+        "label": "13"
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=riLp4eLyebg",
@@ -400,7 +425,7 @@
         "label": ""
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -411,7 +436,12 @@
     "title": "Entradillas Recóndita",
     "cliente": "Recóndita Ilustración",
     "descripcion": "Recóndita Logo animado para entradillas de video. Logo Reveal hecho en After Effects mediante template adaptado",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/entradillas-recondita001.jpg",
+        "label": "12"
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=KuAuIgIISig",
@@ -422,7 +452,7 @@
         "label": ""
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -433,14 +463,19 @@
     "title": "Entradilla Lidia Aparicio",
     "cliente": "Lidia Aparicio",
     "descripcion": "Lidia Aparicio Logo animado para entradillas de video. Logo Reveal hecho en After Effects mediante template adaptado",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "blob:http://localhost:5173/14dbd4bd-7d17-4829-a4cb-a60397fcaef9",
+        "label": ""
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=sRxDOqfilJU",
         "label": ""
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -451,7 +486,12 @@
     "title": "Entradillas Kimográfico",
     "cliente": "KIMO",
     "descripcion": "Kimográfico Logo animado para entradillas de video. Logo Reveal hecho en After Effects mediante template adaptado",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/entradillas-kimografico001.jpg",
+        "label": ""
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=jsZZMKVd7qs",
@@ -522,7 +562,7 @@
         "label": ""
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -533,7 +573,12 @@
     "title": "Estaca",
     "cliente": "Ascenza",
     "descripcion": "Estaca Video promocional de un herbicida para la empresa Sapec Agro / Ascenza",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/estaca001.jpg",
+        "label": "9"
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=taCo0YxCE7U",
@@ -544,7 +589,7 @@
         "label": "Versión actualizada al cambio de nombre/imagen de la empresa a Ascenza 5 de Noviembre de 2019"
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -600,7 +645,12 @@
     "title": "Pruebas de juegos de ordenador",
     "cliente": "KIMO",
     "descripcion": "Juegos PC PRUEBAS Y TOMA DE CONTACTO",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/pruebas-de-juegos-de-ordenador001.jpg",
+        "label": "8"
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=oOWYo4txBpI",
@@ -619,7 +669,7 @@
         "label": "Prueba de juego infinito"
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -630,14 +680,19 @@
     "title": "Missylk",
     "cliente": "SAPEC",
     "descripcion": "Missylk Video promocional de un bioestimulante para la empresa Sapec Agro S.A.U.",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/missylk001.jpg",
+        "label": "7"
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=q1LzPf4hqsA",
         "label": "Videoentrevista a un agricultor sobre los beneficios de utilizar el producto"
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -678,14 +733,19 @@
     "title": "Entradilla PierdeLoss90",
     "cliente": "PierdeLoss90",
     "descripcion": "PierdeLoss90 Logo animado para entradillas de video. Logo Reveal hecho en After Effects mediante template adaptado",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/entradilla-pierdeloss90001.jpg",
+        "label": ""
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=CVL5Dd49yVQ",
         "label": ""
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -696,14 +756,19 @@
     "title": "Register",
     "cliente": "SAPEC",
     "descripcion": "Register 25WG Video promocional de un herbicida para la empresa Sapec Agro S.A.U.",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/register001.jpg",
+        "label": "5"
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=QEscUC-fJmI",
         "label": "Infografía animada explicando las características y ventajas del herbicida Register 25WG"
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -714,7 +779,12 @@
     "title": "Cuñas de Equilibrium",
     "cliente": "Equilibrium",
     "descripcion": "Cuñas Equilibrium Cuñas realizadas para la promoción en un sistema audiovisual presente en las instalaciones del cliente",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/cunas-de-equilibrium001.jpg",
+        "label": "3"
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=ZxTiYptIzak",
@@ -761,7 +831,7 @@
         "label": ""
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -772,7 +842,12 @@
     "title": "Navidad Sapec/Ascenza",
     "cliente": "Ascenza",
     "descripcion": "Felicitaciones de Navidad Sapec Agro // Ascenza",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/navidad-sapec-ascenza001.jpg",
+        "label": "4"
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=MnCwaZAwdOI",
@@ -783,7 +858,7 @@
         "label": "Diseñada en After Effects"
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"
@@ -867,8 +942,17 @@
     "date": "2014-07-18 09:33",
     "title": "Video FAQs Ida2",
     "cliente": "Ida2",
-    "descripcion": "Videoinfografías para Ida2 Videotutoriales explicativos para facilitar la comprensión del cliente en cuestiones técnicinfo",
-    "imagenes": [],
+    "descripcion": "Videoinfografías para Ida2 Videotutoriales explicativos para facilitar la comprensión del cliente en cuestiones técnicas",
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/video-faqs-ida2001.jpg",
+        "label": ""
+      },
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/video-faqs-ida2002.jpg",
+        "label": ""
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=Xz_IjiIZnPg",
@@ -880,7 +964,9 @@
       }
     ],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 66,
@@ -888,14 +974,19 @@
     "title": "Video Digital vs Offset - Ida2",
     "cliente": "Ida2",
     "descripcion": "Digital vs. Offset Videoinfografía explicativa con las diferencias entre las dos técnicas de impresión, y en que casos es mejor o peor cada una de ellas",
-    "imagenes": [],
+    "imagenes": [
+      {
+        "ruta": "/portfolio/images/portfolio/design/multimedia/video-digital-vs-offset-ida2001.jpg",
+        "label": ""
+      }
+    ],
     "videos": [
       {
         "ruta": "https://www.youtube.com/watch?v=4P0bLjXrjPc",
         "label": "Digital vs. Offset – Version en Español"
       }
     ],
-    "extras": ["Imagen para miniatura"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "multimedia"

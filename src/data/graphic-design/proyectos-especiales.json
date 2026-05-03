@@ -240,10 +240,14 @@
       {
         "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/furgoneta-saica001.jpg",
         "label": ""
+      },
+      {
+        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/furgoneta-saica002.jpg",
+        "label": ""
       }
     ],
     "videos": [],
-    "extras": ["añadir una imagen del diseño"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "proyectos-especiales"

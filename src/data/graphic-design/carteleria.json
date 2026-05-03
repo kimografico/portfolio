@@ -317,10 +317,14 @@
       {
         "ruta": "/portfolio/images/portfolio/design/carteleria/horarios-equilibrium005.jpg",
         "label": "Version monoclase"
+      },
+      {
+        "ruta": "blob:http://localhost:5173/321b4ac5-b068-4cbd-9ad9-54dab4c84855",
+        "label": "Versión 2025 a un solo color"
       }
     ],
     "videos": [],
-    "extras": ["Añadir ejemplos más actuales"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "carteleria"
@@ -462,7 +466,7 @@
       }
     ],
     "videos": [],
-    "extras": ["Comprobar si hay cartelería más nueva"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "carteleria"
@@ -893,20 +897,24 @@
     "descripcion": "Diseño de tres meses del calendario de la Conselleria de Sanitat de 2009",
     "imagenes": [
       {
+        "ruta": "/portfolio/images/portfolio/design/carteleria/calendario-generalitat004.jpg",
+        "label": "Mockups"
+      },
+      {
         "ruta": "/portfolio/images/portfolio/design/carteleria/calendario-generalitat001.jpg",
-        "label": ""
+        "label": "Septiembre"
       },
       {
         "ruta": "/portfolio/images/portfolio/design/carteleria/calendario-generalitat002.jpg",
-        "label": ""
+        "label": "Marzo"
       },
       {
         "ruta": "/portfolio/images/portfolio/design/carteleria/calendario-generalitat003.jpg",
-        "label": ""
+        "label": "Mayo"
       }
     ],
     "videos": [],
-    "extras": ["Mockup de los tres"],
+    "extras": [],
     "visible": true,
     "type": "gd",
     "category": "carteleria"

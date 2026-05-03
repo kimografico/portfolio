@@ -287,7 +287,10 @@ export default function AddProjectPage() {
           if (blobIdx !== -1 && uploaded[blobIdx]) {
             // Revocar la blob URL para liberar memoria
             URL.revokeObjectURL(img.ruta);
-            return { ruta: uploaded[blobIdx].ruta, label: img.label || uploaded[blobIdx].label };
+            return {
+              ruta: `/portfolio${uploaded[blobIdx].ruta}`,
+              label: img.label || uploaded[blobIdx].label,
+            };
           }
           return img;
         });
