@@ -10,22 +10,44 @@ import packagingData from '../../data/graphic-design/packaging.json';
 import proyectosEspecialesData from '../../data/graphic-design/proyectos-especiales.json';
 import etiquetasData from '../../data/graphic-design/etiquetas.json';
 import editorialData from '../../data/graphic-design/editorial.json';
+import { processProjectsImages } from '../../data/config/imagePathHelper';
 import type { GraphicDesignProject } from '../../interfaces/graphicDesign';
 import '../../styles/Developer.css';
 
 // Mapeo de categoría a datos y etiqueta
 const projectDataMap: Record<string, { data: GraphicDesignProject[]; label: string }> = {
-  logotipos: { data: logotypesData as GraphicDesignProject[], label: 'Logotipos' },
-  papeleria: { data: papeleriaData as GraphicDesignProject[], label: 'Papelería' },
-  carteleria: { data: carteriaData as GraphicDesignProject[], label: 'Cartelería' },
-  multimedia: { data: multimediaData as GraphicDesignProject[], label: 'Multimedia' },
-  packaging: { data: packagingData as GraphicDesignProject[], label: 'Packaging' },
+  logotipos: {
+    data: processProjectsImages(logotypesData as GraphicDesignProject[]),
+    label: 'Logotipos',
+  },
+  papeleria: {
+    data: processProjectsImages(papeleriaData as GraphicDesignProject[]),
+    label: 'Papelería',
+  },
+  carteleria: {
+    data: processProjectsImages(carteriaData as GraphicDesignProject[]),
+    label: 'Cartelería',
+  },
+  multimedia: {
+    data: processProjectsImages(multimediaData as GraphicDesignProject[]),
+    label: 'Multimedia',
+  },
+  packaging: {
+    data: processProjectsImages(packagingData as GraphicDesignProject[]),
+    label: 'Packaging',
+  },
   'proyectos-especiales': {
-    data: proyectosEspecialesData as GraphicDesignProject[],
+    data: processProjectsImages(proyectosEspecialesData as GraphicDesignProject[]),
     label: 'Proyectos especiales',
   },
-  etiquetas: { data: etiquetasData as GraphicDesignProject[], label: 'Etiquetas' },
-  editorial: { data: editorialData as GraphicDesignProject[], label: 'Editorial' },
+  etiquetas: {
+    data: processProjectsImages(etiquetasData as GraphicDesignProject[]),
+    label: 'Etiquetas',
+  },
+  editorial: {
+    data: processProjectsImages(editorialData as GraphicDesignProject[]),
+    label: 'Editorial',
+  },
 };
 
 function getYouTubeEmbedUrl(url: string): string | null {

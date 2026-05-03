@@ -5,16 +5,20 @@ import HeroSection from '../../components/layout/HeroSection';
 import RecentProjectsSection from '../../components/layout/RecentProjectsSection';
 import { GRAPHIC_DESIGN_CATEGORIES } from './categories';
 import recentWorks from '../../data/recent-works.json';
+import { APP_BASENAME } from '../../data/config/app';
 import type { Project } from '../../interfaces/project';
 
 export default function GraphicDesignHome() {
   // Detectar acceso directo usando sessionStorage. Si no hay flag de acceso interno, es acceso directo/externo
   const [isDirectAccess] = useState(() => !sessionStorage.getItem('isInternal'));
 
-  // Filtrar proyectos recientes por categoría GraphicDesign
-  const graphicDesignProjects = (recentWorks as Project[]).filter(
-    (project) => project.category === 'GraphicDesign',
-  );
+  // Filtrar proyectos recientes por categoría GraphicDesign y agregar APP_BASENAME
+  const graphicDesignProjects = (recentWorks as Project[])
+    .filter((project) => project.category === 'GraphicDesign')
+    .map((project) => ({
+      ...project,
+      href: `${APP_BASENAME}${project.href}`,
+    }));
 
   return (
     <div className="min-h-screen flex flex-col" data-id="graphic-design-home">
@@ -48,7 +52,7 @@ export default function GraphicDesignHome() {
           {graphicDesignProjects.length > 0 && (
             <RecentProjectsSection
               projects={graphicDesignProjects}
-              viewAllHref="/portfolio/graphic-design"
+              viewAllHref={`${APP_BASENAME}/graphic-design`}
             />
           )}
         </>

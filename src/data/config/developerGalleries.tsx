@@ -12,6 +12,7 @@ import type { IconProps } from '../../types/icons';
 import wordpressData from '../development/wordpress.json';
 import vanillaData from '../development/vanilla.json';
 import frameworksData from '../development/frameworks.json';
+import { processProjectsImages } from './imagePathHelper';
 
 import {
   LogoWordpress,
@@ -56,7 +57,7 @@ export const developerGalleries: GalleryRouteConfig[] = [
   {
     slug: 'wordpress',
     props: {
-      projects: wordpressData as WebProject[],
+      projects: processProjectsImages(wordpressData as WebProject[]),
       basePath: '/dev/wordpress',
       title: 'WordPress',
       description:
@@ -78,7 +79,7 @@ export const developerGalleries: GalleryRouteConfig[] = [
   {
     slug: 'vanilla',
     props: {
-      projects: vanillaData as WebProject[] as BaseProject[],
+      projects: processProjectsImages(vanillaData as WebProject[]) as BaseProject[],
       basePath: '/dev/vanilla',
       title: 'Vanilla',
       description:
@@ -100,7 +101,7 @@ export const developerGalleries: GalleryRouteConfig[] = [
   {
     slug: 'frameworks',
     props: {
-      projects: frameworksData as WebProject[] as BaseProject[],
+      projects: processProjectsImages(frameworksData as WebProject[]) as BaseProject[],
       basePath: '/dev/frameworks',
       title: 'Frameworks',
       description: 'Proyectos desarrollados con frameworks modernos: React, Vue y otros.',

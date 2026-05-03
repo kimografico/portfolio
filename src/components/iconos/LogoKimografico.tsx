@@ -6,7 +6,6 @@ export function LogoKimografico({ size = 256, ...props }: IconProps) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="47 67 196 21"
       width={size}
-      height="auto"
       fill="none"
       {...props}
     >

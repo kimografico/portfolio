@@ -5,6 +5,7 @@ import HeroSection from '../../components/layout/HeroSection';
 import RecentProjectsSection from '../../components/layout/RecentProjectsSection';
 import { DEVELOPER_CATEGORIES } from './categories';
 import recentWorks from '../../data/recent-works.json';
+import { APP_BASENAME } from '../../data/config/app';
 import type { Project } from '../../interfaces/project';
 
 export default function DeveloperHome() {
@@ -12,10 +13,13 @@ export default function DeveloperHome() {
   // Si no hay flag de acceso interno, es acceso directo/externo
   const [isDirectAccess] = useState(() => !sessionStorage.getItem('isInternal'));
 
-  // Filtrar proyectos recientes por categoría Developer
-  const developerProjects = (recentWorks as Project[]).filter(
-    (project) => project.category === 'Developer',
-  );
+  // Filtrar proyectos recientes por categoría Developer y agregar APP_BASENAME
+  const developerProjects = (recentWorks as Project[])
+    .filter((project) => project.category === 'Developer')
+    .map((project) => ({
+      ...project,
+      href: `${APP_BASENAME}${project.href}`,
+    }));
   return (
     <div className="min-h-screen flex flex-col" data-id="developer-home">
       {/* Mostrar HeroSection solo si acceso es directo/externo */}
@@ -48,7 +52,10 @@ export default function DeveloperHome() {
       {isDirectAccess && (
         <>
           {developerProjects.length > 0 && (
-            <RecentProjectsSection projects={developerProjects} viewAllHref="/portfolio/dev" />
+            <RecentProjectsSection
+              projects={developerProjects}
+              viewAllHref={`${APP_BASENAME}/dev`}
+            />
           )}
         </>
       )}

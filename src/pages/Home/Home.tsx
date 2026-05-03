@@ -2,15 +2,24 @@ import { useEffect } from 'react';
 import '../../styles/components/buttonStyles.css';
 import '../../styles/home.css';
 import recentWorks from '../../data/recent-works.json';
+import { APP_BASENAME } from '../../data/config/app';
 import HeroSection from '../../components/layout/HeroSection';
 import RecentProjectsSection from '../../components/layout/RecentProjectsSection';
 import SobreSection from '../../components/layout/SobreSection';
+import type { Project } from '../../interfaces/project';
 
 export default function Home() {
   // Marcar acceso interno para futuras navegaciones
   useEffect(() => {
     sessionStorage.setItem('isInternal', 'true');
   }, []);
+
+  // Procesar hrefs de recentWorks para agregar APP_BASENAME
+  const projectsWithBasename = (recentWorks as Project[]).map((project) => ({
+    ...project,
+    href: `${APP_BASENAME}${project.href}`,
+  }));
+
   return (
     <>
       {/* Skip link */}
@@ -31,13 +40,13 @@ export default function Home() {
           }
           description="Trabajo en la intersección entre diseño visual y código. Un espacio para mostrar proyectos, procesos y el trabajo del día a día."
           ctas={[
-            { label: 'Ver trabajos de diseño', href: '/portfolio/graphic-design' },
-            { label: 'Ver desarrollos web', href: '/portfolio/dev' },
+            { label: 'Ver trabajos de diseño', href: `${APP_BASENAME}/graphic-design` },
+            { label: 'Ver desarrollos web', href: `${APP_BASENAME}/dev` },
           ]}
           decorator="01"
         />
 
-        <RecentProjectsSection projects={recentWorks} />
+        <RecentProjectsSection projects={projectsWithBasename} />
         <SobreSection
           label="Sobre"
           heading="Diseñador gráfico de formación, desarrollador de software por convicción."

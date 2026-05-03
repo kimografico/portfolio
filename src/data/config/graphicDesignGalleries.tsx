@@ -20,6 +20,7 @@ import packagingData from '../graphic-design/packaging.json';
 import OtrosData from '../graphic-design/proyectos-especiales.json';
 import etiquetasData from '../graphic-design/etiquetas.json';
 import editorialData from '../graphic-design/editorial.json';
+import { processProjectsImages } from './imagePathHelper';
 
 import { IconPirateCoin } from '../../components/iconos';
 
@@ -53,7 +54,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
   {
     slug: 'logotipos',
     props: {
-      projects: logotypesData as GraphicDesignProject[],
+      projects: processProjectsImages(logotypesData as GraphicDesignProject[]),
       basePath: '/graphic-design/logotipos',
       title: 'Logotipos',
       description: 'Diseño de logotipos e identidades visuales para empresas y proyectos.',
@@ -70,7 +71,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
   {
     slug: 'papeleria',
     props: {
-      projects: papeleriaData as GraphicDesignProject[],
+      projects: processProjectsImages(papeleriaData as GraphicDesignProject[]),
       basePath: '/graphic-design/papeleria',
       title: 'Papelería',
       description: 'Diseño de papelería corporativa, trípticos, flyers y material impreso.',
@@ -87,7 +88,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
   {
     slug: 'carteleria',
     props: {
-      projects: carteriaData as GraphicDesignProject[],
+      projects: processProjectsImages(carteriaData as GraphicDesignProject[]),
       basePath: '/graphic-design/carteleria',
       title: 'Cartelería',
       description: 'Diseño de carteles, señalética y material publicitario exterior.',
@@ -104,7 +105,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
   {
     slug: 'multimedia',
     props: {
-      projects: multimediaData as GraphicDesignProject[],
+      projects: processProjectsImages(multimediaData as GraphicDesignProject[]),
       basePath: '/graphic-design/multimedia',
       title: 'Multimedia',
       description: 'Contenido multimedia, animaciones, vídeos y efectos visuales.',
@@ -121,7 +122,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
   {
     slug: 'packaging',
     props: {
-      projects: packagingData as GraphicDesignProject[],
+      projects: processProjectsImages(packagingData as GraphicDesignProject[]),
       basePath: '/graphic-design/packaging',
       title: 'Packaging',
       description: 'Diseño de empaques, cajas y etiquetas para productos.',
@@ -138,7 +139,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
   {
     slug: 'proyectos-especiales',
     props: {
-      projects: OtrosData as GraphicDesignProject[],
+      projects: processProjectsImages(OtrosData as GraphicDesignProject[]),
       basePath: '/graphic-design/proyectos-especiales',
       title: 'Proyectos especiales',
       description: 'Proyectos gráficos singulares, personalizados o fuera de categoría.',
@@ -155,7 +156,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
   {
     slug: 'etiquetas',
     props: {
-      projects: etiquetasData as GraphicDesignProject[],
+      projects: processProjectsImages(etiquetasData as GraphicDesignProject[]),
       basePath: '/graphic-design/etiquetas',
       title: 'Etiquetas',
       description: 'Diseño de etiquetas, pegatinas y elementos gráficos para packaging y branding.',
@@ -170,7 +171,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
   {
     slug: 'editorial',
     props: {
-      projects: editorialData as GraphicDesignProject[],
+      projects: processProjectsImages(editorialData as GraphicDesignProject[]),
       basePath: '/graphic-design/editorial',
       title: 'Editorial',
       description: 'Diseño de publicaciones, revistas, libros y materiales editoriales.',

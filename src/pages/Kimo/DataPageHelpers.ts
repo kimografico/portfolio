@@ -15,6 +15,7 @@ import proyectosEspeciales from '../../data/graphic-design/proyectos-especiales.
 import frameworks from '../../data/development/frameworks.json';
 import vanilla from '../../data/development/vanilla.json';
 import wordpress from '../../data/development/wordpress.json';
+import { processProjectsImages } from '../../data/config/imagePathHelper';
 
 /**
  * DataEntry: tipo normalizado para todas las entradas de todos los JSON.
@@ -45,21 +46,55 @@ export interface FilterOptions {
  * Definición de las fuentes de datos.
  * Para añadir un nuevo JSON, solo hay que añadir un objeto aquí.
  */
-const SOURCES = [
+/* eslint-disable @typescript-eslint/no-explicit-any */
+const SOURCES: Array<{ data: any[]; type: string; category: string }> = [
   // Diseño Gráfico
-  { data: carteleria, type: 'Diseño Gráfico', category: 'Cartelería' },
-  { data: editorial, type: 'Diseño Gráfico', category: 'Editorial' },
-  { data: etiquetas, type: 'Diseño Gráfico', category: 'Etiquetas' },
-  { data: logotipos, type: 'Diseño Gráfico', category: 'Logotipos' },
-  { data: multimedia, type: 'Diseño Gráfico', category: 'Multimedia' },
-  { data: packaging, type: 'Diseño Gráfico', category: 'Packaging' },
-  { data: papeleria, type: 'Diseño Gráfico', category: 'Papelería' },
-  { data: proyectosEspeciales, type: 'Diseño Gráfico', category: 'Proyectos especiales' },
+  {
+    data: processProjectsImages(carteleria as any[]),
+    type: 'Diseño Gráfico',
+    category: 'Cartelería',
+  },
+  {
+    data: processProjectsImages(editorial as any[]),
+    type: 'Diseño Gráfico',
+    category: 'Editorial',
+  },
+  {
+    data: processProjectsImages(etiquetas as any[]),
+    type: 'Diseño Gráfico',
+    category: 'Etiquetas',
+  },
+  {
+    data: processProjectsImages(logotipos as any[]),
+    type: 'Diseño Gráfico',
+    category: 'Logotipos',
+  },
+  {
+    data: processProjectsImages(multimedia as any[]),
+    type: 'Diseño Gráfico',
+    category: 'Multimedia',
+  },
+  {
+    data: processProjectsImages(packaging as any[]),
+    type: 'Diseño Gráfico',
+    category: 'Packaging',
+  },
+  {
+    data: processProjectsImages(papeleria as any[]),
+    type: 'Diseño Gráfico',
+    category: 'Papelería',
+  },
+  {
+    data: processProjectsImages(proyectosEspeciales as any[]),
+    type: 'Diseño Gráfico',
+    category: 'Proyectos especiales',
+  },
   // Desarrollo
-  { data: frameworks, type: 'Desarrollo', category: 'Frameworks' },
-  { data: vanilla, type: 'Desarrollo', category: 'Vanilla' },
-  { data: wordpress, type: 'Desarrollo', category: 'WordPress' },
+  { data: processProjectsImages(frameworks as any[]), type: 'Desarrollo', category: 'Frameworks' },
+  { data: processProjectsImages(vanilla as any[]), type: 'Desarrollo', category: 'Vanilla' },
+  { data: processProjectsImages(wordpress as any[]), type: 'Desarrollo', category: 'WordPress' },
 ];
+/* eslint-enable @typescript-eslint/no-explicit-any */
 
 /**
  * Combina todos los JSON en un único array normalizado.

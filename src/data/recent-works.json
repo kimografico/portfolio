@@ -5,7 +5,7 @@
     "tipo": "Logotipo",
     "year": "2024",
     "category": "GraphicDesign",
-    "href": "/portfolio/graphic-design/montanejos"
+    "href": "/graphic-design/montanejos"
   },
   {
     "num": "02",
@@ -13,7 +13,7 @@
     "tipo": "Web",
     "year": "2026",
     "category": "Developer",
-    "href": "/portfolio/dev/kimografico"
+    "href": "/dev/kimografico"
   },
   {
     "num": "03",
@@ -21,6 +21,6 @@
     "tipo": "Editorial",
     "year": "2023",
     "category": "GraphicDesign",
-    "href": "/portfolio/graphic-design/campana-editorial"
+    "href": "/graphic-design/campana-editorial"
   }
 ]
