@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { BookModalProps } from '../../interfaces/books';
-import '../styles/BookModal.css';
+import '../../styles/components/BookModal.css';
 import { IconClose } from '../../components/iconos';
 
 // Devuelve la bandera según el idioma

@@ -8,7 +8,7 @@ import {
   type ColumnDef,
   type SortingState,
 } from '@tanstack/react-table';
-import '../../styles/table.css';
+import '../../styles/components/table.css';
 
 interface BaseTableProps<T, TValue> {
   data: T[];

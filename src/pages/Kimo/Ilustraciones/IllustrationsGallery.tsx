@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import type { Illustration } from '../../../interfaces/illustration';
-import './IllustrationsGallery.css';
+import '../../../styles/IllustrationsGallery.css';
 
 const ILLUSTRATIONS_PATH = import.meta.env.VITE_ILLUSTRATIONS_PATH;
 

@@ -8,7 +8,7 @@ import {
   IconFile,
   IconPen,
 } from '../../components/iconos';
-import './espacio-personal.css';
+import '../../styles/espacio-personal.css';
 
 /**
  * Layout principal para la sección /kimo.

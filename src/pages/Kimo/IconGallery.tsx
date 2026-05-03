@@ -1,5 +1,5 @@
 import * as iconos from '../../components/iconos/index';
-import '../../components/iconos/iconos.css';
+import '../../styles/components/iconos.css';
 
 export default function IconGallery() {
   return (

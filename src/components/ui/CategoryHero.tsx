@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useRef, useEffect, useState } from 'react';
 import type { IconProps } from '../../types/icons';
 import { useTheme } from '../../hooks/useTheme';
-import './CategoryHero.css';
+import '../../styles/components/CategoryHero.css';
 
 // Obtener la ruta base para imágenes UI desde variables de entorno
 // const UI_IMG_PATH = import.meta.env.VITE_UI_IMG_PATH || '/images/ui';

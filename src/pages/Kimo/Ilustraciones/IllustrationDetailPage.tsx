@@ -4,7 +4,7 @@ import PrevNextBtns from '../../../components/ui/PrevNextBtns';
 import ImageLightbox from '../../../components/ui/ImageLightbox';
 import type { Illustration } from '../../../interfaces/illustration';
 import illustrations from '../../../data/illustrations.json';
-import './IllustrationDetailPage.css';
+import '../../../styles/IllustrationDetailPage.css';
 
 const ILLUSTRATIONS_PATH = import.meta.env.VITE_ILLUSTRATIONS_PATH;
 

@@ -1,4 +1,4 @@
-import '../../components/iconos/iconos.css';
+import '../../styles/components/iconos-contactme.css';
 import UIButton from '../../components/ui/UIButton';
 
 export default function ContactMe() {

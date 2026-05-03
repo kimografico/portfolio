@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import type { FC, ComponentType } from 'react';
-import './CategoryCard.css';
+import '../../styles/components/CategoryCard.css';
 
 interface CategoryCardProps {
   icon: ComponentType<{ size: number; strokeWidth: number; className: string }>; // Componente de icono (ej: IconPlant, IconCode, etc.)

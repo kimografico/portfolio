@@ -11,7 +11,7 @@ import proyectosEspecialesData from '../../data/graphic-design/proyectos-especia
 import etiquetasData from '../../data/graphic-design/etiquetas.json';
 import editorialData from '../../data/graphic-design/editorial.json';
 import type { GraphicDesignProject } from '../../interfaces/graphicDesign';
-import '../Developer/Developer.css';
+import '../../styles/Developer.css';
 
 // Mapeo de categoría a datos y etiqueta
 const projectDataMap: Record<string, { data: GraphicDesignProject[]; label: string }> = {

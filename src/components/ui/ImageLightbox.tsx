@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import './ImageLightbox.css';
+import '../../styles/components/ImageLightbox.css';
 import { IconClose } from '../../components/iconos';
 
 interface ImageLightboxProps {

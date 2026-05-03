@@ -6,7 +6,7 @@ import frameworksData from '../../data/development/frameworks.json';
 import vanillaData from '../../data/development/vanilla.json';
 import wordpressData from '../../data/development/wordpress.json';
 import type { WebProject } from '../../interfaces/developer';
-import './Developer.css';
+import '../../styles/Developer.css';
 
 // Mapeo de parent a datos y etiqueta
 const projectDataMap: Record<string, { data: WebProject[]; label: string }> = {

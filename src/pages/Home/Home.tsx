@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
-import '../../styles/buttonStyles.css';
-import './home.css';
+import '../../styles/components/buttonStyles.css';
+import '../../styles/home.css';
 import recentWorks from '../../data/recent-works.json';
 import HeroSection from '../../components/layout/HeroSection';
 import RecentProjectsSection from '../../components/layout/RecentProjectsSection';
