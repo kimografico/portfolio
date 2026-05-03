@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import type { Book } from '../../types';
-import BookModal from '../../components/combinations/BookModal';
-import BooksFilter from '../../components/combinations/BooksFilter';
+import BookModal from '../../components/compositions/BookModal';
+import BooksFilter from '../../components/compositions/BooksFilter';
 import './books.css';
 
 import type { BooksGalleryProps } from '../../interfaces/books';

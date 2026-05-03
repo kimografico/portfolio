@@ -1,5 +1,5 @@
 import PlacesTable from './PlacesTable';
-import VisitedWorldMap from '../../components/combinations/VisitedWorldMap';
+import VisitedWorldMap from '../../components/compositions/VisitedWorldMap';
 import places from '../../data/places.json';
 import markers from '../../data/places_markers.json';
 
