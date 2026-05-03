@@ -1,4 +1,5 @@
 import '../../components/iconos/iconos.css';
+import UIButton from '../../components/ui/UIButton';
 
 export default function ContactMe() {
   return (
@@ -10,6 +11,13 @@ export default function ContactMe() {
           </h1>
           <div className="mb-8 text-muted text-base max-w-2xl">
             Puedes escribirme por correo, proponer colaboraciones o simplemente saludar.
+            <UIButton
+              href="https://forms.gle/jvyMugYjDNhX1f1fA"
+              arrow
+              className="inline-block mt-5"
+            >
+              Ir al formulario de contacto
+            </UIButton>
           </div>
         </div>
       </section>
