@@ -1,6 +1,7 @@
 export { IconIcons } from './IconIcons';
 export { IconWorld } from './IconWorld';
 export { IconBook } from './IconBook';
+export { LogoKimografico } from './LogoKimografico';
 export { LogoCSS } from './LogoCSS';
 export { LogoHTML } from './IconHTML';
 export { LogoJS } from './LogoJS';

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Logo from '../ui/Logo';
+import { LogoKimografico } from '../iconos';
 import MobileMenu from '../ui/MobileMenu';
 import { useTheme } from '../../hooks/useTheme';
 
@@ -15,7 +15,7 @@ export default function MainHeader() {
   return (
     <header className="sticky top-0 z-40 bg-bg border-b border-border" data-id="main-header">
       <div className="max-w-7xl mx-auto px-6 md:px-12 h-14 flex items-center justify-between">
-        <Logo />
+        <LogoKimografico size={200} className="text-current" />
         <div className="flex items-center gap-6">
           {/* Menú desktop */}
           <nav aria-label="Principal" className="hidden md:block" data-id="main-nav-desktop">
