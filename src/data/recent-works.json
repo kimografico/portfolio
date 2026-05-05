@@ -1,26 +1,34 @@
 [
   {
     "num": "01",
-    "title": "Montanejos",
-    "tipo": "Logotipo",
+    "title": "Paellas de Pecado",
+    "tipo": "Vanilla",
     "year": "2024",
-    "category": "GraphicDesign",
-    "href": "/graphic-design/montanejos"
+    "category": "Developer",
+    "href": "/dev/221"
   },
   {
     "num": "02",
-    "title": "kimografico",
-    "tipo": "Web",
-    "year": "2026",
+    "title": "Colordmar",
+    "tipo": "Wordpress",
+    "year": "2020",
     "category": "Developer",
-    "href": "/dev/kimografico"
+    "href": "/dev/213"
   },
   {
     "num": "03",
-    "title": "Campaña editorial",
-    "tipo": "Editorial",
-    "year": "2023",
+    "title": "Mailing SAICA - YAMAHA",
+    "tipo": "Multimedia",
+    "year": "2021",
     "category": "GraphicDesign",
-    "href": "/graphic-design/campana-editorial"
+    "href": "/graphic-design/219"
+  },
+  {
+    "num": "04",
+    "title": "Tríptico XXL para colegios",
+    "tipo": "Papeleria",
+    "year": "2021",
+    "category": "GraphicDesign",
+    "href": "/graphic-design/220"
   }
 ]

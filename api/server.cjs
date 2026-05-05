@@ -10,6 +10,7 @@ require('dotenv').config();
 
 const projectsRouter = require('./routes/projects.cjs');
 const uploadRouter = require('./routes/upload.cjs');
+const recentWorksRouter = require('./routes/recent-works.cjs');
 const errorHandler = require('./middleware/errorHandler.cjs');
 
 const app = express();
@@ -43,6 +44,7 @@ app.get('/health', (req, res) => {
 // Rutas
 app.use('/api/projects', projectsRouter);
 app.use('/api/upload', uploadRouter);
+app.use('/api/recent-works', recentWorksRouter);
 
 /**
  * GET /api/categories

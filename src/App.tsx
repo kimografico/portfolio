@@ -16,6 +16,7 @@ import ScrollToTop from './components/layout/ScrollToTop';
 import IconGallery from './pages/Kimo/IconGallery';
 import DataPage from './pages/Kimo/DataPage';
 import AddProjectPage from './pages/Kimo/AddProjectPage';
+import RecentWorksManagerPage from './pages/Kimo/RecentWorksManagerPage';
 import EditProjectPage from './pages/Kimo/EditProjectPage';
 import CategoryGalleryPage from './components/layout/CategoryGalleryPage';
 import { graphicDesignGalleries } from './data/config/graphicDesignGalleries';
@@ -38,6 +39,7 @@ export default function App() {
             <Route path="data" element={<DataPage />} />
             <Route path="add-project" element={<AddProjectPage />} />
             <Route path="edit-project/:id" element={<EditProjectPage />} />
+            <Route path="recent-works" element={<RecentWorksManagerPage />} />
           </Route>
           <Route path="/graphic-design" element={<GraphicDesignHome />} />
           {/* Galerías de Diseño Gráfico: generadas dinámicamente desde la configuración */}

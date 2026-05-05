@@ -137,3 +137,20 @@ export async function uploadImages(
 
   return json.data as UploadedImage[];
 }
+
+// --- Recent Works ---
+
+export type { RecentWork } from '../interfaces/recentWorks';
+
+/** Obtiene los trabajos recientes actuales */
+export function getRecentWorks() {
+  return apiFetch('/api/recent-works');
+}
+
+/** Actualiza los trabajos recientes */
+export function updateRecentWorks(data: unknown) {
+  return apiFetch('/api/recent-works', {
+    method: 'PUT',
+    body: JSON.stringify({ data }),
+  });
+}
