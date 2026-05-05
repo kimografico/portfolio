@@ -12,7 +12,6 @@ Revisar que el editar no este añadiendo el prefijo portfolio
 
 **Añadir**
 
-- Gestión de recent-works (all, graphicDesign, developer)
 - Curriculum (ver como se gestiona)
 
 ---

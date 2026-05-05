@@ -79,7 +79,7 @@ export default function KimoLayout() {
           aria-label="Datos"
         >
           <IconTable className="inline md:hidden" size={32} strokeWidth={1} />
-          <span className="hidden md:inline">Datos</span>
+          <span className="hidden md:inline">Proyectos</span>
         </NavLink>
         <NavLink
           to="add-project"
@@ -89,7 +89,7 @@ export default function KimoLayout() {
           aria-label="Añadir proyecto"
         >
           <IconTableAdd className="inline md:hidden" size={32} strokeWidth={1} />
-          <span className="hidden md:inline">Añadir</span>
+          <span className="hidden md:inline">+ Proyecto</span>
         </NavLink>
       </nav>
       <main id="main-content">
