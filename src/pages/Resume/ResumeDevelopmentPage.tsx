@@ -1,10 +1,11 @@
 import '../../styles/resume.css';
 import resume from '../../data/resume.json';
 import { renderMultilineText } from '../../utils/renderMultilineText';
+// No se usan tipos explícitos aquí, así que se elimina la importación
 
 export default function ResumeDevelopmentPage() {
   // Filtrar datos para desarrollo (category: development o common)
-  const filter = (item) => {
+  const filter = (item: { category?: string | string[]; hide?: boolean }) => {
     if (!item || item.hide) return false;
     if (Array.isArray(item.category))
       return item.category.includes('development') || item.category.includes('common');

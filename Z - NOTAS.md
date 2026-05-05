@@ -12,6 +12,6 @@ Revisar que el editar no este añadiendo el prefijo portfolio
 
 **Añadir**
 
-- Curriculum (ver como se gestiona)
+- Gestion backend del JSON del Curriculum
 
 ---

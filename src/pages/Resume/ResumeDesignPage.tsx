@@ -1,10 +1,11 @@
 import '../../styles/resume.css';
 import resume from '../../data/resume.json';
 import { renderMultilineText } from '../../utils/renderMultilineText';
+import type { Experience, Education, Course, Workshop } from '../../interfaces/resume';
 
 export default function ResumeDesignPage() {
   // Filtrar datos para diseño (category: design o common)
-  const filter = (item) => {
+  const filter = (item: { category?: string | string[]; hide?: boolean }) => {
     if (!item || item.hide) return false;
     if (Array.isArray(item.category))
       return item.category.includes('design') || item.category.includes('common');
@@ -12,31 +13,35 @@ export default function ResumeDesignPage() {
   };
 
   // Ordenar experiencia solo por la primera fecha (start), de más reciente a más antigua
-  const sortedExperience = [...resume.experience].filter(filter).sort((a, b) => {
-    const parseYear = (val) => {
-      if (!val) return 0;
-      const year = parseInt(val.slice(0, 4), 10);
-      return isNaN(year) ? 0 : year;
-    };
-    return parseYear(b.start) - parseYear(a.start);
-  });
+  const sortedExperience = [...resume.experience]
+    .filter(filter)
+    .sort((a: Experience, b: Experience) => {
+      const parseYear = (val: string) => {
+        if (!val) return 0;
+        const year = parseInt(val.slice(0, 4), 10);
+        return isNaN(year) ? 0 : year;
+      };
+      return parseYear(b.start) - parseYear(a.start);
+    });
 
   // Ordenar formación por fecha descendente
-  const sortedEducation = [...resume.education].filter(filter).sort((a, b) => {
-    const parseYear = (val) => {
-      if (!val) return 0;
-      if (typeof val === 'string' && val.match(/actual/i)) return 9999;
-      const year = parseInt(val.slice(0, 4), 10);
-      return isNaN(year) ? 0 : year;
-    };
-    const endB = parseYear(b.end);
-    const endA = parseYear(a.end);
-    if (endB !== endA) return endB - endA;
-    return parseYear(b.start) - parseYear(a.start);
-  });
+  const sortedEducation = [...resume.education]
+    .filter(filter)
+    .sort((a: Education, b: Education) => {
+      const parseYear = (val: string) => {
+        if (!val) return 0;
+        if (typeof val === 'string' && val.match(/actual/i)) return 9999;
+        const year = parseInt(val.slice(0, 4), 10);
+        return isNaN(year) ? 0 : year;
+      };
+      const endB = parseYear(b.end);
+      const endA = parseYear(a.end);
+      if (endB !== endA) return endB - endA;
+      return parseYear(b.start) - parseYear(a.start);
+    });
 
   // Ordenar cursos por año descendente
-  const sortedCourses = [...resume.courses].filter(filter).sort((a, b) => {
+  const sortedCourses = [...resume.courses].filter(filter).sort((a: Course, b: Course) => {
     // Puede ser string o número
     const yearA = typeof a.year === 'string' ? parseInt(a.year, 10) : a.year;
     const yearB = typeof b.year === 'string' ? parseInt(b.year, 10) : b.year;
@@ -44,7 +49,7 @@ export default function ResumeDesignPage() {
   });
 
   // Ordenar workshops por año descendente
-  const sortedWorkshops = [...resume.workshops].filter(filter).sort((a, b) => {
+  const sortedWorkshops = [...resume.workshops].filter(filter).sort((a: Workshop, b: Workshop) => {
     const yearA = typeof a.year === 'string' ? parseInt(a.year, 10) : a.year;
     const yearB = typeof b.year === 'string' ? parseInt(b.year, 10) : b.year;
     return (yearB || 0) - (yearA || 0);
