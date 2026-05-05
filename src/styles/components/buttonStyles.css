@@ -9,13 +9,20 @@
 }
 /* Estilos base y variantes para botones toggle */
 .btn-toggle {
-  @apply px-4 py-1 rounded font-semibold transition-colors duration-200 border border-gray-300;
+  @apply px-4 py-1 rounded font-semibold transition-colors duration-200 border;
+  background: var(--color-bg-btn);
+  color: var(--color-text-btn);
+  border-color: var(--color-border);
 }
 .btn-toggle--active {
-  @apply bg-blue-600 text-white border-blue-600 shadow;
+  background: var(--color-accent);
+  color: #fff !important;
+  border-color: var(--color-accent);
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 0.1);
 }
 .btn-toggle--inactive {
-  background-color: var(--color-surface);
-  color: var(--color-text);
+  background: var(--color-bg-btn);
+  color: var(--color-text-btn) !important;
+  border-color: var(--color-border);
   @apply hover:opacity-80;
 }

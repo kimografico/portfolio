@@ -71,6 +71,7 @@ export default function BooksFilter({ books, onFiltered }: BooksFilterProps) {
           id="filter-title"
           type="text"
           className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent w-full"
+          style={{ background: 'var(--color-bg-btn)', color: 'var(--color-text-btn)' }}
           placeholder="Buscar título..."
           value={filterTitle}
           onChange={(e) => setFilterTitle(e.target.value)}
@@ -83,6 +84,7 @@ export default function BooksFilter({ books, onFiltered }: BooksFilterProps) {
         <select
           id="filter-author"
           className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent min-w-[8rem] w-full"
+          style={{ background: 'var(--color-bg-btn)', color: 'var(--color-text-btn)' }}
           value={filterAuthor}
           onChange={(e) => {
             setFilterAuthor(e.target.value);
@@ -105,6 +107,7 @@ export default function BooksFilter({ books, onFiltered }: BooksFilterProps) {
         <select
           id="filter-series"
           className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent min-w-[8rem] w-full"
+          style={{ background: 'var(--color-bg-btn)', color: 'var(--color-text-btn)' }}
           value={filterSeries}
           onChange={(e) => {
             setFilterSeries(e.target.value);
@@ -127,6 +130,7 @@ export default function BooksFilter({ books, onFiltered }: BooksFilterProps) {
         <select
           id="filter-genre"
           className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent min-w-[8rem] w-full"
+          style={{ background: 'var(--color-bg-btn)', color: 'var(--color-text-btn)' }}
           value={filterGenre}
           onChange={(e) => {
             setFilterGenre(e.target.value);

@@ -1,3 +1,30 @@
+input[type='url'],
+textarea {
+  background: var(--color-bg-btn);
+  color: var(--color-text-btn);
+  border-color: var(--color-border);
+}
+textarea::placeholder {
+  color: var(--color-muted);
+}
+/* Inputs y selects en filtros y tablas: fondo y texto adaptados a modo oscuro */
+input[type='text'],
+input[type='search'],
+input[type='number'],
+input[type='email'],
+input[type='password'],
+select {
+  background: var(--color-bg-btn);
+  color: var(--color-text-btn);
+  border-color: var(--color-border);
+}
+input[type='text']::placeholder,
+input[type='search']::placeholder,
+input[type='number']::placeholder,
+input[type='email']::placeholder,
+input[type='password']::placeholder {
+  color: var(--color-muted);
+}
 /* Galería de portadas de libros */
 .bookshelf-grid {
   display: grid;

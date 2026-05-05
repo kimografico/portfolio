@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import { IconImage } from '../../components/iconos/IconImage';
 import { createProject, uploadImages } from '../../api/apiClient';
 
 /**
@@ -357,7 +358,7 @@ export default function AddProjectPage() {
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl" data-id="add-project-form">
+      <form onSubmit={handleSubmit} className="space-y-6" data-id="add-project-form">
         {/* Tipo y categoría */}
         <div className="grid grid-cols-2 gap-4">
           <div>
@@ -576,7 +577,11 @@ export default function AddProjectPage() {
                 </span>
 
                 {/* Miniatura */}
-                <div className="w-16 h-12 bg-gray-100 rounded overflow-hidden flex-shrink-0 border border-gray-200">
+                <div
+                  className="w-16 h-12 rounded overflow-hidden flex-shrink-0 border"
+                  style={{ background: 'var(--color-bg-btn)', borderColor: 'var(--color-border)' }}
+                  data-id="new-image-thumb"
+                >
                   {img.image && !imgErrors[i] ? (
                     <img
                       src={img.image}
@@ -585,8 +590,11 @@ export default function AddProjectPage() {
                       onError={() => setImgErrors((prev) => ({ ...prev, [i]: true }))}
                     />
                   ) : (
-                    <div className="w-full h-full flex items-center justify-center text-muted text-lg">
-                      🖼️
+                    <div
+                      className="w-full h-full flex items-center justify-center text-lg"
+                      style={{ color: 'var(--color-text-btn)' }}
+                    >
+                      <IconImage aria-label="Sin imagen" className="w-7 h-7" />
                     </div>
                   )}
                 </div>
@@ -735,8 +743,7 @@ export default function AddProjectPage() {
             {status === 'loading' ? 'Guardando…' : 'Crear proyecto'}
           </button>
           <p className="text-xs text-muted">
-            El backend debe estar activo:{' '}
-            <code className="font-mono bg-gray-100 px-1 py-0.5 rounded">pnpm backend:dev</code>
+            El backend debe estar activo: <code className="font-mono">pnpm backend:dev</code>
           </p>
         </div>
       </form>

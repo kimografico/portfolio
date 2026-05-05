@@ -1,4 +1,15 @@
 :root {
+  /* Botones toggle y secundarios */
+  --color-bg-btn: var(--color-surface);
+  --color-text-btn: var(--color-text);
+  /* Fondo modal */
+  --color-bg-modal: #fff;
+  --color-text-modal: var(--color-text);
+  /* Fondo mapa */
+  --color-bg-map: #f2f7fc;
+  /* Fondo galería de iconos */
+  --color-bg-gallery: #f8fafc;
+  --color-icon-gallery: #222;
   --color-bg: #f8f7f4;
   --color-surface: #ffffff;
   --color-border: #e5e4e0;
@@ -12,6 +23,13 @@
 }
 
 [data-theme='dark'] {
+  --color-bg-btn: var(--color-surface);
+  --color-text-btn: var(--color-text);
+  --color-bg-modal: #232323;
+  --color-text-modal: var(--color-text);
+  --color-bg-map: #111;
+  --color-bg-gallery: #18181b;
+  --color-icon-gallery: #fafafa;
   --color-bg: #1e1e1e;
   --color-surface: #2a2a2a;
   --color-border: #3a3a3a;
