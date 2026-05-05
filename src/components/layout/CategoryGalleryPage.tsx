@@ -38,6 +38,8 @@ interface CategoryGalleryPageProps<T extends BaseProject> {
   webProject?: boolean; // Si true, muestra barra de tecnologías (modo Developer)
   stackIconMap?: Record<string, React.FC<IconProps>>; // Mapeo de tecnologías a iconos (solo necesario si webProject=true)
   widescreen?: boolean; // Si true, usa proporción 16:9 para el thumbnail. Si false, usa 4:3.
+  // --- Construcción de rutas de imágenes ---
+  buildImagePath?: (filename: string) => string; // Función opcional para construir rutas de imágenes completas
   // --- Mensajes ---
   emptyStateDescription?: string; // Texto del EmptyState cuando no hay proyectos
 
@@ -59,6 +61,7 @@ export default function CategoryGalleryPage<T extends BaseProject>({
   webProject = false,
   stackIconMap,
   widescreen = false,
+  buildImagePath,
   emptyStateDescription = 'Esta sección está en preparación. Pronto encontrarás proyectos aquí.',
   dataIdPrefix = 'gallery',
 }: CategoryGalleryPageProps<T>) {
@@ -100,6 +103,7 @@ export default function CategoryGalleryPage<T extends BaseProject>({
                 webProject={webProject}
                 stackIconMap={stackIconMap}
                 widescreen={widescreen}
+                buildImagePath={buildImagePath}
               />
             ))}
           </div>

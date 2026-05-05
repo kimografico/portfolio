@@ -1,10 +1,10 @@
 export interface DevImage {
-  ruta: string;
+  image: string;
   label: string;
 }
 
 export interface DevVideo {
-  ruta: string;
+  image: string;
   label: string;
 }
 

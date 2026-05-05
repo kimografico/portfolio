@@ -10,7 +10,10 @@ import packagingData from '../../data/graphic-design/packaging.json';
 import proyectosEspecialesData from '../../data/graphic-design/proyectos-especiales.json';
 import etiquetasData from '../../data/graphic-design/etiquetas.json';
 import editorialData from '../../data/graphic-design/editorial.json';
-import { processProjectsImages } from '../../data/config/imagePathHelper';
+import {
+  processProjectsImages,
+  buildGraphicDesignImagePath,
+} from '../../data/config/imagePathHelper';
 import type { GraphicDesignProject } from '../../interfaces/graphicDesign';
 import '../../styles/Developer.css';
 
@@ -197,28 +200,32 @@ export default function GraphicDesignProjectDetail() {
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
               data-id={`${category}-gallery-grid`}
             >
-              {project.imagenes.map((img: { ruta: string; label: string }, i: number) => (
-                <figure key={i} className="flex flex-col gap-2" data-id={`gallery-item-${i}`}>
-                  <button
-                    type="button"
-                    className="bg-surface rounded overflow-hidden border border-border focus:outline-none focus:ring-2 focus:ring-primary"
-                    onClick={() => handleOpenLightbox(img.ruta, img.label || project.title)}
-                    aria-label={`Ampliar: ${img.label || project.title}`}
-                  >
-                    <img
-                      src={img.ruta}
-                      alt={img.label || project.title}
-                      className="wp-gallery-image"
-                      loading="lazy"
-                    />
-                  </button>
-                  {img.label && (
-                    <figcaption className="text-xs text-muted leading-snug px-1">
-                      {img.label}
-                    </figcaption>
-                  )}
-                </figure>
-              ))}
+              {project.imagenes.map((img: { image: string; label: string }, i: number) => {
+                // Construir ruta completa basada en categoría y nombre de archivo
+                const fullImagePath = buildGraphicDesignImagePath(category as string, img.image);
+                return (
+                  <figure key={i} className="flex flex-col gap-2" data-id={`gallery-item-${i}`}>
+                    <button
+                      type="button"
+                      className="bg-surface rounded overflow-hidden border border-border focus:outline-none focus:ring-2 focus:ring-primary"
+                      onClick={() => handleOpenLightbox(fullImagePath, img.label || project.title)}
+                      aria-label={`Ampliar: ${img.label || project.title}`}
+                    >
+                      <img
+                        src={fullImagePath}
+                        alt={img.label || project.title}
+                        className="wp-gallery-image"
+                        loading="lazy"
+                      />
+                    </button>
+                    {img.label && (
+                      <figcaption className="text-xs text-muted leading-snug px-1">
+                        {img.label}
+                      </figcaption>
+                    )}
+                  </figure>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -233,8 +240,8 @@ export default function GraphicDesignProjectDetail() {
               className="grid grid-cols-1 md:grid-cols-2 gap-6"
               data-id={`${category}-videos-grid`}
             >
-              {(project.videos ?? []).map((video: { ruta: string; label: string }, i: number) => {
-                const embedUrl = getYouTubeEmbedUrl(video.ruta);
+              {(project.videos ?? []).map((video: { image: string; label: string }, i: number) => {
+                const embedUrl = getYouTubeEmbedUrl(video.image);
                 if (!embedUrl) return null;
                 return (
                   <div key={i} className="flex flex-col gap-2">

@@ -7,23 +7,23 @@
     "descripcion": "Etiquetas para una marca de aceite de oliva artesanal",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/aceite-de-oliva001.jpg",
+        "image": "aceite-de-oliva001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/aceite-de-oliva002.jpg",
+        "image": "aceite-de-oliva002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/aceite-de-oliva003.jpg",
+        "image": "aceite-de-oliva003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/aceite-de-oliva004.jpg",
+        "image": "aceite-de-oliva004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/aceite-de-oliva005.jpg",
+        "image": "aceite-de-oliva005.jpg",
         "label": ""
       }
     ],
@@ -39,11 +39,11 @@
     "descripcion": "Botellínes de cerveza personalizados para el cumpleaños de un amigo",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellines-de-cerveza-para-un-cumpleanos001.jpg",
+        "image": "botellines-de-cerveza-para-un-cumpleanos001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellines-de-cerveza-para-un-cumpleanos002.jpg",
+        "image": "botellines-de-cerveza-para-un-cumpleanos002.jpg",
         "label": ""
       }
     ],
@@ -61,43 +61,43 @@
     "descripcion": "Etiquetas para una marca de hidromieles",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-loki001.jpg",
+        "image": "botellin-hidromiel-loki001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-loki002.jpg",
+        "image": "botellin-hidromiel-loki002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-loki003.jpg",
+        "image": "botellin-hidromiel-loki003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-loki004.jpg",
+        "image": "botellin-hidromiel-loki004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-loki005.jpg",
+        "image": "botellin-hidromiel-loki005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-loki006.jpg",
+        "image": "botellin-hidromiel-loki006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-loki007.jpg",
+        "image": "botellin-hidromiel-loki007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-loki008.jpg",
+        "image": "botellin-hidromiel-loki008.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-loki009.jpg",
+        "image": "botellin-hidromiel-loki009.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-loki010.jpg",
+        "image": "botellin-hidromiel-loki010.jpg",
         "label": ""
       }
     ],
@@ -115,35 +115,35 @@
     "descripcion": "Etiquetas para una marca de hidromieles",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-odin001.jpg",
+        "image": "botellin-hidromiel-odin001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-odin002.jpg",
+        "image": "botellin-hidromiel-odin002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-odin003.jpg",
+        "image": "botellin-hidromiel-odin003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-odin004.jpg",
+        "image": "botellin-hidromiel-odin004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-odin005.jpg",
+        "image": "botellin-hidromiel-odin005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-odin006.jpg",
+        "image": "botellin-hidromiel-odin006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-odin007.jpg",
+        "image": "botellin-hidromiel-odin007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellin-hidromiel-odin008.jpg",
+        "image": "botellin-hidromiel-odin008.jpg",
         "label": ""
       }
     ],
@@ -161,15 +161,15 @@
     "descripcion": "Etiquetas para una cerveza de Hierbabuena, Limón y Jengibre",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/cerveza-mathematic001.jpg",
+        "image": "cerveza-mathematic001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/cerveza-mathematic002.jpg",
+        "image": "cerveza-mathematic002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/cerveza-mathematic003.jpg",
+        "image": "cerveza-mathematic003.jpg",
         "label": ""
       }
     ],
@@ -187,15 +187,15 @@
     "descripcion": "Etiquetas para una bebida de Jengibre",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/ginger-ale001.jpg",
+        "image": "ginger-ale001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/ginger-ale002.jpg",
+        "image": "ginger-ale002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/ginger-ale003.jpg",
+        "image": "ginger-ale003.jpg",
         "label": ""
       }
     ],
@@ -213,19 +213,19 @@
     "descripcion": "Odín Hidromiel Etiqueta de la edición especial Yule, una versión con jengibre para la campaña navideña",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/hidromiel-odin-yule-edition001.jpg",
+        "image": "hidromiel-odin-yule-edition001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/hidromiel-odin-yule-edition002.jpg",
+        "image": "hidromiel-odin-yule-edition002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/hidromiel-odin-yule-edition003.jpg",
+        "image": "hidromiel-odin-yule-edition003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/hidromiel-odin-yule-edition004.jpg",
+        "image": "hidromiel-odin-yule-edition004.jpg",
         "label": ""
       }
     ],
@@ -243,7 +243,7 @@
     "descripcion": "Botella de agua PERSONALIZADA",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/etiquetas/botellas-de-agua-personalizadas001.jpg",
+        "image": "botellas-de-agua-personalizadas001.jpg",
         "label": ""
       }
     ],

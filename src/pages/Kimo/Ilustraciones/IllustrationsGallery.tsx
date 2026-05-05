@@ -31,7 +31,7 @@ export default function IllustrationsGallery({
           >
             <div className="illustration-image-wrapper">
               <img
-                src={`${ILLUSTRATIONS_PATH}/${illustration.ilustracion}`}
+                src={`${ILLUSTRATIONS_PATH}/${illustration.image}`}
                 alt={illustration.nombre}
                 className="illustration-image"
               />

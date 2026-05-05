@@ -42,8 +42,8 @@ export interface ProjectPayload {
   cliente: string;
   descripcion?: string;
   visible?: boolean;
-  imagenes?: { ruta: string; label: string }[];
-  videos?: { ruta: string; label: string }[];
+  imagenes?: { image: string; label: string }[];
+  videos?: { image: string; label: string }[];
   extras?: string[];
   stack?: string[];
 }

@@ -8,53 +8,53 @@
     "stack": ["HTML", "CSS"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/paellas-de-pecado001.jpg",
+        "image": "paellas-de-pecado001.jpg",
         "label": "Página principal, estilo one page Información principal en navegación vertical"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/paellas-de-pecado002.jpg",
+        "image": "paellas-de-pecado002.jpg",
         "label": "Página principal, estilo one page Apartado Quienes somos"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/paellas-de-pecado003.jpg",
+        "image": "paellas-de-pecado003.jpg",
         "label": "Página principal, estilo one page Testimonios y Nuestras instalaciones"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/paellas-de-pecado004.jpg",
+        "image": "paellas-de-pecado004.jpg",
         "label": "Footer – Con shortcuts de navegación y enlaces de interés"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/paellas-de-pecado005.jpg",
+        "image": "paellas-de-pecado005.jpg",
         "label": "Carta, navegación vertical – Explicación y bebidas"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/paellas-de-pecado006.jpg",
+        "image": "paellas-de-pecado006.jpg",
         "label": "Carta, navegación vertical – Entrantes Cada recuadro está animado al pasar el cursor"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/paellas-de-pecado007.jpg",
+        "image": "paellas-de-pecado007.jpg",
         "label": "Carta, navegación vertical – Arroces"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/paellas-de-pecado008.jpg",
+        "image": "paellas-de-pecado008.jpg",
         "label": "Carta, navegación vertical – Postres"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/paellas-de-pecado009.jpg",
+        "image": "paellas-de-pecado009.jpg",
         "label": "Contacto – Formulario de contacto y mapa de ubicación"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/paellas-de-pecado010.jpg",
+        "image": "paellas-de-pecado010.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/paellas-de-pecado011.jpg",
+        "image": "paellas-de-pecado011.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=w3D5EnX-Yho",
+        "image": "https://www.youtube.com/watch?v=w3D5EnX-Yho",
         "label": "Visualización en video de la navegación por la web"
       }
     ],
@@ -72,37 +72,37 @@
     "stack": ["HTML", "CSS", "JAVASCRIPT"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/museo-nacional-de-ceramica001.jpg",
+        "image": "museo-nacional-de-ceramica001.jpg",
         "label": "Menú Inicio – Entrada a la web y breve descripción del museo y sus funciones"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/museo-nacional-de-ceramica002.jpg",
+        "image": "museo-nacional-de-ceramica002.jpg",
         "label": "Galería – Recopilación de imágenes del museo"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/museo-nacional-de-ceramica003.jpg",
+        "image": "museo-nacional-de-ceramica003.jpg",
         "label": "Historia – Breve texto resumiendo la historia del museo, su arquitectura y su contenido"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/museo-nacional-de-ceramica004.jpg",
+        "image": "museo-nacional-de-ceramica004.jpg",
         "label": "Lightbox – Muestra cada imagen en grande"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/museo-nacional-de-ceramica005.jpg",
+        "image": "museo-nacional-de-ceramica005.jpg",
         "label": "Contacto – Localización, horarios, precio y contacto, así como un mapa de los alrededores"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/museo-nacional-de-ceramica006.jpg",
+        "image": "museo-nacional-de-ceramica006.jpg",
         "label": "Catálogo – Información para la venta del catálogo de piezas del museo"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/museo-nacional-de-ceramica007.jpg",
+        "image": "museo-nacional-de-ceramica007.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/3nchX8okeME",
+        "image": "https://youtu.be/3nchX8okeME",
         "label": ""
       }
     ],
@@ -120,53 +120,53 @@
     "stack": ["HTML", "CSS", "PHP", "AJAX", "JAVASCRIPT", "TPV Virtual"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-2001.jpg",
+        "image": "pilar-belmonte-2001.jpg",
         "label": "Menú Inicio – Entrada a la web"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-2002.jpg",
+        "image": "pilar-belmonte-2002.jpg",
         "label": "Portfolio – Navegación horizontal"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-2003.jpg",
+        "image": "pilar-belmonte-2003.jpg",
         "label": "Imagen – Con información de la obra"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-2004.jpg",
+        "image": "pilar-belmonte-2004.jpg",
         "label": "Currículum – Muy jerarquizado"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-2005.jpg",
+        "image": "pilar-belmonte-2005.jpg",
         "label": "Anotaciones – Información sobre la artista"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-2006.jpg",
+        "image": "pilar-belmonte-2006.jpg",
         "label": "Contacto – Simple y seguro"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-2007.jpg",
+        "image": "pilar-belmonte-2007.jpg",
         "label": "Eventos en los que ha participado"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-2008.jpg",
+        "image": "pilar-belmonte-2008.jpg",
         "label": "Publicaciones – Con información precisa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-2009.jpg",
+        "image": "pilar-belmonte-2009.jpg",
         "label": "Venta – Vía TPV virtual"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-2010.jpg",
+        "image": "pilar-belmonte-2010.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/ViyDzREWzPo",
+        "image": "https://youtu.be/ViyDzREWzPo",
         "label": "Vídeo de muestra de la navegación por el sitio web"
       },
       {
-        "ruta": "https://youtu.be/Tet8RboZuFo",
+        "image": "https://youtu.be/Tet8RboZuFo",
         "label": "Vídeo de muestra de la navegación por el sitio web"
       }
     ],
@@ -184,45 +184,45 @@
     "stack": ["HTML", "CSS", "PHP", "AJAX", "JAVASCRIPT"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/equilibrium-personal-training-studio001.jpg",
+        "image": "equilibrium-personal-training-studio001.jpg",
         "label": "Inicio – Entrada a la web con carrusel de imágenes y ofertas"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/equilibrium-personal-training-studio002.jpg",
+        "image": "equilibrium-personal-training-studio002.jpg",
         "label": "Quiénes somos – Integrantes de la empresa, con un resumen de su curriculum"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/equilibrium-personal-training-studio003.jpg",
+        "image": "equilibrium-personal-training-studio003.jpg",
         "label": "Contacto – Con mapa interactivo de como llegar"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/equilibrium-personal-training-studio004.jpg",
+        "image": "equilibrium-personal-training-studio004.jpg",
         "label": "Servicios – Cada servicio tiene una versión del logotipo en un color diferente"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/equilibrium-personal-training-studio005.jpg",
+        "image": "equilibrium-personal-training-studio005.jpg",
         "label": "Visita virtual – Imágenes en 360º del centro, interactivas para manejarlas con el ratón"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/equilibrium-personal-training-studio006.jpg",
+        "image": "equilibrium-personal-training-studio006.jpg",
         "label": "Contacto – Con seguridad honeypot y aviso legal a aceptar"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/equilibrium-personal-training-studio007.jpg",
+        "image": "equilibrium-personal-training-studio007.jpg",
         "label": "Galería – Imágenes del centro, con visualización lightbox para ampliar cada una"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/equilibrium-personal-training-studio008.jpg",
+        "image": "equilibrium-personal-training-studio008.jpg",
         "label": "Testimonios – Testimonios pop-up de algunos clientes satisfechos"
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/aernp6Gppz8",
+        "image": "https://youtu.be/aernp6Gppz8",
         "label": ""
       },
       {
-        "ruta": "https://youtu.be/-IceYJwop-Y",
+        "image": "https://youtu.be/-IceYJwop-Y",
         "label": ""
       }
     ],
@@ -238,33 +238,33 @@
     "stack": ["HTML", "CSS", "AJAX", "JAVASCRIPT"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/miranda-de-picas001.jpg",
+        "image": "miranda-de-picas001.jpg",
         "label": "Menú Inicio – Entrada a la web"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/miranda-de-picas002.jpg",
+        "image": "miranda-de-picas002.jpg",
         "label": "Colaboradores – Otros artistas que trabajan con Miranda"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/miranda-de-picas003.jpg",
+        "image": "miranda-de-picas003.jpg",
         "label": "Servicios – Tipos de magia que domina la artista"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/miranda-de-picas004.jpg",
+        "image": "miranda-de-picas004.jpg",
         "label": "Contacto – Con privacidad de datos y seguridad honeypot"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/miranda-de-picas005.jpg",
+        "image": "miranda-de-picas005.jpg",
         "label": "Video – Original currículum tipo entrevista"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/miranda-de-picas006.jpg",
+        "image": "miranda-de-picas006.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/SBkNqlQjbpw",
+        "image": "https://youtu.be/SBkNqlQjbpw",
         "label": "Vídeo de muestra de la navegación por la web"
       }
     ],
@@ -280,41 +280,41 @@
     "stack": ["HTML", "CSS", "PHP", "AJAX", "JAVASCRIPT"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/magvi001.jpg",
+        "image": "magvi001.jpg",
         "label": "Menú Inicio – Entrada con sus tres especialidades"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/magvi002.jpg",
+        "image": "magvi002.jpg",
         "label": "Maestro – Faceta de maestro de Vicent"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/magvi003.jpg",
+        "image": "magvi003.jpg",
         "label": "Mago – Tipos de magia que se oferta"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/magvi004.jpg",
+        "image": "magvi004.jpg",
         "label": "Mediador – Explicación del servicio de mediación"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/magvi005.jpg",
+        "image": "magvi005.jpg",
         "label": "Especialidades – Ejemplo de pop-up explicativo"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/magvi006.jpg",
+        "image": "magvi006.jpg",
         "label": "Contacto – Con privacidad y seguridad honeypot"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/magvi007.jpg",
+        "image": "magvi007.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/NU6-wxT1QCE",
+        "image": "https://youtu.be/NU6-wxT1QCE",
         "label": "Vídeos de muestra de la navegación por el sitio web"
       },
       {
-        "ruta": "https://youtu.be/bLE-hrVjqaY",
+        "image": "https://youtu.be/bLE-hrVjqaY",
         "label": "Vídeos de muestra de la navegación por el sitio web"
       }
     ],
@@ -330,37 +330,37 @@
     "stack": ["HTML", "CSS", "AJAX", "JAVASCRIPT"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/gondamar001.jpg",
+        "image": "gondamar001.jpg",
         "label": "Menú Inicio – Entrada a la web"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/gondamar002.jpg",
+        "image": "gondamar002.jpg",
         "label": "Ejemplo – Productos frescos que ofertan"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/gondamar003.jpg",
+        "image": "gondamar003.jpg",
         "label": "Quienes somos – Explicación e historia"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/gondamar004.jpg",
+        "image": "gondamar004.jpg",
         "label": "Contacto – Formulario con seguridad honeypot"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/gondamar005.jpg",
+        "image": "gondamar005.jpg",
         "label": "Productos – Las tres familias de productos"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/gondamar006.jpg",
+        "image": "gondamar006.jpg",
         "label": "Localización – Foto, explicación y mapa interactivo gMaps"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/gondamar007.jpg",
+        "image": "gondamar007.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/WN4vVi_X03M",
+        "image": "https://youtu.be/WN4vVi_X03M",
         "label": "Vídeo de muestra de la navegación por la web"
       }
     ],
@@ -378,73 +378,73 @@
     "stack": ["HTML", "CSS", "PHP", "AJAX", "JAVASCRIPT"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2001.jpg",
+        "image": "ida2001.jpg",
         "label": "Menú Inicio – Menú lateral y carrusel de ofertas"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2002.jpg",
+        "image": "ida2002.jpg",
         "label": "Localización – Interactiva, con google maps"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2003.jpg",
+        "image": "ida2003.jpg",
         "label": "Productos – Galería de productos y servicios, con filtro para hacer búsquedas"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2004.jpg",
+        "image": "ida2004.jpg",
         "label": "Secciones – Con efecto parallax"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2005.jpg",
+        "image": "ida2005.jpg",
         "label": "Contacto – Formulario con seguridad honeypot"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2006.jpg",
+        "image": "ida2006.jpg",
         "label": "Producto – Dentro de la galería podemos acceder a descripciones personalizadas de cada producto"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2007.jpg",
+        "image": "ida2007.jpg",
         "label": "Secciones – Con efecto parallax"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2008.jpg",
+        "image": "ida2008.jpg",
         "label": "Videotutoriales – Para resolver dudas frecuentes"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2009.jpg",
+        "image": "ida2009.jpg",
         "label": "Catálogos – Catálogos interactivos, versión digital de catálogos físicos"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2010.jpg",
+        "image": "ida2010.jpg",
         "label": "WebAPPs – De forma paralela, se hicieron varias aplicaciones web para el manejo de los trabajos en la imprenta: Una hoja de trabajos por cada sección de la imprenta (Pequeño formato, Acabados, materiales rígidos y flexibles en Gran formato, Corte y Diseño) en base GoogleSpreadsheets + Javascript. "
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2011.jpg",
+        "image": "ida2011.jpg",
         "label": "También se hizo una calculadora de grosor de lomos de papel, para libros."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2012.jpg",
+        "image": "ida2012.jpg",
         "label": "Hoja de trabajos – Para cada sección de la imprenta, con filtros para organizar los trabajos por fecha, cliente, etc."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2013.jpg",
+        "image": "ida2013.jpg",
         "label": "Y aplicaciones sencillas personalizadas como un cronómetro con memoria."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2014.jpg",
+        "image": "ida2014.jpg",
         "label": "Fragmento de codigo de la hoja de trabajos"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2015.jpg",
+        "image": "ida2015.jpg",
         "label": "Una calculadora de reglas de tres"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/ida2016.jpg",
+        "image": "ida2016.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/W2lkm16yXHw",
+        "image": "https://youtu.be/W2lkm16yXHw",
         "label": ""
       }
     ],
@@ -460,19 +460,19 @@
     "stack": ["HTML", "CSS", "AJAX", "JAVASCRIPT"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/soy-gay-y-me-caso001.jpg",
+        "image": "soy-gay-y-me-caso001.jpg",
         "label": "Quiénes somos – Con vídeo explicativo"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/soy-gay-y-me-caso002.jpg",
+        "image": "soy-gay-y-me-caso002.jpg",
         "label": "Menú Inicio – Entrada a la web"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/soy-gay-y-me-caso003.jpg",
+        "image": "soy-gay-y-me-caso003.jpg",
         "label": "Contacto – Formulario"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/soy-gay-y-me-caso004.jpg",
+        "image": "soy-gay-y-me-caso004.jpg",
         "label": ""
       }
     ],
@@ -489,15 +489,15 @@
     "stack": ["HTML", "CSS", "JAVASCRIPT"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/sintac001.jpg",
+        "image": "sintac001.jpg",
         "label": "Menú Inicio – Entrada a la web con explicación de la empresa y sus distribuidores"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/sintac002.jpg",
+        "image": "sintac002.jpg",
         "label": "Productos – Fichas técnicas de los productos que maneja la empresa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/sintac003.jpg",
+        "image": "sintac003.jpg",
         "label": "Contacto – Formulario de contacto con capacidad para enviar archivos"
       }
     ],
@@ -516,23 +516,23 @@
     "stack": ["HTML", "FLASH", "CSS"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/casa-del-olivar001.jpg",
+        "image": "casa-del-olivar001.jpg",
         "label": "Energias renovables"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/casa-del-olivar002.jpg",
+        "image": "casa-del-olivar002.jpg",
         "label": "Agricultura"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/casa-del-olivar003.jpg",
+        "image": "casa-del-olivar003.jpg",
         "label": "Explotación"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/casa-del-olivar004.jpg",
+        "image": "casa-del-olivar004.jpg",
         "label": "Caza"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/casa-del-olivar005.jpg",
+        "image": "casa-del-olivar005.jpg",
         "label": ""
       }
     ],
@@ -551,15 +551,15 @@
     "stack": ["HTML", "CSS", "JAVASCRIPT"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/nakama-customs001.jpg",
+        "image": "nakama-customs001.jpg",
         "label": "Menú Inicio – Entrada a la web Al entrar a la página web, tenemos dos imágenes que se colorean al pasar por encima. Cada una nos llevará a una sección de la empresa."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/nakama-customs002.jpg",
+        "image": "nakama-customs002.jpg",
         "label": "Nakama Tattoos – Parte web dedicada a la sección de tatuaje de la empresa. Tenemos sección Quienes somos, Galería enlazada a un álbum de facebook para facilidad de uso del cliente, formulario de contacto y mapa de google maps con la localización"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/nakama-customs003.jpg",
+        "image": "nakama-customs003.jpg",
         "label": "Nakama Pintura y aerografías – Parte web dedicada a la sección de pintura mural de la empresa. Tenemos sección Quienes somos, Galería enlazada a un álbum de facebook para facilidad de uso del cliente, formulario de contacto y mapa de google maps con la localización"
       }
     ],
@@ -578,15 +578,15 @@
     "stack": ["HTML", "CSS", "JAVASCRIPT"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/diez-caudet001.jpg",
+        "image": "diez-caudet001.jpg",
         "label": "Menú Inicio – El Quiénes somos actúa como entrada a la web."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/diez-caudet002.jpg",
+        "image": "diez-caudet002.jpg",
         "label": "Más información – Qúe hace la empresa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/diez-caudet003.jpg",
+        "image": "diez-caudet003.jpg",
         "label": "Contacto – Formulario de contacto"
       }
     ],
@@ -605,27 +605,27 @@
     "stack": ["HTML", "CSS", "PHP", "AJAX", "JAVASCRIPT"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/rapidtyres001.jpg",
+        "image": "rapidtyres001.jpg",
         "label": "Menú Inicio – Entrada a la web con dos ads para promociones"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/rapidtyres002.jpg",
+        "image": "rapidtyres002.jpg",
         "label": "Empresa – Historia y información sobre la empresa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/rapidtyres003.jpg",
+        "image": "rapidtyres003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/rapidtyres004.jpg",
+        "image": "rapidtyres004.jpg",
         "label": "Neumáticos – Marcas de neumáticos que maneja la empresa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/rapidtyres005.jpg",
+        "image": "rapidtyres005.jpg",
         "label": "En 2016 la empresa pasó a llamarse HomeWheels, cambiando de dominio y actualizando los logos e imágenes."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/rapidtyres006.jpg",
+        "image": "rapidtyres006.jpg",
         "label": "Llantas – Marcas y modelos de llantas"
       }
     ],
@@ -644,23 +644,23 @@
     "stack": ["HTML", "CSS", "PHP", "AJAX", "JAVASCRIPT", "Prestashop"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/cronaval001.jpg",
+        "image": "cronaval001.jpg",
         "label": "Menú Inicio – Entrada a la web"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/cronaval002.jpg",
+        "image": "cronaval002.jpg",
         "label": "Página de productos – Explicación pormenorizada de los productos que venden"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/cronaval003.jpg",
+        "image": "cronaval003.jpg",
         "label": "Contacto – Formulario con seguridad Honeypot"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/cronaval004.jpg",
+        "image": "cronaval004.jpg",
         "label": "Tienda On-line – Venta on-line de productos para limpieza del automóvil"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/cronaval005.jpg",
+        "image": "cronaval005.jpg",
         "label": "Página de productos – Explicación pormenorizada de los productos que venden"
       }
     ],
@@ -679,33 +679,33 @@
     "stack": ["HTML", "CSS", "FLASH", "Javascript", "Ajax", "PHP"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/la-brigada-grafica001.jpg",
+        "image": "la-brigada-grafica001.jpg",
         "label": "Portada – Entrada a la web con imagen de la tienda física"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/la-brigada-grafica002.jpg",
+        "image": "la-brigada-grafica002.jpg",
         "label": "Galerías – Enlace a cada galería. Las imágenes de la misma se cargan desde una cuenta de flickr"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/la-brigada-grafica003.jpg",
+        "image": "la-brigada-grafica003.jpg",
         "label": "Historia – Módulo diseñado en flash"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/la-brigada-grafica004.jpg",
+        "image": "la-brigada-grafica004.jpg",
         "label": "Blog – Con eventos a los que asistíamos o que organizábamos como brigadistas"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/la-brigada-grafica005.jpg",
+        "image": "la-brigada-grafica005.jpg",
         "label": "Objetivos – Módulo diseñado en flash"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/la-brigada-grafica006.jpg",
+        "image": "la-brigada-grafica006.jpg",
         "label": "Contacto – Con seguridad honeypot y acceso a las redes sociales"
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/WqCBnDDpPDI",
+        "image": "https://youtu.be/WqCBnDDpPDI",
         "label": ""
       }
     ],
@@ -723,33 +723,33 @@
     "stack": ["FLASH", "HTML", "CSS", "Javascript"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-1001.jpg",
+        "image": "pilar-belmonte-1001.jpg",
         "label": "Idioma – Entrada a la web y elección de idioma"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-1002.jpg",
+        "image": "pilar-belmonte-1002.jpg",
         "label": "Menús secundarios"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-1003.jpg",
+        "image": "pilar-belmonte-1003.jpg",
         "label": "Menú Inicio – Con las distintas categorías"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-1004.jpg",
+        "image": "pilar-belmonte-1004.jpg",
         "label": "Galería – Muestra de las obras de la artista"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-1005.jpg",
+        "image": "pilar-belmonte-1005.jpg",
         "label": "Menús secundarios"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/pilar-belmonte-1006.jpg",
+        "image": "pilar-belmonte-1006.jpg",
         "label": "Currículum – Breve resumen del currículum"
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/YfbhV7BJf5U",
+        "image": "https://youtu.be/YfbhV7BJf5U",
         "label": ""
       }
     ],
@@ -767,33 +767,33 @@
     "stack": ["HTML", "CSS", "FLASH"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/randes-i-brodats001.jpg",
+        "image": "randes-i-brodats001.jpg",
         "label": "Menú Inicio – Entrada a la web"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/randes-i-brodats002.jpg",
+        "image": "randes-i-brodats002.jpg",
         "label": "Catálogo interactivo – Dividido en secciones"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/randes-i-brodats003.jpg",
+        "image": "randes-i-brodats003.jpg",
         "label": "Quiénes somos – Información sobre la empresa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/randes-i-brodats004.jpg",
+        "image": "randes-i-brodats004.jpg",
         "label": "Catálogo interactivo – Con pase de diapositivas"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/randes-i-brodats005.jpg",
+        "image": "randes-i-brodats005.jpg",
         "label": "Dónde encontrarnos – Dirección, horario y mapa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/randes-i-brodats006.jpg",
+        "image": "randes-i-brodats006.jpg",
         "label": "Contacto – Mail y teléfonos"
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/jPKJIGFXlio",
+        "image": "https://youtu.be/jPKJIGFXlio",
         "label": ""
       }
     ],
@@ -811,57 +811,57 @@
     "stack": ["HTML", "CSS", "FLASH"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa006.jpg",
+        "image": "precocinados-tia-teresa006.jpg",
         "label": "Productos congelados – Ejemplo de fotografía de uno de los productos"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa001.jpg",
+        "image": "precocinados-tia-teresa001.jpg",
         "label": "Historia – Breve historia de la empresa, con galería de imágenes."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa002.jpg",
+        "image": "precocinados-tia-teresa002.jpg",
         "label": "Menú productos – Lista de productos de la fábrica, menú desplegable transparente"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa003.jpg",
+        "image": "precocinados-tia-teresa003.jpg",
         "label": "Historia tienda – Historia de la cadena de tiendas Tia Teresa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa004.jpg",
+        "image": "precocinados-tia-teresa004.jpg",
         "label": "Productos – Especialidades de la tienda"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa005.jpg",
+        "image": "precocinados-tia-teresa005.jpg",
         "label": "Contacto – Enlace a correo electrónico"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa007.jpg",
+        "image": "precocinados-tia-teresa007.jpg",
         "label": "Ubicación – Cada tienda o puesto de la cadena, con su dirección"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa008.jpg",
+        "image": "precocinados-tia-teresa008.jpg",
         "label": "Productos – Especialidades de la tienda"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa009.jpg",
+        "image": "precocinados-tia-teresa009.jpg",
         "label": "Mapa – Mapa estático y dirección de la fábrica Tia Teresa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa010.jpg",
+        "image": "precocinados-tia-teresa010.jpg",
         "label": "Productos frescos – Ejemplo de fotografía de uno de los productos"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa011.jpg",
+        "image": "precocinados-tia-teresa011.jpg",
         "label": "Galería – Cada tienda o puesto tiene su galería propia, separada en especialidad"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/precocinados-tia-teresa012.jpg",
+        "image": "precocinados-tia-teresa012.jpg",
         "label": "Productos – Especialidades de la tienda"
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/_lBI4L7h5Pc",
+        "image": "https://youtu.be/_lBI4L7h5Pc",
         "label": ""
       }
     ],
@@ -879,49 +879,49 @@
     "stack": ["HTML", "CSS", "FLASH"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/acid-skateboards009.jpg",
+        "image": "acid-skateboards009.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/acid-skateboards001.jpg",
+        "image": "acid-skateboards001.jpg",
         "label": "Historia – Una breve presentación de la empresa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/acid-skateboards002.jpg",
+        "image": "acid-skateboards002.jpg",
         "label": "Videos – Grabaciones de skaters utilizando los productos de la marca"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/acid-skateboards003.jpg",
+        "image": "acid-skateboards003.jpg",
         "label": "Catálogo – Los diferentes tipos de productos"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/acid-skateboards004.jpg",
+        "image": "acid-skateboards004.jpg",
         "label": "Tienda / Ruedas – Diseños de ruedas en venta"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/acid-skateboards005.jpg",
+        "image": "acid-skateboards005.jpg",
         "label": "Tienda / Lijas – Diseños de lijas para adeshivar a la tabla de skate"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/acid-skateboards006.jpg",
+        "image": "acid-skateboards006.jpg",
         "label": "Skaters – Skaters patrocinados por la marca"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/acid-skateboards007.jpg",
+        "image": "acid-skateboards007.jpg",
         "label": "Tienda / Tablas – Diferentes tablas de la marca"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/vanilla/acid-skateboards008.jpg",
+        "image": "acid-skateboards008.jpg",
         "label": "Tienda / Accesorios – Accesorios, merchandising y herramientas de la marca"
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/2NeuuMDB_Og",
+        "image": "https://youtu.be/2NeuuMDB_Og",
         "label": "Vídeo de muestra de la navegación por el sitio web"
       },
       {
-        "ruta": "https://youtu.be/y-Yleb5PVbk",
+        "image": "https://youtu.be/y-Yleb5PVbk",
         "label": "Vídeo de muestra de la navegación por el sitio web"
       }
     ],

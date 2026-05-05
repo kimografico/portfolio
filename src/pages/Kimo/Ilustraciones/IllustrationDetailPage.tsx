@@ -62,7 +62,6 @@ export default function IllustrationDetailPage() {
           />
         </div>
       </section>
-
       {/* Información */}
       <section className="border-b border-border" data-id="info">
         <div className="max-w-7xl mx-auto pb-6">
@@ -116,7 +115,7 @@ export default function IllustrationDetailPage() {
         <div className="max-w-7xl mx-auto py-12">
           <img
             ref={mainImgRef}
-            src={`${ILLUSTRATIONS_PATH}/${illustration!.ilustracion}`}
+            src={`${ILLUSTRATIONS_PATH}/${illustration!.image}`}
             alt={illustration!.nombre}
             className="illustration-main-image cursor-zoom-in"
             data-id="main-image-img"
@@ -135,14 +134,14 @@ export default function IllustrationDetailPage() {
             }
             onClick={() =>
               handleOpenLightbox(
-                `${ILLUSTRATIONS_PATH}/${illustration!.ilustracion}`,
+                `${ILLUSTRATIONS_PATH}/${illustration!.image}`,
                 illustration!.nombre,
               )
             }
             onKeyDown={(e) =>
               (e.key === 'Enter' || e.key === ' ') &&
               handleOpenLightbox(
-                `${ILLUSTRATIONS_PATH}/${illustration!.ilustracion}`,
+                `${ILLUSTRATIONS_PATH}/${illustration!.image}`,
                 illustration!.nombre,
               )
             }
@@ -169,19 +168,19 @@ export default function IllustrationDetailPage() {
                   data-id={`extra-image-${i}`}
                 >
                   <img
-                    src={`${ILLUSTRATIONS_PATH}/${extra.ruta}`}
+                    src={`${ILLUSTRATIONS_PATH}/${extra.image}`}
                     alt={extra.label}
                     className="illustration-extra-image cursor-zoom-in"
                     data-id={`extra-image-img-${i}`}
                     onClick={() =>
-                      handleOpenLightbox(`${ILLUSTRATIONS_PATH}/${extra.ruta}`, extra.label)
+                      handleOpenLightbox(`${ILLUSTRATIONS_PATH}/${extra.image}`, extra.label)
                     }
                     tabIndex={0}
                     role="button"
                     aria-label={`Ampliar imagen: ${extra.label}`}
                     onKeyDown={(e) =>
                       (e.key === 'Enter' || e.key === ' ') &&
-                      handleOpenLightbox(`${ILLUSTRATIONS_PATH}/${extra.ruta}`, extra.label)
+                      handleOpenLightbox(`${ILLUSTRATIONS_PATH}/${extra.image}`, extra.label)
                     }
                   />
                   <p className="text-xs text-muted mt-3">{extra.label}</p>

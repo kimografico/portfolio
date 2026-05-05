@@ -20,7 +20,7 @@ import packagingData from '../graphic-design/packaging.json';
 import OtrosData from '../graphic-design/proyectos-especiales.json';
 import etiquetasData from '../graphic-design/etiquetas.json';
 import editorialData from '../graphic-design/editorial.json';
-import { processProjectsImages } from './imagePathHelper';
+import { processProjectsImages, buildGraphicDesignImagePath } from './imagePathHelper';
 
 import { IconPirateCoin } from '../../components/iconos';
 
@@ -44,6 +44,8 @@ export interface GalleryRouteConfig {
     stackIconMap?: Record<string, React.FC<IconProps>>;
     /** Si true, usa proporción 16:9 en ProjectCard */
     widescreen?: boolean;
+    /** Función para construir rutas de imágenes completas */
+    buildImagePath?: (filename: string) => string;
   };
 }
 
@@ -66,6 +68,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
       emptyStateDescription:
         'Esta sección está en preparación. Pronto encontrarás aquí los logotipos y diseños de marca.',
       dataIdPrefix: 'logotipos',
+      buildImagePath: (filename) => buildGraphicDesignImagePath('logotipos', filename),
     },
   },
   {
@@ -83,6 +86,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
       emptyStateDescription:
         'Esta sección está en preparación. Pronto encontrarás aquí los diseños de papelería.',
       dataIdPrefix: 'papeleria',
+      buildImagePath: (filename) => buildGraphicDesignImagePath('papeleria', filename),
     },
   },
   {
@@ -100,6 +104,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
       emptyStateDescription:
         'Esta sección está en preparación. Pronto encontrarás aquí los diseños de cartelería.',
       dataIdPrefix: 'carteleria',
+      buildImagePath: (filename) => buildGraphicDesignImagePath('carteleria', filename),
     },
   },
   {
@@ -117,6 +122,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
       emptyStateDescription:
         'Esta sección está en preparación. Pronto encontrarás aquí los proyectos multimedia.',
       dataIdPrefix: 'multimedia',
+      buildImagePath: (filename) => buildGraphicDesignImagePath('multimedia', filename),
     },
   },
   {
@@ -134,6 +140,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
       emptyStateDescription:
         'Esta sección está en preparación. Pronto encontrarás aquí los diseños de packaging.',
       dataIdPrefix: 'packaging',
+      buildImagePath: (filename) => buildGraphicDesignImagePath('packaging', filename),
     },
   },
   {
@@ -151,6 +158,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
       emptyStateDescription:
         'Esta sección está en preparación. Pronto encontrarás aquí los proyectos especiales.',
       dataIdPrefix: 'proyectos-especiales',
+      buildImagePath: (filename) => buildGraphicDesignImagePath('proyectos-especiales', filename),
     },
   },
   {
@@ -166,6 +174,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
       emptyStateDescription:
         'Esta sección está en preparación. Pronto encontrarás aquí diseños de etiquetas.',
       dataIdPrefix: 'etiquetas',
+      buildImagePath: (filename) => buildGraphicDesignImagePath('etiquetas', filename),
     },
   },
   {
@@ -181,6 +190,7 @@ export const graphicDesignGalleries: GalleryRouteConfig[] = [
       emptyStateDescription:
         'Esta sección está en preparación. Pronto encontrarás aquí diseños editoriales.',
       dataIdPrefix: 'editorial',
+      buildImagePath: (filename) => buildGraphicDesignImagePath('editorial', filename),
     },
   },
 ];

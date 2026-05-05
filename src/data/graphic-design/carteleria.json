@@ -7,19 +7,19 @@
     "descripcion": "Rotulo para una Peluquería Ecológica",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/peluqueria-ecologica001.jpg",
+        "image": "peluqueria-ecologica001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/peluqueria-ecologica002.jpg",
+        "image": "peluqueria-ecologica002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/peluqueria-ecologica003.jpg",
+        "image": "peluqueria-ecologica003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/peluqueria-ecologica004.jpg",
+        "image": "peluqueria-ecologica004.jpg",
         "label": ""
       }
     ],
@@ -37,15 +37,15 @@
     "descripcion": "Calendario-pizarra de pared para la empresa de cosméticos CASMARA \nEl cliente necesitaba un calendario donde poder escribir y controlar de un vistazo las acciones pasadas y futuras del año completo, para colocar en un lugar visible para todo el equipo de trabajo de la oficina \nSe le hizo también uno similar para otros años",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/calendario-pizarra-de-pared-2021001.jpg",
+        "image": "calendario-pizarra-de-pared-2021001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/calendario-pizarra-de-pared-2021002.jpg",
+        "image": "calendario-pizarra-de-pared-2021002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/calendario-pizarra-de-pared-2021003.jpg",
+        "image": "calendario-pizarra-de-pared-2021003.jpg",
         "label": ""
       }
     ],
@@ -63,23 +63,23 @@
     "descripcion": "Cartel de información interna para la empresa de gestión empresarial DATADEC",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteles-internos-datadec001.jpg",
+        "image": "carteles-internos-datadec001.jpg",
         "label": "Diferentes propuestas"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteles-internos-datadec002.jpg",
+        "image": "carteles-internos-datadec002.jpg",
         "label": "Diferentes propuestas"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteles-internos-datadec003.jpg",
+        "image": "carteles-internos-datadec003.jpg",
         "label": "Diferentes propuestas"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteles-internos-datadec004.jpg",
+        "image": "carteles-internos-datadec004.jpg",
         "label": "Diferentes propuestas"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteles-internos-datadec005.jpg",
+        "image": "carteles-internos-datadec005.jpg",
         "label": "Diferentes propuestas"
       }
     ],
@@ -97,23 +97,23 @@
     "descripcion": "Cartel de presentación de un TFC para la Universidad de Valencia. \nAutor: Juanjo Sáez",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/cartel-tfc001.jpg",
+        "image": "cartel-tfc001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/cartel-tfc002.jpg",
+        "image": "cartel-tfc002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/cartel-tfc003.jpg",
+        "image": "cartel-tfc003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/cartel-tfc004.jpg",
+        "image": "cartel-tfc004.jpg",
         "label": "Guía de ejemplo en cuanto a organización"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/cartel-tfc005.jpg",
+        "image": "cartel-tfc005.jpg",
         "label": "Diagrama de flujo, parte del trabajo"
       }
     ],
@@ -131,11 +131,11 @@
     "descripcion": "Imagen para RR.SS. y dos modelos de roll-up para una gala de Networking",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/valencia-conecta001.jpg",
+        "image": "valencia-conecta001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/valencia-conecta002.jpg",
+        "image": "valencia-conecta002.jpg",
         "label": ""
       }
     ],
@@ -153,43 +153,43 @@
     "descripcion": "Papelería para FICSA",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/papeleria-corporativa-ficsa001.jpg",
+        "image": "papeleria-corporativa-ficsa001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/papeleria-corporativa-ficsa002.jpg",
+        "image": "papeleria-corporativa-ficsa002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/papeleria-corporativa-ficsa003.jpg",
+        "image": "papeleria-corporativa-ficsa003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/papeleria-corporativa-ficsa004.jpg",
+        "image": "papeleria-corporativa-ficsa004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/papeleria-corporativa-ficsa005.jpg",
+        "image": "papeleria-corporativa-ficsa005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/papeleria-corporativa-ficsa006.jpg",
+        "image": "papeleria-corporativa-ficsa006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/papeleria-corporativa-ficsa007.jpg",
+        "image": "papeleria-corporativa-ficsa007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/papeleria-corporativa-ficsa008.jpg",
+        "image": "papeleria-corporativa-ficsa008.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/papeleria-corporativa-ficsa009.jpg",
+        "image": "papeleria-corporativa-ficsa009.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/papeleria-corporativa-ficsa010.jpg",
+        "image": "papeleria-corporativa-ficsa010.jpg",
         "label": ""
       }
     ],
@@ -207,35 +207,35 @@
     "descripcion": "Diseño de caballo para la pared de Equilibrium",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/caballo-para-la-pared-de-equilibrium001.jpg",
+        "image": "caballo-para-la-pared-de-equilibrium001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/caballo-para-la-pared-de-equilibrium002.jpg",
+        "image": "caballo-para-la-pared-de-equilibrium002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/caballo-para-la-pared-de-equilibrium003.jpg",
+        "image": "caballo-para-la-pared-de-equilibrium003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/caballo-para-la-pared-de-equilibrium004.jpg",
+        "image": "caballo-para-la-pared-de-equilibrium004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/caballo-para-la-pared-de-equilibrium005.jpg",
+        "image": "caballo-para-la-pared-de-equilibrium005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/caballo-para-la-pared-de-equilibrium006.jpg",
+        "image": "caballo-para-la-pared-de-equilibrium006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/caballo-para-la-pared-de-equilibrium007.jpg",
+        "image": "caballo-para-la-pared-de-equilibrium007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/caballo-para-la-pared-de-equilibrium008.jpg",
+        "image": "caballo-para-la-pared-de-equilibrium008.jpg",
         "label": ""
       }
     ],
@@ -253,35 +253,35 @@
     "descripcion": "Cartel de plantilla y señalética de la tienda Decathlon de Campanar",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/senaletica-decathlon001.jpg",
+        "image": "senaletica-decathlon001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/senaletica-decathlon002.jpg",
+        "image": "senaletica-decathlon002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/senaletica-decathlon003.jpg",
+        "image": "senaletica-decathlon003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/senaletica-decathlon004.jpg",
+        "image": "senaletica-decathlon004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/senaletica-decathlon005.jpg",
+        "image": "senaletica-decathlon005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/senaletica-decathlon006.jpg",
+        "image": "senaletica-decathlon006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/senaletica-decathlon007.jpg",
+        "image": "senaletica-decathlon007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/senaletica-decathlon008.jpg",
+        "image": "senaletica-decathlon008.jpg",
         "label": ""
       }
     ],
@@ -299,27 +299,27 @@
     "descripcion": "Horarios del centro de entrenamiento personal Equilibrium, en Torrent",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/horarios-equilibrium001.jpg",
+        "image": "horarios-equilibrium001.jpg",
         "label": "Version monoclase"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/horarios-equilibrium002.jpg",
+        "image": "horarios-equilibrium002.jpg",
         "label": "Versión diferenciada por colores"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/horarios-equilibrium003.jpg",
+        "image": "horarios-equilibrium003.jpg",
         "label": "Versión diferenciada por iconos"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/horarios-equilibrium004.jpg",
+        "image": "horarios-equilibrium004.jpg",
         "label": "Versión con iconos más grandes"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/horarios-equilibrium005.jpg",
+        "image": "horarios-equilibrium005.jpg",
         "label": "Version monoclase"
       },
       {
-        "ruta": "blob:http://localhost:5173/321b4ac5-b068-4cbd-9ad9-54dab4c84855",
+        "image": "blob:http://localhost:5173/321b4ac5-b068-4cbd-9ad9-54dab4c84855",
         "label": "Versión 2025 a un solo color"
       }
     ],
@@ -337,75 +337,75 @@
     "descripcion": "Ilustración para la sala de empleados de Decathlon de Alfafar. En ella están incluidos todos los empleados, cada uno en su disciplina, aparte de elementos de la comarca de Valencia y relativos a los distintos campos que aborda el comercio. En un primer momento el cliente quería algo tipo planeta, redondo. Pero tras un primer boceto inicial y la aportación de otras ideas, se optó por un diseño tipo isla, más sencillo, con unos acabados geométricos que le aportan claridad y modernidad.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon001.jpg",
+        "image": "plantilla-decathlon001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon002.jpg",
+        "image": "plantilla-decathlon002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon003.jpg",
+        "image": "plantilla-decathlon003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon004.jpg",
+        "image": "plantilla-decathlon004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon005.jpg",
+        "image": "plantilla-decathlon005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon006.jpg",
+        "image": "plantilla-decathlon006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon007.jpg",
+        "image": "plantilla-decathlon007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon008.jpg",
+        "image": "plantilla-decathlon008.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon009.jpg",
+        "image": "plantilla-decathlon009.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon010.jpg",
+        "image": "plantilla-decathlon010.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon011.jpg",
+        "image": "plantilla-decathlon011.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon012.jpg",
+        "image": "plantilla-decathlon012.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon013.jpg",
+        "image": "plantilla-decathlon013.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon014.jpg",
+        "image": "plantilla-decathlon014.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon015.jpg",
+        "image": "plantilla-decathlon015.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon016.jpg",
+        "image": "plantilla-decathlon016.jpg",
         "label": "Fotografías del trabajo instalado en las oficinas"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon017.jpg",
+        "image": "plantilla-decathlon017.jpg",
         "label": "Fotografías del trabajo instalado en las oficinas"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/plantilla-decathlon018.jpg",
+        "image": "plantilla-decathlon018.jpg",
         "label": ""
       }
     ],
@@ -421,47 +421,47 @@
     "descripcion": "Cartelería sobre un curso de Trail",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-variada-equilibrium001.jpg",
+        "image": "carteleria-variada-equilibrium001.jpg",
         "label": "Cartelería promocionando un evento deportivo"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-variada-equilibrium002.jpg",
+        "image": "carteleria-variada-equilibrium002.jpg",
         "label": "Taller de masaje"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-variada-equilibrium003.jpg",
+        "image": "carteleria-variada-equilibrium003.jpg",
         "label": "MasterClass sobre nutrición"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-variada-equilibrium004.jpg",
+        "image": "carteleria-variada-equilibrium004.jpg",
         "label": "Cartelería sobre un curso de Trail"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-variada-equilibrium005.jpg",
+        "image": "carteleria-variada-equilibrium005.jpg",
         "label": "Lona de próxima apertura"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-variada-equilibrium006.jpg",
+        "image": "carteleria-variada-equilibrium006.jpg",
         "label": "Lona de próxima apertura"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-variada-equilibrium007.jpg",
+        "image": "carteleria-variada-equilibrium007.jpg",
         "label": "Lona felicitando la navidad"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-variada-equilibrium008.jpg",
+        "image": "carteleria-variada-equilibrium008.jpg",
         "label": "Taller de masaje"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-variada-equilibrium009.jpg",
+        "image": "carteleria-variada-equilibrium009.jpg",
         "label": "Cartelería promocional de merchandising"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-variada-equilibrium010.jpg",
+        "image": "carteleria-variada-equilibrium010.jpg",
         "label": "Cartelería promocional de merchandising"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-variada-equilibrium011.jpg",
+        "image": "carteleria-variada-equilibrium011.jpg",
         "label": "Cartelería promocional de la app"
       }
     ],
@@ -479,19 +479,19 @@
     "descripcion": "Cartel de cursos y webminars de preparación física para Alpine Training",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/alpine-training001.jpg",
+        "image": "alpine-training001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/alpine-training002.jpg",
+        "image": "alpine-training002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/alpine-training003.jpg",
+        "image": "alpine-training003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/alpine-training004.jpg",
+        "image": "alpine-training004.jpg",
         "label": ""
       }
     ],
@@ -509,15 +509,15 @@
     "descripcion": "Diseño de carteles fruta y verdura de los mercados municipales de Valencia, encargado por la Consellería de Educació de la Generalitat Valenciana para el fomento del valenciano.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/bolsa-frutas-y-verduras001.jpg",
+        "image": "bolsa-frutas-y-verduras001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/bolsa-frutas-y-verduras002.jpg",
+        "image": "bolsa-frutas-y-verduras002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/bolsa-frutas-y-verduras003.jpg",
+        "image": "bolsa-frutas-y-verduras003.jpg",
         "label": ""
       }
     ],
@@ -535,27 +535,27 @@
     "descripcion": "Cartelería para el evento de presentación del libro Ashes & Blood",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteles-ashes-blood001.jpg",
+        "image": "carteles-ashes-blood001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteles-ashes-blood002.jpg",
+        "image": "carteles-ashes-blood002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteles-ashes-blood003.jpg",
+        "image": "carteles-ashes-blood003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteles-ashes-blood004.jpg",
+        "image": "carteles-ashes-blood004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteles-ashes-blood005.jpg",
+        "image": "carteles-ashes-blood005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteles-ashes-blood006.jpg",
+        "image": "carteles-ashes-blood006.jpg",
         "label": ""
       }
     ],
@@ -573,7 +573,7 @@
     "descripcion": "Cartel para un festival de música en Gilet, colaboración con ReyMono",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/green-box-festival001.jpg",
+        "image": "green-box-festival001.jpg",
         "label": ""
       }
     ],
@@ -591,11 +591,11 @@
     "descripcion": "Cartel para el cumpleaños de un compañero ilustrador",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/reymono001.jpg",
+        "image": "reymono001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/reymono002.jpg",
+        "image": "reymono002.jpg",
         "label": ""
       }
     ],
@@ -613,11 +613,11 @@
     "descripcion": "Cartel para un concurso",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/eh-toro001.jpg",
+        "image": "eh-toro001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/eh-toro002.jpg",
+        "image": "eh-toro002.jpg",
         "label": ""
       }
     ],
@@ -635,11 +635,11 @@
     "descripcion": "Cartelería para una exposición de Pilar Belmonte en el Museo Municipal de Albacete",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/expo-pilar-belmonte001.jpg",
+        "image": "expo-pilar-belmonte001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/expo-pilar-belmonte002.jpg",
+        "image": "expo-pilar-belmonte002.jpg",
         "label": ""
       }
     ],
@@ -657,23 +657,23 @@
     "descripcion": "Greetings estacionales",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/estaciones001.jpg",
+        "image": "estaciones001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/estaciones002.jpg",
+        "image": "estaciones002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/estaciones003.jpg",
+        "image": "estaciones003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/estaciones004.jpg",
+        "image": "estaciones004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/estaciones005.jpg",
+        "image": "estaciones005.jpg",
         "label": ""
       }
     ],
@@ -691,27 +691,27 @@
     "descripcion": "Cartelería para el distintos eventos del pub África de Punta Umbría",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/el-patio001.jpg",
+        "image": "el-patio001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/el-patio002.jpg",
+        "image": "el-patio002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/el-patio003.jpg",
+        "image": "el-patio003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/el-patio004.jpg",
+        "image": "el-patio004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/el-patio005.jpg",
+        "image": "el-patio005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/el-patio006.jpg",
+        "image": "el-patio006.jpg",
         "label": ""
       }
     ],
@@ -729,15 +729,15 @@
     "descripcion": "Cartelería para el evento de fotografía Sextas Jornadas Latentes de la EASD",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/jornadas-latentes-easd001.jpg",
+        "image": "jornadas-latentes-easd001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/jornadas-latentes-easd002.jpg",
+        "image": "jornadas-latentes-easd002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/jornadas-latentes-easd003.jpg",
+        "image": "jornadas-latentes-easd003.jpg",
         "label": ""
       }
     ],
@@ -753,19 +753,19 @@
     "descripcion": "Cartelería y diseño de cubierta para la ópera L'Elisir d'amore de Donizetti",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/l-elisir-d-amore001.jpg",
+        "image": "l-elisir-d-amore001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/l-elisir-d-amore002.jpg",
+        "image": "l-elisir-d-amore002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/l-elisir-d-amore003.jpg",
+        "image": "l-elisir-d-amore003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/l-elisir-d-amore004.jpg",
+        "image": "l-elisir-d-amore004.jpg",
         "label": ""
       }
     ],
@@ -783,11 +783,11 @@
     "descripcion": "Cartelería para un concierto",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/concierto-destino-clandestino001.jpg",
+        "image": "concierto-destino-clandestino001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/concierto-destino-clandestino002.jpg",
+        "image": "concierto-destino-clandestino002.jpg",
         "label": ""
       }
     ],
@@ -805,83 +805,83 @@
     "descripcion": "Cartelería para unas obras teatrales del Teatro Rialto",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan001.jpg",
+        "image": "carteleria-obras-de-valle-inclan001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan002.jpg",
+        "image": "carteleria-obras-de-valle-inclan002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan003.jpg",
+        "image": "carteleria-obras-de-valle-inclan003.jpg",
         "label": "Versión en Modelado 3D"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan004.jpg",
+        "image": "carteleria-obras-de-valle-inclan004.jpg",
         "label": "Versión en Modelado 3D"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan005.jpg",
+        "image": "carteleria-obras-de-valle-inclan005.jpg",
         "label": "Versión en Modelado 3D"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan006.jpg",
+        "image": "carteleria-obras-de-valle-inclan006.jpg",
         "label": "Versión grunge"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan007.jpg",
+        "image": "carteleria-obras-de-valle-inclan007.jpg",
         "label": "Versión grunge"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan008.jpg",
+        "image": "carteleria-obras-de-valle-inclan008.jpg",
         "label": "Versión grunge"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan009.jpg",
+        "image": "carteleria-obras-de-valle-inclan009.jpg",
         "label": "Versión sombra"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan010.jpg",
+        "image": "carteleria-obras-de-valle-inclan010.jpg",
         "label": "Versión sombra"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan011.jpg",
+        "image": "carteleria-obras-de-valle-inclan011.jpg",
         "label": "Versión sombra"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan012.jpg",
+        "image": "carteleria-obras-de-valle-inclan012.jpg",
         "label": "Versión en Collage Digital"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan013.jpg",
+        "image": "carteleria-obras-de-valle-inclan013.jpg",
         "label": "Versión en Collage Digital"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan014.jpg",
+        "image": "carteleria-obras-de-valle-inclan014.jpg",
         "label": "Versión en Collage Digital"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan015.jpg",
+        "image": "carteleria-obras-de-valle-inclan015.jpg",
         "label": "Versión en Silueta"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan016.jpg",
+        "image": "carteleria-obras-de-valle-inclan016.jpg",
         "label": "Versión en Silueta"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan017.jpg",
+        "image": "carteleria-obras-de-valle-inclan017.jpg",
         "label": "Versión en Silueta"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan018.jpg",
+        "image": "carteleria-obras-de-valle-inclan018.jpg",
         "label": "Versión en Pintura"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan019.jpg",
+        "image": "carteleria-obras-de-valle-inclan019.jpg",
         "label": "Versión en Pintura"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/carteleria-obras-de-valle-inclan020.jpg",
+        "image": "carteleria-obras-de-valle-inclan020.jpg",
         "label": "Versión en Pintura"
       }
     ],
@@ -897,19 +897,19 @@
     "descripcion": "Diseño de tres meses del calendario de la Conselleria de Sanitat de 2009",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/calendario-generalitat004.jpg",
+        "image": "calendario-generalitat004.jpg",
         "label": "Mockups"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/calendario-generalitat001.jpg",
+        "image": "calendario-generalitat001.jpg",
         "label": "Septiembre"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/calendario-generalitat002.jpg",
+        "image": "calendario-generalitat002.jpg",
         "label": "Marzo"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/carteleria/calendario-generalitat003.jpg",
+        "image": "calendario-generalitat003.jpg",
         "label": "Mayo"
       }
     ],

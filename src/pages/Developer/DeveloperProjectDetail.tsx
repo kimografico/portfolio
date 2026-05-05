@@ -5,6 +5,7 @@ import PrevNextBtns from '../../components/ui/PrevNextBtns';
 import frameworksData from '../../data/development/frameworks.json';
 import vanillaData from '../../data/development/vanilla.json';
 import wordpressData from '../../data/development/wordpress.json';
+import { buildDeveloperImagePath } from '../../data/config/imagePathHelper';
 import type { WebProject } from '../../interfaces/developer';
 import '../../styles/Developer.css';
 
@@ -15,7 +16,8 @@ const projectDataMap: Record<string, { data: WebProject[]; label: string }> = {
   wordpress: { data: wordpressData as WebProject[], label: 'WordPress' },
 };
 
-function getYouTubeEmbedUrl(url: string): string | null {
+function getYouTubeEmbedUrl(url?: string): string | null {
+  if (!url || typeof url !== 'string') return null;
   const watchMatch = url.match(/[?&]v=([^&]+)/);
   if (watchMatch) return `https://www.youtube.com/embed/${watchMatch[1]}`;
   const shortMatch = url.match(/youtu\.be\/([^?&]+)/);
@@ -166,28 +168,32 @@ export default function DeveloperProjectDetail() {
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"
               data-id={`${parent}-gallery-grid`}
             >
-              {project.imagenes.map((img, i) => (
-                <figure key={i} className="flex flex-col gap-2" data-id={`gallery-item-${i}`}>
-                  <button
-                    type="button"
-                    className="bg-surface rounded overflow-hidden border border-border focus:outline-none focus:ring-2 focus:ring-primary"
-                    onClick={() => handleOpenLightbox(img.ruta, img.label || project.title)}
-                    aria-label={`Ampliar: ${img.label || project.title}`}
-                  >
-                    <img
-                      src={img.ruta}
-                      alt={img.label || project.title}
-                      className="wp-gallery-image"
-                      loading="lazy"
-                    />
-                  </button>
-                  {img.label && (
-                    <figcaption className="text-xs text-muted leading-snug px-1">
-                      {img.label}
-                    </figcaption>
-                  )}
-                </figure>
-              ))}
+              {project.imagenes.map((img, i) => {
+                // Construir ruta completa basada en categoría (parent) y nombre de archivo
+                const fullImagePath = buildDeveloperImagePath(parent as string, img.image);
+                return (
+                  <figure key={i} className="flex flex-col gap-2" data-id={`gallery-item-${i}`}>
+                    <button
+                      type="button"
+                      className="bg-surface rounded overflow-hidden border border-border focus:outline-none focus:ring-2 focus:ring-primary"
+                      onClick={() => handleOpenLightbox(fullImagePath, img.label || project.title)}
+                      aria-label={`Ampliar: ${img.label || project.title}`}
+                    >
+                      <img
+                        src={fullImagePath}
+                        alt={img.label || project.title}
+                        className="wp-gallery-image"
+                        loading="lazy"
+                      />
+                    </button>
+                    {img.label && (
+                      <figcaption className="text-xs text-muted leading-snug px-1">
+                        {img.label}
+                      </figcaption>
+                    )}
+                  </figure>
+                );
+              })}
             </div>
           </div>
         </section>
@@ -203,7 +209,7 @@ export default function DeveloperProjectDetail() {
               data-id={`${parent}-videos-grid`}
             >
               {project.videos.map((video, i) => {
-                const embedUrl = getYouTubeEmbedUrl(video.ruta);
+                const embedUrl = getYouTubeEmbedUrl(video.image);
                 if (!embedUrl) return null;
                 return (
                   <div key={i} className="flex flex-col gap-2">

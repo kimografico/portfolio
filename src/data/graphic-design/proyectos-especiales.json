@@ -7,23 +7,23 @@
     "descripcion": "Visualización 3D de un Totem a modo de pre-maqueta, subcontratado por el estudio de diseño La Rosa Visual",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/totem-3d001.jpg",
+        "image": "totem-3d001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/totem-3d002.jpg",
+        "image": "totem-3d002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/totem-3d003.jpg",
+        "image": "totem-3d003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/totem-3d004.jpg",
+        "image": "totem-3d004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/totem-3d005.jpg",
+        "image": "totem-3d005.jpg",
         "label": ""
       }
     ],
@@ -39,25 +39,25 @@
     "descripcion": "Realización de un render 3D de un local, según planos facilitados por el cliente, para la presentación de un proyecto de interiorismo",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/render-de-interiorismo001.jpg",
+        "image": "render-de-interiorismo001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/render-de-interiorismo002.jpg",
+        "image": "render-de-interiorismo002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/render-de-interiorismo003.jpg",
+        "image": "render-de-interiorismo003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/render-de-interiorismo004.jpg",
+        "image": "render-de-interiorismo004.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=CdsMe1iQLSI",
+        "image": "https://www.youtube.com/watch?v=CdsMe1iQLSI",
         "label": ""
       }
     ],
@@ -72,27 +72,27 @@
     "descripcion": "Render 3D de una caseta de telecomunicaciones de Airtel, para la empresa Tech-Telecom",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/caseta-airtel001.jpg",
+        "image": "caseta-airtel001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/caseta-airtel002.jpg",
+        "image": "caseta-airtel002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/caseta-airtel003.jpg",
+        "image": "caseta-airtel003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/caseta-airtel004.jpg",
+        "image": "caseta-airtel004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/caseta-airtel005.jpg",
+        "image": "caseta-airtel005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/caseta-airtel006.jpg",
+        "image": "caseta-airtel006.jpg",
         "label": ""
       }
     ],
@@ -108,11 +108,11 @@
     "descripcion": "Render 3D de una habitación, para la empresa Tech-Telecom",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/interior-de-una-habitacion001.jpg",
+        "image": "interior-de-una-habitacion001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/interior-de-una-habitacion002.jpg",
+        "image": "interior-de-una-habitacion002.jpg",
         "label": ""
       }
     ],
@@ -128,21 +128,21 @@
     "descripcion": "Animacion 3D del logotipo de La Brigada Gráfica",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/logo-de-la-brigada-grafica001.jpg",
+        "image": "logo-de-la-brigada-grafica001.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/hD98oKScpyc",
+        "image": "https://youtu.be/hD98oKScpyc",
         "label": ""
       },
       {
-        "ruta": "https://youtu.be/Lgfl02tG7Qk",
+        "image": "https://youtu.be/Lgfl02tG7Qk",
         "label": ""
       },
       {
-        "ruta": "https://youtu.be/fDTkha7QZQg",
+        "image": "https://youtu.be/fDTkha7QZQg",
         "label": ""
       }
     ],
@@ -157,29 +157,29 @@
     "descripcion": "ACID SKATEBOARDS ———————————- Representación de productos y merchandising de la marca de ACID SKATEBOARDS Se crearon para la página web, y presentan una animación interactiva de giro 360º y, en el caso del USB, también de como se abre y cierra el mismo.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid001.jpg",
+        "image": "productos-acid001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid002.jpg",
+        "image": "productos-acid002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid003.jpg",
+        "image": "productos-acid003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid004.jpg",
+        "image": "productos-acid004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/productos-acid005.jpg",
+        "image": "productos-acid005.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=y-Yleb5PVbk",
+        "image": "https://www.youtube.com/watch?v=y-Yleb5PVbk",
         "label": ""
       }
     ],
@@ -194,19 +194,19 @@
     "descripcion": "Cartelería para el evento Breaking Stereotypes de la Generalitat Valenciana. El diseño se realizó mediante 3D Studio Max y Photoshop",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/breaking-stereotypes001.jpg",
+        "image": "breaking-stereotypes001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/breaking-stereotypes002.jpg",
+        "image": "breaking-stereotypes002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/breaking-stereotypes003.jpg",
+        "image": "breaking-stereotypes003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/breaking-stereotypes004.jpg",
+        "image": "breaking-stereotypes004.jpg",
         "label": ""
       }
     ],
@@ -222,7 +222,7 @@
     "descripcion": "Lugar de descanso de mi padre",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/descanso-padre001.jpg",
+        "image": "descanso-padre001.jpg",
         "label": ""
       }
     ],
@@ -238,11 +238,11 @@
     "descripcion": "Cartelería para la rotulación de un furgón de la empresa SAICA",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/furgoneta-saica001.jpg",
+        "image": "furgoneta-saica001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/furgoneta-saica002.jpg",
+        "image": "furgoneta-saica002.jpg",
         "label": ""
       }
     ],
@@ -260,31 +260,31 @@
     "descripcion": "Señalización de los mismos con información sobre su utilización, ejemplos de residuos que acepta cada contenedor, información municipal y una indiana con iconos representando distintos tipos de elementos que se pueden tirar en cada uno",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/contenedores-soterrados-de-castalla001.jpg",
+        "image": "contenedores-soterrados-de-castalla001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/contenedores-soterrados-de-castalla002.jpg",
+        "image": "contenedores-soterrados-de-castalla002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/contenedores-soterrados-de-castalla003.jpg",
+        "image": "contenedores-soterrados-de-castalla003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/contenedores-soterrados-de-castalla004.jpg",
+        "image": "contenedores-soterrados-de-castalla004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/contenedores-soterrados-de-castalla005.jpg",
+        "image": "contenedores-soterrados-de-castalla005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/contenedores-soterrados-de-castalla006.jpg",
+        "image": "contenedores-soterrados-de-castalla006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/contenedores-soterrados-de-castalla007.jpg",
+        "image": "contenedores-soterrados-de-castalla007.jpg",
         "label": ""
       }
     ],
@@ -300,23 +300,23 @@
     "descripcion": "Trofeo para la VII edición del concurso de paellas organizado por Grupo Electrostocks. Se realizaron estatuillas para el 1er, 2º y 3er premio. El trofeo está realizado en metacrilato de 10mm, grabado y con peana adherida con cianocrilato, y una cuchara de madera grabada a láser.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/trofeo-concurso-de-paellas001.jpg",
+        "image": "trofeo-concurso-de-paellas001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/trofeo-concurso-de-paellas002.jpg",
+        "image": "trofeo-concurso-de-paellas002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/trofeo-concurso-de-paellas003.jpg",
+        "image": "trofeo-concurso-de-paellas003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/trofeo-concurso-de-paellas004.jpg",
+        "image": "trofeo-concurso-de-paellas004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/trofeo-concurso-de-paellas005.jpg",
+        "image": "trofeo-concurso-de-paellas005.jpg",
         "label": ""
       }
     ],
@@ -334,11 +334,11 @@
     "descripcion": "Cartelería para la rotulación de un coche de empresa de la asesoría Nemesio",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/coche-nemesio001.jpg",
+        "image": "coche-nemesio001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/coche-nemesio002.jpg",
+        "image": "coche-nemesio002.jpg",
         "label": ""
       }
     ],
@@ -354,27 +354,27 @@
     "descripcion": "Vinilos para las puertas de Decathlon Aldaia, con motivo de la campaña Trocathlon, y algunos carteles para señalética.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/puertas-trocathlon001.jpg",
+        "image": "puertas-trocathlon001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/puertas-trocathlon002.jpg",
+        "image": "puertas-trocathlon002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/puertas-trocathlon003.jpg",
+        "image": "puertas-trocathlon003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/puertas-trocathlon004.jpg",
+        "image": "puertas-trocathlon004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/puertas-trocathlon005.jpg",
+        "image": "puertas-trocathlon005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/puertas-trocathlon006.jpg",
+        "image": "puertas-trocathlon006.jpg",
         "label": ""
       }
     ],
@@ -392,23 +392,23 @@
     "descripcion": "CD recopilatorio de música Regalo de aniversario de una pareja que vivian separados, Londres y Barcelona",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/cd-musica-recopilada001.jpg",
+        "image": "cd-musica-recopilada001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/cd-musica-recopilada002.jpg",
+        "image": "cd-musica-recopilada002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/cd-musica-recopilada003.jpg",
+        "image": "cd-musica-recopilada003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/cd-musica-recopilada004.jpg",
+        "image": "cd-musica-recopilada004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/cd-musica-recopilada005.jpg",
+        "image": "cd-musica-recopilada005.jpg",
         "label": ""
       }
     ],
@@ -424,59 +424,59 @@
     "descripcion": "Diseño para los uniformes y camisetas promocionales del Pub «La Flama» del barrio del Carmen de Valencia",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama001.jpg",
+        "image": "camisetas-laflama001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama002.jpg",
+        "image": "camisetas-laflama002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama003.jpg",
+        "image": "camisetas-laflama003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama004.jpg",
+        "image": "camisetas-laflama004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama005.jpg",
+        "image": "camisetas-laflama005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama006.jpg",
+        "image": "camisetas-laflama006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama007.jpg",
+        "image": "camisetas-laflama007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama008.jpg",
+        "image": "camisetas-laflama008.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama009.jpg",
+        "image": "camisetas-laflama009.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama010.jpg",
+        "image": "camisetas-laflama010.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama011.jpg",
+        "image": "camisetas-laflama011.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama012.jpg",
+        "image": "camisetas-laflama012.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama013.jpg",
+        "image": "camisetas-laflama013.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/camisetas-laflama014.jpg",
+        "image": "camisetas-laflama014.jpg",
         "label": ""
       }
     ],
@@ -494,23 +494,23 @@
     "descripcion": "Diseño para las bolsas para fruta y verdura de los mercados municipales de Valencia, encargado por la Consellería de Educació de la Generalitat Valenciana para el fomento del valenciano. El trabajo se realizó en dos tamaños, bolsa grande y pequeña.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/bolsa-frutas-y-verduras001.jpg",
+        "image": "bolsa-frutas-y-verduras001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/bolsa-frutas-y-verduras002.jpg",
+        "image": "bolsa-frutas-y-verduras002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/bolsa-frutas-y-verduras003.jpg",
+        "image": "bolsa-frutas-y-verduras003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/bolsa-frutas-y-verduras004.jpg",
+        "image": "bolsa-frutas-y-verduras004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/bolsa-frutas-y-verduras005.jpg",
+        "image": "bolsa-frutas-y-verduras005.jpg",
         "label": ""
       }
     ],
@@ -526,27 +526,27 @@
     "descripcion": "Baraja de cartas promocional para La Brigada Gráfica. La temática de cada palo tiene que ver con los gustos y personalidad de cada integrante del estudio de arte que es La Brigada Gráfica",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/baraja-lbg001.jpg",
+        "image": "baraja-lbg001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/baraja-lbg002.jpg",
+        "image": "baraja-lbg002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/baraja-lbg003.jpg",
+        "image": "baraja-lbg003.jpg",
         "label": "Baraja completa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/baraja-lbg004.jpg",
+        "image": "baraja-lbg004.jpg",
         "label": "Figuras"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/baraja-lbg005.jpg",
+        "image": "baraja-lbg005.jpg",
         "label": "Ases"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/baraja-lbg006.jpg",
+        "image": "baraja-lbg006.jpg",
         "label": "Desplegado de la caja"
       }
     ],
@@ -562,63 +562,63 @@
     "descripcion": "Panografías Imágenes unidas para formar una imágen en gran angular",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias001.jpg",
+        "image": "panografias001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias002.jpg",
+        "image": "panografias002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias003.jpg",
+        "image": "panografias003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias004.jpg",
+        "image": "panografias004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias005.jpg",
+        "image": "panografias005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias006.jpg",
+        "image": "panografias006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias007.jpg",
+        "image": "panografias007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias008.jpg",
+        "image": "panografias008.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias009.jpg",
+        "image": "panografias009.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias010.jpg",
+        "image": "panografias010.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias011.jpg",
+        "image": "panografias011.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias012.jpg",
+        "image": "panografias012.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias013.jpg",
+        "image": "panografias013.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias014.jpg",
+        "image": "panografias014.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/panografias015.jpg",
+        "image": "panografias015.jpg",
         "label": ""
       }
     ],
@@ -634,31 +634,31 @@
     "descripcion": "Birdseyes Imágenes unidas en un panorama y curvado para formar una imagen que recuerda a un pequeño planeta",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/birdseyes001.jpg",
+        "image": "birdseyes001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/birdseyes002.jpg",
+        "image": "birdseyes002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/birdseyes003.jpg",
+        "image": "birdseyes003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/birdseyes004.jpg",
+        "image": "birdseyes004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/birdseyes005.jpg",
+        "image": "birdseyes005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/birdseyes006.jpg",
+        "image": "birdseyes006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/proyectos-especiales/birdseyes007.jpg",
+        "image": "birdseyes007.jpg",
         "label": ""
       }
     ],

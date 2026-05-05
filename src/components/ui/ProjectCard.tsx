@@ -11,7 +11,7 @@ export interface BaseProject {
   date: string;
   title: string;
   cliente?: string;
-  imagenes?: Array<{ ruta: string; label?: string }>;
+  imagenes?: Array<{ image: string; label?: string }>;
   stack?: string[];
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [key: string]: any; // Permite propiedades adicionales tipadas dinámicamente
@@ -32,6 +32,8 @@ interface ProjectCardProps<T extends BaseProject> {
   IconFallback?: React.FC<IconProps>;
   /** Si true, el thumbnail usa proporción 16:9. Si false (default), usa 4:3 */
   widescreen?: boolean;
+  /** Función opcional para construir la ruta completa de la imagen (ej: buildGraphicDesignImagePath) */
+  buildImagePath?: (filename: string) => string;
 }
 
 /**
@@ -55,13 +57,17 @@ export const ProjectCard = <T extends BaseProject>({
   dataId = `project-card-${project.id}`,
   IconFallback,
   widescreen = false,
+  buildImagePath,
 }: ProjectCardProps<T>) => {
   const [hoveredTech, setHoveredTech] = useState<string | null>(null);
 
   // Usar thumbnail optimizado si existe, fallback a imagen original
   const thumbUrl = `/portfolio/images/portfolio/thumbs/${project.id}.jpg`;
-  const fallbackThumb = project.imagenes?.[0]?.ruta;
-  const thumbnail = thumbUrl || fallbackThumb;
+  const fallbackThumb = project.imagenes?.[0]?.image;
+  // Si buildImagePath se proporciona, usarla para construir la ruta completa
+  const processedThumb =
+    buildImagePath && fallbackThumb ? buildImagePath(fallbackThumb) : fallbackThumb;
+  const thumbnail = thumbUrl || processedThumb;
 
   const year = project.date?.slice(0, 4);
 

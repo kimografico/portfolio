@@ -6,13 +6,12 @@
  */
 
 import type { WebProject } from '../../interfaces/developer';
-import type { BaseProject } from '../../components/ui/ProjectCard';
 import type { IconProps } from '../../types/icons';
 
 import wordpressData from '../development/wordpress.json';
 import vanillaData from '../development/vanilla.json';
 import frameworksData from '../development/frameworks.json';
-import { processProjectsImages } from './imagePathHelper';
+import { processProjectsImages, buildDeveloperImagePath } from './imagePathHelper';
 
 import {
   LogoWordpress,
@@ -74,12 +73,13 @@ export const developerGalleries: GalleryRouteConfig[] = [
       emptyStateDescription:
         'Esta sección está en preparación. Pronto encontrarás aquí los proyectos desarrollados con WordPress.',
       dataIdPrefix: 'wordpress',
+      buildImagePath: (filename) => buildDeveloperImagePath('wordpress', filename),
     },
   },
   {
     slug: 'vanilla',
     props: {
-      projects: processProjectsImages(vanillaData as WebProject[]) as BaseProject[],
+      projects: processProjectsImages(vanillaData as WebProject[]),
       basePath: '/dev/vanilla',
       title: 'Vanilla',
       description:
@@ -96,12 +96,13 @@ export const developerGalleries: GalleryRouteConfig[] = [
       emptyStateDescription:
         'Esta sección está en preparación. Pronto encontrarás aquí los proyectos en Vanilla.',
       dataIdPrefix: 'vanilla',
+      buildImagePath: (filename) => buildDeveloperImagePath('vanilla', filename),
     },
   },
   {
     slug: 'frameworks',
     props: {
-      projects: processProjectsImages(frameworksData as WebProject[]) as BaseProject[],
+      projects: processProjectsImages(frameworksData as WebProject[]),
       basePath: '/dev/frameworks',
       title: 'Frameworks',
       description: 'Proyectos desarrollados con frameworks modernos: React, Vue y otros.',
@@ -117,6 +118,7 @@ export const developerGalleries: GalleryRouteConfig[] = [
       emptyStateDescription:
         'Esta sección está en preparación. Pronto encontrarás aquí los proyectos con frameworks modernos.',
       dataIdPrefix: 'frameworks',
+      buildImagePath: (filename) => buildDeveloperImagePath('frameworks', filename),
     },
   },
 ];

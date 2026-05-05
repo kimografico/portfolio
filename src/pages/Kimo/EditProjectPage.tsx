@@ -1,3 +1,29 @@
+// --- Helpers y tipos para imágenes/videos ---
+interface FormState {
+  type: '' | 'gd' | 'dev';
+  category: string;
+  title: string;
+  cliente: string;
+  descripcion: string;
+  visible: boolean;
+  imagenes: { image: string; label: string }[];
+  videos: { image: string; label: string }[];
+  extras: string[];
+  stack: string[];
+}
+
+const emptyImagen = (): { image: string; label: string } => ({ image: '', label: '' });
+const emptyVideo = (): { image: string; label: string } => ({ image: '', label: '' });
+
+function normalizeImages(
+  arr: Array<{ image?: string; ruta?: string; label?: string } | string>,
+): { image: string; label: string }[] {
+  return arr.map((img) => {
+    if (typeof img === 'string') return { image: img, label: '' };
+    if ('image' in img) return { image: img.image ?? '', label: img.label ?? '' };
+    return { image: img.ruta ?? '', label: img.label ?? '' };
+  });
+}
 import { useEffect, useState, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getProject, updateProject, uploadImages, type ProjectData } from '../../api/apiClient';
@@ -40,25 +66,6 @@ const STACK_QUICK_OPTIONS = [
   'Prestashop',
 ];
 
-/** Devuelve un objeto imagen vacío */
-const emptyImagen = () => ({ ruta: '', label: '' });
-
-/** Devuelve un objeto video vacío */
-const emptyVideo = () => ({ ruta: '', label: '' });
-
-interface FormState {
-  type: '' | 'gd' | 'dev';
-  category: string;
-  title: string;
-  cliente: string;
-  descripcion: string;
-  visible: boolean;
-  imagenes: { ruta: string; label: string }[];
-  videos: { ruta: string; label: string }[];
-  extras: string[];
-  stack: string[];
-}
-
 /**
  * EditProjectPage: Formulario para editar un proyecto existente.
  *
@@ -99,12 +106,12 @@ export default function EditProjectPage() {
         const p = result.data as ProjectData;
         // Los videos pueden venir como string[] o como { ruta, label }[]
         // según si el JSON es antiguo o nuevo. Normalizamos a { ruta, label }[].
-        const normalizeVideos = (arr: unknown[]): { ruta: string; label: string }[] =>
+        const normalizeVideos = (arr: unknown[]): { image: string; label: string }[] =>
           arr.map((v) =>
             typeof v === 'string'
-              ? { ruta: v, label: '' }
+              ? { image: v, label: '' }
               : {
-                  ruta: (v as { ruta?: string })?.ruta ?? '',
+                  image: (v as { image?: string })?.image ?? '',
                   label: (v as { label?: string })?.label ?? '',
                 },
           );
@@ -120,7 +127,7 @@ export default function EditProjectPage() {
           cliente: p.cliente ?? '',
           descripcion: p.descripcion ?? '',
           visible: p.visible !== false,
-          imagenes: p.imagenes?.length ? p.imagenes : [emptyImagen()],
+          imagenes: p.imagenes?.length ? normalizeImages(p.imagenes) : [emptyImagen()],
           videos: p.videos?.length ? normalizeVideos(p.videos) : [emptyVideo()],
           extras: p.extras?.length ? normalizeStringArray(p.extras) : [''],
           stack: p.stack ?? [],
@@ -179,7 +186,7 @@ export default function EditProjectPage() {
 
   // --- Imagenes ---
 
-  function handleImagenChange(index: number, field: 'ruta' | 'label', value: string) {
+  function handleImagenChange(index: number, field: 'image' | 'label', value: string) {
     const updated = f.imagenes.map((img, i) => (i === index ? { ...img, [field]: value } : img));
     handleField('imagenes', updated);
   }
@@ -239,9 +246,9 @@ export default function EditProjectPage() {
     const newImages = files.map((file) => {
       const blobUrl = URL.createObjectURL(file);
       pendingFiles.current.set(blobUrl, file);
-      return { ruta: blobUrl, label: file.name.replace(/\.[^.]+$/, '') };
+      return { image: blobUrl, label: file.name.replace(/\.[^.]+$/, '') };
     });
-    const currentImages = f.imagenes.filter((img) => img.ruta.trim() !== '');
+    const currentImages = f.imagenes.filter((img) => img.image.trim() !== '');
     handleField('imagenes', [...currentImages, ...newImages]);
   }
 
@@ -251,16 +258,16 @@ export default function EditProjectPage() {
     const newImages = files.map((file) => {
       const blobUrl = URL.createObjectURL(file);
       pendingFiles.current.set(blobUrl, file);
-      return { ruta: blobUrl, label: file.name.replace(/\.[^.]+$/, '') };
+      return { image: blobUrl, label: file.name.replace(/\.[^.]+$/, '') };
     });
-    const currentImages = f.imagenes.filter((img) => img.ruta.trim() !== '');
+    const currentImages = f.imagenes.filter((img) => img.image.trim() !== '');
     handleField('imagenes', [...currentImages, ...newImages]);
     e.target.value = '';
   }
 
   // --- Videos (array de objetos) ---
 
-  function handleVideoChange(index: number, field: 'ruta' | 'label', value: string) {
+  function handleVideoChange(index: number, field: 'image' | 'label', value: string) {
     const updated = f.videos.map((v, i) => (i === index ? { ...v, [field]: value } : v));
     handleField('videos', updated);
   }
@@ -322,18 +329,18 @@ export default function EditProjectPage() {
       if (!f.title.trim()) throw new Error('El título es obligatorio');
       if (!f.cliente.trim()) throw new Error('El cliente es obligatorio');
 
-      let imagenes = f.imagenes.filter((img) => img.ruta.trim() !== '');
-      const videos = f.videos.filter((v) => v.ruta.trim() !== '');
+      let imagenes = f.imagenes.filter((img) => img.image.trim() !== '');
+      const videos = f.videos.filter((v) => v.image.trim() !== '');
       const extras = f.extras.filter((ex) => ex.trim() !== '');
 
       // Subir archivos pendientes (blob URLs) al backend
       const filesToUpload: File[] = [];
       const blobUrlsToReplace: string[] = [];
       for (const img of imagenes) {
-        const file = pendingFiles.current.get(img.ruta);
+        const file = pendingFiles.current.get(img.image);
         if (file) {
           filesToUpload.push(file);
-          blobUrlsToReplace.push(img.ruta);
+          blobUrlsToReplace.push(img.image);
         }
       }
 
@@ -346,11 +353,11 @@ export default function EditProjectPage() {
         );
 
         imagenes = imagenes.map((img) => {
-          const blobIdx = blobUrlsToReplace.indexOf(img.ruta);
+          const blobIdx = blobUrlsToReplace.indexOf(img.image);
           if (blobIdx !== -1 && uploaded[blobIdx]) {
-            URL.revokeObjectURL(img.ruta);
+            URL.revokeObjectURL(img.image);
             return {
-              ruta: `/portfolio${uploaded[blobIdx].ruta}`,
+              image: `/portfolio${uploaded[blobIdx].ruta}`,
               label: img.label || uploaded[blobIdx].label,
             };
           }
@@ -611,9 +618,9 @@ export default function EditProjectPage() {
                 </span>
 
                 <div className="w-16 h-12 bg-gray-100 rounded overflow-hidden flex-shrink-0 border border-gray-200">
-                  {img.ruta && !imgErrors[i] ? (
+                  {img.image && !imgErrors[i] ? (
                     <a
-                      href={img.ruta}
+                      href={img.image}
                       target="_blank"
                       rel="noopener noreferrer"
                       title={img.label || `Abrir imagen ${i + 1} en nueva pestaña`}
@@ -621,7 +628,7 @@ export default function EditProjectPage() {
                       data-id={`edit-project-img-link-${i}`}
                     >
                       <img
-                        src={img.ruta}
+                        src={img.image}
                         alt={img.label || `Imagen ${i + 1}`}
                         className="w-full h-full object-cover"
                         onError={() => setImgErrors((prev) => ({ ...prev, [i]: true }))}
@@ -638,10 +645,10 @@ export default function EditProjectPage() {
                   <input
                     type="text"
                     className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                    placeholder="URL de la imagen"
-                    value={img.ruta}
+                    placeholder="Nombre de archivo de la imagen"
+                    value={img.image}
                     onChange={(e) => {
-                      handleImagenChange(i, 'ruta', e.target.value);
+                      handleImagenChange(i, 'image', e.target.value);
                       setImgErrors((prev) => ({ ...prev, [i]: false }));
                     }}
                   />
@@ -689,8 +696,8 @@ export default function EditProjectPage() {
                   type="url"
                   className="w-1/2  border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="URL del video"
-                  value={v.ruta}
-                  onChange={(e) => handleVideoChange(i, 'ruta', e.target.value)}
+                  value={v.image}
+                  onChange={(e) => handleVideoChange(i, 'image', e.target.value)}
                 />
                 <input
                   type="text"

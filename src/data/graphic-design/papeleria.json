@@ -7,39 +7,39 @@
     "descripcion": "Díptico diseñado para el rocódromo Natural Climb, de Valencia. Está enfocado a clases para colegios, y proporciona información sobre el local, las actividades ofertadas, filosofía de la empresa y beneficios del deporte para los más pequeños. Tiene también fotografías de clases y un mapa de ubicación. Se hicieron varios bocetos, respetando el estilo gráfico del local, pero adaptando el mismo al lenguaje infantil requerido por el destinatario final. Se mimetizaron los colores del interior del rocódromo, dándole más protagonismo al naranja-amarillento de la zona de clases del mismo.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-xxl-para-colegios001.jpg",
+        "image": "triptico-xxl-para-colegios001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-xxl-para-colegios002.jpg",
+        "image": "triptico-xxl-para-colegios002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-xxl-para-colegios003.jpg",
+        "image": "triptico-xxl-para-colegios003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-xxl-para-colegios004.jpg",
+        "image": "triptico-xxl-para-colegios004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-xxl-para-colegios005.jpg",
+        "image": "triptico-xxl-para-colegios005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-xxl-para-colegios006.jpg",
+        "image": "triptico-xxl-para-colegios006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-xxl-para-colegios007.jpg",
+        "image": "triptico-xxl-para-colegios007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-xxl-para-colegios008.jpg",
+        "image": "triptico-xxl-para-colegios008.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-xxl-para-colegios009.jpg",
+        "image": "triptico-xxl-para-colegios009.jpg",
         "label": ""
       }
     ],
@@ -57,15 +57,15 @@
     "descripcion": "Tríptico Ida2",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-productos-ida2001.jpg",
+        "image": "triptico-productos-ida2001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-productos-ida2002.jpg",
+        "image": "triptico-productos-ida2002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-productos-ida2003.jpg",
+        "image": "triptico-productos-ida2003.jpg",
         "label": ""
       }
     ],
@@ -81,19 +81,19 @@
     "descripcion": "Díptico diseñado para la empresa Colordmar, promocionando un producto para convertir una tabla de paddel surf en una pequeña embarcación de vela.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/diptico-ruddersail-system001.jpg",
+        "image": "diptico-ruddersail-system001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/diptico-ruddersail-system002.jpg",
+        "image": "diptico-ruddersail-system002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/diptico-ruddersail-system003.jpg",
+        "image": "diptico-ruddersail-system003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/diptico-ruddersail-system004.jpg",
+        "image": "diptico-ruddersail-system004.jpg",
         "label": ""
       }
     ],
@@ -109,23 +109,23 @@
     "descripcion": "Tablas de ejercicios para un sistema de pérdida de peso",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/tablas-de-ejercicios001.jpg",
+        "image": "tablas-de-ejercicios001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/tablas-de-ejercicios002.jpg",
+        "image": "tablas-de-ejercicios002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/tablas-de-ejercicios003.jpg",
+        "image": "tablas-de-ejercicios003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/tablas-de-ejercicios004.jpg",
+        "image": "tablas-de-ejercicios004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/tablas-de-ejercicios005.jpg",
+        "image": "tablas-de-ejercicios005.jpg",
         "label": ""
       }
     ],
@@ -141,19 +141,19 @@
     "descripcion": "Flyer informativo para la venta en el extranjero de Hidromiel Odín",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/hidromiel-odin-flyer-para-distribuciones-extranjeras001.jpg",
+        "image": "hidromiel-odin-flyer-para-distribuciones-extranjeras001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/hidromiel-odin-flyer-para-distribuciones-extranjeras002.jpg",
+        "image": "hidromiel-odin-flyer-para-distribuciones-extranjeras002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/hidromiel-odin-flyer-para-distribuciones-extranjeras003.jpg",
+        "image": "hidromiel-odin-flyer-para-distribuciones-extranjeras003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/hidromiel-odin-flyer-para-distribuciones-extranjeras004.jpg",
+        "image": "hidromiel-odin-flyer-para-distribuciones-extranjeras004.jpg",
         "label": ""
       }
     ],
@@ -169,19 +169,19 @@
     "descripcion": "Conjunto de tríptico y tarifa para un productor de vinos en Francia. Ilustraciones de ReyMono",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-melting-potes001.jpg",
+        "image": "triptico-melting-potes001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-melting-potes002.jpg",
+        "image": "triptico-melting-potes002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-melting-potes003.jpg",
+        "image": "triptico-melting-potes003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-melting-potes004.jpg",
+        "image": "triptico-melting-potes004.jpg",
         "label": ""
       }
     ],
@@ -197,7 +197,7 @@
     "descripcion": "Felicitación de cumpleaños encargada por un grupo de escalada deportiva. El diseño del personaje corrió a cargo de @sarafcuesta_",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/felicitacion-ares001.jpg",
+        "image": "felicitacion-ares001.jpg",
         "label": ""
       }
     ],
@@ -213,15 +213,15 @@
     "descripcion": "Calendario Asefilco Calendario corporativo",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-asefilco001.jpg",
+        "image": "calendario-asefilco001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-asefilco002.jpg",
+        "image": "calendario-asefilco002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-asefilco003.jpg",
+        "image": "calendario-asefilco003.jpg",
         "label": ""
       }
     ],
@@ -237,11 +237,11 @@
     "descripcion": "Flyer promocional de un producto de pérdida de peso",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/flyer-pierdeloss90001.jpg",
+        "image": "flyer-pierdeloss90001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/flyer-pierdeloss90002.jpg",
+        "image": "flyer-pierdeloss90002.jpg",
         "label": ""
       }
     ],
@@ -257,27 +257,27 @@
     "descripcion": "Flyers para distintas campañas de Equilibrium",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/flyers-equilibrium001.jpg",
+        "image": "flyers-equilibrium001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/flyers-equilibrium002.jpg",
+        "image": "flyers-equilibrium002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/flyers-equilibrium003.jpg",
+        "image": "flyers-equilibrium003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/flyers-equilibrium004.jpg",
+        "image": "flyers-equilibrium004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/flyers-equilibrium005.jpg",
+        "image": "flyers-equilibrium005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/flyers-equilibrium006.jpg",
+        "image": "flyers-equilibrium006.jpg",
         "label": ""
       }
     ],
@@ -293,31 +293,31 @@
     "descripcion": "Rollups de oferta para una imprenta digital",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/rollups-ida2001.jpg",
+        "image": "rollups-ida2001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/rollups-ida2002.jpg",
+        "image": "rollups-ida2002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/rollups-ida2003.jpg",
+        "image": "rollups-ida2003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/rollups-ida2004.jpg",
+        "image": "rollups-ida2004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/rollups-ida2005.jpg",
+        "image": "rollups-ida2005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/rollups-ida2006.jpg",
+        "image": "rollups-ida2006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/rollups-ida2007.jpg",
+        "image": "rollups-ida2007.jpg",
         "label": "También se hizo un diseño para X-Banner (Display parecido al rollup pero no enrollable)"
       }
     ],
@@ -335,39 +335,39 @@
     "descripcion": "Currículums para distintas personas",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/curriculums-varios001.jpg",
+        "image": "curriculums-varios001.jpg",
         "label": "Currículum de un psicólogo"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/curriculums-varios002.jpg",
+        "image": "curriculums-varios002.jpg",
         "label": "Currículum de un comercial de coches"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/curriculums-varios003.jpg",
+        "image": "curriculums-varios003.jpg",
         "label": "Currículum para un puesto de dependienta"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/curriculums-varios004.jpg",
+        "image": "curriculums-varios004.jpg",
         "label": "Currículum de una ilustradora"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/curriculums-varios005.jpg",
+        "image": "curriculums-varios005.jpg",
         "label": "Currículum de una ilustradora"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/curriculums-varios006.jpg",
+        "image": "curriculums-varios006.jpg",
         "label": "Currículum de una ilustradora"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/curriculums-varios007.jpg",
+        "image": "curriculums-varios007.jpg",
         "label": "Currículum de un delineante"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/curriculums-varios008.jpg",
+        "image": "curriculums-varios008.jpg",
         "label": "Currículum de un delineante"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/curriculums-varios009.jpg",
+        "image": "curriculums-varios009.jpg",
         "label": "Currículum de un delineante"
       }
     ],
@@ -383,15 +383,15 @@
     "descripcion": "Tríptico de Equilibrium",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-equilibrium001.jpg",
+        "image": "triptico-equilibrium001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-equilibrium002.jpg",
+        "image": "triptico-equilibrium002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-equilibrium003.jpg",
+        "image": "triptico-equilibrium003.jpg",
         "label": ""
       }
     ],
@@ -407,31 +407,31 @@
     "descripcion": "Las hojas de carta se imprimen a todo color, con el fondo a sangre, para dar una imagen moderna y diferenciarse de el resto de proveedores de las empresas a las que se dirige. Se hizo una versión en blanco y negro para abaratar costes en las ocasiones en las que así se considerara.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/papeleria-corporativa-para-una-imprenta-digital001.jpg",
+        "image": "papeleria-corporativa-para-una-imprenta-digital001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/papeleria-corporativa-para-una-imprenta-digital002.jpg",
+        "image": "papeleria-corporativa-para-una-imprenta-digital002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/papeleria-corporativa-para-una-imprenta-digital003.jpg",
+        "image": "papeleria-corporativa-para-una-imprenta-digital003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/papeleria-corporativa-para-una-imprenta-digital004.jpg",
+        "image": "papeleria-corporativa-para-una-imprenta-digital004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/papeleria-corporativa-para-una-imprenta-digital005.jpg",
+        "image": "papeleria-corporativa-para-una-imprenta-digital005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/papeleria-corporativa-para-una-imprenta-digital006.jpg",
+        "image": "papeleria-corporativa-para-una-imprenta-digital006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/papeleria-corporativa-para-una-imprenta-digital007.jpg",
+        "image": "papeleria-corporativa-para-una-imprenta-digital007.jpg",
         "label": ""
       }
     ],
@@ -447,23 +447,23 @@
     "descripcion": "Libretas y agendas de la imprenta digital Ida2. Las primeras páginas contienen información comercial de la empresa, y las páginas están personalizadas con el nombre de los clientes a los que se le van a regalar, y el pie de cada página hay una frase motivacional diferente.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/libretas-y-agendas-de-ida2001.jpg",
+        "image": "libretas-y-agendas-de-ida2001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/libretas-y-agendas-de-ida2002.jpg",
+        "image": "libretas-y-agendas-de-ida2002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/libretas-y-agendas-de-ida2003.jpg",
+        "image": "libretas-y-agendas-de-ida2003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/libretas-y-agendas-de-ida2004.jpg",
+        "image": "libretas-y-agendas-de-ida2004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/libretas-y-agendas-de-ida2005.jpg",
+        "image": "libretas-y-agendas-de-ida2005.jpg",
         "label": ""
       }
     ],
@@ -481,27 +481,27 @@
     "descripcion": "Calendario 2017 Recóndita Rick, Ilustración",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-recondita-2017001.jpg",
+        "image": "calendario-recondita-2017001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-recondita-2017002.jpg",
+        "image": "calendario-recondita-2017002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-recondita-2017003.jpg",
+        "image": "calendario-recondita-2017003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-recondita-2017004.jpg",
+        "image": "calendario-recondita-2017004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-recondita-2017005.jpg",
+        "image": "calendario-recondita-2017005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-recondita-2017006.jpg",
+        "image": "calendario-recondita-2017006.jpg",
         "label": ""
       }
     ],
@@ -517,31 +517,31 @@
     "descripcion": "Calendario hecho a raíz de las ilustraciones de los participantes en el Drink&Draw, iniciativa de ReyMono en la que un grupo abierto de ilustradores se reúne semanalmente a dibujar respecto a un tema en concreto. Ilustradores: Manuel Ros Pablo Valls Natu The Rafus Diego Monllau Miguel Guerra Jaume Palop Runninmen Isaías Escudero ReyMono Migue Dobon",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-l-ermita-2016001.jpg",
+        "image": "calendario-l-ermita-2016001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-l-ermita-2016002.jpg",
+        "image": "calendario-l-ermita-2016002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-l-ermita-2016003.jpg",
+        "image": "calendario-l-ermita-2016003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-l-ermita-2016004.jpg",
+        "image": "calendario-l-ermita-2016004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-l-ermita-2016005.jpg",
+        "image": "calendario-l-ermita-2016005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-l-ermita-2016006.jpg",
+        "image": "calendario-l-ermita-2016006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-l-ermita-2016007.jpg",
+        "image": "calendario-l-ermita-2016007.jpg",
         "label": ""
       }
     ],
@@ -557,19 +557,19 @@
     "descripcion": "En 2015, la artista Pilar Belmonte realizó una vidriera para el rosetón principal de la catedral de Albacete, de un diámetro de 4,40m. Para la inauguración, se diseñó este díptico de formato cuadrado con explicaciones del encargo, el proceso de fabricación y de montaje, fotografías del antes y el después, y la historia de la catedral. Además del diseño, se utilizó tecnología de fusión de fotografías en HDR para retratar la vidriera en todo su esplendor, manteniendo visible la penumbra del interior del edificio religioso.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-catedral-de-albacete001.jpg",
+        "image": "triptico-catedral-de-albacete001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-catedral-de-albacete002.jpg",
+        "image": "triptico-catedral-de-albacete002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-catedral-de-albacete003.jpg",
+        "image": "triptico-catedral-de-albacete003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-catedral-de-albacete004.jpg",
+        "image": "triptico-catedral-de-albacete004.jpg",
         "label": ""
       }
     ],
@@ -585,23 +585,23 @@
     "descripcion": "Currículum Lidia Aparicio Currículum-portfolio tipo revista para una fotógrafa creativa",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/curriculum-lidia-aparicio001.jpg",
+        "image": "curriculum-lidia-aparicio001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/curriculum-lidia-aparicio002.jpg",
+        "image": "curriculum-lidia-aparicio002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/curriculum-lidia-aparicio003.jpg",
+        "image": "curriculum-lidia-aparicio003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/curriculum-lidia-aparicio004.jpg",
+        "image": "curriculum-lidia-aparicio004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/curriculum-lidia-aparicio005.jpg",
+        "image": "curriculum-lidia-aparicio005.jpg",
         "label": ""
       }
     ],
@@ -617,31 +617,31 @@
     "descripcion": "Trípticos, tarifas y encuestas personales de la campaña 2015 de Equilibrium Personal Training Studio",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/equilibrium-2015001.jpg",
+        "image": "equilibrium-2015001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/equilibrium-2015002.jpg",
+        "image": "equilibrium-2015002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/equilibrium-2015003.jpg",
+        "image": "equilibrium-2015003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/equilibrium-2015004.jpg",
+        "image": "equilibrium-2015004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/equilibrium-2015005.jpg",
+        "image": "equilibrium-2015005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/equilibrium-2015006.jpg",
+        "image": "equilibrium-2015006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/equilibrium-2015007.jpg",
+        "image": "equilibrium-2015007.jpg",
         "label": ""
       }
     ],
@@ -657,15 +657,15 @@
     "descripcion": "Tarjetas de visita de un entrenador personal",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/tarjetas-pau-benedito001.jpg",
+        "image": "tarjetas-pau-benedito001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/tarjetas-pau-benedito002.jpg",
+        "image": "tarjetas-pau-benedito002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/tarjetas-pau-benedito003.jpg",
+        "image": "tarjetas-pau-benedito003.jpg",
         "label": ""
       }
     ],
@@ -683,30 +683,28 @@
     "descripcion": "Tríptico explicando los servicios de una pareja de magos",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-magvi-y-miranda-de-picas001.jpg",
+        "image": "triptico-magvi-y-miranda-de-picas001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-magvi-y-miranda-de-picas002.jpg",
+        "image": "triptico-magvi-y-miranda-de-picas002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-magvi-y-miranda-de-picas003.jpg",
+        "image": "triptico-magvi-y-miranda-de-picas003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-magvi-y-miranda-de-picas004.jpg",
+        "image": "triptico-magvi-y-miranda-de-picas004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-magvi-y-miranda-de-picas005.jpg",
+        "image": "triptico-magvi-y-miranda-de-picas005.jpg",
         "label": ""
       }
     ],
     "videos": [],
-    "extras": [
-      "Hacer Mockup de ambos juntos"
-    ],
+    "extras": ["Hacer Mockup de ambos juntos"],
     "visible": true,
     "type": "gd",
     "category": "papeleria"
@@ -719,19 +717,19 @@
     "descripcion": "Se realizó un folleto que recorre toda la carrera de la artista, dividida por décadas, de forma amena y con ejemplos de cada etapa pictórica. Se eligió un formato diferente al usual, adaptado a los tamaños máximos de hoja de imprenta, para que quedara un brochure original y práctico",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/poliptico-de-5-palas-exposicion-antologica001.jpg",
+        "image": "poliptico-de-5-palas-exposicion-antologica001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/poliptico-de-5-palas-exposicion-antologica002.jpg",
+        "image": "poliptico-de-5-palas-exposicion-antologica002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/poliptico-de-5-palas-exposicion-antologica003.jpg",
+        "image": "poliptico-de-5-palas-exposicion-antologica003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/poliptico-de-5-palas-exposicion-antologica004.jpg",
+        "image": "poliptico-de-5-palas-exposicion-antologica004.jpg",
         "label": ""
       }
     ],
@@ -747,27 +745,27 @@
     "descripcion": "Calendario 2014 Recóndita Rick, Ilustración",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-recondita-2014001.jpg",
+        "image": "calendario-recondita-2014001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-recondita-2014002.jpg",
+        "image": "calendario-recondita-2014002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-recondita-2014003.jpg",
+        "image": "calendario-recondita-2014003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-recondita-2014004.jpg",
+        "image": "calendario-recondita-2014004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-recondita-2014005.jpg",
+        "image": "calendario-recondita-2014005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/calendario-recondita-2014006.jpg",
+        "image": "calendario-recondita-2014006.jpg",
         "label": ""
       }
     ],
@@ -783,35 +781,35 @@
     "descripcion": "Dípticos SAPEC Productos para el campo",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/dipticos-de-productos-para-el-campo001.jpg",
+        "image": "dipticos-de-productos-para-el-campo001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/dipticos-de-productos-para-el-campo002.jpg",
+        "image": "dipticos-de-productos-para-el-campo002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/dipticos-de-productos-para-el-campo003.jpg",
+        "image": "dipticos-de-productos-para-el-campo003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/dipticos-de-productos-para-el-campo004.jpg",
+        "image": "dipticos-de-productos-para-el-campo004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/dipticos-de-productos-para-el-campo005.jpg",
+        "image": "dipticos-de-productos-para-el-campo005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/dipticos-de-productos-para-el-campo006.jpg",
+        "image": "dipticos-de-productos-para-el-campo006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/dipticos-de-productos-para-el-campo007.jpg",
+        "image": "dipticos-de-productos-para-el-campo007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/dipticos-de-productos-para-el-campo008.jpg",
+        "image": "dipticos-de-productos-para-el-campo008.jpg",
         "label": ""
       }
     ],
@@ -827,19 +825,19 @@
     "descripcion": "Tríptico explicando el catálogo de una empresa de elaboración de pescados",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-gondamar001.jpg",
+        "image": "triptico-gondamar001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-gondamar002.jpg",
+        "image": "triptico-gondamar002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-gondamar003.jpg",
+        "image": "triptico-gondamar003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/triptico-gondamar004.jpg",
+        "image": "triptico-gondamar004.jpg",
         "label": ""
       }
     ],
@@ -855,15 +853,15 @@
     "descripcion": "Díptico diseñado para la empresa de productos para el campo SAPEC AGRO. En el se recogen distintos productos específicos para árboles frutales, con una explicación de sus principios activos y características principales, de una forma muy visual y atractiva.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/guia-de-tratamientos-frutales001.jpg",
+        "image": "guia-de-tratamientos-frutales001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/guia-de-tratamientos-frutales002.jpg",
+        "image": "guia-de-tratamientos-frutales002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/guia-de-tratamientos-frutales003.jpg",
+        "image": "guia-de-tratamientos-frutales003.jpg",
         "label": ""
       }
     ],
@@ -879,15 +877,15 @@
     "descripcion": "Se realizó un folleto explicativo de un proyecto de documental sobre su carrera, enfocado principalmente en su metodología y su imaginación. El recurso que se utilizó fue su «yo» actual diseccionando la mente de su «yo» más joven, analizando su proceso desde un punto de vista más maduro. El proyecto se realizó conjuntamente en La Brigada Gráfica, con ilustración de Recóndita Rick",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/diptico-guillermo-del-toro001.jpg",
+        "image": "diptico-guillermo-del-toro001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/diptico-guillermo-del-toro002.jpg",
+        "image": "diptico-guillermo-del-toro002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/diptico-guillermo-del-toro003.jpg",
+        "image": "diptico-guillermo-del-toro003.jpg",
         "label": ""
       }
     ],
@@ -903,11 +901,11 @@
     "descripcion": "Invitación para una exposición en el Museo Municipal de Albacete",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/invitacion-horizontes-cercanos-e-infinitos001.jpg",
+        "image": "invitacion-horizontes-cercanos-e-infinitos001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/invitacion-horizontes-cercanos-e-infinitos002.jpg",
+        "image": "invitacion-horizontes-cercanos-e-infinitos002.jpg",
         "label": ""
       }
     ],
@@ -923,15 +921,15 @@
     "descripcion": "Fichas técnicas para los productos de una empresa de material médico",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/fichas-admedical001.jpg",
+        "image": "fichas-admedical001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/fichas-admedical002.jpg",
+        "image": "fichas-admedical002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/papeleria/fichas-admedical003.jpg",
+        "image": "fichas-admedical003.jpg",
         "label": ""
       }
     ],

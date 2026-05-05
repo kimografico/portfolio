@@ -7,11 +7,11 @@
     "descripcion": "SAICA – YAMAHA • e-Mail MAILING COMERCIAL",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/mailing-saica-yamaha001.jpg",
+        "image": "mailing-saica-yamaha001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/mailing-saica-yamaha002.jpg",
+        "image": "mailing-saica-yamaha002.jpg",
         "label": ""
       }
     ],
@@ -27,25 +27,25 @@
     "descripcion": "COLORDMAR Logo reveal para una empresa de material deportivo",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/logo-reveal-colordmar001.jpg",
+        "image": "logo-reveal-colordmar001.jpg",
         "label": "17"
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=pgSh4HzMBrE",
+        "image": "https://www.youtube.com/watch?v=pgSh4HzMBrE",
         "label": "Logo Completo"
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=SDj-oGSF6k4",
+        "image": "https://www.youtube.com/watch?v=SDj-oGSF6k4",
         "label": "Anagrama"
       },
       {
-        "ruta": "https://youtu.be/6HpQ_DPxFqc",
+        "image": "https://youtu.be/6HpQ_DPxFqc",
         "label": "Logo Splash"
       },
       {
-        "ruta": "https://youtu.be/-XgtI6ep5FE",
+        "image": "https://youtu.be/-XgtI6ep5FE",
         "label": "Logo Agua"
       }
     ],
@@ -62,13 +62,13 @@
     "descripcion": "Resilent Video promocional de un bioestimulante para la empresa Ascenza",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/resilent001.jpg",
+        "image": "resilent001.jpg",
         "label": "16"
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=nIxaglwZWXQ",
+        "image": "https://www.youtube.com/watch?v=nIxaglwZWXQ",
         "label": ""
       }
     ],
@@ -85,17 +85,17 @@
     "descripcion": "Neón Teaser del single «NEÓN» del disco «La Senda del Agua» de Pilar McCarthy. Hecho con After Effects y Premiere Pro",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/neon-teasers001.jpg",
+        "image": "neon-teasers001.jpg",
         "label": "15"
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=V0YvcFsMlqU",
+        "image": "https://www.youtube.com/watch?v=V0YvcFsMlqU",
         "label": "NEÓN – Primer Teaser"
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=9fybH_B-RXU",
+        "image": "https://www.youtube.com/watch?v=9fybH_B-RXU",
         "label": "NEÓN – Segundo Teaser"
       }
     ],
@@ -112,17 +112,17 @@
     "descripcion": "Contracciones Sonoras Logo reveal para un proyecto musical a cargo de Pilar McCarthy",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/logo-reveal-contracciones-sonoras001.jpg",
+        "image": "logo-reveal-contracciones-sonoras001.jpg",
         "label": "14"
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=RDnTpwjAaZ4&amp;feature=youtu.be",
+        "image": "https://www.youtube.com/watch?v=RDnTpwjAaZ4&amp;feature=youtu.be",
         "label": "Contracciones Sonoras – Versión oscura"
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=402-5JAj024",
+        "image": "https://www.youtube.com/watch?v=402-5JAj024",
         "label": "Contracciones Sonoras – Versión clara (Elegida por el cliente)"
       }
     ],
@@ -139,239 +139,239 @@
     "descripcion": "Ida2 • e-Mail PLANTILLAS Y FIRMAS CORPORATIVAS",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2001.jpg",
+        "image": "faldones-de-correo-ida2001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2002.jpg",
+        "image": "faldones-de-correo-ida2002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2003.jpg",
+        "image": "faldones-de-correo-ida2003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2004.jpg",
+        "image": "faldones-de-correo-ida2004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2005.jpg",
+        "image": "faldones-de-correo-ida2005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2006.jpg",
+        "image": "faldones-de-correo-ida2006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2007.jpg",
+        "image": "faldones-de-correo-ida2007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2008.jpg",
+        "image": "faldones-de-correo-ida2008.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2009.jpg",
+        "image": "faldones-de-correo-ida2009.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2010.jpg",
+        "image": "faldones-de-correo-ida2010.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2011.jpg",
+        "image": "faldones-de-correo-ida2011.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2012.jpg",
+        "image": "faldones-de-correo-ida2012.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2013.jpg",
+        "image": "faldones-de-correo-ida2013.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2014.jpg",
+        "image": "faldones-de-correo-ida2014.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2015.jpg",
+        "image": "faldones-de-correo-ida2015.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2016.jpg",
+        "image": "faldones-de-correo-ida2016.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2017.jpg",
+        "image": "faldones-de-correo-ida2017.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2018.jpg",
+        "image": "faldones-de-correo-ida2018.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2019.jpg",
+        "image": "faldones-de-correo-ida2019.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2020.jpg",
+        "image": "faldones-de-correo-ida2020.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2021.jpg",
+        "image": "faldones-de-correo-ida2021.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2022.jpg",
+        "image": "faldones-de-correo-ida2022.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2023.jpg",
+        "image": "faldones-de-correo-ida2023.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2024.jpg",
+        "image": "faldones-de-correo-ida2024.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2025.jpg",
+        "image": "faldones-de-correo-ida2025.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2026.jpg",
+        "image": "faldones-de-correo-ida2026.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2027.jpg",
+        "image": "faldones-de-correo-ida2027.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2028.jpg",
+        "image": "faldones-de-correo-ida2028.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2029.jpg",
+        "image": "faldones-de-correo-ida2029.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2030.jpg",
+        "image": "faldones-de-correo-ida2030.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2031.jpg",
+        "image": "faldones-de-correo-ida2031.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2032.jpg",
+        "image": "faldones-de-correo-ida2032.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2033.jpg",
+        "image": "faldones-de-correo-ida2033.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2034.jpg",
+        "image": "faldones-de-correo-ida2034.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2035.jpg",
+        "image": "faldones-de-correo-ida2035.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2036.jpg",
+        "image": "faldones-de-correo-ida2036.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2037.jpg",
+        "image": "faldones-de-correo-ida2037.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2038.jpg",
+        "image": "faldones-de-correo-ida2038.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2039.jpg",
+        "image": "faldones-de-correo-ida2039.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2040.jpg",
+        "image": "faldones-de-correo-ida2040.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2041.jpg",
+        "image": "faldones-de-correo-ida2041.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2042.jpg",
+        "image": "faldones-de-correo-ida2042.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2043.jpg",
+        "image": "faldones-de-correo-ida2043.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2044.jpg",
+        "image": "faldones-de-correo-ida2044.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2045.jpg",
+        "image": "faldones-de-correo-ida2045.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2046.jpg",
+        "image": "faldones-de-correo-ida2046.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2047.jpg",
+        "image": "faldones-de-correo-ida2047.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2048.jpg",
+        "image": "faldones-de-correo-ida2048.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2049.jpg",
+        "image": "faldones-de-correo-ida2049.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2050.jpg",
+        "image": "faldones-de-correo-ida2050.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2051.jpg",
+        "image": "faldones-de-correo-ida2051.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2052.jpg",
+        "image": "faldones-de-correo-ida2052.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2053.jpg",
+        "image": "faldones-de-correo-ida2053.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2054.jpg",
+        "image": "faldones-de-correo-ida2054.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2055.jpg",
+        "image": "faldones-de-correo-ida2055.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2056.jpg",
+        "image": "faldones-de-correo-ida2056.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2057.jpg",
+        "image": "faldones-de-correo-ida2057.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2058.jpg",
+        "image": "faldones-de-correo-ida2058.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/faldones-de-correo-ida2059.jpg",
+        "image": "faldones-de-correo-ida2059.jpg",
         "label": ""
       }
     ],
@@ -387,41 +387,41 @@
     "descripcion": "Ida2 Impresión Digital Logo animado para entradillas de video",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/entradillas-ida2001.jpg",
+        "image": "entradillas-ida2001.jpg",
         "label": "13"
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=riLp4eLyebg",
+        "image": "https://www.youtube.com/watch?v=riLp4eLyebg",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=z6vPE8w2r3g",
+        "image": "https://www.youtube.com/watch?v=z6vPE8w2r3g",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=JZaAHyEDd4c",
+        "image": "https://www.youtube.com/watch?v=JZaAHyEDd4c",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=yL6Qu2gVVEM",
+        "image": "https://www.youtube.com/watch?v=yL6Qu2gVVEM",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=2JeaVYw7djs",
+        "image": "https://www.youtube.com/watch?v=2JeaVYw7djs",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=AfcV23Ee_Hw",
+        "image": "https://www.youtube.com/watch?v=AfcV23Ee_Hw",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=6_NHUojN018",
+        "image": "https://www.youtube.com/watch?v=6_NHUojN018",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=4CMevHQK9Wc",
+        "image": "https://www.youtube.com/watch?v=4CMevHQK9Wc",
         "label": ""
       }
     ],
@@ -438,17 +438,17 @@
     "descripcion": "Recóndita Logo animado para entradillas de video. Logo Reveal hecho en After Effects mediante template adaptado",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/entradillas-recondita001.jpg",
+        "image": "entradillas-recondita001.jpg",
         "label": "12"
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=KuAuIgIISig",
+        "image": "https://www.youtube.com/watch?v=KuAuIgIISig",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=m5wWtWWHbQE",
+        "image": "https://www.youtube.com/watch?v=m5wWtWWHbQE",
         "label": ""
       }
     ],
@@ -465,13 +465,13 @@
     "descripcion": "Lidia Aparicio Logo animado para entradillas de video. Logo Reveal hecho en After Effects mediante template adaptado",
     "imagenes": [
       {
-        "ruta": "blob:http://localhost:5173/14dbd4bd-7d17-4829-a4cb-a60397fcaef9",
+        "image": "blob:http://localhost:5173/14dbd4bd-7d17-4829-a4cb-a60397fcaef9",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=sRxDOqfilJU",
+        "image": "https://www.youtube.com/watch?v=sRxDOqfilJU",
         "label": ""
       }
     ],
@@ -488,77 +488,77 @@
     "descripcion": "Kimográfico Logo animado para entradillas de video. Logo Reveal hecho en After Effects mediante template adaptado",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/entradillas-kimografico001.jpg",
+        "image": "entradillas-kimografico001.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=jsZZMKVd7qs",
+        "image": "https://www.youtube.com/watch?v=jsZZMKVd7qs",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=IuMru8yqkxU",
+        "image": "https://www.youtube.com/watch?v=IuMru8yqkxU",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=uZdRf0POick",
+        "image": "https://www.youtube.com/watch?v=uZdRf0POick",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=yX05K14v5ms",
+        "image": "https://www.youtube.com/watch?v=yX05K14v5ms",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=18Miz5swcEI",
+        "image": "https://www.youtube.com/watch?v=18Miz5swcEI",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=n16oxKhJYhk",
+        "image": "https://www.youtube.com/watch?v=n16oxKhJYhk",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=apON_qxUgmg",
+        "image": "https://www.youtube.com/watch?v=apON_qxUgmg",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=0D5Gbt6BYKA",
+        "image": "https://www.youtube.com/watch?v=0D5Gbt6BYKA",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=rcbLZWAiEbM",
+        "image": "https://www.youtube.com/watch?v=rcbLZWAiEbM",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=tUvND5nDNf0",
+        "image": "https://www.youtube.com/watch?v=tUvND5nDNf0",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=PDdT2Vr8eAs",
+        "image": "https://www.youtube.com/watch?v=PDdT2Vr8eAs",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=Xe7eQ0EUOgU",
+        "image": "https://www.youtube.com/watch?v=Xe7eQ0EUOgU",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=MMpegYS3D5g",
+        "image": "https://www.youtube.com/watch?v=MMpegYS3D5g",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=dRMczyNZ6Zs",
+        "image": "https://www.youtube.com/watch?v=dRMczyNZ6Zs",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=wPsfPw-kDrM",
+        "image": "https://www.youtube.com/watch?v=wPsfPw-kDrM",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=dMMGjQq0kJo",
+        "image": "https://www.youtube.com/watch?v=dMMGjQq0kJo",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=rZQIL7E9SmY",
+        "image": "https://www.youtube.com/watch?v=rZQIL7E9SmY",
         "label": ""
       }
     ],
@@ -575,17 +575,17 @@
     "descripcion": "Estaca Video promocional de un herbicida para la empresa Sapec Agro / Ascenza",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/estaca001.jpg",
+        "image": "estaca001.jpg",
         "label": "9"
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=taCo0YxCE7U",
+        "image": "https://www.youtube.com/watch?v=taCo0YxCE7U",
         "label": "Video infografía para Sapec Agro, explicando de forma amena las características del producto 2 de Enero de 2018"
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=KB2M5_H6Efs&amp;t=13s",
+        "image": "https://www.youtube.com/watch?v=KB2M5_H6Efs&amp;t=13s",
         "label": "Versión actualizada al cambio de nombre/imagen de la empresa a Ascenza 5 de Noviembre de 2019"
       }
     ],
@@ -602,37 +602,37 @@
     "descripcion": "Jorge Carrasco Títulos para una serie de videodocumentales y píldoras promocionales para redes sociales de un conjunto de cursos Vídeo y fotografía: Lidia Aparicio",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/titulos-para-jorge-carrasco001.jpg",
+        "image": "titulos-para-jorge-carrasco001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/titulos-para-jorge-carrasco002.jpg",
+        "image": "titulos-para-jorge-carrasco002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/titulos-para-jorge-carrasco003.jpg",
+        "image": "titulos-para-jorge-carrasco003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/titulos-para-jorge-carrasco004.jpg",
+        "image": "titulos-para-jorge-carrasco004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/titulos-para-jorge-carrasco005.jpg",
+        "image": "titulos-para-jorge-carrasco005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/titulos-para-jorge-carrasco006.jpg",
+        "image": "titulos-para-jorge-carrasco006.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=jaRvV274Vsg",
+        "image": "https://www.youtube.com/watch?v=jaRvV274Vsg",
         "label": "Versión original para soportes digitales"
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=XsLxSETAuJA",
+        "image": "https://www.youtube.com/watch?v=XsLxSETAuJA",
         "label": "Versión cuadrada para redes sociales"
       }
     ],
@@ -647,25 +647,25 @@
     "descripcion": "Juegos PC PRUEBAS Y TOMA DE CONTACTO",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/pruebas-de-juegos-de-ordenador001.jpg",
+        "image": "pruebas-de-juegos-de-ordenador001.jpg",
         "label": "8"
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=oOWYo4txBpI",
+        "image": "https://www.youtube.com/watch?v=oOWYo4txBpI",
         "label": "Prueba de juego de plataformas con colores planos"
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=VmJjW96Jwm4",
+        "image": "https://www.youtube.com/watch?v=VmJjW96Jwm4",
         "label": "Simple prueba de movimientos (dibujos de ReyMono)"
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=FGfJyvHS7RM",
+        "image": "https://www.youtube.com/watch?v=FGfJyvHS7RM",
         "label": "Prueba de juego de plataformas de temática vikinga"
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=TZDBH2J5bCQ",
+        "image": "https://www.youtube.com/watch?v=TZDBH2J5bCQ",
         "label": "Prueba de juego infinito"
       }
     ],
@@ -682,13 +682,13 @@
     "descripcion": "Missylk Video promocional de un bioestimulante para la empresa Sapec Agro S.A.U.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/missylk001.jpg",
+        "image": "missylk001.jpg",
         "label": "7"
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=q1LzPf4hqsA",
+        "image": "https://www.youtube.com/watch?v=q1LzPf4hqsA",
         "label": "Videoentrevista a un agricultor sobre los beneficios de utilizar el producto"
       }
     ],
@@ -705,19 +705,19 @@
     "descripcion": "Newsletter Pierdeloss90 Newsletter que forman parte de un producto entrenamiento y dieta para pérdida de peso.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/newsletter-pierdeloss90001.jpg",
+        "image": "newsletter-pierdeloss90001.jpg",
         "label": "Estos se combinan en 13 envíos, coincidiendo con las 13 semanas que dura el entrenamiento"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/newsletter-pierdeloss90002.jpg",
+        "image": "newsletter-pierdeloss90002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/newsletter-pierdeloss90003.jpg",
+        "image": "newsletter-pierdeloss90003.jpg",
         "label": "Los newsletter te envían de forma periódica, con consejos e instrucciones para realizar un seguimiento personalizado del cliente"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/newsletter-pierdeloss90004.jpg",
+        "image": "newsletter-pierdeloss90004.jpg",
         "label": "Se realizaron un total de 91 módulos diferentes para conformar los newsletters"
       }
     ],
@@ -735,13 +735,13 @@
     "descripcion": "PierdeLoss90 Logo animado para entradillas de video. Logo Reveal hecho en After Effects mediante template adaptado",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/entradilla-pierdeloss90001.jpg",
+        "image": "entradilla-pierdeloss90001.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=CVL5Dd49yVQ",
+        "image": "https://www.youtube.com/watch?v=CVL5Dd49yVQ",
         "label": ""
       }
     ],
@@ -758,13 +758,13 @@
     "descripcion": "Register 25WG Video promocional de un herbicida para la empresa Sapec Agro S.A.U.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/register001.jpg",
+        "image": "register001.jpg",
         "label": "5"
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=QEscUC-fJmI",
+        "image": "https://www.youtube.com/watch?v=QEscUC-fJmI",
         "label": "Infografía animada explicando las características y ventajas del herbicida Register 25WG"
       }
     ],
@@ -781,53 +781,53 @@
     "descripcion": "Cuñas Equilibrium Cuñas realizadas para la promoción en un sistema audiovisual presente en las instalaciones del cliente",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/cunas-de-equilibrium001.jpg",
+        "image": "cunas-de-equilibrium001.jpg",
         "label": "3"
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=ZxTiYptIzak",
+        "image": "https://www.youtube.com/watch?v=ZxTiYptIzak",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=7MVse0EY0iY",
+        "image": "https://www.youtube.com/watch?v=7MVse0EY0iY",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=-ubgXU8ld48",
+        "image": "https://www.youtube.com/watch?v=-ubgXU8ld48",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=FfvptX75sd8",
+        "image": "https://www.youtube.com/watch?v=FfvptX75sd8",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=ct4J9Id6aqY",
+        "image": "https://www.youtube.com/watch?v=ct4J9Id6aqY",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=Icdd3tPHXvc",
+        "image": "https://www.youtube.com/watch?v=Icdd3tPHXvc",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=IilraJF2RQ0",
+        "image": "https://www.youtube.com/watch?v=IilraJF2RQ0",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=h9wHxvCQQKI",
+        "image": "https://www.youtube.com/watch?v=h9wHxvCQQKI",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=rGL5amkZAsU",
+        "image": "https://www.youtube.com/watch?v=rGL5amkZAsU",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=3BE7WWNjh40",
+        "image": "https://www.youtube.com/watch?v=3BE7WWNjh40",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=pkpU0WRqQEQ",
+        "image": "https://www.youtube.com/watch?v=pkpU0WRqQEQ",
         "label": ""
       }
     ],
@@ -844,17 +844,17 @@
     "descripcion": "Felicitaciones de Navidad Sapec Agro // Ascenza",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/navidad-sapec-ascenza001.jpg",
+        "image": "navidad-sapec-ascenza001.jpg",
         "label": "4"
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=MnCwaZAwdOI",
+        "image": "https://www.youtube.com/watch?v=MnCwaZAwdOI",
         "label": "Diseñada en Premiere Pro"
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=mZImbfAUfS8",
+        "image": "https://www.youtube.com/watch?v=mZImbfAUfS8",
         "label": "Diseñada en After Effects"
       }
     ],
@@ -871,63 +871,63 @@
     "descripcion": "Encuestas interactivas para Equilibrium Encuesta inicial que se le hace a los clientes cuando se apuntan, para ofrecer el servicio más ajustado a las necesidades del mismo Los campos son interactivos para que el personal del gimnasio pueda rellenarlos de forma fácil y ágil, resultando en un servicio más rápido, menos errores, y una imagen de modernidad y alta calidad del servicio.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium001.jpg",
+        "image": "encuesta-equilibrium001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium002.jpg",
+        "image": "encuesta-equilibrium002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium003.jpg",
+        "image": "encuesta-equilibrium003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium004.jpg",
+        "image": "encuesta-equilibrium004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium005.jpg",
+        "image": "encuesta-equilibrium005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium006.jpg",
+        "image": "encuesta-equilibrium006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium007.jpg",
+        "image": "encuesta-equilibrium007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium008.jpg",
+        "image": "encuesta-equilibrium008.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium009.jpg",
+        "image": "encuesta-equilibrium009.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium010.jpg",
+        "image": "encuesta-equilibrium010.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium011.jpg",
+        "image": "encuesta-equilibrium011.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium012.jpg",
+        "image": "encuesta-equilibrium012.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium013.jpg",
+        "image": "encuesta-equilibrium013.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium014.jpg",
+        "image": "encuesta-equilibrium014.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/encuesta-equilibrium015.jpg",
+        "image": "encuesta-equilibrium015.jpg",
         "label": ""
       }
     ],
@@ -945,21 +945,21 @@
     "descripcion": "Videoinfografías para Ida2 Videotutoriales explicativos para facilitar la comprensión del cliente en cuestiones técnicas",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/video-faqs-ida2001.jpg",
+        "image": "video-faqs-ida2001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/video-faqs-ida2002.jpg",
+        "image": "video-faqs-ida2002.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=Xz_IjiIZnPg",
+        "image": "https://www.youtube.com/watch?v=Xz_IjiIZnPg",
         "label": "Digital vs. Offset – Diferencias entre las dos técnicas de impresión, y en que casos es mejor o peor cada una de ellas"
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=CqW7Zj_pQss",
+        "image": "https://www.youtube.com/watch?v=CqW7Zj_pQss",
         "label": "Preparación de artes finales – Consideraciones a tener en cuenta a la hora de preparar un arte final correctamente para imprenta"
       }
     ],
@@ -976,13 +976,13 @@
     "descripcion": "Digital vs. Offset Videoinfografía explicativa con las diferencias entre las dos técnicas de impresión, y en que casos es mejor o peor cada una de ellas",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/video-digital-vs-offset-ida2001.jpg",
+        "image": "video-digital-vs-offset-ida2001.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=4P0bLjXrjPc",
+        "image": "https://www.youtube.com/watch?v=4P0bLjXrjPc",
         "label": "Digital vs. Offset – Version en Español"
       }
     ],
@@ -999,41 +999,41 @@
     "descripcion": "Paseo virtual 3D por el Museo Municipal de Albacete Aplicación diseñada para organización de las obras en la exposición «Horizontes cercanos e infinitos» de Pilar Belmonte Se hizo un plano 3D de la sala del Museo en la que se iba a organizar la exposición, y se organizaron los cuadros sobre los render, de forma que se pudiera hacer una visita virtual por la exposición y así comprobar que la organización de los mismos era la adecuada para la artista.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/museo-3d001.jpg",
+        "image": "museo-3d001.jpg",
         "label": "Resultado final – Prediseño en el programa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/museo-3d002.jpg",
+        "image": "museo-3d002.jpg",
         "label": "Resultado final – Exposición una vez montada"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/museo-3d003.jpg",
+        "image": "museo-3d003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/museo-3d004.jpg",
+        "image": "museo-3d004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/museo-3d005.jpg",
+        "image": "museo-3d005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/museo-3d006.jpg",
+        "image": "museo-3d006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/museo-3d007.jpg",
+        "image": "museo-3d007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/multimedia/museo-3d008.jpg",
+        "image": "museo-3d008.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=gjB2e34vKnA",
+        "image": "https://www.youtube.com/watch?v=gjB2e34vKnA",
         "label": "En el vídeo se puede observar la utilización del programa, los puntos de vista 3D superpuestos en un plano de la planta de cada piso, y un triángulo que muestra la dirección a la que se está mirando en el visor."
       }
     ],

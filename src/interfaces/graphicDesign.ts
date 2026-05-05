@@ -4,7 +4,7 @@ export interface GraphicDesignProject {
   title: string;
   cliente: string;
   descripcion: string;
-  imagenes: { ruta: string; label: string }[];
-  videos?: { ruta: string; label: string }[];
+  imagenes: { image: string; label: string }[];
+  videos?: { image: string; label: string }[];
   extras?: unknown[];
 }

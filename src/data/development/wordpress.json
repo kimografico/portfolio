@@ -8,65 +8,65 @@
     "stack": ["WordPress", "CSS", "HTML"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas001.jpg",
+        "image": "xerri-espumas001.jpg",
         "label": "Portada – Con toda la información organizada en navegación vertical."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas002.jpg",
+        "image": "xerri-espumas002.jpg",
         "label": "Portada – Apartado «Quienes somos» con carrusel de productos. Se puede apreciar el menú desplegable con los diferentes apartados"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas003.jpg",
+        "image": "xerri-espumas003.jpg",
         "label": "Portada – Selección de productos destacados."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas004.jpg",
+        "image": "xerri-espumas004.jpg",
         "label": "Catálogo – Catálogo de productos jerarquizado."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas005.jpg",
+        "image": "xerri-espumas005.jpg",
         "label": "Producto – Página de producto con galería de fotos con lightbox, información del producto, tablas de tamaños y grosores y enlaces a materiales y contacto"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas006.jpg",
+        "image": "xerri-espumas006.jpg",
         "label": "Producto – Tabla en formato vectorial para poder hacer zoom"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas007.jpg",
+        "image": "xerri-espumas007.jpg",
         "label": "Producto – Galería-carrusel de piezas troqueladas."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas008.jpg",
+        "image": "xerri-espumas008.jpg",
         "label": "Materiales – Página de material, con galería de imágenes, ficha técnica, y enlace a productos fabricados con dicho material."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas009.jpg",
+        "image": "xerri-espumas009.jpg",
         "label": "Productos deportivos – Página de productos deportivos fabricados por la empresa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas010.jpg",
+        "image": "xerri-espumas010.jpg",
         "label": "Lightbox – En cada galería, al clicar en la imagen lleva a un lightbox donde se puede ver la imagen en grande, y hacer zoom."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas011.jpg",
+        "image": "xerri-espumas011.jpg",
         "label": "Contacto – Página de contacto con formulario, aceptación de Políticas de privacidad y mapa interactivo con la localización de la empresa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas012.jpg",
+        "image": "xerri-espumas012.jpg",
         "label": "Búsqueda – Al ser un catálogo extenso, se implementó un sistema de búsqueda para encontrar el producto deseado fácilmente"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas013.jpg",
+        "image": "xerri-espumas013.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=AjybgUwQIII",
+        "image": "https://www.youtube.com/watch?v=AjybgUwQIII",
         "label": "Visualización en video de la navegación por la web"
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=nh7x4-RPjgM",
+        "image": "https://www.youtube.com/watch?v=nh7x4-RPjgM",
         "label": "Visualización en video de la navegación por la web"
       }
     ],
@@ -82,43 +82,43 @@
     "stack": ["WordPress", "woocommerce", "Javascript", "CSS", "HTML"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/colordmar001.jpg",
+        "image": "colordmar001.jpg",
         "label": "Portada – Con toda la información organizada en navegación vertical."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/colordmar002.jpg",
+        "image": "colordmar002.jpg",
         "label": "Producto estrella – Información sobre el Ruddersail system y acceso a su compra"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/colordmar003.jpg",
+        "image": "colordmar003.jpg",
         "label": "Vela ligera – Información sobre el servicio de confección de velas"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/colordmar004.jpg",
+        "image": "colordmar004.jpg",
         "label": "Reparación de velas – Página con información sobre el servicio de reparación de velas, con un formulario de contacto específico para ello."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/colordmar005.jpg",
+        "image": "colordmar005.jpg",
         "label": "Tienda – Productos en venta en tienda online, categorizados en distintos apartados."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/colordmar006.jpg",
+        "image": "colordmar006.jpg",
         "label": "Opciones – Algunos productos presentan variaciones de precio según color, forma o tamaño."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/colordmar007.jpg",
+        "image": "colordmar007.jpg",
         "label": "Descripción – En cada producto tenemos una amplia descripción, con medidas, imágenes y un apartado con valoraciones de otros compradores."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/colordmar008.jpg",
+        "image": "colordmar008.jpg",
         "label": "Carrito – Al finalizar el pago se puede aplicar cupones de descuento, cambiar la cantidad o eliminar algún producto en el último momento"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/colordmar009.jpg",
+        "image": "colordmar009.jpg",
         "label": "Contacto – Formulario de contacto general, con seguridad anti-spam invisible, para evitar los molestos «captchas»"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/colordmar010.jpg",
+        "image": "colordmar010.jpg",
         "label": ""
       }
     ],
@@ -137,31 +137,31 @@
     "stack": ["WordPress", "Javascript", "CSS", "HTML"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/crece-tu-empresa001.jpg",
+        "image": "crece-tu-empresa001.jpg",
         "label": "Portada – Con toda la información organizada en navegación vertical."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/crece-tu-empresa002.jpg",
+        "image": "crece-tu-empresa002.jpg",
         "label": "Servicios – En cada apartado dedicado a un servicio hay un texto explicativo general, y una columna de iconos con la explicación de cada apartado del mismo"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/crece-tu-empresa003.jpg",
+        "image": "crece-tu-empresa003.jpg",
         "label": "Portada – Más información y contadores con información sobre el recorrido de la empresa"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/crece-tu-empresa004.jpg",
+        "image": "crece-tu-empresa004.jpg",
         "label": "Servicios – La web se presenta con bloques de información que entran con una animación fluída, haciendo la navegación amena."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/crece-tu-empresa005.jpg",
+        "image": "crece-tu-empresa005.jpg",
         "label": "Nosotros – Apartado de quienes somos, con un breve texto explicativo"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/crece-tu-empresa006.jpg",
+        "image": "crece-tu-empresa006.jpg",
         "label": "Footer – Con un sitemap de la web e información de contacto"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/crece-tu-empresa007.jpg",
+        "image": "crece-tu-empresa007.jpg",
         "label": ""
       }
     ],
@@ -178,35 +178,35 @@
     "stack": ["WordPress", "Javascript", "CSS", "HTML"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/juan-mas001.jpg",
+        "image": "juan-mas001.jpg",
         "label": "Biografía – Sección con tres subsecciones: Exposiciones, Currículum y Bibliografía"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/juan-mas002.jpg",
+        "image": "juan-mas002.jpg",
         "label": "Críticas – Criticas en diversos medios"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/juan-mas003.jpg",
+        "image": "juan-mas003.jpg",
         "label": "Contacto – Con seguridad Honeypot y política de privacidad."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/juan-mas004.jpg",
+        "image": "juan-mas004.jpg",
         "label": "Obra – Dividida en secciones según temática, con información de cada obra, y un apartado de venta"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/juan-mas005.jpg",
+        "image": "juan-mas005.jpg",
         "label": "Exposiciones – Expos en las que ha participado"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/juan-mas006.jpg",
+        "image": "juan-mas006.jpg",
         "label": "Bibliografía – Libros en los que ha sido mencionado el artista"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/juan-mas007.jpg",
+        "image": "juan-mas007.jpg",
         "label": "Galería – Navegación vertical por páginas y con posibilidad de ver la obra completa o por temática"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/juan-mas008.jpg",
+        "image": "juan-mas008.jpg",
         "label": ""
       }
     ],
@@ -223,43 +223,43 @@
     "stack": ["WordPress", "Prestashop", "Javascript", "CSS", "HTML"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/cache-croche001.jpg",
+        "image": "cache-croche001.jpg",
         "label": "Menú Inicio – Con carrusel de imágenes"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/cache-croche002.jpg",
+        "image": "cache-croche002.jpg",
         "label": "Atelier – Localización y contacto del taller"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/cache-croche003.jpg",
+        "image": "cache-croche003.jpg",
         "label": "Prensa – Extractos de prensa, TV y radio"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/cache-croche004.jpg",
+        "image": "cache-croche004.jpg",
         "label": "Colecciones – Entradas explicativas de cada una"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/cache-croche005.jpg",
+        "image": "cache-croche005.jpg",
         "label": "Blog – Entradas de blog categorizadas"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/cache-croche006.jpg",
+        "image": "cache-croche006.jpg",
         "label": "Tienda Online – Con base en CMS Prestashop"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/cache-croche007.jpg",
+        "image": "cache-croche007.jpg",
         "label": "Celebrities – Famosos con ropa de la diseñadora"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/cache-croche008.jpg",
+        "image": "cache-croche008.jpg",
         "label": "Contacto – Formulario de contacto y horario"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/cache-croche009.jpg",
+        "image": "cache-croche009.jpg",
         "label": "Tienda Online – Ejemplo de sección"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/cache-croche010.jpg",
+        "image": "cache-croche010.jpg",
         "label": ""
       }
     ],
@@ -278,49 +278,49 @@
     "stack": ["WordPress", "Javascript", "CSS", "HTML"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/pilar-belmonte-3001.jpg",
+        "image": "pilar-belmonte-3001.jpg",
         "label": "Menú Inicio – Con un breve texto de introducción e iconos de lo más relevante"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/pilar-belmonte-3002.jpg",
+        "image": "pilar-belmonte-3002.jpg",
         "label": "Venta – En este aparatado vemos las obras que están en venta, y su rango de precios"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/pilar-belmonte-3003.jpg",
+        "image": "pilar-belmonte-3003.jpg",
         "label": "Ejemplo de un apartado – Ordenado por fecha"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/pilar-belmonte-3004.jpg",
+        "image": "pilar-belmonte-3004.jpg",
         "label": "Galería – Obras jerarquizadas por técnica, se puede entrar a cada una para mas información"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/pilar-belmonte-3005.jpg",
+        "image": "pilar-belmonte-3005.jpg",
         "label": "Currículum – Extenso currículum jerarquizado por apartados, con exposiciones, publicaciones, etc."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/pilar-belmonte-3006.jpg",
+        "image": "pilar-belmonte-3006.jpg",
         "label": "Eventos – Con videos de algunos eventos"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/pilar-belmonte-3007.jpg",
+        "image": "pilar-belmonte-3007.jpg",
         "label": "Ejemplo de obra – Donde podemos ver el proceso de creación y montaje de este rosetón."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/pilar-belmonte-3008.jpg",
+        "image": "pilar-belmonte-3008.jpg",
         "label": "Currículum resumido – Resumen redactado del currículum para facilitar la búsqueda de info"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/pilar-belmonte-3009.jpg",
+        "image": "pilar-belmonte-3009.jpg",
         "label": "Contacto – Formulario de contacto"
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=Qewh6X4FcFM",
+        "image": "https://www.youtube.com/watch?v=Qewh6X4FcFM",
         "label": ""
       },
       {
-        "ruta": "https://youtu.be/KFRlakMTyGY",
+        "image": "https://youtu.be/KFRlakMTyGY",
         "label": ""
       }
     ],
@@ -336,37 +336,37 @@
     "stack": ["HTML", "CSS", "PHP", "AJAX", "JAVASCRIPT", "TPV Virtual"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/casa-rural-roman001.jpg",
+        "image": "casa-rural-roman001.jpg",
         "label": "Descripción – Historia de la casa, características de la misma y hoja de normas a seguir durante la estancia."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/casa-rural-roman002.jpg",
+        "image": "casa-rural-roman002.jpg",
         "label": "Actividades – Diferentes actividades con sus respectivas descripciones, fotos, etc."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/casa-rural-roman003.jpg",
+        "image": "casa-rural-roman003.jpg",
         "label": "Contacto – Formulario de contacto con google maps integrado. El formulario tiene un sistema honeypot de seguridad anti-spam"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/casa-rural-roman004.jpg",
+        "image": "casa-rural-roman004.jpg",
         "label": "Galería – Fotos de las diferentes estancias de la casa, asi como de los alrededores."
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/casa-rural-roman005.jpg",
+        "image": "casa-rural-roman005.jpg",
         "label": "Precios – Tabla de precios"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/casa-rural-roman006.jpg",
+        "image": "casa-rural-roman006.jpg",
         "label": "Lightbox – Integrado en la galería"
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/casa-rural-roman007.jpg",
+        "image": "casa-rural-roman007.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/5sQAndJn6Jc",
+        "image": "https://youtu.be/5sQAndJn6Jc",
         "label": ""
       }
     ],
@@ -384,23 +384,23 @@
     "stack": ["WordPress", "HTML", "CSS", "JAVASCRIPT"],
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/odin-hidromiel003.jpg",
+        "image": "odin-hidromiel003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/odin-hidromiel004.jpg",
+        "image": "odin-hidromiel004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/odin-hidromiel005.jpg",
+        "image": "odin-hidromiel005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/odin-hidromiel001.jpg",
+        "image": "odin-hidromiel001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/web/wordpress/odin-hidromiel002.jpg",
+        "image": "odin-hidromiel002.jpg",
         "label": ""
       }
     ],

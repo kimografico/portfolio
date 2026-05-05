@@ -6,31 +6,31 @@ Reescribir recent-works
 
 ---
 
-Parece que el editar no esta añadiendo el prefijo portfolio
+Revisar que el editar no este añadiendo el prefijo portfolio
 
 ---
 
-"ruta": "/portfolio/images/portfolio/web/wordpress/xerri-espumas002.jpg", deberia ser mucho más corto, no depender de la estructura del proyecto. la ruta deberia ir en app.ts
-este cambio afecta también a la seccion admin de añadir o editar, ya que al subir una imagen se genera el json con esta estructura
+Modo oscuro falla en:
+
+- books-view-table-btn
+- inputs de texto en addProject, ProjectTable y BookTable (filtros)
+- modales
+- fondo del mapa
+- fondo de iconGallery
 
 ---
 
-/\*\*
+**Añadir**
 
-- Configuración global de la aplicación
-- Sincronizado con vite.config.ts y main.tsx
-  \*/
+- Gestión de recent-works (all, graphicDesign, developer)
+- Curriculum (ver como se gestiona)
 
-// Prefijo base para rutas internas (React Router, navegación)
-export const APP_BASENAME = '/portfolio';
+---
 
-// Prefijos para rutas de imágenes públicas (solo si no cambian por entorno)
-export const IMAGES_PATH = `${APP_BASENAME}/images`;
-export const BOOK_COVERS_PATH = `${IMAGES_PATH}/books`;
-export const ILLUSTRATIONS_PATH = `${IMAGES_PATH}/illustrations`;
-export const UI_IMG_PATH = `${IMAGES_PATH}/ui`;
+El modo oscuro necesita algunos arreglos. La solución en la mayoría de ellos sería tirar del src/styles/variables.css para que los colores cambien al cambiar de modo. Si hay que añadir alguno, se añade (pero si ya existe alguno parecido nos lo ahorramos).
 
-// Prefijo para rutas de datos locales (si accedes a JSONs desde el frontend)
-export const DATA_PATH = `${APP_BASENAME}/data`;
-
-// Puedes añadir más rutas base aquí según crezcan tus necesidades
+- books-view-table-btn (Cambia de color el fondo pero el texto se mantiene negro)
+- inputs de texto en addProject, ProjectTable y BookTable (filtros) (Los inputs siguen con fondo blanco y texto gris/negro en darkmode)
+- modales (el fondo no cambia, seguramente esté tirando de otros colores de css)
+- fondo del mapa (se queda azul claro, deberia cambiar a negro puro)
+- fondo de iconGallery (se queda el fondo claro, deberia ser fondo negro y icono claro)

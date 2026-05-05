@@ -2,21 +2,21 @@
   {
     "id": "004",
     "nombre": "Caballo Equilibrium PTS",
-    "ilustracion": "caballo-eq-001.png",
+    "image": "caballo-eq-001.jpg",
     "fecha": "08/2017",
     "cliente": "Equilibrium Personal Training Studio",
     "descripcion": "Ilustración para la pared de un gimnasio en Torrente, Valencia.",
     "imagenesExtra": [
       {
-        "ruta": "caballo-eq-002.jpg",
+        "image": "caballo-eq-002.jpg",
         "label": "Mockup de la ilustración en la pared del gimnasio."
       },
       {
-        "ruta": "caballo-eq-003.jpg",
+        "image": "caballo-eq-003.jpg",
         "label": "La pared antes del mural."
       },
       {
-        "ruta": "caballo-eq-004.jpg",
+        "image": "caballo-eq-004.jpg",
         "label": "Espacio en blanco"
       }
     ]
@@ -24,29 +24,29 @@
   {
     "id": "005",
     "nombre": "Decathlon",
-    "ilustracion": "decathlon-001.jpg",
+    "image": "decathlon-001.jpg",
     "fecha": "01/2020",
     "cliente": "Decathlon",
     "descripcion": "Ilustración para la pared de las oficinas de Decathlon en Valencia.",
     "imagenesExtra": [
       {
-        "ruta": "decathlon-002.jpg",
+        "image": "decathlon-002.jpg",
         "label": "Ilustración formato birdseye"
       },
       {
-        "ruta": "decathlon-003.jpg",
+        "image": "decathlon-003.jpg",
         "label": "Cartel con espacios para escribir anotaciones"
       },
       {
-        "ruta": "decathlon-004.jpg",
+        "image": "decathlon-004.jpg",
         "label": "Detalle de la ilustración"
       },
       {
-        "ruta": "decathlon-005.jpg",
+        "image": "decathlon-005.jpg",
         "label": "Foto en la pared de las oficinas de Decathlon en Valencia"
       },
       {
-        "ruta": "decathlon-006.jpg",
+        "image": "decathlon-006.jpg",
         "label": "Foto en la pared de las oficinas de Decathlon en Valencia"
       }
     ]
@@ -54,17 +54,17 @@
   {
     "id": "006",
     "nombre": "Dragón Negro",
-    "ilustracion": "dragon-negro-001.jpg",
+    "image": "dragon-negro-001.jpg",
     "fecha": "10/2018",
     "cliente": "",
     "descripcion": "",
     "imagenesExtra": [
       {
-        "ruta": "dragon-negro-002.jpg",
+        "image": "dragon-negro-002.jpg",
         "label": ""
       },
       {
-        "ruta": "dragon-negro-003.jpg",
+        "image": "dragon-negro-003.jpg",
         "label": ""
       }
     ]
@@ -72,17 +72,17 @@
   {
     "id": "007",
     "nombre": "Fauno",
-    "ilustracion": "fauno-001.jpg",
+    "image": "fauno-001.jpg",
     "fecha": "10/2018",
     "cliente": "",
     "descripcion": "",
     "imagenesExtra": [
       {
-        "ruta": "fauno-002.jpg",
+        "image": "fauno-002.jpg",
         "label": "Con menos detalles"
       },
       {
-        "ruta": "fauno-003.jpg",
+        "image": "fauno-003.jpg",
         "label": "Algunos detalles más"
       }
     ]
@@ -90,13 +90,13 @@
   {
     "id": "008",
     "nombre": "Rey Mono",
-    "ilustracion": "reymono-002.jpg",
+    "image": "reymono-002.jpg",
     "fecha": "06/2012",
     "cliente": "La Brigada Gráfica",
     "descripcion": "",
     "imagenesExtra": [
       {
-        "ruta": "reymono-001.jpg",
+        "image": "reymono-001.jpg",
         "label": ""
       }
     ]
@@ -104,21 +104,21 @@
   {
     "id": "009",
     "nombre": "Serpiente Howi",
-    "ilustracion": "serpiente-howi-001.png",
+    "image": "serpiente-howi-001.jpg",
     "fecha": "02/2021",
     "cliente": "Howi",
     "descripcion": "Ilustración para los remos de una deportista de kayak-polo",
     "imagenesExtra": [
       {
-        "ruta": "serpiente-howi-002.jpg",
+        "image": "serpiente-howi-002.jpg",
         "label": "Ilustración en formato vertical"
       },
       {
-        "ruta": "serpiente-howi-003.jpg",
+        "image": "serpiente-howi-003.jpg",
         "label": "Mockup en dibujo"
       },
       {
-        "ruta": "serpiente-howi-004.jpg",
+        "image": "serpiente-howi-004.jpg",
         "label": "El remo donde va a ir la ilustración"
       }
     ]
@@ -126,17 +126,17 @@
   {
     "id": "010",
     "nombre": "Star Wars",
-    "ilustracion": "starwars-001.jpg",
+    "image": "starwars-001.jpg",
     "fecha": "11/2018",
     "cliente": "",
     "descripcion": "",
     "imagenesExtra": [
       {
-        "ruta": "starwars-002.jpg",
+        "image": "starwars-002.jpg",
         "label": "Sith"
       },
       {
-        "ruta": "starwars-003.jpg",
+        "image": "starwars-003.jpg",
         "label": "Jedi"
       }
     ]
@@ -144,13 +144,13 @@
   {
     "id": "011",
     "nombre": "Tafling",
-    "ilustracion": "tafling-001.png",
+    "image": "tafling-001.jpg",
     "fecha": "04/2020",
     "cliente": "",
     "descripcion": "",
     "imagenesExtra": [
       {
-        "ruta": "tafling-002.jpg",
+        "image": "tafling-002.jpg",
         "label": ""
       }
     ]
@@ -158,17 +158,17 @@
   {
     "id": "012",
     "nombre": "Tsunami Japón",
-    "ilustracion": "tsunami-japon-001.jpg",
+    "image": "tsunami-japon-001.jpg",
     "fecha": "11/03/2011",
     "cliente": "Concurso Benéfico",
     "descripcion": "Ilustración para un concurso benéfico para recaudar fondos para ayudar a las victimas del tsunami en Japón.",
     "imagenesExtra": [
       {
-        "ruta": "tsunami-japon-002.jpg",
+        "image": "tsunami-japon-002.jpg",
         "label": "Ilustración vectorial"
       },
       {
-        "ruta": "tsunami-japon-003.jpg",
+        "image": "tsunami-japon-003.jpg",
         "label": "Infografía con datos sobre el tsunami"
       }
     ]

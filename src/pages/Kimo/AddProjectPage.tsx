@@ -40,10 +40,10 @@ const STACK_QUICK_OPTIONS = [
 ];
 
 /** Devuelve un objeto imagen vacío */
-const emptyImagen = () => ({ ruta: '', label: '' });
+const emptyImagen = () => ({ image: '', label: '' });
 
 /** Devuelve un objeto video vacío */
-const emptyVideo = () => ({ ruta: '', label: '' });
+const emptyVideo = () => ({ image: '', label: '' });
 
 /** Estado inicial del formulario */
 const initialForm = {
@@ -66,8 +66,8 @@ type FormState = {
   cliente: string;
   descripcion: string;
   visible: boolean;
-  imagenes: { ruta: string; label: string }[];
-  videos: { ruta: string; label: string }[];
+  imagenes: { image: string; label: string }[];
+  videos: { image: string; label: string }[];
   extras: string[];
   stack: string[];
 };
@@ -111,7 +111,7 @@ export default function AddProjectPage() {
 
   // --- Imagenes (array de {ruta, label}) ---
 
-  function handleImagenChange(index: number, field: 'ruta' | 'label', value: string) {
+  function handleImagenChange(index: number, field: 'image' | 'label', value: string) {
     const updated = form.imagenes.map((img, i) => (i === index ? { ...img, [field]: value } : img));
     handleField('imagenes', updated);
   }
@@ -174,9 +174,9 @@ export default function AddProjectPage() {
     const newImages = files.map((file) => {
       const blobUrl = URL.createObjectURL(file);
       pendingFiles.current.set(blobUrl, file);
-      return { ruta: blobUrl, label: file.name.replace(/\.[^.]+$/, '') };
+      return { image: blobUrl, label: file.name.replace(/\.[^.]+$/, '') };
     });
-    const currentImages = form.imagenes.filter((img) => img.ruta.trim() !== '');
+    const currentImages = form.imagenes.filter((img) => img.image.trim() !== '');
     handleField('imagenes', [...currentImages, ...newImages]);
   }
 
@@ -186,16 +186,16 @@ export default function AddProjectPage() {
     const newImages = files.map((file) => {
       const blobUrl = URL.createObjectURL(file);
       pendingFiles.current.set(blobUrl, file);
-      return { ruta: blobUrl, label: file.name.replace(/\.[^.]+$/, '') };
+      return { image: blobUrl, label: file.name.replace(/\.[^.]+$/, '') };
     });
-    const currentImages = form.imagenes.filter((img) => img.ruta.trim() !== '');
+    const currentImages = form.imagenes.filter((img) => img.image.trim() !== '');
     handleField('imagenes', [...currentImages, ...newImages]);
     e.target.value = '';
   }
 
   // --- Videos (array de objetos) ---
 
-  function handleVideoChange(index: number, field: 'ruta' | 'label', value: string) {
+  function handleVideoChange(index: number, field: 'image' | 'label', value: string) {
     const updated = form.videos.map((v, i) => (i === index ? { ...v, [field]: value } : v));
     handleField('videos', updated);
   }
@@ -258,18 +258,18 @@ export default function AddProjectPage() {
       if (!form.cliente.trim()) throw new Error('El cliente es obligatorio');
 
       // Limpiar arrays: eliminar entradas vacías
-      let imagenes = form.imagenes.filter((img) => img.ruta.trim() !== '');
-      const videos = form.videos.filter((v) => v.ruta.trim() !== '');
+      let imagenes = form.imagenes.filter((img) => img.image.trim() !== '');
+      const videos = form.videos.filter((v) => v.image.trim() !== '');
       const extras = form.extras.filter((e) => e.trim() !== '');
 
       // Subir archivos pendientes (blob URLs) al backend
       const filesToUpload: File[] = [];
       const blobUrlsToReplace: string[] = [];
       for (const img of imagenes) {
-        const file = pendingFiles.current.get(img.ruta);
+        const file = pendingFiles.current.get(img.image);
         if (file) {
           filesToUpload.push(file);
-          blobUrlsToReplace.push(img.ruta);
+          blobUrlsToReplace.push(img.image);
         }
       }
 
@@ -283,12 +283,12 @@ export default function AddProjectPage() {
 
         // Reemplazar blob URLs por rutas reales del servidor
         imagenes = imagenes.map((img) => {
-          const blobIdx = blobUrlsToReplace.indexOf(img.ruta);
+          const blobIdx = blobUrlsToReplace.indexOf(img.image);
           if (blobIdx !== -1 && uploaded[blobIdx]) {
             // Revocar la blob URL para liberar memoria
-            URL.revokeObjectURL(img.ruta);
+            URL.revokeObjectURL(img.image);
             return {
-              ruta: `/portfolio${uploaded[blobIdx].ruta}`,
+              image: `/portfolio${uploaded[blobIdx].ruta}`,
               label: img.label || uploaded[blobIdx].label,
             };
           }
@@ -577,16 +577,16 @@ export default function AddProjectPage() {
 
                 {/* Miniatura */}
                 <div className="w-16 h-12 bg-gray-100 rounded overflow-hidden flex-shrink-0 border border-gray-200">
-                  {img.ruta && !imgErrors[i] ? (
+                  {img.image && !imgErrors[i] ? (
                     <img
-                      src={img.ruta}
+                      src={img.image}
                       alt={img.label || `Imagen ${i + 1}`}
                       className="w-full h-full object-cover"
                       onError={() => setImgErrors((prev) => ({ ...prev, [i]: true }))}
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-muted text-lg">
-                      🖼
+                      🖼️
                     </div>
                   )}
                 </div>
@@ -597,9 +597,9 @@ export default function AddProjectPage() {
                     type="text"
                     className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                     placeholder="URL de la imagen"
-                    value={img.ruta}
+                    value={img.image}
                     onChange={(e) => {
-                      handleImagenChange(i, 'ruta', e.target.value);
+                      handleImagenChange(i, 'image', e.target.value);
                       setImgErrors((prev) => ({ ...prev, [i]: false }));
                     }}
                   />
@@ -648,8 +648,8 @@ export default function AddProjectPage() {
                   type="url"
                   className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="URL del video"
-                  value={v.ruta}
-                  onChange={(e) => handleVideoChange(i, 'ruta', e.target.value)}
+                  value={v.image}
+                  onChange={(e) => handleVideoChange(i, 'image', e.target.value)}
                 />
                 <input
                   type="text"

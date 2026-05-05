@@ -7,39 +7,39 @@
     "descripcion": "Logotipo para una empresa de charter de pesca",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/profishing-charter001.jpg",
+        "image": "profishing-charter001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/profishing-charter002.jpg",
+        "image": "profishing-charter002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/profishing-charter003.jpg",
+        "image": "profishing-charter003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/profishing-charter004.jpg",
+        "image": "profishing-charter004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/profishing-charter005.jpg",
+        "image": "profishing-charter005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/profishing-charter006.jpg",
+        "image": "profishing-charter006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/profishing-charter007.jpg",
+        "image": "profishing-charter007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/profishing-charter008.jpg",
+        "image": "profishing-charter008.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/profishing-charter009.jpg",
+        "image": "profishing-charter009.jpg",
         "label": ""
       }
     ],
@@ -57,7 +57,7 @@
     "descripcion": "Logotipo para una producto innovador para Paddle Surf",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/ruddersail-system001.jpg",
+        "image": "ruddersail-system001.jpg",
         "label": ""
       }
     ],
@@ -75,29 +75,29 @@
     "descripcion": "Logotipo para una empresa de productos relacionados con deportes acuáticos y navegación",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/color-d-mar000.jpg",
+        "image": "color-d-mar000.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/color-d-mar001.jpg",
+        "image": "color-d-mar001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/color-d-mar002.jpg",
+        "image": "color-d-mar002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/color-d-mar003.jpg",
+        "image": "color-d-mar003.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=pgSh4HzMBrE",
+        "image": "https://www.youtube.com/watch?v=pgSh4HzMBrE",
         "label": ""
       },
       {
-        "ruta": "https://www.youtube.com/watch?v=SDj-oGSF6k4",
+        "image": "https://www.youtube.com/watch?v=SDj-oGSF6k4",
         "label": ""
       }
     ],
@@ -114,19 +114,19 @@
     "descripcion": "Logotipo para una empresa de exportación de guantes a gran escala",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/around-the-glove001.jpg",
+        "image": "around-the-glove001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/around-the-glove002.jpg",
+        "image": "around-the-glove002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/around-the-glove003.jpg",
+        "image": "around-the-glove003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/around-the-glove004.jpg",
+        "image": "around-the-glove004.jpg",
         "label": ""
       }
     ],
@@ -144,7 +144,7 @@
     "descripcion": "Logotipo para un grupo de escalada deportiva",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/petasextos001.jpg",
+        "image": "petasextos001.jpg",
         "label": ""
       }
     ],
@@ -162,27 +162,27 @@
     "descripcion": "Logotipo para un grupo de Networking empresarial Durante el proyecto se barajaron varios nombres, optando finalmente por REM",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/rem001.jpg",
+        "image": "rem001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/rem002.jpg",
+        "image": "rem002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/rem003.jpg",
+        "image": "rem003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/rem004.jpg",
+        "image": "rem004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/rem005.jpg",
+        "image": "rem005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/rem006.jpg",
+        "image": "rem006.jpg",
         "label": ""
       }
     ],
@@ -198,39 +198,39 @@
     "descripcion": "Logotipo para un proyecto musical a cargo de Pi McCarthy. También se hizo una entradilla animada para Youtube",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/contracciones-sonoras001.jpg",
+        "image": "contracciones-sonoras001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/contracciones-sonoras002.jpg",
+        "image": "contracciones-sonoras002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/contracciones-sonoras003.jpg",
+        "image": "contracciones-sonoras003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/contracciones-sonoras004.jpg",
+        "image": "contracciones-sonoras004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/contracciones-sonoras005.jpg",
+        "image": "contracciones-sonoras005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/contracciones-sonoras006.jpg",
+        "image": "contracciones-sonoras006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/contracciones-sonoras007.jpg",
+        "image": "contracciones-sonoras007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/contracciones-sonoras008.jpg",
+        "image": "contracciones-sonoras008.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/contracciones-sonoras009.jpg",
+        "image": "contracciones-sonoras009.jpg",
         "label": ""
       }
     ],
@@ -248,43 +248,43 @@
     "descripcion": "Logotipo para una cuenta de Instagram de costura",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/retal-y-to001.jpg",
+        "image": "retal-y-to001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/retal-y-to002.jpg",
+        "image": "retal-y-to002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/retal-y-to003.jpg",
+        "image": "retal-y-to003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/retal-y-to004.jpg",
+        "image": "retal-y-to004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/retal-y-to005.jpg",
+        "image": "retal-y-to005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/retal-y-to006.jpg",
+        "image": "retal-y-to006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/retal-y-to007.jpg",
+        "image": "retal-y-to007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/retal-y-to008.jpg",
+        "image": "retal-y-to008.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/retal-y-to009.jpg",
+        "image": "retal-y-to009.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/retal-y-to010.jpg",
+        "image": "retal-y-to010.jpg",
         "label": ""
       }
     ],
@@ -302,23 +302,23 @@
     "descripcion": "Logotipo para una empresa de marketing digital",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/crece-tu-empresa001.jpg",
+        "image": "crece-tu-empresa001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/crece-tu-empresa002.jpg",
+        "image": "crece-tu-empresa002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/crece-tu-empresa003.jpg",
+        "image": "crece-tu-empresa003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/crece-tu-empresa004.jpg",
+        "image": "crece-tu-empresa004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/crece-tu-empresa005.jpg",
+        "image": "crece-tu-empresa005.jpg",
         "label": ""
       }
     ],
@@ -334,35 +334,35 @@
     "descripcion": "Logotipo para una profesional del estilismo, maquillaje y peluquería, enfocada principalmente a caracterización para el mundo del cine.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/aida-vidal001.jpg",
+        "image": "aida-vidal001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/aida-vidal002.jpg",
+        "image": "aida-vidal002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/aida-vidal003.jpg",
+        "image": "aida-vidal003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/aida-vidal004.jpg",
+        "image": "aida-vidal004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/aida-vidal005.jpg",
+        "image": "aida-vidal005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/aida-vidal006.jpg",
+        "image": "aida-vidal006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/aida-vidal007.jpg",
+        "image": "aida-vidal007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/aida-vidal008.jpg",
+        "image": "aida-vidal008.jpg",
         "label": ""
       }
     ],
@@ -380,19 +380,19 @@
     "descripcion": "Logotipo para una empresa inmobiliaria",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hogar-900001.jpg",
+        "image": "hogar-900001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hogar-900002.jpg",
+        "image": "hogar-900002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hogar-900003.jpg",
+        "image": "hogar-900003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hogar-900004.jpg",
+        "image": "hogar-900004.jpg",
         "label": ""
       }
     ],
@@ -408,23 +408,23 @@
     "descripcion": "Logotipo para una empresa de reformas. El cliente trajo una idea muy clara, por lo que el proceso de bocetado fue muy rápido. La A y la R forman el capitel de una columna, especialidad de la empresa",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/arcos-reformas001.jpg",
+        "image": "arcos-reformas001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/arcos-reformas002.jpg",
+        "image": "arcos-reformas002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/arcos-reformas003.jpg",
+        "image": "arcos-reformas003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/arcos-reformas004.jpg",
+        "image": "arcos-reformas004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/arcos-reformas005.jpg",
+        "image": "arcos-reformas005.jpg",
         "label": ""
       }
     ],
@@ -440,19 +440,19 @@
     "descripcion": "Logotipo para una profesional de la comunicación animal",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/comunicadora-animal001.jpg",
+        "image": "comunicadora-animal001.jpg",
         "label": "Versión posterior revisada del logotipo"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/comunicadora-animal002.jpg",
+        "image": "comunicadora-animal002.jpg",
         "label": "Primera versión del logotipo"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/comunicadora-animal003.jpg",
+        "image": "comunicadora-animal003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/comunicadora-animal004.jpg",
+        "image": "comunicadora-animal004.jpg",
         "label": ""
       }
     ],
@@ -470,15 +470,15 @@
     "descripcion": "Logotipo para una empresa de compraventa de maquinaria para la construcción",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/mondjeli001.jpg",
+        "image": "mondjeli001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/mondjeli002.jpg",
+        "image": "mondjeli002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/mondjeli003.jpg",
+        "image": "mondjeli003.jpg",
         "label": ""
       }
     ],
@@ -496,23 +496,23 @@
     "descripcion": "Logotipo para una empresa de productos de acero inoxidable",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/rg-inox001.jpg",
+        "image": "rg-inox001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/rg-inox002.jpg",
+        "image": "rg-inox002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/rg-inox003.jpg",
+        "image": "rg-inox003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/rg-inox004.jpg",
+        "image": "rg-inox004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/rg-inox005.jpg",
+        "image": "rg-inox005.jpg",
         "label": ""
       }
     ],
@@ -530,19 +530,19 @@
     "descripcion": "Logotipo para una diseñadora de moda vanguardista",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/cache-croche001.jpg",
+        "image": "cache-croche001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/cache-croche002.jpg",
+        "image": "cache-croche002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/cache-croche003.jpg",
+        "image": "cache-croche003.jpg",
         "label": "Diferentes bocetos preliminares"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/cache-croche004.jpg",
+        "image": "cache-croche004.jpg",
         "label": "Versiones para distintos tamaños, y sus negativos"
       }
     ],
@@ -560,15 +560,15 @@
     "descripcion": "Logotipo para un programa de la empresa de contratación «Equipo Humano»",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/programa-executiva001.jpg",
+        "image": "programa-executiva001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/programa-executiva002.jpg",
+        "image": "programa-executiva002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/programa-executiva003.jpg",
+        "image": "programa-executiva003.jpg",
         "label": ""
       }
     ],
@@ -584,15 +584,15 @@
     "descripcion": "Logotipo para un artista tatuador",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/daniele-ciargo001.jpg",
+        "image": "daniele-ciargo001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/daniele-ciargo002.jpg",
+        "image": "daniele-ciargo002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/daniele-ciargo003.jpg",
+        "image": "daniele-ciargo003.jpg",
         "label": ""
       }
     ],
@@ -608,15 +608,15 @@
     "descripcion": "Logotipo para un estilista",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/mimas-estilistas001.jpg",
+        "image": "mimas-estilistas001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/mimas-estilistas002.jpg",
+        "image": "mimas-estilistas002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/mimas-estilistas003.jpg",
+        "image": "mimas-estilistas003.jpg",
         "label": ""
       }
     ],
@@ -632,15 +632,15 @@
     "descripcion": "Logotipo para una cadena de hoteles",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/port-valencia001.jpg",
+        "image": "port-valencia001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/port-valencia002.jpg",
+        "image": "port-valencia002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/port-valencia003.jpg",
+        "image": "port-valencia003.jpg",
         "label": ""
       }
     ],
@@ -656,21 +656,21 @@
     "descripcion": "Logotipo para la sección de novias de una maquilladora",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/sally-karlek001.jpg",
+        "image": "sally-karlek001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/sally-karlek002.jpg",
+        "image": "sally-karlek002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/sally-karlek003.jpg",
+        "image": "sally-karlek003.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/jlJqysTa6Nk",
+        "image": "https://youtu.be/jlJqysTa6Nk",
         "label": ""
       }
     ],
@@ -685,23 +685,23 @@
     "descripcion": "Logotipo para una tienda online de atrapasueños artesanales",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/menchuquencraft001.jpg",
+        "image": "menchuquencraft001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/menchuquencraft002.jpg",
+        "image": "menchuquencraft002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/menchuquencraft003.jpg",
+        "image": "menchuquencraft003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/menchuquencraft004.jpg",
+        "image": "menchuquencraft004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/menchuquencraft005.jpg",
+        "image": "menchuquencraft005.jpg",
         "label": ""
       }
     ],
@@ -717,31 +717,31 @@
     "descripcion": "Marca gráfica para un método de perdida de peso",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/pierdeloss90001.jpg",
+        "image": "pierdeloss90001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/pierdeloss90002.jpg",
+        "image": "pierdeloss90002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/pierdeloss90003.jpg",
+        "image": "pierdeloss90003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/pierdeloss90004.jpg",
+        "image": "pierdeloss90004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/pierdeloss90005.jpg",
+        "image": "pierdeloss90005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/pierdeloss90006.jpg",
+        "image": "pierdeloss90006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/pierdeloss90007.jpg",
+        "image": "pierdeloss90007.jpg",
         "label": ""
       }
     ],
@@ -757,11 +757,11 @@
     "descripcion": "Logotipo para una estilista",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/sort-estilistas001.jpg",
+        "image": "sort-estilistas001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/sort-estilistas002.jpg",
+        "image": "sort-estilistas002.jpg",
         "label": ""
       }
     ],
@@ -779,11 +779,11 @@
     "descripcion": "Logotipo para un grupo empresarial dedicado a la automoción",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/grupo-hersauto001.jpg",
+        "image": "grupo-hersauto001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/grupo-hersauto002.jpg",
+        "image": "grupo-hersauto002.jpg",
         "label": ""
       }
     ],
@@ -799,23 +799,23 @@
     "descripcion": "Logotipo para una hidromiel con especias, producto de Hidromiel Odin.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hidromiel-loki001.jpg",
+        "image": "hidromiel-loki001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hidromiel-loki002.jpg",
+        "image": "hidromiel-loki002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hidromiel-loki003.jpg",
+        "image": "hidromiel-loki003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hidromiel-loki004.jpg",
+        "image": "hidromiel-loki004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hidromiel-loki005.jpg",
+        "image": "hidromiel-loki005.jpg",
         "label": ""
       }
     ],
@@ -833,19 +833,19 @@
     "descripcion": "Logotipo para una bebida alcoholica, de la marca Odin Hidromiel.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/zeus001.jpg",
+        "image": "zeus001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/zeus002.jpg",
+        "image": "zeus002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/zeus003.jpg",
+        "image": "zeus003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/zeus004.jpg",
+        "image": "zeus004.jpg",
         "label": ""
       }
     ],
@@ -861,15 +861,15 @@
     "descripcion": "Restyling de un logo para una tienda de material de skate",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/trick-n-roll-skate-shop001.jpg",
+        "image": "trick-n-roll-skate-shop001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/trick-n-roll-skate-shop002.jpg",
+        "image": "trick-n-roll-skate-shop002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/trick-n-roll-skate-shop003.jpg",
+        "image": "trick-n-roll-skate-shop003.jpg",
         "label": ""
       }
     ],
@@ -885,19 +885,19 @@
     "descripcion": "Logotipo para una hidromiel con manzana, producto de Hidromiel Odin.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/lola-hidromiel-con-manzana001.jpg",
+        "image": "lola-hidromiel-con-manzana001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/lola-hidromiel-con-manzana002.jpg",
+        "image": "lola-hidromiel-con-manzana002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/lola-hidromiel-con-manzana003.jpg",
+        "image": "lola-hidromiel-con-manzana003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/lola-hidromiel-con-manzana004.jpg",
+        "image": "lola-hidromiel-con-manzana004.jpg",
         "label": ""
       }
     ],
@@ -915,19 +915,19 @@
     "descripcion": "Logotipo para una tienda online de venta de ropa",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/caramelizhada001.jpg",
+        "image": "caramelizhada001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/caramelizhada002.jpg",
+        "image": "caramelizhada002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/caramelizhada003.jpg",
+        "image": "caramelizhada003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/caramelizhada004.jpg",
+        "image": "caramelizhada004.jpg",
         "label": ""
       }
     ],
@@ -943,11 +943,11 @@
     "descripcion": "Restyling del logo para un videoclub",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/videoclub-weekend001.jpg",
+        "image": "videoclub-weekend001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/videoclub-weekend002.jpg",
+        "image": "videoclub-weekend002.jpg",
         "label": ""
       }
     ],
@@ -963,19 +963,19 @@
     "descripcion": "Logotipo para una ilustradora de fantasía",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/recondita-ilustracion001.jpg",
+        "image": "recondita-ilustracion001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/recondita-ilustracion002.jpg",
+        "image": "recondita-ilustracion002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/recondita-ilustracion003.jpg",
+        "image": "recondita-ilustracion003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/recondita-ilustracion004.jpg",
+        "image": "recondita-ilustracion004.jpg",
         "label": ""
       }
     ],
@@ -991,25 +991,25 @@
     "descripcion": "Logotipo para un estudio visual especializado en la fotografía",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/lidia-aparicio-visual-studio004.jpg",
+        "image": "lidia-aparicio-visual-studio004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/lidia-aparicio-visual-studio001.jpg",
+        "image": "lidia-aparicio-visual-studio001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/lidia-aparicio-visual-studio002.jpg",
+        "image": "lidia-aparicio-visual-studio002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/lidia-aparicio-visual-studio003.jpg",
+        "image": "lidia-aparicio-visual-studio003.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://www.youtube.com/watch?v=sRxDOqfilJU",
+        "image": "https://www.youtube.com/watch?v=sRxDOqfilJU",
         "label": ""
       }
     ],
@@ -1026,7 +1026,7 @@
     "descripcion": "Logotipo para un laberinto de laser tag",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/lasergame-2-0001.jpg",
+        "image": "lasergame-2-0001.jpg",
         "label": ""
       }
     ],
@@ -1042,11 +1042,11 @@
     "descripcion": "Rediseño de la marca corporativa de un Pub céntrico de Valencia",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/la-flama001.jpg",
+        "image": "la-flama001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/la-flama002.jpg",
+        "image": "la-flama002.jpg",
         "label": ""
       }
     ],
@@ -1062,31 +1062,31 @@
     "descripcion": "Logotipo para una marca de hidromieles",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hidromiel-odin001.jpg",
+        "image": "hidromiel-odin001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hidromiel-odin002.jpg",
+        "image": "hidromiel-odin002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hidromiel-odin003.jpg",
+        "image": "hidromiel-odin003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hidromiel-odin004.jpg",
+        "image": "hidromiel-odin004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hidromiel-odin005.jpg",
+        "image": "hidromiel-odin005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hidromiel-odin006.jpg",
+        "image": "hidromiel-odin006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/hidromiel-odin007.jpg",
+        "image": "hidromiel-odin007.jpg",
         "label": ""
       }
     ],
@@ -1104,19 +1104,19 @@
     "descripcion": "Logotipo realizado para una empresa de teatro y eventos de rol en vivo.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/entrerevs001.jpg",
+        "image": "entrerevs001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/entrerevs002.jpg",
+        "image": "entrerevs002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/entrerevs003.jpg",
+        "image": "entrerevs003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/entrerevs004.jpg",
+        "image": "entrerevs004.jpg",
         "label": ""
       }
     ],
@@ -1132,51 +1132,51 @@
     "descripcion": "Diseño de marca corporativa para una cadena de gimnasios. Además de la versión circular y la versión horizontal del logotipo, también se crearon distintas versiones con colores diferentes para cada una de las áreas de negocio que abarcaba el gimnasio, para facilitar una asociación rápida del cliente. Asimismo, se creó una versión simplificada del logotipo, sin texto, para su utilización en fondos, bonos, vales regalo, etc.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/equilibrium-personal-training-studio001.jpg",
+        "image": "equilibrium-personal-training-studio001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/equilibrium-personal-training-studio002.jpg",
+        "image": "equilibrium-personal-training-studio002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/equilibrium-personal-training-studio003.jpg",
+        "image": "equilibrium-personal-training-studio003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/equilibrium-personal-training-studio004.jpg",
+        "image": "equilibrium-personal-training-studio004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/equilibrium-personal-training-studio005.jpg",
+        "image": "equilibrium-personal-training-studio005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/equilibrium-personal-training-studio006.jpg",
+        "image": "equilibrium-personal-training-studio006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/equilibrium-personal-training-studio007.jpg",
+        "image": "equilibrium-personal-training-studio007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/equilibrium-personal-training-studio008.jpg",
+        "image": "equilibrium-personal-training-studio008.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/equilibrium-personal-training-studio009.jpg",
+        "image": "equilibrium-personal-training-studio009.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/equilibrium-personal-training-studio010.jpg",
+        "image": "equilibrium-personal-training-studio010.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/equilibrium-personal-training-studio011.jpg",
+        "image": "equilibrium-personal-training-studio011.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/equilibrium-personal-training-studio012.jpg",
+        "image": "equilibrium-personal-training-studio012.jpg",
         "label": ""
       }
     ],
@@ -1194,15 +1194,15 @@
     "descripcion": "Logotipo para un entrenador personal con una amplia gama de servicios.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/pau-benedito-entrenador-personal001.jpg",
+        "image": "pau-benedito-entrenador-personal001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/pau-benedito-entrenador-personal002.jpg",
+        "image": "pau-benedito-entrenador-personal002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/pau-benedito-entrenador-personal003.jpg",
+        "image": "pau-benedito-entrenador-personal003.jpg",
         "label": ""
       }
     ],
@@ -1218,7 +1218,7 @@
     "descripcion": "Logotipo para una clínica de masaje deportivo y quiromasaje",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/quirobert001.jpg",
+        "image": "quirobert001.jpg",
         "label": ""
       }
     ],
@@ -1234,31 +1234,31 @@
     "descripcion": "Logotipo para una cadena de joyerías",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/joyeria-anartxy001.jpg",
+        "image": "joyeria-anartxy001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/joyeria-anartxy002.jpg",
+        "image": "joyeria-anartxy002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/joyeria-anartxy003.jpg",
+        "image": "joyeria-anartxy003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/joyeria-anartxy004.jpg",
+        "image": "joyeria-anartxy004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/joyeria-anartxy005.jpg",
+        "image": "joyeria-anartxy005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/joyeria-anartxy006.jpg",
+        "image": "joyeria-anartxy006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/joyeria-anartxy007.jpg",
+        "image": "joyeria-anartxy007.jpg",
         "label": ""
       }
     ],
@@ -1276,7 +1276,7 @@
     "descripcion": "Restyling de un logotipo para una empresa de pinturas",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/tono-color001.jpg",
+        "image": "tono-color001.jpg",
         "label": ""
       }
     ],
@@ -1292,7 +1292,7 @@
     "descripcion": "Logotipo para una empresa de reparación de bicicletas",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/vici-de-bici001.jpg",
+        "image": "vici-de-bici001.jpg",
         "label": ""
       }
     ],
@@ -1308,11 +1308,11 @@
     "descripcion": "Logotipo para un festival de música en Gilet, colaboración con ReyMono",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/green-box-festival001.jpg",
+        "image": "green-box-festival001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/green-box-festival002.jpg",
+        "image": "green-box-festival002.jpg",
         "label": ""
       }
     ],
@@ -1328,23 +1328,23 @@
     "descripcion": "Logotipo para una empresa de proyectos para la optimización de los recursos naturales y residuos urbanos e industriales. Especializada en cultivar Launia (un clon híbrido de especies de Paulownia, desarrollado y patentado para Ceres Medioambiente)",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/ceres-medioambiente001.jpg",
+        "image": "ceres-medioambiente001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/ceres-medioambiente002.jpg",
+        "image": "ceres-medioambiente002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/ceres-medioambiente003.jpg",
+        "image": "ceres-medioambiente003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/ceres-medioambiente004.jpg",
+        "image": "ceres-medioambiente004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/ceres-medioambiente005.jpg",
+        "image": "ceres-medioambiente005.jpg",
         "label": ""
       }
     ],
@@ -1360,19 +1360,19 @@
     "descripcion": "Logotipo para una empresa de preparación y montaje estructuras y cubiertas en edificaciones",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/margama-estructuras001.jpg",
+        "image": "margama-estructuras001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/margama-estructuras002.jpg",
+        "image": "margama-estructuras002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/margama-estructuras003.jpg",
+        "image": "margama-estructuras003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/margama-estructuras004.jpg",
+        "image": "margama-estructuras004.jpg",
         "label": ""
       }
     ],
@@ -1388,11 +1388,11 @@
     "descripcion": "Logotipo para una empresa de intermediación en la compra y venta de bienes y servicios",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/dorgyss001.jpg",
+        "image": "dorgyss001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/dorgyss002.jpg",
+        "image": "dorgyss002.jpg",
         "label": ""
       }
     ],
@@ -1408,39 +1408,39 @@
     "descripcion": "Logotipo para una empresa de reciclaje",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/sintac-recycling001.jpg",
+        "image": "sintac-recycling001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/sintac-recycling002.jpg",
+        "image": "sintac-recycling002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/sintac-recycling003.jpg",
+        "image": "sintac-recycling003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/sintac-recycling004.jpg",
+        "image": "sintac-recycling004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/sintac-recycling005.jpg",
+        "image": "sintac-recycling005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/sintac-recycling006.jpg",
+        "image": "sintac-recycling006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/sintac-recycling007.jpg",
+        "image": "sintac-recycling007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/sintac-recycling008.jpg",
+        "image": "sintac-recycling008.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/sintac-recycling009.jpg",
+        "image": "sintac-recycling009.jpg",
         "label": ""
       }
     ],
@@ -1456,77 +1456,77 @@
     "descripcion": "Logotipo para una empresa de accesorios para skateboarding. Se realizaron también sesiones de foto y vídeo para promocionar la marca. Se hizo un estudio de mercado para elegir la gama de colores del logotipo, de forma que se identificara fácilmente con el público objetivo, sin caer en la copia. Para ello se obvió el color más utilizado, y se usaron los dos siguientes. Se proyectaron productos con la marca. También se realizaron diseños para ruedas, tablas, lijas y merchandising. Por último, se diseñó una tienda on-line completa completamente interactiva. La tecnología elegida fue Flash con Actionscript 2.0 (puntero en ese momento, aunque obsoleto ahora mismo) e implementado con HTML, PHP y CSS, con algunos addons en Javascript. Por el menú principal, un skate en miniatura seguía al ratón, interactuando con los elementos del mismo. Y el catálogo de productos era completo, con muestras en tiempo real del producto.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards001.jpg",
+        "image": "acid-skateboards001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards002.jpg",
+        "image": "acid-skateboards002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards003.jpg",
+        "image": "acid-skateboards003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards004.jpg",
+        "image": "acid-skateboards004.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards005.jpg",
+        "image": "acid-skateboards005.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards006.jpg",
+        "image": "acid-skateboards006.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards007.jpg",
+        "image": "acid-skateboards007.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards008.jpg",
+        "image": "acid-skateboards008.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards009.jpg",
+        "image": "acid-skateboards009.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards010.jpg",
+        "image": "acid-skateboards010.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards011.jpg",
+        "image": "acid-skateboards011.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards012.jpg",
+        "image": "acid-skateboards012.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards013.jpg",
+        "image": "acid-skateboards013.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards014.jpg",
+        "image": "acid-skateboards014.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards015.jpg",
+        "image": "acid-skateboards015.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/acid-skateboards016.jpg",
+        "image": "acid-skateboards016.jpg",
         "label": ""
       }
     ],
     "videos": [
       {
-        "ruta": "https://youtu.be/KHxqfGAITNk",
+        "image": "https://youtu.be/KHxqfGAITNk",
         "label": ""
       },
       {
-        "ruta": "https://youtu.be/y-Yleb5PVbk",
+        "image": "https://youtu.be/y-Yleb5PVbk",
         "label": ""
       }
     ],
@@ -1541,15 +1541,15 @@
     "descripcion": "Colaboración con Pilar Belmonte para un logotipo de la Sociedad Oftalmológica de Castilla la Mancha. Para la realización del logotipo se utilizaron los colores de Castilla la Mancha, las espigas y el sol característicos de la zona.",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/socam001.jpg",
+        "image": "socam001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/socam002.jpg",
+        "image": "socam002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/socam003.jpg",
+        "image": "socam003.jpg",
         "label": ""
       }
     ],
@@ -1565,11 +1565,11 @@
     "descripcion": "Propuesta de logotipo para la Entidad Valenciana de Salud Pública",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/evasp001.jpg",
+        "image": "evasp001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/evasp002.jpg",
+        "image": "evasp002.jpg",
         "label": ""
       }
     ],
@@ -1585,11 +1585,11 @@
     "descripcion": "Logotipo para un grupo de música valenciano",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/destino-clandestino001.jpg",
+        "image": "destino-clandestino001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/destino-clandestino002.jpg",
+        "image": "destino-clandestino002.jpg",
         "label": ""
       }
     ],
@@ -1605,39 +1605,39 @@
     "descripcion": "Logotipo para un evento de teatro sobre Ramón María del Valle-Inclán. Se realizaron también 6 propuestas de cartel para cada obra, con distintas técnicas",
     "imagenes": [
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/valle-inclan001.jpg",
+        "image": "valle-inclan001.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/valle-inclan002.jpg",
+        "image": "valle-inclan002.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/valle-inclan003.jpg",
+        "image": "valle-inclan003.jpg",
         "label": ""
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/valle-inclan004.jpg",
+        "image": "valle-inclan004.jpg",
         "label": "Propuesta de cartel"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/valle-inclan005.jpg",
+        "image": "valle-inclan005.jpg",
         "label": "Propuesta de cartel"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/valle-inclan006.jpg",
+        "image": "valle-inclan006.jpg",
         "label": "Propuesta de cartel"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/valle-inclan007.jpg",
+        "image": "valle-inclan007.jpg",
         "label": "Propuesta de cartel"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/valle-inclan008.jpg",
+        "image": "valle-inclan008.jpg",
         "label": "Propuesta de cartel"
       },
       {
-        "ruta": "/portfolio/images/portfolio/design/logotipos/valle-inclan009.jpg",
+        "image": "valle-inclan009.jpg",
         "label": "Propuesta de cartel"
       }
     ],
