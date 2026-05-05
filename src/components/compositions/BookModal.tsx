@@ -48,17 +48,22 @@ function BookModal({ book, onClose }: BookModalProps) {
   const OVERLAY_DURATION = 1000;
   const MODAL_DURATION = 500;
 
-  // Animación de entrada al montar
+  // Animación de entrada al montar + bloquear scroll del body
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setVisible(true);
+    document.body.classList.add('modal-open');
     const timeout = setTimeout(() => setModalVisible(true), 10);
-    return () => clearTimeout(timeout);
+    return () => {
+      clearTimeout(timeout);
+      document.body.classList.remove('modal-open');
+    };
   }, []);
 
-  // Animación de salida y desmontaje
+  // Animación de salida y desmontaje + desbloquear scroll del body
   const handleClose = useCallback(() => {
     setModalVisible(false);
+    document.body.classList.remove('modal-open');
     setTimeout(() => setVisible(false), MODAL_DURATION);
     setTimeout(() => onClose(), OVERLAY_DURATION);
   }, [MODAL_DURATION, OVERLAY_DURATION, onClose]);

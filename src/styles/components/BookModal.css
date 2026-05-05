@@ -122,47 +122,59 @@
   pointer-events: none;
 }
 
+/* Bloquear scroll del body cuando el modal está abierto */
+body.modal-open {
+  overflow: hidden;
+}
+
 /* Responsive: fullscreen en móvil, modal tradicional en desktop */
 @media (max-width: 767px) {
-  /* En móvil, el root no centra sino que es fullscreen */
+  /* En móvil, el root es fullscreen sin centrado visual */
   .bookmodal-root {
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: stretch;
+    justify-content: stretch;
   }
 
-  /* Overlay completamente oculto y sin efectos en móvil */
+  /* Overlay completamente oculto en móvil */
   .modal-overlay,
   .modal-overlay[data-visible='true'],
   .modal-overlay[data-visible='false'] {
     display: none !important;
-    background-color: transparent !important;
-    backdrop-filter: none !important;
-    pointer-events: none !important;
   }
 
   /* Modal fullscreen en móvil */
   .modal-content {
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100vw;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
     margin: 0;
     padding: 1rem;
     border-radius: 0;
     box-shadow: none;
     overflow-y: auto;
-    padding-top: 3.5rem; /* Espacio para botón cerrar */
-    z-index: 10;
-  }
-
-  .modal-content[data-visible='true'] {
-    transform: scale(1);
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    padding-top: 3rem; /* Espacio para botón cerrar */
+    background: var(--color-bg-modal, #fff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transform: scale(1) !important;
+    z-index: 50;
   }
 
   .modal-content[data-visible='false'] {
-    transform: scale(1);
+    transform: scale(1) !important;
   }
 
-  /* Portada más pequeña en móvil para que quepa en la pantalla */
+  /* Portada más pequeña en móvil */
   .modal-cover {
     width: 12rem;
     height: 18rem;

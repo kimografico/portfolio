@@ -1,13 +1,9 @@
 :root {
-  /* Botones toggle y secundarios */
   --color-bg-btn: var(--color-surface);
   --color-text-btn: var(--color-text);
-  /* Fondo modal */
   --color-bg-modal: #fff;
   --color-text-modal: var(--color-text);
-  /* Fondo mapa */
   --color-bg-map: #f2f7fc;
-  /* Fondo galería de iconos */
   --color-bg-gallery: #f8fafc;
   --color-icon-gallery: #222;
   --color-bg: #f8f7f4;

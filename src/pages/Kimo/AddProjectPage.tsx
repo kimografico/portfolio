@@ -332,7 +332,7 @@ export default function AddProjectPage() {
 
   return (
     <section data-id="add-project-page">
-      <h2 className="text-xl mb-6">Añadir proyecto</h2>
+      <h2 className="text-xl mb-6">Añadir</h2>
 
       {/* Feedback de éxito */}
       {status === 'success' && (

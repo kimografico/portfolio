@@ -28,7 +28,7 @@ export default function KimoLayout() {
           aria-label="Historial de lectura"
         >
           <IconBook className="inline md:hidden" size={32} strokeWidth={1} />
-          <span className="hidden md:inline">Historial de lectura</span>
+          <span className="hidden md:inline">Biblioteca</span>
         </NavLink>
         <NavLink
           to="places"
@@ -38,7 +38,7 @@ export default function KimoLayout() {
           aria-label="Lugares visitados"
         >
           <IconWorld className="inline md:hidden" size={32} strokeWidth={1} />
-          <span className="hidden md:inline">Lugares visitados</span>
+          <span className="hidden md:inline">Viajes</span>
         </NavLink>
         <NavLink
           to="ilustraciones"
@@ -78,7 +78,7 @@ export default function KimoLayout() {
           aria-label="Añadir proyecto"
         >
           <IconPen className="inline md:hidden" size={32} strokeWidth={1} />
-          <span className="hidden md:inline">Añadir proyecto</span>
+          <span className="hidden md:inline">Añadir</span>
         </NavLink>
       </nav>
       <main id="main-content">
