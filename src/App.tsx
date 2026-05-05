@@ -1,3 +1,5 @@
+import ResumeDesignPage from './pages/Resume/ResumeDesignPage';
+import ResumeDevelopmentPage from './pages/Resume/ResumeDevelopmentPage';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import KimoLayout from './pages/Kimo/KimoLayout';
@@ -29,6 +31,8 @@ export default function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/resume/design" element={<ResumeDesignPage />} />
+          <Route path="/resume/development" element={<ResumeDevelopmentPage />} />
           <Route path="/kimo" element={<KimoLayout />}>
             <Route index element={<BooksPage />} />
             <Route path="books" element={<BooksPage />} />

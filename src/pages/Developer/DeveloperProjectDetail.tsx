@@ -8,6 +8,7 @@ import wordpressData from '../../data/development/wordpress.json';
 import { buildDeveloperImagePath } from '../../data/config/imagePathHelper';
 import type { WebProject } from '../../interfaces/developer';
 import '../../styles/Developer.css';
+import { renderMultilineText } from '../../utils/renderMultilineText';
 
 // Mapeo de parent a datos y etiqueta
 const projectDataMap: Record<string, { data: WebProject[]; label: string }> = {
@@ -147,15 +148,8 @@ export default function DeveloperProjectDetail() {
             </div>
           </div>
 
-          <div className="max-w-3xl">
-            {project.descripcion
-              .split('\n')
-              .filter(Boolean)
-              .map((paragraph, i) => (
-                <p key={i} className="text-base text-muted leading-relaxed mb-4">
-                  {paragraph.trim()}
-                </p>
-              ))}
+          <div className="max-w-3xl text-base text-muted leading-relaxed mb-4">
+            {renderMultilineText(project.descripcion)}
           </div>
         </div>
       </section>

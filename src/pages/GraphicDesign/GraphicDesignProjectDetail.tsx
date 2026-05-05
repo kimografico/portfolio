@@ -14,6 +14,7 @@ import {
   processProjectsImages,
   buildGraphicDesignImagePath,
 } from '../../data/config/imagePathHelper';
+import { renderMultilineText } from '../../utils/renderMultilineText';
 import type { GraphicDesignProject } from '../../interfaces/graphicDesign';
 import '../../styles/Developer.css';
 
@@ -179,15 +180,8 @@ export default function GraphicDesignProjectDetail() {
             </div>
           </div>
 
-          <div className="max-w-3xl">
-            {project.descripcion
-              .split('\n')
-              .filter(Boolean)
-              .map((paragraph: string, i: number) => (
-                <p key={i} className="text-base text-muted leading-relaxed mb-4">
-                  {paragraph.trim()}
-                </p>
-              ))}
+          <div className="max-w-3xl text-base text-muted leading-relaxed mb-4">
+            {renderMultilineText(project.descripcion)}
           </div>
         </div>
       </section>
