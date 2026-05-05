@@ -1,10 +1,9 @@
 import type { IconProps } from '../../types/icons';
 
-export function IconStar({
+export function IconAddDB({
   size = 24,
   color = 'currentColor',
   strokeWidth = 2,
-  className = '',
   ...props
 }: IconProps) {
   return (
@@ -18,13 +17,15 @@ export function IconStar({
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={`icon icon-tabler icon-tabler-star ${className}`}
-      aria-hidden="true"
-      focusable="false"
       {...props}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M12 17.75l-6.172 3.247l1.179-6.873l-5-4.873l6.9-1l3.093-6.26l3.093 6.26l6.9 1l-5 4.873l1.179 6.873z" />
+      <path d="M4 6c0 1.657 3.582 3 8 3s8 -1.343 8 -3s-3.582 -3 -8 -3s-8 1.343 -8 3" />
+      <path d="M4 6v6c0 1.657 3.582 3 8 3c1.075 0 2.1 -.08 3.037 -.224" />
+      <path d="M20 12v-6" />
+      <path d="M4 12v6c0 1.657 3.582 3 8 3c.166 0 .331 -.002 .495 -.006" />
+      <path d="M16 19h6" />
+      <path d="M19 16v6" />
     </svg>
   );
 }

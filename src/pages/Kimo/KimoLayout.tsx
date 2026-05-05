@@ -4,10 +4,10 @@ import {
   IconBook,
   IconBrush,
   IconWorld,
-  IconIcons,
-  IconFile,
-  IconPen,
-  IconStar,
+  IconSpots,
+  IconTable,
+  IconTableAdd,
+  IconShine,
 } from '../../components/iconos';
 import '../../styles/espacio-personal.css';
 
@@ -58,7 +58,7 @@ export default function KimoLayout() {
           }
           aria-label="Iconos"
         >
-          <IconIcons className="inline md:hidden" size={32} strokeWidth={1} />
+          <IconSpots className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Iconos</span>
         </NavLink>
         <NavLink
@@ -68,7 +68,7 @@ export default function KimoLayout() {
           }
           aria-label="Trabajos recientes"
         >
-          <IconStar className="inline md:hidden" size={32} strokeWidth={1} />
+          <IconShine className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Recientes</span>
         </NavLink>
         <NavLink
@@ -78,7 +78,7 @@ export default function KimoLayout() {
           }
           aria-label="Datos"
         >
-          <IconFile className="inline md:hidden" size={32} strokeWidth={1} />
+          <IconTable className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Datos</span>
         </NavLink>
         <NavLink
@@ -88,7 +88,7 @@ export default function KimoLayout() {
           }
           aria-label="Añadir proyecto"
         >
-          <IconPen className="inline md:hidden" size={32} strokeWidth={1} />
+          <IconTableAdd className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Añadir</span>
         </NavLink>
       </nav>
