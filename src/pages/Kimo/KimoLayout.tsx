@@ -18,7 +18,7 @@ export default function KimoLayout() {
   return (
     <section className="kimo-section">
       <h1 className="kimo-title">Kimo - Mi espacio personal</h1>
-      <nav className="kimo-nav">
+      <nav className="kimo-nav flex w-full justify-between items-center">
         <NavLink
           to="books"
           className={({ isActive }) =>
