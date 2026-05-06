@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, type DragEvent } from 'react';
 import type { ReactNode } from 'react';
 import { getResume, updateResume } from '../../api/apiClient';
 import CourseRow from '../../components/resume/CourseRow';
@@ -99,6 +99,66 @@ export default function ResumeManagerPage() {
   const [message, setMessage] = useState('');
   const yearOptions = useMemo(() => getYearOptions(), []);
 
+  // Estado para drag & drop de skills
+  const [dragSkillIndex, setDragSkillIndex] = useState<number | null>(null);
+  const [dragSkillOverIndex, setDragSkillOverIndex] = useState<number | null>(null);
+
+  // Estado para drag & drop de software
+  const [dragSoftwareIndex, setDragSoftwareIndex] = useState<number | null>(null);
+  const [dragSoftwareOverIndex, setDragSoftwareOverIndex] = useState<number | null>(null);
+
+  // Handlers drag & drop para skills
+  function handleSkillDragStart(index: number) {
+    setDragSkillIndex(index);
+  }
+  function handleSkillDragOver(e: DragEvent, index: number) {
+    e.preventDefault();
+    setDragSkillOverIndex(index);
+  }
+  function handleSkillDrop(index: number) {
+    if (!resumeData || dragSkillIndex === null || dragSkillIndex === index) {
+      setDragSkillIndex(null);
+      setDragSkillOverIndex(null);
+      return;
+    }
+    const updated = [...resumeData.skills];
+    const [moved] = updated.splice(dragSkillIndex, 1);
+    updated.splice(index, 0, moved);
+    setResumeData({ ...resumeData, skills: updated });
+    setDragSkillIndex(null);
+    setDragSkillOverIndex(null);
+  }
+  function handleSkillDragEnd() {
+    setDragSkillIndex(null);
+    setDragSkillOverIndex(null);
+  }
+
+  // Handlers drag & drop para software
+  function handleSoftwareDragStart(index: number) {
+    setDragSoftwareIndex(index);
+  }
+  function handleSoftwareDragOver(e: DragEvent, index: number) {
+    e.preventDefault();
+    setDragSoftwareOverIndex(index);
+  }
+  function handleSoftwareDrop(index: number) {
+    if (!resumeData || dragSoftwareIndex === null || dragSoftwareIndex === index) {
+      setDragSoftwareIndex(null);
+      setDragSoftwareOverIndex(null);
+      return;
+    }
+    const updated = [...resumeData.software];
+    const [moved] = updated.splice(dragSoftwareIndex, 1);
+    updated.splice(index, 0, moved);
+    setResumeData({ ...resumeData, software: updated });
+    setDragSoftwareIndex(null);
+    setDragSoftwareOverIndex(null);
+  }
+  function handleSoftwareDragEnd() {
+    setDragSoftwareIndex(null);
+    setDragSoftwareOverIndex(null);
+  }
+
   useEffect(() => {
     let cancelled = false;
 
@@ -140,7 +200,7 @@ export default function ResumeManagerPage() {
 
   if (status === 'loading' && !resumeData) {
     return (
-      <section data-id="resume-manager-page" className="space-y-4">
+      <section data-id="resume-manager-page">
         <p className="py-16 text-center text-muted">Cargando curriculum…</p>
       </section>
     );
@@ -148,7 +208,7 @@ export default function ResumeManagerPage() {
 
   if (!resumeData) {
     return (
-      <section data-id="resume-manager-page" className="space-y-4">
+      <section data-id="resume-manager-page">
         <div className="rounded-xl border border-red-300 bg-red-50 p-4 text-red-800">
           {message || 'No se pudo cargar el curriculum'}
         </div>
@@ -222,7 +282,7 @@ export default function ResumeManagerPage() {
 
       <SectionCard
         title="Habilidades"
-        subtitle="Una entrada por habilidad"
+        subtitle="Una entrada por habilidad (arrastra para reordenar)"
         actions={
           <button
             type="button"
@@ -233,35 +293,50 @@ export default function ResumeManagerPage() {
           </button>
         }
       >
-        <div className="space-y-4">
+        <div>
           {resumeData.skills.map((item, index) => (
-            <SkillRow
+            <div
               key={item.id}
-              name={item.name}
-              onNameChange={(value) =>
-                updateSectionItem(setResumeData, 'skills', index, (current) => ({
-                  ...current,
-                  name: value,
-                }))
-              }
-              visible={!(item.hide ?? false)}
-              onToggleVisible={(value) => toggleHide(setResumeData, 'skills', index, !value)}
-              design={normalizeCategory(item.category).includes('design')}
-              onToggleDesign={() => toggleCategory(setResumeData, 'skills', index, 'design')}
-              development={normalizeCategory(item.category).includes('development')}
-              onToggleDevelopment={() =>
-                toggleCategory(setResumeData, 'skills', index, 'development')
-              }
-              onRemove={() => removeSectionItem(setResumeData, 'skills', index)}
-              dataIdPrefix={`skills-${index}`}
-            />
+              draggable
+              onDragStart={() => handleSkillDragStart(index)}
+              onDragOver={(e) => handleSkillDragOver(e, index)}
+              onDrop={() => handleSkillDrop(index)}
+              onDragEnd={handleSkillDragEnd}
+              className={`transition-all rounded ${
+                dragSkillOverIndex === index
+                  ? 'border-2 border-accent bg-accent/10'
+                  : 'border border-transparent'
+              } ${dragSkillIndex === index ? 'opacity-40' : ''}`}
+              style={{ cursor: 'grab' }}
+              data-id={`skills-row-draggable-${index}`}
+            >
+              <SkillRow
+                name={item.name}
+                onNameChange={(value) =>
+                  updateSectionItem(setResumeData, 'skills', index, (current) => ({
+                    ...current,
+                    name: value,
+                  }))
+                }
+                visible={!(item.hide ?? false)}
+                onToggleVisible={(value) => toggleHide(setResumeData, 'skills', index, !value)}
+                design={normalizeCategory(item.category).includes('design')}
+                onToggleDesign={() => toggleCategory(setResumeData, 'skills', index, 'design')}
+                development={normalizeCategory(item.category).includes('development')}
+                onToggleDevelopment={() =>
+                  toggleCategory(setResumeData, 'skills', index, 'development')
+                }
+                onRemove={() => removeSectionItem(setResumeData, 'skills', index)}
+                dataIdPrefix={`skills-${index}`}
+              />
+            </div>
           ))}
         </div>
       </SectionCard>
 
       <SectionCard
         title="Software"
-        subtitle="Herramientas y programas"
+        subtitle="Herramientas y programas (arrastra para reordenar)"
         actions={
           <button
             type="button"
@@ -272,28 +347,43 @@ export default function ResumeManagerPage() {
           </button>
         }
       >
-        <div className="space-y-4">
+        <div>
           {resumeData.software.map((item, index) => (
-            <SoftwareRow
+            <div
               key={item.id}
-              name={item.name}
-              onNameChange={(value) =>
-                updateSectionItem(setResumeData, 'software', index, (current) => ({
-                  ...current,
-                  name: value,
-                }))
-              }
-              visible={!(item.hide ?? false)}
-              onToggleVisible={(value) => toggleHide(setResumeData, 'software', index, !value)}
-              design={normalizeCategory(item.category).includes('design')}
-              onToggleDesign={() => toggleCategory(setResumeData, 'software', index, 'design')}
-              development={normalizeCategory(item.category).includes('development')}
-              onToggleDevelopment={() =>
-                toggleCategory(setResumeData, 'software', index, 'development')
-              }
-              onRemove={() => removeSectionItem(setResumeData, 'software', index)}
-              dataIdPrefix={`software-${index}`}
-            />
+              draggable
+              onDragStart={() => handleSoftwareDragStart(index)}
+              onDragOver={(e) => handleSoftwareDragOver(e, index)}
+              onDrop={() => handleSoftwareDrop(index)}
+              onDragEnd={handleSoftwareDragEnd}
+              className={`transition-all rounded ${
+                dragSoftwareOverIndex === index
+                  ? 'border-2 border-accent bg-accent/10'
+                  : 'border border-transparent'
+              } ${dragSoftwareIndex === index ? 'opacity-40' : ''}`}
+              style={{ cursor: 'grab' }}
+              data-id={`software-row-draggable-${index}`}
+            >
+              <SoftwareRow
+                name={item.name}
+                onNameChange={(value) =>
+                  updateSectionItem(setResumeData, 'software', index, (current) => ({
+                    ...current,
+                    name: value,
+                  }))
+                }
+                visible={!(item.hide ?? false)}
+                onToggleVisible={(value) => toggleHide(setResumeData, 'software', index, !value)}
+                design={normalizeCategory(item.category).includes('design')}
+                onToggleDesign={() => toggleCategory(setResumeData, 'software', index, 'design')}
+                development={normalizeCategory(item.category).includes('development')}
+                onToggleDevelopment={() =>
+                  toggleCategory(setResumeData, 'software', index, 'development')
+                }
+                onRemove={() => removeSectionItem(setResumeData, 'software', index)}
+                dataIdPrefix={`software-${index}`}
+              />
+            </div>
           ))}
         </div>
       </SectionCard>
@@ -311,7 +401,7 @@ export default function ResumeManagerPage() {
           </button>
         }
       >
-        <div className="space-y-4">
+        <div>
           {resumeData.experience.map((item, index) => (
             <ExperienceRow
               key={item.id}
@@ -379,7 +469,7 @@ export default function ResumeManagerPage() {
           </button>
         }
       >
-        <div className="space-y-4">
+        <div>
           {resumeData.education.map((item, index) => (
             <EducationRow
               key={item.id}
@@ -440,7 +530,7 @@ export default function ResumeManagerPage() {
           </button>
         }
       >
-        <div className="space-y-4">
+        <div>
           {resumeData.courses.map((item, index) => (
             <CourseRow
               key={item.id}
@@ -494,7 +584,7 @@ export default function ResumeManagerPage() {
           </button>
         }
       >
-        <div className="space-y-4">
+        <div>
           {resumeData.workshops.map((item, index) => (
             <WorkshopRow
               key={item.id}
@@ -541,7 +631,7 @@ export default function ResumeManagerPage() {
           </button>
         }
       >
-        <div className="space-y-4">
+        <div>
           {resumeData.languages.map((item, index) => (
             <LanguageRow
               key={item.id}

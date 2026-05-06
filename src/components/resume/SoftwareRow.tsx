@@ -40,7 +40,6 @@ const SoftwareRow: FC<SoftwareRowProps> = ({
     </button>
     <div className="resume-row-fields software">
       <label className="flex flex-col gap-1 text-sm text-ink">
-        <span className="font-medium">Nombre</span>
         <input
           type="text"
           value={name}

@@ -11,6 +11,45 @@ export default function ResumeDevelopmentPage() {
     return item.category === 'development';
   };
 
+  // Función para parsear años, compatible con end, start y year
+  const parseYear = (val: string | number | undefined): number => {
+    if (!val) return 0;
+    if (typeof val === 'string' && val.match(/(hoy|actual)/i)) return 9999;
+    const yearText = typeof val === 'number' ? String(val) : val;
+    const year = parseInt(yearText.slice(0, 4), 10);
+    return isNaN(year) ? 0 : year;
+  };
+
+  // Experiencia: por end, luego start
+  const sortedExperience = [...resume.experience].filter(filter).sort((a, b) => {
+    const endB = parseYear(b.end);
+    const endA = parseYear(a.end);
+    if (endB !== endA) return endB - endA;
+    return parseYear(b.start) - parseYear(a.start);
+  });
+
+  // Formación: por end, luego start
+  const sortedEducation = [...resume.education].filter(filter).sort((a, b) => {
+    const endB = parseYear(b.end);
+    const endA = parseYear(a.end);
+    if (endB !== endA) return endB - endA;
+    return parseYear(b.start) - parseYear(a.start);
+  });
+
+  // Cursos: por year descendente
+  const sortedCourses = [...resume.courses].filter(filter).sort((a, b) => {
+    const yearB = parseYear(b.year);
+    const yearA = parseYear(a.year);
+    return yearB - yearA;
+  });
+
+  // Workshops: por year descendente
+  const sortedWorkshops = [...resume.workshops].filter(filter).sort((a, b) => {
+    const yearB = parseYear(b.year);
+    const yearA = parseYear(a.year);
+    return yearB - yearA;
+  });
+
   return (
     <main data-id="resume-development-page" className="resume-main">
       <header className="mb-8">
@@ -73,7 +112,7 @@ export default function ResumeDevelopmentPage() {
           Experiencia
         </h3>
         <ul className="ml-0 spaced">
-          {resume.experience.filter(filter).map((exp, i) => (
+          {sortedExperience.map((exp, i) => (
             <li key={i} className="mb-4">
               <div className="font-semibold">
                 <p>{exp.role}</p>
@@ -82,7 +121,7 @@ export default function ResumeDevelopmentPage() {
                   ({exp.start} - {exp.end})
                 </span>
               </div>
-              <div className="text-sm">{exp.description}</div>
+              <div className="text-sm">{renderMultilineText(exp.description)}</div>
             </li>
           ))}
         </ul>
@@ -92,7 +131,7 @@ export default function ResumeDevelopmentPage() {
           Formación
         </h3>
         <ul className="ml-0 spaced">
-          {resume.education.filter(filter).map((ed, i) => (
+          {sortedEducation.map((ed, i) => (
             <li key={i} className="mb-2">
               <div className="font-semibold">
                 <p>{ed.degree}</p>
@@ -110,7 +149,7 @@ export default function ResumeDevelopmentPage() {
           Cursos
         </h3>
         <ul className="ml-0">
-          {resume.courses.filter(filter).map((c, i) => (
+          {sortedCourses.map((c, i) => (
             <li key={i} className="mb-2">
               <div className="font-semibold">
                 <p>{c.name}</p>
@@ -121,13 +160,13 @@ export default function ResumeDevelopmentPage() {
           ))}
         </ul>
       </section>
-      {resume.workshops.filter(filter).length > 0 && (
+      {sortedWorkshops.length > 0 && (
         <section aria-labelledby="workshops-heading">
           <h3 id="workshops-heading" className="text-xl font-semibold mt-6 mb-2">
             Workshops
           </h3>
           <ul className="ml-0">
-            {resume.workshops.filter(filter).map((w, i) => (
+            {sortedWorkshops.map((w, i) => (
               <li key={i} className="mb-2">
                 <div className="font-semibold">
                   {w.name} <span className="text-xs text-muted">({w.year})</span>

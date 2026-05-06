@@ -11,15 +11,19 @@ export default function ResumeDesignPage() {
     return item.category === 'design';
   };
 
-  // Ordenar experiencia solo por la primera fecha (start), de más reciente a más antigua
+  // Ordenar experiencia por año de fin (end), priorizando 'HOY'/'Actualidad', y luego por start
   const sortedExperience = [...resume.experience]
     .filter(filter)
     .sort((a: Experience, b: Experience) => {
       const parseYear = (val: string) => {
         if (!val) return 0;
+        if (typeof val === 'string' && val.match(/(hoy|actual)/i)) return 9999;
         const year = parseInt(val.slice(0, 4), 10);
         return isNaN(year) ? 0 : year;
       };
+      const endB = parseYear(b.end);
+      const endA = parseYear(a.end);
+      if (endB !== endA) return endB - endA;
       return parseYear(b.start) - parseYear(a.start);
     });
 
@@ -125,7 +129,7 @@ export default function ResumeDesignPage() {
                   ({exp.start} - {exp.end})
                 </span>
               </div>
-              <div className="text-sm">{exp.description}</div>
+              <div className="text-sm">{renderMultilineText(exp.description)}</div>
             </li>
           ))}
         </ul>

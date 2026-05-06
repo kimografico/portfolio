@@ -40,7 +40,6 @@ const SkillRow: FC<SkillRowProps> = ({
     </button>
     <div className="resume-row-fields skills">
       <label className="flex flex-col gap-1 text-sm text-ink">
-        <span className="font-medium">Nombre</span>
         <input
           type="text"
           value={name}
