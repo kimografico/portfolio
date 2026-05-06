@@ -238,7 +238,7 @@ export default function RecentWorksManagerPage() {
         <button
           onClick={handleSave}
           disabled={status === 'loading'}
-          className="px-6 py-2 bg-accent text-white rounded font-semibold hover:opacity-90 disabled:opacity-50 transition-opacity"
+          className="px-6 py-2 bg-cta text-white rounded font-semibold hover:opacity-90 disabled:opacity-50 transition-opacity"
           data-id="rw-save-btn"
         >
           {status === 'loading' ? 'Guardando…' : 'Guardar cambios'}

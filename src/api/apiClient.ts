@@ -5,6 +5,8 @@
 
 export const API_BASE = 'http://localhost:3001';
 
+import type { ResumeData } from '../interfaces/resume';
+
 /** Respuesta genérica de la API */
 interface ApiResponse<T = unknown> {
   success: boolean;
@@ -101,6 +103,25 @@ export async function deleteProjectsBatch(ids: number[]) {
 export interface UploadedImage {
   ruta: string;
   label: string;
+}
+
+// --- Curriculum (Resume) ---
+
+export interface ResumeApiResponse {
+  [key: string]: unknown;
+}
+
+/** Obtiene el curriculum completo desde el backend */
+export function getResume() {
+  return apiFetch<ResumeData>('/api/resume');
+}
+
+/** Sobrescribe el curriculum completo en el backend */
+export function updateResume(data: ResumeData) {
+  return apiFetch('/api/resume', {
+    method: 'PUT',
+    body: JSON.stringify({ data }),
+  });
 }
 
 /**

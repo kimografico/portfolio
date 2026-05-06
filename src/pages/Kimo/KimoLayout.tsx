@@ -6,7 +6,7 @@ import {
   IconWorld,
   IconSpots,
   IconTable,
-  IconTableAdd,
+  IconFile,
   IconShine,
 } from '../../components/iconos';
 import '../../styles/espacio-personal.css';
@@ -72,6 +72,16 @@ export default function KimoLayout() {
           <span className="hidden md:inline">Recientes</span>
         </NavLink>
         <NavLink
+          to="resume"
+          className={({ isActive }) =>
+            `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
+          }
+          aria-label="Curriculum"
+        >
+          <IconFile className="inline md:hidden" size={32} strokeWidth={1} />
+          <span className="hidden md:inline">Curriculum</span>
+        </NavLink>
+        <NavLink
           to="data"
           className={({ isActive }) =>
             `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
@@ -81,16 +91,7 @@ export default function KimoLayout() {
           <IconTable className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Proyectos</span>
         </NavLink>
-        <NavLink
-          to="add-project"
-          className={({ isActive }) =>
-            `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
-          }
-          aria-label="Añadir proyecto"
-        >
-          <IconTableAdd className="inline md:hidden" size={32} strokeWidth={1} />
-          <span className="hidden md:inline">+ Proyecto</span>
-        </NavLink>
+        {/* Botón '+ Proyecto' eliminado del menú, ahora se mostrará en DataPage */}
       </nav>
       <main id="main-content">
         <Outlet />

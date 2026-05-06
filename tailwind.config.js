@@ -16,6 +16,7 @@ export default {
         muted: 'var(--color-muted)',
         ink: 'var(--color-text)',
         accent: 'var(--color-accent)',
+        cta: 'var(--color-cta)',
       },
       fontFamily: {
         sans: ["'DM Sans'", 'sans-serif'],

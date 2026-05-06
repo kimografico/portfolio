@@ -2,20 +2,20 @@
 
 export interface Skill {
   name: string;
-  category: 'design' | 'development' | 'common' | string[];
+  category: 'design' | 'development' | string[];
   hide?: boolean;
 }
 
 export interface Software {
   name: string;
-  category: 'design' | 'development' | 'common' | string[];
+  category: 'design' | 'development' | string[];
   hide?: boolean;
 }
 
 export interface Language {
   name: string;
   level: string;
-  category?: 'design' | 'development' | 'common' | string[];
+  category?: 'design' | 'development' | string[];
   hide?: boolean;
 }
 
@@ -25,7 +25,7 @@ export interface Experience {
   start: string; // YYYY or YYYY-MM
   end: string; // YYYY, YYYY-MM, 'HOY', 'Actualidad', etc.
   description: string;
-  category?: 'design' | 'development' | 'common' | string[];
+  category?: 'design' | 'development' | string[];
   hide?: boolean;
 }
 
@@ -34,7 +34,7 @@ export interface Education {
   institution: string;
   start: string;
   end: string;
-  category?: 'design' | 'development' | 'common' | string[];
+  category?: 'design' | 'development' | string[];
   hide?: boolean;
 }
 
@@ -42,14 +42,14 @@ export interface Course {
   name: string;
   institution: string;
   year: string | number;
-  category?: 'design' | 'development' | 'common' | string[];
+  category?: 'design' | 'development' | string[];
   hide?: boolean;
 }
 
 export interface Workshop {
   name: string;
   year: string | number;
-  category?: 'design' | 'development' | 'common' | string[];
+  category?: 'design' | 'development' | string[];
   hide?: boolean;
 }
 
@@ -57,6 +57,8 @@ export interface ResumeBasicsArea {
   title: string;
   summary: string;
   additionalInfo?: string;
+  hide?: boolean;
+  category?: ('design' | 'development')[];
 }
 
 export interface ResumeBasics {

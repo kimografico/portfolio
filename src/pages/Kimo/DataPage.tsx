@@ -310,15 +310,22 @@ export default function DataPage() {
         {/* Toggle privado para la visibilidad en las GALERÍAS (no afecta a esta tabla) */}
         <button
           onClick={() => setShowHidden(!showHidden)}
-          className={`text-xs px-3 py-1 rounded border transition-colors ${
+          className={`px-4 py-2 rounded border font-semibold text-sm transition-colors flex items-center justify-center min-w-[180px] ${
             showHidden
               ? 'bg-amber-100 border-amber-400 text-amber-700'
               : 'border-gray-300 text-muted hover:border-gray-400'
           }`}
           data-id="data-show-hidden-btn"
-          title={showHidden ? 'Mostrar todos los proyectos' : 'Mostrar solo proyectos visibles'}
+          title={showHidden ? 'Mostrar todos los proyectos' : 'Mostrar proyectos visibles'}
         >
-          {showHidden ? '👁️ Mostrar todos los proyectos' : '👁️ Mostrar solo proyectos visibles'}
+          {showHidden ? 'Mostrar todos los proyectos' : 'Mostrar proyectos visibles'}
+        </button>
+        <button
+          onClick={() => window.open(`${APP_BASENAME}/kimo/add-project`, '_blank')}
+          className="px-4 py-2 bg-cta text-white rounded font-semibold text-sm hover:opacity-90 transition-opacity min-w-[180px]"
+          data-id="data-add-project-btn"
+        >
+          + Añadir Proyecto
         </button>
       </div>
 

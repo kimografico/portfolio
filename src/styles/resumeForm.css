@@ -1,0 +1,48 @@
+/* Estilos comunes para filas del gestor de curriculum */
+
+.resume-row {
+  position: relative;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-border, #e5e7eb);
+  background: var(--color-bg, #fff);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.resume-row .remove-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 9999px;
+  background: transparent;
+  transition: background 0.2s;
+}
+.resume-row .remove-btn:hover {
+  background: #fee2e2;
+}
+.resume-row .remove-btn:focus-visible {
+  outline: 2px solid var(--color-accent, #e11d48);
+}
+
+.resume-row-fields {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .resume-row-fields {
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+.resume-row-toggles {
+  margin-top: 1rem;
+  padding-bottom: 3px;
+}
+@media (min-width: 768px) {
+  .resume-row-toggles {
+    align-self: end;
+    margin-top: 0;
+  }
+}

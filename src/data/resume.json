@@ -2,50 +2,188 @@
   "basics": {
     "name": "Carlos Sáez Blanco",
     "location": "Valencia, España",
-    "website": "http://www.kimografico.com/",
-    "category": ["design", "development"],
+    "website": "kimografico.com",
+    "category": [
+      "design",
+      "development"
+    ],
     "hide": false,
     "design": {
       "title": "Diseñador gráfico afincado en Valencia con más de 10 años de experiencia",
       "summary": "Diseñador gráfico multidisciplinar especializado en identidad, editorial, web y producción impresa. \nExperiencia freelance y en empresas, con enfoque en soluciones creativas y técnicas.",
-      "additionalInfo": "Manejo fluido de distintas máquinas de impresión en pequeño y gran formato: \nPlotters flexibles de tinta ecosolvente, tinta UVI y Látex (Mimaki y HP), mesa de impresión plana UVI. \nCorte y grabado en Láser. \nCorte y fresado CNC. \nPreparación de artes finales e impresión con prensa Xerox Igen5. \nImposición con rip fiery"
+      "additionalInfo": "Manejo fluido de distintas máquinas de impresión en pequeño y gran formato: \nPlotters flexibles de tinta ecosolvente, tinta UVI y Látex (Mimaki y HP), mesa de impresión plana UVI. \nCorte y grabado en Láser. \nCorte y fresado CNC. \nPreparación de artes finales e impresión con prensa Xerox Igen5. \nImposición con rip fiery",
+      "hide": false,
+      "category": []
     },
     "development": {
       "title": "Desarrollador web full stack con experiencia en WordPress, PHP y tecnologías modernas",
       "summary": "Especializado en desarrollo web a medida, integración de CMS y optimización de rendimiento. \nExperiencia en proyectos freelance y colaborativos, con enfoque en soluciones escalables y accesibles.",
-      "additionalInfo": "Experiencia en despliegue de sitios WordPress, desarrollo de plugins y temas personalizados. \nIntegración de APIs, automatización de tareas y buenas prácticas de seguridad. \nOptimización SEO y accesibilidad web."
+      "additionalInfo": "Experiencia en despliegue de sitios WordPress, desarrollo de plugins y temas personalizados. \nIntegración de APIs, automatización de tareas y buenas prácticas de seguridad. \nOptimización SEO y accesibilidad web.",
+      "hide": false,
+      "category": []
     }
   },
   "skills": [
-    { "name": "Identidad corporativa", "category": "design", "hide": false },
-    { "name": "Papelería corporativa", "category": "design", "hide": false },
-    { "name": "Maquetación editorial", "category": "design", "hide": false },
-    { "name": "Cartelería", "category": "design", "hide": false },
-    { "name": "Fotografía digital DSLR", "category": "design", "hide": false },
-    { "name": "CMS WordPress", "category": "development", "hide": false },
-    { "name": "HTML + CSS", "category": "development", "hide": false },
-    { "name": "PHP", "category": "development", "hide": false },
-    { "name": "Manejo de maquinaria de impresión", "category": "design", "hide": false },
-    { "name": "Preparación de artes finales", "category": "design", "hide": false }
+    {
+      "name": "Identidad corporativa",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Papelería corporativa",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Maquetación editorial",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Cartelería",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Fotografía digital DSLR",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    },
+    {
+      "name": "CMS WordPress",
+      "category": [
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "name": "HTML + CSS",
+      "category": [
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "name": "PHP",
+      "category": [
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Manejo de maquinaria de impresión",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Preparación de artes finales",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    }
   ],
   "software": [
-    { "name": "Adobe Illustrator", "category": "design", "hide": false },
-    { "name": "Adobe Photoshop", "category": "design", "hide": false },
-    { "name": "Adobe InDesign", "category": "design", "hide": false },
-    { "name": "Adobe Acrobat Pro", "category": "design", "hide": false },
-    { "name": "Adobe Premiere", "category": "design", "hide": false },
-    { "name": "Adobe After Effects", "category": "design", "hide": false },
-    { "name": "3D Studio Max", "category": "design", "hide": false },
-    { "name": "Android Studio", "category": "development", "hide": false },
-    { "name": "WordPress", "category": "development", "hide": false },
-    { "name": "Microsoft Office", "category": "common", "hide": false },
-    { "name": "Google Spreadsheets", "category": "common", "hide": false }
+    {
+      "name": "Adobe Illustrator",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Adobe Photoshop",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Adobe InDesign",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Adobe Acrobat Pro",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Adobe Premiere",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Adobe After Effects",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    },
+    {
+      "name": "3D Studio Max",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Android Studio",
+      "category": [
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "name": "WordPress",
+      "category": [
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Microsoft Office",
+      "category": [
+        "design",
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Google Spreadsheets",
+      "category": [
+        "design",
+        "development"
+      ],
+      "hide": false
+    }
   ],
   "experience": [
     {
       "company": "Pilar Belmonte",
       "role": "Diseñador Gráfico Freelance",
-      "category": ["design", "development"],
+      "category": [
+        "design",
+        "development"
+      ],
       "start": "2007",
       "end": "HOY",
       "description": "Diversos trabajos: diseño y programación web, papelería corporativa, cartelería, retoque fotográfico, etc.",
@@ -54,7 +192,9 @@
     {
       "company": "Las Provincias",
       "role": "Diseñador Gráfico",
-      "category": ["design"],
+      "category": [
+        "design"
+      ],
       "start": "2009",
       "end": "2009",
       "description": "Maquetación editorial, retoque fotográfico, animación de banners web interactivos.",
@@ -63,7 +203,9 @@
     {
       "company": "Ida2 Impresión Digital S.L.",
       "role": "Diseñador Gráfico / Primer Oficial de Impresión",
-      "category": ["design"],
+      "category": [
+        "design"
+      ],
       "start": "2011",
       "end": "HOY",
       "description": "Proyectos de diseño gráfico multidisciplinar, impresión de gran formato, montaje de vinilos y lonas, manejo de maquinaria de corte mecánico y láser.",
@@ -72,7 +214,9 @@
     {
       "company": "La Rosa Visual",
       "role": "Diseñador Gráfico Freelance",
-      "category": ["design"],
+      "category": [
+        "design"
+      ],
       "start": "2014",
       "end": "HOY",
       "description": "Proyectos de diseño gráfico multidisciplinar.",
@@ -85,7 +229,10 @@
       "degree": "Bachillerato Artístico",
       "start": "2002",
       "end": "2005",
-      "category": ["design", "development"],
+      "category": [
+        "design",
+        "development"
+      ],
       "hide": false
     },
     {
@@ -93,7 +240,10 @@
       "degree": "Certificado de Inglés Avanzado",
       "start": "2005",
       "end": "2006",
-      "category": ["common"],
+      "category": [
+        "design",
+        "development"
+      ],
       "hide": false
     },
     {
@@ -101,7 +251,9 @@
       "degree": "Grado superior en Diseño Gráfico",
       "start": "2005",
       "end": "2009",
-      "category": ["design"],
+      "category": [
+        "design"
+      ],
       "hide": false
     }
   ],
@@ -110,21 +262,27 @@
       "name": "Curso PHP",
       "institution": "Trébol Formación",
       "year": "2011",
-      "category": ["development"],
+      "category": [
+        "development"
+      ],
       "hide": false
     },
     {
       "name": "Curso WordPress",
       "institution": "Trébol Formación",
       "year": "2011",
-      "category": ["development"],
+      "category": [
+        "development"
+      ],
       "hide": false
     },
     {
       "name": "Curso de Diseño de Packaging",
       "institution": "Print Consulting SCP",
       "year": "2019",
-      "category": ["design"],
+      "category": [
+        "design"
+      ],
       "hide": false
     }
   ],
@@ -133,41 +291,75 @@
       "name": "Workshop con Didac Ballester",
       "institution": "",
       "year": "2009",
-      "category": ["design"],
+      "category": [
+        "design"
+      ],
       "hide": false
     },
     {
       "name": "Debate Paco Bascuñan e Isidro Ferrer",
       "institution": "Universidad Politécnica de Valencia",
       "year": "2009",
-      "category": ["design"],
+      "category": [
+        "design"
+      ],
       "hide": false
     },
     {
       "name": "Workshop con América Sánchez",
       "institution": "",
       "year": "2009",
-      "category": ["design"],
+      "category": [
+        "design"
+      ],
       "hide": false
     },
     {
       "name": "Taller de diseño en sala Greenspace",
       "institution": "",
       "year": "2009",
-      "category": ["design"],
+      "category": [
+        "design"
+      ],
       "hide": false
     },
     {
       "name": "Conferencia Cluster industria gráfica",
       "institution": "",
       "year": "2009",
-      "category": ["design"],
+      "category": [
+        "design"
+      ],
       "hide": false
     }
   ],
   "languages": [
-    { "name": "Español", "level": "Nativo", "category": ["common"], "hide": false },
-    { "name": "Valenciano", "level": "Alto", "category": ["common"], "hide": false },
-    { "name": "Inglés", "level": "Avanzado (CAE)", "category": ["common"], "hide": false }
+    {
+      "name": "Español",
+      "level": "Nativo",
+      "category": [
+        "design",
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Valenciano",
+      "level": "Alto",
+      "category": [
+        "design",
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "name": "Inglés",
+      "level": "Avanzado (CAE)",
+      "category": [
+        "design",
+        "development"
+      ],
+      "hide": false
+    }
   ]
 }

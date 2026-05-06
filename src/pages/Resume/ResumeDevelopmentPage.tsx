@@ -4,12 +4,11 @@ import { renderMultilineText } from '../../utils/renderMultilineText';
 // No se usan tipos explícitos aquí, así que se elimina la importación
 
 export default function ResumeDevelopmentPage() {
-  // Filtrar datos para desarrollo (category: development o common)
+  // Filtrar datos para desarrollo
   const filter = (item: { category?: string | string[]; hide?: boolean }) => {
     if (!item || item.hide) return false;
-    if (Array.isArray(item.category))
-      return item.category.includes('development') || item.category.includes('common');
-    return item.category === 'development' || item.category === 'common';
+    if (Array.isArray(item.category)) return item.category.includes('development');
+    return item.category === 'development';
   };
 
   return (

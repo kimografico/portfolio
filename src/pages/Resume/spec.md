@@ -16,7 +16,8 @@ Ambos comparten datos base, pero muestran información filtrada y adaptada a cad
 1. **Datos centralizados**
    - Toda la información del CV se almacena en `/src/data/resume.json`.
    - El JSON sigue una estructura normalizada, inspirada en [JSON Resume](https://jsonresume.org/), con campos estándar (`basics`, `skills`, `experience`, etc).
-   - Cada bloque puede tener un campo `category` (`design`, `development`, `common`) para filtrar.
+
+- Cada bloque puede tener un campo `category` (`design`, `development`) para filtrar. Si un dato antiguo viene como `common`, se interpreta como ambas categorías.
 
 2. **Dos páginas de curriculum**
    - `/resume/design` y `/resume/development`.

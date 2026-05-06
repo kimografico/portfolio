@@ -4,12 +4,11 @@ import { renderMultilineText } from '../../utils/renderMultilineText';
 import type { Experience, Education, Course, Workshop } from '../../interfaces/resume';
 
 export default function ResumeDesignPage() {
-  // Filtrar datos para diseño (category: design o common)
+  // Filtrar datos para diseño
   const filter = (item: { category?: string | string[]; hide?: boolean }) => {
     if (!item || item.hide) return false;
-    if (Array.isArray(item.category))
-      return item.category.includes('design') || item.category.includes('common');
-    return item.category === 'design' || item.category === 'common';
+    if (Array.isArray(item.category)) return item.category.includes('design');
+    return item.category === 'design';
   };
 
   // Ordenar experiencia solo por la primera fecha (start), de más reciente a más antigua
