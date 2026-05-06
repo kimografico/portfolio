@@ -51,3 +51,5 @@ export { IconReact } from './IconReact';
 export { IconWP } from './IconWP';
 export { LogoAjax } from './LogoAjax';
 export { default as IconClose } from './IconClose';
+export { default as IconVisible } from './IconVisible';
+export { default as IconHidden } from './IconHidden';
