@@ -16,81 +16,107 @@
       "category": []
     },
     "development": {
-      "title": "Desarrollador web full stack con experiencia en WordPress, PHP y tecnologías modernas",
-      "summary": "Especializado en desarrollo web a medida, integración de CMS y optimización de rendimiento. \nExperiencia en proyectos freelance y colaborativos, con enfoque en soluciones escalables y accesibles.",
-      "additionalInfo": "Experiencia en despliegue de sitios WordPress, desarrollo de plugins y temas personalizados. \nIntegración de APIs, automatización de tareas y buenas prácticas de seguridad. \nOptimización SEO y accesibilidad web.",
+      "title": "Desarrollador web frontend y programación agéntica con IA",
+      "summary": "Especializado en desarrollo web a medida\nTrabajo con SDD (Spec Driven Development) y programación agéntica con IA\nManejo frameworks modernos y metodologías Agile",
+      "additionalInfo": "Experiencia en despliegue de sitios WordPress\nIntegración de APIs, automatización de tareas y buenas prácticas de seguridad. \nOptimización SEO y accesibilidad web.\nBase de Clean Code y principios S.O.L.I.D.",
       "hide": false,
       "category": []
     }
   },
   "skills": [
     {
-      "name": "Identidad corporativa",
+      "name": "Identidad corporativa y branding",
       "category": [
         "design"
       ],
-      "hide": false
+      "hide": false,
+      "id": "0ouhh35szbarmoujrk9d"
     },
     {
       "name": "Papelería corporativa",
       "category": [
         "design"
       ],
-      "hide": false
+      "hide": false,
+      "id": "haeemty6c9moujrk9d"
     },
     {
-      "name": "Maquetación editorial",
+      "name": "Maquetación editorial avanzada",
       "category": [
         "design"
       ],
-      "hide": false
+      "hide": false,
+      "id": "lsicrgvhnvemoujrk9d"
     },
     {
-      "name": "Cartelería",
+      "name": "Diseño de cartelería y señalética",
       "category": [
         "design"
       ],
-      "hide": false
+      "hide": false,
+      "id": "gjvfrisonl7moujrk9d"
     },
     {
-      "name": "Fotografía digital DSLR",
+      "name": "Fotografía digital y retoque",
       "category": [
         "design"
       ],
-      "hide": false
+      "hide": false,
+      "id": "3g3ec5ec0a3moujrk9d"
     },
     {
-      "name": "CMS WordPress",
+      "name": "Artes finales y preimpresión",
+      "category": [
+        "design"
+      ],
+      "hide": false,
+      "id": "haiy3w028omoujrk9d"
+    },
+    {
+      "name": "Operación de maquinaria de impresión (plotter, láser, CNC)",
+      "category": [
+        "design"
+      ],
+      "hide": false,
+      "id": "auf1ia3q89moujrk9d"
+    },
+    {
+      "name": "Gestión de proyectos de diseño",
+      "category": [
+        "design"
+      ],
+      "hide": false,
+      "id": "1vxbxvhbvzzmoujrk9d"
+    },
+    {
+      "id": "2pd3ff705vimould69q",
+      "name": "Metodologías Agile",
       "category": [
         "development"
       ],
       "hide": false
     },
     {
-      "name": "HTML + CSS",
+      "id": "xxt2uafyq1imould6fl",
+      "name": "Clean Code y principios S.O.L.I.D.",
       "category": [
         "development"
       ],
       "hide": false
     },
     {
-      "name": "PHP",
+      "id": "pscwdt9395mould6l1",
+      "name": "Programación Agéntica con IA",
       "category": [
         "development"
       ],
       "hide": false
     },
     {
-      "name": "Manejo de maquinaria de impresión",
+      "id": "e7arb046zgmould6pt",
+      "name": "Desarrollo Guiado por Especificaciones (SDD)",
       "category": [
-        "design"
-      ],
-      "hide": false
-    },
-    {
-      "name": "Preparación de artes finales",
-      "category": [
-        "design"
+        "development"
       ],
       "hide": false
     }
@@ -101,76 +127,102 @@
       "category": [
         "design"
       ],
-      "hide": false
+      "hide": false,
+      "id": "ziq5apw8crjmoujrk9d"
     },
     {
       "name": "Adobe Photoshop",
       "category": [
         "design"
       ],
-      "hide": false
+      "hide": false,
+      "id": "66mul1g6jlfmoujrk9d"
     },
     {
       "name": "Adobe InDesign",
       "category": [
         "design"
       ],
-      "hide": false
+      "hide": false,
+      "id": "1k4xz9mns0vmoujrk9d"
     },
     {
       "name": "Adobe Acrobat Pro",
       "category": [
         "design"
       ],
-      "hide": false
+      "hide": false,
+      "id": "ezjfgpgsegkmoujrk9d"
     },
     {
-      "name": "Adobe Premiere",
+      "name": "Adobe Premiere / After Effects",
       "category": [
         "design"
       ],
-      "hide": false
-    },
-    {
-      "name": "Adobe After Effects",
-      "category": [
-        "design"
-      ],
-      "hide": false
-    },
-    {
-      "name": "3D Studio Max",
-      "category": [
-        "design"
-      ],
-      "hide": false
-    },
-    {
-      "name": "Android Studio",
-      "category": [
-        "development"
-      ],
-      "hide": false
+      "hide": false,
+      "id": "cjeetiej0mfmoujrk9d"
     },
     {
       "name": "WordPress",
       "category": [
+        "development",
+        "design"
+      ],
+      "hide": false,
+      "id": "9xjq08oycvumoujrk9d"
+    },
+    {
+      "name": "Microsoft Office / Google Spreadsheets",
+      "category": [
+        "design"
+      ],
+      "hide": false,
+      "id": "l1k72vd837rmoujrk9d"
+    },
+    {
+      "id": "svbiwo51cm7moumbz59",
+      "name": "Javascript / Typescript",
+      "category": [
         "development"
       ],
       "hide": false
     },
     {
-      "name": "Microsoft Office",
+      "id": "u6y8snrpybamoumbz97",
+      "name": "Angular / React (Básico)",
       "category": [
-        "design",
         "development"
       ],
       "hide": false
     },
     {
-      "name": "Google Spreadsheets",
+      "id": "5qtjsg67pojmoumbzdp",
+      "name": "Ember",
       "category": [
-        "design",
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "id": "qrr179gl1fmoumbzgv",
+      "name": "Webcomponents (Lit Element)",
+      "category": [
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "id": "nv6uhjk53nmoumbzkn",
+      "name": "Git / Github / Bitbucket / GitLab",
+      "category": [
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "id": "xxq31carp0dmoumbzol",
+      "name": "Unit Testing / E2E",
+      "category": [
         "development"
       ],
       "hide": false
@@ -181,45 +233,86 @@
       "company": "Pilar Belmonte",
       "role": "Diseñador Gráfico Freelance",
       "category": [
-        "design",
-        "development"
+        "design"
       ],
       "start": "2007",
       "end": "HOY",
       "description": "Diversos trabajos: diseño y programación web, papelería corporativa, cartelería, retoque fotográfico, etc.",
-      "hide": false
+      "hide": false,
+      "id": "098s1ryh30rmoujrk9d"
     },
     {
       "company": "Las Provincias",
       "role": "Diseñador Gráfico",
       "category": [
-        "design"
+        "design",
+        "development"
       ],
       "start": "2009",
       "end": "2009",
       "description": "Maquetación editorial, retoque fotográfico, animación de banners web interactivos.",
-      "hide": false
+      "hide": false,
+      "id": "pljn0y9hhsmoujrk9d"
     },
     {
       "company": "Ida2 Impresión Digital S.L.",
       "role": "Diseñador Gráfico / Primer Oficial de Impresión",
       "category": [
-        "design"
+        "design",
+        "development"
       ],
       "start": "2011",
-      "end": "HOY",
-      "description": "Proyectos de diseño gráfico multidisciplinar, impresión de gran formato, montaje de vinilos y lonas, manejo de maquinaria de corte mecánico y láser.",
-      "hide": false
+      "end": "2024",
+      "description": "Proyectos de diseño gráfico multidisciplinar, desarrollo y gestión web y tienda online, impresión de gran formato, montaje de vinilos y lonas, manejo de maquinaria de corte mecánico y láser.\n- Optimicé el flujo de impresión informatizando la gestión de trabajos, consiguiendo una importante mejora de la productividad y minimizando los errores por comunicación. \n- Gestioné cientos de proyectos de identidad visual, editorial y cartelería, entre otras.\n- Lideré la implementación de artes finales especiales con diferentes tecnologías y amplié la oferta de servicios de la empresa",
+      "hide": false,
+      "id": "bts1ujw0iatmoujrk9d"
     },
     {
-      "company": "La Rosa Visual",
+      "company": "Eduard Farrán",
       "role": "Diseñador Gráfico Freelance",
       "category": [
         "design"
       ],
       "start": "2014",
       "end": "HOY",
-      "description": "Proyectos de diseño gráfico multidisciplinar.",
+      "description": "Proyectos de diseño gráfico multidisciplinar.\nRealicé trabajos de identidad corporativa y comunicación de marca para ayuntamientos y grupos de empresas",
+      "hide": false,
+      "id": "n8yde7ss5amoujrk9d"
+    },
+    {
+      "id": "0i3ngj2oyejmoukhiut",
+      "role": "Diseñador gráfico freelance",
+      "company": "Ayto. Montanejos",
+      "start": "2024",
+      "end": "HOY",
+      "description": "Realicé a Identidad visual de Turismo de la localidad, así como varios proyectos paralelos relacionados con la misma.\nModernicé la señalética de las zonas naturales y turísticas de Montanejos, así como diversos planos informativos de gran tirada.\nDiseñé la cartelería y comunicación de decenas de eventos",
+      "category": [
+        "design"
+      ],
+      "hide": false
+    },
+    {
+      "id": "0tdig6tpg85moukrcw4",
+      "role": "Desarrollador Frontend",
+      "company": "Sopra Steria",
+      "start": "2025",
+      "end": "HOY",
+      "description": "Proyectos de consultoría y desarrollo web para grandes empresas",
+      "category": [
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "id": "pis3njkc3yomoul991f",
+      "role": "Desarrollador Frontend",
+      "company": "BBVA",
+      "start": "2026",
+      "end": "HOY",
+      "description": "Desarrollo y Mantenimiento de app móvil de BBVA\nMigraciones y modernización de código Ember/Lit\nTrabajo con metodologías Agile / Scrumban en equipo internacional España/Portugal",
+      "category": [
+        "design"
+      ],
       "hide": false
     }
   ],
@@ -233,7 +326,8 @@
         "design",
         "development"
       ],
-      "hide": false
+      "hide": false,
+      "id": "bvhx35wa6ofmoujrk9d"
     },
     {
       "institution": "Universidad de Cambridge (CAE)",
@@ -244,7 +338,8 @@
         "design",
         "development"
       ],
-      "hide": false
+      "hide": false,
+      "id": "wz86nfub4wnmoujrk9d"
     },
     {
       "institution": "Escuela de Arte y Superior de Diseño de Valencia",
@@ -252,7 +347,21 @@
       "start": "2005",
       "end": "2009",
       "category": [
-        "design"
+        "design",
+        "development"
+      ],
+      "hide": false,
+      "id": "9mutbihadgmoujrk9d"
+    },
+    {
+      "id": "44wd9c66a1emoujsahb",
+      "degree": "Técnico Superior en Desarrollo de Aplicaciones Web",
+      "institution": "Serpis",
+      "start": "2024",
+      "end": "2026",
+      "category": [
+        "design",
+        "development"
       ],
       "hide": false
     }
@@ -265,21 +374,86 @@
       "category": [
         "development"
       ],
-      "hide": false
+      "hide": false,
+      "id": "ezuq3umjp7amoujrk9d"
     },
     {
       "name": "Curso WordPress",
       "institution": "Trébol Formación",
       "year": "2011",
       "category": [
-        "development"
+        "development",
+        "design"
       ],
-      "hide": false
+      "hide": false,
+      "id": "fxx6s17du3kmoujrk9d"
     },
     {
       "name": "Curso de Diseño de Packaging",
       "institution": "Print Consulting SCP",
       "year": "2019",
+      "category": [
+        "design"
+      ],
+      "hide": false,
+      "id": "2euf5x2hmgymoujrk9d"
+    },
+    {
+      "id": "jb6879d7rqemoujuhny",
+      "name": "Iniciación al Desarrollo con IA",
+      "institution": "Big School",
+      "year": "2026",
+      "category": [
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "id": "7u0j75445i5moulp2kf",
+      "name": "Bootcamp Ember.js",
+      "institution": "Udemy",
+      "year": "2025",
+      "category": [
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "id": "ef6fq2nzkxumoulp2ok",
+      "name": "Javascript Unit Testing With Mocha, Chai and Sinon",
+      "institution": "Udemy",
+      "year": "2025",
+      "category": [
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "id": "h1stck49nbjmoulp2sp",
+      "name": "Aplicaciones web con Web Components y Lit Element",
+      "institution": "Udemy",
+      "year": "2025",
+      "category": [
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "id": "epj45rog52hmoulp30f",
+      "name": "Diseño UX / UI: Experiencia de Usuario e Interfaces Gráficas",
+      "institution": "Formadores IT",
+      "year": "2023",
+      "category": [
+        "design",
+        "development"
+      ],
+      "hide": false
+    },
+    {
+      "id": "ildyker91dmoum2wth",
+      "name": " Spec-Driven Development con IA",
+      "institution": "LIDR.co",
+      "year": "2026",
       "category": [
         "design"
       ],
@@ -294,7 +468,8 @@
       "category": [
         "design"
       ],
-      "hide": false
+      "hide": false,
+      "id": "aqng2q3fsuemoujrk9d"
     },
     {
       "name": "Debate Paco Bascuñan e Isidro Ferrer",
@@ -303,7 +478,8 @@
       "category": [
         "design"
       ],
-      "hide": false
+      "hide": false,
+      "id": "3ctx6zbdo3mmoujrk9d"
     },
     {
       "name": "Workshop con América Sánchez",
@@ -312,7 +488,8 @@
       "category": [
         "design"
       ],
-      "hide": false
+      "hide": false,
+      "id": "9ivdhoy5cv8moujrk9d"
     },
     {
       "name": "Taller de diseño en sala Greenspace",
@@ -321,7 +498,8 @@
       "category": [
         "design"
       ],
-      "hide": false
+      "hide": false,
+      "id": "pxcbzfqi8umoujrk9d"
     },
     {
       "name": "Conferencia Cluster industria gráfica",
@@ -329,6 +507,16 @@
       "year": "2009",
       "category": [
         "design"
+      ],
+      "hide": false,
+      "id": "vj1nghv0dfamoujrk9d"
+    },
+    {
+      "id": "mbf9o01l6xsmoum3jpe",
+      "name": "Google DevFest GDG Valencia",
+      "year": "2025",
+      "category": [
+        "development"
       ],
       "hide": false
     }
@@ -341,7 +529,8 @@
         "design",
         "development"
       ],
-      "hide": false
+      "hide": false,
+      "id": "r92y66cxsymoujrk9d"
     },
     {
       "name": "Valenciano",
@@ -350,16 +539,18 @@
         "design",
         "development"
       ],
-      "hide": false
+      "hide": false,
+      "id": "3szbtfw8iflmoujrk9d"
     },
     {
       "name": "Inglés",
-      "level": "Avanzado (CAE)",
+      "level": "Avanzado (CAE, Cambridge) Nivel C1",
       "category": [
         "design",
         "development"
       ],
-      "hide": false
+      "hide": false,
+      "id": "fc0mbrzwdpfmoujrk9d"
     }
   ]
 }
