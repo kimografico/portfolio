@@ -1,18 +1,21 @@
 // Tipos para los datos del currículum (resume)
 
 export interface Skill {
+  id: string;
   name: string;
   category: 'design' | 'development' | string[];
   hide?: boolean;
 }
 
 export interface Software {
+  id: string;
   name: string;
   category: 'design' | 'development' | string[];
   hide?: boolean;
 }
 
 export interface Language {
+  id: string;
   name: string;
   level: string;
   category?: 'design' | 'development' | string[];
@@ -20,6 +23,7 @@ export interface Language {
 }
 
 export interface Experience {
+  id: string;
   role: string;
   company: string;
   start: string; // YYYY or YYYY-MM
@@ -30,6 +34,7 @@ export interface Experience {
 }
 
 export interface Education {
+  id: string;
   degree: string;
   institution: string;
   start: string;
@@ -39,6 +44,7 @@ export interface Education {
 }
 
 export interface Course {
+  id: string;
   name: string;
   institution: string;
   year: string | number;
@@ -47,6 +53,7 @@ export interface Course {
 }
 
 export interface Workshop {
+  id: string;
   name: string;
   year: string | number;
   category?: 'design' | 'development' | string[];

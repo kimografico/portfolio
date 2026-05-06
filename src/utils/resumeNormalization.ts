@@ -30,6 +30,10 @@ export function normalizeBasicsArea(area: ResumeBasicsArea): ResumeBasicsArea {
   };
 }
 
+function ensureId<T extends { id?: string }>(item: T): T & { id: string } {
+  return { ...item, id: item.id || Math.random().toString(36).slice(2) + Date.now().toString(36) };
+}
+
 export function normalizeResume(data: ResumeData): ResumeData {
   return {
     ...data,
@@ -40,40 +44,54 @@ export function normalizeResume(data: ResumeData): ResumeData {
       design: normalizeBasicsArea(data.basics.design),
       development: normalizeBasicsArea(data.basics.development),
     },
-    skills: data.skills.map((item) => ({
-      ...item,
-      hide: item.hide ?? false,
-      category: normalizeCategory(item.category),
-    })),
-    software: data.software.map((item) => ({
-      ...item,
-      hide: item.hide ?? false,
-      category: normalizeCategory(item.category),
-    })),
-    languages: data.languages.map((item) => ({
-      ...item,
-      hide: item.hide ?? false,
-      category: normalizeCategory(item.category),
-    })),
-    experience: data.experience.map((item) => ({
-      ...item,
-      hide: item.hide ?? false,
-      category: normalizeCategory(item.category),
-    })),
-    education: data.education.map((item) => ({
-      ...item,
-      hide: item.hide ?? false,
-      category: normalizeCategory(item.category),
-    })),
-    courses: data.courses.map((item) => ({
-      ...item,
-      hide: item.hide ?? false,
-      category: normalizeCategory(item.category),
-    })),
-    workshops: data.workshops.map((item) => ({
-      ...item,
-      hide: item.hide ?? false,
-      category: normalizeCategory(item.category),
-    })),
+    skills: data.skills.map((item) =>
+      ensureId({
+        ...item,
+        hide: item.hide ?? false,
+        category: normalizeCategory(item.category),
+      }),
+    ),
+    software: data.software.map((item) =>
+      ensureId({
+        ...item,
+        hide: item.hide ?? false,
+        category: normalizeCategory(item.category),
+      }),
+    ),
+    languages: data.languages.map((item) =>
+      ensureId({
+        ...item,
+        hide: item.hide ?? false,
+        category: normalizeCategory(item.category),
+      }),
+    ),
+    experience: data.experience.map((item) =>
+      ensureId({
+        ...item,
+        hide: item.hide ?? false,
+        category: normalizeCategory(item.category),
+      }),
+    ),
+    education: data.education.map((item) =>
+      ensureId({
+        ...item,
+        hide: item.hide ?? false,
+        category: normalizeCategory(item.category),
+      }),
+    ),
+    courses: data.courses.map((item) =>
+      ensureId({
+        ...item,
+        hide: item.hide ?? false,
+        category: normalizeCategory(item.category),
+      }),
+    ),
+    workshops: data.workshops.map((item) =>
+      ensureId({
+        ...item,
+        hide: item.hide ?? false,
+        category: normalizeCategory(item.category),
+      }),
+    ),
   };
 }

@@ -236,7 +236,7 @@ export default function ResumeManagerPage() {
         <div className="space-y-4">
           {resumeData.skills.map((item, index) => (
             <SkillRow
-              key={`${item.name || 'skill'}-${index}`}
+              key={item.id}
               name={item.name}
               onNameChange={(value) =>
                 updateSectionItem(setResumeData, 'skills', index, (current) => ({
@@ -275,7 +275,7 @@ export default function ResumeManagerPage() {
         <div className="space-y-4">
           {resumeData.software.map((item, index) => (
             <SoftwareRow
-              key={`${item.name || 'software'}-${index}`}
+              key={item.id}
               name={item.name}
               onNameChange={(value) =>
                 updateSectionItem(setResumeData, 'software', index, (current) => ({
@@ -314,7 +314,7 @@ export default function ResumeManagerPage() {
         <div className="space-y-4">
           {resumeData.experience.map((item, index) => (
             <ExperienceRow
-              key={`${item.role || 'experience'}-${index}`}
+              key={item.id}
               role={item.role}
               onRoleChange={(value) =>
                 updateSectionItem(setResumeData, 'experience', index, (current) => ({
@@ -382,7 +382,7 @@ export default function ResumeManagerPage() {
         <div className="space-y-4">
           {resumeData.education.map((item, index) => (
             <EducationRow
-              key={`${item.degree || 'education'}-${index}`}
+              key={item.id}
               degree={item.degree}
               onDegreeChange={(value) =>
                 updateSectionItem(setResumeData, 'education', index, (current) => ({
@@ -443,7 +443,7 @@ export default function ResumeManagerPage() {
         <div className="space-y-4">
           {resumeData.courses.map((item, index) => (
             <CourseRow
-              key={`${item.name || 'course'}-${index}`}
+              key={item.id}
               name={item.name}
               onNameChange={(value) =>
                 updateSectionItem(setResumeData, 'courses', index, (current) => ({
@@ -497,7 +497,7 @@ export default function ResumeManagerPage() {
         <div className="space-y-4">
           {resumeData.workshops.map((item, index) => (
             <WorkshopRow
-              key={`${item.name || 'workshop'}-${index}`}
+              key={item.id}
               name={item.name}
               onNameChange={(value) =>
                 updateSectionItem(setResumeData, 'workshops', index, (current) => ({
@@ -544,7 +544,7 @@ export default function ResumeManagerPage() {
         <div className="space-y-4">
           {resumeData.languages.map((item, index) => (
             <LanguageRow
-              key={`${item.name || 'language'}-${index}`}
+              key={item.id}
               name={item.name}
               onNameChange={(value) =>
                 updateSectionItem(setResumeData, 'languages', index, (current) => ({

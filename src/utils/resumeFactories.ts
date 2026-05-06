@@ -8,20 +8,31 @@ import type {
   Workshop,
 } from '../interfaces/resume';
 
+function generateId() {
+  return Math.random().toString(36).slice(2) + Date.now().toString(36);
+}
+
 export function createEmptySkill(): Skill {
-  return { name: '', category: ['design'], hide: false };
+  return { id: generateId(), name: '', category: ['design'], hide: false };
 }
 
 export function createEmptySoftware(): Software {
-  return { name: '', category: ['design'], hide: false };
+  return { id: generateId(), name: '', category: ['design'], hide: false };
 }
 
 export function createEmptyLanguage(): Language {
-  return { name: '', level: '', category: ['design', 'development'], hide: false };
+  return {
+    id: generateId(),
+    name: '',
+    level: '',
+    category: ['design', 'development'],
+    hide: false,
+  };
 }
 
 export function createEmptyExperience(): Experience {
   return {
+    id: generateId(),
     role: '',
     company: '',
     start: 'HOY',
@@ -34,6 +45,7 @@ export function createEmptyExperience(): Experience {
 
 export function createEmptyEducation(): Education {
   return {
+    id: generateId(),
     degree: '',
     institution: '',
     start: 'HOY',
@@ -45,6 +57,7 @@ export function createEmptyEducation(): Education {
 
 export function createEmptyCourse(): Course {
   return {
+    id: generateId(),
     name: '',
     institution: '',
     year: 'HOY',
@@ -55,6 +68,7 @@ export function createEmptyCourse(): Course {
 
 export function createEmptyWorkshop(): Workshop {
   return {
+    id: generateId(),
     name: '',
     year: 'HOY',
     category: ['design'],
