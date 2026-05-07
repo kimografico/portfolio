@@ -9,9 +9,3 @@ Reescribir recent-works
 Revisar que el editar no este añadiendo el prefijo portfolio
 
 ---
-
-**Añadir**
-
-- Gestion backend del JSON del Curriculum
-
----

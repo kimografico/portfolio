@@ -302,15 +302,15 @@ export default function DataPage() {
 
   return (
     <section data-id="data-page">
-      <div className="flex items-center mb-8 gap-4">
-        <h2 className="text-xl flex-1">
+      <div className="flex flex-col md:flex-row md:items-center mb-8 gap-2 md:gap-4 w-full">
+        <h2 className="text-xl w-full md:flex-1">
           Todos los proyectos{' '}
           <span className="text-muted text-base font-normal">({filteredEntries.length})</span>
         </h2>
         {/* Toggle privado para la visibilidad en las GALERÍAS (no afecta a esta tabla) */}
         <button
           onClick={() => setShowHidden(!showHidden)}
-          className={`px-4 py-2 rounded border font-semibold text-sm transition-colors flex items-center justify-center min-w-[180px] ${
+          className={`w-full md:w-auto px-4 py-2 rounded border font-semibold text-sm transition-colors flex items-center justify-center min-w-[180px] ${
             showHidden
               ? 'bg-amber-100 border-amber-400 text-amber-700'
               : 'border-gray-300 text-muted hover:border-gray-400'
@@ -322,7 +322,7 @@ export default function DataPage() {
         </button>
         <button
           onClick={() => window.open(`${APP_BASENAME}/kimo/add-project`, '_blank')}
-          className="px-4 py-2 bg-cta text-white rounded font-semibold text-sm hover:opacity-90 transition-opacity min-w-[180px]"
+          className="w-full md:w-auto px-4 py-2 bg-cta text-white rounded font-semibold text-sm hover:opacity-90 transition-opacity min-w-[180px]"
           data-id="data-add-project-btn"
         >
           + Añadir Proyecto
