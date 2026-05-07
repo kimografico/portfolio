@@ -13,11 +13,11 @@ function generateId() {
 }
 
 export function createEmptySkill(): Skill {
-  return { id: generateId(), name: '', category: ['design'], hide: false };
+  return { id: generateId(), name: '', category: ['development'], hide: false };
 }
 
 export function createEmptySoftware(): Software {
-  return { id: generateId(), name: '', category: ['design'], hide: false };
+  return { id: generateId(), name: '', category: ['development'], hide: false };
 }
 
 export function createEmptyLanguage(): Language {
@@ -25,7 +25,7 @@ export function createEmptyLanguage(): Language {
     id: generateId(),
     name: '',
     level: '',
-    category: ['design', 'development'],
+    category: ['development'],
     hide: false,
   };
 }
@@ -38,7 +38,7 @@ export function createEmptyExperience(): Experience {
     start: 'HOY',
     end: 'HOY',
     description: '',
-    category: ['design'],
+    category: ['development'],
     hide: false,
   };
 }
@@ -50,7 +50,7 @@ export function createEmptyEducation(): Education {
     institution: '',
     start: 'HOY',
     end: 'HOY',
-    category: ['design'],
+    category: ['development'],
     hide: false,
   };
 }
@@ -61,7 +61,7 @@ export function createEmptyCourse(): Course {
     name: '',
     institution: '',
     year: 'HOY',
-    category: ['design'],
+    category: ['development'],
     hide: false,
   };
 }
@@ -71,7 +71,7 @@ export function createEmptyWorkshop(): Workshop {
     id: generateId(),
     name: '',
     year: 'HOY',
-    category: ['design'],
+    category: ['development'],
     hide: false,
   };
 }
