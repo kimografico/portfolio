@@ -1,4 +1,5 @@
 import { useCallback, useMemo, useState } from 'react';
+import RecentWorksManagerPage from './RecentWorksManagerPage';
 import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
 import BaseTable from '../../components/compositions/BaseTable';
 import { useShowHidden } from '../../hooks/useShowHidden';
@@ -517,6 +518,11 @@ export default function DataPage() {
           </div>
         </div>
       )}
+
+      {/* Bloque de administración de trabajos recientes */}
+      <div className="mt-12">
+        <RecentWorksManagerPage />
+      </div>
     </section>
   );
 }

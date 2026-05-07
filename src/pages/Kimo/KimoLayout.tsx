@@ -7,7 +7,6 @@ import {
   IconSpots,
   IconTable,
   IconFile,
-  IconShine,
 } from '../../components/iconos';
 import '../../styles/espacio-personal.css';
 
@@ -60,16 +59,6 @@ export default function KimoLayout() {
         >
           <IconSpots className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Iconos</span>
-        </NavLink>
-        <NavLink
-          to="recent-works"
-          className={({ isActive }) =>
-            `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
-          }
-          aria-label="Trabajos recientes"
-        >
-          <IconShine className="inline md:hidden" size={32} strokeWidth={1} />
-          <span className="hidden md:inline">Recientes</span>
         </NavLink>
         <NavLink
           to="resume"

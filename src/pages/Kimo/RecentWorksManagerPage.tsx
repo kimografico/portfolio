@@ -241,7 +241,7 @@ export default function RecentWorksManagerPage() {
           className="px-6 py-2 bg-cta text-white rounded font-semibold hover:opacity-90 disabled:opacity-50 transition-opacity"
           data-id="rw-save-btn"
         >
-          {status === 'loading' ? 'Guardando…' : 'Guardar cambios'}
+          {status === 'loading' ? 'Guardando…' : 'Guardar cambios en Recientes'}
         </button>
         <div className="text-xs text-muted flex items-center">
           Total: {selectedDev.size + selectedGd.size} proyecto(s)
