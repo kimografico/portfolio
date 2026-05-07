@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-
 import UIButton from '../../ui/UIButton';
+import { IconSkate } from '../../iconos/IconSkate';
 
 const meta = {
   title: 'UI/UIButton',
@@ -8,24 +8,16 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
-  args: {
-    href: '#',
-    children: 'Ver proyecto',
-    arrow: true,
-    dataId: 'ui-button-story',
-  },
   argTypes: {
-    href: {
-      control: 'text',
-    },
     children: {
       control: 'text',
     },
     arrow: {
       control: 'boolean',
     },
-    className: {
-      control: 'text',
+    color: {
+      control: 'inline-radio',
+      options: ['accent', 'cta', 'text'],
     },
     dataId: {
       control: 'text',
@@ -37,19 +29,55 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
-
-export const WithoutArrow: Story = {
+export const Default: Story = {
   args: {
-    arrow: false,
-    children: 'Abrir enlace',
+    type: 'button',
+    children: 'Botón por defecto',
+    dataId: 'btn-default',
   },
 };
 
-export const InkVariant: Story = {
+export const WithLinkArrow: Story = {
   args: {
     href: '/kimo',
     children: 'Explorar Kimo',
-    className: 'btn-outline-ink',
+    arrow: true,
+    dataId: 'btn-link-arrow',
+  },
+};
+
+export const SolidAccent: Story = {
+  args: {
+    type: 'button',
+    children: 'Solid Accent',
+    color: 'accent',
+    solid: true,
+    dataId: 'btn-solid-accent',
+  },
+};
+
+export const WithCustomIcon: Story = {
+  args: {
+    type: 'button',
+    children: 'Con icono custom',
+    icon: <IconSkate size={26} strokeWidth={1.5} />,
+    dataId: 'btn-custom-icon',
+  },
+};
+
+export const WithCtaColor: Story = {
+  args: {
+    type: 'button',
+    children: 'Botón CTA',
+    color: 'cta',
+    dataId: 'btn-cta-color',
+  },
+};
+
+export const SaveButton: Story = {
+  args: {
+    type: 'button',
+    children: 'Guardar',
+    saveBtn: true,
   },
 };

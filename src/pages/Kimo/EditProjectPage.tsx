@@ -25,6 +25,7 @@ function normalizeImages(
   });
 }
 import { useEffect, useState, useRef } from 'react';
+import UIButton from '../../components/ui/UIButton';
 import { IconImage } from '../../components/iconos/IconImage';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getProject, updateProject, uploadImages, type ProjectData } from '../../api/apiClient';
@@ -394,12 +395,9 @@ export default function EditProjectPage() {
   return (
     <section data-id="edit-project-page">
       <div className="flex items-center gap-4 mb-6">
-        <button
-          onClick={() => navigate('/kimo/data')}
-          className="text-sm text-accent hover:underline"
-        >
-          ← Tabla
-        </button>
+        <UIButton onClick={() => navigate('/kimo/data')} dataId="edit-project-back-btn" arrowBack>
+          Volver a la Tabla
+        </UIButton>
         <h2 className="text-xl">
           Editar proyecto <span className="text-muted">#{projectId}</span>
         </h2>

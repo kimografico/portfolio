@@ -1,4 +1,5 @@
 import { useCallback, useMemo, useState } from 'react';
+import UIButton from '../../components/ui/UIButton';
 import { useNavigate } from 'react-router-dom';
 import RecentWorksManagerPage from './RecentWorksManagerPage';
 import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
@@ -319,20 +320,24 @@ export default function DataPage() {
         >
           {showHidden ? 'Mostrar todos los proyectos' : 'Mostrar proyectos visibles'}
         </button>
-        <button
+        {/* Botón: + Añadir Proyecto (UIButton color cta, solid) */}
+        <UIButton
+          color="cta"
+          solid
           onClick={() => window.open(`${APP_BASENAME}/kimo/add-project`, '_blank')}
-          className="w-full md:w-auto px-4 py-2 bg-cta text-white rounded font-semibold text-sm hover:opacity-90 transition-opacity min-w-[180px]"
           data-id="data-add-project-btn"
         >
           + Añadir Proyecto
-        </button>
-        <button
+        </UIButton>
+        {/* Botón: Pendientes (UIButton color accent, solid) */}
+        <UIButton
+          color="accent"
+          solid
           onClick={() => navigate('/kimo/pendiente')}
-          className="w-full md:w-auto px-4 py-2 bg-accent text-white rounded font-semibold text-sm hover:opacity-90 transition-opacity min-w-[140px]"
           data-id="data-pending-btn"
         >
           Pendientes
-        </button>
+        </UIButton>
       </div>
 
       {/* Filtros */}

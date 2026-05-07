@@ -1,3 +1,4 @@
+export { IconSave } from './IconSave';
 export { IconSpots } from './IconSpots';
 export { IconShine } from './IconShine';
 export { IconAdd } from './IconAdd';

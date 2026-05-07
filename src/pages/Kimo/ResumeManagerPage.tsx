@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, type DragEvent } from 'react';
 import type { ReactNode } from 'react';
 import { getResume, updateResume } from '../../api/apiClient';
+import UIButton from '../../components/ui/UIButton';
 import CourseRow from '../../components/resume/CourseRow';
 import EducationRow from '../../components/resume/EducationRow';
 import ExperienceRow from '../../components/resume/ExperienceRow';
@@ -228,14 +229,14 @@ export default function ResumeManagerPage() {
           </p>
         </div>
         <div className="flex flex-col gap-3 md:items-end">
-          <button
-            type="button"
+          <UIButton
             onClick={handleSave}
             disabled={saveDisabled}
-            className="rounded-md bg-cta px-5 py-2 font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+            dataId="resume-header-save-btn"
+            saveBtn
           >
             {status === 'saving' ? 'Guardando…' : 'Guardar curriculum'}
-          </button>
+          </UIButton>
           <p className="text-xs text-muted">Formato: visible/oculto + categorías por entrada.</p>
         </div>
       </header>
@@ -669,14 +670,14 @@ export default function ResumeManagerPage() {
           {resumeData.skills.length} habilidades · {resumeData.experience.length} experiencias ·{' '}
           {resumeData.education.length} formaciones
         </div>
-        <button
-          type="button"
+        <UIButton
           onClick={handleSave}
           disabled={saveDisabled}
-          className="rounded-md bg-cta px-5 py-2 font-semibold text-white transition-opacity hover:opacity-90 disabled:opacity-50"
+          dataId="resume-footer-save-btn"
+          saveBtn
         >
           {status === 'saving' ? 'Guardando…' : 'Guardar curriculum'}
-        </button>
+        </UIButton>
       </div>
     </section>
   );
