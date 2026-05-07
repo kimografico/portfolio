@@ -623,21 +623,39 @@ export default function EditProjectPage() {
                   style={{ background: 'var(--color-bg-btn)', borderColor: 'var(--color-border)' }}
                 >
                   {img.image && !imgErrors[i] ? (
-                    <a
-                      href={img.image}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title={img.label || `Abrir imagen ${i + 1} en nueva pestaña`}
-                      tabIndex={0}
-                      data-id={`edit-project-img-link-${i}`}
-                    >
-                      <img
-                        src={img.image}
-                        alt={img.label || `Imagen ${i + 1}`}
-                        className="w-full h-full object-cover"
-                        onError={() => setImgErrors((prev) => ({ ...prev, [i]: true }))}
-                      />
-                    </a>
+                    (() => {
+                      // Si la ruta no contiene '/' se asume que es solo el nombre y se reconstruye la ruta
+                      let src = img.image;
+                      if (!img.image.includes('/')) {
+                        let tipoFolder = '';
+                        if (f.type === 'gd') tipoFolder = 'design';
+                        else if (f.type === 'dev') tipoFolder = 'web';
+                        // Si falta categoría, no se puede construir la ruta
+                        if (tipoFolder && f.category) {
+                          src = `/portfolio/images/portfolio/${tipoFolder}/${f.category}/${img.image}`;
+                        } else {
+                          src = `/portfolio/images/portfolio/${img.image}`;
+                        }
+                      }
+                      console.log('[EditProjectPage] Imagen render src:', src);
+                      return (
+                        <a
+                          href={src}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title={img.label || `Abrir imagen ${i + 1} en nueva pestaña`}
+                          tabIndex={0}
+                          data-id={`edit-project-img-link-${i}`}
+                        >
+                          <img
+                            src={src}
+                            alt={img.label || `Imagen ${i + 1}`}
+                            className="w-full h-full object-cover"
+                            onError={() => setImgErrors((prev) => ({ ...prev, [i]: true }))}
+                          />
+                        </a>
+                      );
+                    })()
                   ) : (
                     <div
                       className="w-full h-full flex items-center justify-center text-lg"

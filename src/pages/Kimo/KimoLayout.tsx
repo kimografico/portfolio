@@ -80,7 +80,6 @@ export default function KimoLayout() {
           <IconTable className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Proyectos</span>
         </NavLink>
-        {/* Botón '+ Proyecto' eliminado del menú, ahora se mostrará en DataPage */}
       </nav>
       <main id="main-content">
         <Outlet />

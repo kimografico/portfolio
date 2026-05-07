@@ -32,6 +32,14 @@ export interface DataEntry {
 }
 
 /**
+ * Entrada preparada para la sección Pendiente.
+ * Añade el número de elementos en extras.
+ */
+export interface PendingEntry extends DataEntry {
+  extrasCount: number;
+}
+
+/**
  * Interfaz para las opciones de filtro active
  */
 export interface FilterOptions {
@@ -96,6 +104,23 @@ const SOURCES: Array<{ data: any[]; type: string; category: string }> = [
 ];
 /* eslint-enable @typescript-eslint/no-explicit-any */
 
+const GRAPHIC_DESIGN_DETAIL_SLUGS: Record<string, string> = {
+  Cartelería: 'carteleria',
+  Editorial: 'editorial',
+  Etiquetas: 'etiquetas',
+  Logotipos: 'logotipos',
+  Multimedia: 'multimedia',
+  Packaging: 'packaging',
+  Papelería: 'papeleria',
+  'Proyectos especiales': 'proyectos-especiales',
+};
+
+const DEVELOPMENT_DETAIL_SLUGS: Record<string, string> = {
+  Frameworks: 'frameworks',
+  Vanilla: 'vanilla',
+  WordPress: 'wordpress',
+};
+
 /**
  * Combina todos los JSON en un único array normalizado.
  * Se calcula una sola vez, no necesita recalcularse en cada render.
@@ -112,6 +137,55 @@ export const ALL_ENTRIES: DataEntry[] = SOURCES.flatMap(({ data, type, category 
     visible: item.visible !== false,
   })),
 );
+
+/**
+ * Construye la ruta pública de detalle del proyecto según su tipo y categoría.
+ */
+export function buildProjectDetailPath(
+  entry: Pick<DataEntry, 'type' | 'category' | 'id'>,
+): string | null {
+  if (entry.type === 'Desarrollo') {
+    const parent = DEVELOPMENT_DETAIL_SLUGS[entry.category];
+    return parent ? `/dev/${parent}/${entry.id}` : null;
+  }
+
+  if (entry.type === 'Diseño Gráfico') {
+    const category = GRAPHIC_DESIGN_DETAIL_SLUGS[entry.category];
+    return category ? `/graphic-design/${category}/${entry.id}` : null;
+  }
+
+  return null;
+}
+
+/**
+ * Devuelve solo los proyectos que tienen extras no vacío.
+ */
+export function getPendingEntries(): PendingEntry[] {
+  const pendingEntries = SOURCES.flatMap(({ data, type, category }) =>
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (data as any[])
+      .filter((item) => item.extras && Array.isArray(item.extras) && item.extras.length > 0)
+      .map((item) => ({
+        id: item.id,
+        date: item.date ?? '',
+        title: item.title ?? '',
+        cliente: item.cliente ?? '',
+        type,
+        category,
+        visible: item.visible !== false,
+        extrasCount: item.extras.length,
+      })),
+  );
+
+  return pendingEntries.sort((a, b) => {
+    const dateComparison = String(b.date).localeCompare(String(a.date));
+    if (dateComparison !== 0) return dateComparison;
+
+    const numA = Number(a.id);
+    const numB = Number(b.id);
+    return isNaN(numA) || isNaN(numB) ? String(a.id).localeCompare(String(b.id)) : numA - numB;
+  });
+}
 
 /**
  * Obtiene las opciones de categoría disponibles según el tipo seleccionado.

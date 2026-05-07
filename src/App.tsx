@@ -17,6 +17,7 @@ import ContactMe from './pages/ContactMe/ContactMe';
 import ScrollToTop from './components/layout/ScrollToTop';
 import IconGallery from './pages/Kimo/IconGallery';
 import DataPage from './pages/Kimo/DataPage';
+import PendientePage from './pages/Kimo/PendientePage';
 import AddProjectPage from './pages/Kimo/AddProjectPage';
 import RecentWorksManagerPage from './pages/Kimo/RecentWorksManagerPage';
 import ResumeManagerPage from './pages/Kimo/ResumeManagerPage';
@@ -42,6 +43,7 @@ export default function App() {
             <Route path="ilustraciones/:id" element={<IllustrationDetailPage />} />
             <Route path="iconos" element={<IconGallery />} />
             <Route path="data" element={<DataPage />} />
+            <Route path="pendiente" element={<PendientePage />} />
             <Route path="add-project" element={<AddProjectPage />} />
             <Route path="edit-project/:id" element={<EditProjectPage />} />
             <Route path="recent-works" element={<RecentWorksManagerPage />} />

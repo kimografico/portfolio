@@ -1,4 +1,5 @@
 import { useCallback, useMemo, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import RecentWorksManagerPage from './RecentWorksManagerPage';
 import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
 import BaseTable from '../../components/compositions/BaseTable';
@@ -12,7 +13,6 @@ import {
   getClienteOptions,
   applyFilters,
   calculateDuplicateIds,
-  getEntriesWithExtras,
 } from './DataPageHelpers';
 
 // Necesario para crear columnas tipadas
@@ -40,7 +40,8 @@ const columnHelper = createColumnHelper<DataEntry>();
 type VisibilityFilter = 'all' | 'visible' | 'hidden';
 
 export default function DataPage() {
-  const [filterType, setFilterType] = useState('');
+  const navigate = useNavigate();
+  const [filterType, setFilterType] = useState('Desarrollo');
   const [filterCategory, setFilterCategory] = useState('');
   const [filterCliente, setFilterCliente] = useState('');
   const [filterVisibility, setFilterVisibility] = useState<VisibilityFilter>('all');
@@ -91,9 +92,6 @@ export default function DataPage() {
 
   // Calcular IDs duplicados en todo el dataset (no solo filtrados)
   const duplicateIds = useMemo(() => calculateDuplicateIds(), []);
-
-  // Calcular IDs que tienen extras no vacío
-  const idsWithExtras = useMemo(() => getEntriesWithExtras(), []);
 
   // --- Handlers de selección ---
 
@@ -234,7 +232,7 @@ export default function DataPage() {
               checked={allCurrentSelected}
               onChange={toggleSelectAll}
               aria-label="Seleccionar todos"
-              className="w-4 h-4"
+              className="w-6 h-6"
             />
           ),
           cell: ({ row }) => (
@@ -247,7 +245,7 @@ export default function DataPage() {
               }}
               onClick={(e) => e.stopPropagation()}
               aria-label={`Seleccionar ${row.original.title}`}
-              className="w-4 h-4"
+              className="w-6 h-6"
             />
           ),
           enableSorting: false,
@@ -327,6 +325,13 @@ export default function DataPage() {
           data-id="data-add-project-btn"
         >
           + Añadir Proyecto
+        </button>
+        <button
+          onClick={() => navigate('/kimo/pendiente')}
+          className="w-full md:w-auto px-4 py-2 bg-accent text-white rounded font-semibold text-sm hover:opacity-90 transition-opacity min-w-[140px]"
+          data-id="data-pending-btn"
+        >
+          Pendientes
         </button>
       </div>
 
@@ -497,27 +502,6 @@ export default function DataPage() {
           emptyMessage="No hay proyectos que coincidan con los filtros."
         />
       </div>
-
-      {/* Botones para IDs con extras no vacío */}
-      {idsWithExtras.length > 0 && (
-        <div className="mt-8 pt-6 border-t" data-id="data-extras-buttons">
-          <p className="text-xs font-semibold text-muted mb-3">Proyectos para revisar:</p>
-          <div className="flex flex-wrap gap-2">
-            {idsWithExtras.map((id) => (
-              <button
-                key={id}
-                onClick={() => {
-                  window.open(`${APP_BASENAME}/kimo/edit-project/${id}`, '_blank');
-                }}
-                className="px-3 py-1.5 text-sm bg-accent text-white rounded hover:opacity-90 transition-opacity"
-                title={`Editar proyecto ${id}`}
-              >
-                {String(id)}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
 
       {/* Bloque de administración de trabajos recientes */}
       <div className="mt-12">
