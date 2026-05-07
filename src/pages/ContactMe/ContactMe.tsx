@@ -11,33 +11,25 @@ export default function ContactMe() {
             Contacto
           </h1>
           <div className="mb-8 text-muted text-base max-w-2xl">
-            Puedes escribirme por correo, proponer colaboraciones o simplemente saludar.
+            <p className="mb-2">
+              Puedes escribirme por correo, proponer colaboraciones o simplemente saludar.
+            </p>
             <UIButton
               href="https://forms.gle/jvyMugYjDNhX1f1fA"
+              solid
               arrow
-              className="mt-5"
               data-id="contact-form-link"
             >
               Ir al formulario de contacto
             </UIButton>
             <div className="mt-8">
-              <div className="font-semibold mb-2">Curriculum Vitae</div>
+              <div className="font-semibold mb-2">Versiones de mi Curriculum Vitae</div>
               <div className="flex flex-col gap-3">
-                <UIButton
-                  href={`${APP_BASENAME}/resume/design`}
-                  className="text-link hover:underline self-start"
-                  data-id="cv-design-link"
-                  arrow
-                >
-                  Diseñador Gráfico
+                <UIButton href={`${APP_BASENAME}/resume/design`} arrow data-id="cv-design-link">
+                  Curriculum Diseñador Gráfico
                 </UIButton>
-                <UIButton
-                  href={`${APP_BASENAME}/resume/development`}
-                  className="text-link hover:underline self-start"
-                  data-id="cv-dev-link"
-                  arrow
-                >
-                  Desarrollador Frontend
+                <UIButton href={`${APP_BASENAME}/resume/development`} arrow data-id="cv-dev-link">
+                  Curriculum Desarrollador Frontend
                 </UIButton>
               </div>
             </div>

@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import type { Book } from '../../types';
-import BookModal from '../../components/compositions/BookModal';
-import BooksFilter from '../../components/compositions/BooksFilter';
-import '../../styles/books.css';
+import type { Book } from '../../../types';
+import BookModal from '../../../components/compositions/BookModal';
+import BooksFilter from '../../../components/compositions/BooksFilter';
+import '../../../styles/books.css';
 
-import type { BooksGalleryProps } from '../../interfaces/books';
+import type { BooksGalleryProps } from '../../../interfaces/books';
 
 export default function BooksGallery({ books }: BooksGalleryProps) {
   const [selected, setSelected] = useState<Book | null>(null);

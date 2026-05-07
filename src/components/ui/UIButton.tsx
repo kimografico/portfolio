@@ -14,6 +14,7 @@ type UIButtonBaseProps = {
   color?: 'accent' | 'cta' | 'text';
   solid?: boolean;
   saveBtn?: boolean;
+  link?: boolean;
 };
 
 type UIButtonProps =
@@ -35,26 +36,31 @@ type UIButtonProps =
 export default function UIButton(props: UIButtonProps) {
   const {
     children,
+    icon,
     arrow = false,
     arrowBack = false,
+    dataId,
     disabled = false,
+    color,
+    solid = false,
     saveBtn = false,
+    link = false,
     ...rest
   } = props;
 
   // Icon, color, solid, dataId pueden ser sobrescritos si saveBtn
-  let icon = props.icon;
-  let color = props.color;
-  let solid = props.solid ?? false;
-  let dataId = props.dataId;
+  let buttonIcon = icon;
+  let buttonColor = color;
+  let buttonSolid = solid;
+  let buttonDataId = dataId;
 
   if (saveBtn) {
-    if (!icon) icon = <IconSave size={26} strokeWidth={1.5} />;
-    if (!solid) solid = true;
-    color = 'cta';
-    if (!dataId) dataId = 'btn-save';
+    if (!buttonIcon) buttonIcon = <IconSave size={26} strokeWidth={1.5} />;
+    if (!buttonSolid) buttonSolid = true;
+    buttonColor = 'cta';
+    if (!buttonDataId) buttonDataId = 'btn-save';
   }
-  if (!color) color = 'text';
+  if (!buttonColor) buttonColor = 'text';
 
   const colorMap = {
     accent: 'var(--color-accent)',
@@ -62,14 +68,18 @@ export default function UIButton(props: UIButtonProps) {
     text: 'var(--color-text)',
   } as const;
 
-  const buttonColor = colorMap[color];
-  const sharedClassName =
-    'group inline-flex items-center justify-center rounded-md border px-4 py-2 font-semibold transition-colors duration-150';
-  const colorClasses = solid
-    ? 'border-[color:var(--button-color)] bg-[color:var(--button-color)] text-[color:var(--color-bg)] hover:bg-transparent hover:text-[color:var(--button-color)]'
-    : 'border-[color:var(--button-color)] text-[color:var(--button-color)] hover:bg-[color:var(--button-color)] hover:text-[color:var(--color-bg)]';
+  const resolvedButtonColor = colorMap[buttonColor];
+  // Clases base
+  const sharedClassName = link
+    ? 'group inline-flex items-center justify-center text-sm text-muted hover:text-ink transition-colors duration-150 bg-transparent border-0 p-0 font-normal rounded-none'
+    : 'group inline-flex items-center justify-center rounded-md border px-4 py-2 font-semibold transition-colors duration-150';
+  const colorClasses = link
+    ? ''
+    : buttonSolid
+      ? 'border-[color:var(--button-color)] bg-[color:var(--button-color)] text-[color:var(--color-bg)] hover:bg-transparent hover:text-[color:var(--button-color)]'
+      : 'border-[color:var(--button-color)] text-[color:var(--button-color)] hover:bg-[color:var(--button-color)] hover:text-[color:var(--color-bg)]';
   const style = {
-    '--button-color': buttonColor,
+    '--button-color': resolvedButtonColor,
   } as CSSProperties;
 
   const content = (
@@ -82,13 +92,13 @@ export default function UIButton(props: UIButtonProps) {
           ←
         </span>
       )}
-      {icon && (
+      {buttonIcon && (
         <span
           className="mr-2 inline-flex align-middle"
           style={{ fontSize: '1.35em', lineHeight: 1 }}
           aria-hidden="true"
         >
-          {icon}
+          {buttonIcon}
         </span>
       )}
       {children}
@@ -108,7 +118,7 @@ export default function UIButton(props: UIButtonProps) {
       <a
         href={props.href}
         className={`${sharedClassName} ${colorClasses} ${disabled ? 'pointer-events-none opacity-50' : ''}`}
-        data-id={dataId}
+        data-id={buttonDataId}
         aria-disabled={disabled || undefined}
         tabIndex={disabled ? -1 : undefined}
         style={style}
@@ -121,7 +131,7 @@ export default function UIButton(props: UIButtonProps) {
   return (
     <button
       className={`${sharedClassName} ${colorClasses}`}
-      data-id={dataId}
+      data-id={buttonDataId}
       type={props.type || 'button'}
       onClick={props.onClick}
       disabled={disabled}

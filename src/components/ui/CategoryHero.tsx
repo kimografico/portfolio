@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import UIButton from './UIButton';
 import { useRef, useEffect, useState } from 'react';
 import type { IconProps } from '../../types/icons';
 import { useTheme } from '../../hooks/useTheme';
@@ -43,6 +44,7 @@ export default function CategoryHero({
   backLinkText = 'Atrás',
   dataId = 'category-hero',
 }: CategoryHeroProps) {
+  const navigate = useNavigate();
   const sectionRef = useRef<HTMLDivElement>(null);
   const [backgroundOffset, setBackgroundOffset] = useState(0);
   const [theme] = useTheme();
@@ -117,24 +119,14 @@ export default function CategoryHero({
 
         {/* Enlace de retroceso (opcional) - Debajo de la descripción con flecha */}
         {backLink && (
-          <Link
-            to={backLink}
-            className="inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition-colors"
+          <UIButton
+            link
+            arrowBack
+            onClick={() => navigate(backLink)}
+            dataId="category-hero-backlink"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="w-4 h-4"
-            >
-              <path d="M15 19l-7-7 7-7" />
-            </svg>
             {backLinkText}
-          </Link>
+          </UIButton>
         )}
       </div>
     </section>

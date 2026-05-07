@@ -6,21 +6,22 @@
  */
 
 import { useEffect, useState, useMemo } from 'react';
-import ProjectSelectorColumn from '../../components/compositions/ProjectSelectorColumn';
-import { getRecentWorks, updateRecentWorks, type RecentWork } from '../../api/apiClient';
+import UIButton from '../../../components/ui/UIButton';
+import ProjectSelectorColumn from '../../../components/compositions/ProjectSelectorColumn';
+import { getRecentWorks, updateRecentWorks, type RecentWork } from '../../../api/apiClient';
 
 // Importar todos los JSONs de proyectos
-import carteleria from '../../data/graphic-design/carteleria.json';
-import editorial from '../../data/graphic-design/editorial.json';
-import etiquetas from '../../data/graphic-design/etiquetas.json';
-import logotipos from '../../data/graphic-design/logotipos.json';
-import multimedia from '../../data/graphic-design/multimedia.json';
-import packaging from '../../data/graphic-design/packaging.json';
-import papeleria from '../../data/graphic-design/papeleria.json';
-import proyectosEspeciales from '../../data/graphic-design/proyectos-especiales.json';
-import frameworks from '../../data/development/frameworks.json';
-import vanilla from '../../data/development/vanilla.json';
-import wordpress from '../../data/development/wordpress.json';
+import carteleria from '../../../data/graphic-design/carteleria.json';
+import editorial from '../../../data/graphic-design/editorial.json';
+import etiquetas from '../../../data/graphic-design/etiquetas.json';
+import logotipos from '../../../data/graphic-design/logotipos.json';
+import multimedia from '../../../data/graphic-design/multimedia.json';
+import packaging from '../../../data/graphic-design/packaging.json';
+import papeleria from '../../../data/graphic-design/papeleria.json';
+import proyectosEspeciales from '../../../data/graphic-design/proyectos-especiales.json';
+import frameworks from '../../../data/development/frameworks.json';
+import vanilla from '../../../data/development/vanilla.json';
+import wordpress from '../../../data/development/wordpress.json';
 
 // Interfaz para proyectos del JSON
 interface ProjectJSON {
@@ -235,14 +236,14 @@ export default function RecentWorksManagerPage() {
 
       {/* Botón de guardar */}
       <div className="flex gap-4">
-        <button
+        <UIButton
+          saveBtn
           onClick={handleSave}
           disabled={status === 'loading'}
-          className="px-6 py-2 bg-cta text-white rounded font-semibold hover:opacity-90 disabled:opacity-50 transition-opacity"
           data-id="rw-save-btn"
         >
           {status === 'loading' ? 'Guardando…' : 'Guardar cambios en Recientes'}
-        </button>
+        </UIButton>
         <div className="text-xs text-muted flex items-center">
           Total: {selectedDev.size + selectedGd.size} proyecto(s)
         </div>

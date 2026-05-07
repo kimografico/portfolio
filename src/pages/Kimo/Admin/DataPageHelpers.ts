@@ -4,18 +4,18 @@
  */
 
 // --- Importación de todos los JSON ---
-import carteleria from '../../data/graphic-design/carteleria.json';
-import editorial from '../../data/graphic-design/editorial.json';
-import etiquetas from '../../data/graphic-design/etiquetas.json';
-import logotipos from '../../data/graphic-design/logotipos.json';
-import multimedia from '../../data/graphic-design/multimedia.json';
-import packaging from '../../data/graphic-design/packaging.json';
-import papeleria from '../../data/graphic-design/papeleria.json';
-import proyectosEspeciales from '../../data/graphic-design/proyectos-especiales.json';
-import frameworks from '../../data/development/frameworks.json';
-import vanilla from '../../data/development/vanilla.json';
-import wordpress from '../../data/development/wordpress.json';
-import { processProjectsImages } from '../../data/config/imagePathHelper';
+import carteleria from '../../../data/graphic-design/carteleria.json';
+import editorial from '../../../data/graphic-design/editorial.json';
+import etiquetas from '../../../data/graphic-design/etiquetas.json';
+import logotipos from '../../../data/graphic-design/logotipos.json';
+import multimedia from '../../../data/graphic-design/multimedia.json';
+import packaging from '../../../data/graphic-design/packaging.json';
+import papeleria from '../../../data/graphic-design/papeleria.json';
+import proyectosEspeciales from '../../../data/graphic-design/proyectos-especiales.json';
+import frameworks from '../../../data/development/frameworks.json';
+import vanilla from '../../../data/development/vanilla.json';
+import wordpress from '../../../data/development/wordpress.json';
+import { processProjectsImages } from '../../../data/config/imagePathHelper';
 
 /**
  * DataEntry: tipo normalizado para todas las entradas de todos los JSON.

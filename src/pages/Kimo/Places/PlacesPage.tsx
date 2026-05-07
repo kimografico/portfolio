@@ -1,7 +1,7 @@
 import PlacesTable from './PlacesTable';
-import VisitedWorldMap from '../../components/compositions/VisitedWorldMap';
-import places from '../../data/kimo/places.json';
-import markers from '../../data/kimo/places_markers.json';
+import VisitedWorldMap from '../../../components/compositions/VisitedWorldMap';
+import places from '../../../data/kimo/places.json';
+import markers from '../../../data/kimo/places_markers.json';
 
 /**
  * Página de lugares visitados: muestra mapa y tabla

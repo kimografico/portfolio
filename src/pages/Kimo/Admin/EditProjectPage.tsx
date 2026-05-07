@@ -1,6 +1,34 @@
-import { useState, useRef } from 'react';
-import { IconImage } from '../../components/iconos/IconImage';
-import { createProject, uploadImages } from '../../api/apiClient';
+// --- Helpers y tipos para imágenes/videos ---
+interface FormState {
+  type: '' | 'gd' | 'dev';
+  category: string;
+  title: string;
+  cliente: string;
+  descripcion: string;
+  visible: boolean;
+  imagenes: { image: string; label: string }[];
+  videos: { image: string; label: string }[];
+  extras: string[];
+  stack: string[];
+}
+
+const emptyImagen = (): { image: string; label: string } => ({ image: '', label: '' });
+const emptyVideo = (): { image: string; label: string } => ({ image: '', label: '' });
+
+function normalizeImages(
+  arr: Array<{ image?: string; ruta?: string; label?: string } | string>,
+): { image: string; label: string }[] {
+  return arr.map((img) => {
+    if (typeof img === 'string') return { image: img, label: '' };
+    if ('image' in img) return { image: img.image ?? '', label: img.label ?? '' };
+    return { image: img.ruta ?? '', label: img.label ?? '' };
+  });
+}
+import { useEffect, useState, useRef } from 'react';
+import UIButton from '../../../components/ui/UIButton';
+import { IconImage } from '../../../components/iconos/IconImage';
+import { useParams, useNavigate } from 'react-router-dom';
+import { getProject, updateProject, uploadImages, type ProjectData } from '../../../api/apiClient';
 
 /**
  * Categorías disponibles por tipo.
@@ -40,93 +68,140 @@ const STACK_QUICK_OPTIONS = [
   'Prestashop',
 ];
 
-/** Devuelve un objeto imagen vacío */
-const emptyImagen = () => ({ image: '', label: '' });
-
-/** Devuelve un objeto video vacío */
-const emptyVideo = () => ({ image: '', label: '' });
-
-/** Estado inicial del formulario */
-const initialForm = {
-  type: '' as '' | 'gd' | 'dev',
-  category: '',
-  title: '',
-  cliente: '',
-  descripcion: '',
-  visible: true,
-  imagenes: [emptyImagen()],
-  videos: [emptyVideo()],
-  extras: [''],
-  stack: [] as string[],
-};
-
-type FormState = {
-  type: '' | 'gd' | 'dev';
-  category: string;
-  title: string;
-  cliente: string;
-  descripcion: string;
-  visible: boolean;
-  imagenes: { image: string; label: string }[];
-  videos: { image: string; label: string }[];
-  extras: string[];
-  stack: string[];
-};
-
 /**
- * AddProjectPage: Formulario para añadir un proyecto nuevo.
+ * EditProjectPage: Formulario para editar un proyecto existente.
  *
- * Llama a POST /api/projects con todos los datos del proyecto.
- * El backend valida, genera el ID y persiste en el JSON correspondiente.
+ * Carga los datos del proyecto por ID (de la URL) vía GET /api/projects/:id,
+ * prerellena el formulario y llama a PUT /api/projects/:id al guardar.
  */
-export default function AddProjectPage() {
-  const [form, setForm] = useState<FormState>(initialForm);
+export default function EditProjectPage() {
+  const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
+  const projectId = Number(id);
+  const isValidId = !isNaN(projectId) && projectId > 0;
+
+  const [form, setForm] = useState<FormState | null>(null);
+  const [loadStatus, setLoadStatus] = useState<'loading' | 'loaded' | 'error'>(
+    isValidId ? 'loading' : 'error',
+  );
+  const [loadError, setLoadError] = useState(isValidId ? '' : 'ID de proyecto inválido');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMsg, setErrorMsg] = useState('');
-  const [createdId, setCreatedId] = useState<number | null>(null);
 
   // --- Drag & Drop para reordenar imágenes ---
   const [dragIndex, setDragIndex] = useState<number | null>(null);
   const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
-  /** URLs de thumbnail que fallaron al cargar */
   const [imgErrors, setImgErrors] = useState<Record<number, boolean>>({});
-  /** Ref del input file oculto para el drop zone */
   const fileInputRef = useRef<HTMLInputElement>(null);
-  /**
-   * Mapa de blob URL → File original.
-   * Permite subir los archivos al backend en el momento del submit,
-   * manteniendo la previsualización con blob URLs mientras se edita.
-   */
+  /** Mapa de blob URL → File original para subir al guardar */
   const pendingFiles = useRef<Map<string, File>>(new Map());
+
+  // Cargar proyecto al montar
+  useEffect(() => {
+    if (!isValidId) return;
+
+    let cancelled = false;
+    async function load() {
+      try {
+        const result = await getProject(projectId);
+        if (cancelled) return;
+        const p = result.data as ProjectData;
+        // Los videos pueden venir como string[] o como { ruta, label }[]
+        // según si el JSON es antiguo o nuevo. Normalizamos a { ruta, label }[].
+        const normalizeVideos = (arr: unknown[]): { image: string; label: string }[] =>
+          arr.map((v) =>
+            typeof v === 'string'
+              ? { image: v, label: '' }
+              : {
+                  image: (v as { image?: string })?.image ?? '',
+                  label: (v as { label?: string })?.label ?? '',
+                },
+          );
+
+        // Los extras siempre son strings.
+        const normalizeStringArray = (arr: unknown[]): string[] =>
+          arr.map((v) => (typeof v === 'string' ? v : ((v as { ruta?: string })?.ruta ?? '')));
+
+        setForm({
+          type: p.type,
+          category: p.category,
+          title: p.title ?? '',
+          cliente: p.cliente ?? '',
+          descripcion: p.descripcion ?? '',
+          visible: p.visible !== false,
+          imagenes: p.imagenes?.length ? normalizeImages(p.imagenes) : [emptyImagen()],
+          videos: p.videos?.length ? normalizeVideos(p.videos) : [emptyVideo()],
+          extras: p.extras?.length ? normalizeStringArray(p.extras) : [''],
+          stack: p.stack ?? [],
+        });
+        setLoadStatus('loaded');
+      } catch (err) {
+        if (cancelled) return;
+        setLoadStatus('error');
+        setLoadError(err instanceof Error ? err.message : 'Error al cargar el proyecto');
+      }
+    }
+    load();
+    return () => {
+      cancelled = true;
+    };
+  }, [projectId, isValidId]);
+
+  // Si aún no se han cargado los datos, mostrar estado de carga / error
+  if (loadStatus === 'loading') {
+    return (
+      <section data-id="edit-project-page">
+        <p className="text-muted py-16 text-center">Cargando proyecto #{id}…</p>
+      </section>
+    );
+  }
+
+  if (loadStatus === 'error' || !form) {
+    return (
+      <section data-id="edit-project-page">
+        <div className="mb-6 p-4 bg-red-50 border border-red-300 text-red-800 rounded">
+          ❌ {loadError || 'Error desconocido'}
+        </div>
+        <UIButton
+          onClick={() => navigate('/kimo/data')}
+          dataId="edit-project-back-btn"
+          arrowBack
+          link
+        >
+          Volver a la Tabla
+        </UIButton>
+      </section>
+    );
+  }
+
+  const f: FormState = form;
 
   // --- Helpers de campo simple ---
 
   function handleField<K extends keyof FormState>(key: K, value: FormState[K]) {
-    setForm((prev) => ({ ...prev, [key]: value }));
+    setForm((prev) => (prev ? { ...prev, [key]: value } : prev));
   }
 
-  /** Al cambiar el tipo, reseteamos la categoría y el stack */
   function handleTypeChange(type: '' | 'gd' | 'dev') {
-    setForm((prev) => ({ ...prev, type, category: '', stack: [] }));
+    setForm((prev) => (prev ? { ...prev, type, category: '', stack: [] } : prev));
   }
 
-  // --- Imagenes (array de {ruta, label}) ---
+  // --- Imagenes ---
 
   function handleImagenChange(index: number, field: 'image' | 'label', value: string) {
-    const updated = form.imagenes.map((img, i) => (i === index ? { ...img, [field]: value } : img));
+    const updated = f.imagenes.map((img, i) => (i === index ? { ...img, [field]: value } : img));
     handleField('imagenes', updated);
   }
 
   function addImagen() {
-    handleField('imagenes', [...form.imagenes, emptyImagen()]);
+    handleField('imagenes', [...f.imagenes, emptyImagen()]);
   }
 
   function removeImagen(index: number) {
     handleField(
       'imagenes',
-      form.imagenes.filter((_, i) => i !== index),
+      f.imagenes.filter((_, i) => i !== index),
     );
-    // Limpiar errores de imagen al eliminar
     setImgErrors((prev) => {
       const next = { ...prev };
       delete next[index];
@@ -152,11 +227,10 @@ export default function AddProjectPage() {
       setDragOverIndex(null);
       return;
     }
-    const updated = [...form.imagenes];
+    const updated = [...f.imagenes];
     const [moved] = updated.splice(dragIndex, 1);
     updated.splice(index, 0, moved);
     handleField('imagenes', updated);
-    // Recalcular errores de thumbnail tras reordenar
     setImgErrors({});
     setDragIndex(null);
     setDragOverIndex(null);
@@ -167,7 +241,6 @@ export default function AddProjectPage() {
     setDragOverIndex(null);
   }
 
-  /** Maneja archivos soltados en el drop zone: crea blob URLs para previsualizar y guarda el File original */
   function handleFileDrop(e: React.DragEvent) {
     e.preventDefault();
     const files = Array.from(e.dataTransfer.files).filter((file) => file.type.startsWith('image/'));
@@ -177,7 +250,7 @@ export default function AddProjectPage() {
       pendingFiles.current.set(blobUrl, file);
       return { image: blobUrl, label: file.name.replace(/\.[^.]+$/, '') };
     });
-    const currentImages = form.imagenes.filter((img) => img.image.trim() !== '');
+    const currentImages = f.imagenes.filter((img) => img.image.trim() !== '');
     handleField('imagenes', [...currentImages, ...newImages]);
   }
 
@@ -189,7 +262,7 @@ export default function AddProjectPage() {
       pendingFiles.current.set(blobUrl, file);
       return { image: blobUrl, label: file.name.replace(/\.[^.]+$/, '') };
     });
-    const currentImages = form.imagenes.filter((img) => img.image.trim() !== '');
+    const currentImages = f.imagenes.filter((img) => img.image.trim() !== '');
     handleField('imagenes', [...currentImages, ...newImages]);
     e.target.value = '';
   }
@@ -197,51 +270,51 @@ export default function AddProjectPage() {
   // --- Videos (array de objetos) ---
 
   function handleVideoChange(index: number, field: 'image' | 'label', value: string) {
-    const updated = form.videos.map((v, i) => (i === index ? { ...v, [field]: value } : v));
+    const updated = f.videos.map((v, i) => (i === index ? { ...v, [field]: value } : v));
     handleField('videos', updated);
   }
 
   function addVideo() {
-    handleField('videos', [...form.videos, emptyVideo()]);
+    handleField('videos', [...f.videos, emptyVideo()]);
   }
 
   function removeVideo(index: number) {
     handleField(
       'videos',
-      form.videos.filter((_, i) => i !== index),
+      f.videos.filter((_, i) => i !== index),
     );
   }
 
   // --- Extras (arrays de strings) ---
 
   function handleExtrasChange(index: number, value: string) {
-    const updated = form.extras.map((v, i) => (i === index ? value : v));
+    const updated = f.extras.map((v, i) => (i === index ? value : v));
     handleField('extras', updated);
   }
 
   function addExtras() {
-    handleField('extras', [...form.extras, '']);
+    handleField('extras', [...f.extras, '']);
   }
 
   function removeExtras(index: number) {
     handleField(
       'extras',
-      form.extras.filter((_, i) => i !== index),
+      f.extras.filter((_, i) => i !== index),
     );
   }
 
-  // --- Stack (array de strings, solo dev) ---
+  // --- Stack ---
 
   function toggleStack(tech: string) {
-    const current = form.stack;
+    const current = f.stack;
     const next = current.includes(tech) ? current.filter((t) => t !== tech) : [...current, tech];
     handleField('stack', next);
   }
 
   function addCustomStack(value: string) {
     const trimmed = value.trim();
-    if (trimmed && !form.stack.includes(trimmed)) {
-      handleField('stack', [...form.stack, trimmed]);
+    if (trimmed && !f.stack.includes(trimmed)) {
+      handleField('stack', [...f.stack, trimmed]);
     }
   }
 
@@ -253,15 +326,14 @@ export default function AddProjectPage() {
     setErrorMsg('');
 
     try {
-      if (!form.type) throw new Error('Selecciona un tipo de proyecto');
-      if (!form.category) throw new Error('Selecciona una categoría');
-      if (!form.title.trim()) throw new Error('El título es obligatorio');
-      if (!form.cliente.trim()) throw new Error('El cliente es obligatorio');
+      if (!f.type) throw new Error('Selecciona un tipo de proyecto');
+      if (!f.category) throw new Error('Selecciona una categoría');
+      if (!f.title.trim()) throw new Error('El título es obligatorio');
+      if (!f.cliente.trim()) throw new Error('El cliente es obligatorio');
 
-      // Limpiar arrays: eliminar entradas vacías
-      let imagenes = form.imagenes.filter((img) => img.image.trim() !== '');
-      const videos = form.videos.filter((v) => v.image.trim() !== '');
-      const extras = form.extras.filter((e) => e.trim() !== '');
+      let imagenes = f.imagenes.filter((img) => img.image.trim() !== '');
+      const videos = f.videos.filter((v) => v.image.trim() !== '');
+      const extras = f.extras.filter((ex) => ex.trim() !== '');
 
       // Subir archivos pendientes (blob URLs) al backend
       const filesToUpload: File[] = [];
@@ -277,16 +349,14 @@ export default function AddProjectPage() {
       if (filesToUpload.length > 0) {
         const uploaded = await uploadImages(
           filesToUpload,
-          form.type as 'gd' | 'dev',
-          form.category,
-          form.title.trim(),
+          f.type as 'gd' | 'dev',
+          f.category,
+          f.title.trim(),
         );
 
-        // Reemplazar blob URLs por rutas reales del servidor
         imagenes = imagenes.map((img) => {
           const blobIdx = blobUrlsToReplace.indexOf(img.image);
           if (blobIdx !== -1 && uploaded[blobIdx]) {
-            // Revocar la blob URL para liberar memoria
             URL.revokeObjectURL(img.image);
             return {
               image: `/portfolio${uploaded[blobIdx].ruta}`,
@@ -296,79 +366,59 @@ export default function AddProjectPage() {
           return img;
         });
 
-        // Limpiar el mapa de archivos pendientes
         pendingFiles.current.clear();
       }
 
       const payload = {
-        type: form.type,
-        category: form.category,
-        title: form.title.trim(),
-        cliente: form.cliente.trim(),
-        descripcion: form.descripcion.trim(),
-        visible: form.visible,
+        type: f.type,
+        category: f.category,
+        title: f.title.trim(),
+        cliente: f.cliente.trim(),
+        descripcion: f.descripcion.trim(),
+        visible: f.visible,
         imagenes,
         videos,
         extras,
-        ...(form.type === 'dev' && { stack: form.stack }),
+        ...(f.type === 'dev' && { stack: f.stack }),
       };
 
-      const result = await createProject(payload);
-
-      // El backend devuelve el proyecto creado con su ID generado
-      const created = result.data as { id: number } | undefined;
-      setCreatedId(created?.id ?? null);
+      await updateProject(projectId, payload);
       setStatus('success');
-
-      // Resetear formulario
-      setForm(initialForm);
     } catch (err) {
       setStatus('error');
-      setErrorMsg(err instanceof Error ? err.message : 'Error al crear el proyecto');
+      setErrorMsg(err instanceof Error ? err.message : 'Error al guardar el proyecto');
     }
   }
 
-  const categories = form.type ? CATEGORIES_BY_TYPE[form.type] : [];
+  const categories = f.type ? CATEGORIES_BY_TYPE[f.type] : [];
 
   return (
-    <section data-id="add-project-page">
-      <h2 className="text-xl mb-6">Añadir</h2>
-
-      {/* Feedback de éxito */}
-      {status === 'success' && (
-        <div
-          className="mb-6 p-4 bg-green-50 border border-green-300 text-green-800 rounded"
-          data-id="add-project-success"
+    <section data-id="edit-project-page">
+      <div className="flex items-center gap-4 mb-6">
+        <UIButton
+          onClick={() => navigate('/kimo/data')}
+          dataId="edit-project-back-btn"
+          arrowBack
+          link
         >
-          ✅ Proyecto creado correctamente
-          {createdId && <span className="ml-2 text-sm text-green-600">(ID: {createdId})</span>}
-          <p className="text-xs mt-1 text-green-600">
-            Recarga la página o reinicia el servidor para ver los cambios en la tabla.
-          </p>
-        </div>
-      )}
+          Volver a la Tabla
+        </UIButton>
+      </div>
+      <h2 className="text-xl mb-5">
+        Editar proyecto <span className="text-muted">#{projectId}</span>
+      </h2>
 
-      {/* Feedback de error */}
-      {status === 'error' && (
-        <div
-          className="mb-6 p-4 bg-red-50 border border-red-300 text-red-800 rounded"
-          data-id="add-project-error"
-        >
-          ❌ {errorMsg}
-        </div>
-      )}
-
-      <form onSubmit={handleSubmit} className="space-y-6" data-id="add-project-form">
+      <form onSubmit={handleSubmit} className="space-y-6" data-id="edit-project-form">
         {/* Tipo y categoría */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ap-type">
+            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ep-type">
               Tipo <span className="text-red-500">*</span>
             </label>
             <select
-              id="ap-type"
+              id="ep-type"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-              value={form.type}
+              value={f.type}
               onChange={(e) => handleTypeChange(e.target.value as '' | 'gd' | 'dev')}
               required
             >
@@ -378,16 +428,16 @@ export default function AddProjectPage() {
             </select>
           </div>
           <div>
-            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ap-category">
+            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ep-category">
               Categoría <span className="text-red-500">*</span>
             </label>
             <select
-              id="ap-category"
+              id="ep-category"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent disabled:opacity-50"
-              value={form.category}
+              value={f.category}
               onChange={(e) => handleField('category', e.target.value)}
               required
-              disabled={!form.type}
+              disabled={!f.type}
             >
               <option value="">Selecciona…</option>
               {categories.map(({ value, label }) => (
@@ -402,28 +452,28 @@ export default function AddProjectPage() {
         {/* Título y cliente */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ap-title">
+            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ep-title">
               Título <span className="text-red-500">*</span>
             </label>
             <input
-              id="ap-title"
+              id="ep-title"
               type="text"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-              value={form.title}
+              value={f.title}
               onChange={(e) => handleField('title', e.target.value)}
               placeholder="Nombre del proyecto"
               required
             />
           </div>
           <div>
-            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ap-cliente">
+            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ep-cliente">
               Cliente <span className="text-red-500">*</span>
             </label>
             <input
-              id="ap-cliente"
+              id="ep-cliente"
               type="text"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-              value={form.cliente}
+              value={f.cliente}
               onChange={(e) => handleField('cliente', e.target.value)}
               placeholder="Nombre del cliente"
               required
@@ -433,21 +483,21 @@ export default function AddProjectPage() {
 
         {/* Descripción */}
         <div>
-          <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ap-desc">
+          <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ep-desc">
             Descripción
           </label>
           <textarea
-            id="ap-desc"
+            id="ep-desc"
             className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent resize-y"
             rows={4}
-            value={form.descripcion}
+            value={f.descripcion}
             onChange={(e) => handleField('descripcion', e.target.value)}
             placeholder="Descripción del proyecto…"
           />
         </div>
 
         {/* Stack (solo desarrollo) */}
-        {form.type === 'dev' && (
+        {f.type === 'dev' && (
           <div>
             <p className="text-xs font-semibold text-muted mb-2">Stack tecnológico</p>
             <div className="flex flex-wrap gap-2 mb-2">
@@ -457,7 +507,7 @@ export default function AddProjectPage() {
                   key={tech}
                   onClick={() => toggleStack(tech)}
                   className={`text-xs px-2 py-1 rounded border transition-colors ${
-                    form.stack.includes(tech)
+                    f.stack.includes(tech)
                       ? 'bg-accent text-white border-accent'
                       : 'border-gray-300 text-muted hover:border-gray-400'
                   }`}
@@ -466,7 +516,6 @@ export default function AddProjectPage() {
                 </button>
               ))}
             </div>
-            {/* Campo para añadir tecnología personalizada */}
             <div className="flex gap-2 mt-1">
               <input
                 type="text"
@@ -482,9 +531,9 @@ export default function AddProjectPage() {
               />
               <span className="text-xs text-muted self-center">↵ Enter para añadir</span>
             </div>
-            {form.stack.length > 0 && (
+            {f.stack.length > 0 && (
               <div className="flex flex-wrap gap-1 mt-2">
-                {form.stack.map((t) => (
+                {f.stack.map((t) => (
                   <span
                     key={t}
                     className="text-xs bg-accent text-white px-2 py-0.5 rounded flex items-center gap-1"
@@ -506,7 +555,7 @@ export default function AddProjectPage() {
         )}
 
         {/* Imágenes: drag & drop con miniaturas */}
-        <div data-id="add-project-images">
+        <div data-id="edit-project-images">
           <div className="flex items-center justify-between mb-2">
             <p className="text-xs font-semibold text-muted">Imágenes</p>
             <div className="flex gap-3">
@@ -527,7 +576,6 @@ export default function AddProjectPage() {
             </div>
           </div>
 
-          {/* Input file oculto */}
           <input
             ref={fileInputRef}
             type="file"
@@ -537,7 +585,6 @@ export default function AddProjectPage() {
             onChange={handleFileSelect}
           />
 
-          {/* Drop zone: se muestra cuando no hay imágenes o siempre como zona de arrastre */}
           <div
             className="border-2 border-dashed border-gray-300 rounded-lg p-4 mb-3 text-center text-sm text-muted hover:border-accent hover:bg-accent/5 transition-colors cursor-pointer"
             onDragOver={(e) => {
@@ -546,14 +593,13 @@ export default function AddProjectPage() {
             }}
             onDrop={handleFileDrop}
             onClick={() => fileInputRef.current?.click()}
-            data-id="add-project-dropzone"
+            data-id="edit-project-dropzone"
           >
             Arrastra imágenes aquí o haz clic para seleccionar
           </div>
 
-          {/* Lista de imágenes con miniaturas y reordenables por drag */}
           <div className="space-y-2">
-            {form.imagenes.map((img, i) => (
+            {f.imagenes.map((img, i) => (
               <div
                 key={i}
                 draggable
@@ -568,7 +614,6 @@ export default function AddProjectPage() {
                   dragOverIndex === i ? 'border-accent bg-accent/5' : 'border-gray-200'
                 } ${dragIndex === i ? 'opacity-40' : ''}`}
               >
-                {/* Drag handle */}
                 <span
                   className="cursor-grab active:cursor-grabbing text-muted select-none text-lg"
                   title="Arrastra para reordenar"
@@ -576,35 +621,60 @@ export default function AddProjectPage() {
                   ⠿
                 </span>
 
-                {/* Miniatura */}
                 <div
                   className="w-16 h-12 rounded overflow-hidden flex-shrink-0 border"
                   style={{ background: 'var(--color-bg-btn)', borderColor: 'var(--color-border)' }}
-                  data-id="new-image-thumb"
                 >
                   {img.image && !imgErrors[i] ? (
-                    <img
-                      src={img.image}
-                      alt={img.label || `Imagen ${i + 1}`}
-                      className="w-full h-full object-cover"
-                      onError={() => setImgErrors((prev) => ({ ...prev, [i]: true }))}
-                    />
+                    (() => {
+                      // Si la ruta no contiene '/' se asume que es solo el nombre y se reconstruye la ruta
+                      let src = img.image;
+                      if (!img.image.includes('/')) {
+                        let tipoFolder = '';
+                        if (f.type === 'gd') tipoFolder = 'design';
+                        else if (f.type === 'dev') tipoFolder = 'web';
+                        // Si falta categoría, no se puede construir la ruta
+                        if (tipoFolder && f.category) {
+                          src = `/portfolio/images/portfolio/${tipoFolder}/${f.category}/${img.image}`;
+                        } else {
+                          src = `/portfolio/images/portfolio/${img.image}`;
+                        }
+                      }
+                      console.log('[EditProjectPage] Imagen render src:', src);
+                      return (
+                        <a
+                          href={src}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title={img.label || `Abrir imagen ${i + 1} en nueva pestaña`}
+                          tabIndex={0}
+                          data-id={`edit-project-img-link-${i}`}
+                        >
+                          <img
+                            src={src}
+                            alt={img.label || `Imagen ${i + 1}`}
+                            className="w-full h-full object-cover"
+                            onError={() => setImgErrors((prev) => ({ ...prev, [i]: true }))}
+                          />
+                        </a>
+                      );
+                    })()
                   ) : (
                     <div
                       className="w-full h-full flex items-center justify-center text-lg"
-                      style={{ color: 'var(--color-text-btn)' }}
+                      style={{ background: 'var(--color-bg-btn)', color: 'var(--color-text-btn)' }}
+                      data-id="new-image-thumb"
                     >
                       <IconImage aria-label="Sin imagen" className="w-7 h-7" />
                     </div>
                   )}
                 </div>
 
-                {/* Campos URL + label */}
-                <div className="flex-1 flex gap-2">
+                <div className="flex gap-2 w-full">
                   <input
                     type="text"
-                    className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                    placeholder="URL de la imagen"
+                    className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                    placeholder="Nombre de archivo de la imagen"
                     value={img.image}
                     onChange={(e) => {
                       handleImagenChange(i, 'image', e.target.value);
@@ -613,16 +683,15 @@ export default function AddProjectPage() {
                   />
                   <input
                     type="text"
-                    className="w-36 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                     placeholder="Etiqueta"
                     value={img.label}
                     onChange={(e) => handleImagenChange(i, 'label', e.target.value)}
                   />
                 </div>
 
-                {/* Índice + botón eliminar */}
                 <span className="text-xs text-muted w-5 text-center">{i + 1}</span>
-                {form.imagenes.length > 1 && (
+                {f.imagenes.length > 1 && (
                   <button
                     type="button"
                     onClick={() => removeImagen(i)}
@@ -650,23 +719,23 @@ export default function AddProjectPage() {
             </button>
           </div>
           <div className="space-y-2">
-            {form.videos.map((v, i) => (
+            {f.videos.map((v, i) => (
               <div key={i} className="flex gap-2">
                 <input
                   type="url"
-                  className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                  className="w-1/2  border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="URL del video"
                   value={v.image}
                   onChange={(e) => handleVideoChange(i, 'image', e.target.value)}
                 />
                 <input
                   type="text"
-                  className="w-36 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                  className="w-1/2  border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="Descripción"
                   value={v.label}
                   onChange={(e) => handleVideoChange(i, 'label', e.target.value)}
                 />
-                {form.videos.length > 1 && (
+                {f.videos.length > 1 && (
                   <button
                     type="button"
                     onClick={() => removeVideo(i)}
@@ -684,17 +753,17 @@ export default function AddProjectPage() {
         {/* Extras */}
         <div>
           <div className="flex items-center justify-between mb-2">
-            <p className="text-xs font-semibold text-muted">Extras / Links</p>
+            <p className="text-xs font-semibold text-muted">Extras / Tareas por hacer</p>
             <button
               type="button"
               onClick={() => addExtras()}
               className="text-xs text-accent hover:underline"
             >
-              + Añadir link
+              + Añadir tarea
             </button>
           </div>
           <div className="space-y-2">
-            {form.extras.map((ex, i) => (
+            {f.extras.map((ex, i) => (
               <div key={i} className="flex gap-2">
                 <input
                   type="text"
@@ -703,7 +772,7 @@ export default function AddProjectPage() {
                   value={ex}
                   onChange={(e) => handleExtrasChange(i, e.target.value)}
                 />
-                {form.extras.length > 1 && (
+                {f.extras.length > 1 && (
                   <button
                     type="button"
                     onClick={() => removeExtras(i)}
@@ -721,31 +790,62 @@ export default function AddProjectPage() {
         {/* Visible */}
         <div className="flex items-center gap-3">
           <input
-            id="ap-visible"
+            id="ep-visible"
             type="checkbox"
             className="w-4 h-4 accent-accent"
-            checked={form.visible}
+            checked={f.visible}
             onChange={(e) => handleField('visible', e.target.checked)}
           />
-          <label htmlFor="ap-visible" className="text-sm">
+          <label htmlFor="ep-visible" className="text-sm">
             Visible en la galería
           </label>
         </div>
 
         {/* Submit */}
         <div className="flex items-center gap-4 pt-2">
-          <button
+          <UIButton
             type="submit"
+            saveBtn
             disabled={status === 'loading'}
-            className="px-6 py-2 bg-accent text-white rounded text-sm font-semibold hover:opacity-90 disabled:opacity-50 transition-opacity"
-            data-id="add-project-submit"
+            dataId="edit-project-submit"
           >
-            {status === 'loading' ? 'Guardando…' : 'Crear proyecto'}
-          </button>
+            {status === 'loading' ? 'Guardando…' : 'Guardar cambios'}
+          </UIButton>
+          <UIButton
+            type="button"
+            onClick={() => navigate('/kimo/data')}
+            color="text"
+            dataId="edit-project-cancel"
+          >
+            Cancelar
+          </UIButton>
           <p className="text-xs text-muted">
             El backend debe estar activo: <code className="font-mono">pnpm backend:dev</code>
           </p>
         </div>
+
+        {/* Feedback de éxito */}
+        {status === 'success' && (
+          <div
+            className="mb-6 p-4 bg-green-50 border border-green-300 text-green-800 rounded"
+            data-id="edit-project-success"
+          >
+            ✅ Proyecto actualizado correctamente
+            <p className="text-xs mt-1 text-green-600">
+              Recarga la página o reinicia el servidor para ver los cambios en la tabla.
+            </p>
+          </div>
+        )}
+
+        {/* Feedback de error */}
+        {status === 'error' && (
+          <div
+            className="mb-6 p-4 bg-red-50 border border-red-300 text-red-800 rounded"
+            data-id="edit-project-error"
+          >
+            ❌ {errorMsg}
+          </div>
+        )}
       </form>
     </section>
   );

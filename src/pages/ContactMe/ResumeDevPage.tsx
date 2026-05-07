@@ -3,7 +3,7 @@ import resume from '../../data/resume.json';
 import { renderMultilineText } from '../../utils/renderMultilineText';
 // No se usan tipos explícitos aquí, así que se elimina la importación
 
-export default function ResumeDevelopmentPage() {
+export default function ResumeDevPage() {
   // Filtrar datos para desarrollo
   const filter = (item: { category?: string | string[]; hide?: boolean }) => {
     if (!item || item.hide) return false;

@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
-import BaseTable from '../../components/compositions/BaseTable';
-import { IconVisible } from '../../components/iconos';
+import BaseTable from '../../../components/compositions/BaseTable';
+import { IconVisible } from '../../../components/iconos';
 import { buildProjectDetailPath, getPendingEntries, type PendingEntry } from './DataPageHelpers';
 
 const columnHelper = createColumnHelper<PendingEntry>();

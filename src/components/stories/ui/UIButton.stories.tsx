@@ -81,3 +81,13 @@ export const SaveButton: Story = {
     saveBtn: true,
   },
 };
+
+export const LinkStyle: Story = {
+  args: {
+    type: 'button',
+    children: 'Volver a Editorial',
+    link: true,
+    dataId: 'btn-link-style',
+    arrowBack: true,
+  },
+};

@@ -1,10 +1,10 @@
-import ResumeDesignPage from './pages/Resume/ResumeDesignPage';
-import ResumeDevelopmentPage from './pages/Resume/ResumeDevelopmentPage';
+import ResumeDesignPage from './pages/ContactMe/ResumeDesignPage';
+import ResumeDevPage from './pages/ContactMe/ResumeDevPage';
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home/Home';
+import Home from './pages/Home';
 import KimoLayout from './pages/Kimo/KimoLayout';
-import BooksPage from './pages/Kimo/BooksPage';
-import PlacesPage from './pages/Kimo/PlacesPage';
+import BooksPage from './pages/Kimo/Books/BooksPage';
+import PlacesPage from './pages/Kimo/Places/PlacesPage';
 import IllustrationsPage from './pages/Kimo/Ilustraciones/IllustrationsPage';
 import IllustrationDetailPage from './pages/Kimo/Ilustraciones/IllustrationDetailPage';
 import NotFoundPage from './pages/NotFoundPage';
@@ -16,12 +16,12 @@ import MainLayout from './components/layout/MainLayout';
 import ContactMe from './pages/ContactMe/ContactMe';
 import ScrollToTop from './components/layout/ScrollToTop';
 import IconGallery from './pages/Kimo/IconGallery';
-import DataPage from './pages/Kimo/DataPage';
-import PendientePage from './pages/Kimo/PendientePage';
-import AddProjectPage from './pages/Kimo/AddProjectPage';
-import RecentWorksManagerPage from './pages/Kimo/RecentWorksManagerPage';
-import ResumeManagerPage from './pages/Kimo/ResumeManagerPage';
-import EditProjectPage from './pages/Kimo/EditProjectPage';
+import DataPage from './pages/Kimo/Admin/DataPage';
+import PendientePage from './pages/Kimo/Admin/PendientePage';
+import AddProjectPage from './pages/Kimo/Admin/AddProjectPage';
+import RecentWorksManagerPage from './pages/Kimo/Admin/RecentWorksManagerPage';
+import ResumeManagerPage from './pages/Kimo/Admin/ResumeManagerPage';
+import EditProjectPage from './pages/Kimo/Admin/EditProjectPage';
 import CategoryGalleryPage from './components/layout/CategoryGalleryPage';
 import { graphicDesignGalleries } from './data/config/graphicDesignGalleries';
 import { developerGalleries } from './data/config/developerGalleries';
@@ -34,7 +34,7 @@ export default function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/resume/design" element={<ResumeDesignPage />} />
-          <Route path="/resume/development" element={<ResumeDevelopmentPage />} />
+          <Route path="/resume/development" element={<ResumeDevPage />} />
           <Route path="/kimo" element={<KimoLayout />}>
             <Route index element={<BooksPage />} />
             <Route path="books" element={<BooksPage />} />

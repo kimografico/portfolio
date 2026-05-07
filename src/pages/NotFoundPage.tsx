@@ -1,7 +1,9 @@
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import UIButton from '../components/ui/UIButton';
 import '../styles/components/buttonStyles.css';
 
 export default function NotFoundPage() {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen flex flex-col" data-id="not-found-page">
       {/* Main content */}
@@ -24,9 +26,9 @@ export default function NotFoundPage() {
               La página que buscas no existe o ha sido movida. Si llegaste aquí desde un enlace,
               puede que esté desactualizado.
             </p>
-            <Link to="/" className="btn-outline-ink">
-              ← Volver al inicio
-            </Link>
+            <UIButton onClick={() => navigate('/')} link arrowBack dataId="notfound-back-home">
+              Volver al inicio
+            </UIButton>
           </div>
         </div>
       </main>

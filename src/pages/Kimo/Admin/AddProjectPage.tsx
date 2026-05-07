@@ -1,34 +1,6 @@
-// --- Helpers y tipos para imágenes/videos ---
-interface FormState {
-  type: '' | 'gd' | 'dev';
-  category: string;
-  title: string;
-  cliente: string;
-  descripcion: string;
-  visible: boolean;
-  imagenes: { image: string; label: string }[];
-  videos: { image: string; label: string }[];
-  extras: string[];
-  stack: string[];
-}
-
-const emptyImagen = (): { image: string; label: string } => ({ image: '', label: '' });
-const emptyVideo = (): { image: string; label: string } => ({ image: '', label: '' });
-
-function normalizeImages(
-  arr: Array<{ image?: string; ruta?: string; label?: string } | string>,
-): { image: string; label: string }[] {
-  return arr.map((img) => {
-    if (typeof img === 'string') return { image: img, label: '' };
-    if ('image' in img) return { image: img.image ?? '', label: img.label ?? '' };
-    return { image: img.ruta ?? '', label: img.label ?? '' };
-  });
-}
-import { useEffect, useState, useRef } from 'react';
-import UIButton from '../../components/ui/UIButton';
-import { IconImage } from '../../components/iconos/IconImage';
-import { useParams, useNavigate } from 'react-router-dom';
-import { getProject, updateProject, uploadImages, type ProjectData } from '../../api/apiClient';
+import { useState, useRef } from 'react';
+import { IconImage } from '../../../components/iconos/IconImage';
+import { createProject, uploadImages } from '../../../api/apiClient';
 
 /**
  * Categorías disponibles por tipo.
@@ -68,140 +40,93 @@ const STACK_QUICK_OPTIONS = [
   'Prestashop',
 ];
 
-/**
- * EditProjectPage: Formulario para editar un proyecto existente.
- *
- * Carga los datos del proyecto por ID (de la URL) vía GET /api/projects/:id,
- * prerellena el formulario y llama a PUT /api/projects/:id al guardar.
- */
-export default function EditProjectPage() {
-  const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
-  const projectId = Number(id);
-  const isValidId = !isNaN(projectId) && projectId > 0;
+/** Devuelve un objeto imagen vacío */
+const emptyImagen = () => ({ image: '', label: '' });
 
-  const [form, setForm] = useState<FormState | null>(null);
-  const [loadStatus, setLoadStatus] = useState<'loading' | 'loaded' | 'error'>(
-    isValidId ? 'loading' : 'error',
-  );
-  const [loadError, setLoadError] = useState(isValidId ? '' : 'ID de proyecto inválido');
+/** Devuelve un objeto video vacío */
+const emptyVideo = () => ({ image: '', label: '' });
+
+/** Estado inicial del formulario */
+const initialForm = {
+  type: '' as '' | 'gd' | 'dev',
+  category: '',
+  title: '',
+  cliente: '',
+  descripcion: '',
+  visible: true,
+  imagenes: [emptyImagen()],
+  videos: [emptyVideo()],
+  extras: [''],
+  stack: [] as string[],
+};
+
+type FormState = {
+  type: '' | 'gd' | 'dev';
+  category: string;
+  title: string;
+  cliente: string;
+  descripcion: string;
+  visible: boolean;
+  imagenes: { image: string; label: string }[];
+  videos: { image: string; label: string }[];
+  extras: string[];
+  stack: string[];
+};
+
+/**
+ * AddProjectPage: Formulario para añadir un proyecto nuevo.
+ *
+ * Llama a POST /api/projects con todos los datos del proyecto.
+ * El backend valida, genera el ID y persiste en el JSON correspondiente.
+ */
+export default function AddProjectPage() {
+  const [form, setForm] = useState<FormState>(initialForm);
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMsg, setErrorMsg] = useState('');
+  const [createdId, setCreatedId] = useState<number | null>(null);
 
   // --- Drag & Drop para reordenar imágenes ---
   const [dragIndex, setDragIndex] = useState<number | null>(null);
   const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
+  /** URLs de thumbnail que fallaron al cargar */
   const [imgErrors, setImgErrors] = useState<Record<number, boolean>>({});
+  /** Ref del input file oculto para el drop zone */
   const fileInputRef = useRef<HTMLInputElement>(null);
-  /** Mapa de blob URL → File original para subir al guardar */
+  /**
+   * Mapa de blob URL → File original.
+   * Permite subir los archivos al backend en el momento del submit,
+   * manteniendo la previsualización con blob URLs mientras se edita.
+   */
   const pendingFiles = useRef<Map<string, File>>(new Map());
-
-  // Cargar proyecto al montar
-  useEffect(() => {
-    if (!isValidId) return;
-
-    let cancelled = false;
-    async function load() {
-      try {
-        const result = await getProject(projectId);
-        if (cancelled) return;
-        const p = result.data as ProjectData;
-        // Los videos pueden venir como string[] o como { ruta, label }[]
-        // según si el JSON es antiguo o nuevo. Normalizamos a { ruta, label }[].
-        const normalizeVideos = (arr: unknown[]): { image: string; label: string }[] =>
-          arr.map((v) =>
-            typeof v === 'string'
-              ? { image: v, label: '' }
-              : {
-                  image: (v as { image?: string })?.image ?? '',
-                  label: (v as { label?: string })?.label ?? '',
-                },
-          );
-
-        // Los extras siempre son strings.
-        const normalizeStringArray = (arr: unknown[]): string[] =>
-          arr.map((v) => (typeof v === 'string' ? v : ((v as { ruta?: string })?.ruta ?? '')));
-
-        setForm({
-          type: p.type,
-          category: p.category,
-          title: p.title ?? '',
-          cliente: p.cliente ?? '',
-          descripcion: p.descripcion ?? '',
-          visible: p.visible !== false,
-          imagenes: p.imagenes?.length ? normalizeImages(p.imagenes) : [emptyImagen()],
-          videos: p.videos?.length ? normalizeVideos(p.videos) : [emptyVideo()],
-          extras: p.extras?.length ? normalizeStringArray(p.extras) : [''],
-          stack: p.stack ?? [],
-        });
-        setLoadStatus('loaded');
-      } catch (err) {
-        if (cancelled) return;
-        setLoadStatus('error');
-        setLoadError(err instanceof Error ? err.message : 'Error al cargar el proyecto');
-      }
-    }
-    load();
-    return () => {
-      cancelled = true;
-    };
-  }, [projectId, isValidId]);
-
-  // Si aún no se han cargado los datos, mostrar estado de carga / error
-  if (loadStatus === 'loading') {
-    return (
-      <section data-id="edit-project-page">
-        <p className="text-muted py-16 text-center">Cargando proyecto #{id}…</p>
-      </section>
-    );
-  }
-
-  if (loadStatus === 'error' || !form) {
-    return (
-      <section data-id="edit-project-page">
-        <div className="mb-6 p-4 bg-red-50 border border-red-300 text-red-800 rounded">
-          ❌ {loadError || 'Error desconocido'}
-        </div>
-        <button
-          onClick={() => navigate('/kimo/data')}
-          className="text-sm text-accent hover:underline"
-        >
-          ← Volver a la tabla
-        </button>
-      </section>
-    );
-  }
-
-  // A partir de aquí, form nunca es null (los early returns de arriba lo garantizan).
-  // Creamos un alias tipado para que TypeScript lo reconozca en las closures.
-  const f: FormState = form;
 
   // --- Helpers de campo simple ---
 
   function handleField<K extends keyof FormState>(key: K, value: FormState[K]) {
-    setForm((prev) => (prev ? { ...prev, [key]: value } : prev));
+    setForm((prev) => ({ ...prev, [key]: value }));
   }
 
+  /** Al cambiar el tipo, reseteamos la categoría y el stack */
   function handleTypeChange(type: '' | 'gd' | 'dev') {
-    setForm((prev) => (prev ? { ...prev, type, category: '', stack: [] } : prev));
+    setForm((prev) => ({ ...prev, type, category: '', stack: [] }));
   }
 
-  // --- Imagenes ---
+  // --- Imagenes (array de {ruta, label}) ---
 
   function handleImagenChange(index: number, field: 'image' | 'label', value: string) {
-    const updated = f.imagenes.map((img, i) => (i === index ? { ...img, [field]: value } : img));
+    const updated = form.imagenes.map((img, i) => (i === index ? { ...img, [field]: value } : img));
     handleField('imagenes', updated);
   }
 
   function addImagen() {
-    handleField('imagenes', [...f.imagenes, emptyImagen()]);
+    handleField('imagenes', [...form.imagenes, emptyImagen()]);
   }
 
   function removeImagen(index: number) {
     handleField(
       'imagenes',
-      f.imagenes.filter((_, i) => i !== index),
+      form.imagenes.filter((_, i) => i !== index),
     );
+    // Limpiar errores de imagen al eliminar
     setImgErrors((prev) => {
       const next = { ...prev };
       delete next[index];
@@ -227,10 +152,11 @@ export default function EditProjectPage() {
       setDragOverIndex(null);
       return;
     }
-    const updated = [...f.imagenes];
+    const updated = [...form.imagenes];
     const [moved] = updated.splice(dragIndex, 1);
     updated.splice(index, 0, moved);
     handleField('imagenes', updated);
+    // Recalcular errores de thumbnail tras reordenar
     setImgErrors({});
     setDragIndex(null);
     setDragOverIndex(null);
@@ -241,6 +167,7 @@ export default function EditProjectPage() {
     setDragOverIndex(null);
   }
 
+  /** Maneja archivos soltados en el drop zone: crea blob URLs para previsualizar y guarda el File original */
   function handleFileDrop(e: React.DragEvent) {
     e.preventDefault();
     const files = Array.from(e.dataTransfer.files).filter((file) => file.type.startsWith('image/'));
@@ -250,7 +177,7 @@ export default function EditProjectPage() {
       pendingFiles.current.set(blobUrl, file);
       return { image: blobUrl, label: file.name.replace(/\.[^.]+$/, '') };
     });
-    const currentImages = f.imagenes.filter((img) => img.image.trim() !== '');
+    const currentImages = form.imagenes.filter((img) => img.image.trim() !== '');
     handleField('imagenes', [...currentImages, ...newImages]);
   }
 
@@ -262,7 +189,7 @@ export default function EditProjectPage() {
       pendingFiles.current.set(blobUrl, file);
       return { image: blobUrl, label: file.name.replace(/\.[^.]+$/, '') };
     });
-    const currentImages = f.imagenes.filter((img) => img.image.trim() !== '');
+    const currentImages = form.imagenes.filter((img) => img.image.trim() !== '');
     handleField('imagenes', [...currentImages, ...newImages]);
     e.target.value = '';
   }
@@ -270,51 +197,51 @@ export default function EditProjectPage() {
   // --- Videos (array de objetos) ---
 
   function handleVideoChange(index: number, field: 'image' | 'label', value: string) {
-    const updated = f.videos.map((v, i) => (i === index ? { ...v, [field]: value } : v));
+    const updated = form.videos.map((v, i) => (i === index ? { ...v, [field]: value } : v));
     handleField('videos', updated);
   }
 
   function addVideo() {
-    handleField('videos', [...f.videos, emptyVideo()]);
+    handleField('videos', [...form.videos, emptyVideo()]);
   }
 
   function removeVideo(index: number) {
     handleField(
       'videos',
-      f.videos.filter((_, i) => i !== index),
+      form.videos.filter((_, i) => i !== index),
     );
   }
 
   // --- Extras (arrays de strings) ---
 
   function handleExtrasChange(index: number, value: string) {
-    const updated = f.extras.map((v, i) => (i === index ? value : v));
+    const updated = form.extras.map((v, i) => (i === index ? value : v));
     handleField('extras', updated);
   }
 
   function addExtras() {
-    handleField('extras', [...f.extras, '']);
+    handleField('extras', [...form.extras, '']);
   }
 
   function removeExtras(index: number) {
     handleField(
       'extras',
-      f.extras.filter((_, i) => i !== index),
+      form.extras.filter((_, i) => i !== index),
     );
   }
 
-  // --- Stack ---
+  // --- Stack (array de strings, solo dev) ---
 
   function toggleStack(tech: string) {
-    const current = f.stack;
+    const current = form.stack;
     const next = current.includes(tech) ? current.filter((t) => t !== tech) : [...current, tech];
     handleField('stack', next);
   }
 
   function addCustomStack(value: string) {
     const trimmed = value.trim();
-    if (trimmed && !f.stack.includes(trimmed)) {
-      handleField('stack', [...f.stack, trimmed]);
+    if (trimmed && !form.stack.includes(trimmed)) {
+      handleField('stack', [...form.stack, trimmed]);
     }
   }
 
@@ -326,14 +253,15 @@ export default function EditProjectPage() {
     setErrorMsg('');
 
     try {
-      if (!f.type) throw new Error('Selecciona un tipo de proyecto');
-      if (!f.category) throw new Error('Selecciona una categoría');
-      if (!f.title.trim()) throw new Error('El título es obligatorio');
-      if (!f.cliente.trim()) throw new Error('El cliente es obligatorio');
+      if (!form.type) throw new Error('Selecciona un tipo de proyecto');
+      if (!form.category) throw new Error('Selecciona una categoría');
+      if (!form.title.trim()) throw new Error('El título es obligatorio');
+      if (!form.cliente.trim()) throw new Error('El cliente es obligatorio');
 
-      let imagenes = f.imagenes.filter((img) => img.image.trim() !== '');
-      const videos = f.videos.filter((v) => v.image.trim() !== '');
-      const extras = f.extras.filter((ex) => ex.trim() !== '');
+      // Limpiar arrays: eliminar entradas vacías
+      let imagenes = form.imagenes.filter((img) => img.image.trim() !== '');
+      const videos = form.videos.filter((v) => v.image.trim() !== '');
+      const extras = form.extras.filter((e) => e.trim() !== '');
 
       // Subir archivos pendientes (blob URLs) al backend
       const filesToUpload: File[] = [];
@@ -349,14 +277,16 @@ export default function EditProjectPage() {
       if (filesToUpload.length > 0) {
         const uploaded = await uploadImages(
           filesToUpload,
-          f.type as 'gd' | 'dev',
-          f.category,
-          f.title.trim(),
+          form.type as 'gd' | 'dev',
+          form.category,
+          form.title.trim(),
         );
 
+        // Reemplazar blob URLs por rutas reales del servidor
         imagenes = imagenes.map((img) => {
           const blobIdx = blobUrlsToReplace.indexOf(img.image);
           if (blobIdx !== -1 && uploaded[blobIdx]) {
+            // Revocar la blob URL para liberar memoria
             URL.revokeObjectURL(img.image);
             return {
               image: `/portfolio${uploaded[blobIdx].ruta}`,
@@ -366,54 +296,79 @@ export default function EditProjectPage() {
           return img;
         });
 
+        // Limpiar el mapa de archivos pendientes
         pendingFiles.current.clear();
       }
 
       const payload = {
-        type: f.type,
-        category: f.category,
-        title: f.title.trim(),
-        cliente: f.cliente.trim(),
-        descripcion: f.descripcion.trim(),
-        visible: f.visible,
+        type: form.type,
+        category: form.category,
+        title: form.title.trim(),
+        cliente: form.cliente.trim(),
+        descripcion: form.descripcion.trim(),
+        visible: form.visible,
         imagenes,
         videos,
         extras,
-        ...(f.type === 'dev' && { stack: f.stack }),
+        ...(form.type === 'dev' && { stack: form.stack }),
       };
 
-      await updateProject(projectId, payload);
+      const result = await createProject(payload);
+
+      // El backend devuelve el proyecto creado con su ID generado
+      const created = result.data as { id: number } | undefined;
+      setCreatedId(created?.id ?? null);
       setStatus('success');
+
+      // Resetear formulario
+      setForm(initialForm);
     } catch (err) {
       setStatus('error');
-      setErrorMsg(err instanceof Error ? err.message : 'Error al guardar el proyecto');
+      setErrorMsg(err instanceof Error ? err.message : 'Error al crear el proyecto');
     }
   }
 
-  const categories = f.type ? CATEGORIES_BY_TYPE[f.type] : [];
+  const categories = form.type ? CATEGORIES_BY_TYPE[form.type] : [];
 
   return (
-    <section data-id="edit-project-page">
-      <div className="flex items-center gap-4 mb-6">
-        <UIButton onClick={() => navigate('/kimo/data')} dataId="edit-project-back-btn" arrowBack>
-          Volver a la Tabla
-        </UIButton>
-        <h2 className="text-xl">
-          Editar proyecto <span className="text-muted">#{projectId}</span>
-        </h2>
-      </div>
+    <section data-id="add-project-page">
+      <h2 className="text-xl mb-6">Añadir</h2>
 
-      <form onSubmit={handleSubmit} className="space-y-6" data-id="edit-project-form">
+      {/* Feedback de éxito */}
+      {status === 'success' && (
+        <div
+          className="mb-6 p-4 bg-green-50 border border-green-300 text-green-800 rounded"
+          data-id="add-project-success"
+        >
+          ✅ Proyecto creado correctamente
+          {createdId && <span className="ml-2 text-sm text-green-600">(ID: {createdId})</span>}
+          <p className="text-xs mt-1 text-green-600">
+            Recarga la página o reinicia el servidor para ver los cambios en la tabla.
+          </p>
+        </div>
+      )}
+
+      {/* Feedback de error */}
+      {status === 'error' && (
+        <div
+          className="mb-6 p-4 bg-red-50 border border-red-300 text-red-800 rounded"
+          data-id="add-project-error"
+        >
+          ❌ {errorMsg}
+        </div>
+      )}
+
+      <form onSubmit={handleSubmit} className="space-y-6" data-id="add-project-form">
         {/* Tipo y categoría */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ep-type">
+            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ap-type">
               Tipo <span className="text-red-500">*</span>
             </label>
             <select
-              id="ep-type"
+              id="ap-type"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-              value={f.type}
+              value={form.type}
               onChange={(e) => handleTypeChange(e.target.value as '' | 'gd' | 'dev')}
               required
             >
@@ -423,16 +378,16 @@ export default function EditProjectPage() {
             </select>
           </div>
           <div>
-            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ep-category">
+            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ap-category">
               Categoría <span className="text-red-500">*</span>
             </label>
             <select
-              id="ep-category"
+              id="ap-category"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent disabled:opacity-50"
-              value={f.category}
+              value={form.category}
               onChange={(e) => handleField('category', e.target.value)}
               required
-              disabled={!f.type}
+              disabled={!form.type}
             >
               <option value="">Selecciona…</option>
               {categories.map(({ value, label }) => (
@@ -447,28 +402,28 @@ export default function EditProjectPage() {
         {/* Título y cliente */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ep-title">
+            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ap-title">
               Título <span className="text-red-500">*</span>
             </label>
             <input
-              id="ep-title"
+              id="ap-title"
               type="text"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-              value={f.title}
+              value={form.title}
               onChange={(e) => handleField('title', e.target.value)}
               placeholder="Nombre del proyecto"
               required
             />
           </div>
           <div>
-            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ep-cliente">
+            <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ap-cliente">
               Cliente <span className="text-red-500">*</span>
             </label>
             <input
-              id="ep-cliente"
+              id="ap-cliente"
               type="text"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-              value={f.cliente}
+              value={form.cliente}
               onChange={(e) => handleField('cliente', e.target.value)}
               placeholder="Nombre del cliente"
               required
@@ -478,21 +433,21 @@ export default function EditProjectPage() {
 
         {/* Descripción */}
         <div>
-          <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ep-desc">
+          <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ap-desc">
             Descripción
           </label>
           <textarea
-            id="ep-desc"
+            id="ap-desc"
             className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent resize-y"
             rows={4}
-            value={f.descripcion}
+            value={form.descripcion}
             onChange={(e) => handleField('descripcion', e.target.value)}
             placeholder="Descripción del proyecto…"
           />
         </div>
 
         {/* Stack (solo desarrollo) */}
-        {f.type === 'dev' && (
+        {form.type === 'dev' && (
           <div>
             <p className="text-xs font-semibold text-muted mb-2">Stack tecnológico</p>
             <div className="flex flex-wrap gap-2 mb-2">
@@ -502,7 +457,7 @@ export default function EditProjectPage() {
                   key={tech}
                   onClick={() => toggleStack(tech)}
                   className={`text-xs px-2 py-1 rounded border transition-colors ${
-                    f.stack.includes(tech)
+                    form.stack.includes(tech)
                       ? 'bg-accent text-white border-accent'
                       : 'border-gray-300 text-muted hover:border-gray-400'
                   }`}
@@ -511,6 +466,7 @@ export default function EditProjectPage() {
                 </button>
               ))}
             </div>
+            {/* Campo para añadir tecnología personalizada */}
             <div className="flex gap-2 mt-1">
               <input
                 type="text"
@@ -526,9 +482,9 @@ export default function EditProjectPage() {
               />
               <span className="text-xs text-muted self-center">↵ Enter para añadir</span>
             </div>
-            {f.stack.length > 0 && (
+            {form.stack.length > 0 && (
               <div className="flex flex-wrap gap-1 mt-2">
-                {f.stack.map((t) => (
+                {form.stack.map((t) => (
                   <span
                     key={t}
                     className="text-xs bg-accent text-white px-2 py-0.5 rounded flex items-center gap-1"
@@ -550,7 +506,7 @@ export default function EditProjectPage() {
         )}
 
         {/* Imágenes: drag & drop con miniaturas */}
-        <div data-id="edit-project-images">
+        <div data-id="add-project-images">
           <div className="flex items-center justify-between mb-2">
             <p className="text-xs font-semibold text-muted">Imágenes</p>
             <div className="flex gap-3">
@@ -571,6 +527,7 @@ export default function EditProjectPage() {
             </div>
           </div>
 
+          {/* Input file oculto */}
           <input
             ref={fileInputRef}
             type="file"
@@ -580,6 +537,7 @@ export default function EditProjectPage() {
             onChange={handleFileSelect}
           />
 
+          {/* Drop zone: se muestra cuando no hay imágenes o siempre como zona de arrastre */}
           <div
             className="border-2 border-dashed border-gray-300 rounded-lg p-4 mb-3 text-center text-sm text-muted hover:border-accent hover:bg-accent/5 transition-colors cursor-pointer"
             onDragOver={(e) => {
@@ -588,13 +546,14 @@ export default function EditProjectPage() {
             }}
             onDrop={handleFileDrop}
             onClick={() => fileInputRef.current?.click()}
-            data-id="edit-project-dropzone"
+            data-id="add-project-dropzone"
           >
             Arrastra imágenes aquí o haz clic para seleccionar
           </div>
 
+          {/* Lista de imágenes con miniaturas y reordenables por drag */}
           <div className="space-y-2">
-            {f.imagenes.map((img, i) => (
+            {form.imagenes.map((img, i) => (
               <div
                 key={i}
                 draggable
@@ -609,6 +568,7 @@ export default function EditProjectPage() {
                   dragOverIndex === i ? 'border-accent bg-accent/5' : 'border-gray-200'
                 } ${dragIndex === i ? 'opacity-40' : ''}`}
               >
+                {/* Drag handle */}
                 <span
                   className="cursor-grab active:cursor-grabbing text-muted select-none text-lg"
                   title="Arrastra para reordenar"
@@ -616,60 +576,35 @@ export default function EditProjectPage() {
                   ⠿
                 </span>
 
+                {/* Miniatura */}
                 <div
                   className="w-16 h-12 rounded overflow-hidden flex-shrink-0 border"
                   style={{ background: 'var(--color-bg-btn)', borderColor: 'var(--color-border)' }}
+                  data-id="new-image-thumb"
                 >
                   {img.image && !imgErrors[i] ? (
-                    (() => {
-                      // Si la ruta no contiene '/' se asume que es solo el nombre y se reconstruye la ruta
-                      let src = img.image;
-                      if (!img.image.includes('/')) {
-                        let tipoFolder = '';
-                        if (f.type === 'gd') tipoFolder = 'design';
-                        else if (f.type === 'dev') tipoFolder = 'web';
-                        // Si falta categoría, no se puede construir la ruta
-                        if (tipoFolder && f.category) {
-                          src = `/portfolio/images/portfolio/${tipoFolder}/${f.category}/${img.image}`;
-                        } else {
-                          src = `/portfolio/images/portfolio/${img.image}`;
-                        }
-                      }
-                      console.log('[EditProjectPage] Imagen render src:', src);
-                      return (
-                        <a
-                          href={src}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          title={img.label || `Abrir imagen ${i + 1} en nueva pestaña`}
-                          tabIndex={0}
-                          data-id={`edit-project-img-link-${i}`}
-                        >
-                          <img
-                            src={src}
-                            alt={img.label || `Imagen ${i + 1}`}
-                            className="w-full h-full object-cover"
-                            onError={() => setImgErrors((prev) => ({ ...prev, [i]: true }))}
-                          />
-                        </a>
-                      );
-                    })()
+                    <img
+                      src={img.image}
+                      alt={img.label || `Imagen ${i + 1}`}
+                      className="w-full h-full object-cover"
+                      onError={() => setImgErrors((prev) => ({ ...prev, [i]: true }))}
+                    />
                   ) : (
                     <div
                       className="w-full h-full flex items-center justify-center text-lg"
-                      style={{ background: 'var(--color-bg-btn)', color: 'var(--color-text-btn)' }}
-                      data-id="new-image-thumb"
+                      style={{ color: 'var(--color-text-btn)' }}
                     >
                       <IconImage aria-label="Sin imagen" className="w-7 h-7" />
                     </div>
                   )}
                 </div>
 
-                <div className="flex gap-2 w-full">
+                {/* Campos URL + label */}
+                <div className="flex-1 flex gap-2">
                   <input
                     type="text"
-                    className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                    placeholder="Nombre de archivo de la imagen"
+                    className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                    placeholder="URL de la imagen"
                     value={img.image}
                     onChange={(e) => {
                       handleImagenChange(i, 'image', e.target.value);
@@ -678,15 +613,16 @@ export default function EditProjectPage() {
                   />
                   <input
                     type="text"
-                    className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-36 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                     placeholder="Etiqueta"
                     value={img.label}
                     onChange={(e) => handleImagenChange(i, 'label', e.target.value)}
                   />
                 </div>
 
+                {/* Índice + botón eliminar */}
                 <span className="text-xs text-muted w-5 text-center">{i + 1}</span>
-                {f.imagenes.length > 1 && (
+                {form.imagenes.length > 1 && (
                   <button
                     type="button"
                     onClick={() => removeImagen(i)}
@@ -714,23 +650,23 @@ export default function EditProjectPage() {
             </button>
           </div>
           <div className="space-y-2">
-            {f.videos.map((v, i) => (
+            {form.videos.map((v, i) => (
               <div key={i} className="flex gap-2">
                 <input
                   type="url"
-                  className="w-1/2  border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                  className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="URL del video"
                   value={v.image}
                   onChange={(e) => handleVideoChange(i, 'image', e.target.value)}
                 />
                 <input
                   type="text"
-                  className="w-1/2  border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                  className="w-36 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="Descripción"
                   value={v.label}
                   onChange={(e) => handleVideoChange(i, 'label', e.target.value)}
                 />
-                {f.videos.length > 1 && (
+                {form.videos.length > 1 && (
                   <button
                     type="button"
                     onClick={() => removeVideo(i)}
@@ -748,17 +684,17 @@ export default function EditProjectPage() {
         {/* Extras */}
         <div>
           <div className="flex items-center justify-between mb-2">
-            <p className="text-xs font-semibold text-muted">Extras / Tareas por hacer</p>
+            <p className="text-xs font-semibold text-muted">Extras / Links</p>
             <button
               type="button"
               onClick={() => addExtras()}
               className="text-xs text-accent hover:underline"
             >
-              + Añadir tarea
+              + Añadir link
             </button>
           </div>
           <div className="space-y-2">
-            {f.extras.map((ex, i) => (
+            {form.extras.map((ex, i) => (
               <div key={i} className="flex gap-2">
                 <input
                   type="text"
@@ -767,7 +703,7 @@ export default function EditProjectPage() {
                   value={ex}
                   onChange={(e) => handleExtrasChange(i, e.target.value)}
                 />
-                {f.extras.length > 1 && (
+                {form.extras.length > 1 && (
                   <button
                     type="button"
                     onClick={() => removeExtras(i)}
@@ -785,13 +721,13 @@ export default function EditProjectPage() {
         {/* Visible */}
         <div className="flex items-center gap-3">
           <input
-            id="ep-visible"
+            id="ap-visible"
             type="checkbox"
             className="w-4 h-4 accent-accent"
-            checked={f.visible}
+            checked={form.visible}
             onChange={(e) => handleField('visible', e.target.checked)}
           />
-          <label htmlFor="ep-visible" className="text-sm">
+          <label htmlFor="ap-visible" className="text-sm">
             Visible en la galería
           </label>
         </div>
@@ -802,44 +738,14 @@ export default function EditProjectPage() {
             type="submit"
             disabled={status === 'loading'}
             className="px-6 py-2 bg-accent text-white rounded text-sm font-semibold hover:opacity-90 disabled:opacity-50 transition-opacity"
-            data-id="edit-project-submit"
+            data-id="add-project-submit"
           >
-            {status === 'loading' ? 'Guardando…' : 'Guardar cambios'}
-          </button>
-          <button
-            type="button"
-            onClick={() => navigate('/kimo/data')}
-            className="px-4 py-2 border rounded text-sm text-muted hover:border-gray-400 transition-colors"
-          >
-            Cancelar
+            {status === 'loading' ? 'Guardando…' : 'Crear proyecto'}
           </button>
           <p className="text-xs text-muted">
             El backend debe estar activo: <code className="font-mono">pnpm backend:dev</code>
           </p>
         </div>
-
-        {/* Feedback de éxito */}
-        {status === 'success' && (
-          <div
-            className="mb-6 p-4 bg-green-50 border border-green-300 text-green-800 rounded"
-            data-id="edit-project-success"
-          >
-            ✅ Proyecto actualizado correctamente
-            <p className="text-xs mt-1 text-green-600">
-              Recarga la página o reinicia el servidor para ver los cambios en la tabla.
-            </p>
-          </div>
-        )}
-
-        {/* Feedback de error */}
-        {status === 'error' && (
-          <div
-            className="mb-6 p-4 bg-red-50 border border-red-300 text-red-800 rounded"
-            data-id="edit-project-error"
-          >
-            ❌ {errorMsg}
-          </div>
-        )}
       </form>
     </section>
   );

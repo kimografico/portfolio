@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
-import '../../styles/components/buttonStyles.css';
-import '../../styles/home.css';
-import recentWorks from '../../data/recent-works.json';
-import { APP_BASENAME } from '../../data/config/app';
-import HeroSection from '../../components/layout/HeroSection';
-import RecentProjectsSection from '../../components/layout/RecentProjectsSection';
-import SobreSection from '../../components/layout/SobreSection';
-import type { Project } from '../../interfaces/project';
+import '../styles/components/buttonStyles.css';
+import '../styles/home.css';
+import recentWorks from '../data/recent-works.json';
+import { APP_BASENAME } from '../data/config/app';
+import HeroSection from '../components/layout/HeroSection';
+import RecentProjectsSection from '../components/layout/RecentProjectsSection';
+import SobreSection from '../components/layout/SobreSection';
+import type { Project } from '../interfaces/project';
 
 export default function Home() {
   // Marcar acceso interno para futuras navegaciones

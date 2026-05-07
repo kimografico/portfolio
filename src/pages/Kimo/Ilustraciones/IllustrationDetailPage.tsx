@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
+import UIButton from '../../../components/ui/UIButton';
 import { useMemo, useState, useRef } from 'react';
 import PrevNextBtns from '../../../components/ui/PrevNextBtns';
 import ImageLightbox from '../../../components/ui/ImageLightbox';
@@ -46,13 +47,14 @@ export default function IllustrationDetailPage() {
       <section data-id="header">
         <div className="max-w-7xl mx-auto pt-6 flex items-center justify-between gap-4">
           {/* Botón volver */}
-          <button
+          <UIButton
             onClick={() => navigate('/kimo/ilustraciones')}
-            className="text-sm text-muted hover:text-ink transition-colors duration-150"
-            type="button"
+            link
+            arrowBack
+            dataId="back-to-illustrations"
           >
-            ← Volver a ilustraciones
-          </button>
+            Volver a ilustraciones
+          </UIButton>
           {/* Navegación con componente extraído */}
           <PrevNextBtns
             onPrev={() => prev && navigate(`/kimo/ilustraciones/${prev.id}`)}

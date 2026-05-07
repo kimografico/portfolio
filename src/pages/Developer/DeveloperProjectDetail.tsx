@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom';
+import UIButton from '../../components/ui/UIButton';
 import { useState } from 'react';
 import ImageLightbox from '../../components/ui/ImageLightbox';
 import PrevNextBtns from '../../components/ui/PrevNextBtns';
@@ -48,13 +49,9 @@ export default function DeveloperProjectDetail() {
     return (
       <div className="max-w-7xl mx-auto py-16 px-4" data-id="project-detail-invalid-parent">
         <p className="text-muted mb-4">Categoría no encontrada.</p>
-        <button
-          onClick={() => navigate('/dev')}
-          className="text-sm text-muted hover:text-ink transition-colors"
-          type="button"
-        >
-          ← Volver a Desarrollo
-        </button>
+        <UIButton onClick={() => navigate('/dev')} link arrowBack dataId="back-to-dev">
+          Volver a Desarrollo
+        </UIButton>
       </div>
     );
   }
@@ -83,13 +80,14 @@ export default function DeveloperProjectDetail() {
     return (
       <div className="max-w-7xl mx-auto py-16 px-4" data-id={`${parent}-detail-not-found`}>
         <p className="text-muted mb-4">Proyecto no encontrado.</p>
-        <button
+        <UIButton
           onClick={() => navigate(`/dev/${parent}`)}
-          className="text-sm text-muted hover:text-ink transition-colors"
-          type="button"
+          link
+          arrowBack
+          dataId="back-to-category-btn"
         >
-          ← Volver a {label}
-        </button>
+          Volver a {label}
+        </UIButton>
       </div>
     );
   }
@@ -99,13 +97,14 @@ export default function DeveloperProjectDetail() {
       {/* Cabecera de navegación */}
       <section data-id="detail-nav">
         <div className="max-w-7xl mx-auto pt-6 px-4 flex items-center justify-between gap-4">
-          <button
+          <UIButton
             onClick={() => navigate(`/dev/${parent}`)}
-            className="text-sm text-muted hover:text-ink transition-colors duration-150"
-            type="button"
+            link
+            arrowBack
+            dataId="back-to-category-btn"
           >
-            ← Volver a {label}
-          </button>
+            Volver a {label}
+          </UIButton>
           <PrevNextBtns
             onPrev={() => prev && navigate(`/dev/${parent}/${prev.id}`)}
             onNext={() => next && navigate(`/dev/${parent}/${next.id}`)}

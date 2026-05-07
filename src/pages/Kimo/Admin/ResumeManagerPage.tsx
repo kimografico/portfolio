@@ -1,15 +1,15 @@
 import { useEffect, useMemo, useState, type DragEvent } from 'react';
 import type { ReactNode } from 'react';
-import { getResume, updateResume } from '../../api/apiClient';
-import UIButton from '../../components/ui/UIButton';
-import CourseRow from '../../components/resume/CourseRow';
-import EducationRow from '../../components/resume/EducationRow';
-import ExperienceRow from '../../components/resume/ExperienceRow';
-import LanguageRow from '../../components/resume/LanguageRow';
-import SkillRow from '../../components/resume/SkillRow';
-import SoftwareRow from '../../components/resume/SoftwareRow';
-import WorkshopRow from '../../components/resume/WorkshopRow';
-import type { ResumeData } from '../../interfaces/resume';
+import { getResume, updateResume } from '../../../api/apiClient';
+import UIButton from '../../../components/ui/UIButton';
+import CourseRow from '../../../components/resume/CourseRow';
+import EducationRow from '../../../components/resume/EducationRow';
+import ExperienceRow from '../../../components/resume/ExperienceRow';
+import LanguageRow from '../../../components/resume/LanguageRow';
+import SkillRow from '../../../components/resume/SkillRow';
+import SoftwareRow from '../../../components/resume/SoftwareRow';
+import WorkshopRow from '../../../components/resume/WorkshopRow';
+import type { ResumeData } from '../../../interfaces/resume';
 import {
   updateBasicsField,
   updateBasicsArea,
@@ -18,8 +18,8 @@ import {
   removeSectionItem,
   toggleCategory,
   toggleHide,
-} from '../../utils/resumeStateHelpers';
-import { normalizeCategory, normalizeResume } from '../../utils/resumeNormalization';
+} from '../../../utils/resumeStateHelpers';
+import { normalizeCategory, normalizeResume } from '../../../utils/resumeNormalization';
 import {
   createEmptySkill,
   createEmptySoftware,
@@ -28,8 +28,8 @@ import {
   createEmptyEducation,
   createEmptyCourse,
   createEmptyWorkshop,
-} from '../../utils/resumeFactories';
-import BasicsAreaFields from '../../components/resume/BasicsAreaFields';
+} from '../../../utils/resumeFactories';
+import BasicsAreaFields from '../../../components/resume/BasicsAreaFields';
 
 function getYearOptions(): string[] {
   const currentYear = new Date().getFullYear();

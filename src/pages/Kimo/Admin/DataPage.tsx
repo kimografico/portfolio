@@ -1,12 +1,14 @@
 import { useCallback, useMemo, useState } from 'react';
-import UIButton from '../../components/ui/UIButton';
+import UIButton from '../../../components/ui/UIButton';
+import IconVisible from '../../../components/iconos/IconVisible';
+import IconHidden from '../../../components/iconos/IconHidden';
 import { useNavigate } from 'react-router-dom';
 import RecentWorksManagerPage from './RecentWorksManagerPage';
 import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
-import BaseTable from '../../components/compositions/BaseTable';
-import { useShowHidden } from '../../hooks/useShowHidden';
-import { updateVisibilityBatch, deleteProjectsBatch } from '../../api/apiClient';
-import { APP_BASENAME } from '../../data/config/app';
+import BaseTable from '../../../components/compositions/BaseTable';
+import { useShowHidden } from '../../../hooks/useShowHidden';
+import { updateVisibilityBatch, deleteProjectsBatch } from '../../../api/apiClient';
+import { APP_BASENAME } from '../../../data/config/app';
 import {
   ALL_ENTRIES,
   type DataEntry,
@@ -308,18 +310,19 @@ export default function DataPage() {
           <span className="text-muted text-base font-normal">({filteredEntries.length})</span>
         </h2>
         {/* Toggle privado para la visibilidad en las GALERÍAS (no afecta a esta tabla) */}
-        <button
+        <UIButton
           onClick={() => setShowHidden(!showHidden)}
-          className={`w-full md:w-auto px-4 py-2 rounded border font-semibold text-sm transition-colors flex items-center justify-center min-w-[180px] ${
-            showHidden
-              ? 'bg-amber-100 border-amber-400 text-amber-700'
-              : 'border-gray-300 text-muted hover:border-gray-400'
-          }`}
-          data-id="data-show-hidden-btn"
-          title={showHidden ? 'Mostrar todos los proyectos' : 'Mostrar proyectos visibles'}
+          dataId="data-show-hidden-btn"
+          link
+          aria-pressed={showHidden}
         >
           {showHidden ? 'Mostrar todos los proyectos' : 'Mostrar proyectos visibles'}
-        </button>
+          {showHidden ? (
+            <IconVisible size={20} className="ml-2" />
+          ) : (
+            <IconHidden size={20} className="ml-2" />
+          )}
+        </UIButton>
         {/* Botón: + Añadir Proyecto (UIButton color cta, solid) */}
         <UIButton
           color="cta"
@@ -421,18 +424,18 @@ export default function DataPage() {
 
         {/* Botón de reset */}
         {hasActiveFilters && (
-          <button
-            className="text-sm text-muted underline self-end pb-[5px] hover:text-accent transition-colors"
+          <UIButton
+            link
             onClick={() => {
               setFilterType('');
               setFilterCategory('');
               setFilterCliente('');
               setFilterVisibility('all');
             }}
-            data-id="data-filter-reset-btn"
+            dataId="data-filter-reset-btn"
           >
             Limpiar filtros
-          </button>
+          </UIButton>
         )}
 
         {/* Duplicados */}
