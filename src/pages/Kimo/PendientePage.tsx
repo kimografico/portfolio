@@ -16,30 +16,30 @@ export default function PendientePage() {
       columnHelper.accessor('id', {
         header: 'ID',
         cell: (info) => <span className="text-sm text-muted">{String(info.getValue())}</span>,
-      }),
+      }) as ColumnDef<PendingEntry, unknown>,
       columnHelper.accessor('title', {
         header: 'Título',
         cell: (info) => <span className="font-semibold">{info.getValue()}</span>,
-      }),
+      }) as ColumnDef<PendingEntry, unknown>,
       columnHelper.accessor('cliente', {
         header: 'Cliente',
         cell: (info) => <span className="text-sm">{info.getValue()}</span>,
-      }),
+      }) as ColumnDef<PendingEntry, unknown>,
       columnHelper.accessor('date', {
         header: 'Fecha',
         cell: (info) => {
           const raw = info.getValue();
           return raw ? raw.slice(0, 10) : <span className="text-muted">—</span>;
         },
-      }),
+      }) as ColumnDef<PendingEntry, unknown>,
       columnHelper.accessor('type', {
         header: 'Tipo',
         cell: (info) => <span className="text-sm">{info.getValue()}</span>,
-      }),
+      }) as ColumnDef<PendingEntry, unknown>,
       columnHelper.accessor('category', {
         header: 'Categoría',
         cell: (info) => <span className="text-sm">{info.getValue()}</span>,
-      }),
+      }) as ColumnDef<PendingEntry, unknown>,
       columnHelper.accessor('extrasCount', {
         header: 'Extras',
         cell: (info) => (
@@ -47,7 +47,7 @@ export default function PendientePage() {
             {info.getValue()}
           </span>
         ),
-      }),
+      }) as ColumnDef<PendingEntry, unknown>,
       columnHelper.display({
         id: 'detail',
         header: 'Detalle',
