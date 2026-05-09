@@ -1,5 +1,12 @@
 # copilot-instructions
 
+## Calidad de código y generación
+
+- Antes de generar código, revisa los patrones de error de tipado y lint más frecuentes en este proyecto y evita generarlos.
+- Si una solución puede causar un error de tipado o lint, elige una alternativa que no lo cause, aunque sea más larga o explícita.
+- Prioriza tipos explícitos, imports correctos y convenciones del proyecto.
+- No uses `any`, variables sin usar, ni sintaxis prohibida por ESLint.
+
 ## Stack y convenciones
 
 - Usar React 18+ con TypeScript y Vite.
