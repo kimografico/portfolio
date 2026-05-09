@@ -564,7 +564,7 @@ export default function AddProjectPage() {
 
           {/* Drop zone: se muestra cuando no hay imágenes o siempre como zona de arrastre */}
           <div
-            className="border-2 border-dashed border-gray-300 rounded-lg p-4 mb-3 text-center text-sm text-muted hover:border-accent hover:bg-accent/5 transition-colors cursor-pointer"
+            className="border-2 border-dashed border-gray-300 rounded-lg p-4 mb-3 text-center text-sm text-muted hover:border-accent hover:bg-accent/5 transition-colors cursor-pointer min-h-48"
             onDragOver={(e) => {
               e.preventDefault();
               e.dataTransfer.dropEffect = 'copy';

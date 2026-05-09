@@ -360,8 +360,10 @@ export default function EditProjectPage() {
           const blobIdx = blobUrlsToReplace.indexOf(img.image);
           if (blobIdx !== -1 && uploaded[blobIdx]) {
             URL.revokeObjectURL(img.image);
+            const ruta = uploaded[blobIdx].ruta;
+            const filename = ruta.split('/').pop() || '';
             return {
-              image: `/portfolio${uploaded[blobIdx].ruta}`,
+              image: filename,
               label: img.label || uploaded[blobIdx].label,
             };
           }
@@ -603,7 +605,7 @@ export default function EditProjectPage() {
           />
 
           <div
-            className="border-2 border-dashed border-gray-300 rounded-lg p-4 mb-3 text-center text-sm text-muted hover:border-accent hover:bg-accent/5 transition-colors cursor-pointer"
+            className="border-2 border-dashed border-gray-300 rounded-lg p-4 mb-3 text-center text-sm text-muted hover:border-accent hover:bg-accent/5 transition-colors cursor-pointer min-h-48"
             onDragOver={(e) => {
               e.preventDefault();
               e.dataTransfer.dropEffect = 'copy';

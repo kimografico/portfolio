@@ -205,8 +205,21 @@ export function getClienteOptions(filterType: string, filterCategory: string): s
     (e) =>
       (!filterType || e.type === filterType) && (!filterCategory || e.category === filterCategory),
   );
-  const clients = filtered.map((e) => e.cliente).filter(Boolean);
-  return Array.from(new Set(clients)).sort();
+  // Contar ocurrencias de cada cliente
+  const count: Record<string, number> = {};
+  filtered.forEach((e) => {
+    if (e.cliente) count[e.cliente] = (count[e.cliente] || 0) + 1;
+  });
+  // Clientes frecuentes (más de 1 proyecto)
+  const frequent = Object.entries(count)
+    .filter(([_, n]) => n > 1)
+    .map(([c]) => c)
+    .sort();
+  // Si hay clientes únicos, añadir 'OTROS'
+  if (Object.values(count).some((n) => n === 1)) {
+    frequent.push('OTROS');
+  }
+  return frequent;
 }
 
 /**
@@ -218,6 +231,28 @@ export function applyFilters(entries: DataEntry[], options: FilterOptions): Data
   return entries.filter((e) => {
     // La visibilidad real incluye posibles cambios locales
     const isVisible = e.id in localVisibility ? localVisibility[e.id] : e.visible;
+    // Si el filtro de cliente es 'OTROS', solo mostrar clientes únicos
+    if (filterCliente === 'OTROS') {
+      // Recalcular el subconjunto filtrado para contar clientes únicos
+      const subset = entries.filter(
+        (x) =>
+          (!filterType || x.type === filterType) &&
+          (!filterCategory || x.category === filterCategory),
+      );
+      const count: Record<string, number> = {};
+      subset.forEach((x) => {
+        if (x.cliente) count[x.cliente] = (count[x.cliente] || 0) + 1;
+      });
+      return (
+        (filterVisibility === 'all' ||
+          (filterVisibility === 'visible' && isVisible) ||
+          (filterVisibility === 'hidden' && !isVisible)) &&
+        (!filterType || e.type === filterType) &&
+        (!filterCategory || e.category === filterCategory) &&
+        count[e.cliente] === 1
+      );
+    }
+    // Filtro normal
     return (
       (filterVisibility === 'all' ||
         (filterVisibility === 'visible' && isVisible) ||
