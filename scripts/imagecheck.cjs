@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-env node */
+/* eslint-disable @typescript-eslint/no-var-requires, no-undef */
 /**
  * imagecheck.cjs
  * Busca imágenes no referenciadas en los JSON de proyectos y permite borrarlas.

@@ -294,16 +294,18 @@ export default function AddProjectPage() {
         imagenes = imagenes.map((img) => {
           const blobIdx = blobUrlsToReplace.indexOf(img.image);
           if (blobIdx !== -1 && uploaded[blobIdx]) {
-            // Revocar la blob URL para liberar memoria
             URL.revokeObjectURL(img.image);
-            // Extraer solo el nombre del archivo de la ruta
-            const fileName = uploaded[blobIdx].ruta.split('/').pop();
+            const fileName = uploaded[blobIdx].ruta.split('/').pop() ?? '';
             return {
               image: fileName,
               label: img.label || uploaded[blobIdx].label,
             };
           }
-          return img;
+          // Forzar image a string (nunca undefined)
+          return {
+            image: img.image ?? '',
+            label: img.label,
+          };
         });
 
         // Limpiar el mapa de archivos pendientes
