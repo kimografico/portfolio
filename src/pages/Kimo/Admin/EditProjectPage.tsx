@@ -6,6 +6,7 @@ interface FormState {
   cliente: string;
   descripcion: string;
   visible: boolean;
+  date: string;
   imagenes: { image: string; label: string }[];
   videos: { image: string; label: string }[];
   extras: string[];
@@ -129,6 +130,7 @@ export default function EditProjectPage() {
           cliente: p.cliente ?? '',
           descripcion: p.descripcion ?? '',
           visible: p.visible !== false,
+          date: p.date ? p.date.split(' ')[0] : '',
           imagenes: p.imagenes?.length ? normalizeImages(p.imagenes) : [emptyImagen()],
           videos: p.videos?.length ? normalizeVideos(p.videos) : [emptyVideo()],
           extras: p.extras?.length ? normalizeStringArray(p.extras) : [''],
@@ -376,6 +378,7 @@ export default function EditProjectPage() {
         cliente: f.cliente.trim(),
         descripcion: f.descripcion.trim(),
         visible: f.visible,
+        date: `${f.date} 00:00`,
         imagenes,
         videos,
         extras,
@@ -493,6 +496,20 @@ export default function EditProjectPage() {
             value={f.descripcion}
             onChange={(e) => handleField('descripcion', e.target.value)}
             placeholder="Descripción del proyecto…"
+          />
+        </div>
+
+        {/* Fecha del proyecto */}
+        <div>
+          <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ep-date">
+            Fecha del proyecto
+          </label>
+          <input
+            id="ep-date"
+            type="date"
+            className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+            value={f.date}
+            onChange={(e) => handleField('date', e.target.value)}
           />
         </div>
 

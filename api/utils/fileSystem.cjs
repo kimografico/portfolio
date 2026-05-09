@@ -152,9 +152,12 @@ function addProject(type, category, projectData) {
   const projects = readJsonFile(filePath);
 
   const newId = generateNewId(type, category);
+  // Si projectData ya tiene una fecha, usarla; si no, generar la actual
+  const dateToUse = projectData.date || new Date().toISOString().replace('T', ' ').slice(0, 16);
+
   const newProject = {
     id: newId,
-    date: new Date().toISOString().replace('T', ' ').slice(0, 16), // Formato: 2026-04-29 10:30
+    date: dateToUse,
     ...projectData,
   };
 

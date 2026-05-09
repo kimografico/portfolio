@@ -46,6 +46,12 @@ const emptyImagen = () => ({ image: '', label: '' });
 /** Devuelve un objeto video vacío */
 const emptyVideo = () => ({ image: '', label: '' });
 
+/** Obtener fecha actual en formato YYYY-MM-DD */
+function getTodayDate() {
+  const today = new Date();
+  return today.toISOString().split('T')[0];
+}
+
 /** Estado inicial del formulario */
 const initialForm = {
   type: '' as '' | 'gd' | 'dev',
@@ -54,6 +60,7 @@ const initialForm = {
   cliente: '',
   descripcion: '',
   visible: true,
+  date: getTodayDate(),
   imagenes: [emptyImagen()],
   videos: [emptyVideo()],
   extras: [''],
@@ -67,6 +74,7 @@ type FormState = {
   cliente: string;
   descripcion: string;
   visible: boolean;
+  date: string;
   imagenes: { image: string; label: string }[];
   videos: { image: string; label: string }[];
   extras: string[];
@@ -309,6 +317,7 @@ export default function AddProjectPage() {
         cliente: form.cliente.trim(),
         descripcion: form.descripcion.trim(),
         visible: form.visible,
+        date: `${form.date} 00:00`,
         imagenes,
         videos,
         extras,
@@ -445,6 +454,20 @@ export default function AddProjectPage() {
             value={form.descripcion}
             onChange={(e) => handleField('descripcion', e.target.value)}
             placeholder="Descripción del proyecto…"
+          />
+        </div>
+
+        {/* Fecha del proyecto */}
+        <div>
+          <label className="block text-xs font-semibold text-muted mb-1" htmlFor="ap-date">
+            Fecha del proyecto
+          </label>
+          <input
+            id="ap-date"
+            type="date"
+            className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+            value={form.date}
+            onChange={(e) => handleField('date', e.target.value)}
           />
         </div>
 
