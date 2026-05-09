@@ -1,3 +1,15 @@
+---
+name: storybook
+description: >
+  Helps with creating Storybook stories for React components in the kimografico project, ensuring correct structure, imports, and conventions.
+  Use when: writing new stories, reviewing story quality, or needing guidance on Storybook best practices for this project.
+  Triggers: "Hazme la story", "estructura de storybook
+license: MIT
+metadata:
+  author: kimografico
+  version: '1.0'
+---
+
 # SKILL: Storybook Stories para kimografico
 
 ## Propósito
