@@ -459,13 +459,13 @@
   },
   {
     "id": 174,
-    "date": "2020-04-03 19:33",
+    "date": "2020-04-03 00:00",
     "title": "Entradilla Lidia Aparicio",
     "cliente": "Lidia Aparicio",
     "descripcion": "Lidia Aparicio Logo animado para entradillas de video. Logo Reveal hecho en After Effects mediante template adaptado",
     "imagenes": [
       {
-        "image": "blob:http://localhost:5173/14dbd4bd-7d17-4829-a4cb-a60397fcaef9",
+        "image": "entradilla-lidia-aparicio001.jpg",
         "label": ""
       }
     ],
@@ -1112,7 +1112,9 @@
     "visible": false,
     "imagenes": [],
     "videos": [],
-    "extras": ["Pedir a Pau si tiene los videos montados en uno, y si le parece bien colgarlos."]
+    "extras": [
+      "Pedir a Pau si tiene los videos montados en uno, y si le parece bien colgarlos."
+    ]
   },
   {
     "id": 242,
@@ -1188,6 +1190,8 @@
         "label": ""
       }
     ],
-    "extras": ["Poner miniatura"]
+    "extras": [
+      "Poner miniatura"
+    ]
   }
 ]

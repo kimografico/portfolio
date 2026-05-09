@@ -1740,7 +1740,7 @@
     "visible": true,
     "imagenes": [
       {
-        "image": "/portfolio/images/portfolio/design/logotipos/gourmetmania006.jpg",
+        "image": "gourmetmania006.jpg",
         "label": "Logotipo V2"
       },
       {
@@ -1756,11 +1756,11 @@
         "label": "Bocetos"
       },
       {
-        "image": "/portfolio/images/portfolio/design/logotipos/gourmetmania004.jpg",
+        "image": "gourmetmania004.jpg",
         "label": "Bocetos"
       },
       {
-        "image": "/portfolio/images/portfolio/design/logotipos/gourmetmania005.jpg",
+        "image": "gourmetmania005.jpg",
         "label": "Bocetos"
       }
     ],
@@ -1863,7 +1863,9 @@
       }
     ],
     "videos": [],
-    "extras": ["Ajustar proporción del thumb"],
+    "extras": [
+      "Ajustar proporción del thumb"
+    ],
     "type": "gd",
     "category": "logotipos"
   },
