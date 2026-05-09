@@ -29,7 +29,13 @@ import { useEffect, useState, useRef } from 'react';
 import UIButton from '../../../components/ui/UIButton';
 import { IconImage } from '../../../components/iconos/IconImage';
 import { useParams, useNavigate } from 'react-router-dom';
-import { getProject, updateProject, uploadImages, type ProjectData } from '../../../api/apiClient';
+import {
+  getProject,
+  updateProject,
+  uploadImages,
+  deleteProjectsBatch,
+  type ProjectData,
+} from '../../../api/apiClient';
 
 /**
  * Categorías disponibles por tipo.
@@ -86,8 +92,31 @@ export default function EditProjectPage() {
     isValidId ? 'loading' : 'error',
   );
   const [loadError, setLoadError] = useState(isValidId ? '' : 'ID de proyecto inválido');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<
+    'idle' | 'loading' | 'success' | 'error' | 'deleting' | 'deleted'
+  >('idle');
   const [errorMsg, setErrorMsg] = useState('');
+  // --- Eliminar proyecto ---
+  async function handleDeleteProject() {
+    if (
+      !window.confirm(
+        '¿Seguro que quieres eliminar este proyecto? Esta acción no se puede deshacer.',
+      )
+    )
+      return;
+    setStatus('deleting');
+    setErrorMsg('');
+    try {
+      await deleteProjectsBatch([projectId]);
+      setStatus('deleted');
+      setTimeout(() => {
+        navigate('/kimo/data');
+      }, 1200);
+    } catch (err) {
+      setStatus('error');
+      setErrorMsg(err instanceof Error ? err.message : 'Error al eliminar el proyecto');
+    }
+  }
 
   // --- Drag & Drop para reordenar imágenes ---
   const [dragIndex, setDragIndex] = useState<number | null>(null);
@@ -825,16 +854,27 @@ export default function EditProjectPage() {
           <UIButton
             type="submit"
             saveBtn
-            disabled={status === 'loading'}
+            disabled={status === 'loading' || status === 'deleting' || status === 'deleted'}
             dataId="edit-project-submit"
           >
             {status === 'loading' ? 'Guardando…' : 'Guardar cambios'}
           </UIButton>
           <UIButton
             type="button"
+            onClick={handleDeleteProject}
+            color="accent"
+            solid
+            disabled={status === 'deleting' || status === 'deleted'}
+            dataId="edit-project-delete-btn"
+          >
+            {status === 'deleting' ? 'Eliminando…' : 'Eliminar proyecto'}
+          </UIButton>
+          <UIButton
+            type="button"
             onClick={() => navigate('/kimo/data')}
             color="text"
             dataId="edit-project-cancel"
+            disabled={status === 'deleting' || status === 'deleted'}
           >
             Cancelar
           </UIButton>
@@ -853,6 +893,14 @@ export default function EditProjectPage() {
             <p className="text-xs mt-1 text-green-600">
               Recarga la página o reinicia el servidor para ver los cambios en la tabla.
             </p>
+          </div>
+        )}
+        {status === 'deleted' && (
+          <div
+            className="mb-6 p-4 bg-green-50 border border-green-300 text-green-800 rounded"
+            data-id="edit-project-deleted"
+          >
+            🗑️ Proyecto eliminado correctamente. Redirigiendo…
           </div>
         )}
 

@@ -732,29 +732,37 @@
   },
   {
     "id": 239,
-    "date": "2026-05-09 00:00",
+    "date": "2014-12-11 00:00",
     "title": "Fachada Equilibrium",
     "cliente": "Equilibrium",
     "descripcion": "",
     "visible": false,
     "imagenes": [],
     "videos": [],
-    "extras": ["Preguntar a Pau si tiene fotos de cuando se montó"]
+    "extras": [
+      "Preguntar a Pau si tiene fotos de cuando se montó"
+    ],
+    "type": "gd",
+    "category": "proyectos-especiales"
   },
   {
     "id": 240,
-    "date": "2026-05-09 00:00",
+    "date": "2024-12-16 00:00",
     "title": "Coche Equilibrium",
     "cliente": "Equilibrium",
     "descripcion": "",
     "visible": false,
     "imagenes": [],
     "videos": [],
-    "extras": ["Preguntar a Pau si tiene fotos de cuando se montó"]
+    "extras": [
+      "Preguntar a Pau si tiene fotos de cuando se montó"
+    ],
+    "type": "gd",
+    "category": "proyectos-especiales"
   },
   {
     "id": 245,
-    "date": "2026-05-09 00:00",
+    "date": "2021-05-05 00:00",
     "title": "Tirador de hidromiel de madera",
     "cliente": "Odín Hidromiel",
     "descripcion": "Se realizó tanto el diseño como el grabado de la estructura de madera de un tirador de hidromiel",

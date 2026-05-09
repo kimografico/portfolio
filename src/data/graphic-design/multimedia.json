@@ -1105,7 +1105,7 @@
   },
   {
     "id": 238,
-    "date": "2026-05-09 00:00",
+    "date": "2025-01-01 00:00",
     "title": "Cuñas de Video para TV de Equilibrium",
     "cliente": "Equilibrium",
     "descripcion": "Distintas Cuñas de Video que se muestran en bucle en el gimnasio, mientras la gente hace ejercicio\nSon sobre todo entradillas con el logo, frases motivacionales, y entretenidos quiz con preguntas sobre entrenamiento y cuidado personal",
@@ -1114,7 +1114,9 @@
     "videos": [],
     "extras": [
       "Pedir a Pau si tiene los videos montados en uno, y si le parece bien colgarlos."
-    ]
+    ],
+    "type": "gd",
+    "category": "multimedia"
   },
   {
     "id": 242,

@@ -543,7 +543,7 @@
       }
     ],
     "videos": [],
-    "extras": ["Preguntar a Tomás por el ilustrador"],
+    "extras": [],
     "type": "gd",
     "category": "etiquetas"
   },
@@ -707,7 +707,7 @@
   },
   {
     "id": 255,
-    "date": "2026-05-09 00:00",
+    "date": "2024-05-06 00:00",
     "title": "Hidromieles de temporada",
     "cliente": "Odín Hidromiel",
     "descripcion": "Etiquetas para unas hidromieles de temporada",
@@ -731,7 +731,9 @@
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "type": "gd",
+    "category": "etiquetas"
   },
   {
     "id": 256,
