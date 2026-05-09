@@ -282,14 +282,16 @@ export default function AddProjectPage() {
           form.title.trim(),
         );
 
-        // Reemplazar blob URLs por rutas reales del servidor
+        // Reemplazar blob URLs por nombres de archivo (solo el nombre, no la ruta completa)
         imagenes = imagenes.map((img) => {
           const blobIdx = blobUrlsToReplace.indexOf(img.image);
           if (blobIdx !== -1 && uploaded[blobIdx]) {
             // Revocar la blob URL para liberar memoria
             URL.revokeObjectURL(img.image);
+            // Extraer solo el nombre del archivo de la ruta
+            const fileName = uploaded[blobIdx].ruta.split('/').pop();
             return {
-              image: `/portfolio${uploaded[blobIdx].ruta}`,
+              image: fileName,
               label: img.label || uploaded[blobIdx].label,
             };
           }

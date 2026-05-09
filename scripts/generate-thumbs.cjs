@@ -140,15 +140,34 @@ async function run() {
       const raw = fs.readFileSync(filePath, 'utf8');
       const data = JSON.parse(raw);
 
+      // Extraer type y category del filePath
+      // Ejemplo: src/data/graphic-design/logotipos.json
+      let type = null;
+      let category = null;
+      const normalized = filePath.replace(/\\/g, '/');
+      if (normalized.includes('/src/data/graphic-design/')) {
+        type = 'gd';
+        const match = normalized.match(/graphic-design\/([^/]+)\.json/);
+        category = match ? match[1] : null;
+      } else if (normalized.includes('/src/data/development/')) {
+        type = 'dev';
+        const match = normalized.match(/development\/([^/]+)\.json/);
+        category = match ? match[1] : null;
+      }
+
       if (Array.isArray(data)) {
         for (const project of data) {
           if (project.id && Array.isArray(project.imagenes) && project.imagenes.length > 0) {
             const firstImage = project.imagenes[0];
-            if (firstImage && firstImage.ruta) {
+            // Ahora guardamos solo el nombre del archivo en 'image'
+            if (firstImage && firstImage.image && type && category) {
+              // Reconstruir la URL usando type, category e image
+              const typeDir = type === 'gd' ? 'design' : 'web';
+              const imageUrl = `/portfolio/images/portfolio/${typeDir}/${category}/${firstImage.image}`;
               projects.push({
                 id: project.id,
                 title: project.title || `Project ${project.id}`,
-                imageUrl: firstImage.ruta,
+                imageUrl: imageUrl,
               });
             }
           }

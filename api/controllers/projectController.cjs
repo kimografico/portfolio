@@ -99,6 +99,14 @@ async function createProject(req, res) {
     // Crear proyecto
     const newProject = fs.addProject(type, category, projectData);
 
+    // Generar thumbs automáticamente
+    const { spawn } = require('child_process');
+    spawn('node', ['scripts/generate-thumbs.cjs', '--id', String(newProject.id)], {
+      stdio: 'inherit',
+      cwd: process.cwd(),
+      detached: true,
+    });
+
     res.status(201).json({
       success: true,
       data: newProject,

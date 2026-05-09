@@ -121,11 +121,26 @@ function getMaxId(filePath) {
 }
 
 /**
- * Genera un nuevo ID único (máximo actual + 1)
+ * Encuentra el máximo ID en TODOS los proyectos (todas las categorías y tipos)
+ * Esto evita duplicados de IDs entre diferentes categorías
+ */
+function getMaxIdGlobally() {
+  try {
+    const allProjects = loadAllProjects();
+    if (allProjects.length === 0) return 0;
+    return Math.max(...allProjects.map((p) => p.id || 0));
+  } catch (error) {
+    console.warn('Warning: Could not get global max ID:', error.message);
+    return 0;
+  }
+}
+
+/**
+ * Genera un nuevo ID único considerando TODOS los proyectos
+ * (máximo ID global + 1)
  */
 function generateNewId(type, category) {
-  const filePath = getFilePath(type, category);
-  const maxId = getMaxId(filePath);
+  const maxId = getMaxIdGlobally();
   return maxId + 1;
 }
 
