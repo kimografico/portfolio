@@ -936,5 +936,29 @@
     "videos": [],
     "extras": [],
     "visible": true
+  },
+  {
+    "id": 243,
+    "date": "2018-02-23 00:00",
+    "title": "Díptico Distribución",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "Díptico para distribuidores de Hidromiel Odín y Loki",
+    "visible": false,
+    "imagenes": [
+      {
+        "image": "diptico-distribucion001.jpg",
+        "label": "Mockup_Leaflet_2xDL_4 copia"
+      },
+      {
+        "image": "diptico-distribucion002.jpg",
+        "label": "Free_Bi-Fold_DL_Borchure_2 copia"
+      },
+      {
+        "image": "diptico-distribucion003.jpg",
+        "label": "Mockup_Leaflet_2xDL_3 copia"
+      }
+    ],
+    "videos": [],
+    "extras": []
   }
 ]

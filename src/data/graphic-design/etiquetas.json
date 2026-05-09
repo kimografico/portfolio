@@ -155,13 +155,17 @@
   },
   {
     "id": 208,
-    "date": "2020-12-22 10:38",
+    "date": "2020-12-22 00:00",
     "title": "Cerveza Mathematic",
     "cliente": "Odín Hidromiel",
     "descripcion": "Etiquetas para una cerveza de Hierbabuena, Limón y Jengibre",
     "imagenes": [
       {
-        "image": "cerveza-mathematic001.jpg",
+        "image": "cerveza-mathematic005.jpg",
+        "label": ""
+      },
+      {
+        "image": "cerveza-mathematic006.jpg",
         "label": ""
       },
       {
@@ -171,31 +175,13 @@
       {
         "image": "cerveza-mathematic003.jpg",
         "label": ""
-      }
-    ],
-    "videos": [],
-    "extras": [],
-    "visible": true,
-    "type": "gd",
-    "category": "etiquetas"
-  },
-  {
-    "id": 207,
-    "date": "2020-12-22 10:33",
-    "title": "Ginger Ale",
-    "cliente": "Odín Hidromiel",
-    "descripcion": "Etiquetas para una bebida de Jengibre",
-    "imagenes": [
+      },
       {
-        "image": "ginger-ale001.jpg",
+        "image": "cerveza-mathematic004.jpg",
         "label": ""
       },
       {
-        "image": "ginger-ale002.jpg",
-        "label": ""
-      },
-      {
-        "image": "ginger-ale003.jpg",
+        "image": "cerveza-mathematic001.jpg",
         "label": ""
       }
     ],
@@ -250,5 +236,569 @@
     "videos": [],
     "extras": [],
     "visible": true
+  },
+  {
+    "id": 225,
+    "date": "2022-05-05 00:00",
+    "title": "Vigorexia",
+    "cliente": "Damián Serena",
+    "descripcion": "Diseño de una lata de bebida energética afrodisíaca",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "vigorexia001.jpg",
+        "label": "Lata"
+      },
+      {
+        "image": "vigorexia002.jpg",
+        "label": "Frontal"
+      },
+      {
+        "image": "vigorexia003.jpg",
+        "label": "12"
+      },
+      {
+        "image": "vigorexia004.jpg",
+        "label": "13"
+      },
+      {
+        "image": "vigorexia005.jpg",
+        "label": "14"
+      },
+      {
+        "image": "vigorexia006.jpg",
+        "label": "Etiqueta Vigorexia_Mesa de trabajo 1 copia 2"
+      },
+      {
+        "image": "vigorexia007.jpg",
+        "label": "Etiqueta Vigorexia_Mesa de trabajo 1 copia"
+      },
+      {
+        "image": "vigorexia008.jpg",
+        "label": "Etiqueta Vigorexia_Mesa de trabajo 1"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "etiquetas"
+  },
+  {
+    "id": 226,
+    "date": "2022-01-09 00:00",
+    "title": "Mely",
+    "cliente": "Damián Serena",
+    "descripcion": "Etiqueta y diseño de lata de una cerveza artesana",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "mely001.jpg",
+        "label": "Botella"
+      },
+      {
+        "image": "mely004.jpg",
+        "label": "Etiqueta vectorial"
+      },
+      {
+        "image": "mely005.jpg",
+        "label": "Etiqueta efecto pintura"
+      },
+      {
+        "image": "mely002.jpg",
+        "label": "Lata"
+      },
+      {
+        "image": "mely003.jpg",
+        "label": "LATA LADRILLOS"
+      },
+      {
+        "image": "mely006.jpg",
+        "label": "Bocetos del nombre"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "etiquetas"
+  },
+  {
+    "id": 227,
+    "date": "2022-03-18 00:00",
+    "title": "Put In Power Energy Drink",
+    "cliente": "Damián Serena",
+    "descripcion": "Diseño de lata de bebida energética.\nEl cliente quería entrar en el mercado ruso.",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "put-in-power-energy-drink001.jpg",
+        "label": "LATAS"
+      },
+      {
+        "image": "put-in-power-energy-drink002.jpg",
+        "label": "1"
+      },
+      {
+        "image": "put-in-power-energy-drink003.jpg",
+        "label": "2"
+      },
+      {
+        "image": "put-in-power-energy-drink004.jpg",
+        "label": "3"
+      },
+      {
+        "image": "put-in-power-energy-drink005.jpg",
+        "label": "4"
+      },
+      {
+        "image": "put-in-power-energy-drink006.jpg",
+        "label": "5"
+      },
+      {
+        "image": "put-in-power-energy-drink007.jpg",
+        "label": "6"
+      },
+      {
+        "image": "put-in-power-energy-drink008.jpg",
+        "label": "7"
+      },
+      {
+        "image": "put-in-power-energy-drink009.jpg",
+        "label": "8"
+      },
+      {
+        "image": "put-in-power-energy-drink010.jpg",
+        "label": "9"
+      },
+      {
+        "image": "put-in-power-energy-drink011.jpg",
+        "label": "10"
+      },
+      {
+        "image": "put-in-power-energy-drink012.jpg",
+        "label": "Etiqueta Put In_Mesa de trabajo 1 copia 5"
+      },
+      {
+        "image": "put-in-power-energy-drink013.jpg",
+        "label": "Etiqueta Put In_Mesa de trabajo 1 copia 6"
+      },
+      {
+        "image": "put-in-power-energy-drink014.jpg",
+        "label": "Etiqueta Put In_Mesa de trabajo 1 copia 3"
+      },
+      {
+        "image": "put-in-power-energy-drink015.jpg",
+        "label": "Etiqueta Put In_Mesa de trabajo 1 copia 4"
+      },
+      {
+        "image": "put-in-power-energy-drink016.jpg",
+        "label": "Etiqueta Put In_Mesa de trabajo 1 copia 7"
+      },
+      {
+        "image": "put-in-power-energy-drink017.jpg",
+        "label": "Etiqueta Put In_Mesa de trabajo 1 copia 8"
+      },
+      {
+        "image": "put-in-power-energy-drink018.jpg",
+        "label": "Etiqueta Put In_Mesa de trabajo 1 copia 2"
+      },
+      {
+        "image": "put-in-power-energy-drink019.jpg",
+        "label": "Etiqueta Put In_Mesa de trabajo 1"
+      },
+      {
+        "image": "put-in-power-energy-drink020.jpg",
+        "label": "Etiqueta Put In_Mesa de trabajo 1 copia"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 228,
+    "date": "2022-05-05 00:00",
+    "title": "Matrix",
+    "cliente": "Damián Serena",
+    "descripcion": "Diseño de una lata de refresco con temática Matrix\nEl cliente adquirió los derechos en el sector de bebidas de esa película, y quiso encontrar un nicho",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "matrix001.jpg",
+        "label": "LATAS"
+      },
+      {
+        "image": "matrix002.jpg",
+        "label": "15"
+      },
+      {
+        "image": "matrix003.jpg",
+        "label": "16"
+      },
+      {
+        "image": "matrix004.jpg",
+        "label": "Matrix Lata_Mesa de trabajo 1 copia"
+      },
+      {
+        "image": "matrix005.jpg",
+        "label": "Bolsa merchandsing"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "etiquetas"
+  },
+  {
+    "id": 229,
+    "date": "2022-01-09 00:00",
+    "title": "Cosa Nostra",
+    "cliente": "Damián Serena",
+    "descripcion": "Etiquetas y manga para una serie de bebidas (hidromiel y vino verdejo) enfocadas en una temática de Mafia",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "cosa-nostra001.jpg",
+        "label": "Hidromiel"
+      },
+      {
+        "image": "cosa-nostra002.jpg",
+        "label": "Hidromiel alta graduación"
+      },
+      {
+        "image": "cosa-nostra003.jpg",
+        "label": "Etiquetas"
+      },
+      {
+        "image": "cosa-nostra004.jpg",
+        "label": "Vino Verdejo"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "etiquetas"
+  },
+  {
+    "id": 247,
+    "date": "2021-11-07 00:00",
+    "title": "Mjolnir",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "Etiqueta para la Hidromiel Mjolnir",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "mjolnir001.jpg",
+        "label": "MJOLNIR3"
+      },
+      {
+        "image": "mjolnir002.jpg",
+        "label": "Thorrayos"
+      },
+      {
+        "image": "mjolnir003.jpg",
+        "label": "BOTELLIN MJOLNIR ESP 1"
+      },
+      {
+        "image": "mjolnir004.jpg",
+        "label": "MJOLNIR1"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 248,
+    "date": "2022-10-13 00:00",
+    "title": "Hela",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "Etiquetas para la Hidromiel de temporada,  Hela",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "hela001.jpg",
+        "label": ""
+      },
+      {
+        "image": "hela003.jpg",
+        "label": "Versiones según temporada"
+      },
+      {
+        "image": "hela006.jpg",
+        "label": "Versiones según temporada"
+      },
+      {
+        "image": "hela004.jpg",
+        "label": "Distintas pruebas de corona"
+      },
+      {
+        "image": "hela005.jpg",
+        "label": "Distintos colores"
+      },
+      {
+        "image": "hela002.jpg",
+        "label": "Mi versión de la imagen"
+      },
+      {
+        "image": "hela007.jpg",
+        "label": "Versión final, con la imagen hecha por un ilustrador externo"
+      }
+    ],
+    "videos": [],
+    "extras": ["Preguntar a Tomás por el ilustrador"],
+    "type": "gd",
+    "category": "etiquetas"
+  },
+  {
+    "id": 249,
+    "date": "2016-06-20 00:00",
+    "title": "Lola Hidromiel con manzana",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "Etiquetas para una hidromiel",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "lola001.jpg",
+        "label": ""
+      },
+      {
+        "image": "lola002.jpg",
+        "label": "Trasera"
+      },
+      {
+        "image": "lola003.jpg",
+        "label": ""
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "etiquetas"
+  },
+  {
+    "id": 250,
+    "date": "2016-07-20 00:00",
+    "title": "Chicha Andina",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "Etiquetas para una bebida alcoholica",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "chicha-andina001.jpg",
+        "label": "Sin tÃ­tulo-1"
+      },
+      {
+        "image": "chicha-andina002.jpg",
+        "label": "Etiqueta Chicha Andina"
+      },
+      {
+        "image": "chicha-andina003.jpg",
+        "label": "Etiqueta trasera Chicha Andina"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 251,
+    "date": "2023-05-09 00:00",
+    "title": "Rediseños",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "Se rediseñaron las etiquetas ovaladas para adaptarlas a una etiqueta rectangular",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "redisenos001.jpg",
+        "label": "LOKI"
+      },
+      {
+        "image": "redisenos002.jpg",
+        "label": "ODIN"
+      },
+      {
+        "image": "redisenos003.jpg",
+        "label": "MJOLNIR"
+      },
+      {
+        "image": "redisenos004.jpg",
+        "label": "HELA"
+      },
+      {
+        "image": "redisenos005.jpg",
+        "label": "ODIN 2023"
+      },
+      {
+        "image": "redisenos006.jpg",
+        "label": "LOKI 2023"
+      },
+      {
+        "image": "redisenos007.jpg",
+        "label": "HELA 2023"
+      },
+      {
+        "image": "redisenos008.jpg",
+        "label": "MJOLNIR 2023"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 252,
+    "date": "2024-10-04 00:00",
+    "title": "Odín Doble Miel",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "Diseño de una etiqueta para una hidromiel de alta graduación\nLa etiqueta se imprime con tinta dorada, que le da un toque premium",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "odin-doble-miel001.jpg",
+        "label": "doble"
+      },
+      {
+        "image": "odin-doble-miel002.jpg",
+        "label": "Etiqueta ODIN DOBLE MIEL-3"
+      },
+      {
+        "image": "odin-doble-miel003.jpg",
+        "label": "photo_2026-05-09_17-24-44 (2)"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 253,
+    "date": "2025-09-09 00:00",
+    "title": "Etiqueta Thor",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "Etiqueta para una hidromiel especial\nSe imprime en azul metalizado espejo, para darle el toque premium",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "etiqueta-thor001.jpg",
+        "label": "thor"
+      },
+      {
+        "image": "etiqueta-thor002.jpg",
+        "label": "Etiqueta THOR BOCETOS v2-1"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 254,
+    "date": "2025-08-13 00:00",
+    "title": "La Roliada",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "Etiqueta para una hidromiel especial para un evento de juegos de mesa",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "la-roliada001.jpg",
+        "label": "roliada"
+      },
+      {
+        "image": "la-roliada002.jpg",
+        "label": "Etiqueta LA ROLIADA"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 255,
+    "date": "2026-05-09 00:00",
+    "title": "Hidromieles de temporada",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "Etiquetas para unas hidromieles de temporada",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "hidromieles-de-temporada001.jpg",
+        "label": "grosella"
+      },
+      {
+        "image": "hidromieles-de-temporada002.jpg",
+        "label": "pera"
+      },
+      {
+        "image": "hidromieles-de-temporada003.jpg",
+        "label": "Etiqueta Grosella negra y Frambuesa PRIMAVERA"
+      },
+      {
+        "image": "hidromieles-de-temporada004.jpg",
+        "label": "Etiqueta Pera y Manzana VERANO"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 256,
+    "date": "2026-02-25 00:00",
+    "title": "Rediseño",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "En 2026 se rediseñaron todas las etiquetas para simplificar, unificar estilos, y darle un aire más moderno\nSe añadió un QR y se revisaron los textos para adaptarse a la legalidad actual",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "rediseno001.jpg",
+        "label": "2"
+      },
+      {
+        "image": "rediseno002.jpg",
+        "label": "3"
+      },
+      {
+        "image": "rediseno003.jpg",
+        "label": "1"
+      },
+      {
+        "image": "rediseno004.jpg",
+        "label": "DOBLE MIEL 33cl copia"
+      },
+      {
+        "image": "rediseno005.jpg",
+        "label": "8"
+      },
+      {
+        "image": "rediseno006.jpg",
+        "label": "THOR 33cl"
+      },
+      {
+        "image": "rediseno007.jpg",
+        "label": "4"
+      },
+      {
+        "image": "rediseno008.jpg",
+        "label": "HELA 33cl copia"
+      },
+      {
+        "image": "rediseno009.jpg",
+        "label": "5"
+      },
+      {
+        "image": "rediseno010.jpg",
+        "label": "LOKI 33cl copia"
+      },
+      {
+        "image": "rediseno011.jpg",
+        "label": "6"
+      },
+      {
+        "image": "rediseno012.jpg",
+        "label": "MJOLNIR 33cl copia"
+      },
+      {
+        "image": "rediseno013.jpg",
+        "label": "7"
+      },
+      {
+        "image": "rediseno014.jpg",
+        "label": "ODIN 33cl copia"
+      }
+    ],
+    "videos": [],
+    "extras": []
   }
 ]

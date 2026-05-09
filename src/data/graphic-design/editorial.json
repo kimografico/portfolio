@@ -273,10 +273,10 @@
   },
   {
     "id": 196,
-    "date": "2020-12-09 11:32",
+    "date": "2020-12-09 00:00",
     "title": "Ni milagros ni hostias",
     "cliente": "Pau Benedito",
-    "descripcion": "Miles de personas cada día, con la voluntad de hacer las cosas bien y adelgazar de una vez por todas, son presa de la venta de productos, dietas y sistemas milagrosos que prometen un cambio radical sin mover un dedo. Obviamente sus resultados acaban cayendo en saco roto.Harto de la situación, con este libro, el autor quiere dar un golpe sobre la mesa para poner punto y final a esta estafa colectiva, encabezada por empresarios con más interés por el dinero que por la salud de las personas. A través del descubrimiento personal, la educación alimentaria y el ejercicio físico, entre otros temas, pondrás en marcha un cambio que no sólo garantiza el éxito de tu transformación, sino que además, esta vez los resultados llegarán para quedarse. Se realizó también una versión del libro en eBook, adaptando las imágenes y sustituyendo las de mayor complejidad por códigos QR para poder visualizar con detalle vía internet. El formato es universal (EPUB), pero se adecuó especialmente para Kindle, exportando y mejorando lo necesario para el formato MOBI. El texto es adaptable a varios tamaños y tanto el índice como las anotaciones de fin de capítulo son totalmente interactivas.",
+    "descripcion": "Miles de personas cada día, con la voluntad de hacer las cosas bien y adelgazar de una vez por todas, son presa de la venta de productos, dietas y sistemas milagrosos que prometen un cambio radical sin mover un dedo. \nObviamente sus resultados acaban cayendo en saco roto.\nHarto de la situación, con este libro, el autor quiere dar un golpe sobre la mesa para poner punto y final a esta estafa colectiva, encabezada por empresarios con más interés por el dinero que por la salud de las personas. \nA través del descubrimiento personal, la educación alimentaria y el ejercicio físico, entre otros temas, pondrás en marcha un cambio que no sólo garantiza el éxito de tu transformación, sino que además, esta vez los resultados llegarán para quedarse.\n\nSe realizó también una versión del libro en eBook, adaptando las imágenes y sustituyendo las de mayor complejidad por códigos QR para poder visualizar con detalle vía internet. El formato es universal (EPUB), pero se adecuó especialmente para Kindle, exportando y mejorando lo necesario para el formato MOBI. \nEl texto es adaptable a varios tamaños y tanto el índice como las anotaciones de fin de capítulo son totalmente interactivas.",
     "imagenes": [
       {
         "image": "ni-milagros-ni-hostias001.jpg",
@@ -284,7 +284,7 @@
       },
       {
         "image": "ni-milagros-ni-hostias002.jpg",
-        "label": ""
+        "label": "Portada del libro"
       },
       {
         "image": "ni-milagros-ni-hostias003.jpg",
@@ -300,11 +300,11 @@
       },
       {
         "image": "ni-milagros-ni-hostias006.jpg",
-        "label": ""
+        "label": "Diagrama"
       },
       {
         "image": "ni-milagros-ni-hostias007.jpg",
-        "label": ""
+        "label": "Tablas de ejercicios"
       },
       {
         "image": "ni-milagros-ni-hostias008.jpg",
@@ -328,7 +328,7 @@
       },
       {
         "image": "ni-milagros-ni-hostias013.jpg",
-        "label": ""
+        "label": "Ejercicios didácticos"
       },
       {
         "image": "ni-milagros-ni-hostias014.jpg",
@@ -336,11 +336,11 @@
       },
       {
         "image": "ni-milagros-ni-hostias015.jpg",
-        "label": ""
+        "label": "Diario personal"
       },
       {
         "image": "ni-milagros-ni-hostias016.jpg",
-        "label": ""
+        "label": "Portada del Ebook"
       },
       {
         "image": "ni-milagros-ni-hostias017.jpg",
@@ -420,18 +420,22 @@
       },
       {
         "image": "ni-milagros-ni-hostias036.jpg",
-        "label": ""
+        "label": "Portada y contraportada"
       },
       {
         "image": "ni-milagros-ni-hostias037.jpg",
-        "label": ""
+        "label": "Banner promocional"
       },
       {
         "image": "ni-milagros-ni-hostias038.jpg",
-        "label": ""
+        "label": "Libro físico entre los más vendidos"
       },
       {
         "image": "ni-milagros-ni-hostias039.jpg",
+        "label": "Ebook también entre los más vendidos"
+      },
+      {
+        "image": "ni-milagros-ni-hostias040.jpg",
         "label": ""
       }
     ],

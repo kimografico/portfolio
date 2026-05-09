@@ -665,5 +665,151 @@
     "videos": [],
     "extras": [],
     "visible": false
+  },
+  {
+    "id": 235,
+    "date": "2025-10-15 00:00",
+    "title": "Sudaderas ED. Limitada",
+    "cliente": "Equilibrium",
+    "descripcion": "Diseño de sudaderas de edición limitada para un gimnasio de Torrente",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "sudaderas-ed-limitada001.jpg",
+        "label": "MOCKUP SUDADERA 3 DETALLE"
+      },
+      {
+        "image": "sudaderas-ed-limitada002.jpg",
+        "label": "MOCKUP SUDADERA 1 DETALLE"
+      },
+      {
+        "image": "sudaderas-ed-limitada003.jpg",
+        "label": "MOCKUP SUDADERA 4 DETALLE"
+      },
+      {
+        "image": "sudaderas-ed-limitada004.jpg",
+        "label": "MOCKUP SUDADERA 2"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 236,
+    "date": "2025-03-01 00:00",
+    "title": "Camisetas variadas",
+    "cliente": "Equilibrium",
+    "descripcion": "Distintos modelos de camiseta, para trabajadores y para clientes, de un gimnasio de Torrent",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "camisetas-variadas001.jpg",
+        "label": "MOCKUP8"
+      },
+      {
+        "image": "camisetas-variadas002.jpg",
+        "label": "LOGO OVERSIZED"
+      },
+      {
+        "image": "camisetas-variadas003.jpg",
+        "label": "LOGO VERTICAL (2)"
+      },
+      {
+        "image": "camisetas-variadas004.jpg",
+        "label": "ROJO FONDO BLANCO"
+      },
+      {
+        "image": "camisetas-variadas005.jpg",
+        "label": "CENA CONMEMORATIVA 2"
+      },
+      {
+        "image": "camisetas-variadas006.jpg",
+        "label": "MOCKUP SUDADERA LOGO"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 239,
+    "date": "2026-05-09 00:00",
+    "title": "Fachada Equilibrium",
+    "cliente": "Equilibrium",
+    "descripcion": "",
+    "visible": false,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["Preguntar a Pau si tiene fotos de cuando se montó"]
+  },
+  {
+    "id": 240,
+    "date": "2026-05-09 00:00",
+    "title": "Coche Equilibrium",
+    "cliente": "Equilibrium",
+    "descripcion": "",
+    "visible": false,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["Preguntar a Pau si tiene fotos de cuando se montó"]
+  },
+  {
+    "id": 245,
+    "date": "2026-05-09 00:00",
+    "title": "Tirador de hidromiel de madera",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "Se realizó tanto el diseño como el grabado de la estructura de madera de un tirador de hidromiel",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "tirador-de-hidromiel-de-madera001.jpg",
+        "label": "Madera grabada"
+      },
+      {
+        "image": "tirador-de-hidromiel-de-madera002.jpg",
+        "label": "Madera grabada"
+      },
+      {
+        "image": "tirador-de-hidromiel-de-madera003.jpg",
+        "label": "Madera grabada"
+      },
+      {
+        "image": "tirador-de-hidromiel-de-madera004.jpg",
+        "label": "Mockup de algunos bocetos"
+      },
+      {
+        "image": "tirador-de-hidromiel-de-madera005.jpg",
+        "label": "Boceto finalista"
+      },
+      {
+        "image": "tirador-de-hidromiel-de-madera006.jpg",
+        "label": "Tirador 3"
+      },
+      {
+        "image": "tirador-de-hidromiel-de-madera007.jpg",
+        "label": "Tirador-1"
+      },
+      {
+        "image": "tirador-de-hidromiel-de-madera008.jpg",
+        "label": "Tiradores 4-1"
+      },
+      {
+        "image": "tirador-de-hidromiel-de-madera009.jpg",
+        "label": "Proceso de grabado"
+      },
+      {
+        "image": "tirador-de-hidromiel-de-madera010.jpg",
+        "label": "Proceso de grabado"
+      },
+      {
+        "image": "tirador-de-hidromiel-de-madera011.jpg",
+        "label": "Pieza antes de lijar"
+      }
+    ],
+    "videos": [],
+    "extras": [
+      "Asegurarse de que todas las fotos pertenecen al tirador, y pedir a Tomás fotos del tirador terminado"
+    ],
+    "type": "gd",
+    "category": "proyectos-especiales"
   }
 ]

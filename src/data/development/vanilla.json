@@ -929,5 +929,145 @@
     "visible": true,
     "type": "dev",
     "category": "vanilla"
+  },
+  {
+    "id": 234,
+    "date": "2013-05-01 00:00",
+    "title": "Gescco",
+    "cliente": "Gescco",
+    "descripcion": "Proyecto de web para una empresa de gestión de comedores escolares.\nLa empresa desapareció a mitad proyecto, y nunca pagó.",
+    "visible": false,
+    "imagenes": [
+      {
+        "image": "gescco001.jpg",
+        "label": "4"
+      },
+      {
+        "image": "gescco002.jpg",
+        "label": "1"
+      },
+      {
+        "image": "gescco003.jpg",
+        "label": "3"
+      },
+      {
+        "image": "gescco004.jpg",
+        "label": "2"
+      },
+      {
+        "image": "gescco005.jpg",
+        "label": "5"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "stack": ["HTML", "CSS", "PHP"]
+  },
+  {
+    "id": 268,
+    "date": "2026-05-09 00:00",
+    "title": "Destino Clandestino",
+    "cliente": "Destino Clandestino",
+    "descripcion": "Mi primera página web, para el grupo musical de un amigo. \n¡Historia Antigua!",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "destino-clandestino001.jpg",
+        "label": "chrome_4kmhQ5WJh3"
+      },
+      {
+        "image": "destino-clandestino002.jpg",
+        "label": "copia"
+      },
+      {
+        "image": "destino-clandestino003.jpg",
+        "label": "copia"
+      },
+      {
+        "image": "destino-clandestino004.jpg",
+        "label": "copia"
+      },
+      {
+        "image": "destino-clandestino005.jpg",
+        "label": "chrome_F6xg2O3jJd"
+      },
+      {
+        "image": "destino-clandestino006.jpg",
+        "label": "chrome_bInSs5urim"
+      },
+      {
+        "image": "destino-clandestino007.jpg",
+        "label": "chrome_w2P6zNlIm4"
+      },
+      {
+        "image": "destino-clandestino008.jpg",
+        "label": "chrome_gcv2tzJnUN"
+      },
+      {
+        "image": "destino-clandestino009.jpg",
+        "label": "chrome_PPbdEhylO1"
+      },
+      {
+        "image": "destino-clandestino010.jpg",
+        "label": "chrome_Tb9hzUHYBL"
+      },
+      {
+        "image": "destino-clandestino011.jpg",
+        "label": "chrome_oubMG72S3x"
+      },
+      {
+        "image": "destino-clandestino012.jpg",
+        "label": "chrome_Ex4FWX5qsh"
+      },
+      {
+        "image": "destino-clandestino013.jpg",
+        "label": "chrome_aSEIgb5Ek8"
+      },
+      {
+        "image": "destino-clandestino014.jpg",
+        "label": "chrome_Zc65ywDkw1"
+      },
+      {
+        "image": "destino-clandestino015.jpg",
+        "label": "chrome_7KsnJKIxRD"
+      },
+      {
+        "image": "destino-clandestino016.jpg",
+        "label": "chrome_qYK2t5euzY"
+      },
+      {
+        "image": "destino-clandestino017.jpg",
+        "label": "chrome_uHhNs7GaCX"
+      },
+      {
+        "image": "destino-clandestino018.jpg",
+        "label": "chrome_ixvOYDwY0S"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "stack": ["HTML", "CSS", "Flash"]
+  },
+  {
+    "id": 269,
+    "date": "2011-02-22 00:00",
+    "title": "Portfolio Vicente Molins",
+    "cliente": "Vicente Molins",
+    "descripcion": "Portfolio de un supuesto director de diseño. \nRealmente resultó ser un timador",
+    "visible": false,
+    "imagenes": [
+      {
+        "image": "portfolio-vicente-molins001.jpg",
+        "label": "VM"
+      }
+    ],
+    "videos": [
+      {
+        "image": "https://youtu.be/JO2RD0kOBSY",
+        "label": ""
+      }
+    ],
+    "extras": [],
+    "stack": ["HTML", "CSS", "Flash"]
   }
 ]

@@ -409,5 +409,360 @@
     "visible": true,
     "type": "dev",
     "category": "wordpress"
+  },
+  {
+    "id": 257,
+    "date": "2021-05-05 00:00",
+    "title": "Vuit Climbing Club",
+    "cliente": "Vuit Climbing Club",
+    "descripcion": "Desarrollo de una web con Wordpress, muy sencilla de mantener.\nEn el home tiene un carrusel de imágenes, una introducción, datos de interés, una galería que muestra las instalaciones, y el horario\nTambién dispone de una galería integrada con instagram para facilitar el mantenimiento, una sección de noticias, y un formulario de contacto con integración directa con whatsapp.",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "vuit-climbing-club001.jpg",
+        "label": "11"
+      },
+      {
+        "image": "vuit-climbing-club002.jpg",
+        "label": "1"
+      },
+      {
+        "image": "vuit-climbing-club003.jpg",
+        "label": "2"
+      },
+      {
+        "image": "vuit-climbing-club004.jpg",
+        "label": "3"
+      },
+      {
+        "image": "vuit-climbing-club005.jpg",
+        "label": "4"
+      },
+      {
+        "image": "vuit-climbing-club006.jpg",
+        "label": "5"
+      },
+      {
+        "image": "vuit-climbing-club007.jpg",
+        "label": "6"
+      },
+      {
+        "image": "vuit-climbing-club008.jpg",
+        "label": "7"
+      },
+      {
+        "image": "vuit-climbing-club009.jpg",
+        "label": "8"
+      },
+      {
+        "image": "vuit-climbing-club010.jpg",
+        "label": "9"
+      },
+      {
+        "image": "vuit-climbing-club011.jpg",
+        "label": "10"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "stack": ["WordPress"]
+  },
+  {
+    "id": 258,
+    "date": "2021-06-08 00:00",
+    "title": "Eduardo Alonso",
+    "cliente": "Eduardo Alonso",
+    "descripcion": "Página web para un escritor",
+    "visible": false,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["Rellenar"],
+    "stack": []
+  },
+  {
+    "id": 259,
+    "date": "2020-10-08 00:00",
+    "title": "Rosa Balbín",
+    "cliente": "Rosa Balbín",
+    "descripcion": "Web realizada para Rosa Balbín, Arquitecta",
+    "visible": false,
+    "imagenes": [],
+    "videos": [],
+    "extras": [" No hay capturas de pantalla y la web ya no está"],
+    "stack": []
+  },
+  {
+    "id": 260,
+    "date": "2021-02-08 00:00",
+    "title": "PierdeLoss90",
+    "cliente": "Pau Benedito",
+    "descripcion": "Web para el proyecto PierdeLoss90",
+    "visible": false,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["No hay capturas de pantalla y ya no está en marcha"],
+    "stack": []
+  },
+  {
+    "id": 261,
+    "date": "2022-03-26 00:00",
+    "title": "Gaia Climb",
+    "cliente": "Gaia Climb",
+    "descripcion": "Página web para un rocódromo de Alzira",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "gaia-climb001.jpg",
+        "label": "1"
+      },
+      {
+        "image": "gaia-climb002.jpg",
+        "label": "2"
+      },
+      {
+        "image": "gaia-climb003.jpg",
+        "label": "3"
+      },
+      {
+        "image": "gaia-climb004.jpg",
+        "label": "4"
+      },
+      {
+        "image": "gaia-climb005.jpg",
+        "label": "5"
+      },
+      {
+        "image": "gaia-climb006.jpg",
+        "label": "6"
+      },
+      {
+        "image": "gaia-climb007.jpg",
+        "label": "7"
+      },
+      {
+        "image": "gaia-climb008.jpg",
+        "label": "8"
+      },
+      {
+        "image": "gaia-climb009.jpg",
+        "label": "9"
+      },
+      {
+        "image": "gaia-climb010.jpg",
+        "label": "10"
+      },
+      {
+        "image": "gaia-climb011.jpg",
+        "label": "11"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "stack": ["WordPress"]
+  },
+  {
+    "id": 262,
+    "date": "2021-06-08 00:00",
+    "title": "Eduardo Alonso",
+    "cliente": "Eduardo Alonso",
+    "descripcion": "Página web para un escritor",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "eduardo-alonso001.jpg",
+        "label": "chrome_t2wWryH4xJ"
+      },
+      {
+        "image": "eduardo-alonso002.jpg",
+        "label": "chrome_nlKJ5gOvYP"
+      },
+      {
+        "image": "eduardo-alonso003.jpg",
+        "label": "chrome_qP72QpWfec"
+      },
+      {
+        "image": "eduardo-alonso004.jpg",
+        "label": "chrome_kaFM8aqCcg"
+      },
+      {
+        "image": "eduardo-alonso005.jpg",
+        "label": "chrome_IAjtk8Za0k"
+      },
+      {
+        "image": "eduardo-alonso006.jpg",
+        "label": "chrome_ImjTpAPqtm"
+      },
+      {
+        "image": "eduardo-alonso007.jpg",
+        "label": "chrome_ZrN0dNGvhy"
+      },
+      {
+        "image": "eduardo-alonso008.jpg",
+        "label": "chrome_udtFPbKv13"
+      }
+    ],
+    "videos": [],
+    "extras": ["Texto miniaturas"],
+    "stack": ["WordPress"]
+  },
+  {
+    "id": 263,
+    "date": "2023-06-20 00:00",
+    "title": "Pi McCarthy",
+    "cliente": "Pi McCarthy",
+    "descripcion": "Página web muy simple para una cantante",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "pi-mccarthy001.jpg",
+        "label": "chrome_3hKLOHfw44"
+      },
+      {
+        "image": "pi-mccarthy002.jpg",
+        "label": "chrome_rz5gAXjd8O"
+      },
+      {
+        "image": "pi-mccarthy003.jpg",
+        "label": "chrome_9IvBkLfWxK"
+      },
+      {
+        "image": "pi-mccarthy004.jpg",
+        "label": "chrome_4GMbQ5LXhY"
+      },
+      {
+        "image": "pi-mccarthy005.jpg",
+        "label": "chrome_4dD7bWQo2w"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "stack": ["WordPress"]
+  },
+  {
+    "id": 264,
+    "date": "2021-07-07 00:00",
+    "title": "El Grito",
+    "cliente": "Lidia Aparicio",
+    "descripcion": "Página web para el proyecto medioambiental El Grito - Biotox\nConsta de diversas secciones informativas, explicando el proyecto, los integrantes y como colaborar con el mismo.",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "el-grito001.jpg",
+        "label": "chrome_k5XXo0DI0n"
+      },
+      {
+        "image": "el-grito002.jpg",
+        "label": "chrome_Jlr3IbxCjc"
+      },
+      {
+        "image": "el-grito003.jpg",
+        "label": "chrome_I17YweD63l"
+      },
+      {
+        "image": "el-grito004.jpg",
+        "label": "chrome_HHzS0mHwuG"
+      },
+      {
+        "image": "el-grito005.jpg",
+        "label": "chrome_hgdbBKPIH8"
+      },
+      {
+        "image": "el-grito006.jpg",
+        "label": "chrome_H4Q0wx2AuR"
+      },
+      {
+        "image": "el-grito007.jpg",
+        "label": "chrome_CsnWN6PHru"
+      },
+      {
+        "image": "el-grito008.jpg",
+        "label": "chrome_ciSpxOYEBG"
+      },
+      {
+        "image": "el-grito009.jpg",
+        "label": "chrome_bhkZuHCTYi"
+      },
+      {
+        "image": "el-grito010.jpg",
+        "label": "chrome_bC4TmVcK8X"
+      },
+      {
+        "image": "el-grito011.jpg",
+        "label": "chrome_20Z1avBhN5"
+      },
+      {
+        "image": "el-grito012.jpg",
+        "label": "chrome_yHelGQwk07"
+      },
+      {
+        "image": "el-grito013.jpg",
+        "label": "chrome_xyHf6ZbKti"
+      },
+      {
+        "image": "el-grito014.jpg",
+        "label": "chrome_X2DPTenNun"
+      },
+      {
+        "image": "el-grito015.jpg",
+        "label": "chrome_WlS8JhHBXh"
+      },
+      {
+        "image": "el-grito016.jpg",
+        "label": "chrome_o48HigOdmZ"
+      },
+      {
+        "image": "el-grito017.jpg",
+        "label": "chrome_nrDCoAIrJH"
+      },
+      {
+        "image": "el-grito018.jpg",
+        "label": "chrome_LP8B3ieXOA"
+      },
+      {
+        "image": "el-grito019.jpg",
+        "label": "chrome_krB7WOG1AC"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "stack": ["WordPress"]
+  },
+  {
+    "id": 265,
+    "date": "2015-01-18 00:00",
+    "title": "S'ambalà",
+    "cliente": "S'ambalà",
+    "descripcion": "Página web para una Batukada",
+    "visible": false,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["No hay capturas de pantalla y la web ya no está visible"],
+    "stack": ["WordPress"]
+  },
+  {
+    "id": 266,
+    "date": "2020-05-01 00:00",
+    "title": "Drac del Cabanyal",
+    "cliente": "Drac del Cabanyal",
+    "descripcion": "Wordpress y tienda online para una tienda de artesanía del Cabanyal",
+    "visible": false,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["No hay capturas y la web ya no está visible"],
+    "stack": ["WordPress", "Prestashop"],
+    "type": "dev",
+    "category": "wordpress"
+  },
+  {
+    "id": 267,
+    "date": "2020-07-07 00:00",
+    "title": "Tercer Tiempo",
+    "cliente": "Tercer Tiempo",
+    "descripcion": "Página web para un restaurante",
+    "visible": true,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["No hay capturas de pantalla y la web ya no está en marcha"],
+    "stack": ["WordPress"]
   }
 ]

@@ -316,7 +316,7 @@ export default function DataPage() {
           link
           aria-pressed={showHidden}
         >
-          {showHidden ? 'Mostrar todos los proyectos' : 'Mostrar proyectos visibles'}
+          {showHidden ? 'Mostrando todos los proyectos' : 'Mostrando proyectos visibles'}
           {showHidden ? (
             <IconVisible size={20} className="ml-2" />
           ) : (

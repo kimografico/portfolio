@@ -1041,5 +1041,153 @@
     "visible": true,
     "type": "gd",
     "category": "multimedia"
+  },
+  {
+    "id": 232,
+    "date": "2021-03-23 00:00",
+    "title": "El Grito - Biotox",
+    "cliente": "Lidia Aparicio",
+    "descripcion": "Diseño de imágenes para Redes Sociales y entradillas de video para un proyecto de documental internacional sobre la contaminación",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "el-grito-biotox001.jpg",
+        "label": "INSTAGRAM"
+      },
+      {
+        "image": "el-grito-biotox002.jpg",
+        "label": "Sin tÃ­tul-1"
+      },
+      {
+        "image": "el-grito-biotox003.jpg",
+        "label": "Sin tÃ­tulo-1"
+      }
+    ],
+    "videos": [
+      {
+        "image": "https://youtu.be/PAfxLT0OFq4",
+        "label": ""
+      },
+      {
+        "image": "https://youtu.be/zVOAso5Ba70",
+        "label": ""
+      },
+      {
+        "image": "https://youtu.be/R22kxRbuDAQ",
+        "label": ""
+      },
+      {
+        "image": "https://youtu.be/IavIGV-vSYw",
+        "label": ""
+      },
+      {
+        "image": "https://youtu.be/LXd6f7rDCIk",
+        "label": ""
+      },
+      {
+        "image": "https://youtu.be/XPB8mtZYBJg",
+        "label": ""
+      },
+      {
+        "image": "https://youtu.be/kidEj5p3q20",
+        "label": ""
+      },
+      {
+        "image": "https://youtu.be/ro0XenF6xoA",
+        "label": ""
+      },
+      {
+        "image": "https://youtu.be/dKATFu_Jax8",
+        "label": ""
+      }
+    ],
+    "extras": []
+  },
+  {
+    "id": 238,
+    "date": "2026-05-09 00:00",
+    "title": "Cuñas de Video para TV de Equilibrium",
+    "cliente": "Equilibrium",
+    "descripcion": "Distintas Cuñas de Video que se muestran en bucle en el gimnasio, mientras la gente hace ejercicio\nSon sobre todo entradillas con el logo, frases motivacionales, y entretenidos quiz con preguntas sobre entrenamiento y cuidado personal",
+    "visible": false,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["Pedir a Pau si tiene los videos montados en uno, y si le parece bien colgarlos."]
+  },
+  {
+    "id": 242,
+    "date": "2024-01-01 00:00",
+    "title": "Imágenes para RRSS",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "Algunas imágenes promocionales para distintos eventos",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "imagenes-para-rrss001.jpg",
+        "label": "Leyendas 2023"
+      },
+      {
+        "image": "imagenes-para-rrss002.jpg",
+        "label": "Leyendas 2023"
+      },
+      {
+        "image": "imagenes-para-rrss003.jpg",
+        "label": "GinetaRock 2024"
+      },
+      {
+        "image": "imagenes-para-rrss004.jpg",
+        "label": "Leyendas 2024"
+      },
+      {
+        "image": "imagenes-para-rrss005.jpg",
+        "label": "Yule 2020"
+      },
+      {
+        "image": "imagenes-para-rrss006.jpg",
+        "label": "Black Friday 2018"
+      },
+      {
+        "image": "imagenes-para-rrss007.jpg",
+        "label": "Black Friday 2019"
+      },
+      {
+        "image": "imagenes-para-rrss008.jpg",
+        "label": "Black Friday 2020"
+      },
+      {
+        "image": "imagenes-para-rrss009.jpg",
+        "label": "Black Friday 2021"
+      },
+      {
+        "image": "imagenes-para-rrss010.jpg",
+        "label": "Dia del Frigorifico 2020"
+      },
+      {
+        "image": "imagenes-para-rrss011.jpg",
+        "label": "Leyendas 2019"
+      },
+      {
+        "image": "imagenes-para-rrss012.jpg",
+        "label": "GinetaRock 2017"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 244,
+    "date": "2023-06-16 00:00",
+    "title": "Video promocional de Hidromiel",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "Video promocional que muestra varios planos de botellines de Hidromiel Odín",
+    "visible": true,
+    "imagenes": [],
+    "videos": [
+      {
+        "image": "https://youtu.be/H5eSJr9rZcg",
+        "label": ""
+      }
+    ],
+    "extras": ["Poner miniatura"]
   }
 ]

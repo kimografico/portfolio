@@ -172,5 +172,41 @@
     "videos": [],
     "extras": [],
     "visible": true
+  },
+  {
+    "id": 246,
+    "date": "2026-05-09 00:00",
+    "title": "Cajas de botellines",
+    "cliente": "Odín Hidromiel",
+    "descripcion": "Caja para transportar botellines de hidromiel",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "cajas-de-botellines001.jpg",
+        "label": "1"
+      },
+      {
+        "image": "cajas-de-botellines002.jpg",
+        "label": "2"
+      },
+      {
+        "image": "cajas-de-botellines003.jpg",
+        "label": "3"
+      },
+      {
+        "image": "cajas-de-botellines004.jpg",
+        "label": "4"
+      },
+      {
+        "image": "cajas-de-botellines005.jpg",
+        "label": "5"
+      },
+      {
+        "image": "cajas-de-botellines006.jpg",
+        "label": "Despliegue"
+      }
+    ],
+    "videos": [],
+    "extras": []
   }
 ]

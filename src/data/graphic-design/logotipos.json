@@ -795,7 +795,7 @@
     "id": 124,
     "date": "2017-05-08 21:36",
     "title": "Hidromiel Loki",
-    "cliente": "Odín Hidromiel",
+    "cliente": "Odín Hidromiel",
     "descripcion": "Logotipo para una hidromiel con especias, producto de Hidromiel Odin.",
     "imagenes": [
       {
@@ -829,7 +829,7 @@
     "id": 117,
     "date": "2017-01-07 11:27",
     "title": "Zeus",
-    "cliente": "Odín Hidromiel ",
+    "cliente": "Odín Hidromiel",
     "descripcion": "Logotipo para una bebida alcoholica, de la marca Odin Hidromiel.",
     "imagenes": [
       {
@@ -881,7 +881,7 @@
     "id": 113,
     "date": "2016-06-20 20:23",
     "title": "Lola Hidromiel con manzana",
-    "cliente": "Odín Hidromiel",
+    "cliente": "Odín Hidromiel",
     "descripcion": "Logotipo para una hidromiel con manzana, producto de Hidromiel Odin.",
     "imagenes": [
       {
@@ -1058,7 +1058,7 @@
     "id": 84,
     "date": "2014-10-06 20:16",
     "title": "Hidromiel Odin",
-    "cliente": "Odín Hidromiel",
+    "cliente": "Odín Hidromiel",
     "descripcion": "Logotipo para una marca de hidromieles",
     "imagenes": [
       {
@@ -1644,5 +1644,297 @@
     "videos": [],
     "extras": [],
     "visible": true
+  },
+  {
+    "id": 222,
+    "date": "2021-11-04 00:00",
+    "title": "Beorn Hidormiel",
+    "cliente": "Beorn",
+    "descripcion": "Logotipo para una marca de hidromiel artesana",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "beorn-hidormiel001.jpg",
+        "label": "LOGO BEORN MADERA"
+      },
+      {
+        "image": "beorn-hidormiel003.jpg",
+        "label": "BOCETOS"
+      },
+      {
+        "image": "beorn-hidormiel002.jpg",
+        "label": "LOGO BEORN"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "logotipos"
+  },
+  {
+    "id": 223,
+    "date": "2021-05-24 00:00",
+    "title": "Con un Par",
+    "cliente": "Eduard Farran",
+    "descripcion": "Logotipo para una asociación ciclista femenina",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "con-un-par008.jpg",
+        "label": "Logo Con un par"
+      },
+      {
+        "image": "con-un-par002.jpg",
+        "label": "Bocetos"
+      },
+      {
+        "image": "con-un-par003.jpg",
+        "label": "Bocetos"
+      },
+      {
+        "image": "con-un-par004.jpg",
+        "label": "Bocetos"
+      },
+      {
+        "image": "con-un-par005.jpg",
+        "label": "Bocetos"
+      },
+      {
+        "image": "con-un-par006.jpg",
+        "label": "Bocetos"
+      },
+      {
+        "image": "con-un-par007.jpg",
+        "label": "Bocetos"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "logotipos"
+  },
+  {
+    "id": 224,
+    "date": "2022-03-18 00:00",
+    "title": "Vigorexia",
+    "cliente": "Damián Serena",
+    "descripcion": "Logotipo para una marca de bebidas energéticas afordisíacas",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "vigorexia001.jpg",
+        "label": "VIGOREXIA_LOGO"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "logotipos"
+  },
+  {
+    "id": 230,
+    "date": "2021-11-29 00:00",
+    "title": "GourmetManía",
+    "cliente": "Damián Serena",
+    "descripcion": "Logotipo y sellos de calidad de una marca de productos premium de alimentación",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "/portfolio/images/portfolio/design/logotipos/gourmetmania006.jpg",
+        "label": "Logotipo V2"
+      },
+      {
+        "image": "gourmetmania001.jpg",
+        "label": "Logotipo"
+      },
+      {
+        "image": "gourmetmania002.jpg",
+        "label": "Sellos de calidad"
+      },
+      {
+        "image": "gourmetmania003.jpg",
+        "label": "Bocetos"
+      },
+      {
+        "image": "/portfolio/images/portfolio/design/logotipos/gourmetmania004.jpg",
+        "label": "Bocetos"
+      },
+      {
+        "image": "/portfolio/images/portfolio/design/logotipos/gourmetmania005.jpg",
+        "label": "Bocetos"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "logotipos"
+  },
+  {
+    "id": 231,
+    "date": "2021-03-23 00:00",
+    "title": "El Grito - Biotox",
+    "cliente": "Lidia Aparicio",
+    "descripcion": "Logotipo para un proyecto documental internacional sobre la contaminación del planeta",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "el-grito-biotox001.jpg",
+        "label": "Logo elegido por cliente"
+      },
+      {
+        "image": "el-grito-biotox002.jpg",
+        "label": "BOCETO-8"
+      },
+      {
+        "image": "el-grito-biotox003.jpg",
+        "label": "BOCETO-5"
+      },
+      {
+        "image": "el-grito-biotox004.jpg",
+        "label": "BOCETO-2"
+      },
+      {
+        "image": "el-grito-biotox005.jpg",
+        "label": "BOCETO-3"
+      },
+      {
+        "image": "el-grito-biotox006.jpg",
+        "label": "BOCETO-6a"
+      },
+      {
+        "image": "el-grito-biotox007.jpg",
+        "label": "BOCETO-6b"
+      },
+      {
+        "image": "el-grito-biotox008.jpg",
+        "label": "BOCETO-6c"
+      },
+      {
+        "image": "el-grito-biotox009.jpg",
+        "label": "BOCETO-7"
+      },
+      {
+        "image": "el-grito-biotox010.jpg",
+        "label": "Prueba de distintos logotipos tipográficos"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 233,
+    "date": "2021-09-16 00:00",
+    "title": "Elecom Energía Limpia",
+    "cliente": "Elecom",
+    "descripcion": "Logotipo para una empresa de Ingeniería de paneles solares",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "elecom-energia-limpia001.jpg",
+        "label": "Versión elegida por el cliente"
+      },
+      {
+        "image": "elecom-energia-limpia002.jpg",
+        "label": "La versión que yo habría elegido"
+      },
+      {
+        "image": "elecom-energia-limpia003.jpg",
+        "label": "ELECOM LOGO-2"
+      },
+      {
+        "image": "elecom-energia-limpia004.jpg",
+        "label": "ELECOM LOGO-3"
+      },
+      {
+        "image": "elecom-energia-limpia005.jpg",
+        "label": "ELECOM LOGO-5"
+      },
+      {
+        "image": "elecom-energia-limpia006.jpg",
+        "label": "ELECOM LOGO-1"
+      },
+      {
+        "image": "elecom-energia-limpia007.jpg",
+        "label": "Mini Manual de uso de marca"
+      },
+      {
+        "image": "elecom-energia-limpia008.jpg",
+        "label": "Mini Manual de uso de marca"
+      }
+    ],
+    "videos": [],
+    "extras": ["Ajustar proporción del thumb"],
+    "type": "gd",
+    "category": "logotipos"
+  },
+  {
+    "id": 237,
+    "date": "2024-12-26 00:00",
+    "title": "Rediseño Equilibrium",
+    "cliente": "Equilibrium",
+    "descripcion": "Rediseño del logotipo de Equilibrium - Personal Training Studio\nLa idea era modernizarlo y hacerlo más legible y más adaptado a los cambios que ha ido experimentando a lo largo de 10 años el Gimnasio y su clientela\nSe optaron por líneas mas sencillas, simplificando tanto la imagen como el texto",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "rediseno-equilibrium001.jpg",
+        "label": "Logo Rediseñado"
+      },
+      {
+        "image": "rediseno-equilibrium002.jpg",
+        "label": "Logo anterior"
+      },
+      {
+        "image": "rediseno-equilibrium003.jpg",
+        "label": "Versiones horizontales"
+      },
+      {
+        "image": "rediseno-equilibrium004.jpg",
+        "label": "Circulo en color"
+      },
+      {
+        "image": "rediseno-equilibrium005.jpg",
+        "label": "Circulo en una tinta"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "logotipos"
+  },
+  {
+    "id": 241,
+    "date": "2022-01-20 00:00",
+    "title": "Gaia Climb Alzira",
+    "cliente": "Gaia Climb",
+    "descripcion": "Logotipo para un rocódromo en Alzira",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "gaia-climb-alzira001.jpg",
+        "label": "Logo a una tinta"
+      },
+      {
+        "image": "gaia-climb-alzira002.jpg",
+        "label": "Logo a color"
+      },
+      {
+        "image": "gaia-climb-alzira003.jpg",
+        "label": "Imagotipo"
+      },
+      {
+        "image": "gaia-climb-alzira004.jpg",
+        "label": "Primera idea, con una mujer como icono principal"
+      },
+      {
+        "image": "gaia-climb-alzira005.jpg",
+        "label": "Ideas basadas en un logotipo circular"
+      },
+      {
+        "image": "gaia-climb-alzira006.jpg",
+        "label": "Otros bocetos"
+      }
+    ],
+    "videos": [],
+    "extras": []
   }
 ]
