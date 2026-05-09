@@ -17,6 +17,7 @@ import {
   applyFilters,
   calculateDuplicateIds,
 } from './DataPageHelpers';
+import DataActionBar from '../../../components/compositions/DataActionBar';
 
 // Necesario para crear columnas tipadas
 const columnHelper = createColumnHelper<DataEntry>();
@@ -451,50 +452,15 @@ export default function DataPage() {
 
       {/* Barra de acciones (solo visible al seleccionar filas) */}
       {selectedIds.size > 0 && (
-        <div
-          className="flex items-center gap-3 mb-4 p-3 bg-gray-50 border rounded"
-          data-id="data-action-bar"
-        >
-          <span className="text-sm font-semibold">
-            {selectedIds.size}{' '}
-            {selectedIds.size === 1 ? 'proyecto seleccionado' : 'proyectos seleccionados'}
-          </span>
-          <button
-            onClick={() => handleBulkVisibility(false)}
-            disabled={bulkStatus === 'loading'}
-            className="text-xs px-3 py-1.5 bg-red-50 text-red-600 border border-red-300 rounded hover:bg-red-100 disabled:opacity-50 transition-colors"
-            data-id="data-mark-hidden-btn"
-          >
-            ○ Marcar como ocultos
-          </button>
-          <button
-            onClick={() => handleBulkVisibility(true)}
-            disabled={bulkStatus === 'loading'}
-            className="text-xs px-3 py-1.5 bg-green-50 text-green-700 border border-green-300 rounded hover:bg-green-100 disabled:opacity-50 transition-colors"
-            data-id="data-mark-visible-btn"
-          >
-            ● Marcar como visibles
-          </button>
-          <button
-            onClick={handleBulkDelete}
-            disabled={bulkStatus === 'loading'}
-            className="text-xs px-3 py-1.5 bg-red-100 text-red-700 border border-red-400 rounded hover:bg-red-200 disabled:opacity-50 transition-colors"
-            data-id="data-delete-btn"
-            title="Eliminar proyecto(s) seleccionado(s) - no se puede deshacer"
-          >
-            🗑️ Eliminar
-          </button>
-          <button
-            onClick={() => setSelectedIds(new Set())}
-            className="text-xs text-muted hover:text-accent transition-colors ml-auto"
-          >
-            Cancelar
-          </button>
-          {bulkStatus === 'loading' && <span className="text-xs text-muted">Guardando…</span>}
-          {bulkStatus === 'error' && (
-            <span className="text-xs text-red-600">❌ {bulkError}. ¿El backend está activo?</span>
-          )}
-        </div>
+        <DataActionBar
+          selectedCount={selectedIds.size}
+          loading={bulkStatus === 'loading'}
+          error={bulkStatus === 'error' ? bulkError : ''}
+          onMarkHidden={() => handleBulkVisibility(false)}
+          onMarkVisible={() => handleBulkVisibility(true)}
+          onDelete={handleBulkDelete}
+          onCancel={() => setSelectedIds(new Set())}
+        />
       )}
 
       {/* Tabla */}

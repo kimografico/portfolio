@@ -42,7 +42,7 @@ const ProjectSelectorColumn: React.FC<ProjectSelectorColumnProps> = ({
   return (
     <div data-id={dataId}>
       <h3 className={`text-lg font-semibold mb-4 ${titleClass}`}>{title}</h3>
-      <div className="space-y-2 max-h-96 overflow-y-auto border rounded p-4 bg-gray-50">
+      <div className="space-y-2 max-h-96 overflow-y-auto border rounded p-4 bg-[var(--color-bg-modal)]">
         {sortedProjects.length === 0 ? (
           <p className="text-sm text-muted">No hay proyectos</p>
         ) : (

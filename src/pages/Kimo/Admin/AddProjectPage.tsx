@@ -467,7 +467,7 @@ export default function AddProjectPage() {
           <input
             id="ap-date"
             type="date"
-            className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+            className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
             value={form.date}
             onChange={(e) => handleField('date', e.target.value)}
           />
