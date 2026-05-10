@@ -33,11 +33,10 @@ export default meta;
 type Story = StoryObj<typeof ProjectCard>;
 
 const exampleProject = {
-  id: '1',
+  id: '173',
   date: '2024-05-08',
   title: 'Portfolio Kimografico',
   cliente: 'Kimografico',
-  imagenes: [{ image: 'portfolio-demo.jpg', label: 'Demo' }],
   stack: ['REACT', 'JS', 'HTML', 'WP'],
 };
 
