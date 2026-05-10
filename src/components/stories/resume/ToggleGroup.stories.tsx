@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import ToggleGroup from '../../resume/ToggleGroup';
+import { ToggleGroupPlayground } from './ResumeRowPlayground';
 
 const meta = {
   title: 'resume/ToggleGroup',
@@ -26,14 +27,12 @@ export default meta;
 
 type Story = StoryObj<typeof ToggleGroup>;
 
-export const Default: Story = {
+export const Playground: Story = {
+  render: (args) => ToggleGroupPlayground({ ...args, Component: ToggleGroup }),
   args: {
     visible: true,
-    onToggleVisible: () => undefined,
     design: true,
-    onToggleDesign: () => undefined,
     development: false,
-    onToggleDevelopment: () => undefined,
     dataIdPrefix: 'toggle-group-demo',
   },
 };

@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import SkillRow from '../../resume/SkillRow';
+import { ResumeRowPlayground } from './ResumeRowPlayground';
 
 const meta = {
   title: 'resume/SkillRow',
@@ -22,16 +23,14 @@ export default meta;
 
 type Story = StoryObj<typeof SkillRow>;
 
-export const Default: Story = {
+export const Playground: Story = {
+  render: ResumeRowPlayground(SkillRow, { visible: true, design: true, development: false }),
   args: {
     name: 'Dirección de arte',
     onNameChange: () => undefined,
     visible: true,
-    onToggleVisible: () => undefined,
     design: true,
-    onToggleDesign: () => undefined,
     development: false,
-    onToggleDevelopment: () => undefined,
     onRemove: () => alert('Eliminar curso'),
     dataIdPrefix: 'skill-demo',
   },

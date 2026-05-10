@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import EducationRow from '../../resume/EducationRow';
+import { ResumeRowPlayground } from './ResumeRowPlayground';
 
 const meta = {
   title: 'resume/EducationRow',
@@ -27,7 +28,8 @@ type Story = StoryObj<typeof EducationRow>;
 
 const yearOptions = ['2026', '2025', '2024', '2023', '2022'];
 
-export const Default: Story = {
+export const Playground: Story = {
+  render: ResumeRowPlayground(EducationRow, { visible: true, design: true, development: false }),
   args: {
     degree: 'Grado en Comunicación',
     onDegreeChange: () => undefined,
@@ -38,11 +40,8 @@ export const Default: Story = {
     end: '2024',
     onEndChange: () => undefined,
     visible: true,
-    onToggleVisible: () => undefined,
     design: true,
-    onToggleDesign: () => undefined,
     development: false,
-    onToggleDevelopment: () => undefined,
     onRemove: () => alert('Eliminar curso'),
     dataIdPrefix: 'education-demo',
     yearOptions,

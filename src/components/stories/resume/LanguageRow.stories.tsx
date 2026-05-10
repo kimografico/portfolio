@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import LanguageRow from '../../resume/LanguageRow';
+import { ResumeRowPlayground } from './ResumeRowPlayground';
 
 const meta = {
   title: 'resume/LanguageRow',
@@ -23,18 +24,16 @@ export default meta;
 
 type Story = StoryObj<typeof LanguageRow>;
 
-export const Default: Story = {
+export const Playground: Story = {
+  render: ResumeRowPlayground(LanguageRow, { visible: true, design: false, development: true }),
   args: {
     name: 'Inglés',
     onNameChange: () => undefined,
     level: 'C1',
     onLevelChange: () => undefined,
     visible: true,
-    onToggleVisible: () => undefined,
     design: false,
-    onToggleDesign: () => undefined,
     development: true,
-    onToggleDevelopment: () => undefined,
     onRemove: () => alert('Eliminar curso'),
     dataIdPrefix: 'language-demo',
   },
