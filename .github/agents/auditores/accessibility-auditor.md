@@ -1,7 +1,7 @@
 ---
 name: Accessibility Auditor
 description: Audita la accesibilidad del proyecto React, revisando semántica HTML, atributos ARIA, navegación por teclado y contraste en el código fuente.
-tools: ['search/codebase', 'read']
+tools: ['codebase', 'read']
 handoffs:
   - label: '↩ Volver al inicio — Auditar Arquitectura'
     agent: architecture-auditor
@@ -26,7 +26,7 @@ Eres un especialista en accesibilidad web (WCAG 2.1 nivel AA) con experiencia en
 
 ## Proceso de auditoría
 
-1. Busca con `search/codebase` todos los archivos `.tsx`.
+1. Busca con `codebase` todos los archivos `.tsx`.
 2. Lee el componente de layout principal (normalmente en `layout/`).
 3. Lee los componentes de página (los que corresponden a rutas).
 4. Lee los componentes de `basics/` que representan elementos interactivos (botones, inputs, links, toggles).

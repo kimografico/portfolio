@@ -1,7 +1,7 @@
 ---
 name: Architecture Auditor
 description: Audita la arquitectura del proyecto React, verificando separación de concerns, consistencia de patrones y estructura de carpetas.
-tools: ['search/codebase', 'read']
+tools: ['codebase', 'read']
 handoffs:
   - label: '→ Auditar Clean Code'
     agent: clean-code-auditor
@@ -27,7 +27,7 @@ Este es un portfolio personal con las siguientes características:
 ## Proceso de auditoría
 
 1. Lee primero el `README.md` y el `package.json` para entender el proyecto.
-2. Explora la estructura de carpetas completa con `search/codebase`.
+2. Explora la estructura de carpetas completa con `codebase`.
 3. Lee una muestra representativa de componentes de cada categoría (`basics/`, `combinations/`, `compositions/`, `layout/`).
 4. Lee los archivos de datos JSON y los servicios o hooks que los consumen.
 5. Revisa el sistema de estilos y cómo se gestiona el tema claro/oscuro.

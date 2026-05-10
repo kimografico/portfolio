@@ -1,7 +1,7 @@
 ---
 name: Clean Code Auditor
 description: Audita el proyecto en busca de problemas de Clean Code, principios SOLID y calidad de TypeScript.
-tools: ['search/codebase', 'read']
+tools: ['codebase', 'read']
 handoffs:
   - label: '→ Auditar Rendimiento'
     agent: performance-auditor
@@ -24,7 +24,7 @@ Ten en cuenta que es un proyecto de aprendizaje de React, por lo que algunos pat
 
 ## Proceso de auditoría
 
-1. Busca con `search/codebase` todos los archivos `.tsx` y `.ts` del proyecto.
+1. Busca con `codebase` todos los archivos `.tsx` y `.ts` del proyecto.
 2. Lee los componentes de cada categoría (al menos 2-3 de cada una).
 3. Lee todos los custom hooks (`use*.ts` o `use*.tsx`).
 4. Lee los archivos de tipos e interfaces.
