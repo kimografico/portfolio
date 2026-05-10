@@ -111,7 +111,7 @@ Crea `README.md` en la raíz del repositorio.
 
 ---
 
-## Archivo 2: `docs/DOCUMENTATION.md`
+## Archivo 2: `DOCUMENTATION.md`
 
 Crea `docs/DOCUMENTATION.md`. Este es el documento extenso. Cada sección funcional del portfolio tiene su propio apartado completo.
 
