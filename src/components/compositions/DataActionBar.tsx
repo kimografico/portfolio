@@ -9,7 +9,7 @@ interface DataActionBarProps {
   onDelete: () => void;
   onCancel: () => void;
   dataId?: string;
-  IconFallback?: React.FC<any>;
+  IconFallback?: React.FC<{ size?: number; color?: string }>;
   buildImagePath?: (filename: string) => string;
 }
 
