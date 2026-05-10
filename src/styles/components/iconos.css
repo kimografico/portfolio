@@ -20,9 +20,12 @@
   background: var(--color-accent);
 }
 
-.iconos-demo-item:hover svg {
+.iconos-demo-item:hover svg:not([data-logo]) {
   color: #fff;
   stroke: #fff;
+}
+
+.iconos-demo-item:hover svg {
   transform: scale(1.5);
   transition:
     color 2s,
@@ -35,7 +38,7 @@
   transition: color 0.5s;
 }
 
-.iconos-demo-item svg {
+.iconos-demo-item svg:not([data-logo]) {
   color: var(--color-icon-gallery);
   stroke: var(--color-icon-gallery);
   transition: 1s;

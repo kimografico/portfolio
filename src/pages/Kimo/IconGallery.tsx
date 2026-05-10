@@ -11,12 +11,20 @@ export default function IconGallery() {
         Todos los iconos disponibles en el proyecto, listos para usar como componentes React:
       </div>
       <div className="iconos-demo-grid" data-id="icon-gallery-grid">
-        {Object.entries(iconos).map(([name, Icon]) => (
-          <div className="iconos-demo-item" key={name}>
-            <Icon size={48} strokeWidth={1.25} className="text-primary" />
-            <div className="iconos-demo-label">{name}</div>
-          </div>
-        ))}
+        {Object.entries(iconos).map(([name, Icon]) => {
+          const isLogo = name.startsWith('Logo');
+          return (
+            <div className="iconos-demo-item" key={name}>
+              <Icon
+                size={48}
+                {...(isLogo
+                  ? { className: 'fill-primary', 'data-logo': true }
+                  : { strokeWidth: 1, className: 'text-primary' })}
+              />
+              <div className="iconos-demo-label">{name}</div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
