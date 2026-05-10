@@ -282,13 +282,26 @@ export default function DataPage() {
         }),
         columnHelper.accessor('cliente', {
           header: 'Cliente',
-          cell: (info) => (info.getValue() as string) || <span className="text-muted">—</span>,
+          cell: (info) => {
+            const value = info.getValue() as string;
+            return value ? (
+              <span className="text-xs">{value}</span>
+            ) : (
+              <span className="text-muted text-xs">—</span>
+            );
+          },
         }),
         columnHelper.accessor('date', {
           header: 'Fecha',
           cell: (info) => {
             const raw = info.getValue() as string;
-            return raw ? raw.slice(0, 10) : <span className="text-muted">—</span>;
+            if (!raw) return <span className="text-muted text-xs">—</span>;
+            // Formato: YYYY-MM-DD o YYYY-MM-DD HH:mm
+            // Queremos DD/MM/YYYY
+            const dateStr = String(raw).slice(0, 10).replace(/-/g, '/');
+            const [y, m, d] = dateStr.split('/');
+            const formatted = d && m && y ? `${d}/${m}/${y}` : dateStr;
+            return <span className="text-xs whitespace-nowrap">{formatted}</span>;
           },
         }),
         columnHelper.accessor('type', {
@@ -297,7 +310,7 @@ export default function DataPage() {
         }),
         columnHelper.accessor('category', {
           header: 'Categoría',
-          cell: (info) => <span className="text-sm">{info.getValue() as string}</span>,
+          cell: (info) => <span className="text-xs">{info.getValue() as string}</span>,
         }),
       ] as ColumnDef<DataEntry>[],
     [selectedIds, localVisibility, allCurrentSelected, handleSelectRow, toggleSelectAll],

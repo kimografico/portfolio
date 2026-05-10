@@ -23,30 +23,42 @@ export default function PendientePage() {
       }) as ColumnDef<PendingEntry, unknown>,
       columnHelper.accessor('cliente', {
         header: 'Cliente',
-        cell: (info) => <span className="text-sm">{info.getValue()}</span>,
+        cell: (info) => <span className="text-xs">{info.getValue()}</span>,
+      }) as ColumnDef<PendingEntry, unknown>,
+      columnHelper.accessor('category', {
+        header: 'Categoría',
+        cell: (info) => <span className="text-xs">{info.getValue()}</span>,
+      }) as ColumnDef<PendingEntry, unknown>,
+      columnHelper.display({
+        id: 'extras',
+        header: 'Extras',
+        cell: ({ row }) => {
+          const extras = row.original.extras;
+          if (Array.isArray(extras) && extras.length > 0) {
+            if (extras.length === 1) return <span className="text-xs">{extras[0]}</span>;
+            return (
+              <ul className="list-disc pl-4 text-xs text-accent">
+                {extras.map((ex: string, i: number) => (
+                  <li key={i}>{ex}</li>
+                ))}
+              </ul>
+            );
+          }
+          return <span className="text-muted text-xs">—</span>;
+        },
       }) as ColumnDef<PendingEntry, unknown>,
       columnHelper.accessor('date', {
         header: 'Fecha',
         cell: (info) => {
           const raw = info.getValue();
-          return raw ? raw.slice(0, 10) : <span className="text-muted">—</span>;
+          if (!raw) return <span className="text-muted text-xs">—</span>;
+          // Formato: YYYY-MM-DD o YYYY-MM-DD HH:mm
+          // Queremos DD/MM/YYYY
+          const dateStr = String(raw).slice(0, 10).replace(/-/g, '/');
+          const [y, m, d] = dateStr.split('/');
+          const formatted = d && m && y ? `${d}/${m}/${y}` : dateStr;
+          return <span className="text-xs whitespace-nowrap">{formatted}</span>;
         },
-      }) as ColumnDef<PendingEntry, unknown>,
-      columnHelper.accessor('type', {
-        header: 'Tipo',
-        cell: (info) => <span className="text-sm">{info.getValue()}</span>,
-      }) as ColumnDef<PendingEntry, unknown>,
-      columnHelper.accessor('category', {
-        header: 'Categoría',
-        cell: (info) => <span className="text-sm">{info.getValue()}</span>,
-      }) as ColumnDef<PendingEntry, unknown>,
-      columnHelper.accessor('extrasCount', {
-        header: 'Extras',
-        cell: (info) => (
-          <span className="inline-flex min-w-8 items-center justify-center rounded-full bg-accent/10 px-2 py-1 text-xs font-semibold text-accent">
-            {info.getValue()}
-          </span>
-        ),
       }) as ColumnDef<PendingEntry, unknown>,
       columnHelper.display({
         id: 'detail',

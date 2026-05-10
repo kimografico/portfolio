@@ -37,6 +37,7 @@ export interface DataEntry {
  */
 export interface PendingEntry extends DataEntry {
   extrasCount: number;
+  extras: string[];
 }
 
 /**
@@ -174,6 +175,7 @@ export function getPendingEntries(): PendingEntry[] {
         category,
         visible: item.visible !== false,
         extrasCount: item.extras.length,
+        extras: Array.isArray(item.extras) ? item.extras : [],
       })),
   );
 
