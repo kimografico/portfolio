@@ -41,6 +41,9 @@ jobs:
       - name: Test
         run: pnpm test
 
+      - name: Check images size
+        run: pnpm exec node scripts/check-images.js
+
       - name: Build
         run: pnpm run build
 
