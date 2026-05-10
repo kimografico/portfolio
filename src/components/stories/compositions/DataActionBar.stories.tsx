@@ -8,6 +8,15 @@ const meta = {
   parameters: {
     layout: 'centered',
   },
+  argTypes: {
+    dataId: { table: { disable: true } },
+    IconFallback: { table: { disable: true } },
+    buildImagePath: { table: { disable: true } },
+    onMarkHidden: { table: { disable: true } },
+    onMarkVisible: { table: { disable: true } },
+    onDelete: { table: { disable: true } },
+    onCancel: { table: { disable: true } },
+  },
 } satisfies Meta<typeof DataActionBar>;
 
 export default meta;

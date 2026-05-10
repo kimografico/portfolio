@@ -8,6 +8,9 @@ interface DataActionBarProps {
   onMarkVisible: () => void;
   onDelete: () => void;
   onCancel: () => void;
+  dataId?: string;
+  IconFallback?: React.FC<any>;
+  buildImagePath?: (filename: string) => string;
 }
 
 export default function DataActionBar({
@@ -18,11 +21,12 @@ export default function DataActionBar({
   onMarkVisible,
   onDelete,
   onCancel,
+  dataId = 'data-action-bar',
 }: DataActionBarProps) {
   return (
     <div
       className="flex items-center gap-3 mb-4 p-3 bg-[var(--color-bg-modal)] border rounded"
-      data-id="data-action-bar"
+      data-id={dataId}
     >
       <span className="text-sm font-semibold">
         {selectedCount} {selectedCount === 1 ? 'proyecto seleccionado' : 'proyectos seleccionados'}

@@ -6,4 +6,6 @@ Reescribir recent-works
 
 ---
 
+Comprobar el orden de imports, exports, consts y types en todos los archivos (¿quizá crear un agente para esto?)
+
 ---

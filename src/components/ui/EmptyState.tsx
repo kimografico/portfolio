@@ -4,12 +4,11 @@
  * Muestra un emoji, título y descripción personalizable.
  */
 interface EmptyStateProps {
-  /** Descripción de la sección en preparación */
   description: string;
-  /** ID para atributos data-id (tests/debugging) */
   dataId?: string;
-  /** Emoji a mostrar (por defecto 🚧) */
-  emoji?: string;
+  emoji?: string; // Emoji a mostrar (por defecto 🚧)
+  IconFallback?: React.FC<{ size?: number; color?: string }>;
+  buildImagePath?: (filename: string) => string;
 }
 
 export default function EmptyState({

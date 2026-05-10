@@ -7,17 +7,18 @@ interface ImageLightboxProps {
   src: string;
   alt?: string;
   onClose: () => void;
+  dataId?: string;
+  IconFallback?: React.FC<{ size?: number; color?: string }>;
+  buildImagePath?: (filename: string) => string;
 }
 
-export default function ImageLightbox({ open, src, alt, onClose }: ImageLightboxProps) {
+export default function ImageLightbox({ open, src, alt, onClose, dataId }: ImageLightboxProps) {
   const modalRef = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false); // controla el renderizado
   const [modalVisible, setModalVisible] = useState(false); // controla la animación
   const closeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const OVERLAY_DURATION = 400;
   const MODAL_DURATION = 200;
-
-  // Efecto para controlar la apertura/cierre del modal
   useEffect(() => {
     if (open) {
       // Si se abre, cancelar cualquier cierre pendiente y mostrar el modal
@@ -77,7 +78,12 @@ export default function ImageLightbox({ open, src, alt, onClose }: ImageLightbox
   };
 
   return (
-    <div className="imagelightbox-root" aria-modal="true" role="dialog">
+    <div
+      className="imagelightbox-root"
+      aria-modal="true"
+      role="dialog"
+      data-id={dataId || 'image-lightbox-overlay'}
+    >
       <div
         className="modal-overlay"
         data-visible={modalVisible}

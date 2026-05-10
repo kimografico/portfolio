@@ -19,6 +19,12 @@ const meta = {
   parameters: {
     layout: 'padded',
   },
+  argTypes: {
+    dataId: { table: { disable: true } },
+    IconFallback: { table: { disable: true } },
+    buildImagePath: { table: { disable: true } },
+    onToggle: { table: { disable: true } },
+  },
 } satisfies Meta<typeof ProjectSelectorColumn>;
 
 export default meta;

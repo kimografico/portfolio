@@ -9,6 +9,14 @@ const meta = {
   parameters: {
     layout: 'fullscreen',
   },
+  argTypes: {
+    dataId: { table: { disable: true } },
+    IconFallback: { table: { disable: true } },
+    buildImagePath: { table: { disable: true } },
+    onClose: { table: { disable: true } },
+    onPrev: { table: { disable: true } },
+    onNext: { table: { disable: true } },
+  },
 } satisfies Meta<typeof BookModal>;
 
 export default meta;

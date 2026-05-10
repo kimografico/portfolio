@@ -9,6 +9,12 @@ const meta = {
   parameters: {
     layout: 'padded',
   },
+  argTypes: {
+    dataId: { table: { disable: true } },
+    IconFallback: { table: { disable: true } },
+    buildImagePath: { table: { disable: true } },
+    onFiltered: { table: { disable: true } },
+  },
 } satisfies Meta<typeof BooksFilter>;
 
 export default meta;

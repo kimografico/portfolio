@@ -18,9 +18,17 @@ export interface BooksGalleryProps {
 export interface BooksFilterProps {
   books: Book[];
   onFiltered: (filtered: Book[]) => void;
+  dataId?: string;
+  IconFallback?: React.FC<{ size?: number; color?: string }>;
+  buildImagePath?: (filename: string) => string;
 }
 
 export interface BookModalProps {
   book: Book;
   onClose: () => void;
+  dataId?: string;
+  IconFallback?: React.FC<{ size?: number; color?: string }>;
+  buildImagePath?: (filename: string) => string;
+  onPrev?: () => void;
+  onNext?: () => void;
 }

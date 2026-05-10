@@ -21,6 +21,8 @@ interface ProjectSelectorColumnProps {
   selectedCount: number;
   onToggle: (id: number | string) => void;
   dataId: string;
+  IconFallback?: React.FC<any>;
+  buildImagePath?: (filename: string) => string;
 }
 
 const ProjectSelectorColumn: React.FC<ProjectSelectorColumnProps> = ({
