@@ -3,6 +3,8 @@
  * Sincronizado con vite.config.ts y main.tsx
  */
 
+import { DEVELOPER_CATEGORY_CATALOG, GRAPHIC_DESIGN_CATEGORY_CATALOG } from './categoryCatalog';
+
 /** basename de React Router (debe coincidir con vite.config base) */
 export const APP_BASENAME = '/portfolio';
 
@@ -18,21 +20,12 @@ export const GRAPHIC_DESIGN_IMAGES_BASE = `${APP_BASENAME}/images/portfolio/desi
 // Estructura: /portfolio/images/portfolio/web/[category]/[filename]
 export const DEVELOPER_IMAGES_BASE = `${APP_BASENAME}/images/portfolio/web`;
 
-// Mapeo de categorías a subcarpetas de diseño gráfico
-export const GRAPHIC_DESIGN_CATEGORIES = {
-  logotipos: 'logotipos',
-  papeleria: 'papeleria',
-  carteleria: 'carteleria',
-  multimedia: 'multimedia',
-  packaging: 'packaging',
-  'proyectos-especiales': 'proyectos-especiales',
-  etiquetas: 'etiquetas',
-  editorial: 'editorial',
-} as const;
+// Mapeo de categorías a subcarpetas, derivado del catálogo único de categorías.
+export const GRAPHIC_DESIGN_CATEGORIES = Object.fromEntries(
+  GRAPHIC_DESIGN_CATEGORY_CATALOG.map((category) => [category.slug, category.slug]),
+) as Record<string, string>;
 
-// Mapeo de categorías a subcarpetas de desarrollo
-export const DEVELOPER_CATEGORIES = {
-  vanilla: 'vanilla',
-  wordpress: 'wordpress',
-  frameworks: 'frameworks',
-} as const;
+// Mapeo de categorías a subcarpetas, derivado del catálogo único de categorías.
+export const DEVELOPER_CATEGORIES = Object.fromEntries(
+  DEVELOPER_CATEGORY_CATALOG.map((category) => [category.slug, category.slug]),
+) as Record<string, string>;

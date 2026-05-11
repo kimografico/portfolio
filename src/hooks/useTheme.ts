@@ -4,6 +4,8 @@ type Theme = 'light' | 'dark';
 
 const STORAGE_KEY = 'theme';
 
+const isBrowser = (): boolean => typeof window !== 'undefined' && typeof document !== 'undefined';
+
 /**
  * Store compartido a nivel de módulo.
  * Cuando cualquier instancia de useTheme() llama a toggle(),
@@ -14,12 +16,20 @@ const STORAGE_KEY = 'theme';
 const listeners = new Set<() => void>();
 
 function getTheme(): Theme {
-  const stored = localStorage.getItem(STORAGE_KEY);
+  if (!isBrowser()) {
+    return 'light';
+  }
+
+  const stored = window.localStorage.getItem(STORAGE_KEY);
   return stored === 'dark' ? 'dark' : 'light';
 }
 
 function applyTheme(theme: Theme) {
-  localStorage.setItem(STORAGE_KEY, theme);
+  if (!isBrowser()) {
+    return;
+  }
+
+  window.localStorage.setItem(STORAGE_KEY, theme);
   document.documentElement.setAttribute('data-theme', theme);
   // Notificar a todos los hooks suscritos
   listeners.forEach((fn) => fn());
@@ -38,16 +48,33 @@ export function useTheme(): [Theme, () => void] {
   const [theme, setTheme] = useState<Theme>(getTheme);
 
   useEffect(() => {
+    if (!isBrowser()) {
+      return;
+    }
+
     // Aplicar tema al montar (por si localStorage ya tenía un valor)
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 
   useEffect(() => {
-    // Suscribirse a cambios de otros componentes
+    if (!isBrowser()) {
+      return;
+    }
+
+    const handleStorage = (event: StorageEvent) => {
+      if (event.key === STORAGE_KEY) {
+        setTheme(getTheme());
+      }
+    };
+
+    // Suscribirse a cambios de otros componentes y de otras pestañas
     const handler = () => setTheme(getTheme());
     listeners.add(handler);
+    window.addEventListener('storage', handleStorage);
+
     return () => {
       listeners.delete(handler);
+      window.removeEventListener('storage', handleStorage);
     };
   }, []);
 

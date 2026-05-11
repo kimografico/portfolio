@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { IconProps } from '../../types/icons';
+import type { ComponentType } from 'react';
 
 /**
  * Propiedades mínimas requeridas para un proyecto en ProjectCard
@@ -23,13 +24,13 @@ interface ProjectCardProps<T extends BaseProject> {
   /** Ruta a la que navegar al hacer clic */
   to: string;
   /** Mapeo de tecnologías a componentes de icono */
-  stackIconMap?: Record<string, React.FC<IconProps>>;
+  stackIconMap?: Record<string, ComponentType<IconProps>>;
   /** Si true, muestra la barra de iconos de stack + hover label. Por defecto false. */
   webProject?: boolean;
   /** ID para atributos data-id (tests/debugging) */
   dataId?: string;
   /** Componente de icono fallback */
-  IconFallback?: React.FC<IconProps>;
+  IconFallback?: ComponentType<IconProps>;
   /** Si true, el thumbnail usa proporción 16:9. Si false (default), usa 4:3 */
   widescreen?: boolean;
   /** Función opcional para construir la ruta completa de la imagen (ej: buildGraphicDesignImagePath) */

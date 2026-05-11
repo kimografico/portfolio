@@ -9,9 +9,12 @@ import SobreSection from '../components/layout/SobreSection';
 import type { Project } from '../interfaces/project';
 
 export default function Home() {
-  // Marcar acceso interno para futuras navegaciones
+  // Señal UX interna: solo ayuda a decidir qué cabecera mostrar en páginas hijas.
+  // No es una barrera de seguridad real.
   useEffect(() => {
-    sessionStorage.setItem('isInternal', 'true');
+    if (typeof window !== 'undefined') {
+      window.sessionStorage.setItem('isInternal', 'true');
+    }
   }, []);
 
   // Procesar hrefs de recentWorks para agregar APP_BASENAME

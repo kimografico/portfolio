@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import UIButton from './UIButton';
 import { useRef, useEffect, useState } from 'react';
-import type { IconProps } from '../../types/icons';
+import type { ComponentType } from 'react';
 import { useTheme } from '../../hooks/useTheme';
 import '../../styles/components/CategoryHero.css';
 
@@ -24,7 +24,7 @@ const UI_IMG_PATH = `${import.meta.env.BASE_URL}images/ui`;
 interface CategoryHeroProps {
   title: string; // Título principal de la sección
   description: string; // Descripción o subtitle
-  icon?: React.FC<IconProps>; // Icono representativo de la categoría (opcional)
+  icon?: ComponentType<{ size: number; strokeWidth: number; className: string }>; // Icono representativo de la categoría (opcional)
   backgroundImage?: string; // URL de imagen de fondo (opcional, usa fallback si no se proporciona)
   color?: string; // Color del overlay (default: --color-bg)
   opacity?: number; // Opacidad del overlay oscuro (0-1, default: 0.25)
@@ -108,7 +108,7 @@ export default function CategoryHero({
         <div className="flex items-center justify-center gap-4 mb-6">
           {Icon && (
             <div className="category-hero-icon">
-              <Icon size={48} className="text-accent" />
+              <Icon size={48} strokeWidth={1.5} className="text-accent" />
             </div>
           )}
           <h1 className="text-5xl md:text-6xl font-bold text-ink leading-tight">{title}</h1>

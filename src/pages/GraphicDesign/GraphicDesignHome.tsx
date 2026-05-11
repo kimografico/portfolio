@@ -9,8 +9,15 @@ import { APP_BASENAME } from '../../data/config/app';
 import type { Project } from '../../interfaces/project';
 
 export default function GraphicDesignHome() {
-  // Detectar acceso directo usando sessionStorage. Si no hay flag de acceso interno, es acceso directo/externo
-  const [isDirectAccess] = useState(() => !sessionStorage.getItem('isInternal'));
+  // Señal UX interna: permite ajustar la experiencia visual entre navegación interna
+  // y acceso directo. No constituye una barrera de seguridad.
+  const [isDirectAccess] = useState(() => {
+    if (typeof window === 'undefined') {
+      return true;
+    }
+
+    return !window.sessionStorage.getItem('isInternal');
+  });
 
   // Filtrar proyectos recientes por categoría GraphicDesign y agregar APP_BASENAME
   const graphicDesignProjects = (recentWorks as Project[])

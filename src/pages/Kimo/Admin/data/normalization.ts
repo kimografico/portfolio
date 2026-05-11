@@ -10,6 +10,10 @@ import frameworks from '../../../../data/development/frameworks.json';
 import vanilla from '../../../../data/development/vanilla.json';
 import wordpress from '../../../../data/development/wordpress.json';
 import { processProjectsImages } from '../../../../data/config/imagePathHelper';
+import {
+  DEVELOPER_CATEGORY_BY_SLUG,
+  GRAPHIC_DESIGN_CATEGORY_BY_SLUG,
+} from '../../../../data/config/categoryCatalog';
 import type {
   AdminDataSource,
   AdminEntryId,
@@ -33,64 +37,34 @@ const toAdminEntries = (
     visible: item.visible !== false,
   }));
 
+const graphicDesignSources = [
+  { data: carteleria as AdminSourceEntry[], slug: 'carteleria' },
+  { data: editorial as AdminSourceEntry[], slug: 'editorial' },
+  { data: etiquetas as AdminSourceEntry[], slug: 'etiquetas' },
+  { data: logotipos as AdminSourceEntry[], slug: 'logotipos' },
+  { data: multimedia as AdminSourceEntry[], slug: 'multimedia' },
+  { data: packaging as AdminSourceEntry[], slug: 'packaging' },
+  { data: papeleria as AdminSourceEntry[], slug: 'papeleria' },
+  { data: proyectosEspeciales as AdminSourceEntry[], slug: 'proyectos-especiales' },
+] as const;
+
+const developerSources = [
+  { data: frameworks as AdminSourceEntry[], slug: 'frameworks' },
+  { data: vanilla as AdminSourceEntry[], slug: 'vanilla' },
+  { data: wordpress as AdminSourceEntry[], slug: 'wordpress' },
+] as const;
+
 export const DATA_SOURCES: ReadonlyArray<AdminDataSource> = [
-  // Diseño Gráfico
-  {
-    data: carteleria as AdminSourceEntry[],
-    type: 'Diseño Gráfico',
-    category: 'Cartelería',
-  },
-  {
-    data: editorial as AdminSourceEntry[],
-    type: 'Diseño Gráfico',
-    category: 'Editorial',
-  },
-  {
-    data: etiquetas as AdminSourceEntry[],
-    type: 'Diseño Gráfico',
-    category: 'Etiquetas',
-  },
-  {
-    data: logotipos as AdminSourceEntry[],
-    type: 'Diseño Gráfico',
-    category: 'Logotipos',
-  },
-  {
-    data: multimedia as AdminSourceEntry[],
-    type: 'Diseño Gráfico',
-    category: 'Multimedia',
-  },
-  {
-    data: packaging as AdminSourceEntry[],
-    type: 'Diseño Gráfico',
-    category: 'Packaging',
-  },
-  {
-    data: papeleria as AdminSourceEntry[],
-    type: 'Diseño Gráfico',
-    category: 'Papelería',
-  },
-  {
-    data: proyectosEspeciales as AdminSourceEntry[],
-    type: 'Diseño Gráfico',
-    category: 'Proyectos especiales',
-  },
-  // Desarrollo
-  {
-    data: frameworks as AdminSourceEntry[],
-    type: 'Desarrollo',
-    category: 'Frameworks',
-  },
-  {
-    data: vanilla as AdminSourceEntry[],
-    type: 'Desarrollo',
-    category: 'Vanilla',
-  },
-  {
-    data: wordpress as AdminSourceEntry[],
-    type: 'Desarrollo',
-    category: 'WordPress',
-  },
+  ...graphicDesignSources.map(({ data, slug }) => ({
+    data,
+    type: GRAPHIC_DESIGN_CATEGORY_BY_SLUG[slug].adminType,
+    category: GRAPHIC_DESIGN_CATEGORY_BY_SLUG[slug].adminLabel,
+  })),
+  ...developerSources.map(({ data, slug }) => ({
+    data,
+    type: DEVELOPER_CATEGORY_BY_SLUG[slug].adminType,
+    category: DEVELOPER_CATEGORY_BY_SLUG[slug].adminLabel,
+  })),
 ];
 
 export const ALL_ENTRIES: DataEntry[] = DATA_SOURCES.flatMap(({ data, type, category }) =>

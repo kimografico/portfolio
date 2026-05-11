@@ -2,6 +2,7 @@ import { ProjectCard, type BaseProject } from '../ui/ProjectCard';
 import CategoryHero from '../ui/CategoryHero';
 import EmptyState from '../ui/EmptyState';
 import type { IconProps } from '../../types/icons';
+import type { ComponentType } from 'react';
 import { useShowHidden } from '../../hooks/useShowHidden';
 
 /*
@@ -27,16 +28,16 @@ interface CategoryGalleryPageProps<T extends BaseProject> {
   // --- CategoryHero ---
   title: string;
   description: string;
-  icon?: React.FC<IconProps>; // Icono del hero (componente React, opcional)
+  icon?: ComponentType<{ size: number; strokeWidth: number; className: string }>; // Icono del hero (componente React, opcional)
   color?: string; // Color del overlay del hero
   opacity?: number; // Opacidad del overlay del hero
   backLink?: string; // Ruta del enlace de retroceso
   backLinkText?: string; // Texto del enlace de retroceso
 
   // --- ProjectCard ---
-  IconFallback?: React.FC<IconProps>; // Icono fallback para tarjetas sin imagen
+  IconFallback?: ComponentType<IconProps>; // Icono fallback para tarjetas sin imagen
   webProject?: boolean; // Si true, muestra barra de tecnologías (modo Developer)
-  stackIconMap?: Record<string, React.FC<IconProps>>; // Mapeo de tecnologías a iconos (solo necesario si webProject=true)
+  stackIconMap?: Record<string, ComponentType<IconProps>>; // Mapeo de tecnologías a iconos (solo necesario si webProject=true)
   widescreen?: boolean; // Si true, usa proporción 16:9 para el thumbnail. Si false, usa 4:3.
   // --- Construcción de rutas de imágenes ---
   buildImagePath?: (filename: string) => string; // Función opcional para construir rutas de imágenes completas

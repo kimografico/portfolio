@@ -9,9 +9,15 @@ import { APP_BASENAME } from '../../data/config/app';
 import type { Project } from '../../interfaces/project';
 
 export default function DeveloperHome() {
-  // Detectar acceso directo usando sessionStorage
-  // Si no hay flag de acceso interno, es acceso directo/externo
-  const [isDirectAccess] = useState(() => !sessionStorage.getItem('isInternal'));
+  // Señal UX interna: permite ajustar la entrada visual entre navegación interna
+  // y acceso directo. No debe entenderse como control de acceso real.
+  const [isDirectAccess] = useState(() => {
+    if (typeof window === 'undefined') {
+      return true;
+    }
+
+    return !window.sessionStorage.getItem('isInternal');
+  });
 
   // Filtrar proyectos recientes por categoría Developer y agregar APP_BASENAME
   const developerProjects = (recentWorks as Project[])
