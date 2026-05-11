@@ -1,8 +1,8 @@
-import { useState, useRef } from 'react';
-import { createProject, uploadImages } from '../../../api/apiClient';
+import useAddProjectForm from './useAddProjectForm';
 import ImageDropZone from '../../../components/compositions/ImageDropZone';
 import EditableFieldList from '../../../components/compositions/EditableFieldList';
 import TechStackTags from '../../../components/compositions/TechStackTags';
+import UIButton from '../../../components/ui/UIButton';
 
 /**
  * Categorías disponibles por tipo.
@@ -42,47 +42,6 @@ const STACK_QUICK_OPTIONS = [
   'Prestashop',
 ];
 
-/** Devuelve un objeto imagen vacío */
-const emptyImagen = () => ({ image: '', label: '' });
-
-/** Devuelve un objeto video vacío */
-const emptyVideo = () => ({ image: '', label: '' });
-
-/** Obtener fecha actual en formato YYYY-MM-DD */
-function getTodayDate() {
-  const today = new Date();
-  return today.toISOString().split('T')[0];
-}
-
-/** Estado inicial del formulario */
-const initialForm = {
-  type: '' as '' | 'gd' | 'dev',
-  category: '',
-  title: '',
-  cliente: '',
-  descripcion: '',
-  visible: true,
-  date: getTodayDate(),
-  imagenes: [emptyImagen()],
-  videos: [emptyVideo()],
-  extras: [''],
-  stack: [] as string[],
-};
-
-type FormState = {
-  type: '' | 'gd' | 'dev';
-  category: string;
-  title: string;
-  cliente: string;
-  descripcion: string;
-  visible: boolean;
-  date: string;
-  imagenes: { image: string; label: string }[];
-  videos: { image: string; label: string }[];
-  extras: string[];
-  stack: string[];
-};
-
 /**
  * AddProjectPage: Formulario para añadir un proyecto nuevo.
  *
@@ -90,258 +49,37 @@ type FormState = {
  * El backend valida, genera el ID y persiste en el JSON correspondiente.
  */
 export default function AddProjectPage() {
-  const [form, setForm] = useState<FormState>(initialForm);
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-  const [errorMsg, setErrorMsg] = useState('');
-  const [createdId, setCreatedId] = useState<number | null>(null);
-
-  // --- Drag & Drop para reordenar imágenes ---
-  const [dragIndex, setDragIndex] = useState<number | null>(null);
-  const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
-  /** URLs de thumbnail que fallaron al cargar */
-  const [imgErrors, setImgErrors] = useState<Record<number, boolean>>({});
-  /** Ref del input file oculto para el drop zone */
-  const fileInputRef = useRef<HTMLInputElement>(null);
-  /**
-   * Mapa de blob URL → File original.
-   * Permite subir los archivos al backend en el momento del submit,
-   * manteniendo la previsualización con blob URLs mientras se edita.
-   */
-  const pendingFiles = useRef<Map<string, File>>(new Map());
-
-  // --- Helpers de campo simple ---
-
-  function handleField<K extends keyof FormState>(key: K, value: FormState[K]) {
-    setForm((prev) => ({ ...prev, [key]: value }));
-  }
-
-  /** Al cambiar el tipo, reseteamos la categoría y el stack */
-  function handleTypeChange(type: '' | 'gd' | 'dev') {
-    setForm((prev) => ({ ...prev, type, category: '', stack: [] }));
-  }
-
-  // --- Imagenes (array de {ruta, label}) ---
-
-  function handleImagenChange(index: number, field: 'image' | 'label', value: string) {
-    const updated = form.imagenes.map((img, i) => (i === index ? { ...img, [field]: value } : img));
-    handleField('imagenes', updated);
-  }
-
-  function addImagen() {
-    handleField('imagenes', [...form.imagenes, emptyImagen()]);
-  }
-
-  function removeImagen(index: number) {
-    handleField(
-      'imagenes',
-      form.imagenes.filter((_, i) => i !== index),
-    );
-    // Limpiar errores de imagen al eliminar
-    setImgErrors((prev) => {
-      const next = { ...prev };
-      delete next[index];
-      return next;
-    });
-  }
-
-  // --- Drag & Drop: reordenar imágenes ---
-
-  function handleImgDragStart(index: number) {
-    setDragIndex(index);
-  }
-
-  function handleImgDragOver(e: React.DragEvent, index: number) {
-    e.preventDefault();
-    e.dataTransfer.dropEffect = 'move';
-    setDragOverIndex(index);
-  }
-
-  function handleImgDrop(index: number) {
-    if (dragIndex === null || dragIndex === index) {
-      setDragIndex(null);
-      setDragOverIndex(null);
-      return;
-    }
-    const updated = [...form.imagenes];
-    const [moved] = updated.splice(dragIndex, 1);
-    updated.splice(index, 0, moved);
-    handleField('imagenes', updated);
-    // Recalcular errores de thumbnail tras reordenar
-    setImgErrors({});
-    setDragIndex(null);
-    setDragOverIndex(null);
-  }
-
-  function handleImgDragEnd() {
-    setDragIndex(null);
-    setDragOverIndex(null);
-  }
-
-  /** Maneja archivos soltados en el drop zone: crea blob URLs para previsualizar y guarda el File original */
-  function handleFileDrop(e: React.DragEvent) {
-    e.preventDefault();
-    const files = Array.from(e.dataTransfer.files).filter((file) => file.type.startsWith('image/'));
-    if (files.length === 0) return;
-    const newImages = files.map((file) => {
-      const blobUrl = URL.createObjectURL(file);
-      pendingFiles.current.set(blobUrl, file);
-      return { image: blobUrl, label: file.name.replace(/\.[^.]+$/, '') };
-    });
-    const currentImages = form.imagenes.filter((img) => img.image.trim() !== '');
-    handleField('imagenes', [...currentImages, ...newImages]);
-  }
-
-  function handleFileSelect(e: React.ChangeEvent<HTMLInputElement>) {
-    const files = Array.from(e.target.files ?? []).filter((file) => file.type.startsWith('image/'));
-    if (files.length === 0) return;
-    const newImages = files.map((file) => {
-      const blobUrl = URL.createObjectURL(file);
-      pendingFiles.current.set(blobUrl, file);
-      return { image: blobUrl, label: file.name.replace(/\.[^.]+$/, '') };
-    });
-    const currentImages = form.imagenes.filter((img) => img.image.trim() !== '');
-    handleField('imagenes', [...currentImages, ...newImages]);
-    e.target.value = '';
-  }
-
-  // --- Videos (array de objetos) ---
-
-  function handleVideoChange(index: number, field: 'image' | 'label', value: string) {
-    const updated = form.videos.map((v, i) => (i === index ? { ...v, [field]: value } : v));
-    handleField('videos', updated);
-  }
-
-  function addVideo() {
-    handleField('videos', [...form.videos, emptyVideo()]);
-  }
-
-  function removeVideo(index: number) {
-    handleField(
-      'videos',
-      form.videos.filter((_, i) => i !== index),
-    );
-  }
-
-  // --- Extras (arrays de strings) ---
-
-  function handleExtrasChange(index: number, value: string) {
-    const updated = form.extras.map((v, i) => (i === index ? value : v));
-    handleField('extras', updated);
-  }
-
-  function addExtras() {
-    handleField('extras', [...form.extras, '']);
-  }
-
-  function removeExtras(index: number) {
-    handleField(
-      'extras',
-      form.extras.filter((_, i) => i !== index),
-    );
-  }
-
-  // --- Stack (array de strings, solo dev) ---
-
-  function toggleStack(tech: string) {
-    const current = form.stack;
-    const next = current.includes(tech) ? current.filter((t) => t !== tech) : [...current, tech];
-    handleField('stack', next);
-  }
-
-  function addCustomStack(value: string) {
-    const trimmed = value.trim();
-    if (trimmed && !form.stack.includes(trimmed)) {
-      handleField('stack', [...form.stack, trimmed]);
-    }
-  }
-
-  // --- Submit ---
-
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    setStatus('loading');
-    setErrorMsg('');
-
-    try {
-      if (!form.type) throw new Error('Selecciona un tipo de proyecto');
-      if (!form.category) throw new Error('Selecciona una categoría');
-      if (!form.title.trim()) throw new Error('El título es obligatorio');
-      if (!form.cliente.trim()) throw new Error('El cliente es obligatorio');
-
-      // Limpiar arrays: eliminar entradas vacías
-      let imagenes = form.imagenes.filter((img) => img.image.trim() !== '');
-      const videos = form.videos.filter((v) => v.image.trim() !== '');
-      const extras = form.extras.filter((e) => e.trim() !== '');
-
-      // Subir archivos pendientes (blob URLs) al backend
-      const filesToUpload: File[] = [];
-      const blobUrlsToReplace: string[] = [];
-      for (const img of imagenes) {
-        const file = pendingFiles.current.get(img.image);
-        if (file) {
-          filesToUpload.push(file);
-          blobUrlsToReplace.push(img.image);
-        }
-      }
-
-      if (filesToUpload.length > 0) {
-        const uploaded = await uploadImages(
-          filesToUpload,
-          form.type as 'gd' | 'dev',
-          form.category,
-          form.title.trim(),
-        );
-
-        // Reemplazar blob URLs por nombres de archivo (solo el nombre, no la ruta completa)
-        imagenes = imagenes.map((img) => {
-          const blobIdx = blobUrlsToReplace.indexOf(img.image);
-          if (blobIdx !== -1 && uploaded[blobIdx]) {
-            URL.revokeObjectURL(img.image);
-            const fileName = uploaded[blobIdx].ruta.split('/').pop() ?? '';
-            return {
-              image: fileName,
-              label: img.label || uploaded[blobIdx].label,
-            };
-          }
-          // Forzar image a string (nunca undefined)
-          return {
-            image: img.image ?? '',
-            label: img.label,
-          };
-        });
-
-        // Limpiar el mapa de archivos pendientes
-        pendingFiles.current.clear();
-      }
-
-      const payload = {
-        type: form.type,
-        category: form.category,
-        title: form.title.trim(),
-        cliente: form.cliente.trim(),
-        descripcion: form.descripcion.trim(),
-        visible: form.visible,
-        date: `${form.date} 00:00`,
-        imagenes,
-        videos,
-        extras,
-        ...(form.type === 'dev' && { stack: form.stack }),
-      };
-
-      const result = await createProject(payload);
-
-      // El backend devuelve el proyecto creado con su ID generado
-      const created = result.data as { id: number } | undefined;
-      setCreatedId(created?.id ?? null);
-      setStatus('success');
-
-      // Resetear formulario
-      setForm(initialForm);
-    } catch (err) {
-      setStatus('error');
-      setErrorMsg(err instanceof Error ? err.message : 'Error al crear el proyecto');
-    }
-  }
+  const {
+    form,
+    status,
+    errorMsg,
+    createdId,
+    dragIndex,
+    dragOverIndex,
+    imgErrors,
+    fileInputRef,
+    setImgErrors,
+    handleField,
+    handleTypeChange,
+    handleImagenChange,
+    addImagen,
+    removeImagen,
+    handleImgDragStart,
+    handleImgDragOver,
+    handleImgDrop,
+    handleImgDragEnd,
+    handleFileDrop,
+    handleFileSelect,
+    handleVideoChange,
+    addVideo,
+    removeVideo,
+    handleExtrasChange,
+    addExtras,
+    removeExtras,
+    toggleStack,
+    addCustomStack,
+    handleSubmit,
+  } = useAddProjectForm();
 
   const categories = form.type ? CATEGORIES_BY_TYPE[form.type] : [];
 
@@ -561,14 +299,14 @@ export default function AddProjectPage() {
 
         {/* Submit */}
         <div className="flex items-center gap-4 pt-2">
-          <button
+          <UIButton
             type="submit"
+            dataId="add-project-submit"
+            saveBtn
             disabled={status === 'loading'}
-            className="px-6 py-2 bg-accent text-white rounded text-sm font-semibold hover:opacity-90 disabled:opacity-50 transition-opacity"
-            data-id="add-project-submit"
           >
             {status === 'loading' ? 'Guardando…' : 'Crear proyecto'}
-          </button>
+          </UIButton>
           <p className="text-xs text-muted">
             El backend debe estar activo: <code className="font-mono">pnpm backend:dev</code>
           </p>
