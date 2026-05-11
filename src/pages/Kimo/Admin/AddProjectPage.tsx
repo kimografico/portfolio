@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { createProject, uploadImages } from '../../../api/apiClient';
 import ImageDropZone from '../../../components/compositions/ImageDropZone';
+import EditableFieldList from '../../../components/compositions/EditableFieldList';
 
 /**
  * Categorías disponibles por tipo.
@@ -563,93 +564,34 @@ export default function AddProjectPage() {
           onImageError={(index) => setImgErrors((prev) => ({ ...prev, [index]: true }))}
         />
 
-        {/* Videos */}
-        <div>
-          <div className="flex items-center justify-between mb-2">
-            <p className="text-xs font-semibold text-muted">Videos</p>
-            <button
-              type="button"
-              onClick={() => addVideo()}
-              className="text-xs text-accent hover:underline"
-              data-id="add-project-add-video-btn"
-            >
-              + Añadir video
-            </button>
-          </div>
-          <div className="space-y-2">
-            {form.videos.map((v, i) => (
-              <div key={i} className="flex gap-2">
-                <input
-                  type="url"
-                  data-id={`add-project-video-url-${i}`}
-                  className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                  placeholder="URL del video"
-                  value={v.image}
-                  onChange={(e) => handleVideoChange(i, 'image', e.target.value)}
-                />
-                <input
-                  type="text"
-                  data-id={`add-project-video-label-${i}`}
-                  className="w-36 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                  placeholder="Descripción"
-                  value={v.label}
-                  onChange={(e) => handleVideoChange(i, 'label', e.target.value)}
-                />
-                {form.videos.length > 1 && (
-                  <button
-                    type="button"
-                    onClick={() => removeVideo(i)}
-                    data-id={`add-project-remove-video-btn-${i}`}
-                    className="text-muted hover:text-red-500 transition-colors text-lg leading-none pb-0.5"
-                    aria-label="Eliminar video"
-                  >
-                    ×
-                  </button>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
+        <EditableFieldList
+          label="Videos"
+          values={form.videos.map((v) => ({ value: v.image, label: v.label }))}
+          inputType="url"
+          placeholder="URL del video"
+          dataIdBase="add-project-video-url"
+          withLabel
+          labelPlaceholder="Descripción"
+          onChange={(i, value, label) => {
+            handleVideoChange(i, 'image', value);
+            handleVideoChange(i, 'label', label ?? '');
+          }}
+          onAdd={addVideo}
+          onRemove={removeVideo}
+          addBtnLabel="+ Añadir video"
+        />
 
-        {/* Extras */}
-        <div>
-          <div className="flex items-center justify-between mb-2">
-            <p className="text-xs font-semibold text-muted">Extras / Links</p>
-            <button
-              type="button"
-              onClick={() => addExtras()}
-              className="text-xs text-accent hover:underline"
-              data-id="add-project-add-extra-btn"
-            >
-              + Añadir link
-            </button>
-          </div>
-          <div className="space-y-2">
-            {form.extras.map((ex, i) => (
-              <div key={i} className="flex gap-2">
-                <input
-                  type="text"
-                  data-id={`add-project-extra-${i}`}
-                  className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                  placeholder="URL o texto extra"
-                  value={ex}
-                  onChange={(e) => handleExtrasChange(i, e.target.value)}
-                />
-                {form.extras.length > 1 && (
-                  <button
-                    type="button"
-                    onClick={() => removeExtras(i)}
-                    data-id={`add-project-remove-extra-btn-${i}`}
-                    className="text-muted hover:text-red-500 transition-colors text-lg leading-none pb-0.5"
-                    aria-label="Eliminar extra"
-                  >
-                    ×
-                  </button>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
+        <EditableFieldList
+          label="Extras / Links"
+          values={form.extras}
+          inputType="text"
+          placeholder="URL o texto extra"
+          dataIdBase="add-project-extra"
+          onChange={handleExtrasChange}
+          onAdd={addExtras}
+          onRemove={removeExtras}
+          addBtnLabel="+ Añadir link"
+        />
 
         {/* Visible */}
         <div className="flex items-center gap-3">
