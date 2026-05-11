@@ -60,13 +60,13 @@ export const ProjectCard = <T extends BaseProject>({
   widescreen = false,
   buildImagePath,
 }: ProjectCardProps<T>) => {
-  // Lógica robusta de miniatura:
-  // 1. Intenta cargar la miniatura generada (thumbs/${id}.jpg)
-  // 2. Si falla, usa la imagen original del proyecto
+  // Lógica de miniatura:
+  // 1. Si existe project.thumb, úsala como miniatura principal
+  // 2. Si falla, intenta con la imagen original
   // 3. Si también falla, usa un fallback genérico
   // El estado local controla el src actual
 
-  const thumbUrl = `/portfolio/images/portfolio/thumbs/${project.id}.jpg`;
+  const thumbUrl = project.thumb || `/portfolio/images/portfolio/thumbs/${project.id}.jpg`;
   const originalImage =
     buildImagePath && project.imagenes?.[0]?.image
       ? buildImagePath(project.imagenes[0].image)

@@ -1,19 +1,35 @@
-import { useNavigate } from 'react-router-dom';
 import { useMemo } from 'react';
-import IllustrationsGallery from './IllustrationsGallery';
+import { ProjectCard, type BaseProject } from '../../../components/ui/ProjectCard';
 import illustrations from '../../../data/kimo/illustrations.json';
+import type { Illustration } from '../../../interfaces/illustration';
+
+const ILLUSTRATIONS_PATH = import.meta.env.VITE_ILLUSTRATIONS_PATH;
 
 export default function IllustrationsPage() {
-  const navigate = useNavigate();
-  const data = useMemo(() => illustrations, []);
-
-  const handleSelectIllustration = (id: string) => {
-    navigate(`/kimo/ilustraciones/${id}`);
-  };
+  // Adaptador: Illustration → BaseProject
+  const data: BaseProject[] = useMemo(
+    () =>
+      (illustrations as Illustration[]).map((item) => ({
+        id: item.id,
+        title: item.nombre,
+        date: item.fecha ?? '',
+        cliente: item.cliente,
+        descripcion: item.descripcion,
+        imagenes: [
+          { image: item.image, label: 'Principal' },
+          ...(item.imagenesExtra?.map((img) => ({
+            image: img.image,
+            label: img.label,
+          })) ?? []),
+        ],
+        // Miniatura: imagen principal absoluta
+        thumb: `${ILLUSTRATIONS_PATH}/${item.image}`,
+      })),
+    [],
+  );
 
   return (
     <div className="flex flex-col gap-12">
-      {/* Sección principal */}
       <section className="border-b border-border" data-id="illustrations-page">
         <div className="max-w-7xl mx-auto py-16 md:py-24">
           <div className="mb-12">
@@ -25,12 +41,21 @@ export default function IllustrationsPage() {
               de conceptos visuales.
             </p>
           </div>
-
-          {/* Galería */}
-          <IllustrationsGallery
-            illustrations={data}
-            onSelectIllustration={handleSelectIllustration}
-          />
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+            data-id="illustrations-gallery-grid"
+          >
+            {data.map((project) => (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                to={`/kimo/ilustraciones/${project.id}`}
+                dataId={`illustration-card-${project.id}`}
+                widescreen={false}
+                // No pasamos buildImagePath: las rutas ya están procesadas
+              />
+            ))}
+          </div>
         </div>
       </section>
     </div>
