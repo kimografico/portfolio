@@ -12,7 +12,7 @@ type ImageDropZoneProps = {
   imgErrors: Record<number, boolean>;
   dragIndex: number | null;
   dragOverIndex: number | null;
-  fileInputRef: RefObject<HTMLInputElement>;
+  fileInputRef: RefObject<HTMLInputElement | null>;
   onSelectFilesClick: () => void;
   onAddImage: () => void;
   onFileSelect: (e: ChangeEvent<HTMLInputElement>) => void;

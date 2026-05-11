@@ -26,9 +26,18 @@ async function apiFetch<T = unknown>(
     ? { Authorization: `Bearer ${import.meta.env.VITE_KIMO_PASSWORD_HASH?.trim() ?? ''}` }
     : {};
 
+  const headers = new Headers({ 'Content-Type': 'application/json' });
+  Object.entries(authHeaders).forEach(([key, value]) => {
+    headers.set(key, value);
+  });
+  const optionHeaders = new Headers(options.headers);
+  optionHeaders.forEach((value, key) => {
+    headers.set(key, value);
+  });
+
   const res = await fetch(`${API_BASE}${path}`, {
-    headers: { 'Content-Type': 'application/json', ...authHeaders, ...options.headers },
     ...options,
+    headers,
   });
 
   const json: ApiResponse<T> = await res.json();

@@ -1,74 +1,98 @@
-export const WithLabel: Story = {
-  render: () => {
-    const [values, setValues] = useState([
-      { value: 'https://video1.com', label: 'Intro' },
-      { value: 'https://video2.com', label: 'Demo' },
-    ]);
-    return (
-      <EditableFieldList
-        label="Vídeos"
-        values={values}
-        inputType="url"
-        placeholder="URL del video"
-        dataIdBase="story-video-list"
-        withLabel
-        labelPlaceholder="Descripción"
-        onChange={(i, value, label) =>
-          setValues((arr) => arr.map((x, j) => (i === j ? { value, label: label ?? '' } : x)))
-        }
-        onAdd={() => setValues((arr) => [...arr, { value: '', label: '' }])}
-        onRemove={(i) => setValues((arr) => arr.filter((_, j) => i !== j))}
-        addBtnLabel="+ Añadir video"
-      />
-    );
-  },
-};
-import type { Meta, StoryObj } from '@storybook/react';
 import { useState } from 'react';
-import EditableFieldList from '../../compositions/EditableFieldList';
+import EditableFieldList, {
+  type EditableFieldListValue,
+} from '../../compositions/EditableFieldList';
 
-const meta: Meta<typeof EditableFieldList> = {
+const meta = {
   title: 'Compositions/EditableFieldList',
   component: EditableFieldList,
 };
+
 export default meta;
 
-type Story = StoryObj<typeof EditableFieldList>;
+function TextListExample() {
+  const [values, setValues] = useState<string[]>(['Uno', 'Dos']);
 
-export const TextList: Story = {
-  render: () => {
-    const [values, setValues] = useState(['Uno', 'Dos']);
-    return (
-      <EditableFieldList
-        label="Etiquetas"
-        values={values}
-        inputType="text"
-        placeholder="Añade una etiqueta"
-        dataIdBase="story-text-list"
-        onChange={(i, v) => setValues((arr) => arr.map((x, j) => (i === j ? v : x)))}
-        onAdd={() => setValues((arr) => [...arr, ''])}
-        onRemove={(i) => setValues((arr) => arr.filter((_, j) => i !== j))}
-        addBtnLabel="+ Añadir etiqueta"
-      />
-    );
-  },
+  return (
+    <EditableFieldList
+      label="Etiquetas"
+      values={values}
+      inputType="text"
+      placeholder="Añade una etiqueta"
+      dataIdBase="story-text-list"
+      onChange={(index, value) =>
+        setValues((items) => items.map((item, itemIndex) => (itemIndex === index ? value : item)))
+      }
+      onAdd={() => setValues((items) => [...items, ''])}
+      onRemove={(index) =>
+        setValues((items) => items.filter((_, itemIndex) => itemIndex !== index))
+      }
+      addBtnLabel="+ Añadir etiqueta"
+    />
+  );
+}
+
+function UrlListExample() {
+  const [values, setValues] = useState<string[]>(['https://ejemplo.com']);
+
+  return (
+    <EditableFieldList
+      label="Enlaces"
+      values={values}
+      inputType="url"
+      placeholder="Añade un enlace"
+      dataIdBase="story-url-list"
+      onChange={(index, value) =>
+        setValues((items) => items.map((item, itemIndex) => (itemIndex === index ? value : item)))
+      }
+      onAdd={() => setValues((items) => [...items, ''])}
+      onRemove={(index) =>
+        setValues((items) => items.filter((_, itemIndex) => itemIndex !== index))
+      }
+      addBtnLabel="+ Añadir enlace"
+    />
+  );
+}
+
+function WithLabelExample() {
+  const [values, setValues] = useState<EditableFieldListValue[]>([
+    { value: 'https://video1.com', label: 'Intro' },
+    { value: 'https://video2.com', label: 'Demo' },
+  ]);
+
+  return (
+    <EditableFieldList
+      label="Vídeos"
+      values={values}
+      inputType="url"
+      placeholder="URL del video"
+      dataIdBase="story-video-list"
+      withLabel
+      labelPlaceholder="Descripción"
+      onChange={(index, value, label) =>
+        setValues((items) =>
+          items.map((item, itemIndex) =>
+            itemIndex === index ? { value, label: label ?? '' } : item,
+          ),
+        )
+      }
+      onAdd={() => setValues((items) => [...items, { value: '', label: '' }])}
+      onRemove={(index) =>
+        setValues((items) => items.filter((_, itemIndex) => itemIndex !== index))
+      }
+      addBtnLabel="+ Añadir video"
+    />
+  );
+}
+
+export const TextList = {
+  render: () => <TextListExample />,
 };
 
-export const UrlList: Story = {
-  render: () => {
-    const [values, setValues] = useState(['https://ejemplo.com']);
-    return (
-      <EditableFieldList
-        label="Enlaces"
-        values={values}
-        inputType="url"
-        placeholder="Añade un enlace"
-        dataIdBase="story-url-list"
-        onChange={(i, v) => setValues((arr) => arr.map((x, j) => (i === j ? v : x)))}
-        onAdd={() => setValues((arr) => [...arr, ''])}
-        onRemove={(i) => setValues((arr) => arr.filter((_, j) => i !== j))}
-        addBtnLabel="+ Añadir enlace"
-      />
-    );
-  },
+export const UrlList = {
+  render: () => <UrlListExample />,
+};
+
+export const WithLabel = {
+  render: () => <WithLabelExample />,
 };

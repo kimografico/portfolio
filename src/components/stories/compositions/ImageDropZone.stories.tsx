@@ -1,4 +1,4 @@
-import { useState, type ChangeEvent, type DragEvent } from 'react';
+import { useRef, useState, type ChangeEvent, type DragEvent } from 'react';
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import ImageDropZone, { type ProjectImageItem } from '../../compositions/ImageDropZone';
@@ -48,6 +48,7 @@ function InteractiveStory() {
   const [imgErrors, setImgErrors] = useState<Record<number, boolean>>({});
   const [dragIndex, setDragIndex] = useState<number | null>(null);
   const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleSelectFilesClick = () => undefined;
   const handleAddImage = () => {
@@ -111,7 +112,7 @@ function InteractiveStory() {
       imgErrors={imgErrors}
       dragIndex={dragIndex}
       dragOverIndex={dragOverIndex}
-      fileInputRef={{ current: null }}
+      fileInputRef={fileInputRef}
       onSelectFilesClick={handleSelectFilesClick}
       onAddImage={handleAddImage}
       onFileSelect={handleFileSelect}
