@@ -9,6 +9,7 @@ import {
 } from '../../../api/apiClient';
 import type { Illustration } from '../../../interfaces/illustration';
 import { slugify } from '../../../utils/slugify';
+import { APP_BASENAME } from '../../../data/config/app';
 
 interface IllustrationFormState {
   id: string;
@@ -192,7 +193,12 @@ export default function AddIllustrationPage() {
             Se guarda en illustrations.json y la imagen principal se sube al backend.
           </p>
         </div>
-        <UIButton href="/kimo/ilustraciones" arrowBack link dataId="add-illustration-back-btn">
+        <UIButton
+          href={`${APP_BASENAME}/kimo/ilustraciones`}
+          arrowBack
+          link
+          dataId="add-illustration-back-btn"
+        >
           Volver a Ilustraciones
         </UIButton>
       </div>

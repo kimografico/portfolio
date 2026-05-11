@@ -6,6 +6,7 @@ import {
   type KimoPlaceMarkerPayload,
   type KimoPlacePayload,
 } from '../../../api/apiClient';
+import { APP_BASENAME } from '../../../data/config/app';
 
 interface PlaceFormState {
   city: string;
@@ -148,7 +149,7 @@ export default function AddPlacePage() {
             Se pueden crear lugares visitados y marcadores del mapa.
           </p>
         </div>
-        <UIButton href="/kimo/places" arrowBack link dataId="add-place-back-btn">
+        <UIButton href={`${APP_BASENAME}/kimo/places`} arrowBack link dataId="add-place-back-btn">
           Volver a Viajes
         </UIButton>
       </div>

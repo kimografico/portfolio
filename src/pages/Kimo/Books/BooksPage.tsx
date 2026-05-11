@@ -22,22 +22,24 @@ export default function BooksPage() {
             Añadir libro
           </UIButton>
         )}
-        <button
-          className={`btn-toggle ${view === 'table' ? 'btn-toggle--active' : 'btn-toggle--inactive'}`}
+        <UIButton
           onClick={() => setView('table')}
+          color={view === 'table' ? 'accent' : 'muted'}
+          solid={view === 'table'}
+          dataId="books-view-table-btn"
           aria-pressed={view === 'table'}
-          data-id="books-view-table-btn"
         >
           Tabla
-        </button>
-        <button
-          className={`btn-toggle ${view === 'gallery' ? 'btn-toggle--active' : 'btn-toggle--inactive'}`}
+        </UIButton>
+        <UIButton
           onClick={() => setView('gallery')}
+          color={view === 'gallery' ? 'accent' : 'muted'}
+          solid={view === 'gallery'}
+          dataId="books-view-gallery-btn"
           aria-pressed={view === 'gallery'}
-          data-id="books-view-gallery-btn"
         >
           Galería
-        </button>
+        </UIButton>
       </div>
       {view === 'table' ? <BooksTable books={booksData} /> : <BooksGallery books={booksData} />}
     </section>

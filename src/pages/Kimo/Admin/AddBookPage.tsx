@@ -5,6 +5,7 @@ import books from '../../../data/kimo/books.json';
 import { createKimoBook, uploadKimoImages, type KimoBookPayload } from '../../../api/apiClient';
 import type { Book } from '../../../interfaces/book';
 import { slugify } from '../../../utils/slugify';
+import { APP_BASENAME } from '../../../data/config/app';
 
 interface BookFormState {
   id: string;
@@ -133,7 +134,7 @@ export default function AddBookPage() {
             Se guarda en books.json y la portada se sube al backend.
           </p>
         </div>
-        <UIButton href="/kimo/books" arrowBack link dataId="add-book-back-btn">
+        <UIButton href={`${APP_BASENAME}/kimo/books`} arrowBack link dataId="add-book-back-btn">
           Volver a Biblioteca
         </UIButton>
       </div>

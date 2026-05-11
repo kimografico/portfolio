@@ -11,7 +11,7 @@ type UIButtonBaseProps = {
   arrowBack?: boolean;
   dataId?: string;
   disabled?: boolean;
-  color?: 'accent' | 'cta' | 'text';
+  color?: 'accent' | 'cta' | 'text' | 'muted';
   solid?: boolean;
   saveBtn?: boolean;
   link?: boolean;
@@ -66,6 +66,7 @@ export default function UIButton(props: UIButtonProps) {
     accent: 'var(--color-accent)',
     cta: 'var(--color-cta)',
     text: 'var(--color-text)',
+    muted: 'var(--color-muted)',
   } as const;
 
   const resolvedButtonColor = colorMap[buttonColor];
