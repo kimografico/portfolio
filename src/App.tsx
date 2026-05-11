@@ -16,6 +16,8 @@ import MainLayout from './components/layout/MainLayout';
 import ContactMe from './pages/ContactMe/ContactMe';
 import ScrollToTop from './components/layout/ScrollToTop';
 import IconGallery from './pages/Kimo/IconGallery';
+import KimoAuthGate from './components/layout/KimoAuthGate';
+import KimoLoginPage from './pages/Kimo/LoginPage';
 import DataPage from './pages/Kimo/Admin/DataPage';
 import PendientePage from './pages/Kimo/Admin/PendientePage';
 import AddProjectPage from './pages/Kimo/Admin/AddProjectPage';
@@ -35,19 +37,22 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/resume/design" element={<ResumeDesignPage />} />
           <Route path="/resume/development" element={<ResumeDevPage />} />
-          <Route path="/kimo" element={<KimoLayout />}>
-            <Route index element={<BooksPage />} />
-            <Route path="books" element={<BooksPage />} />
-            <Route path="places" element={<PlacesPage />} />
-            <Route path="ilustraciones" element={<IllustrationsPage />} />
-            <Route path="ilustraciones/:id" element={<IllustrationDetailPage />} />
-            <Route path="iconos" element={<IconGallery />} />
-            <Route path="data" element={<DataPage />} />
-            <Route path="pendiente" element={<PendientePage />} />
-            <Route path="add-project" element={<AddProjectPage />} />
-            <Route path="edit-project/:id" element={<EditProjectPage />} />
-            <Route path="recent-works" element={<RecentWorksManagerPage />} />
-            <Route path="resume" element={<ResumeManagerPage />} />
+          <Route path="/kimo/login" element={<KimoLoginPage />} />
+          <Route element={<KimoAuthGate />}>
+            <Route path="/kimo" element={<KimoLayout />}>
+              <Route index element={<BooksPage />} />
+              <Route path="books" element={<BooksPage />} />
+              <Route path="places" element={<PlacesPage />} />
+              <Route path="ilustraciones" element={<IllustrationsPage />} />
+              <Route path="ilustraciones/:id" element={<IllustrationDetailPage />} />
+              <Route path="iconos" element={<IconGallery />} />
+              <Route path="data" element={<DataPage />} />
+              <Route path="pendiente" element={<PendientePage />} />
+              <Route path="add-project" element={<AddProjectPage />} />
+              <Route path="edit-project/:id" element={<EditProjectPage />} />
+              <Route path="recent-works" element={<RecentWorksManagerPage />} />
+              <Route path="resume" element={<ResumeManagerPage />} />
+            </Route>
           </Route>
           <Route path="/graphic-design" element={<GraphicDesignHome />} />
           {/* Galerías de Diseño Gráfico: generadas dinámicamente desde la configuración */}
