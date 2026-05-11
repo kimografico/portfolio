@@ -1,10 +1,10 @@
 ---
 name: Clean Code Auditor
 description: Audita el proyecto en busca de problemas de Clean Code, principios SOLID y calidad de TypeScript.
-tools: ['codebase', 'read']
+tools: ['search/codebase', 'read']
 handoffs:
   - label: '→ Auditar Rendimiento'
-    agent: performance-auditor
+    agent: Performance Auditor
     prompt: 'Realiza ahora la auditoría de rendimiento sobre el mismo proyecto.'
     send: false
 ---

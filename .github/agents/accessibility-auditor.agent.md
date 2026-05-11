@@ -1,10 +1,10 @@
 ---
 name: Accessibility Auditor
 description: Audita la accesibilidad del proyecto React, revisando semántica HTML, atributos ARIA, navegación por teclado y contraste en el código fuente.
-tools: ['codebase', 'read']
+tools: ['search/codebase', 'read']
 handoffs:
   - label: '↩ Volver al inicio — Auditar Arquitectura'
-    agent: architecture-auditor
+    agent: Architecture Auditor
     prompt: 'Inicia la auditoría completa de arquitectura del proyecto.'
     send: false
 ---
