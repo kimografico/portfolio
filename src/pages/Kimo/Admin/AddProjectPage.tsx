@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
-import { IconImage } from '../../../components/iconos/IconImage';
 import { createProject, uploadImages } from '../../../api/apiClient';
+import ImageDropZone from '../../../components/compositions/ImageDropZone';
 
 /**
  * Categorías disponibles por tipo.
@@ -540,143 +540,28 @@ export default function AddProjectPage() {
           </div>
         )}
 
-        {/* Imágenes: drag & drop con miniaturas */}
-        <div data-id="add-project-images">
-          <div className="flex items-center justify-between mb-2">
-            <p className="text-xs font-semibold text-muted">Imágenes</p>
-            <div className="flex gap-3">
-              <button
-                type="button"
-                onClick={() => fileInputRef.current?.click()}
-                className="text-xs text-accent hover:underline"
-                data-id="add-project-select-files-btn"
-              >
-                📁 Seleccionar archivos
-              </button>
-              <button
-                type="button"
-                onClick={addImagen}
-                className="text-xs text-accent hover:underline"
-                data-id="add-project-add-image-btn"
-              >
-                + Añadir URL
-              </button>
-            </div>
-          </div>
-
-          {/* Input file oculto */}
-          <input
-            ref={fileInputRef}
-            type="file"
-            accept="image/*"
-            multiple
-            className="hidden"
-            data-id="add-project-file-input"
-            onChange={handleFileSelect}
-          />
-
-          {/* Drop zone: se muestra cuando no hay imágenes o siempre como zona de arrastre */}
-          <div
-            className="border-2 border-dashed border-gray-300 rounded-lg p-4 mb-3 text-center text-sm text-muted hover:border-accent hover:bg-accent/5 transition-colors cursor-pointer min-h-48"
-            onDragOver={(e) => {
-              e.preventDefault();
-              e.dataTransfer.dropEffect = 'copy';
-            }}
-            onDrop={handleFileDrop}
-            onClick={() => fileInputRef.current?.click()}
-            data-id="add-project-dropzone"
-          >
-            Arrastra imágenes aquí o haz clic para seleccionar
-          </div>
-
-          {/* Lista de imágenes con miniaturas y reordenables por drag */}
-          <div className="space-y-2">
-            {form.imagenes.map((img, i) => (
-              <div
-                key={i}
-                draggable
-                onDragStart={() => handleImgDragStart(i)}
-                onDragOver={(e) => handleImgDragOver(e, i)}
-                onDrop={(e) => {
-                  e.preventDefault();
-                  handleImgDrop(i);
-                }}
-                onDragEnd={handleImgDragEnd}
-                className={`flex gap-3 items-center p-2 rounded border transition-all ${
-                  dragOverIndex === i ? 'border-accent bg-accent/5' : 'border-gray-200'
-                } ${dragIndex === i ? 'opacity-40' : ''}`}
-              >
-                {/* Drag handle */}
-                <span
-                  className="cursor-grab active:cursor-grabbing text-muted select-none text-lg"
-                  title="Arrastra para reordenar"
-                >
-                  ⠿
-                </span>
-
-                {/* Miniatura */}
-                <div
-                  className="w-16 h-12 rounded overflow-hidden flex-shrink-0 border"
-                  style={{ background: 'var(--color-bg-btn)', borderColor: 'var(--color-border)' }}
-                  data-id="new-image-thumb"
-                >
-                  {img.image && !imgErrors[i] ? (
-                    <img
-                      src={img.image}
-                      alt={img.label || `Imagen ${i + 1}`}
-                      className="w-full h-full object-cover"
-                      onError={() => setImgErrors((prev) => ({ ...prev, [i]: true }))}
-                    />
-                  ) : (
-                    <div
-                      className="w-full h-full flex items-center justify-center text-lg"
-                      style={{ color: 'var(--color-text-btn)' }}
-                    >
-                      <IconImage aria-label="Sin imagen" className="w-7 h-7" />
-                    </div>
-                  )}
-                </div>
-
-                {/* Campos URL + label */}
-                <div className="flex-1 flex gap-2">
-                  <input
-                    type="text"
-                    data-id={`add-project-image-url-${i}`}
-                    className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                    placeholder="URL de la imagen"
-                    value={img.image}
-                    onChange={(e) => {
-                      handleImagenChange(i, 'image', e.target.value);
-                      setImgErrors((prev) => ({ ...prev, [i]: false }));
-                    }}
-                  />
-                  <input
-                    type="text"
-                    data-id={`add-project-image-label-${i}`}
-                    className="w-36 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                    placeholder="Etiqueta"
-                    value={img.label}
-                    onChange={(e) => handleImagenChange(i, 'label', e.target.value)}
-                  />
-                </div>
-
-                {/* Índice + botón eliminar */}
-                <span className="text-xs text-muted w-5 text-center">{i + 1}</span>
-                {form.imagenes.length > 1 && (
-                  <button
-                    type="button"
-                    onClick={() => removeImagen(i)}
-                    data-id={`add-project-remove-image-btn-${i}`}
-                    className="text-muted hover:text-red-500 transition-colors text-lg leading-none"
-                    aria-label="Eliminar imagen"
-                  >
-                    ×
-                  </button>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
+        <ImageDropZone
+          images={form.imagenes}
+          imgErrors={imgErrors}
+          dragIndex={dragIndex}
+          dragOverIndex={dragOverIndex}
+          fileInputRef={fileInputRef}
+          onSelectFilesClick={() => fileInputRef.current?.click()}
+          onAddImage={addImagen}
+          onFileSelect={handleFileSelect}
+          onDropZoneDragOver={(e) => {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'copy';
+          }}
+          onDropZoneDrop={handleFileDrop}
+          onImageDragStart={handleImgDragStart}
+          onImageDragOver={handleImgDragOver}
+          onImageDrop={handleImgDrop}
+          onImageDragEnd={handleImgDragEnd}
+          onImageChange={handleImagenChange}
+          onRemoveImage={removeImagen}
+          onImageError={(index) => setImgErrors((prev) => ({ ...prev, [index]: true }))}
+        />
 
         {/* Videos */}
         <div>
