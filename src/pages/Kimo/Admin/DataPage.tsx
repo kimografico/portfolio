@@ -9,14 +9,14 @@ import BaseTable from '../../../components/compositions/BaseTable';
 import { useShowHidden } from '../../../hooks/useShowHidden';
 import { updateVisibilityBatch, deleteProjectsBatch } from '../../../api/apiClient';
 import { APP_BASENAME } from '../../../data/config/app';
+import { ALL_ENTRIES } from './data/normalization';
+import type { DataEntry } from '../../../interfaces/adminData';
 import {
-  ALL_ENTRIES,
-  type DataEntry,
-  getCategoryOptions,
-  getClienteOptions,
-  applyFilters,
-  calculateDuplicateIds,
-} from './DataPageHelpers';
+  applyFilters as applyDataFilters,
+  getCategoryOptions as getAdminCategoryOptions,
+  getClienteOptions as getAdminClienteOptions,
+} from './data/filters';
+import { calculateDuplicateIds as calculateAdminDuplicateIds } from './data/duplicates';
 import DataActionBar from '../../../components/compositions/DataActionBar';
 
 // Necesario para crear columnas tipadas
@@ -74,18 +74,18 @@ export default function DataPage() {
   const [deletedIds, setDeletedIds] = useState<Set<string | number>>(new Set());
 
   // Opciones de categoría: dependen del tipo seleccionado
-  const categoryOptions = useMemo(() => getCategoryOptions(filterType), [filterType]);
+  const categoryOptions = useMemo(() => getAdminCategoryOptions(filterType), [filterType]);
 
   // Opciones de cliente: dependen del tipo + categoría seleccionados
   const clienteOptions = useMemo(
-    () => getClienteOptions(filterType, filterCategory),
+    () => getAdminClienteOptions(filterType, filterCategory),
     [filterType, filterCategory],
   );
 
   // Datos finales tras aplicar todos los filtros, con overrides de visibilidad y excluyendo eliminados
   const filteredEntries = useMemo(() => {
     const withoutDeleted = ALL_ENTRIES.filter((e) => !deletedIds.has(e.id));
-    return applyFilters(withoutDeleted, {
+    return applyDataFilters(withoutDeleted, {
       filterVisibility,
       filterType,
       filterCategory,
@@ -95,7 +95,7 @@ export default function DataPage() {
   }, [filterVisibility, filterType, filterCategory, filterCliente, localVisibility, deletedIds]);
 
   // Calcular IDs duplicados en todo el dataset (no solo filtrados)
-  const duplicateIds = useMemo(() => calculateDuplicateIds(), []);
+  const duplicateIds = useMemo(() => calculateAdminDuplicateIds(), []);
 
   // --- Handlers de selección ---
 

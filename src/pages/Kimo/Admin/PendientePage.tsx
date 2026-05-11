@@ -3,7 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
 import BaseTable from '../../../components/compositions/BaseTable';
 import { IconVisible } from '../../../components/iconos';
-import { buildProjectDetailPath, getPendingEntries, type PendingEntry } from './DataPageHelpers';
+import { type PendingEntry } from '../../../interfaces/adminData';
+import { getPendingEntries } from './data/normalization';
+import { buildProjectDetailPath } from './data/routes';
 
 const columnHelper = createColumnHelper<PendingEntry>();
 
