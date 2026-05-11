@@ -2,6 +2,7 @@ import { useState, useRef } from 'react';
 import { createProject, uploadImages } from '../../../api/apiClient';
 import ImageDropZone from '../../../components/compositions/ImageDropZone';
 import EditableFieldList from '../../../components/compositions/EditableFieldList';
+import TechStackTags from '../../../components/compositions/TechStackTags';
 
 /**
  * Categorías disponibles por tipo.
@@ -482,63 +483,13 @@ export default function AddProjectPage() {
 
         {/* Stack (solo desarrollo) */}
         {form.type === 'dev' && (
-          <div>
-            <p className="text-xs font-semibold text-muted mb-2">Stack tecnológico</p>
-            <div className="flex flex-wrap gap-2 mb-2">
-              {STACK_QUICK_OPTIONS.map((tech) => (
-                <button
-                  type="button"
-                  key={tech}
-                  onClick={() => toggleStack(tech)}
-                  data-id={`add-project-stack-${tech.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-                  className={`text-xs px-2 py-1 rounded border transition-colors ${
-                    form.stack.includes(tech)
-                      ? 'bg-accent text-white border-accent'
-                      : 'border-gray-300 text-muted hover:border-gray-400'
-                  }`}
-                >
-                  {tech}
-                </button>
-              ))}
-            </div>
-            {/* Campo para añadir tecnología personalizada */}
-            <div className="flex gap-2 mt-1">
-              <input
-                type="text"
-                data-id="add-project-stack-custom-input"
-                className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
-                placeholder="Otra tecnología…"
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter') {
-                    e.preventDefault();
-                    addCustomStack((e.target as HTMLInputElement).value);
-                    (e.target as HTMLInputElement).value = '';
-                  }
-                }}
-              />
-              <span className="text-xs text-muted self-center">↵ Enter para añadir</span>
-            </div>
-            {form.stack.length > 0 && (
-              <div className="flex flex-wrap gap-1 mt-2">
-                {form.stack.map((t) => (
-                  <span
-                    key={t}
-                    className="text-xs bg-accent text-white px-2 py-0.5 rounded flex items-center gap-1"
-                  >
-                    {t}
-                    <button
-                      type="button"
-                      onClick={() => toggleStack(t)}
-                      className="leading-none"
-                      aria-label={`Eliminar ${t}`}
-                    >
-                      ×
-                    </button>
-                  </span>
-                ))}
-              </div>
-            )}
-          </div>
+          <TechStackTags
+            stack={form.stack}
+            options={STACK_QUICK_OPTIONS}
+            onToggle={toggleStack}
+            onAddCustom={addCustomStack}
+            dataIdBase="add-project-stack"
+          />
         )}
 
         <ImageDropZone
