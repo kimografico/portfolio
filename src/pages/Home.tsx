@@ -22,12 +22,7 @@ export default function Home() {
 
   return (
     <>
-      {/* Skip link */}
-      <a href="#main-content" className="skip-link">
-        Saltar al contenido principal
-      </a>
-
-      <main id="main-content" data-id="home-page">
+      <section data-id="home-page">
         <HeroSection
           title={
             <>
@@ -52,7 +47,7 @@ export default function Home() {
           heading="Diseñador gráfico de formación, desarrollador de software por convicción."
           description="Aquí irá una descripción real sobre la trayectoria y enfoque de trabajo. Diseño gráfico, identidad visual, desarrollo web y software — todo en un mismo espacio."
         />
-      </main>
+      </section>
     </>
   );
 }

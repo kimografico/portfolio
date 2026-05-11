@@ -14,6 +14,7 @@ interface ImageLightboxProps {
 
 export default function ImageLightbox({ open, src, alt, onClose, dataId }: ImageLightboxProps) {
   const modalRef = useRef<HTMLDivElement>(null);
+  const previouslyFocusedElementRef = useRef<HTMLElement | null>(null);
   const [visible, setVisible] = useState(false); // controla el renderizado
   const [modalVisible, setModalVisible] = useState(false); // controla la animación
   const closeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -21,6 +22,7 @@ export default function ImageLightbox({ open, src, alt, onClose, dataId }: Image
   const MODAL_DURATION = 200;
   useEffect(() => {
     if (open) {
+      previouslyFocusedElementRef.current = document.activeElement as HTMLElement | null;
       // Si se abre, cancelar cualquier cierre pendiente y mostrar el modal
       if (closeTimeoutRef.current) {
         clearTimeout(closeTimeoutRef.current);
@@ -49,6 +51,7 @@ export default function ImageLightbox({ open, src, alt, onClose, dataId }: Image
     closeTimeoutRef.current = setTimeout(() => {
       setVisible(false);
       closeTimeoutRef.current = null;
+      previouslyFocusedElementRef.current?.focus();
     }, OVERLAY_DURATION);
     // Llama a onClose inmediatamente para que el padre cierre el modal
     onClose();
@@ -59,6 +62,32 @@ export default function ImageLightbox({ open, src, alt, onClose, dataId }: Image
     if (modalVisible && modalRef.current) {
       modalRef.current.focus();
     }
+  }, [modalVisible]);
+
+  useEffect(() => {
+    if (!modalVisible) return;
+
+    const handleTabKey = (event: KeyboardEvent) => {
+      if (event.key !== 'Tab') return;
+      const focusableElements = modalRef.current?.querySelectorAll<HTMLElement>(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+      );
+      if (!focusableElements || focusableElements.length === 0) return;
+
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (event.shiftKey && document.activeElement === firstElement) {
+        event.preventDefault();
+        lastElement.focus();
+      } else if (!event.shiftKey && document.activeElement === lastElement) {
+        event.preventDefault();
+        firstElement.focus();
+      }
+    };
+
+    window.addEventListener('keydown', handleTabKey);
+    return () => window.removeEventListener('keydown', handleTabKey);
   }, [modalVisible]);
 
   // Cerrar con Escape
@@ -82,6 +111,7 @@ export default function ImageLightbox({ open, src, alt, onClose, dataId }: Image
       className="imagelightbox-root"
       aria-modal="true"
       role="dialog"
+      aria-label={alt || 'Vista ampliada de la imagen'}
       data-id={dataId || 'image-lightbox-overlay'}
     >
       <div
@@ -117,7 +147,7 @@ export default function ImageLightbox({ open, src, alt, onClose, dataId }: Image
           <button
             onClick={handleClose}
             className="modal-close imagelightbox-close"
-            aria-label="Cerrar"
+            aria-label="Cerrar vista ampliada"
           >
             <IconClose size={24} strokeWidth={1} color="var(--color-muted)" />
           </button>

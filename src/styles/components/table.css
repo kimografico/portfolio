@@ -7,6 +7,10 @@
   @apply min-w-full border-separate border-spacing-y-1 text-sm;
 }
 
+.table-main caption {
+  @apply sr-only;
+}
+
 /* Fila de tabla */
 .table-row {
   background-color: var(--color-surface);
@@ -25,8 +29,12 @@
 
 /* Encabezado de columna */
 .table-header-cell {
-  @apply px-3 py-2 text-left font-semibold select-none cursor-pointer;
+  @apply px-3 py-2 text-left font-semibold select-none;
   color: var(--color-muted);
+}
+
+.table-header-button {
+  @apply inline-flex items-center bg-transparent border-0 p-0 m-0 text-inherit text-left cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2;
 }
 
 /* Etiqueta del encabezado (contiene título + flechas) */

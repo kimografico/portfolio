@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { Fragment, useCallback, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { MobileMenuProps } from '../../interfaces/ui';
 
@@ -10,7 +10,7 @@ export default function MobileMenu({ navLinks }: MobileMenuProps) {
   const [isExiting, setIsExiting] = useState(false);
 
   // Al abrir, activa la animación de entrada tras montar
-  React.useEffect(() => {
+  useEffect(() => {
     if (showMenu && !isEntering && !isExiting) {
       const t = setTimeout(() => setIsEntering(true), 10);
       return () => clearTimeout(t);
@@ -25,26 +25,39 @@ export default function MobileMenu({ navLinks }: MobileMenuProps) {
     }
   }, [showMenu, isEntering, isExiting]);
 
-  const openMenu = () => {
+  const openMenu = useCallback(() => {
     setShowMenu(true);
     setIsEntering(false);
     setIsExiting(false);
-  };
+  }, []);
 
-  const closeMenu = () => {
+  const closeMenu = useCallback(() => {
     setIsExiting(true);
     setIsEntering(false);
-  };
+  }, []);
+
+  useEffect(() => {
+    if (!showMenu) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        closeMenu();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [showMenu, closeMenu]);
 
   return (
     <div className="md:hidden" data-id="mobile-menu-wrapper">
       {/* Botón hamburguesa accesible */}
       <button
+        type="button"
         aria-label={showMenu ? 'Cerrar menú' : 'Abrir menú'}
         aria-expanded={showMenu}
         aria-controls="mobile-menu"
-        className="p-2 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none"
-        style={{ outline: 'none', boxShadow: 'none' }}
+        className="p-2 rounded focus-visible:ring-2 focus-visible:ring-accent"
         onClick={() => {
           if (!showMenu) openMenu();
           else closeMenu();
@@ -77,7 +90,7 @@ export default function MobileMenu({ navLinks }: MobileMenuProps) {
         >
           <ul className="flex flex-col items-stretch w-full py-2 px-2" data-id="mobile-menu-list">
             {navLinks.map(({ label, href }, idx) => (
-              <React.Fragment key={href}>
+              <Fragment key={href}>
                 <li className="w-full">
                   <Link
                     to={href}
@@ -96,7 +109,7 @@ export default function MobileMenu({ navLinks }: MobileMenuProps) {
                     <hr className="w-3/4 border-t border-muted opacity-80 my-2" />
                   </li>
                 )}
-              </React.Fragment>
+              </Fragment>
             ))}
           </ul>
         </nav>

@@ -15,15 +15,18 @@ export default function MainFooter() {
                 <Link
                   to={href}
                   className="text-xl text-muted hover:text-ink transition-colors duration-150 flex items-center"
+                  aria-label="Ir al espacio personal"
                 >
                   {label === 'personal' ? (
                     <IconFooter
                       size={32}
                       strokeWidth={0.75}
                       className="inline-block align-middle"
+                      aria-hidden="true"
+                      focusable="false"
                     />
                   ) : (
-                    label
+                    <span>{label}</span>
                   )}
                 </Link>
               </li>

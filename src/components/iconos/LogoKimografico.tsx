@@ -7,6 +7,8 @@ export function LogoKimografico({ size = 256, ...props }: IconProps) {
       viewBox="47 67 196 21"
       width={size}
       fill="none"
+      aria-hidden="true"
+      focusable="false"
       {...props}
     >
       <style>

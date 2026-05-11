@@ -85,7 +85,10 @@ export default function CategoryGalleryPage<T extends BaseProject>({
         backLinkText={backLinkText}
       />
 
-      <main className="flex-1 max-w-7xl mx-auto w-full px-4 py-12" data-id={`${dataIdPrefix}-main`}>
+      <section
+        className="flex-1 max-w-7xl mx-auto w-full px-4 py-12"
+        data-id={`${dataIdPrefix}-main`}
+      >
         {sortedProjects.length === 0 ? (
           <EmptyState description={emptyStateDescription} dataId={`${dataIdPrefix}-empty`} />
         ) : (
@@ -108,7 +111,7 @@ export default function CategoryGalleryPage<T extends BaseProject>({
             ))}
           </div>
         )}
-      </main>
+      </section>
     </div>
   );
 }

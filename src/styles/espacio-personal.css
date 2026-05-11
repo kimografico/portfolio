@@ -22,6 +22,11 @@
   transition: all 0.2s;
   border-bottom-width: 2px;
 }
+
+.kimo-nav-link:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
 @media (min-width: 768px) {
   .kimo-nav-link {
     font-size: 1.25rem;

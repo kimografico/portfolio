@@ -5,6 +5,12 @@
   display: block;
 }
 
+.illustration-main-image:focus-visible,
+.illustration-extra-image:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
 .illustration-extras-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));

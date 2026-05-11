@@ -40,12 +40,11 @@ const ToggleIcon: FC<ToggleIconProps> = ({
   return (
     <button
       type="button"
-      aria-pressed={isOn ? 'true' : 'false'}
+      aria-pressed={isOn}
       aria-label={ariaLabel}
       onClick={() => onChange(!value)}
       className={`p-1 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition-colors ${isOn ? 'hover:bg-accent/10' : 'hover:bg-muted/10'}`}
       data-id={dataId}
-      tabIndex={0}
     >
       <Icon size={size} color={color} />
     </button>

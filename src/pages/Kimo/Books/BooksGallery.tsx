@@ -39,7 +39,6 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
               className="book-cover"
               onClick={() => setSelected(book)}
               aria-label={`Ver detalles de ${book.title}`}
-              tabIndex={0}
               title={book.title}
             >
               <img

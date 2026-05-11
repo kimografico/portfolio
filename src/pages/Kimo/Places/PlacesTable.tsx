@@ -28,7 +28,7 @@ export default function PlacesTable() {
         cell: (info) => {
           const value = info.getValue();
           if (typeof value === 'string' && value.toLowerCase().includes('valencia')) {
-            return <span className="text-gray-300">{value}</span>;
+            return <span className="font-medium text-ink">{value}</span>;
           }
           return value;
         },
@@ -66,8 +66,8 @@ export default function PlacesTable() {
         data={data}
         columns={columns}
         initialSorting={[{ id: 'date', desc: true }]}
-        onRowClick={() => {}}
         emptyMessage="No hay lugares para mostrar."
+        caption="Tabla de lugares visitados, ordenable por ciudad, lugar, país, fecha y personas."
       />
     </div>
   );

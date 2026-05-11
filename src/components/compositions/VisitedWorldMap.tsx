@@ -161,6 +161,7 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
         className="absolute bottom-0 right-0 z-10 w-8 h-8 flex items-center justify-center text-base"
         aria-pressed={antique}
         title="Alternar estilo antiguo/moderno"
+        aria-label={antique ? 'Cambiar a estilo moderno' : 'Cambiar a estilo antiguo'}
       >
         {antique ? '⚓️' : '☠️'}
       </button>

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import type { IconProps } from '../../types/icons';
 
 /**
@@ -59,8 +58,6 @@ export const ProjectCard = <T extends BaseProject>({
   widescreen = false,
   buildImagePath,
 }: ProjectCardProps<T>) => {
-  const [hoveredTech, setHoveredTech] = useState<string | null>(null);
-
   // Usar thumbnail optimizado si existe, fallback a imagen original
   const thumbUrl = `/portfolio/images/portfolio/thumbs/${project.id}.jpg`;
   const fallbackThumb = project.imagenes?.[0]?.image;
@@ -113,23 +110,11 @@ export const ProjectCard = <T extends BaseProject>({
               const key = tech.trim().toUpperCase();
               const Icon = stackIconMap[key] || IconFallback;
               return (
-                <span
-                  key={tech}
-                  className="inline-block align-middle cursor-pointer"
-                  onMouseEnter={() => setHoveredTech(tech)}
-                  onMouseLeave={() => setHoveredTech(null)}
-                  onFocus={() => setHoveredTech(tech)}
-                  onBlur={() => setHoveredTech(null)}
-                  tabIndex={0}
-                  aria-label={tech}
-                >
+                <span key={tech} className="inline-block align-middle" aria-hidden="true">
                   <Icon size={28} className="text-muted hover:text-ink transition-colors" />
                 </span>
               );
             })}
-            <div className="ml-auto text-xs text-muted min-w-[80px] text-right">
-              {hoveredTech && <span>{hoveredTech.toUpperCase()}</span>}
-            </div>
           </div>
         )}
       </div>

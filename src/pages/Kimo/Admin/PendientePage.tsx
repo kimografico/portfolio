@@ -111,6 +111,7 @@ export default function PendientePage() {
             navigate(`/kimo/edit-project/${row.id}`);
           }}
           emptyMessage="No hay proyectos pendientes con extras."
+          caption="Tabla de proyectos pendientes, ordenable por ID, título, cliente, categoría, extras, fecha y acceso al detalle."
         />
       </div>
     </section>

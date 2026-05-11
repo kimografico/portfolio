@@ -40,6 +40,7 @@ function formatYearMonth(fecha: string): string {
 
 function BookModal({ book, onClose }: BookModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
+  const previouslyFocusedElementRef = useRef<HTMLElement | null>(null);
   // visible: controla el overlay (velo)
   // modalVisible: controla la caja modal
   const [visible, setVisible] = useState(false);
@@ -52,6 +53,7 @@ function BookModal({ book, onClose }: BookModalProps) {
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setVisible(true);
+    previouslyFocusedElementRef.current = document.activeElement as HTMLElement | null;
     document.body.classList.add('modal-open');
     const timeout = setTimeout(() => setModalVisible(true), 10);
     return () => {
@@ -65,7 +67,10 @@ function BookModal({ book, onClose }: BookModalProps) {
     setModalVisible(false);
     document.body.classList.remove('modal-open');
     setTimeout(() => setVisible(false), MODAL_DURATION);
-    setTimeout(() => onClose(), OVERLAY_DURATION);
+    setTimeout(() => {
+      previouslyFocusedElementRef.current?.focus();
+      onClose();
+    }, OVERLAY_DURATION);
   }, [MODAL_DURATION, OVERLAY_DURATION, onClose]);
 
   // Focus trap simple
@@ -73,6 +78,32 @@ function BookModal({ book, onClose }: BookModalProps) {
     if (modalVisible && modalRef.current) {
       modalRef.current.focus();
     }
+  }, [modalVisible]);
+
+  useEffect(() => {
+    if (!modalVisible) return;
+
+    const handleTabKey = (event: KeyboardEvent) => {
+      if (event.key !== 'Tab') return;
+      const focusableElements = modalRef.current?.querySelectorAll<HTMLElement>(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+      );
+      if (!focusableElements || focusableElements.length === 0) return;
+
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+
+      if (event.shiftKey && document.activeElement === firstElement) {
+        event.preventDefault();
+        lastElement.focus();
+      } else if (!event.shiftKey && document.activeElement === lastElement) {
+        event.preventDefault();
+        firstElement.focus();
+      }
+    };
+
+    window.addEventListener('keydown', handleTabKey);
+    return () => window.removeEventListener('keydown', handleTabKey);
   }, [modalVisible]);
 
   // Cerrar modal con Escape
@@ -89,7 +120,13 @@ function BookModal({ book, onClose }: BookModalProps) {
 
   // Overlay animado
   return (
-    <div className="bookmodal-root" aria-modal="true" role="dialog" data-id="book-modal">
+    <div
+      className="bookmodal-root"
+      aria-modal="true"
+      role="dialog"
+      aria-labelledby="book-modal-title"
+      data-id="book-modal"
+    >
       {/* Overlay oscuro y desenfoque */}
       <div
         className="modal-overlay"
@@ -111,7 +148,7 @@ function BookModal({ book, onClose }: BookModalProps) {
         }}
       >
         {/* Botón cerrar */}
-        <button onClick={handleClose} className="modal-close" aria-label="Cerrar">
+        <button onClick={handleClose} className="modal-close" aria-label="Cerrar modal">
           <IconClose size={24} strokeWidth={1} color="var(--color-muted)" />
         </button>
         {/* Portada */}
@@ -132,7 +169,9 @@ function BookModal({ book, onClose }: BookModalProps) {
           }}
         />
         {/* Info */}
-        <h2 className="modal-title">{book.title}</h2>
+        <h2 id="book-modal-title" className="modal-title">
+          {book.title}
+        </h2>
         <div className="modal-author">{book.author}</div>
         <div className="modal-info">
           <div>

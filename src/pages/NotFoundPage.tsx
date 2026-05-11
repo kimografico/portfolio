@@ -7,7 +7,7 @@ export default function NotFoundPage() {
   return (
     <div className="min-h-screen flex flex-col" data-id="not-found-page">
       {/* Main content */}
-      <main className="flex-1 flex flex-col items-center justify-center px-4 py-16">
+      <section className="flex-1 flex flex-col items-center justify-center px-4 py-16">
         <div className="flex flex-col items-center gap-6">
           <span
             className="text-[7rem] font-bold text-border select-none leading-none"
@@ -31,7 +31,7 @@ export default function NotFoundPage() {
             </UIButton>
           </div>
         </div>
-      </main>
+      </section>
     </div>
   );
 }

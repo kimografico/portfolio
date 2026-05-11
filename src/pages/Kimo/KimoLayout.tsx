@@ -18,7 +18,10 @@ export default function KimoLayout() {
   return (
     <section className="kimo-section">
       <h1 className="kimo-title">Kimo - Mi espacio personal</h1>
-      <nav className="kimo-nav flex w-full justify-between items-center">
+      <nav
+        className="kimo-nav flex w-full justify-between items-center"
+        aria-label="Sección personal"
+      >
         <NavLink
           to="books"
           className={({ isActive }) =>
@@ -81,9 +84,9 @@ export default function KimoLayout() {
           <span className="hidden md:inline">Proyectos</span>
         </NavLink>
       </nav>
-      <main id="main-content">
+      <section>
         <Outlet />
-      </main>
+      </section>
     </section>
   );
 }

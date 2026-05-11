@@ -4,7 +4,7 @@ import { APP_BASENAME } from '../../data/config/app';
 
 export default function ContactMe() {
   return (
-    <main className="min-h-screen" data-id="contact-page">
+    <section className="min-h-screen" data-id="contact-page">
       <section aria-labelledby="contacto-heading" className="border-b border-border py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <h1 id="contacto-heading" className="text-3xl md:text-4xl font-bold mb-8 text-ink">
@@ -36,6 +36,6 @@ export default function ContactMe() {
           </div>
         </div>
       </section>
-    </main>
+    </section>
   );
 }

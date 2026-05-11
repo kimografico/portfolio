@@ -58,7 +58,7 @@ export default function GraphicDesignHome() {
         </>
       )}
       {/* Categorías en rejilla */}
-      <main
+      <section
         className="flex-1 max-w-5xl mx-auto w-full px-4 py-12"
         data-id="graphic-design-categories"
       >
@@ -77,7 +77,7 @@ export default function GraphicDesignHome() {
             />
           ))}
         </div>
-      </main>
+      </section>
     </div>
   );
 }

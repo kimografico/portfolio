@@ -695,7 +695,6 @@ export default function EditProjectPage() {
                           target="_blank"
                           rel="noopener noreferrer"
                           title={img.label || `Abrir imagen ${i + 1} en nueva pestaña`}
-                          tabIndex={0}
                           data-id={`edit-project-img-link-${i}`}
                         >
                           <img

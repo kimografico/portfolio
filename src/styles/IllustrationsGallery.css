@@ -22,6 +22,12 @@
   position: relative;
 }
 
+.illustration-card:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+  border-radius: 0.5rem;
+}
+
 .illustration-card:hover {
   /* Sin transform para no afectar layout */
 }

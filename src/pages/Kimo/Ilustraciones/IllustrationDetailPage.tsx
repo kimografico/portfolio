@@ -115,43 +115,39 @@ export default function IllustrationDetailPage() {
       {/* Imagen principal */}
       <section className="border-b border-border" data-id="main-image">
         <div className="max-w-7xl mx-auto py-12">
-          <img
-            ref={mainImgRef}
-            src={`${ILLUSTRATIONS_PATH}/${illustration!.image}`}
-            alt={illustration!.nombre}
-            className="illustration-main-image cursor-zoom-in"
-            data-id="main-image-img"
-            tabIndex={0}
-            role="button"
+          <button
+            type="button"
+            className="block w-full bg-transparent border-0 p-0 text-left"
             aria-label={`Ampliar imagen: ${illustration!.nombre}`}
-            style={
-              mainImgSize
-                ? {
-                    maxWidth: `${mainImgSize.width}px`,
-                    maxHeight: `${mainImgSize.height}px`,
-                    width: '100%',
-                    height: 'auto',
-                  }
-                : { width: '100%', height: 'auto' }
-            }
             onClick={() =>
               handleOpenLightbox(
                 `${ILLUSTRATIONS_PATH}/${illustration!.image}`,
                 illustration!.nombre,
               )
             }
-            onKeyDown={(e) =>
-              (e.key === 'Enter' || e.key === ' ') &&
-              handleOpenLightbox(
-                `${ILLUSTRATIONS_PATH}/${illustration!.image}`,
-                illustration!.nombre,
-              )
-            }
-            onLoad={(e) => {
-              const img = e.currentTarget;
-              setMainImgSize({ width: img.naturalWidth, height: img.naturalHeight });
-            }}
-          />
+          >
+            <img
+              ref={mainImgRef}
+              src={`${ILLUSTRATIONS_PATH}/${illustration!.image}`}
+              alt={illustration!.nombre}
+              className="illustration-main-image cursor-zoom-in"
+              data-id="main-image-img"
+              style={
+                mainImgSize
+                  ? {
+                      maxWidth: `${mainImgSize.width}px`,
+                      maxHeight: `${mainImgSize.height}px`,
+                      width: '100%',
+                      height: 'auto',
+                    }
+                  : { width: '100%', height: 'auto' }
+              }
+              onLoad={(e) => {
+                const img = e.currentTarget;
+                setMainImgSize({ width: img.naturalWidth, height: img.naturalHeight });
+              }}
+            />
+          </button>
         </div>
       </section>
 
@@ -169,22 +165,21 @@ export default function IllustrationDetailPage() {
                   className="illustration-extra"
                   data-id={`extra-image-${i}`}
                 >
-                  <img
-                    src={`${ILLUSTRATIONS_PATH}/${extra.image}`}
-                    alt={extra.label}
-                    className="illustration-extra-image cursor-zoom-in"
-                    data-id={`extra-image-img-${i}`}
+                  <button
+                    type="button"
+                    className="block w-full bg-transparent border-0 p-0 text-left"
+                    aria-label={`Ampliar imagen: ${extra.label}`}
                     onClick={() =>
                       handleOpenLightbox(`${ILLUSTRATIONS_PATH}/${extra.image}`, extra.label)
                     }
-                    tabIndex={0}
-                    role="button"
-                    aria-label={`Ampliar imagen: ${extra.label}`}
-                    onKeyDown={(e) =>
-                      (e.key === 'Enter' || e.key === ' ') &&
-                      handleOpenLightbox(`${ILLUSTRATIONS_PATH}/${extra.image}`, extra.label)
-                    }
-                  />
+                  >
+                    <img
+                      src={`${ILLUSTRATIONS_PATH}/${extra.image}`}
+                      alt={extra.label}
+                      className="illustration-extra-image cursor-zoom-in"
+                      data-id={`extra-image-img-${i}`}
+                    />
+                  </button>
                   <p className="text-xs text-muted mt-3">{extra.label}</p>
                 </div>
               ))}

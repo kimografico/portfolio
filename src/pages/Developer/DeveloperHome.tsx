@@ -61,7 +61,10 @@ export default function DeveloperHome() {
       )}
 
       {/* Categorías */}
-      <main className="flex-1 max-w-5xl mx-auto w-full px-4 py-12" data-id="developer-categories">
+      <section
+        className="flex-1 max-w-5xl mx-auto w-full px-4 py-12"
+        data-id="developer-categories"
+      >
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8" data-id="categories-grid">
           {DEVELOPER_CATEGORIES.map((category) => (
             <CategoryCard
@@ -73,7 +76,7 @@ export default function DeveloperHome() {
             />
           ))}
         </div>
-      </main>
+      </section>
     </div>
   );
 }

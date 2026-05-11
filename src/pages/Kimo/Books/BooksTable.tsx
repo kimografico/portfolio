@@ -57,6 +57,7 @@ export default function BooksTable({ books }: BooksTableProps) {
           initialSorting={[{ id: 'dateRead', desc: true }]}
           onRowClick={handleRowClick}
           emptyMessage="No hay libros para mostrar."
+          caption="Lista de libros leídos, ordenable por título, autor, fecha, serie, género e idioma."
         />
       </div>
 

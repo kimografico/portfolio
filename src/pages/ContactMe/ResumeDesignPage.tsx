@@ -59,7 +59,7 @@ export default function ResumeDesignPage() {
   });
 
   return (
-    <main data-id="resume-design-page" className="resume-main">
+    <section data-id="resume-design-page" className="resume-main">
       <header className="mb-8">
         <h1 className="text-4xl font-bold mb-1 text-left">{resume.basics.name}</h1>
         <h2 className="text-2xl font-semibold mb-2 text-left">{resume.basics.design.title}</h2>
@@ -198,6 +198,6 @@ export default function ResumeDesignPage() {
           </div>
         </section>
       )}
-    </main>
+    </section>
   );
 }

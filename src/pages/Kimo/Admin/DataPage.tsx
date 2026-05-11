@@ -487,6 +487,7 @@ export default function DataPage() {
             window.open(`${APP_BASENAME}/kimo/edit-project/${row.id}`, '_blank');
           }}
           emptyMessage="No hay proyectos que coincidan con los filtros."
+          caption="Tabla de todos los proyectos, con filtros por tipo, categoría, cliente y visibilidad."
         />
       </div>
 
