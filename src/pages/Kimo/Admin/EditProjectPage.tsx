@@ -699,7 +699,6 @@ export default function EditProjectPage() {
                           src = `/portfolio/images/portfolio/${img.image}`;
                         }
                       }
-                      console.log('[EditProjectPage] Imagen render src:', src);
                       return (
                         <a
                           href={src}

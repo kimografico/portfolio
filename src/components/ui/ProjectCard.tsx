@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { IconProps } from '../../types/icons';
 
@@ -58,13 +59,30 @@ export const ProjectCard = <T extends BaseProject>({
   widescreen = false,
   buildImagePath,
 }: ProjectCardProps<T>) => {
-  // Usar thumbnail optimizado si existe, fallback a imagen original
+  // Lógica robusta de miniatura:
+  // 1. Intenta cargar la miniatura generada (thumbs/${id}.jpg)
+  // 2. Si falla, usa la imagen original del proyecto
+  // 3. Si también falla, usa un fallback genérico
+  // El estado local controla el src actual
+
   const thumbUrl = `/portfolio/images/portfolio/thumbs/${project.id}.jpg`;
-  const fallbackThumb = project.imagenes?.[0]?.image;
-  // Si buildImagePath se proporciona, usarla para construir la ruta completa
-  const processedThumb =
-    buildImagePath && fallbackThumb ? buildImagePath(fallbackThumb) : fallbackThumb;
-  const thumbnail = thumbUrl || processedThumb;
+  const originalImage =
+    buildImagePath && project.imagenes?.[0]?.image
+      ? buildImagePath(project.imagenes[0].image)
+      : project.imagenes?.[0]?.image || '';
+  const fallbackImage = '/portfolio/images/portfolio/no-cover.jpg';
+
+  const [imgSrc, setImgSrc] = useState<string>(thumbUrl);
+  const [triedOriginal, setTriedOriginal] = useState(false);
+
+  const handleImgError = () => {
+    if (!triedOriginal && originalImage && imgSrc !== originalImage) {
+      setImgSrc(originalImage);
+      setTriedOriginal(true);
+    } else if (imgSrc !== fallbackImage) {
+      setImgSrc(fallbackImage);
+    }
+  };
 
   const year = project.date?.slice(0, 4);
 
@@ -77,20 +95,20 @@ export const ProjectCard = <T extends BaseProject>({
       data-id-link={dataId}
     >
       {/* Thumbnail */}
-      {thumbnail && (
-        <div
-          className={`overflow-hidden flex items-center justify-center bg-gray-100 ${
-            widescreen ? 'aspect-video' : 'aspect-[4/3]'
-          }`}
-        >
-          <img
-            src={thumbnail}
-            alt={project.title}
-            className="object-cover w-full h-full group-hover:scale-125 transition-transform"
-            loading="lazy"
-          />
-        </div>
-      )}
+      <div
+        className={`overflow-hidden flex items-center justify-center bg-gray-100 ${
+          widescreen ? 'aspect-video' : 'aspect-[4/3]'
+        }`}
+      >
+        <img
+          src={imgSrc}
+          alt={project.title}
+          className="object-cover w-full h-full group-hover:scale-125 transition-transform"
+          loading="lazy"
+          onError={handleImgError}
+          data-id={`${dataId}-thumb`}
+        />
+      </div>
 
       {/* Info */}
       <div className="p-4 flex flex-col gap-1" data-id={`${dataId}-info`}>
