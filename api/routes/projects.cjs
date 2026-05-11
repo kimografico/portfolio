@@ -5,6 +5,7 @@
 
 const express = require('express');
 const projectController = require('../controllers/projectController.cjs');
+const requireKimoAuth = require('../middleware/kimoAuth.cjs');
 
 const router = express.Router();
 
@@ -33,7 +34,7 @@ router.get('/', async (req, res, next) => {
 /**
  * POST /api/projects - Crear nuevo proyecto
  */
-router.post('/', async (req, res, next) => {
+router.post('/', requireKimoAuth, async (req, res, next) => {
   try {
     await projectController.createProject(req, res);
   } catch (error) {
@@ -44,7 +45,7 @@ router.post('/', async (req, res, next) => {
 /**
  * PUT /api/projects/:id - Actualizar proyecto
  */
-router.put('/:id', async (req, res, next) => {
+router.put('/:id', requireKimoAuth, async (req, res, next) => {
   try {
     await projectController.updateProject(req, res);
   } catch (error) {
@@ -55,7 +56,7 @@ router.put('/:id', async (req, res, next) => {
 /**
  * DELETE /api/projects/:id - Eliminar proyecto
  */
-router.delete('/:id', async (req, res, next) => {
+router.delete('/:id', requireKimoAuth, async (req, res, next) => {
   try {
     await projectController.deleteProject(req, res);
   } catch (error) {
@@ -67,7 +68,7 @@ router.delete('/:id', async (req, res, next) => {
  * PATCH /api/projects/visibility - Cambiar visibilidad en lote
  * (Antes del :id para evitar conflictos de routing)
  */
-router.patch('/visibility', async (req, res, next) => {
+router.patch('/visibility', requireKimoAuth, async (req, res, next) => {
   try {
     await projectController.updateVisibility(req, res);
   } catch (error) {

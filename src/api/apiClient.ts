@@ -6,6 +6,7 @@
 export const API_BASE = 'http://localhost:3001';
 
 import type { ResumeData } from '../interfaces/resume';
+import { isKimoAuthenticated } from '../lib/kimoAuth';
 
 /** Respuesta genérica de la API */
 interface ApiResponse<T = unknown> {
@@ -21,8 +22,12 @@ async function apiFetch<T = unknown>(
   path: string,
   options: RequestInit = {},
 ): Promise<ApiResponse<T>> {
+  const authHeaders = isKimoAuthenticated()
+    ? { Authorization: `Bearer ${import.meta.env.VITE_KIMO_PASSWORD_HASH?.trim() ?? ''}` }
+    : {};
+
   const res = await fetch(`${API_BASE}${path}`, {
-    headers: { 'Content-Type': 'application/json', ...options.headers },
+    headers: { 'Content-Type': 'application/json', ...authHeaders, ...options.headers },
     ...options,
   });
 
@@ -105,6 +110,46 @@ export interface UploadedImage {
   label: string;
 }
 
+export type KimoUploadCollection = 'books' | 'illustrations';
+
+export interface KimoBookPayload {
+  id?: string;
+  title: string;
+  author: string;
+  language: string;
+  cover: string;
+  dateRead: string;
+  genre: string;
+  isbn: string;
+  series: string;
+  synopsis: string;
+}
+
+export interface KimoIllustrationPayload {
+  id?: string;
+  nombre: string;
+  image: string;
+  fecha: string;
+  cliente: string;
+  descripcion: string;
+  imagenesExtra: Array<{ image: string; label: string }>;
+}
+
+export interface KimoPlacePayload {
+  city: string;
+  place: string;
+  country: string;
+  date: string;
+  people: string;
+}
+
+export interface KimoPlaceMarkerPayload {
+  name: string;
+  country: string;
+  lat: number;
+  lon: number;
+}
+
 // --- Curriculum (Resume) ---
 
 export interface ResumeApiResponse {
@@ -146,6 +191,9 @@ export async function uploadImages(
 
   const res = await fetch(`${API_BASE}/api/upload`, {
     method: 'POST',
+    headers: isKimoAuthenticated()
+      ? { Authorization: `Bearer ${import.meta.env.VITE_KIMO_PASSWORD_HASH?.trim() ?? ''}` }
+      : undefined,
     body: formData,
     // No establecer Content-Type: el navegador pone el boundary automáticamente
   });
@@ -157,6 +205,64 @@ export async function uploadImages(
   }
 
   return json.data as UploadedImage[];
+}
+
+/**
+ * Sube imágenes para los formularios de Kimo (libros e ilustraciones).
+ */
+export async function uploadKimoImages(
+  files: File[],
+  collection: KimoUploadCollection,
+  title: string,
+): Promise<UploadedImage[]> {
+  const formData = new FormData();
+  formData.append('collection', collection);
+  formData.append('title', title);
+  files.forEach((file) => formData.append('images', file));
+
+  const res = await fetch(`${API_BASE}/api/kimo/upload`, {
+    method: 'POST',
+    headers: isKimoAuthenticated()
+      ? { Authorization: `Bearer ${import.meta.env.VITE_KIMO_PASSWORD_HASH?.trim() ?? ''}` }
+      : undefined,
+    body: formData,
+  });
+
+  const json = await res.json();
+
+  if (!json.success) {
+    throw new Error(json.error ?? 'Error al subir imágenes');
+  }
+
+  return json.data as UploadedImage[];
+}
+
+export function createKimoBook(data: KimoBookPayload) {
+  return apiFetch('/api/kimo/books', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  });
+}
+
+export function createKimoIllustration(data: KimoIllustrationPayload) {
+  return apiFetch('/api/kimo/illustrations', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  });
+}
+
+export function createKimoPlace(data: KimoPlacePayload) {
+  return apiFetch('/api/kimo/places', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  });
+}
+
+export function createKimoPlaceMarker(data: KimoPlaceMarkerPayload) {
+  return apiFetch('/api/kimo/places-markers', {
+    method: 'POST',
+    body: JSON.stringify(data),
+  });
 }
 
 // --- Recent Works ---

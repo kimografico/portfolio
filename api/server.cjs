@@ -12,6 +12,7 @@ const projectsRouter = require('./routes/projects.cjs');
 const uploadRouter = require('./routes/upload.cjs');
 const recentWorksRouter = require('./routes/recent-works.cjs');
 const resumeRouter = require('./routes/resume.cjs');
+const kimoRouter = require('./routes/kimo.cjs');
 const errorHandler = require('./middleware/errorHandler.cjs');
 
 const app = express();
@@ -47,6 +48,7 @@ app.use('/api/projects', projectsRouter);
 app.use('/api/upload', uploadRouter);
 app.use('/api/recent-works', recentWorksRouter);
 app.use('/api/resume', resumeRouter);
+app.use('/api/kimo', kimoRouter);
 
 /**
  * GET /api/categories

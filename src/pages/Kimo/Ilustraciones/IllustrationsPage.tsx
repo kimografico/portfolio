@@ -1,7 +1,9 @@
 import { useMemo } from 'react';
+import UIButton from '../../../components/ui/UIButton';
 import { ProjectCard, type BaseProject } from '../../../components/ui/ProjectCard';
 import illustrations from '../../../data/kimo/illustrations.json';
 import type { Illustration } from '../../../interfaces/illustration';
+import { isKimoAuthenticated } from '../../../lib/kimoAuth';
 
 const ILLUSTRATIONS_PATH = import.meta.env.VITE_ILLUSTRATIONS_PATH;
 
@@ -32,14 +34,25 @@ export default function IllustrationsPage() {
     <div className="flex flex-col gap-12">
       <section className="border-b border-border" data-id="illustrations-page">
         <div className="max-w-7xl mx-auto py-16 md:py-24">
-          <div className="mb-12">
-            <h1 className="text-5xl md:text-6xl font-semibold tracking-tighter leading-none text-ink mb-6">
-              Ilustraciones
-            </h1>
-            <p className="text-base leading-relaxed text-muted max-w-[52ch]">
-              Trabajos de ilustración y diseño visual. Identidades, carteles, portadas y exploración
-              de conceptos visuales.
-            </p>
+          <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <h1 className="text-5xl md:text-6xl font-semibold tracking-tighter leading-none text-ink mb-6">
+                Ilustraciones
+              </h1>
+              <p className="text-base leading-relaxed text-muted max-w-[52ch]">
+                Trabajos de ilustración y diseño visual. Identidades, carteles, portadas y
+                exploración de conceptos visuales.
+              </p>
+            </div>
+            {isKimoAuthenticated() && (
+              <UIButton
+                href={`${APP_BASENAME}/kimo/add-illustration`}
+                dataId="illustrations-add-btn"
+                arrow
+              >
+                Añadir ilustración
+              </UIButton>
+            )}
           </div>
           <div
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
@@ -61,3 +74,4 @@ export default function IllustrationsPage() {
     </div>
   );
 }
+import { APP_BASENAME } from '../../../data/config/app';

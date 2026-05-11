@@ -21,6 +21,9 @@ import KimoLoginPage from './pages/Kimo/LoginPage';
 import DataPage from './pages/Kimo/Admin/DataPage';
 import PendientePage from './pages/Kimo/Admin/PendientePage';
 import AddProjectPage from './pages/Kimo/Admin/AddProjectPage';
+import AddBookPage from './pages/Kimo/Admin/AddBookPage';
+import AddIllustrationPage from './pages/Kimo/Admin/AddIllustrationPage';
+import AddPlacePage from './pages/Kimo/Admin/AddPlacePage';
 import RecentWorksManagerPage from './pages/Kimo/Admin/RecentWorksManagerPage';
 import ResumeManagerPage from './pages/Kimo/Admin/ResumeManagerPage';
 import EditProjectPage from './pages/Kimo/Admin/EditProjectPage';
@@ -49,6 +52,9 @@ export default function App() {
               <Route path="data" element={<DataPage />} />
               <Route path="pendiente" element={<PendientePage />} />
               <Route path="add-project" element={<AddProjectPage />} />
+              <Route path="add-book" element={<AddBookPage />} />
+              <Route path="add-illustration" element={<AddIllustrationPage />} />
+              <Route path="add-place" element={<AddPlacePage />} />
               <Route path="edit-project/:id" element={<EditProjectPage />} />
               <Route path="recent-works" element={<RecentWorksManagerPage />} />
               <Route path="resume" element={<ResumeManagerPage />} />

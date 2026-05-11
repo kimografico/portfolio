@@ -6,6 +6,7 @@
 const express = require('express');
 const multer = require('multer');
 const uploadController = require('../controllers/uploadController.cjs');
+const requireKimoAuth = require('../middleware/kimoAuth.cjs');
 
 const router = express.Router();
 
@@ -37,7 +38,7 @@ const upload = multer({
  * Campo del formulario: "images" (array de archivos)
  * Campos de texto: type, category, title
  */
-router.post('/', upload.array('images', 20), async (req, res, next) => {
+router.post('/', requireKimoAuth, upload.array('images', 20), async (req, res, next) => {
   try {
     await uploadController.uploadImages(req, res);
   } catch (error) {

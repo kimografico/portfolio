@@ -1,7 +1,9 @@
+import UIButton from '../../../components/ui/UIButton';
 import PlacesTable from './PlacesTable';
 import VisitedWorldMap from '../../../components/compositions/VisitedWorldMap';
 import places from '../../../data/kimo/places.json';
 import markers from '../../../data/kimo/places_markers.json';
+import { isKimoAuthenticated } from '../../../lib/kimoAuth';
 
 /**
  * Página de lugares visitados: muestra mapa y tabla
@@ -19,6 +21,17 @@ export default function PlacesPage() {
   const countries = getUniqueCountries();
   return (
     <section data-id="places-page" className="flex flex-col gap-8">
+      <div className="flex items-center justify-between gap-4">
+        <div>
+          <h2 className="text-xl font-semibold text-ink">Lugares visitados</h2>
+          <p className="text-sm text-muted">Mapa con marcadores y tabla de viajes.</p>
+        </div>
+        {isKimoAuthenticated() && (
+          <UIButton href={`${APP_BASENAME}/kimo/add-place`} dataId="places-add-place-btn" arrow>
+            Añadir lugar
+          </UIButton>
+        )}
+      </div>
       {/* Mapa de países visitados */}
       <div data-id="places-map">
         <VisitedWorldMap highlightedCountries={countries} points={markers} height={500} />
@@ -29,3 +42,4 @@ export default function PlacesPage() {
     </section>
   );
 }
+import { APP_BASENAME } from '../../../data/config/app';

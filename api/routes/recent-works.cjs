@@ -7,10 +7,11 @@
 
 const express = require('express');
 const { getRecentWorks, updateRecentWorks } = require('../controllers/recentWorksController.cjs');
+const requireKimoAuth = require('../middleware/kimoAuth.cjs');
 
 const router = express.Router();
 
 router.get('/', getRecentWorks);
-router.put('/', updateRecentWorks);
+router.put('/', requireKimoAuth, updateRecentWorks);
 
 module.exports = router;
