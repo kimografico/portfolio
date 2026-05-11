@@ -50,6 +50,7 @@ const LanguageRow: FC<LanguageRowProps> = ({
           value={name}
           onChange={(e) => onNameChange(e.target.value)}
           className="rounded-md border border-border px-3 py-2 text-sm"
+          data-id={`${dataIdPrefix}-name-input`}
         />
       </label>
       <label className="flex flex-col gap-1 text-sm text-ink">
@@ -59,6 +60,7 @@ const LanguageRow: FC<LanguageRowProps> = ({
           value={level}
           onChange={(e) => onLevelChange(e.target.value)}
           className="rounded-md border border-border px-3 py-2 text-sm"
+          data-id={`${dataIdPrefix}-level-input`}
         />
       </label>
       <div className="resume-row-toggles">

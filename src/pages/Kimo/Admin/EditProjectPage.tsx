@@ -451,6 +451,7 @@ export default function EditProjectPage() {
             </label>
             <select
               id="ep-type"
+              data-id="edit-project-type"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               value={f.type}
               onChange={(e) => handleTypeChange(e.target.value as '' | 'gd' | 'dev')}
@@ -467,6 +468,7 @@ export default function EditProjectPage() {
             </label>
             <select
               id="ep-category"
+              data-id="edit-project-category"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent disabled:opacity-50"
               value={f.category}
               onChange={(e) => handleField('category', e.target.value)}
@@ -492,6 +494,7 @@ export default function EditProjectPage() {
             <input
               id="ep-title"
               type="text"
+              data-id="edit-project-title"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               value={f.title}
               onChange={(e) => handleField('title', e.target.value)}
@@ -506,6 +509,7 @@ export default function EditProjectPage() {
             <input
               id="ep-cliente"
               type="text"
+              data-id="edit-project-cliente"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               value={f.cliente}
               onChange={(e) => handleField('cliente', e.target.value)}
@@ -522,6 +526,7 @@ export default function EditProjectPage() {
           </label>
           <textarea
             id="ep-desc"
+            data-id="edit-project-desc"
             className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent resize-y"
             rows={4}
             value={f.descripcion}
@@ -538,6 +543,7 @@ export default function EditProjectPage() {
           <input
             id="ep-date"
             type="date"
+            data-id="edit-project-date"
             className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
             value={f.date}
             onChange={(e) => handleField('date', e.target.value)}
@@ -554,6 +560,7 @@ export default function EditProjectPage() {
                   type="button"
                   key={tech}
                   onClick={() => toggleStack(tech)}
+                  data-id={`edit-project-stack-${tech.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
                   className={`text-xs px-2 py-1 rounded border transition-colors ${
                     f.stack.includes(tech)
                       ? 'bg-accent text-white border-accent'
@@ -567,6 +574,7 @@ export default function EditProjectPage() {
             <div className="flex gap-2 mt-1">
               <input
                 type="text"
+                data-id="edit-project-stack-custom-input"
                 className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                 placeholder="Otra tecnología…"
                 onKeyDown={(e) => {
@@ -611,6 +619,7 @@ export default function EditProjectPage() {
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
                 className="text-xs text-accent hover:underline"
+                data-id="edit-project-select-files-btn"
               >
                 📁 Seleccionar archivos
               </button>
@@ -618,6 +627,7 @@ export default function EditProjectPage() {
                 type="button"
                 onClick={addImagen}
                 className="text-xs text-accent hover:underline"
+                data-id="edit-project-add-image-btn"
               >
                 + Añadir URL
               </button>
@@ -630,6 +640,7 @@ export default function EditProjectPage() {
             accept="image/*"
             multiple
             className="hidden"
+            data-id="edit-project-file-input"
             onChange={handleFileSelect}
           />
 
@@ -700,6 +711,7 @@ export default function EditProjectPage() {
                           <img
                             src={src}
                             alt={img.label || `Imagen ${i + 1}`}
+                            data-id={`edit-project-img-${i}`}
                             className="w-full h-full object-cover"
                             onError={() => setImgErrors((prev) => ({ ...prev, [i]: true }))}
                           />
@@ -720,6 +732,7 @@ export default function EditProjectPage() {
                 <div className="flex gap-2 w-full">
                   <input
                     type="text"
+                    data-id={`edit-project-image-url-${i}`}
                     className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                     placeholder="Nombre de archivo de la imagen"
                     value={img.image}
@@ -730,6 +743,7 @@ export default function EditProjectPage() {
                   />
                   <input
                     type="text"
+                    data-id={`edit-project-image-label-${i}`}
                     className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                     placeholder="Etiqueta"
                     value={img.label}
@@ -742,6 +756,7 @@ export default function EditProjectPage() {
                   <button
                     type="button"
                     onClick={() => removeImagen(i)}
+                    data-id={`edit-project-remove-image-btn-${i}`}
                     className="text-muted hover:text-red-500 transition-colors text-lg leading-none"
                     aria-label="Eliminar imagen"
                   >
@@ -761,6 +776,7 @@ export default function EditProjectPage() {
               type="button"
               onClick={() => addVideo()}
               className="text-xs text-accent hover:underline"
+              data-id="edit-project-add-video-btn"
             >
               + Añadir video
             </button>
@@ -770,6 +786,7 @@ export default function EditProjectPage() {
               <div key={i} className="flex gap-2">
                 <input
                   type="url"
+                  data-id={`edit-project-video-url-${i}`}
                   className="w-1/2  border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="URL del video"
                   value={v.image}
@@ -777,6 +794,7 @@ export default function EditProjectPage() {
                 />
                 <input
                   type="text"
+                  data-id={`edit-project-video-label-${i}`}
                   className="w-1/2  border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="Descripción"
                   value={v.label}
@@ -805,6 +823,7 @@ export default function EditProjectPage() {
               type="button"
               onClick={() => addExtras()}
               className="text-xs text-accent hover:underline"
+              data-id="edit-project-add-extra-btn"
             >
               + Añadir tarea
             </button>
@@ -814,6 +833,7 @@ export default function EditProjectPage() {
               <div key={i} className="flex gap-2">
                 <input
                   type="text"
+                  data-id={`edit-project-extra-${i}`}
                   className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="URL o texto extra"
                   value={ex}
@@ -839,6 +859,7 @@ export default function EditProjectPage() {
           <input
             id="ep-visible"
             type="checkbox"
+            data-id="edit-project-visible-toggle"
             className="w-4 h-4 accent-accent"
             checked={f.visible}
             onChange={(e) => handleField('visible', e.target.checked)}

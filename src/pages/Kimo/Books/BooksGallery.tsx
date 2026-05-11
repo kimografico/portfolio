@@ -37,6 +37,7 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
             <button
               key={book.id}
               className="book-cover"
+              data-id={`book-cover-${book.id}`}
               onClick={() => setSelected(book)}
               aria-label={`Ver detalles de ${book.title}`}
               title={book.title}

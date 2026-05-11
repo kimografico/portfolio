@@ -45,6 +45,7 @@ const SkillRow: FC<SkillRowProps> = ({
           value={name}
           onChange={(e) => onNameChange(e.target.value)}
           className="rounded-md border border-border px-3 py-2 text-sm"
+          data-id={`${dataIdPrefix}-name-input`}
         />
       </label>
       <div className="resume-row-toggles">

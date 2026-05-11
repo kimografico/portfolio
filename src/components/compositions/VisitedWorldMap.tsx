@@ -162,6 +162,7 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
         aria-pressed={antique}
         title="Alternar estilo antiguo/moderno"
         aria-label={antique ? 'Cambiar a estilo moderno' : 'Cambiar a estilo antiguo'}
+        data-id="visited-world-map-toggle"
       >
         {antique ? '⚓️' : '☠️'}
       </button>

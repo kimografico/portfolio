@@ -28,11 +28,19 @@ export const CategoryCard: FC<CategoryCardProps> = ({
   to,
   hoverColor = 'var(--color-accent)',
 }) => {
+  const dataId = `category-card-${title
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')}`;
+
   return (
     <Link
       to={to}
       className="category-card"
       style={{ '--hover-color': hoverColor } as React.CSSProperties}
+      data-id={dataId}
     >
       <span className="category-card__icon" aria-hidden="true">
         <Icon size={96} strokeWidth={0.75} className="" />

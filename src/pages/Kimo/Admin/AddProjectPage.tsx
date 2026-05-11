@@ -380,6 +380,7 @@ export default function AddProjectPage() {
             </label>
             <select
               id="ap-type"
+              data-id="add-project-type"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               value={form.type}
               onChange={(e) => handleTypeChange(e.target.value as '' | 'gd' | 'dev')}
@@ -396,6 +397,7 @@ export default function AddProjectPage() {
             </label>
             <select
               id="ap-category"
+              data-id="add-project-category"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent disabled:opacity-50"
               value={form.category}
               onChange={(e) => handleField('category', e.target.value)}
@@ -421,6 +423,7 @@ export default function AddProjectPage() {
             <input
               id="ap-title"
               type="text"
+              data-id="add-project-title"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               value={form.title}
               onChange={(e) => handleField('title', e.target.value)}
@@ -435,6 +438,7 @@ export default function AddProjectPage() {
             <input
               id="ap-cliente"
               type="text"
+              data-id="add-project-cliente"
               className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
               value={form.cliente}
               onChange={(e) => handleField('cliente', e.target.value)}
@@ -451,6 +455,7 @@ export default function AddProjectPage() {
           </label>
           <textarea
             id="ap-desc"
+            data-id="add-project-desc"
             className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent resize-y"
             rows={4}
             value={form.descripcion}
@@ -467,6 +472,7 @@ export default function AddProjectPage() {
           <input
             id="ap-date"
             type="date"
+            data-id="add-project-date"
             className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
             value={form.date}
             onChange={(e) => handleField('date', e.target.value)}
@@ -483,6 +489,7 @@ export default function AddProjectPage() {
                   type="button"
                   key={tech}
                   onClick={() => toggleStack(tech)}
+                  data-id={`add-project-stack-${tech.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
                   className={`text-xs px-2 py-1 rounded border transition-colors ${
                     form.stack.includes(tech)
                       ? 'bg-accent text-white border-accent'
@@ -497,6 +504,7 @@ export default function AddProjectPage() {
             <div className="flex gap-2 mt-1">
               <input
                 type="text"
+                data-id="add-project-stack-custom-input"
                 className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                 placeholder="Otra tecnología…"
                 onKeyDown={(e) => {
@@ -541,6 +549,7 @@ export default function AddProjectPage() {
                 type="button"
                 onClick={() => fileInputRef.current?.click()}
                 className="text-xs text-accent hover:underline"
+                data-id="add-project-select-files-btn"
               >
                 📁 Seleccionar archivos
               </button>
@@ -548,6 +557,7 @@ export default function AddProjectPage() {
                 type="button"
                 onClick={addImagen}
                 className="text-xs text-accent hover:underline"
+                data-id="add-project-add-image-btn"
               >
                 + Añadir URL
               </button>
@@ -561,6 +571,7 @@ export default function AddProjectPage() {
             accept="image/*"
             multiple
             className="hidden"
+            data-id="add-project-file-input"
             onChange={handleFileSelect}
           />
 
@@ -630,6 +641,7 @@ export default function AddProjectPage() {
                 <div className="flex-1 flex gap-2">
                   <input
                     type="text"
+                    data-id={`add-project-image-url-${i}`}
                     className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                     placeholder="URL de la imagen"
                     value={img.image}
@@ -640,6 +652,7 @@ export default function AddProjectPage() {
                   />
                   <input
                     type="text"
+                    data-id={`add-project-image-label-${i}`}
                     className="w-36 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                     placeholder="Etiqueta"
                     value={img.label}
@@ -653,6 +666,7 @@ export default function AddProjectPage() {
                   <button
                     type="button"
                     onClick={() => removeImagen(i)}
+                    data-id={`add-project-remove-image-btn-${i}`}
                     className="text-muted hover:text-red-500 transition-colors text-lg leading-none"
                     aria-label="Eliminar imagen"
                   >
@@ -672,6 +686,7 @@ export default function AddProjectPage() {
               type="button"
               onClick={() => addVideo()}
               className="text-xs text-accent hover:underline"
+              data-id="add-project-add-video-btn"
             >
               + Añadir video
             </button>
@@ -681,6 +696,7 @@ export default function AddProjectPage() {
               <div key={i} className="flex gap-2">
                 <input
                   type="url"
+                  data-id={`add-project-video-url-${i}`}
                   className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="URL del video"
                   value={v.image}
@@ -688,6 +704,7 @@ export default function AddProjectPage() {
                 />
                 <input
                   type="text"
+                  data-id={`add-project-video-label-${i}`}
                   className="w-36 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="Descripción"
                   value={v.label}
@@ -697,6 +714,7 @@ export default function AddProjectPage() {
                   <button
                     type="button"
                     onClick={() => removeVideo(i)}
+                    data-id={`add-project-remove-video-btn-${i}`}
                     className="text-muted hover:text-red-500 transition-colors text-lg leading-none pb-0.5"
                     aria-label="Eliminar video"
                   >
@@ -716,6 +734,7 @@ export default function AddProjectPage() {
               type="button"
               onClick={() => addExtras()}
               className="text-xs text-accent hover:underline"
+              data-id="add-project-add-extra-btn"
             >
               + Añadir link
             </button>
@@ -725,6 +744,7 @@ export default function AddProjectPage() {
               <div key={i} className="flex gap-2">
                 <input
                   type="text"
+                  data-id={`add-project-extra-${i}`}
                   className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
                   placeholder="URL o texto extra"
                   value={ex}
@@ -734,6 +754,7 @@ export default function AddProjectPage() {
                   <button
                     type="button"
                     onClick={() => removeExtras(i)}
+                    data-id={`add-project-remove-extra-btn-${i}`}
                     className="text-muted hover:text-red-500 transition-colors text-lg leading-none pb-0.5"
                     aria-label="Eliminar extra"
                   >
@@ -750,6 +771,7 @@ export default function AddProjectPage() {
           <input
             id="ap-visible"
             type="checkbox"
+            data-id="add-project-visible-toggle"
             className="w-4 h-4 accent-accent"
             checked={form.visible}
             onChange={(e) => handleField('visible', e.target.checked)}

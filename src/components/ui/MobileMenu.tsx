@@ -4,7 +4,7 @@ import type { MobileMenuProps } from '../../interfaces/ui';
 
 const ANIMATION_DURATION = 400;
 
-export default function MobileMenu({ navLinks }: MobileMenuProps) {
+export default function MobileMenu({ navLinks, dataId = 'main-menu-mobile' }: MobileMenuProps) {
   const [showMenu, setShowMenu] = useState(false);
   const [isEntering, setIsEntering] = useState(false);
   const [isExiting, setIsExiting] = useState(false);
@@ -50,7 +50,7 @@ export default function MobileMenu({ navLinks }: MobileMenuProps) {
   }, [showMenu, closeMenu]);
 
   return (
-    <div className="md:hidden" data-id="mobile-menu-wrapper">
+    <div className="md:hidden" data-id={dataId}>
       {/* Botón hamburguesa accesible */}
       <button
         type="button"
@@ -96,6 +96,7 @@ export default function MobileMenu({ navLinks }: MobileMenuProps) {
                     to={href}
                     className="block px-6 py-5 text-2xl text-ink text-center hover:text-accent transition-colors duration-150"
                     onClick={closeMenu}
+                    data-id={`mobile-menu-link-${href.replace(/^\//, '').replace(/\//g, '-')}`}
                   >
                     {label}
                   </Link>
@@ -106,7 +107,10 @@ export default function MobileMenu({ navLinks }: MobileMenuProps) {
                     aria-hidden="true"
                     className="w-full flex justify-center"
                   >
-                    <hr className="w-3/4 border-t border-muted opacity-80 my-2" />
+                    <hr
+                      className="w-3/4 border-t border-muted opacity-80 my-2"
+                      data-id={`mobile-menu-divider-${idx}`}
+                    />
                   </li>
                 )}
               </Fragment>

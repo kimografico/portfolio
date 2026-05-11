@@ -14,6 +14,7 @@ export default function MainFooter() {
               <li key={href}>
                 <Link
                   to={href}
+                  data-id="footer-personal-link"
                   className="text-xl text-muted hover:text-ink transition-colors duration-150 flex items-center"
                   aria-label="Ir al espacio personal"
                 >

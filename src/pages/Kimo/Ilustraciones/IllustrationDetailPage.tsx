@@ -44,7 +44,7 @@ export default function IllustrationDetailPage() {
   return (
     <div className="flex flex-col gap-8">
       {/* Cabecera con volver y navegación */}
-      <section data-id="header">
+      <section data-id="illustration-detail-header">
         <div className="max-w-7xl mx-auto pt-6 flex items-center justify-between gap-4">
           {/* Botón volver */}
           <UIButton
@@ -65,7 +65,7 @@ export default function IllustrationDetailPage() {
         </div>
       </section>
       {/* Información */}
-      <section className="border-b border-border" data-id="info">
+      <section className="border-b border-border" data-id="illustration-detail-info">
         <div className="max-w-7xl mx-auto pb-6">
           <div className="grid grid-cols-1 gap-12 md:gap-20">
             {/* Metadatos */}
@@ -113,7 +113,7 @@ export default function IllustrationDetailPage() {
       </section>
 
       {/* Imagen principal */}
-      <section className="border-b border-border" data-id="main-image">
+      <section className="border-b border-border" data-id="illustration-main-image-section">
         <div className="max-w-7xl mx-auto py-12">
           <button
             type="button"
@@ -153,7 +153,7 @@ export default function IllustrationDetailPage() {
 
       {/* Imágenes extra */}
       {illustration!.imagenesExtra && illustration!.imagenesExtra.length > 0 && (
-        <section className="border-b border-border" data-id="extra-images">
+        <section className="border-b border-border" data-id="illustration-extra-images-section">
           <div className="max-w-7xl mx-auto py-16 md:py-20">
             <h3 className="font-mono text-xs tracking-widest uppercase text-muted mb-12">
               Proceso y detalles
@@ -190,7 +190,7 @@ export default function IllustrationDetailPage() {
 
       {/* Lightbox de imagen ampliada */}
       {lightboxImg && (
-        <div data-id="lightbox">
+        <div data-id="illustration-lightbox">
           <ImageLightbox
             open={lightboxOpen}
             src={lightboxImg.src}

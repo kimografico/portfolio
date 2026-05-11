@@ -5,7 +5,7 @@ import MainFooter from './MainFooter';
 export default function MainLayout() {
   return (
     <div className="min-h-screen flex flex-col">
-      <a href="#main-content" className="skip-link">
+      <a href="#main-content" className="skip-link" data-id="skip-to-content-link">
         Saltar al contenido principal
       </a>
       <MainHeader />

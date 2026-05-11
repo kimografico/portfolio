@@ -60,6 +60,7 @@ const EducationRow: FC<EducationRowProps> = ({
           value={degree}
           onChange={(e) => onDegreeChange(e.target.value)}
           className="rounded-md border border-border px-3 py-2 text-sm"
+          data-id={`${dataIdPrefix}-degree-input`}
         />
       </label>
       <label className="flex flex-col gap-1 text-sm text-ink">
@@ -69,6 +70,7 @@ const EducationRow: FC<EducationRowProps> = ({
           value={institution}
           onChange={(e) => onInstitutionChange(e.target.value)}
           className="rounded-md border border-border px-3 py-2 text-sm"
+          data-id={`${dataIdPrefix}-institution-input`}
         />
       </label>
       <label className="flex flex-col gap-1 text-sm text-ink">
@@ -77,6 +79,7 @@ const EducationRow: FC<EducationRowProps> = ({
           value={start}
           onChange={(e) => onStartChange(e.target.value)}
           className="rounded-md border border-border px-3 py-2 text-sm"
+          data-id={`${dataIdPrefix}-start-select`}
         >
           {yearOptions.map((option) => (
             <option key={option} value={option}>
@@ -91,6 +94,7 @@ const EducationRow: FC<EducationRowProps> = ({
           value={end}
           onChange={(e) => onEndChange(e.target.value)}
           className="rounded-md border border-border px-3 py-2 text-sm"
+          data-id={`${dataIdPrefix}-end-select`}
         >
           {yearOptions.map((option) => (
             <option key={option} value={option}>

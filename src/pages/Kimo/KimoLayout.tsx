@@ -29,6 +29,7 @@ export default function KimoLayout() {
           }
           end
           aria-label="Historial de lectura"
+          data-id="kimo-nav-books"
         >
           <IconBook className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Biblioteca</span>
@@ -39,6 +40,7 @@ export default function KimoLayout() {
             `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
           }
           aria-label="Lugares visitados"
+          data-id="kimo-nav-places"
         >
           <IconWorld className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Viajes</span>
@@ -49,6 +51,7 @@ export default function KimoLayout() {
             `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
           }
           aria-label="Ilustraciones"
+          data-id="kimo-nav-ilustraciones"
         >
           <IconBrush className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Ilustraciones</span>
@@ -59,6 +62,7 @@ export default function KimoLayout() {
             `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
           }
           aria-label="Iconos"
+          data-id="kimo-nav-iconos"
         >
           <IconSpots className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Iconos</span>
@@ -69,6 +73,7 @@ export default function KimoLayout() {
             `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
           }
           aria-label="Curriculum"
+          data-id="kimo-nav-resume"
         >
           <IconFile className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Curriculum</span>
@@ -79,6 +84,7 @@ export default function KimoLayout() {
             `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
           }
           aria-label="Datos"
+          data-id="kimo-nav-data"
         >
           <IconTable className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Proyectos</span>

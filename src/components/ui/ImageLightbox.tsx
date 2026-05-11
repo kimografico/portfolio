@@ -143,11 +143,18 @@ export default function ImageLightbox({ open, src, alt, onClose, dataId }: Image
         }}
       >
         <div className="imagelightbox-imgwrap">
-          <img src={src} alt={alt} className="imagelightbox-image" draggable={false} />
+          <img
+            src={src}
+            alt={alt}
+            className="imagelightbox-image"
+            draggable={false}
+            data-id="image-lightbox-image"
+          />
           <button
             onClick={handleClose}
             className="modal-close imagelightbox-close"
             aria-label="Cerrar vista ampliada"
+            data-id="image-lightbox-close-btn"
           >
             <IconClose size={24} strokeWidth={1} color="var(--color-muted)" />
           </button>

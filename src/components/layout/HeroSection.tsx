@@ -61,9 +61,15 @@ export default function HeroSection({
       )}
 
       {/* CAPA z-[10]: Contenido de texto, siempre por encima de todo lo decorativo */}
-      <div className={`relative z-[10] max-w-7xl mx-auto px-6 md:px-12 ${paddingClass}`}>
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-end">
-          <div className="animate-fade-up">
+      <div
+        className={`relative z-[10] max-w-7xl mx-auto px-6 md:px-12 ${paddingClass}`}
+        data-id="hero-content-wrapper"
+      >
+        <div
+          className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-end"
+          data-id="hero-content-grid"
+        >
+          <div className="animate-fade-up" data-id="hero-content-main">
             {label && (
               <p className="font-mono text-xs tracking-widest uppercase text-muted mb-10">
                 {label}
@@ -77,7 +83,7 @@ export default function HeroSection({
             </h1>
             <p className="text-base leading-relaxed text-muted max-w-[52ch] mb-12">{description}</p>
             {ctas.length > 0 && (
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4" data-id="hero-cta-btns">
                 {ctas.map((cta) => (
                   <UIButton key={cta.href} href={cta.href} arrow>
                     {cta.label}
@@ -88,7 +94,11 @@ export default function HeroSection({
           </div>
 
           {!image && decorator && (
-            <div className="hidden md:block select-none" aria-hidden="true">
+            <div
+              className="hidden md:block select-none"
+              aria-hidden="true"
+              data-id="hero-decorator-block"
+            >
               <span className="font-bold tracking-tighter leading-none text-[10rem] text-border">
                 {decorator}
               </span>

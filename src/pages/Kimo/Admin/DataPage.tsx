@@ -366,6 +366,7 @@ export default function DataPage() {
           </label>
           <select
             id="filter-type"
+            data-id="data-filter-type"
             className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
             value={filterType}
             onChange={(e) => handleTypeChange(e.target.value)}
@@ -383,6 +384,7 @@ export default function DataPage() {
           </label>
           <select
             id="filter-category"
+            data-id="data-filter-category"
             className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
             value={filterCategory}
             onChange={(e) => handleCategoryChange(e.target.value)}
@@ -403,6 +405,7 @@ export default function DataPage() {
           </label>
           <select
             id="filter-cliente"
+            data-id="data-filter-cliente"
             className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
             value={filterCliente}
             onChange={(e) => setFilterCliente(e.target.value)}
@@ -426,6 +429,7 @@ export default function DataPage() {
           </label>
           <select
             id="filter-visibility"
+            data-id="data-filter-visibility"
             className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
             value={filterVisibility}
             onChange={(e) => setFilterVisibility(e.target.value as VisibilityFilter)}

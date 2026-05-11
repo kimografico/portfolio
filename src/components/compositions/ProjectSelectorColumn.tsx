@@ -58,6 +58,7 @@ const ProjectSelectorColumn: React.FC<ProjectSelectorColumnProps> = ({
                 type="checkbox"
                 checked={proj.isSelected}
                 onChange={() => onToggle(proj.id)}
+                data-id={`rw-project-toggle-${proj.id}`}
                 className={`w-4 h-4 ${accentClass}`}
               />
               <div className="flex-1">

@@ -72,11 +72,13 @@ function TextField({
   value,
   onChange,
   placeholder,
+  dataId,
 }: {
   label: string;
   value: string;
   onChange: (value: string) => void;
   placeholder?: string;
+  dataId?: string;
 }) {
   return (
     <label className="flex flex-col gap-1 text-sm text-ink">
@@ -87,6 +89,7 @@ function TextField({
         placeholder={placeholder}
         onChange={(e) => onChange(e.target.value)}
         className="rounded-md border border-border px-3 py-2 text-sm"
+        data-id={dataId}
       />
     </label>
   );
@@ -257,11 +260,13 @@ export default function ResumeManagerPage() {
             label="Nombre"
             value={resumeData.basics.name}
             onChange={(value) => updateBasicsField(setResumeData, 'name', value)}
+            dataId="resume-basics-name-input"
           />
           <TextField
             label="Web"
             value={resumeData.basics.website}
             onChange={(value) => updateBasicsField(setResumeData, 'website', value)}
+            dataId="resume-basics-website-input"
           />
         </div>
 
@@ -289,6 +294,7 @@ export default function ResumeManagerPage() {
             type="button"
             onClick={() => addSectionItem(setResumeData, 'skills', createEmptySkill())}
             className="self-start rounded-md border border-border px-3 py-1 text-sm font-medium hover:bg-bg"
+            data-id="resume-add-skills-btn"
           >
             + Añadir
           </button>
@@ -343,6 +349,7 @@ export default function ResumeManagerPage() {
             type="button"
             onClick={() => addSectionItem(setResumeData, 'software', createEmptySoftware())}
             className="self-start rounded-md border border-border px-3 py-1 text-sm font-medium hover:bg-bg"
+            data-id="resume-add-software-btn"
           >
             + Añadir
           </button>
@@ -397,6 +404,7 @@ export default function ResumeManagerPage() {
             type="button"
             onClick={() => addSectionItem(setResumeData, 'experience', createEmptyExperience())}
             className="self-start rounded-md border border-border px-3 py-1 text-sm font-medium hover:bg-bg"
+            data-id="resume-add-experience-btn"
           >
             + Añadir
           </button>
@@ -465,6 +473,7 @@ export default function ResumeManagerPage() {
             type="button"
             onClick={() => addSectionItem(setResumeData, 'education', createEmptyEducation())}
             className="self-start rounded-md border border-border px-3 py-1 text-sm font-medium hover:bg-bg"
+            data-id="resume-add-education-btn"
           >
             + Añadir
           </button>
@@ -526,6 +535,7 @@ export default function ResumeManagerPage() {
             type="button"
             onClick={() => addSectionItem(setResumeData, 'courses', createEmptyCourse())}
             className="self-start rounded-md border border-border px-3 py-1 text-sm font-medium hover:bg-bg"
+            data-id="resume-add-courses-btn"
           >
             + Añadir
           </button>
@@ -580,6 +590,7 @@ export default function ResumeManagerPage() {
             type="button"
             onClick={() => addSectionItem(setResumeData, 'workshops', createEmptyWorkshop())}
             className="self-start rounded-md border border-border px-3 py-1 text-sm font-medium hover:bg-bg"
+            data-id="resume-add-workshops-btn"
           >
             + Añadir
           </button>
@@ -627,6 +638,7 @@ export default function ResumeManagerPage() {
             type="button"
             onClick={() => addSectionItem(setResumeData, 'languages', createEmptyLanguage())}
             className="self-start rounded-md border border-border px-3 py-1 text-sm font-medium hover:bg-bg"
+            data-id="resume-add-languages-btn"
           >
             + Añadir
           </button>

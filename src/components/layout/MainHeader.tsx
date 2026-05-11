@@ -30,6 +30,7 @@ export default function MainHeader() {
                 <li key={href}>
                   <Link
                     to={href}
+                    data-id={`main-nav-link-${href.replace(/^\//, '').replace(/\//g, '-')}`}
                     className="text-sm text-muted hover:text-ink transition-colors duration-150"
                   >
                     {label}
@@ -89,7 +90,7 @@ export default function MainHeader() {
             )}
           </button>
           {/* Menú hamburguesa móvil */}
-          <MobileMenu navLinks={NAV_LINKS} data-id="main-menu-mobile" />
+          <MobileMenu navLinks={NAV_LINKS} dataId="main-menu-mobile" />
         </div>
       </div>
     </header>

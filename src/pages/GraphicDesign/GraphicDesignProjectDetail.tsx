@@ -206,6 +206,7 @@ export default function GraphicDesignProjectDetail() {
                     <button
                       type="button"
                       className="bg-surface rounded overflow-hidden border border-border focus:outline-none focus:ring-2 focus:ring-primary"
+                      data-id={`graphic-design-image-btn-${i}`}
                       onClick={() => handleOpenLightbox(fullImagePath, img.label || project.title)}
                       aria-label={`Ampliar: ${img.label || project.title}`}
                     >

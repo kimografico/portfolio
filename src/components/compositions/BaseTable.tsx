@@ -95,6 +95,7 @@ export default function BaseTable<T extends object, TValue = unknown>({
                         type="button"
                         className="table-header-button"
                         onClick={header.column.getToggleSortingHandler()}
+                        data-id={`table-sort-btn-${header.id}`}
                       >
                         <span className="table-header-label">
                           {flexRender(header.column.columnDef.header, header.getContext())}
@@ -126,6 +127,7 @@ export default function BaseTable<T extends object, TValue = unknown>({
               className={`table-row ${onRowClick ? 'table-row-interactive' : ''} ${rowClassName}`}
               onClick={() => onRowClick?.(row.original)}
               tabIndex={onRowClick ? 0 : -1}
+              data-id={onRowClick ? `table-row-${row.id}` : undefined}
               onKeyDown={(event) => {
                 if (!onRowClick) return;
                 if (event.key === 'Enter' || event.key === ' ') {

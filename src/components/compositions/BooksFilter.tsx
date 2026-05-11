@@ -75,6 +75,7 @@ export default function BooksFilter({ books, onFiltered }: BooksFilterProps) {
           placeholder="Buscar título..."
           value={filterTitle}
           onChange={(e) => setFilterTitle(e.target.value)}
+          data-id="books-filter-title-input"
         />
       </div>
       <div className="flex-1 min-w-[10rem] md:order-2 order-2 w-full md:w-auto">
@@ -91,6 +92,7 @@ export default function BooksFilter({ books, onFiltered }: BooksFilterProps) {
             setFilterSeries('');
             setFilterGenre('');
           }}
+          data-id="books-filter-author-select"
         >
           <option value="">Todos</option>
           {authorOptions.map((a) => (
@@ -114,6 +116,7 @@ export default function BooksFilter({ books, onFiltered }: BooksFilterProps) {
             setFilterAuthor('');
             setFilterGenre('');
           }}
+          data-id="books-filter-series-select"
         >
           <option value="">Todas</option>
           {seriesOptions.map((s) => (
@@ -137,6 +140,7 @@ export default function BooksFilter({ books, onFiltered }: BooksFilterProps) {
             setFilterAuthor('');
             setFilterSeries('');
           }}
+          data-id="books-filter-genre-select"
         >
           <option value="">Todos</option>
           {genreOptions.map((g) => (

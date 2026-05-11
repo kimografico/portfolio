@@ -7,4 +7,5 @@ export interface NavLink {
 
 export interface MobileMenuProps {
   navLinks: NavLink[];
+  dataId?: string;
 }

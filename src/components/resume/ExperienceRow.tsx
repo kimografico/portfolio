@@ -64,6 +64,7 @@ const ExperienceRow: FC<ExperienceRowProps> = ({
           value={role}
           onChange={(e) => onRoleChange(e.target.value)}
           className="rounded-md border border-border px-3 py-2 text-sm"
+          data-id={`${dataIdPrefix}-role-input`}
         />
       </label>
       <label className="flex flex-col gap-1 text-sm text-ink">
@@ -73,6 +74,7 @@ const ExperienceRow: FC<ExperienceRowProps> = ({
           value={company}
           onChange={(e) => onCompanyChange(e.target.value)}
           className="rounded-md border border-border px-3 py-2 text-sm"
+          data-id={`${dataIdPrefix}-company-input`}
         />
       </label>
       <label className="flex flex-col gap-1 text-sm text-ink">
@@ -81,6 +83,7 @@ const ExperienceRow: FC<ExperienceRowProps> = ({
           value={start}
           onChange={(e) => onStartChange(e.target.value)}
           className="rounded-md border border-border px-3 py-2 text-sm"
+          data-id={`${dataIdPrefix}-start-select`}
         >
           {yearOptions.map((option) => (
             <option key={option} value={option}>
@@ -95,6 +98,7 @@ const ExperienceRow: FC<ExperienceRowProps> = ({
           value={end}
           onChange={(e) => onEndChange(e.target.value)}
           className="rounded-md border border-border px-3 py-2 text-sm"
+          data-id={`${dataIdPrefix}-end-select`}
         >
           {yearOptions.map((option) => (
             <option key={option} value={option}>
@@ -110,6 +114,7 @@ const ExperienceRow: FC<ExperienceRowProps> = ({
           onChange={(e) => onDescriptionChange(e.target.value)}
           rows={4}
           className="rounded-md border border-border px-3 py-2 text-sm"
+          data-id={`${dataIdPrefix}-description-textarea`}
         />
       </label>
       <div className="resume-row-toggles md:col-span-2">

@@ -16,13 +16,14 @@ export default function PrevNextBtns({
   disabledNext = false,
 }: PrevNextBtnsProps) {
   return (
-    <div className="flex gap-2 ml-auto">
+    <div className="flex gap-2 ml-auto" data-id="prev-next-btns-wrapper">
       <button
         type="button"
         aria-label="Anterior ilustración"
         disabled={disabledPrev}
         onClick={onPrev}
         className={`w-10 h-10 aspect-square rounded-full flex items-center justify-center transition-colors duration-150 border border-border text-lg ${disabledPrev ? 'opacity-20 cursor-not-allowed' : 'hover:bg-accent/10 text-accent'}`}
+        data-id="prev-btn"
       >
         {/* Flecha izquierda SVG */}
         <svg
@@ -47,6 +48,7 @@ export default function PrevNextBtns({
         disabled={disabledNext}
         onClick={onNext}
         className={`w-10 h-10 aspect-square rounded-full flex items-center justify-center transition-colors duration-150 border border-border text-lg ${disabledNext ? 'opacity-20 cursor-not-allowed' : 'hover:bg-accent/10 text-accent'}`}
+        data-id="next-btn"
       >
         {/* Flecha derecha SVG */}
         <svg

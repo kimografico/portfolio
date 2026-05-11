@@ -22,6 +22,7 @@ export default function BasicsAreaFields({ area, data, onFieldChange }: BasicsAr
           value={data.title}
           onChange={(e) => onFieldChange('title', e.target.value)}
           className="rounded-md border border-border px-3 py-2 text-sm"
+          data-id={`basics-${area}-title-input`}
         />
       </label>
       <label className="flex flex-col gap-1 text-sm text-ink">
@@ -31,6 +32,7 @@ export default function BasicsAreaFields({ area, data, onFieldChange }: BasicsAr
           onChange={(e) => onFieldChange('summary', e.target.value)}
           className="rounded-md border border-border px-3 py-2 text-sm"
           rows={4}
+          data-id={`basics-${area}-summary-textarea`}
         />
       </label>
       <label className="flex flex-col gap-1 text-sm text-ink">
@@ -40,6 +42,7 @@ export default function BasicsAreaFields({ area, data, onFieldChange }: BasicsAr
           onChange={(e) => onFieldChange('additionalInfo', e.target.value)}
           className="rounded-md border border-border px-3 py-2 text-sm"
           rows={5}
+          data-id={`basics-${area}-additional-info-textarea`}
         />
       </label>
     </div>

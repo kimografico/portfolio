@@ -73,6 +73,8 @@ export const ProjectCard = <T extends BaseProject>({
       to={to}
       className="group flex flex-col bg-surface rounded-xl overflow-hidden border border-border hover:shadow-lg transition-shadow focus:outline-none focus:ring-2 focus:ring-primary"
       data-id={dataId}
+      tabIndex={0}
+      data-id-link={dataId}
     >
       {/* Thumbnail */}
       {thumbnail && (
@@ -91,7 +93,7 @@ export const ProjectCard = <T extends BaseProject>({
       )}
 
       {/* Info */}
-      <div className="p-4 flex flex-col gap-1">
+      <div className="p-4 flex flex-col gap-1" data-id={`${dataId}-info`}>
         <h2 className="text-sm font-semibold text-ink group-hover:text-primary transition-colors line-clamp-2 leading-tight">
           {project.title}
         </h2>

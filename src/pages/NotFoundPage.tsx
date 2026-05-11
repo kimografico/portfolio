@@ -26,7 +26,7 @@ export default function NotFoundPage() {
               La página que buscas no existe o ha sido movida. Si llegaste aquí desde un enlace,
               puede que esté desactualizado.
             </p>
-            <UIButton onClick={() => navigate('/')} link arrowBack dataId="notfound-back-home">
+            <UIButton onClick={() => navigate('/')} link arrowBack data-id="notfound-back-home">
               Volver al inicio
             </UIButton>
           </div>

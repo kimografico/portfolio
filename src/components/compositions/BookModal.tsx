@@ -136,6 +136,7 @@ function BookModal({ book, onClose }: BookModalProps) {
         style={{
           transitionDuration: `${OVERLAY_DURATION}ms`,
         }}
+        data-id="book-modal-overlay"
       />
       {/* Modal animada: fade+scale */}
       <div
@@ -146,9 +147,15 @@ function BookModal({ book, onClose }: BookModalProps) {
         style={{
           transitionDuration: `${MODAL_DURATION}ms`,
         }}
+        data-id="book-modal-content"
       >
         {/* Botón cerrar */}
-        <button onClick={handleClose} className="modal-close" aria-label="Cerrar modal">
+        <button
+          onClick={handleClose}
+          className="modal-close"
+          aria-label="Cerrar modal"
+          data-id="book-modal-close-btn"
+        >
           <IconClose size={24} strokeWidth={1} color="var(--color-muted)" />
         </button>
         {/* Portada */}
@@ -167,14 +174,17 @@ function BookModal({ book, onClose }: BookModalProps) {
             const blankImage = `${import.meta.env.VITE_BOOK_COVERS_PATH}/_blank.jpg`;
             if (target.src !== blankImage) target.src = blankImage;
           }}
+          data-id="book-modal-cover"
         />
         {/* Info */}
         <h2 id="book-modal-title" className="modal-title">
           {book.title}
         </h2>
-        <div className="modal-author">{book.author}</div>
-        <div className="modal-info">
-          <div>
+        <div className="modal-author" data-id="book-modal-author">
+          {book.author}
+        </div>
+        <div className="modal-info" data-id="book-modal-info">
+          <div data-id="book-modal-reading-date">
             <span className="modal-label">Fecha de lectura:</span>{' '}
             {book.dateRead && book.dateRead.trim() !== ''
               ? formatYearMonth(book.dateRead.trim())
@@ -182,16 +192,16 @@ function BookModal({ book, onClose }: BookModalProps) {
             {getFlag(book.language) && <span className="ml-1">{getFlag(book.language)}</span>}
           </div>
           {book.series && book.series.trim() !== '' && (
-            <div>
+            <div data-id="book-modal-series">
               <span className="modal-label">Serie:</span> {book.series}
             </div>
           )}
-          <div>
+          <div data-id="book-modal-genre">
             <span className="modal-label">Género:</span> {book.genre}
           </div>
           <hr />
           {book.synopsis && (
-            <div>
+            <div data-id="book-modal-synopsis">
               <span className="modal-label">Sinopsis:</span> {book.synopsis}
             </div>
           )}
