@@ -6,6 +6,16 @@ import EditableFieldList, {
 const meta = {
   title: 'Compositions/EditableFieldList',
   component: EditableFieldList,
+  parameters: {
+    // Oculta props irrelevantes en la UI de Storybook
+    controls: { expanded: true },
+  },
+  argTypes: {
+    onChange: { table: { disable: true } },
+    onAdd: { table: { disable: true } },
+    onRemove: { table: { disable: true } },
+    dataIdBase: { table: { disable: true } },
+  },
 };
 
 export default meta;

@@ -4,6 +4,14 @@ import TechStackTags from '../../compositions/TechStackTags';
 const meta = {
   title: 'Compositions/TechStackTags',
   component: TechStackTags,
+  parameters: {
+    controls: { expanded: true },
+  },
+  argTypes: {
+    onToggle: { table: { disable: true } },
+    onAddCustom: { table: { disable: true } },
+    dataIdBase: { table: { disable: true } },
+  },
 };
 export default meta;
 
