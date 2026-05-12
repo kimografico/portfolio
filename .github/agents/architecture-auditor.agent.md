@@ -1,7 +1,7 @@
 ---
 name: Architecture Auditor
 description: Audita la arquitectura del proyecto React, verificando separación de concerns, consistencia de patrones y estructura de carpetas.
-tools: ['search/codebase', 'read']
+tools: ['search/codebase', 'read/readFile', 'edit', 'edit/createFile']
 handoffs:
   - label: '→ Auditar Clean Code'
     agent: Clean Code Auditor

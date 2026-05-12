@@ -1,7 +1,7 @@
 ---
 name: Performance Auditor
 description: Audita el rendimiento del proyecto React, buscando renders innecesarios, carga perezosa ausente, imports pesados y problemas de optimización.
-tools: ['search/codebase', 'read']
+tools: ['search/codebase', 'read/readFile', 'edit', 'edit/createFile']
 handoffs:
   - label: '→ Auditar Accesibilidad'
     agent: Accessibility Auditor

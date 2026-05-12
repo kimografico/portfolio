@@ -1,7 +1,7 @@
 ---
 name: Clean Code Auditor
 description: Audita el proyecto en busca de problemas de Clean Code, principios SOLID y calidad de TypeScript.
-tools: ['search/codebase', 'read']
+tools: ['search/codebase', 'read/readFile', 'edit', 'edit/createFile']
 handoffs:
   - label: '→ Auditar Rendimiento'
     agent: Performance Auditor

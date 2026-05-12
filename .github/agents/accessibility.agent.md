@@ -5,8 +5,8 @@ description: >
   Use when: auditing a component or page for a11y, fixing keyboard navigation, checking screen reader compatibility, or asking if something is accessible.
   Triggers: "accesibilidad", "a11y", "accesible", "lector de pantalla", "teclado", "contraste",
   "aria", "wcag", "audita la accesibilidad", "es accesible", "foco", "navegación por teclado".
-tools: [read, edit, search, execute]
-argument-hint: "Indica qué componente, página o área quieres auditar. Puedes pedir auditoría completa o enfocada en un aspecto (contraste, teclado, ARIA...)."
+tools: [read, edit, search, execute, search/codebase, edit/createFile]
+argument-hint: 'Indica qué componente, página o área quieres auditar. Puedes pedir auditoría completa o enfocada en un aspecto (contraste, teclado, ARIA...).'
 ---
 
 # Accessibility Agent — kimografico
