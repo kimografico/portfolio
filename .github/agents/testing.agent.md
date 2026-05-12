@@ -5,8 +5,39 @@ description: >
   Use when: creating tests, checking coverage, debugging failing tests, or reviewing test quality.
   Triggers: "escribe tests", "crea un test", "test de", "cobertura", "test falla", "qué testear",
   "tests para", "verifica los tests", "suite de tests", "test unitario", "test de integración".
+
+  All tests must be created inside the `/tests` folder, never next to the component.
+
+  The `/tests` folder is organized by:
+    - Type of entity: `components`, `pages`, `hooks`, `utils`, etc.
+    - Type of test: `unit`, `integration`, `e2e` (as subfolders inside each entity type)
+
+  Example structure:
+
+  /tests
+    /components
+      /unit
+        BooksTable.test.tsx
+      /integration
+        BooksTable.integration.test.tsx
+    /pages
+      /unit
+        HomePage.test.tsx
+      /integration
+        App.integration.test.tsx
+    /hooks
+      /unit
+        useTheme.test.ts
+    /utils
+      /unit
+        slugify.test.ts
+    /e2e
+      login-flow.test.ts
+      add-book-flow.test.ts
+
+  Always follow this structure when creating or migrating tests.
 tools: [read, edit, search, execute, todo]
-argument-hint: "Describe qué quieres testear o qué problema tienes con los tests existentes."
+argument-hint: 'Describe qué quieres testear o qué problema tienes con los tests existentes.'
 ---
 
 # Testing Agent — kimografico
