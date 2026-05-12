@@ -3,14 +3,14 @@
 export interface Skill {
   id: string;
   name: string;
-  category: 'design' | 'development' | string[];
+  category: 'design' | 'development' | string | string[];
   hide?: boolean;
 }
 
 export interface Software {
   id: string;
   name: string;
-  category: 'design' | 'development' | string[];
+  category: 'design' | 'development' | string | string[];
   hide?: boolean;
 }
 

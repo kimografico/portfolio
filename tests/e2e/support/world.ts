@@ -8,7 +8,7 @@ class CustomWorld extends World {
 
   page: import('playwright').Page | undefined;
 
-  constructor(options: import('@cucumber/cucumber').WorldOptions) {
+  constructor(options: import('@cucumber/cucumber').IWorldOptions) {
     super(options);
     this.browser = undefined;
     this.context = undefined;
