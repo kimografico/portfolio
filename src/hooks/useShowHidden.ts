@@ -2,6 +2,17 @@ import { useState } from 'react';
 
 const STORAGE_KEY = 'kimo-show-hidden';
 
+const isBrowser = (): boolean =>
+  typeof window !== 'undefined' && typeof localStorage !== 'undefined';
+
+function getStoredShowHidden(): boolean {
+  if (!isBrowser()) {
+    return false;
+  }
+
+  return localStorage.getItem(STORAGE_KEY) === 'true';
+}
+
 /**
  * Hook para gestionar la preferencia "mostrar proyectos ocultos".
  *
@@ -12,12 +23,12 @@ const STORAGE_KEY = 'kimo-show-hidden';
  * @returns [showHidden, setShowHidden]
  */
 export function useShowHidden(): [boolean, (value: boolean) => void] {
-  const [showHidden, setShowHiddenState] = useState<boolean>(
-    () => localStorage.getItem(STORAGE_KEY) === 'true',
-  );
+  const [showHidden, setShowHiddenState] = useState<boolean>(getStoredShowHidden);
 
   function setShowHidden(value: boolean) {
-    localStorage.setItem(STORAGE_KEY, String(value));
+    if (isBrowser()) {
+      localStorage.setItem(STORAGE_KEY, String(value));
+    }
     setShowHiddenState(value);
   }
 

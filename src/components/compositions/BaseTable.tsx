@@ -52,9 +52,11 @@ export default function BaseTable<T extends object, TValue = unknown>({
     columns,
     state: { sorting },
     onSortingChange: (updater) => {
-      const newSorting = typeof updater === 'function' ? updater(sorting) : updater;
-      setSorting(newSorting);
-      onSortingChange?.(newSorting);
+      setSorting((currentSorting) => {
+        const newSorting = typeof updater === 'function' ? updater(currentSorting) : updater;
+        onSortingChange?.(newSorting);
+        return newSorting;
+      });
     },
     // Desactiva el tercer estado "sin ordenar": al hacer clic alterna solo entre asc y desc
     enableSortingRemoval: false,

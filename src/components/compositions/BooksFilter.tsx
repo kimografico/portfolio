@@ -2,6 +2,73 @@ import { useState, useEffect, useMemo } from 'react';
 import type { Book } from '../../types';
 import type { BooksFilterProps } from '../../interfaces/books';
 
+function buildAuthorCounts(books: Book[]): Record<string, number> {
+  const counts: Record<string, number> = {};
+
+  books.forEach((book) => {
+    if (book.author) {
+      counts[book.author] = (counts[book.author] ?? 0) + 1;
+    }
+  });
+
+  return counts;
+}
+
+function getUniqueSortedValues(books: Book[], key: 'series' | 'genre'): string[] {
+  const values = new Set<string>();
+
+  books.forEach((book) => {
+    const value = book[key];
+    if (value) {
+      values.add(value);
+    }
+  });
+
+  return Array.from(values).sort();
+}
+
+function getAuthorOptions(books: Book[]): string[] {
+  const counts = buildAuthorCounts(books);
+  const frequentAuthors = Object.entries(counts)
+    .filter(([, count]) => count > 1)
+    .map(([author]) => author)
+    .sort();
+
+  if (Object.values(counts).some((count) => count === 1)) {
+    frequentAuthors.push('OTROS');
+  }
+
+  return frequentAuthors;
+}
+
+function filterBooks(
+  books: Book[],
+  filterTitle: string,
+  filterAuthor: string,
+  filterSeries: string,
+  filterGenre: string,
+): Book[] {
+  const normalizedTitle = filterTitle.trim().toLowerCase();
+  const authorCounts = buildAuthorCounts(books);
+
+  return books.filter((book) => {
+    const matchesTitle =
+      normalizedTitle === '' || book.title.toLowerCase().includes(normalizedTitle);
+
+    const matchesAuthor =
+      filterAuthor === ''
+        ? true
+        : filterAuthor === 'OTROS'
+          ? authorCounts[book.author] === 1
+          : book.author === filterAuthor;
+
+    const matchesSeries = filterSeries === '' || book.series === filterSeries;
+    const matchesGenre = filterGenre === '' || book.genre === filterGenre;
+
+    return matchesTitle && matchesAuthor && matchesSeries && matchesGenre;
+  });
+}
+
 /**
  * Filtros reutilizables para libros: título, autor, serie y género.
  * Controlado por el padre para máxima flexibilidad.
@@ -13,53 +80,12 @@ export default function BooksFilter({ books, onFiltered }: BooksFilterProps) {
   const [filterGenre, setFilterGenre] = useState('');
 
   useEffect(() => {
-    // Lógica de filtrado movida aquí
-    const filtered = books.filter((b) => {
-      const matchesTitle =
-        filterTitle.trim() === '' ||
-        b.title.toLowerCase().includes(filterTitle.trim().toLowerCase());
-      let matchesAuthor = filterAuthor === '' || b.author === filterAuthor;
-      if (filterAuthor === 'OTROS') {
-        // Solo autores que aparecen una vez
-        const count: Record<string, number> = {};
-        books.forEach((book) => {
-          if (book.author) count[book.author] = (count[book.author] || 0) + 1;
-        });
-        matchesAuthor = count[b.author] === 1;
-      }
-      const matchesSeries = filterSeries === '' || b.series === filterSeries;
-      const matchesGenre = filterGenre === '' || b.genre === filterGenre;
-      return matchesTitle && matchesAuthor && matchesSeries && matchesGenre;
-    });
-    onFiltered(filtered);
+    onFiltered(filterBooks(books, filterTitle, filterAuthor, filterSeries, filterGenre));
   }, [books, filterTitle, filterAuthor, filterSeries, filterGenre, onFiltered]);
 
-  function getAuthorOptions(books: Book[]): string[] {
-    const count: Record<string, number> = {};
-    books.forEach((b) => {
-      if (b.author) count[b.author] = (count[b.author] || 0) + 1;
-    });
-    const frequent = Object.entries(count)
-      .filter(([_, n]) => n > 1)
-      .map(([a]) => a)
-      .sort();
-    if (Object.entries(count).some(([_, n]) => n === 1)) {
-      frequent.push('OTROS');
-    }
-    return frequent;
-  }
-
   const authorOptions = useMemo(() => getAuthorOptions(books), [books]);
-  const seriesOptions = useMemo(() => {
-    const set = new Set<string>();
-    books.forEach((b) => b.series && set.add(b.series));
-    return Array.from(set).sort();
-  }, [books]);
-  const genreOptions = useMemo(() => {
-    const set = new Set<string>();
-    books.forEach((b) => b.genre && set.add(b.genre));
-    return Array.from(set).sort();
-  }, [books]);
+  const seriesOptions = useMemo(() => getUniqueSortedValues(books, 'series'), [books]);
+  const genreOptions = useMemo(() => getUniqueSortedValues(books, 'genre'), [books]);
 
   return (
     <div className="flex flex-wrap gap-4 w-full mb-10 items-end" data-id="books-filter-wrapper">

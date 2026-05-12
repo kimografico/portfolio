@@ -16,8 +16,6 @@ const meta = {
       control: 'text',
     },
     dataId: { table: { disable: true } },
-    IconFallback: { table: { disable: true } },
-    buildImagePath: { table: { disable: true } },
   },
 } satisfies Meta<typeof EmptyState>;
 

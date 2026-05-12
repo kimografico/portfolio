@@ -1,8 +1,12 @@
-import React, { useRef, useState, useEffect } from 'react';
+import type { VisitedWorldMapProps } from '../../interfaces/map';
+import { useEffect, useRef, useState } from 'react';
 import 'jsvectormap';
 import 'jsvectormap/dist/maps/world.js';
+
 // Paleta única para el mapa (azul o imagen de fondo)
-const UI_IMG_PATH = import.meta.env.VITE_UI_IMG_PATH;
+const UI_IMG_PATH =
+  import.meta.env.VITE_UI_IMG_PATH?.trim() || `${import.meta.env.BASE_URL}images/ui`;
+
 const mapColors = {
   ocean: 'var(--color-bg-map)',
   oceanImage: `url(${UI_IMG_PATH}/map-bg.jpg)`,
@@ -14,7 +18,50 @@ const mapColors = {
   markerHover: 'yellow',
   border: 'var(--color-border)',
 };
-import type { VisitedWorldMapProps } from '../../interfaces/map';
+
+type JsVectorMapInstance = {
+  destroy?: () => void;
+};
+
+function destroyMapInstance(instance: JsVectorMapInstance | null): void {
+  if (!instance || typeof instance.destroy !== 'function') {
+    return;
+  }
+
+  try {
+    instance.destroy();
+  } catch {
+    // Silencia error de doble dispose
+  }
+}
+
+function applyBackgroundMode(mapElement: HTMLDivElement, antique: boolean): void {
+  const svg = mapElement.querySelector('svg');
+
+  if (!svg) {
+    return;
+  }
+
+  svg.style.background = '';
+  svg.style.backgroundImage = '';
+  svg.style.backgroundSize = '';
+
+  if (antique) {
+    svg.style.backgroundImage = mapColors.oceanImage;
+    svg.style.backgroundSize = 'cover';
+
+    svg.querySelectorAll<SVGPathElement>('path[data-code]').forEach((path) => {
+      const fill = path.getAttribute('fill');
+      path.style.mixBlendMode = fill && fill !== mapColors.countryVisited ? 'multiply' : '';
+    });
+    return;
+  }
+
+  svg.style.background = mapColors.ocean;
+  svg.querySelectorAll<SVGPathElement>('path[data-code]').forEach((path) => {
+    path.style.mixBlendMode = '';
+  });
+}
 
 /**
  * Mapa vectorial minimalista de países visitados usando JVM.
@@ -23,34 +70,29 @@ import type { VisitedWorldMapProps } from '../../interfaces/map';
  * - Zoom nativo habilitado (botones, rueda, pinch)
  * - Accesible: role="img", aria-label
  */
-const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
+export default function VisitedWorldMap({
   height = 500,
   highlightedCountries,
   points,
-}) => {
+}: VisitedWorldMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
-  const mapInstance = useRef<Record<string, unknown> | null>(null);
-  // antique ahora solo alterna fondo azul/fondo imagen
+  const mapInstance = useRef<JsVectorMapInstance | null>(null);
   const [antique, setAntique] = useState(false);
 
   useEffect(() => {
     if (!mapRef.current) return;
-    // Limpia el mapa anterior si lo hay
-    if (mapInstance.current) {
-      // JVM puede lanzar error si destroy llama a dispose y ya está destruido
-      try {
-        const map = mapInstance.current as Record<string, unknown>;
-        if (typeof map.destroy === 'function') {
-          (map.destroy as () => void)();
-        }
-      } catch {
-        // Silencia error de doble dispose
-      }
-    }
-    // Inicializa JVM
+    let cancelled = false;
+    let styleTimeoutId: number | undefined;
 
-    import('jsvectormap').then(({ default: jsVectorMap }) => {
-      // Cambia aquí entre mapColors y mapAntique para el modo deseado
+    const initializeMap = async () => {
+      const { default: jsVectorMap } = await import('jsvectormap');
+
+      if (cancelled || !mapRef.current) {
+        return;
+      }
+
+      destroyMapInstance(mapInstance.current);
+
       mapInstance.current = new jsVectorMap({
         showTooltip: false,
         selector: mapRef.current,
@@ -89,51 +131,39 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
           },
         },
       });
-      // Forzar fondo imagen y blend multiply en países
-      setTimeout(() => {
+
+      styleTimeoutId = window.setTimeout(() => {
         if (mapRef.current) {
-          const svg = mapRef.current.querySelector('svg');
-          if (svg) {
-            // Limpia cualquier fondo previo
-            svg.style.background = '';
-            svg.style.backgroundImage = '';
-            svg.style.backgroundSize = '';
-            if (antique) {
-              svg.style.backgroundImage = mapColors.oceanImage;
-              svg.style.backgroundSize = 'cover';
-              // Aplica blend multiply a los países no seleccionados
-              svg
-                .querySelectorAll('path[data-code]:not([fill="' + mapColors.countryVisited + '"])')
-                .forEach((el) => {
-                  (el as SVGPathElement).style.mixBlendMode = 'multiply';
-                });
-            } else {
-              svg.style.background = mapColors.ocean;
-              svg.style.backgroundSize = '';
-              svg.querySelectorAll('path[data-code]').forEach((el) => {
-                (el as SVGPathElement).style.mixBlendMode = '';
-              });
-            }
-          }
+          applyBackgroundMode(mapRef.current, antique);
         }
       }, 0);
-    });
-
-    // Cleanup
-    return () => {
-      if (mapInstance.current) {
-        // JVM puede lanzar error si destroy llama a dispose y ya está destruido
-        try {
-          const map = mapInstance.current as Record<string, unknown>;
-          if (typeof map.destroy === 'function') {
-            (map.destroy as () => void)();
-          }
-        } catch {
-          // Silencia error de doble dispose
-        }
-      }
     };
-  }, [highlightedCountries, points, antique]);
+
+    void initializeMap();
+
+    return () => {
+      cancelled = true;
+
+      if (styleTimeoutId !== undefined) {
+        window.clearTimeout(styleTimeoutId);
+      }
+
+      destroyMapInstance(mapInstance.current);
+      mapInstance.current = null;
+    };
+  }, [highlightedCountries, points]);
+
+  useEffect(() => {
+    if (!mapRef.current) return;
+
+    const styleTimeoutId = window.setTimeout(() => {
+      applyBackgroundMode(mapRef.current as HTMLDivElement, antique);
+    }, 0);
+
+    return () => {
+      window.clearTimeout(styleTimeoutId);
+    };
+  }, [antique]);
 
   return (
     <div
@@ -168,6 +198,4 @@ const VisitedWorldMap: React.FC<VisitedWorldMapProps> = ({
       </button>
     </div>
   );
-};
-
-export default VisitedWorldMap;
+}

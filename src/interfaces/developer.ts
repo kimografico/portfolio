@@ -8,14 +8,14 @@ export interface DevVideo {
   label: string;
 }
 
-export interface WebProject {
-  id: number;
-  date: string;
-  title: string;
+import type { BaseProject } from '../components/ui/ProjectCard';
+
+export interface WebProject extends BaseProject {
   cliente: string;
   descripcion: string;
   stack: string[];
   imagenes: DevImage[];
   videos: DevVideo[];
   extras: string[];
+  [key: string]: unknown;
 }

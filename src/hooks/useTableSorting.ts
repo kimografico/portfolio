@@ -19,8 +19,9 @@ export function useTableSorting(options?: UseTableSortingOptions) {
     updater: SortingState[] | ((prev: SortingState[]) => SortingState[]),
   ) => {
     // TanStack Table puede pasar una función updater o un valor directo
-    const newSorting = typeof updater === 'function' ? updater(sorting) : updater;
-    setSorting(newSorting);
+    setSorting((currentSorting) =>
+      typeof updater === 'function' ? updater(currentSorting) : updater,
+    );
   };
 
   return {

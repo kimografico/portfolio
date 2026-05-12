@@ -136,6 +136,7 @@ Al finalizar cada cambio, Copilot debe:
 - Optimizar los imports de los archivos modificados.
 - Corregir cualquier otro problema de formato, importación o warning relevante detectado automáticamente.
 - Comprobar que no falten etiquetas, paréntesis o llaves abiertas/cerradas después de cada cambio.
+- Ejecutar pnpm run check y corregir cualquier error que aparezca antes de finalizar la tarea.
 
 ## Corrección de errores por consola
 

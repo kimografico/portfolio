@@ -10,8 +10,6 @@ const meta = {
   },
   argTypes: {
     dataId: { table: { disable: true } },
-    IconFallback: { table: { disable: true } },
-    buildImagePath: { table: { disable: true } },
     onMarkHidden: { table: { disable: true } },
     onMarkVisible: { table: { disable: true } },
     onDelete: { table: { disable: true } },

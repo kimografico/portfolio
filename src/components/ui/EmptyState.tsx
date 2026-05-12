@@ -7,8 +7,6 @@ interface EmptyStateProps {
   description: string;
   dataId?: string;
   emoji?: string; // Emoji a mostrar (por defecto 🚧)
-  IconFallback?: React.FC<{ size?: number; color?: string }>;
-  buildImagePath?: (filename: string) => string;
 }
 
 export default function EmptyState({

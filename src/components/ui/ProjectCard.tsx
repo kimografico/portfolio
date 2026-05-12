@@ -12,10 +12,10 @@ export interface BaseProject {
   date: string;
   title: string;
   cliente?: string;
+  thumb?: string;
   imagenes?: Array<{ image: string; label?: string }>;
   stack?: string[];
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  [key: string]: any; // Permite propiedades adicionales tipadas dinámicamente
+  [key: string]: unknown;
 }
 
 interface ProjectCardProps<T extends BaseProject> {
@@ -66,7 +66,10 @@ export const ProjectCard = <T extends BaseProject>({
   // 3. Si también falla, usa un fallback genérico
   // El estado local controla el src actual
 
-  const thumbUrl = project.thumb || `/portfolio/images/portfolio/thumbs/${project.id}.jpg`;
+  const thumbUrl =
+    project.thumb && project.thumb.trim() !== ''
+      ? project.thumb
+      : `/portfolio/images/portfolio/thumbs/${project.id}.jpg`;
   const originalImage =
     buildImagePath && project.imagenes?.[0]?.image
       ? buildImagePath(project.imagenes[0].image)
