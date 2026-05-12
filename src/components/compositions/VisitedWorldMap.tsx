@@ -1,7 +1,5 @@
 import type { VisitedWorldMapProps } from '../../interfaces/map';
 import { useEffect, useRef, useState } from 'react';
-import 'jsvectormap';
-import 'jsvectormap/dist/maps/world.js';
 
 // Paleta única para el mapa (azul o imagen de fondo)
 const UI_IMG_PATH =
@@ -77,7 +75,12 @@ export default function VisitedWorldMap({
 }: VisitedWorldMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstance = useRef<JsVectorMapInstance | null>(null);
+  const antiqueRef = useRef(false);
   const [antique, setAntique] = useState(false);
+
+  useEffect(() => {
+    antiqueRef.current = antique;
+  }, [antique]);
 
   useEffect(() => {
     if (!mapRef.current) return;
@@ -86,6 +89,7 @@ export default function VisitedWorldMap({
 
     const initializeMap = async () => {
       const { default: jsVectorMap } = await import('jsvectormap');
+      await import('jsvectormap/dist/maps/world.js');
 
       if (cancelled || !mapRef.current) {
         return;
@@ -134,7 +138,7 @@ export default function VisitedWorldMap({
 
       styleTimeoutId = window.setTimeout(() => {
         if (mapRef.current) {
-          applyBackgroundMode(mapRef.current, antique);
+          applyBackgroundMode(mapRef.current, antiqueRef.current);
         }
       }, 0);
     };

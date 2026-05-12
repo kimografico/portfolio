@@ -1,39 +1,55 @@
-import ResumeDesignPage from './pages/ContactMe/ResumeDesignPage';
-import ResumeDevPage from './pages/ContactMe/ResumeDevPage';
+import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import KimoLayout from './pages/Kimo/KimoLayout';
-import BooksPage from './pages/Kimo/Books/BooksPage';
-import PlacesPage from './pages/Kimo/Places/PlacesPage';
-import IllustrationsPage from './pages/Kimo/Ilustraciones/IllustrationsPage';
-import IllustrationDetailPage from './pages/Kimo/Ilustraciones/IllustrationDetailPage';
-import NotFoundPage from './pages/NotFoundPage';
-import GraphicDesignHome from './pages/GraphicDesign/GraphicDesignHome';
-import GraphicDesignProjectDetail from './pages/GraphicDesign/GraphicDesignProjectDetail';
-import DeveloperHome from './pages/Developer/DeveloperHome';
-import DeveloperProjectDetail from './pages/Developer/DeveloperProjectDetail';
-import MainLayout from './components/layout/MainLayout';
-import ContactMe from './pages/ContactMe/ContactMe';
-import ScrollToTop from './components/layout/ScrollToTop';
-import IconGallery from './pages/Kimo/IconGallery';
-import KimoAuthGate from './components/layout/KimoAuthGate';
-import KimoLoginPage from './pages/Kimo/LoginPage';
-import DataPage from './pages/Kimo/Admin/DataPage';
-import PendientePage from './pages/Kimo/Admin/PendientePage';
-import AddProjectPage from './pages/Kimo/Admin/AddProjectPage';
-import AddBookPage from './pages/Kimo/Admin/AddBookPage';
-import AddIllustrationPage from './pages/Kimo/Admin/AddIllustrationPage';
-import AddPlacePage from './pages/Kimo/Admin/AddPlacePage';
-import RecentWorksManagerPage from './pages/Kimo/Admin/RecentWorksManagerPage';
-import ResumeManagerPage from './pages/Kimo/Admin/ResumeManagerPage';
-import EditProjectPage from './pages/Kimo/Admin/EditProjectPage';
-import CategoryGalleryPage from './components/layout/CategoryGalleryPage';
-import { graphicDesignGalleries } from './data/config/graphicDesignGalleries';
-import { developerGalleries } from './data/config/developerGalleries';
+
+const MainLayout = lazy(() => import('./components/layout/MainLayout'));
+const ScrollToTop = lazy(() => import('./components/layout/ScrollToTop'));
+const Home = lazy(() => import('./pages/Home'));
+const ResumeDesignPage = lazy(() => import('./pages/ContactMe/ResumeDesignPage'));
+const ResumeDevPage = lazy(() => import('./pages/ContactMe/ResumeDevPage'));
+const ContactMe = lazy(() => import('./pages/ContactMe/ContactMe'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+const GraphicDesignHome = lazy(() => import('./pages/GraphicDesign/GraphicDesignHome'));
+const DeveloperHome = lazy(() => import('./pages/Developer/DeveloperHome'));
+const GraphicDesignProjectDetail = lazy(
+  () => import('./pages/GraphicDesign/GraphicDesignProjectDetail'),
+);
+const DeveloperProjectDetail = lazy(() => import('./pages/Developer/DeveloperProjectDetail'));
+const KimoLayout = lazy(() => import('./pages/Kimo/KimoLayout'));
+const BooksPage = lazy(() => import('./pages/Kimo/Books/BooksPage'));
+const PlacesPage = lazy(() => import('./pages/Kimo/Places/PlacesPage'));
+const IllustrationsPage = lazy(() => import('./pages/Kimo/Ilustraciones/IllustrationsPage'));
+const IllustrationDetailPage = lazy(
+  () => import('./pages/Kimo/Ilustraciones/IllustrationDetailPage'),
+);
+const IconGallery = lazy(() => import('./pages/Kimo/IconGallery'));
+const KimoAuthGate = lazy(() => import('./components/layout/KimoAuthGate'));
+const KimoLoginPage = lazy(() => import('./pages/Kimo/LoginPage'));
+const DataPage = lazy(() => import('./pages/Kimo/Admin/DataPage'));
+const PendientePage = lazy(() => import('./pages/Kimo/Admin/PendientePage'));
+const AddProjectPage = lazy(() => import('./pages/Kimo/Admin/AddProjectPage'));
+const AddBookPage = lazy(() => import('./pages/Kimo/Admin/AddBookPage'));
+const AddIllustrationPage = lazy(() => import('./pages/Kimo/Admin/AddIllustrationPage'));
+const AddPlacePage = lazy(() => import('./pages/Kimo/Admin/AddPlacePage'));
+const RecentWorksManagerPage = lazy(() => import('./pages/Kimo/Admin/RecentWorksManagerPage'));
+const ResumeManagerPage = lazy(() => import('./pages/Kimo/Admin/ResumeManagerPage'));
+const EditProjectPage = lazy(() => import('./pages/Kimo/Admin/EditProjectPage'));
+const GraphicDesignGalleryRoutes = lazy(() => import('./routes/GraphicDesignGalleryRoutes'));
+const DeveloperGalleryRoutes = lazy(() => import('./routes/DeveloperGalleryRoutes'));
+
+function RouteFallback() {
+  return (
+    <div
+      className="min-h-screen flex items-center justify-center text-sm text-muted"
+      data-id="route-loading"
+    >
+      Cargando…
+    </div>
+  );
+}
 
 export default function App() {
   return (
-    <>
+    <Suspense fallback={<RouteFallback />}>
       <ScrollToTop />
       <Routes>
         <Route element={<MainLayout />}>
@@ -61,26 +77,15 @@ export default function App() {
             </Route>
           </Route>
           <Route path="/graphic-design" element={<GraphicDesignHome />} />
-          {/* Galerías de Diseño Gráfico: generadas dinámicamente desde la configuración */}
-          {graphicDesignGalleries.map(({ slug, props }) => (
-            <Route
-              key={slug}
-              path={`/graphic-design/${slug}`}
-              element={<CategoryGalleryPage {...props} />}
-            />
-          ))}
+          <Route path="/graphic-design/*" element={<GraphicDesignGalleryRoutes />} />
           <Route path="/graphic-design/:category/:id" element={<GraphicDesignProjectDetail />} />
           <Route path="/dev" element={<DeveloperHome />} />
-          {/* Galerías de Desarrollo: generadas dinámicamente desde la configuración */}
-          {developerGalleries.map(({ slug, props }) => (
-            <Route key={slug} path={`/dev/${slug}`} element={<CategoryGalleryPage {...props} />} />
-          ))}
+          <Route path="/dev/*" element={<DeveloperGalleryRoutes />} />
           <Route path="/dev/:parent/:id" element={<DeveloperProjectDetail />} />
           <Route path="/contacto" element={<ContactMe />} />
-          {/* Fallback 404 */}
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
-    </>
+    </Suspense>
   );
 }

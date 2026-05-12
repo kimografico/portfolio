@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { describe, it, expect } from 'vitest';
 import App from '../src/App';
@@ -32,25 +32,26 @@ describe('App', () => {
   });
 
   describe('rutas', () => {
-    it('renderiza el Home en la ruta raíz', () => {
+    it('renderiza el Home en la ruta raíz', async () => {
       render(
         <MemoryRouter initialEntries={['/']}>
           <App />
         </MemoryRouter>,
       );
       // Home debería tener contenido (al menos un título principal)
-      expect(document.querySelector('main')).toBeInTheDocument();
+      await waitFor(() => expect(document.querySelector('main')).toBeInTheDocument());
     });
 
-    it('muestra la página 404 para rutas inexistentes', () => {
+    it('muestra la página 404 para rutas inexistentes', async () => {
       render(
         <MemoryRouter initialEntries={['/ruta-inexistente']}>
           <App />
         </MemoryRouter>,
       );
       // Buscar específicamente en el NotFoundPage
-      const notFoundPage = document.querySelector('[data-id="not-found-page"]');
-      expect(notFoundPage).toBeInTheDocument();
+      await waitFor(() =>
+        expect(document.querySelector('[data-id="not-found-page"]')).toBeInTheDocument(),
+      );
     });
   });
 });
