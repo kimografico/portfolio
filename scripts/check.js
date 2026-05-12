@@ -21,7 +21,9 @@ console.log('\n🔍 Running pre-push checks...');
 
 run('pnpm', ['lint'], 'Linting');
 run('pnpm', ['typecheck'], 'Type checking');
+
 run('pnpm', ['test'], 'Tests');
+run('pnpm', ['run', 'test:e2e'], 'E2E tests');
 
 run('pnpm', ['exec', 'node', 'scripts/check-images.js'], 'Check images size');
 run('pnpm', ['build'], 'Build');
