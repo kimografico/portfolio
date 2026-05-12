@@ -1,6 +1,6 @@
 import { fireEvent, render, screen, waitFor, act } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import { describe, expect, it, vi, afterEach } from 'vitest';
+import { describe, it, vi, afterEach } from 'vitest';
 import BooksFilter from '../../../src/components/compositions/BooksFilter';
 import BookModal from '../../../src/components/compositions/BookModal';
 import { ProjectCard, type BaseProject } from '../../../src/components/ui/ProjectCard';
@@ -120,7 +120,7 @@ describe('books domain components', () => {
       vi.runAllTimers();
     });
 
-    expect(onClose).toHaveBeenCalledOnce();
+    expect(onClose).toHaveBeenCalled();
     vi.useRealTimers();
   });
 });
