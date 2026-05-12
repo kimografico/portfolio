@@ -6,6 +6,8 @@ import BookModal from '../../../src/components/compositions/BookModal';
 import { ProjectCard, type BaseProject } from '../../../src/components/ui/ProjectCard';
 import type { Book } from '../../../src/types';
 
+const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true } as const;
+
 const books: Book[] = [
   {
     id: '1',
@@ -80,7 +82,7 @@ describe('books domain components', () => {
     };
 
     render(
-      <BrowserRouter>
+      <BrowserRouter future={routerFuture}>
         <ProjectCard project={project} to="/project/123" />
       </BrowserRouter>,
     );

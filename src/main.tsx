@@ -7,7 +7,10 @@ import App from './App.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename={`${APP_BASENAME}/`}>
+    <BrowserRouter
+      basename={`${APP_BASENAME}/`}
+      future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
+    >
       <App />
     </BrowserRouter>
   </StrictMode>,

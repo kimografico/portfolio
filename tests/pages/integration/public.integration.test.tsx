@@ -3,6 +3,8 @@ import { MemoryRouter } from 'react-router-dom';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import App from '../../../src/App';
 
+const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true } as const;
+
 describe('public routes integration', () => {
   beforeEach(() => {
     window.sessionStorage.clear();
@@ -12,7 +14,7 @@ describe('public routes integration', () => {
   it('muestra la home y navega a contacto desde el encabezado', async () => {
     // Este flujo comprueba la navegación principal del sitio público a través del layout común.
     const { container } = render(
-      <MemoryRouter initialEntries={['/']}>
+      <MemoryRouter initialEntries={['/']} future={routerFuture}>
         <App />
       </MemoryRouter>,
     );
@@ -27,7 +29,7 @@ describe('public routes integration', () => {
   it('abre la ruta de diseño gráfico y navega a una galería de categoría', async () => {
     // La ruta pública de diseño debe cargar el home de categoría y permitir entrar en una galería lazy.
     const { container } = render(
-      <MemoryRouter initialEntries={['/graphic-design']}>
+      <MemoryRouter initialEntries={['/graphic-design']} future={routerFuture}>
         <App />
       </MemoryRouter>,
     );
@@ -44,7 +46,7 @@ describe('public routes integration', () => {
   it('abre la ruta de desarrollo y navega a una galería de categoría', async () => {
     // La misma lógica de navegación debe funcionar en la rama de desarrollo web.
     const { container } = render(
-      <MemoryRouter initialEntries={['/dev']}>
+      <MemoryRouter initialEntries={['/dev']} future={routerFuture}>
         <App />
       </MemoryRouter>,
     );
@@ -59,7 +61,7 @@ describe('public routes integration', () => {
   it('muestra la página 404 y permite volver al inicio', async () => {
     // El 404 forma parte de la experiencia de navegación y no debe romper el layout.
     const { container } = render(
-      <MemoryRouter initialEntries={['/ruta-inexistente']}>
+      <MemoryRouter initialEntries={['/ruta-inexistente']} future={routerFuture}>
         <App />
       </MemoryRouter>,
     );

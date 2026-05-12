@@ -3,6 +3,8 @@ import { MemoryRouter } from 'react-router-dom';
 import { beforeEach, describe, it, vi } from 'vitest';
 import App from '../../../src/App';
 
+const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true } as const;
+
 const jsVectorMapDestroy = vi.hoisted(() => vi.fn());
 const jsVectorMapMock = vi.hoisted(() =>
   vi.fn(function jsVectorMapFactory() {
@@ -27,7 +29,7 @@ describe('kimo integration', () => {
   it('redirige a login cuando una ruta privada no tiene sesión', async () => {
     // Kimo no debe ser accesible sin pasar por el login y el guard de rutas.
     render(
-      <MemoryRouter initialEntries={['/kimo/books']}>
+      <MemoryRouter initialEntries={['/kimo/books']} future={routerFuture}>
         <App />
       </MemoryRouter>,
     );
@@ -41,7 +43,7 @@ describe('kimo integration', () => {
     window.localStorage.setItem('kimo-authenticated', 'true');
 
     const { container } = render(
-      <MemoryRouter initialEntries={['/kimo/books']}>
+      <MemoryRouter initialEntries={['/kimo/books']} future={routerFuture}>
         <App />
       </MemoryRouter>,
     );
@@ -72,7 +74,7 @@ describe('kimo integration', () => {
     window.localStorage.setItem('kimo-authenticated', 'true');
 
     const { container } = render(
-      <MemoryRouter initialEntries={['/kimo/books']}>
+      <MemoryRouter initialEntries={['/kimo/books']} future={routerFuture}>
         <App />
       </MemoryRouter>,
     );

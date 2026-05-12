@@ -4,6 +4,8 @@ import { describe, it, vi } from 'vitest';
 import { CategoryCard } from '../../../src/components/ui/CategoryCard';
 import CategoryHero from '../../../src/components/ui/CategoryHero';
 
+const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true } as const;
+
 const navigateMock = vi.hoisted(() => vi.fn());
 
 vi.mock('../../../src/hooks/useTheme', () => ({
@@ -41,7 +43,7 @@ describe('category components', () => {
   it('renderiza una CategoryCard con su ruta y data-id derivados del título', () => {
     // La tarjeta convierte el título en un identificador estable y accesible para navegación.
     render(
-      <MemoryRouter>
+      <MemoryRouter future={routerFuture}>
         <CategoryCard
           icon={DemoIcon}
           title="Diseño Gráfico"

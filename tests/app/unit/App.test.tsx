@@ -3,6 +3,8 @@ import { MemoryRouter, Outlet } from 'react-router-dom';
 import { describe, expect, it, vi } from 'vitest';
 import App from '../../../src/App';
 
+const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true } as const;
+
 vi.mock('../../../src/components/layout/ScrollToTop', () => ({
   default: () => null,
 }));
@@ -28,7 +30,7 @@ vi.mock('../../../src/pages/Kimo/LoginPage', () => ({
 describe('App', () => {
   it('renderiza la portada pública en la ruta raíz', async () => {
     const { container } = render(
-      <MemoryRouter initialEntries={['/']}>
+      <MemoryRouter initialEntries={['/']} future={routerFuture}>
         <App />
       </MemoryRouter>,
     );
@@ -39,7 +41,7 @@ describe('App', () => {
 
   it('renderiza la pantalla de login de Kimo en su ruta', async () => {
     const { container } = render(
-      <MemoryRouter initialEntries={['/kimo/login']}>
+      <MemoryRouter initialEntries={['/kimo/login']} future={routerFuture}>
         <App />
       </MemoryRouter>,
     );

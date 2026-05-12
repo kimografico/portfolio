@@ -3,6 +3,8 @@ import { MemoryRouter } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
 import { ProjectCard } from '../../../src/components/ui/ProjectCard';
 
+const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true } as const;
+
 function DemoIcon({ className = '', size = 24 }: { className?: string; size?: number }) {
   return <svg data-testid="demo-icon" className={className} width={size} height={size} />;
 }
@@ -10,7 +12,7 @@ function DemoIcon({ className = '', size = 24 }: { className?: string; size?: nu
 describe('ProjectCard', () => {
   it('renderiza el proyecto como enlace con su miniatura y stack', () => {
     render(
-      <MemoryRouter>
+      <MemoryRouter future={routerFuture}>
         <ProjectCard
           project={{
             id: 7,

@@ -4,6 +4,8 @@ import { MemoryRouter } from 'react-router-dom';
 import { describe, expect, it, vi } from 'vitest';
 import PendientePage from '../../../src/pages/Kimo/Admin/PendientePage';
 
+const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true } as const;
+
 const navigateMock = vi.hoisted(() => vi.fn());
 
 vi.mock('react-router-dom', async () => {
@@ -38,7 +40,7 @@ vi.mock('../../../src/pages/Kimo/Admin/data/routes', () => ({
 describe('PendientePage', () => {
   it('renderiza la tabla de pendientes y navega al detalle o a la edición', async () => {
     render(
-      <MemoryRouter>
+      <MemoryRouter future={routerFuture}>
         <PendientePage />
       </MemoryRouter>,
     );

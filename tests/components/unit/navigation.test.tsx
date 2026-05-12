@@ -5,6 +5,8 @@ import MobileMenu from '../../../src/components/ui/MobileMenu';
 import KimoAuthGate from '../../../src/components/layout/KimoAuthGate';
 import ScrollToTop from '../../../src/components/layout/ScrollToTop';
 
+const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true } as const;
+
 vi.mock('../../../src/lib/kimoAuth', () => ({
   isKimoAuthenticated: vi.fn(() => false),
   sanitizeKimoRedirect: vi.fn((redirect: string | null) => redirect || '/kimo'),
@@ -19,7 +21,7 @@ describe('navigation and auth helpers', () => {
     // MobileMenu evita navegar fuera de contexto y cierra el panel al seleccionar una ruta.
     vi.useFakeTimers();
     render(
-      <MemoryRouter>
+      <MemoryRouter future={routerFuture}>
         <MobileMenu
           navLinks={[
             { label: 'Inicio', href: '/' },
@@ -43,7 +45,7 @@ describe('navigation and auth helpers', () => {
   it('redirige al login cuando Kimo no está autenticado', async () => {
     // El guard protege las rutas privadas y deja una redirección limpia al login.
     render(
-      <MemoryRouter initialEntries={['/kimo/data?x=1']}>
+      <MemoryRouter initialEntries={['/kimo/data?x=1']} future={routerFuture}>
         <Routes>
           <Route path="/kimo/login" element={<div>Pantalla de login</div>} />
           <Route path="/kimo/*" element={<KimoAuthGate />} />
@@ -59,7 +61,7 @@ describe('navigation and auth helpers', () => {
     const scrollTo = vi.spyOn(window, 'scrollTo').mockImplementation(() => undefined);
 
     render(
-      <MemoryRouter initialEntries={['/inicio']}>
+      <MemoryRouter initialEntries={['/inicio']} future={routerFuture}>
         <ScrollToTop />
       </MemoryRouter>,
     );

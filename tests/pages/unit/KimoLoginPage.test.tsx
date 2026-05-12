@@ -4,6 +4,8 @@ import { MemoryRouter } from 'react-router-dom';
 import { describe, expect, it, vi } from 'vitest';
 import KimoLoginPage from '../../../src/pages/Kimo/LoginPage';
 
+const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true } as const;
+
 const navigateMock = vi.hoisted(() => vi.fn());
 const searchParamsMock = vi.hoisted(() => new URLSearchParams('redirect=/kimo'));
 
@@ -34,7 +36,7 @@ vi.mock('../../../src/lib/kimoAuth', () => ({
 describe('KimoLoginPage', () => {
   it('muestra el formulario y valida la contraseña vacía', async () => {
     render(
-      <MemoryRouter>
+      <MemoryRouter future={routerFuture}>
         <KimoLoginPage />
       </MemoryRouter>,
     );
@@ -53,7 +55,7 @@ describe('KimoLoginPage', () => {
     checkKimoPasswordMock.mockResolvedValue({ isValid: true });
 
     render(
-      <MemoryRouter>
+      <MemoryRouter future={routerFuture}>
         <KimoLoginPage />
       </MemoryRouter>,
     );

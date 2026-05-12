@@ -6,6 +6,8 @@ import UIButton from '../../../src/components/ui/UIButton';
 import ProjectLine from '../../../src/components/ui/ProjectLine';
 import PrevNextBtns from '../../../src/components/ui/PrevNextBtns';
 
+const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true } as const;
+
 describe('common UI components', () => {
   it('renderiza el estado vacío con contenido didáctico', () => {
     // Este componente se usa cuando una sección todavía no tiene datos.
@@ -23,7 +25,7 @@ describe('common UI components', () => {
     render(
       <>
         <UIButton onClick={onClick}>Acción</UIButton>
-        <MemoryRouter>
+        <MemoryRouter future={routerFuture}>
           <UIButton href="/destino" link>
             Ir
           </UIButton>
