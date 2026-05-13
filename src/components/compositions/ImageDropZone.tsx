@@ -139,7 +139,7 @@ export default function ImageDropZone({
               <input
                 type="text"
                 data-id={`add-project-image-url-${i}`}
-                className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
                 placeholder="URL de la imagen"
                 value={img.image}
                 onChange={(e) => onImageChange(i, 'image', e.target.value)}
@@ -147,7 +147,7 @@ export default function ImageDropZone({
               <input
                 type="text"
                 data-id={`add-project-image-label-${i}`}
-                className="w-36 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                className="w-36 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
                 placeholder="Etiqueta"
                 value={img.label}
                 onChange={(e) => onImageChange(i, 'label', e.target.value)}

@@ -495,7 +495,7 @@ export default function EditProjectPage() {
               id="ep-title"
               type="text"
               data-id="edit-project-title"
-              className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+              className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
               value={f.title}
               onChange={(e) => handleField('title', e.target.value)}
               placeholder="Nombre del proyecto"
@@ -510,7 +510,7 @@ export default function EditProjectPage() {
               id="ep-cliente"
               type="text"
               data-id="edit-project-cliente"
-              className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+              className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
               value={f.cliente}
               onChange={(e) => handleField('cliente', e.target.value)}
               placeholder="Nombre del cliente"
@@ -575,7 +575,7 @@ export default function EditProjectPage() {
               <input
                 type="text"
                 data-id="edit-project-stack-custom-input"
-                className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                className="border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
                 placeholder="Otra tecnología…"
                 onKeyDown={(e) => {
                   if (e.key === 'Enter') {
@@ -732,7 +732,7 @@ export default function EditProjectPage() {
                   <input
                     type="text"
                     data-id={`edit-project-image-url-${i}`}
-                    className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
                     placeholder="Nombre de archivo de la imagen"
                     value={img.image}
                     onChange={(e) => {
@@ -743,7 +743,7 @@ export default function EditProjectPage() {
                   <input
                     type="text"
                     data-id={`edit-project-image-label-${i}`}
-                    className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                    className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
                     placeholder="Etiqueta"
                     value={img.label}
                     onChange={(e) => handleImagenChange(i, 'label', e.target.value)}
@@ -786,7 +786,7 @@ export default function EditProjectPage() {
                 <input
                   type="url"
                   data-id={`edit-project-video-url-${i}`}
-                  className="w-1/2  border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                  className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
                   placeholder="URL del video"
                   value={v.image}
                   onChange={(e) => handleVideoChange(i, 'image', e.target.value)}
@@ -794,7 +794,7 @@ export default function EditProjectPage() {
                 <input
                   type="text"
                   data-id={`edit-project-video-label-${i}`}
-                  className="w-1/2  border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                  className="w-1/2 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
                   placeholder="Descripción"
                   value={v.label}
                   onChange={(e) => handleVideoChange(i, 'label', e.target.value)}
@@ -833,7 +833,7 @@ export default function EditProjectPage() {
                 <input
                   type="text"
                   data-id={`edit-project-extra-${i}`}
-                  className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                  className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
                   placeholder="URL o texto extra"
                   value={ex}
                   onChange={(e) => handleExtrasChange(i, e.target.value)}

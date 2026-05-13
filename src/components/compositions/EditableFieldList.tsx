@@ -54,7 +54,7 @@ export default function EditableFieldList({
               <input
                 type={inputType}
                 data-id={`${dataIdBase}-${i}`}
-                className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                className="flex-1 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
                 placeholder={placeholder}
                 value={value}
                 onChange={(e: ChangeEvent<HTMLInputElement>) =>
@@ -65,7 +65,7 @@ export default function EditableFieldList({
                 <input
                   type="text"
                   data-id={`${dataIdBase}-label-${i}`}
-                  className="w-64 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+                  className="w-64 border rounded px-2 py-1 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
                   placeholder={labelPlaceholder}
                   value={labelVal}
                   onChange={(e: ChangeEvent<HTMLInputElement>) =>

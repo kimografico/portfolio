@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "id": 270,
+    "date": "2025-05-15 00:00",
+    "title": "El Racó Solidari",
+    "cliente": "Sopra Steria / IES Serpis",
+    "descripcion": "",
+    "visible": true,
+    "imagenes": [],
+    "videos": [],
+    "extras": [
+      "Falta rellenar"
+    ],
+    "stack": [
+      "Angular",
+      "TypeScript",
+      "HTML",
+      "CSS"
+    ]
+  }
+]

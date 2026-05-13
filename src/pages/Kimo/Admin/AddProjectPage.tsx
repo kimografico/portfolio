@@ -164,7 +164,7 @@ export default function AddProjectPage() {
               id="ap-title"
               type="text"
               data-id="add-project-title"
-              className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+              className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
               value={form.title}
               onChange={(e) => handleField('title', e.target.value)}
               placeholder="Nombre del proyecto"
@@ -179,7 +179,7 @@ export default function AddProjectPage() {
               id="ap-cliente"
               type="text"
               data-id="add-project-cliente"
-              className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent"
+              className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent bg-[var(--color-surface)] text-[var(--color-text)] border-[var(--color-border)]"
               value={form.cliente}
               onChange={(e) => handleField('cliente', e.target.value)}
               placeholder="Nombre del cliente"
