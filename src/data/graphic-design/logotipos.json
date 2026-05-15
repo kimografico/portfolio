@@ -1863,9 +1863,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar proporción del thumb"
-    ],
+    "extras": ["Ajustar proporción del thumb"],
     "type": "gd",
     "category": "logotipos"
   },
@@ -1934,6 +1932,278 @@
       {
         "image": "gaia-climb-alzira006.jpg",
         "label": "Otros bocetos"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 271,
+    "date": "2025-04-15 00:00",
+    "title": "Mirador Alto Mijares",
+    "cliente": "Montanejos",
+    "descripcion": "Logotipo para unos carteles informativos en parajes naturales",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "mirador-alto-mijares001.jpg",
+        "label": "MIRADOR ALTO MIJARES"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 276,
+    "date": "2025-11-29 00:00",
+    "title": "Wild Jump",
+    "cliente": "Wild Jump",
+    "descripcion": "Logotipo para una empresa de multiaventura especializada en salto vertical / bungee",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "wild-jump001.jpg",
+        "label": "LOGO"
+      },
+      {
+        "image": "wild-jump002.jpg",
+        "label": "WJ_BOCETO (3)"
+      },
+      {
+        "image": "wild-jump003.jpg",
+        "label": "WJ_BOCETO (5)"
+      },
+      {
+        "image": "wild-jump004.jpg",
+        "label": "WJ_BOCETO (7)"
+      },
+      {
+        "image": "wild-jump005.jpg",
+        "label": "WJ_BOCETO (9)"
+      },
+      {
+        "image": "wild-jump006.jpg",
+        "label": "WJ_BOCETO (10)"
+      },
+      {
+        "image": "wild-jump007.jpg",
+        "label": "WJ_BOCETO (12)"
+      },
+      {
+        "image": "wild-jump008.jpg",
+        "label": "WJ_BOCETO (16)"
+      },
+      {
+        "image": "wild-jump009.jpg",
+        "label": "WJ_BOCETO (18)"
+      },
+      {
+        "image": "wild-jump010.jpg",
+        "label": "WJ_BOCETO (19)"
+      },
+      {
+        "image": "wild-jump011.jpg",
+        "label": "WJ_LOGOS 2"
+      },
+      {
+        "image": "wild-jump012.jpg",
+        "label": "WJ_LOGOS TIPOGRAFIA"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 277,
+    "date": "2024-05-01 00:00",
+    "title": "Villa Purificación",
+    "cliente": "Montanejos",
+    "descripcion": "Logotipo para una Villa histórica de Montanejos,",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "villa-purificacion001.jpg",
+        "label": "LOGO VILLA PURIFICACIÃN - c37b58"
+      },
+      {
+        "image": "villa-purificacion002.jpg",
+        "label": "POSNEG"
+      },
+      {
+        "image": "villa-purificacion003.jpg",
+        "label": "1"
+      },
+      {
+        "image": "villa-purificacion004.jpg",
+        "label": "2"
+      },
+      {
+        "image": "villa-purificacion005.jpg",
+        "label": "3"
+      },
+      {
+        "image": "villa-purificacion006.jpg",
+        "label": "4"
+      },
+      {
+        "image": "villa-purificacion007.jpg",
+        "label": "Pruebas de color y formas"
+      },
+      {
+        "image": "villa-purificacion008.jpg",
+        "label": "Pruebas de tipografia"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "logotipos"
+  },
+  {
+    "id": 278,
+    "date": "2024-05-01 00:00",
+    "title": "Montanejos Villa Termal",
+    "cliente": "Montanejos",
+    "descripcion": "Logotipo para Turismo de Montanejos\nNos inspiramos en el Puente de San José, monumento histórico de Montanejos",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "montanejos-villa-termal001.jpg",
+        "label": "LOGO MONTANEJOS VILLA TERMAL - DEGRADADO"
+      },
+      {
+        "image": "montanejos-villa-termal002.jpg",
+        "label": "Avatar"
+      },
+      {
+        "image": "montanejos-villa-termal003.jpg",
+        "label": "Pruebas de tipografía"
+      },
+      {
+        "image": "montanejos-villa-termal004.jpg",
+        "label": "D"
+      },
+      {
+        "image": "montanejos-villa-termal005.jpg",
+        "label": "F"
+      },
+      {
+        "image": "montanejos-villa-termal006.jpg",
+        "label": "E"
+      },
+      {
+        "image": "montanejos-villa-termal007.jpg",
+        "label": "G"
+      },
+      {
+        "image": "montanejos-villa-termal008.jpg",
+        "label": "C"
+      },
+      {
+        "image": "montanejos-villa-termal009.jpg",
+        "label": "LOGO MONTANEJOS BOCETOS-10"
+      },
+      {
+        "image": "montanejos-villa-termal010.jpg",
+        "label": "LOGO MONTANEJOS v2"
+      },
+      {
+        "image": "montanejos-villa-termal011.jpg",
+        "label": "Inspiración: Puente de San José"
+      },
+      {
+        "image": "montanejos-villa-termal012.jpg",
+        "label": "Ejemplos de aplicación"
+      },
+      {
+        "image": "montanejos-villa-termal013.jpg",
+        "label": "Ejemplos de aplicación"
+      },
+      {
+        "image": "montanejos-villa-termal014.jpg",
+        "label": "Brandbook - Uso del logotipo"
+      },
+      {
+        "image": "montanejos-villa-termal015.jpg",
+        "label": "Brandbook - Uso del logotipo"
+      },
+      {
+        "image": "montanejos-villa-termal016.jpg",
+        "label": "Brandbook - Uso del logotipo"
+      },
+      {
+        "image": "montanejos-villa-termal017.jpg",
+        "label": "Brandbook - Colores Corporativos"
+      },
+      {
+        "image": "montanejos-villa-termal018.jpg",
+        "label": "Brandbook - Tipografías"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "logotipos"
+  },
+  {
+    "id": 280,
+    "date": "2024-11-15 00:00",
+    "title": "CicloFest",
+    "cliente": "Montanejos",
+    "descripcion": "Logotipo para un evento ciclista de Montanejos",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "ciclofest001.jpg",
+        "label": "CICLOFEST POSITIVO"
+      },
+      {
+        "image": "ciclofest002.jpg",
+        "label": "CICLOFEST_ESCUDO"
+      },
+      {
+        "image": "ciclofest003.jpg",
+        "label": "ESCUDO RECTO 2-1"
+      },
+      {
+        "image": "ciclofest004.jpg",
+        "label": "ESCUDO RECTO 3"
+      },
+      {
+        "image": "ciclofest005.jpg",
+        "label": "LOGO BOCETOS-1"
+      },
+      {
+        "image": "ciclofest006.jpg",
+        "label": "LOGO BOCETOS-2"
+      },
+      {
+        "image": "ciclofest007.jpg",
+        "label": "LOGO BOCETOS-3"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 294,
+    "date": "2025-11-05 00:00",
+    "title": "Avant i Boga",
+    "cliente": "Mar Howi",
+    "descripcion": "Logotipo para una empresa familiar de remo en barca por la Albufera",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "avant-i-boga001.jpg",
+        "label": "Avant i Boga alargado"
+      },
+      {
+        "image": "avant-i-boga002.jpg",
+        "label": "Avant i Boga ancho"
+      },
+      {
+        "image": "avant-i-boga003.jpg",
+        "label": "Avant i Boga barca"
       }
     ],
     "videos": [],

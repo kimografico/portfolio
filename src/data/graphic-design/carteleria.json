@@ -918,5 +918,331 @@
     "visible": true,
     "type": "gd",
     "category": "carteleria"
+  },
+  {
+    "id": 273,
+    "date": "2025-10-21 00:00",
+    "title": "Mapa Urbano",
+    "cliente": "Montanejos",
+    "descripcion": "Diseño de Mapa Urbano para la Oficina de Turismo de Montanejos",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "mapa-urbano001.jpg",
+        "label": "mapaurb"
+      },
+      {
+        "image": "mapa-urbano002.jpg",
+        "label": "1"
+      },
+      {
+        "image": "mapa-urbano003.jpg",
+        "label": "2"
+      },
+      {
+        "image": "mapa-urbano004.jpg",
+        "label": "MAPA URBANO v2 cambios Lourdes 1-1"
+      },
+      {
+        "image": "mapa-urbano005.jpg",
+        "label": "MAPA URBANO v2 cambios Lourdes 1-2"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 274,
+    "date": "2025-01-13 00:00",
+    "title": "Mapa de Senderos",
+    "cliente": "Montanejos",
+    "descripcion": "Diseño de un mapa de senderos de Montenejos y alrededores",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "mapa-de-senderos001.jpg",
+        "label": "Mapa Senderos"
+      },
+      {
+        "image": "mapa-de-senderos002.jpg",
+        "label": "Mapa Senderos 20-3-26"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "carteleria"
+  },
+  {
+    "id": 275,
+    "date": "2025-12-05 00:00",
+    "title": "Mapa Ciclista",
+    "cliente": "Montanejos",
+    "descripcion": "Diseño de un mapa de rutas de ciclismo de montanejos",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "mapa-ciclista001.jpg",
+        "label": "MAPA_MOCK"
+      },
+      {
+        "image": "mapa-ciclista002.jpg",
+        "label": "0"
+      },
+      {
+        "image": "mapa-ciclista003.jpg",
+        "label": "1"
+      },
+      {
+        "image": "mapa-ciclista004.jpg",
+        "label": "2"
+      },
+      {
+        "image": "mapa-ciclista005.jpg",
+        "label": "3"
+      },
+      {
+        "image": "mapa-ciclista006.jpg",
+        "label": "4"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 285,
+    "date": "2026-02-15 00:00",
+    "title": "Foro de Turismo Inteligente",
+    "cliente": "Montanejos",
+    "descripcion": "Cartelería, Rollup y RRSS del 1er Foro de Turismo Inteligente de Montanejos\n\nLa imagen principal es un chip informático con la forma del mapa de la localidad.",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "foro-de-turismo-inteligente001.jpg",
+        "label": "I FORO TURISMO INTELIGENTE"
+      },
+      {
+        "image": "foro-de-turismo-inteligente002.jpg",
+        "label": "Portada en RRSS"
+      },
+      {
+        "image": "foro-de-turismo-inteligente003.jpg",
+        "label": "Cartel"
+      },
+      {
+        "image": "foro-de-turismo-inteligente004.jpg",
+        "label": "Cartel"
+      },
+      {
+        "image": "foro-de-turismo-inteligente005.jpg",
+        "label": "Rollup"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "carteleria"
+  },
+  {
+    "id": 286,
+    "date": "2024-07-03 00:00",
+    "title": "Premios Innovadores",
+    "cliente": "Montanejos",
+    "descripcion": "Cartel para el evento Premios Innovadores",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "premios-innovadores001.jpg",
+        "label": "Sin tÃ­tulo-1"
+      },
+      {
+        "image": "premios-innovadores002.jpg",
+        "label": "Cartel del concurso"
+      },
+      {
+        "image": "premios-innovadores003.jpg",
+        "label": "Otra versión del cartel"
+      },
+      {
+        "image": "premios-innovadores004.jpg",
+        "label": "Faldón para el periódico"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 287,
+    "date": "2026-04-19 00:00",
+    "title": "Totem Informativo",
+    "cliente": "Montanejos",
+    "descripcion": "Versión del mapa urbano adaptado a un Totem Informativo",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "totem-informativo001.jpg",
+        "label": "mocup"
+      },
+      {
+        "image": "totem-informativo002.jpg",
+        "label": "TotemInfo"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 288,
+    "date": "2026-03-30 00:00",
+    "title": "Semana Santa",
+    "cliente": "Montanejos",
+    "descripcion": "Cartel para una serie de eventos conmemorando la Semana Santa de Montanejos de 2026",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "semana-santa001.jpg",
+        "label": "Sin tÃ­tulo-1"
+      },
+      {
+        "image": "semana-santa002.jpg",
+        "label": "Cartel A3 Semana Santa"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 289,
+    "date": "2024-07-16 00:00",
+    "title": "Reconecta con el Mijares",
+    "cliente": "Montanejos",
+    "descripcion": "Serie de carteles para eventos infantiles medioambientales de Montanejos, llamados Reconecta con el Mijares",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "reconecta-con-el-mijares001.jpg",
+        "label": "Sin tÃ­tulo-1"
+      },
+      {
+        "image": "reconecta-con-el-mijares002.jpg",
+        "label": "lonacesped"
+      },
+      {
+        "image": "reconecta-con-el-mijares003.jpg",
+        "label": "Diseño de Lona"
+      },
+      {
+        "image": "reconecta-con-el-mijares004.jpg",
+        "label": "Talleres infantiles - Julio 2024"
+      },
+      {
+        "image": "reconecta-con-el-mijares005.jpg",
+        "label": "Agosto 2025"
+      },
+      {
+        "image": "reconecta-con-el-mijares008.jpg",
+        "label": "Agosto 2024"
+      },
+      {
+        "image": "reconecta-con-el-mijares006.jpg",
+        "label": "Julio 2025"
+      },
+      {
+        "image": "reconecta-con-el-mijares007.jpg",
+        "label": "Julio 2025 (Extensión)"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "carteleria"
+  },
+  {
+    "id": 290,
+    "date": "2026-02-17 00:00",
+    "title": "Carteles Turísticos Metro Valencia",
+    "cliente": "Montanejos",
+    "descripcion": "Carteles propagandísticos para campaña en Metro Valencia, años 2025 y 2026, para fomentar el turismo en Montanejos",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "carteles-turisticos-metro-valencia001.jpg",
+        "label": "Foto en una parada de Metro de Valencia Capital"
+      },
+      {
+        "image": "carteles-turisticos-metro-valencia002.jpg",
+        "label": "Versión 2025"
+      },
+      {
+        "image": "carteles-turisticos-metro-valencia003.jpg",
+        "label": "Versión 2026"
+      },
+      {
+        "image": "carteles-turisticos-metro-valencia004.jpg",
+        "label": "Rollups"
+      },
+      {
+        "image": "carteles-turisticos-metro-valencia005.jpg",
+        "label": "Lona"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 291,
+    "date": "2025-05-08 00:00",
+    "title": "La Movida",
+    "cliente": "Montanejos",
+    "descripcion": "Cartel y tickets para un evento de música retro en Montanejos",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "la-movida001.jpg",
+        "label": "08_urban_poster_mockup copia"
+      },
+      {
+        "image": "la-movida002.jpg",
+        "label": "Poster del evento"
+      },
+      {
+        "image": "la-movida003.jpg",
+        "label": "Tickets"
+      },
+      {
+        "image": "la-movida004.jpg",
+        "label": "Versión retro-futurista"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 293,
+    "date": "2024-08-15 00:00",
+    "title": "Montanejos Escénico",
+    "cliente": "Montanejos",
+    "descripcion": "Cartelería para un evento de teatro en Montanejos",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "montanejos-escenico001.jpg",
+        "label": "45"
+      },
+      {
+        "image": "montanejos-escenico002.jpg",
+        "label": "Agosto 2024"
+      },
+      {
+        "image": "montanejos-escenico003.jpg",
+        "label": "Noviembre 2024"
+      },
+      {
+        "image": "montanejos-escenico004.jpg",
+        "label": "Junio 2025"
+      }
+    ],
+    "videos": [],
+    "extras": []
   }
 ]

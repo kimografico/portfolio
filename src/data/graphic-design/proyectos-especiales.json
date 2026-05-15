@@ -739,9 +739,7 @@
     "visible": false,
     "imagenes": [],
     "videos": [],
-    "extras": [
-      "Preguntar a Pau si tiene fotos de cuando se montó"
-    ],
+    "extras": ["Preguntar a Pau si tiene fotos de cuando se montó"],
     "type": "gd",
     "category": "proyectos-especiales"
   },
@@ -754,9 +752,7 @@
     "visible": false,
     "imagenes": [],
     "videos": [],
-    "extras": [
-      "Preguntar a Pau si tiene fotos de cuando se montó"
-    ],
+    "extras": ["Preguntar a Pau si tiene fotos de cuando se montó"],
     "type": "gd",
     "category": "proyectos-especiales"
   },
@@ -819,5 +815,57 @@
     ],
     "type": "gd",
     "category": "proyectos-especiales"
+  },
+  {
+    "id": 284,
+    "date": "2025-07-22 00:00",
+    "title": "Camisetas Trivial Montanejos",
+    "cliente": "Montanejos",
+    "descripcion": "Sencillo diseño de camisetas para un evento de trivial",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "camisetas-trivial-montanejos001.jpg",
+        "label": "camisetas"
+      },
+      {
+        "image": "camisetas-trivial-montanejos002.jpg",
+        "label": "LOGO TRIVIAL FRONTAL"
+      },
+      {
+        "image": "camisetas-trivial-montanejos003.jpg",
+        "label": "DIBUJO TRIVIAL TRASERA"
+      },
+      {
+        "image": "camisetas-trivial-montanejos004.jpg",
+        "label": "TRIVIAL AZUL"
+      },
+      {
+        "image": "camisetas-trivial-montanejos005.jpg",
+        "label": "TRIVIAL BLANCA"
+      },
+      {
+        "image": "camisetas-trivial-montanejos006.jpg",
+        "label": "TRIVIAL"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 295,
+    "date": "2021-07-06 00:00",
+    "title": "Camisetas Presi",
+    "cliente": "Vuit Climbing Club",
+    "descripcion": "Camisetas de regalo para el Presidente del rocódromo",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "camisetas-presi001.jpg",
+        "label": "Camisetas presi-01"
+      }
+    ],
+    "videos": [],
+    "extras": []
   }
 ]

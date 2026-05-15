@@ -1776,5 +1776,73 @@
     "videos": [],
     "extras": [],
     "visible": true
+  },
+  {
+    "id": 279,
+    "date": "2024-05-14 00:00",
+    "title": "Manual de Marca",
+    "cliente": "Montanejos",
+    "descripcion": "Manual de uso de marca (Brandbook) del logotipo de Montanejos Villa Termal",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "manual-de-marca001.jpg",
+        "label": "PORTADA"
+      },
+      {
+        "image": "manual-de-marca002.jpg",
+        "label": "1"
+      },
+      {
+        "image": "manual-de-marca003.jpg",
+        "label": "2"
+      },
+      {
+        "image": "manual-de-marca004.jpg",
+        "label": "3"
+      },
+      {
+        "image": "manual-de-marca005.jpg",
+        "label": "4"
+      },
+      {
+        "image": "manual-de-marca006.jpg",
+        "label": "5"
+      },
+      {
+        "image": "manual-de-marca007.jpg",
+        "label": "6"
+      },
+      {
+        "image": "manual-de-marca008.jpg",
+        "label": "7"
+      },
+      {
+        "image": "manual-de-marca009.jpg",
+        "label": "8"
+      },
+      {
+        "image": "manual-de-marca010.jpg",
+        "label": "9"
+      },
+      {
+        "image": "manual-de-marca011.jpg",
+        "label": "10"
+      },
+      {
+        "image": "manual-de-marca012.jpg",
+        "label": "11"
+      },
+      {
+        "image": "manual-de-marca013.jpg",
+        "label": "12"
+      },
+      {
+        "image": "manual-de-marca014.jpg",
+        "label": "13"
+      }
+    ],
+    "videos": [],
+    "extras": []
   }
 ]

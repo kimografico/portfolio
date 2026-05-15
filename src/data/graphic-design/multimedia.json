@@ -1112,9 +1112,7 @@
     "visible": false,
     "imagenes": [],
     "videos": [],
-    "extras": [
-      "Pedir a Pau si tiene los videos montados en uno, y si le parece bien colgarlos."
-    ],
+    "extras": ["Pedir a Pau si tiene los videos montados en uno, y si le parece bien colgarlos."],
     "type": "gd",
     "category": "multimedia"
   },
@@ -1192,8 +1190,34 @@
         "label": ""
       }
     ],
-    "extras": [
-      "Poner miniatura"
-    ]
+    "extras": ["Poner miniatura"]
+  },
+  {
+    "id": 272,
+    "date": "2024-06-16 00:00",
+    "title": "Banners OleaIT",
+    "cliente": "OleaIT",
+    "descripcion": "Banners para una tienda online de productos cosméticos",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "banners-oleait001.jpg",
+        "label": "BANNERS"
+      },
+      {
+        "image": "banners-oleait002.jpg",
+        "label": "Banner Splendide 1 (BOCETO)"
+      },
+      {
+        "image": "banners-oleait003.jpg",
+        "label": "Banner Splendide 2 (BOCETO)"
+      },
+      {
+        "image": "banners-oleait004.jpg",
+        "label": "Banner Splendide 3 (BOCETO)"
+      }
+    ],
+    "videos": [],
+    "extras": []
   }
 ]

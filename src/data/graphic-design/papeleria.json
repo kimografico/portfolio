@@ -960,5 +960,171 @@
     ],
     "videos": [],
     "extras": []
+  },
+  {
+    "id": 281,
+    "date": "2025-02-20 00:00",
+    "title": "Tríptico Montanejos Inspira",
+    "cliente": "Montanejos",
+    "descripcion": "Folleto con la programación de un evento turístico",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "triptico-montanejos-inspira001.jpg",
+        "label": "1"
+      },
+      {
+        "image": "triptico-montanejos-inspira002.jpg",
+        "label": "IG 1"
+      },
+      {
+        "image": "triptico-montanejos-inspira003.jpg",
+        "label": "IG 2"
+      },
+      {
+        "image": "triptico-montanejos-inspira004.jpg",
+        "label": "IG 3"
+      },
+      {
+        "image": "triptico-montanejos-inspira005.jpg",
+        "label": "2"
+      },
+      {
+        "image": "triptico-montanejos-inspira006.jpg",
+        "label": "IG 4"
+      },
+      {
+        "image": "triptico-montanejos-inspira007.jpg",
+        "label": "3"
+      },
+      {
+        "image": "triptico-montanejos-inspira008.jpg",
+        "label": "4"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 282,
+    "date": "2026-03-24 00:00",
+    "title": "Tríptico Essence",
+    "cliente": "Montanejos",
+    "descripcion": "En 2026 Montenejos Inspira pasó a llamarse Montanejos Essence, con el consiguiente cambio en el diseño",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "triptico-essence001.jpg",
+        "label": "Brochure_7 copia"
+      },
+      {
+        "image": "triptico-essence002.jpg",
+        "label": "TRIPTICO MONTANEJOS INSPIRA 2026-1"
+      },
+      {
+        "image": "triptico-essence003.jpg",
+        "label": "TRIPTICO MONTANEJOS INSPIRA 2026-2"
+      },
+      {
+        "image": "triptico-essence004.jpg",
+        "label": "Cartel"
+      },
+      {
+        "image": "triptico-essence005.jpg",
+        "label": "Cartel A3 v2"
+      },
+      {
+        "image": "triptico-essence006.jpg",
+        "label": "IG"
+      },
+      {
+        "image": "triptico-essence007.jpg",
+        "label": "IG2"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 283,
+    "date": "2024-11-20 00:00",
+    "title": "Flyers y Carteles CicloFest",
+    "cliente": "Montanejos",
+    "descripcion": "Flyers y Carteles para el evento de ciclismo CicloFest",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "flyers-y-carteles-ciclofest001.jpg",
+        "label": "Flyer"
+      },
+      {
+        "image": "flyers-y-carteles-ciclofest002.jpg",
+        "label": "Portada Facebook"
+      },
+      {
+        "image": "flyers-y-carteles-ciclofest003.jpg",
+        "label": "Flyer"
+      },
+      {
+        "image": "flyers-y-carteles-ciclofest004.jpg",
+        "label": "Flyer"
+      },
+      {
+        "image": "flyers-y-carteles-ciclofest005.jpg",
+        "label": "Cartel"
+      },
+      {
+        "image": "flyers-y-carteles-ciclofest006.jpg",
+        "label": "Cartel"
+      },
+      {
+        "image": "flyers-y-carteles-ciclofest007.jpg",
+        "label": "Cartel"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 292,
+    "date": "2024-11-15 00:00",
+    "title": "Dípticos Montanejos Escénico",
+    "cliente": "Montanejos",
+    "descripcion": "Dípticos para un ciclo de teatro en Montanejos,",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "dipticos-montanejos-escenico001.jpg",
+        "label": "6"
+      },
+      {
+        "image": "dipticos-montanejos-escenico002.jpg",
+        "label": "2025"
+      },
+      {
+        "image": "dipticos-montanejos-escenico003.jpg",
+        "label": "2025"
+      },
+      {
+        "image": "dipticos-montanejos-escenico004.jpg",
+        "label": "2025"
+      },
+      {
+        "image": "dipticos-montanejos-escenico005.jpg",
+        "label": "2024"
+      },
+      {
+        "image": "dipticos-montanejos-escenico006.jpg",
+        "label": "2024"
+      },
+      {
+        "image": "dipticos-montanejos-escenico007.jpg",
+        "label": "2024"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "type": "gd",
+    "category": "papeleria"
   }
 ]
