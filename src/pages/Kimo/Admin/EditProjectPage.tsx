@@ -898,7 +898,7 @@ export default function EditProjectPage() {
             Cancelar
           </UIButton>
           <p className="text-xs text-muted">
-            El backend debe estar activo: <code className="font-mono">pnpm backend:dev</code>
+            El backend debe estar activo: <code className="font-mono">pnpm backend</code>
           </p>
         </div>
 

@@ -446,7 +446,7 @@ Es un servidor Express local (server.cjs) que expone una API REST para operacion
 
 ```sh
 # Con recarga automática (desarrollo)
-pnpm backend:dev
+pnpm backend
 
 # O frontend + backend juntos
 pnpm start

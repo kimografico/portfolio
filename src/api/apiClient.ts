@@ -35,18 +35,43 @@ async function apiFetch<T = unknown>(
     headers.set(key, value);
   });
 
-  const res = await fetch(`${API_BASE}${path}`, {
-    ...options,
-    headers,
-  });
+  try {
+    const res = await fetch(`${API_BASE}${path}`, {
+      ...options,
+      headers,
+    });
 
-  const json: ApiResponse<T> = await res.json();
+    if (!res.ok) {
+      // Try to parse JSON error body, fall back to statusText
+      try {
+        const errJson = await res.json();
+        const errMsg = (errJson && (errJson.error || errJson.message)) || res.statusText;
+        throw new Error(String(errMsg || `HTTP ${res.status}`));
+      } catch (parseErr) {
+        throw new Error(res.statusText || `HTTP ${res.status}`);
+      }
+    }
 
-  if (!json.success) {
-    throw new Error(json.error ?? 'Error desconocido');
+    const json: ApiResponse<T> = await res.json();
+
+    if (!json.success) {
+      throw new Error(json.error ?? 'Error desconocido');
+    }
+
+    return json;
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    const lower = message.toLowerCase();
+    if (
+      lower.includes('failed to fetch') ||
+      lower.includes('networkrequestfailed') ||
+      lower.includes('network error') ||
+      lower.includes('fetch')
+    ) {
+      throw new Error('No se pudo conectar con el backend. Arranca el backend con: pnpm backend');
+    }
+    throw err;
   }
-
-  return json;
 }
 
 // --- Proyectos ---

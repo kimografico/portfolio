@@ -31,7 +31,7 @@ Para referencia, ver `.env.example`.
 ### Arrancar el backend en desarrollo
 
 ```bash
-pnpm backend:dev
+pnpm backend
 ```
 
 Esto usa **nodemon** para auto-recargar cuando cambies archivos.

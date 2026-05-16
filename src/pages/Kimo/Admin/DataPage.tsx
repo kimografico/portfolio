@@ -1,4 +1,5 @@
 import { useCallback, useMemo, useState } from 'react';
+import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
 import UIButton from '../../../components/ui/UIButton';
 import IconVisible from '../../../components/iconos/IconVisible';
 import IconHidden from '../../../components/iconos/IconHidden';
@@ -318,6 +319,7 @@ export default function DataPage() {
 
   return (
     <section data-id="data-page">
+      <BackendOfflineAlert />
       <div className="flex flex-col md:flex-row md:items-center mb-8 gap-2 md:gap-4 w-full">
         <h2 className="text-xl w-full md:flex-1">
           Todos los proyectos{' '}

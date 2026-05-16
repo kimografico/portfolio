@@ -453,9 +453,9 @@ DATA_DIR=src/data  # Ruta a los JSONs
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "backend": "node api/server.js",
-    "backend:dev": "nodemon api/server.js",
-    "start": "concurrently \"pnpm dev\" \"pnpm backend:dev\""
+    "backend:fixed": "node api/server.js",
+    "backend": "nodemon api/server.js",
+    "start": "concurrently \"pnpm dev\" \"pnpm backend\""
   }
 }
 ```
@@ -463,8 +463,8 @@ DATA_DIR=src/data  # Ruta a los JSONs
 **Explicación:**
 
 - `pnpm dev`: Arrancar Vite (frontend).
-- `pnpm backend`: Arrancar backend (producción).
-- `pnpm backend:dev`: Arrancar backend con nodemon (desarrollo, auto-reload).
+- `pnpm backend:fixed`: Arrancar backend (producción).
+- `pnpm backend`: Arrancar backend con nodemon (desarrollo, auto-reload).
 - `pnpm start`: Arrancar frontend y backend simultáneamente.
 
 ---

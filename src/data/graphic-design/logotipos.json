@@ -1863,7 +1863,9 @@
       }
     ],
     "videos": [],
-    "extras": ["Ajustar proporción del thumb"],
+    "extras": [
+      "Ajustar proporción del thumb"
+    ],
     "type": "gd",
     "category": "logotipos"
   },
@@ -1963,55 +1965,57 @@
     "imagenes": [
       {
         "image": "wild-jump001.jpg",
-        "label": "LOGO"
+        "label": ""
       },
       {
         "image": "wild-jump002.jpg",
-        "label": "WJ_BOCETO (3)"
+        "label": ""
       },
       {
         "image": "wild-jump003.jpg",
-        "label": "WJ_BOCETO (5)"
+        "label": ""
       },
       {
         "image": "wild-jump004.jpg",
-        "label": "WJ_BOCETO (7)"
+        "label": ""
       },
       {
         "image": "wild-jump005.jpg",
-        "label": "WJ_BOCETO (9)"
+        "label": ""
       },
       {
         "image": "wild-jump006.jpg",
-        "label": "WJ_BOCETO (10)"
+        "label": ""
       },
       {
         "image": "wild-jump007.jpg",
-        "label": "WJ_BOCETO (12)"
+        "label": ""
       },
       {
         "image": "wild-jump008.jpg",
-        "label": "WJ_BOCETO (16)"
+        "label": ""
       },
       {
         "image": "wild-jump009.jpg",
-        "label": "WJ_BOCETO (18)"
+        "label": ""
       },
       {
         "image": "wild-jump010.jpg",
-        "label": "WJ_BOCETO (19)"
+        "label": ""
       },
       {
         "image": "wild-jump011.jpg",
-        "label": "WJ_LOGOS 2"
+        "label": ""
       },
       {
         "image": "wild-jump012.jpg",
-        "label": "WJ_LOGOS TIPOGRAFIA"
+        "label": ""
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 277,

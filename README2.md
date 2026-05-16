@@ -164,8 +164,8 @@ pnpm dev
 | `check`           | `node scripts/check.js`            | Pipeline completo pre-push (lint + typecheck + test + build) |
 | `storybook`       | `storybook dev -p 6006`            | Lanzar Storybook                                             |
 | `build-storybook` | `storybook build`                  | Compilar Storybook estático                                  |
-| `backend`         | `node api/server.cjs`              | Iniciar backend                                              |
-| `backend:dev`     | `nodemon api/server.cjs`           | Backend con recarga automática                               |
+| `backend:fixed`   | `node api/server.cjs`              | Iniciar backend                                              |
+| `backend`         | `nodemon api/server.cjs`           | Backend con recarga automática                               |
 | `start`           | `concurrently "pnpm dev" "..."`    | Frontend + backend en paralelo                               |
 | `thumbs`          | `node scripts/generate-thumbs.cjs` | Generar thumbnails de todas las imágenes                     |
 | `thumbs:new`      | `... --new`                        | Thumbnails solo de imágenes nuevas                           |

@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useState, type DragEvent } from 'react';
+import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
+import { useBackendStatus } from '../../../contexts/BackendStatusContext';
 import type { ReactNode } from 'react';
 import { getResume, updateResume } from '../../../api/apiClient';
 import UIButton from '../../../components/ui/UIButton';
@@ -163,10 +165,19 @@ export default function ResumeManagerPage() {
     setDragSoftwareOverIndex(null);
   }
 
+  const { alive, checking } = useBackendStatus();
+
   useEffect(() => {
     let cancelled = false;
 
     async function load() {
+      if (!alive) {
+        // Backend not available: do not attempt fetch
+        setStatus('idle');
+        setMessage('');
+        return;
+      }
+
       try {
         setStatus('loading');
         const response = await getResume();
@@ -181,12 +192,15 @@ export default function ResumeManagerPage() {
       }
     }
 
+    // Wait until backend status has been checked; if checking, effect will rerun
+    if (checking) return;
+
     load();
 
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [alive, checking]);
 
   async function handleSave() {
     if (!resumeData) return;
@@ -211,6 +225,15 @@ export default function ResumeManagerPage() {
   }
 
   if (!resumeData) {
+    // If backend is offline, show the offline alert instead of an error box
+    if (!alive) {
+      return (
+        <section data-id="resume-manager-page">
+          <BackendOfflineAlert />
+        </section>
+      );
+    }
+
     return (
       <section data-id="resume-manager-page">
         <div className="rounded-xl border border-red-300 bg-red-50 p-4 text-red-800">
@@ -220,10 +243,11 @@ export default function ResumeManagerPage() {
     );
   }
 
-  const saveDisabled = status === 'saving';
+  const saveDisabled = status === 'saving' || !alive;
 
   return (
     <section data-id="resume-manager-page" className="space-y-6 pb-16">
+      <BackendOfflineAlert />
       <header className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-6 shadow-sm md:flex-row md:items-start md:justify-between">
         <div>
           <h2 className="text-2xl font-bold text-ink">Gestor de curriculum</h2>

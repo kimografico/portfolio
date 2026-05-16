@@ -101,11 +101,16 @@ async function createProject(req, res) {
 
     // Generar thumbs automáticamente
     const { spawn } = require('child_process');
-    spawn('node', ['scripts/generate-thumbs.cjs', '--id', String(newProject.id)], {
-      stdio: 'inherit',
+    const child = spawn('node', ['scripts/generate-thumbs.cjs', '--id', String(newProject.id)], {
+      stdio: 'ignore',
       cwd: process.cwd(),
       detached: true,
     });
+    child.unref();
+    child.on('error', (err) => {
+      console.error('Failed to spawn generate-thumbs for new project:', err.message);
+    });
+    console.log(`Spawned generate-thumbs (pid=${child.pid}) for project id=${newProject.id}`);
 
     res.status(201).json({
       success: true,
@@ -142,11 +147,16 @@ async function updateProject(req, res) {
 
     // Regenerar thumb automáticamente
     const { spawn } = require('child_process');
-    spawn('node', ['scripts/generate-thumbs.cjs', '--id', String(id)], {
-      stdio: 'inherit',
+    const child = spawn('node', ['scripts/generate-thumbs.cjs', '--id', String(id)], {
+      stdio: 'ignore',
       cwd: process.cwd(),
       detached: true,
     });
+    child.unref();
+    child.on('error', (err) => {
+      console.error('Failed to spawn generate-thumbs for updated project:', err.message);
+    });
+    console.log(`Spawned generate-thumbs (pid=${child.pid}) for project id=${id}`);
 
     // Remover campo interno _filePath
     const { _filePath, ...safeProject } = updated;

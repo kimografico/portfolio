@@ -739,7 +739,9 @@
     "visible": false,
     "imagenes": [],
     "videos": [],
-    "extras": ["Preguntar a Pau si tiene fotos de cuando se montó"],
+    "extras": [
+      "Preguntar a Pau si tiene fotos de cuando se montó"
+    ],
     "type": "gd",
     "category": "proyectos-especiales"
   },
@@ -752,7 +754,9 @@
     "visible": false,
     "imagenes": [],
     "videos": [],
-    "extras": ["Preguntar a Pau si tiene fotos de cuando se montó"],
+    "extras": [
+      "Preguntar a Pau si tiene fotos de cuando se montó"
+    ],
     "type": "gd",
     "category": "proyectos-especiales"
   },
@@ -862,10 +866,12 @@
     "imagenes": [
       {
         "image": "camisetas-presi001.jpg",
-        "label": "Camisetas presi-01"
+        "label": ""
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "type": "gd",
+    "category": "proyectos-especiales"
   }
 ]

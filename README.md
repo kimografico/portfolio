@@ -569,7 +569,7 @@ CORS está configurado para aceptar peticiones desde `localhost:5173` (Vite), `l
 pnpm backend
 
 # Backend con recarga automática (desarrollo)
-pnpm backend:dev
+pnpm backend
 
 # Frontend + backend simultáneamente (recomendado)
 pnpm start
@@ -600,8 +600,8 @@ pnpm typecheck      # TypeScript sin emitir archivos
 pnpm test           # Tests con Vitest (modo CI)
 pnpm test:watch     # Tests en modo watch
 pnpm check          # Suite completa: lint + typecheck + tests + build
-pnpm backend        # Backend Express (modo producción)
-pnpm backend:dev    # Backend Express con nodemon (modo desarrollo)
+pnpm backend:fixed  # Backend Express (modo producción)
+pnpm backend        # Backend Express con nodemon (modo desarrollo)
 pnpm start          # Frontend + Backend en paralelo (modo desarrollo)
 ```
 
