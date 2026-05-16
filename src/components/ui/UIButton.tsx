@@ -62,6 +62,14 @@ export default function UIButton(props: UIButtonProps) {
   }
   if (!buttonColor) buttonColor = 'text';
 
+  // If disabled, force muted color and outlined dashed style
+  const isDisabled = Boolean(disabled);
+  if (isDisabled) {
+    buttonColor = 'muted';
+    // force outlined (not solid) to show dashed outline
+    buttonSolid = false;
+  }
+
   const colorMap = {
     accent: 'var(--color-accent)',
     cta: 'var(--color-cta)',
@@ -79,6 +87,9 @@ export default function UIButton(props: UIButtonProps) {
     : buttonSolid
       ? 'border-[color:var(--button-color)] bg-[color:var(--button-color)] text-[color:var(--color-bg)] hover:bg-transparent hover:text-[color:var(--button-color)]'
       : 'border-[color:var(--button-color)] text-[color:var(--button-color)] hover:bg-[color:var(--button-color)] hover:text-[color:var(--color-bg)]';
+  const disabledExtra = isDisabled
+    ? 'border-dashed border-2 opacity-50 hover:opacity-70 hover:bg-transparent hover:text-[color:var(--color-text)] cursor-not-allowed'
+    : '';
   const style = {
     '--button-color': resolvedButtonColor,
   } as CSSProperties;
@@ -118,11 +129,14 @@ export default function UIButton(props: UIButtonProps) {
     return (
       <a
         href={props.href}
-        className={`${sharedClassName} ${colorClasses} ${disabled ? 'pointer-events-none opacity-50' : ''}`}
+        className={`${sharedClassName} ${colorClasses} ${disabled ? 'opacity-50' : ''} ${disabledExtra}`}
         data-id={buttonDataId}
         aria-disabled={disabled || undefined}
         tabIndex={disabled ? -1 : undefined}
         style={style}
+        onClick={(e) => {
+          if (disabled) e.preventDefault();
+        }}
         {...(rest as AnchorHTMLAttributes<HTMLAnchorElement>)}
       >
         {content}
@@ -131,7 +145,7 @@ export default function UIButton(props: UIButtonProps) {
   }
   return (
     <button
-      className={`${sharedClassName} ${colorClasses}`}
+      className={`${sharedClassName} ${colorClasses} ${disabledExtra}`}
       data-id={buttonDataId}
       type={props.type || 'button'}
       onClick={props.onClick}

@@ -91,3 +91,12 @@ export const LinkStyle: Story = {
     arrowBack: true,
   },
 };
+
+export const Disabled: Story = {
+  args: {
+    type: 'button',
+    children: 'Backend Offline',
+    disabled: true,
+    dataId: 'btn-disabled',
+  },
+};
