@@ -1,5 +1,6 @@
 Feature: Regresiones de rutas y UI global
 
+  @routes-sections-load
   Scenario Outline: Cada sección principal carga su contenido esperado
     Given el navegador tiene tamaño escritorio
     When navega a la ruta "<ruta>"
@@ -12,6 +13,7 @@ Feature: Regresiones de rutas y UI global
       | /dev             | [data-id="developer-home"]        |
       | /contacto        | [data-id="contact-page"]          |
 
+  @kimo-protected-routes-session
   Scenario: Las rutas protegidas de Kimo cargan con sesión
     Given el usuario está autenticado en Kimo
     And el navegador tiene tamaño escritorio
@@ -20,12 +22,14 @@ Feature: Regresiones de rutas y UI global
     When navega a la ruta "/kimo/places"
     Then debería ver el elemento [data-id="places-page"]
 
+  @kimo-redirect-login
   Scenario: Kimo redirige al login cuando no hay sesión
     Given el usuario no está autenticado en Kimo
     When navega a la ruta "/kimo/books"
     Then debería ver el heading "Acceso a Kimo"
     And no debería ver el elemento [data-id="books-page"]
 
+  @responsive-menu-mobile-desktop
   Scenario: El menú responsive funciona en móvil y escritorio
     Given el navegador tiene tamaño móvil
     When navega a la ruta "/"
@@ -39,6 +43,7 @@ Feature: Regresiones de rutas y UI global
     Then debería ver la navegación de escritorio
     And no debería ver el botón del menú móvil
 
+  @dark-mode-toggle
   Scenario: El modo oscuro cambia el tema del documento
     Given el navegador tiene tamaño escritorio
     When navega a la ruta "/"

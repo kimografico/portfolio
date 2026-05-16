@@ -1,6 +1,7 @@
 Feature: Regresiones de contenido, imágenes y tablas
 
-  Scenario Outline: Las galerías de proyecto muestran imágenes thumb
+  @all-thumbs-are-generated
+  Scenario Outline: Las galerías de proyecto tienen imágenes thumb generadas
     Given el navegador tiene tamaño escritorio
     When navega a la galería de proyecto "<ruta>"
     Then todas las ProjectCard de "<prefijo>" muestran miniaturas
@@ -10,6 +11,7 @@ Feature: Regresiones de contenido, imágenes y tablas
       | /dev/wordpress        | wordpress    |
       | /graphic-design/logotipos | logotipos |
 
+  @books-gallery-fallback-modal
   Scenario: La galería de libros muestra fallback y modal
     Given el usuario está autenticado en Kimo
     And el navegador tiene tamaño escritorio
@@ -21,6 +23,7 @@ Feature: Regresiones de contenido, imágenes y tablas
     When cierra el modal con Escape
     Then el modal del libro no está visible
 
+  @books-table-filter-title
   Scenario: La tabla de libros filtra por título
     Given el usuario está autenticado en Kimo
     And el navegador tiene tamaño escritorio
@@ -29,6 +32,7 @@ Feature: Regresiones de contenido, imágenes y tablas
     And filtra los libros por título "Juego de tronos"
     Then la fila del libro "Juego de tronos" es visible
 
+  @places-table-sort-city
   Scenario: La tabla de lugares carga y se puede ordenar por ciudad
     Given el usuario está autenticado en Kimo
     And el navegador tiene tamaño escritorio

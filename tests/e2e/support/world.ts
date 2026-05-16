@@ -27,7 +27,7 @@ Before(async function (this: CustomWorld) {
     slowMo: Number.isNaN(slowMo) ? 0 : slowMo,
   });
   this.context = await this.browser.newContext({
-    baseURL: process.env.E2E_BASE_URL ?? 'http://localhost:5174/portfolio/',
+    baseURL: process.env.E2E_BASE_URL ?? 'http://localhost:5173/portfolio/',
   });
   this.page = await this.context.newPage();
 });
