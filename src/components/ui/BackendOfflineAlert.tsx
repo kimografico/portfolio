@@ -18,9 +18,13 @@ export default function BackendOfflineAlert() {
         color: 'var(--color-text)',
       }}
     >
-      <div className="flex items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <span aria-hidden className="inline-flex mr-2" style={{ color: 'var(--color-accent)' }}>
+      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+          <span
+            aria-hidden
+            className="inline-flex mb-2 md:mr-2"
+            style={{ color: 'var(--color-accent)' }}
+          >
             <IconServerDown size={48} strokeWidth={1} />
           </span>
           <div className="text-sm">
@@ -31,12 +35,13 @@ export default function BackendOfflineAlert() {
             <code className="font-mono font-bold"> pnpm run backend</code>
           </div>
         </div>
-        <div>
+        <div className="w-full md:w-auto">
           <UIButton
             onClick={() => check()}
             solid
             icon={<IconRefresh size={24} />}
             dataId="backend-offline-retry-btn"
+            mobileFullWidth
           >
             Reintentar
           </UIButton>
