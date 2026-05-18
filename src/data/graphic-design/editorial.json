@@ -1844,5 +1844,153 @@
     ],
     "videos": [],
     "extras": []
+  },
+  {
+    "id": 296,
+    "date": "2024-05-16 00:00",
+    "title": "Color i energia del Sol",
+    "cliente": "Pilar Belmonte",
+    "descripcion": "Catálogo de la exposición en el Museo de la Ciudad (Valencia)\n92 páginas a todo color, en A4\nLa exposición tuvo lugar del 23 de mayo al 8 de spetiembre de 2024",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "color-i-energia-del-sol001.jpg",
+        "label": "1"
+      },
+      {
+        "image": "color-i-energia-del-sol002.jpg",
+        "label": "2"
+      },
+      {
+        "image": "color-i-energia-del-sol003.jpg",
+        "label": "3"
+      },
+      {
+        "image": "color-i-energia-del-sol004.jpg",
+        "label": "4"
+      },
+      {
+        "image": "color-i-energia-del-sol005.jpg",
+        "label": "5"
+      },
+      {
+        "image": "color-i-energia-del-sol006.jpg",
+        "label": "6"
+      },
+      {
+        "image": "color-i-energia-del-sol007.jpg",
+        "label": "7"
+      },
+      {
+        "image": "color-i-energia-del-sol008.jpg",
+        "label": "8"
+      },
+      {
+        "image": "color-i-energia-del-sol009.jpg",
+        "label": "9"
+      },
+      {
+        "image": "color-i-energia-del-sol010.jpg",
+        "label": "10"
+      },
+      {
+        "image": "color-i-energia-del-sol011.jpg",
+        "label": "11"
+      },
+      {
+        "image": "color-i-energia-del-sol012.jpg",
+        "label": "12"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 297,
+    "date": "2025-11-24 00:00",
+    "title": "Bum Fest Tiana",
+    "cliente": "Pi McCarthy",
+    "descripcion": "Catálogo de proyecto de un festival de eventos, talleres y música",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "bum-fest-tiana001.jpg",
+        "label": "1"
+      },
+      {
+        "image": "bum-fest-tiana002.jpg",
+        "label": "2"
+      },
+      {
+        "image": "bum-fest-tiana003.jpg",
+        "label": "3"
+      },
+      {
+        "image": "bum-fest-tiana004.jpg",
+        "label": "4"
+      },
+      {
+        "image": "bum-fest-tiana005.jpg",
+        "label": "5"
+      },
+      {
+        "image": "bum-fest-tiana006.jpg",
+        "label": "6"
+      },
+      {
+        "image": "bum-fest-tiana007.jpg",
+        "label": "7'"
+      },
+      {
+        "image": "bum-fest-tiana008.jpg",
+        "label": "8"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 300,
+    "date": "2011-07-04 00:00",
+    "title": "Catálogo Naranjas Torres",
+    "cliente": "Naranjas Torres",
+    "descripcion": "Primera versión de un catálogo de Productos de Naranjas Torres.\nEl cliente no pagó, por lo que el proyecto no llegó a término",
+    "visible": false,
+    "imagenes": [
+      {
+        "image": "catalogo-naranjas-torres009.jpg",
+        "label": "1"
+      },
+      {
+        "image": "catalogo-naranjas-torres010.jpg",
+        "label": "2"
+      },
+      {
+        "image": "catalogo-naranjas-torres011.jpg",
+        "label": "3"
+      },
+      {
+        "image": "catalogo-naranjas-torres012.jpg",
+        "label": "4"
+      },
+      {
+        "image": "catalogo-naranjas-torres013.jpg",
+        "label": "5"
+      },
+      {
+        "image": "catalogo-naranjas-torres014.jpg",
+        "label": "6"
+      },
+      {
+        "image": "catalogo-naranjas-torres015.jpg",
+        "label": "7"
+      },
+      {
+        "image": "catalogo-naranjas-torres016.jpg",
+        "label": "8"
+      }
+    ],
+    "videos": [],
+    "extras": []
   }
 ]
