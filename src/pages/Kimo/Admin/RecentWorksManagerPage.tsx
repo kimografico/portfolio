@@ -82,15 +82,17 @@ export default function RecentWorksManagerPage() {
 
         for (const work of data || []) {
           if (work.category === 'Developer' && work.href.startsWith('/dev/')) {
-            // Extraer id después de /dev/
-            const id = work.href.replace('/dev/', '');
-            devIds.add(isNaN(Number(id)) ? id : Number(id));
+            // Extraer el último segmento de la ruta, que puede ser `/dev/{category}/{id}`
+            const parts = work.href.split('/').filter(Boolean);
+            const last = parts[parts.length - 1] ?? '';
+            devIds.add(isNaN(Number(last)) ? last : Number(last));
           } else if (
             work.category === 'GraphicDesign' &&
             work.href.startsWith('/graphic-design/')
           ) {
-            const id = work.href.replace('/graphic-design/', '');
-            gdIds.add(isNaN(Number(id)) ? id : Number(id));
+            const parts = work.href.split('/').filter(Boolean);
+            const last = parts[parts.length - 1] ?? '';
+            gdIds.add(isNaN(Number(last)) ? last : Number(last));
           }
         }
 
@@ -160,7 +162,7 @@ export default function RecentWorksManagerPage() {
             tipo: proj.category.charAt(0).toUpperCase() + proj.category.slice(1),
             year: proj.date?.split('-')[0] || 'N/A',
             category: 'Developer',
-            href: `/dev/${proj.id}`, // Construcción basic de href basado en id
+            href: `/dev/${proj.category}/${proj.id}`, // Incluir la categoría en la ruta
           });
           num++;
         }
@@ -176,7 +178,7 @@ export default function RecentWorksManagerPage() {
             tipo: proj.category.charAt(0).toUpperCase() + proj.category.slice(1),
             year: proj.date?.split('-')[0] || 'N/A',
             category: 'GraphicDesign',
-            href: `/graphic-design/${proj.id}`, // Construcción basic de href basado en id
+            href: `/graphic-design/${proj.category}/${proj.id}`, // Incluir la categoría en la ruta
           });
           num++;
         }

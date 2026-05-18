@@ -1,34 +1,50 @@
 [
   {
     "num": "01",
-    "title": "Paellas de Pecado",
-    "tipo": "Vanilla",
-    "year": "2024",
+    "title": "El Racó Solidari",
+    "tipo": "Frameworks",
+    "year": "2025",
     "category": "Developer",
-    "href": "/dev/221"
+    "href": "/dev/frameworks/270"
   },
   {
     "num": "02",
-    "title": "Colordmar",
+    "title": "Web Gaia Climb",
     "tipo": "Wordpress",
-    "year": "2020",
+    "year": "2022",
     "category": "Developer",
-    "href": "/dev/213"
+    "href": "/dev/wordpress/261"
   },
   {
     "num": "03",
-    "title": "Mailing SAICA - YAMAHA",
-    "tipo": "Multimedia",
-    "year": "2021",
-    "category": "GraphicDesign",
-    "href": "/graphic-design/219"
+    "title": "Web Colordmar",
+    "tipo": "Wordpress",
+    "year": "2020",
+    "category": "Developer",
+    "href": "/dev/wordpress/213"
   },
   {
     "num": "04",
-    "title": "Tríptico XXL para colegios",
-    "tipo": "Papeleria",
-    "year": "2021",
+    "title": "Rediseño de etiquetas de Hidromiel Odín",
+    "tipo": "Etiquetas",
+    "year": "2026",
     "category": "GraphicDesign",
-    "href": "/graphic-design/220"
+    "href": "/graphic-design/etiquetas/256"
+  },
+  {
+    "num": "05",
+    "title": "Carteles Montanejos para Metro Valencia",
+    "tipo": "Carteleria",
+    "year": "2026",
+    "category": "GraphicDesign",
+    "href": "/graphic-design/carteleria/290"
+  },
+  {
+    "num": "06",
+    "title": "Carteles para el 1º Foro de Turismo Inteligente",
+    "tipo": "Carteleria",
+    "year": "2026",
+    "category": "GraphicDesign",
+    "href": "/graphic-design/carteleria/285"
   }
 ]

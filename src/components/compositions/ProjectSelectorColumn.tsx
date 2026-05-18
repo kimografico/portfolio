@@ -51,7 +51,7 @@ const ProjectSelectorColumn: React.FC<ProjectSelectorColumnProps> = ({
           sortedProjects.map((proj) => (
             <label
               key={proj.id}
-              className="flex items-center gap-3 p-2 hover:bg-white rounded cursor-pointer transition-colors"
+              className="flex items-center gap-3 p-2 hover:bg-[var(--color-highlight)] rounded cursor-pointer transition-colors"
               data-id={`rw-project-${proj.id}`}
             >
               <input
