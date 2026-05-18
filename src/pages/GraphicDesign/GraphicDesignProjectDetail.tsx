@@ -15,6 +15,7 @@ import {
 } from '../../data/config/imagePathHelper';
 import type { GraphicDesignProject } from '../../interfaces/graphicDesign';
 import '../../styles/Developer.css';
+import { APP_BASENAME } from '../../data/config/app';
 
 // Mapeo de categoría a datos y etiqueta
 const projectDataMap: Record<string, { data: GraphicDesignProject[]; label: string }> = {
@@ -120,6 +121,8 @@ export default function GraphicDesignProjectDetail() {
       backButtonDataId="back-to-category-btn"
       imageButtonDataIdPrefix="graphic-design"
       backButtonLabel={`Volver a ${label}`}
+      editButtonHref={`${APP_BASENAME}/kimo/edit-project/${project.id}`}
+      editButtonDataId="graphic-design-edit-project-btn"
       onBack={() => navigate(`/graphic-design/${category}`)}
       onPrev={() => prev && navigate(`/graphic-design/${category}/${prev.id}`)}
       onNext={() => next && navigate(`/graphic-design/${category}/${next.id}`)}

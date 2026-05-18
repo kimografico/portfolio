@@ -7,6 +7,7 @@ import wordpressData from '../../data/development/wordpress.json';
 import { buildDeveloperImagePath } from '../../data/config/imagePathHelper';
 import type { WebProject } from '../../interfaces/developer';
 import '../../styles/Developer.css';
+import { APP_BASENAME } from '../../data/config/app';
 
 // Mapeo de parent a datos y etiqueta
 const projectDataMap: Record<string, { data: WebProject[]; label: string }> = {
@@ -74,6 +75,8 @@ export default function DeveloperProjectDetail() {
       backButtonDataId="back-to-category-btn"
       imageButtonDataIdPrefix="developer"
       backButtonLabel={`Volver a ${label}`}
+      editButtonHref={`${APP_BASENAME}/kimo/edit-project/${project.id}`}
+      editButtonDataId="developer-edit-project-btn"
       onBack={() => navigate(`/dev/${parent}`)}
       onPrev={() => prev && navigate(`/dev/${parent}/${prev.id}`)}
       onNext={() => next && navigate(`/dev/${parent}/${next.id}`)}

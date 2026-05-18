@@ -2,6 +2,7 @@ import { useState } from 'react';
 import ImageLightbox from '../ui/ImageLightbox';
 import PrevNextBtns from '../ui/PrevNextBtns';
 import UIButton from '../ui/UIButton';
+import { useBackendStatus } from '../../contexts/BackendStatusContext';
 import { renderMultilineText } from '../../utils/renderMultilineText';
 
 interface ProjectMediaItem {
@@ -20,6 +21,8 @@ interface ProjectDetailPageProps {
   backButtonDataId: string;
   imageButtonDataIdPrefix: string;
   backButtonLabel: string;
+  editButtonHref?: string;
+  editButtonDataId?: string;
   onBack: () => void;
   onPrev: () => void;
   onNext: () => void;
@@ -46,6 +49,8 @@ export default function ProjectDetailPage({
   backButtonDataId,
   imageButtonDataIdPrefix,
   backButtonLabel,
+  editButtonHref,
+  editButtonDataId,
   onBack,
   onPrev,
   onNext,
@@ -60,6 +65,7 @@ export default function ProjectDetailPage({
   videos,
   buildImagePath,
 }: ProjectDetailPageProps) {
+  const { alive } = useBackendStatus();
   const [lightbox, setLightbox] = useState<{ open: boolean; src: string; alt: string }>({
     open: false,
     src: '',
@@ -81,12 +87,19 @@ export default function ProjectDetailPage({
           <UIButton onClick={onBack} link arrowBack dataId={backButtonDataId}>
             {backButtonLabel}
           </UIButton>
-          <PrevNextBtns
-            onPrev={onPrev}
-            onNext={onNext}
-            disabledPrev={disabledPrev}
-            disabledNext={disabledNext}
-          />
+          <div className="flex items-center gap-3">
+            {editButtonHref && alive && (
+              <UIButton href={editButtonHref} link dataId={editButtonDataId ?? 'edit-project-btn'}>
+                Editar
+              </UIButton>
+            )}
+            <PrevNextBtns
+              onPrev={onPrev}
+              onNext={onNext}
+              disabledPrev={disabledPrev}
+              disabledNext={disabledNext}
+            />
+          </div>
         </div>
       </section>
 

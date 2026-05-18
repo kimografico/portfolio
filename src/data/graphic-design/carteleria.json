@@ -240,7 +240,9 @@
       }
     ],
     "videos": [],
-    "extras": ["Añadir alguna foto actual"],
+    "extras": [
+      "Añadir alguna foto actual"
+    ],
     "visible": true,
     "type": "gd",
     "category": "carteleria"
@@ -286,7 +288,9 @@
       }
     ],
     "videos": [],
-    "extras": ["Hacer mockups"],
+    "extras": [
+      "Hacer mockups"
+    ],
     "visible": true,
     "type": "gd",
     "category": "carteleria"
@@ -1170,24 +1174,26 @@
         "label": "Foto en una parada de Metro de Valencia Capital"
       },
       {
-        "image": "carteles-turisticos-metro-valencia002.jpg",
-        "label": "Versión 2025"
-      },
-      {
         "image": "carteles-turisticos-metro-valencia003.jpg",
         "label": "Versión 2026"
       },
       {
-        "image": "carteles-turisticos-metro-valencia004.jpg",
-        "label": "Rollups"
+        "image": "carteles-turisticos-metro-valencia002.jpg",
+        "label": "Versión 2025"
       },
       {
         "image": "carteles-turisticos-metro-valencia005.jpg",
         "label": "Lona"
+      },
+      {
+        "image": "carteles-turisticos-metro-valencia004.jpg",
+        "label": "Rollups"
       }
     ],
     "videos": [],
-    "extras": []
+    "extras": [],
+    "type": "gd",
+    "category": "carteleria"
   },
   {
     "id": 291,
