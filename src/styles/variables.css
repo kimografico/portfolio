@@ -16,7 +16,7 @@
   --color-dev: #225cba;
   --color-design: #ea920e;
   --color-cta: #008d4b;
-  --color-highlight: #fdeee9;
+  --color-highlight: --scrollbar-bg: #f3f3f3;
   --font-sans: 'DM Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
@@ -35,4 +35,5 @@
   --color-accent: #e0673f;
   --color-design: #935901;
   --color-highlight: #000000;
+  --scrollbar-bg: #0f0f0f;
 }
