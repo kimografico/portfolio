@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState, type ChangeEvent, type FormEvent } from 'react';
 import UIButton from '../../../components/ui/UIButton';
+import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
 import { IconImage } from '../../../components/iconos/IconImage';
 import illustrations from '../../../data/kimo/illustrations.json';
 import {
@@ -10,6 +11,7 @@ import {
 import type { Illustration } from '../../../interfaces/illustration';
 import { slugify } from '../../../utils/slugify';
 import { APP_BASENAME } from '../../../data/config/app';
+import { useBackendStatus } from '../../../contexts/BackendStatusContext';
 
 interface IllustrationFormState {
   id: string;
@@ -40,6 +42,7 @@ function hasBlobPreview(value: string): boolean {
 }
 
 export default function AddIllustrationPage() {
+  const { alive } = useBackendStatus();
   const [form, setForm] = useState<IllustrationFormState>(initialForm);
   const [mainFile, setMainFile] = useState<File | null>(null);
   const [mainPreview, setMainPreview] = useState('');
@@ -66,6 +69,14 @@ export default function AddIllustrationPage() {
     },
     [extras, mainPreview],
   );
+
+  if (!alive) {
+    return (
+      <section className="flex flex-col gap-8" data-id="add-illustration-page">
+        <BackendOfflineAlert />
+      </section>
+    );
+  }
 
   function handleField<K extends keyof IllustrationFormState>(
     key: K,

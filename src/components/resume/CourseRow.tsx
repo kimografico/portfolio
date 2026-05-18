@@ -55,7 +55,7 @@ const CourseRow: FC<CourseRowProps> = ({
           type="text"
           value={name}
           onChange={(e) => onNameChange(e.target.value)}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           data-id={`${dataIdPrefix}-name-input`}
         />
       </label>
@@ -65,7 +65,7 @@ const CourseRow: FC<CourseRowProps> = ({
           type="text"
           value={institution}
           onChange={(e) => onInstitutionChange(e.target.value)}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           data-id={`${dataIdPrefix}-institution-input`}
         />
       </label>
@@ -74,7 +74,7 @@ const CourseRow: FC<CourseRowProps> = ({
         <select
           value={year}
           onChange={(e) => onYearChange(e.target.value)}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           data-id={`${dataIdPrefix}-year-select`}
         >
           {yearOptions.map((option) => (

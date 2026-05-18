@@ -1,13 +1,16 @@
 import { useMemo } from 'react';
 import UIButton from '../../../components/ui/UIButton';
 import { ProjectCard, type BaseProject } from '../../../components/ui/ProjectCard';
+import { APP_BASENAME } from '../../../data/config/app';
 import illustrations from '../../../data/kimo/illustrations.json';
+import { useBackendStatus } from '../../../contexts/BackendStatusContext';
 import type { Illustration } from '../../../interfaces/illustration';
 import { isKimoAuthenticated } from '../../../lib/kimoAuth';
 
 const ILLUSTRATIONS_PATH = import.meta.env.VITE_ILLUSTRATIONS_PATH;
 
 export default function IllustrationsPage() {
+  const { alive } = useBackendStatus();
   // Adaptador: Illustration → BaseProject
   const data: BaseProject[] = useMemo(
     () =>
@@ -33,8 +36,8 @@ export default function IllustrationsPage() {
   return (
     <div className="flex flex-col gap-12">
       <section className="border-b border-border" data-id="illustrations-page">
-        <div className="max-w-7xl mx-auto py-16 md:py-24">
-          <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div className="max-w-7xl mx-auto py-16 md:py-6">
+          <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
             <div>
               <h1 className="text-5xl md:text-6xl font-semibold tracking-tighter leading-none text-ink mb-6">
                 Ilustraciones
@@ -48,7 +51,9 @@ export default function IllustrationsPage() {
               <UIButton
                 href={`${APP_BASENAME}/kimo/add-illustration`}
                 dataId="illustrations-add-btn"
+                addBtn
                 arrow
+                disabled={alive === false}
               >
                 Añadir ilustración
               </UIButton>
@@ -74,4 +79,3 @@ export default function IllustrationsPage() {
     </div>
   );
 }
-import { APP_BASENAME } from '../../../data/config/app';

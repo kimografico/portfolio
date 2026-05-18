@@ -1,8 +1,10 @@
 import UIButton from '../../../components/ui/UIButton';
 import PlacesTable from './PlacesTable';
 import VisitedWorldMap from '../../../components/compositions/VisitedWorldMap';
+import { APP_BASENAME } from '../../../data/config/app';
 import places from '../../../data/kimo/places.json';
 import markers from '../../../data/kimo/places_markers.json';
+import { useBackendStatus } from '../../../contexts/BackendStatusContext';
 import { isKimoAuthenticated } from '../../../lib/kimoAuth';
 
 /**
@@ -17,6 +19,7 @@ function getUniqueCountries() {
 }
 
 export default function PlacesPage() {
+  const { alive } = useBackendStatus();
   // Lista de países únicos extraídos del JSON
   const countries = getUniqueCountries();
   return (
@@ -27,7 +30,13 @@ export default function PlacesPage() {
           <p className="text-sm text-muted">Mapa con marcadores y tabla de viajes.</p>
         </div>
         {isKimoAuthenticated() && (
-          <UIButton href={`${APP_BASENAME}/kimo/add-place`} dataId="places-add-place-btn" arrow>
+          <UIButton
+            href={`${APP_BASENAME}/kimo/add-place`}
+            dataId="places-add-place-btn"
+            addBtn
+            arrow
+            disabled={alive === false}
+          >
             Añadir lugar
           </UIButton>
         )}
@@ -42,4 +51,3 @@ export default function PlacesPage() {
     </section>
   );
 }
-import { APP_BASENAME } from '../../../data/config/app';

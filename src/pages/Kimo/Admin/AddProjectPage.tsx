@@ -3,6 +3,7 @@ import ImageDropZone from '../../../components/compositions/ImageDropZone';
 import EditableFieldList from '../../../components/compositions/EditableFieldList';
 import TechStackTags from '../../../components/compositions/TechStackTags';
 import UIButton from '../../../components/ui/UIButton';
+import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
 
 /**
  * Categorías disponibles por tipo.
@@ -267,7 +268,7 @@ export default function AddProjectPage() {
           }}
           onAdd={addVideo}
           onRemove={removeVideo}
-          addBtnLabel="+ Añadir video"
+          addBtnLabel="Añadir video"
         />
 
         <EditableFieldList
@@ -279,7 +280,7 @@ export default function AddProjectPage() {
           onChange={handleExtrasChange}
           onAdd={addExtras}
           onRemove={removeExtras}
-          addBtnLabel="+ Añadir link"
+          addBtnLabel="Añadir link"
         />
 
         {/* Visible */}
@@ -298,18 +299,19 @@ export default function AddProjectPage() {
         </div>
 
         {/* Submit */}
-        <div className="flex items-center gap-4 pt-2">
+        <div className="flex items-center gap-4 pt-2 flex-nowrap">
           <UIButton
             type="submit"
             dataId="add-project-submit"
             saveBtn
+            mobileFullWidth
             disabled={status === 'loading'}
           >
             {status === 'loading' ? 'Guardando…' : 'Crear proyecto'}
           </UIButton>
-          <p className="text-xs text-muted">
-            El backend debe estar activo: <code className="font-mono">pnpm backend</code>
-          </p>
+          <div className="w-full md:w-auto md:ml-auto">
+            <BackendOfflineAlert />
+          </div>
         </div>
       </form>
     </section>

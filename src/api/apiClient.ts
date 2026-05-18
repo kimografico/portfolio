@@ -47,7 +47,7 @@ async function apiFetch<T = unknown>(
         const errJson = await res.json();
         const errMsg = (errJson && (errJson.error || errJson.message)) || res.statusText;
         throw new Error(String(errMsg || `HTTP ${res.status}`));
-      } catch (parseErr) {
+      } catch {
         throw new Error(res.statusText || `HTTP ${res.status}`);
       }
     }

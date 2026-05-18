@@ -59,7 +59,7 @@ const EducationRow: FC<EducationRowProps> = ({
           type="text"
           value={degree}
           onChange={(e) => onDegreeChange(e.target.value)}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           data-id={`${dataIdPrefix}-degree-input`}
         />
       </label>
@@ -69,7 +69,7 @@ const EducationRow: FC<EducationRowProps> = ({
           type="text"
           value={institution}
           onChange={(e) => onInstitutionChange(e.target.value)}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           data-id={`${dataIdPrefix}-institution-input`}
         />
       </label>
@@ -78,7 +78,7 @@ const EducationRow: FC<EducationRowProps> = ({
         <select
           value={start}
           onChange={(e) => onStartChange(e.target.value)}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           data-id={`${dataIdPrefix}-start-select`}
         >
           {yearOptions.map((option) => (
@@ -93,7 +93,7 @@ const EducationRow: FC<EducationRowProps> = ({
         <select
           value={end}
           onChange={(e) => onEndChange(e.target.value)}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           data-id={`${dataIdPrefix}-end-select`}
         >
           {yearOptions.map((option) => (

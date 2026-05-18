@@ -4,6 +4,7 @@ import UIButton from '../../../components/ui/UIButton';
 import IconVisible from '../../../components/iconos/IconVisible';
 import IconHidden from '../../../components/iconos/IconHidden';
 import { useNavigate } from 'react-router-dom';
+import { useBackendStatus } from '../../../contexts/BackendStatusContext';
 import RecentWorksManagerPage from './RecentWorksManagerPage';
 import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
 import BaseTable from '../../../components/compositions/BaseTable';
@@ -46,6 +47,7 @@ type VisibilityFilter = 'all' | 'visible' | 'hidden';
 
 export default function DataPage() {
   const navigate = useNavigate();
+  const { alive } = useBackendStatus();
   const [filterType, setFilterType] = useState('Desarrollo');
   const [filterCategory, setFilterCategory] = useState('');
   const [filterCliente, setFilterCliente] = useState('');
@@ -342,11 +344,12 @@ export default function DataPage() {
         {/* Botón: + Añadir Proyecto (UIButton color cta, solid) */}
         <UIButton
           color="cta"
-          solid
+          addBtn
           onClick={() => window.open(`${APP_BASENAME}/kimo/add-project`, '_blank')}
-          data-id="data-add-project-btn"
+          dataId="data-add-project-btn"
+          disabled={alive === false}
         >
-          + Añadir Proyecto
+          Añadir Proyecto
         </UIButton>
         {/* Botón: Pendientes (UIButton color accent, solid) */}
         <UIButton

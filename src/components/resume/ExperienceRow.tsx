@@ -63,7 +63,7 @@ const ExperienceRow: FC<ExperienceRowProps> = ({
           type="text"
           value={role}
           onChange={(e) => onRoleChange(e.target.value)}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           data-id={`${dataIdPrefix}-role-input`}
         />
       </label>
@@ -73,7 +73,7 @@ const ExperienceRow: FC<ExperienceRowProps> = ({
           type="text"
           value={company}
           onChange={(e) => onCompanyChange(e.target.value)}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           data-id={`${dataIdPrefix}-company-input`}
         />
       </label>
@@ -82,7 +82,7 @@ const ExperienceRow: FC<ExperienceRowProps> = ({
         <select
           value={start}
           onChange={(e) => onStartChange(e.target.value)}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           data-id={`${dataIdPrefix}-start-select`}
         >
           {yearOptions.map((option) => (
@@ -97,7 +97,7 @@ const ExperienceRow: FC<ExperienceRowProps> = ({
         <select
           value={end}
           onChange={(e) => onEndChange(e.target.value)}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           data-id={`${dataIdPrefix}-end-select`}
         >
           {yearOptions.map((option) => (
@@ -113,7 +113,7 @@ const ExperienceRow: FC<ExperienceRowProps> = ({
           value={description}
           onChange={(e) => onDescriptionChange(e.target.value)}
           rows={4}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           data-id={`${dataIdPrefix}-description-textarea`}
         />
       </label>

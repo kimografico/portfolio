@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react';
 import UIButton from '../../../components/ui/UIButton';
+import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
 import {
   createKimoPlace,
   createKimoPlaceMarker,
@@ -7,6 +8,7 @@ import {
   type KimoPlacePayload,
 } from '../../../api/apiClient';
 import { APP_BASENAME } from '../../../data/config/app';
+import { useBackendStatus } from '../../../contexts/BackendStatusContext';
 
 interface PlaceFormState {
   city: string;
@@ -59,6 +61,7 @@ const MARKER_COUNTRIES = [
 ];
 
 export default function AddPlacePage() {
+  const { alive } = useBackendStatus();
   const [placeForm, setPlaceForm] = useState<PlaceFormState>(initialPlaceForm);
   const [markerForm, setMarkerForm] = useState<MarkerFormState>(initialMarkerForm);
   const [placeStatus, setPlaceStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -76,6 +79,14 @@ export default function AddPlacePage() {
 
   function handleMarkerField<K extends keyof MarkerFormState>(key: K, value: MarkerFormState[K]) {
     setMarkerForm((prev) => ({ ...prev, [key]: value }));
+  }
+
+  if (!alive) {
+    return (
+      <section className="flex flex-col gap-8" data-id="add-place-page">
+        <BackendOfflineAlert />
+      </section>
+    );
   }
 
   async function handlePlaceSubmit(event: FormEvent<HTMLFormElement>) {
@@ -154,9 +165,9 @@ export default function AddPlacePage() {
         </UIButton>
       </div>
 
-      <div className="grid gap-6 xl:grid-cols-2">
+      <div className="grid gap-6 xl:grid-cols-2 items-stretch">
         <form
-          className="grid gap-6 rounded-2xl border border-border bg-surface p-6"
+          className="flex flex-col gap-6 rounded-2xl border border-border bg-surface p-6"
           onSubmit={handlePlaceSubmit}
           data-id="add-place-form"
         >
@@ -236,13 +247,20 @@ export default function AddPlacePage() {
             />
           </label>
 
-          <UIButton saveBtn disabled={placeStatus === 'loading'} dataId="add-place-save-btn">
-            {placeStatus === 'loading' ? 'Guardando…' : 'Añadir lugar'}
-          </UIButton>
+          <div className="mt-auto">
+            <UIButton
+              fullWidth
+              saveBtn
+              disabled={placeStatus === 'loading'}
+              dataId="add-place-save-btn"
+            >
+              {placeStatus === 'loading' ? 'Guardando…' : 'Añadir lugar'}
+            </UIButton>
+          </div>
         </form>
 
         <form
-          className="grid gap-6 rounded-2xl border border-border bg-surface p-6"
+          className="flex flex-col gap-6 rounded-2xl border border-border bg-surface p-6"
           onSubmit={handleMarkerSubmit}
           data-id="add-place-marker-form"
         >
@@ -316,9 +334,16 @@ export default function AddPlacePage() {
             </label>
           </div>
 
-          <UIButton saveBtn disabled={markerStatus === 'loading'} dataId="add-marker-save-btn">
-            {markerStatus === 'loading' ? 'Guardando…' : 'Añadir marcador'}
-          </UIButton>
+          <div className="mt-auto">
+            <UIButton
+              fullWidth
+              saveBtn
+              disabled={markerStatus === 'loading'}
+              dataId="add-marker-save-btn"
+            >
+              {markerStatus === 'loading' ? 'Guardando…' : 'Añadir marcador'}
+            </UIButton>
+          </div>
         </form>
       </div>
     </section>

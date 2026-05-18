@@ -1,11 +1,13 @@
 import { useEffect, useMemo, useState, type ChangeEvent, type FormEvent } from 'react';
 import UIButton from '../../../components/ui/UIButton';
+import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
 import { IconImage } from '../../../components/iconos/IconImage';
 import books from '../../../data/kimo/books.json';
 import { createKimoBook, uploadKimoImages, type KimoBookPayload } from '../../../api/apiClient';
 import type { Book } from '../../../interfaces/book';
 import { slugify } from '../../../utils/slugify';
 import { APP_BASENAME } from '../../../data/config/app';
+import { useBackendStatus } from '../../../contexts/BackendStatusContext';
 
 interface BookFormState {
   id: string;
@@ -38,6 +40,7 @@ function isEmptyString(value: string): boolean {
 }
 
 export default function AddBookPage() {
+  const { alive } = useBackendStatus();
   const [form, setForm] = useState<BookFormState>(initialForm);
   const [coverFile, setCoverFile] = useState<File | null>(null);
   const [coverPreview, setCoverPreview] = useState('');
@@ -55,6 +58,14 @@ export default function AddBookPage() {
     },
     [coverPreview],
   );
+
+  if (!alive) {
+    return (
+      <section className="flex flex-col gap-8" data-id="add-book-page">
+        <BackendOfflineAlert />
+      </section>
+    );
+  }
 
   function handleField<K extends keyof BookFormState>(key: K, value: BookFormState[K]) {
     setForm((prev) => ({ ...prev, [key]: value }));

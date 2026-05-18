@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useEffect, useState, useCallback } from 'react';
 import { API_BASE } from '../api/apiClient';
 
@@ -8,13 +9,13 @@ type BackendStatus = {
 };
 
 const BackendStatusContext = createContext<BackendStatus>({
-  alive: false,
+  alive: true,
   checking: true,
   check: async () => false,
 });
 
 export function BackendStatusProvider({ children }: { children: React.ReactNode }) {
-  const [alive, setAlive] = useState(false);
+  const [alive, setAlive] = useState(true);
   const [checking, setChecking] = useState(true);
 
   const check = useCallback(async () => {
@@ -29,7 +30,7 @@ export function BackendStatusProvider({ children }: { children: React.ReactNode 
       const ok = Boolean(json && json.success);
       setAlive(ok);
       return ok;
-    } catch (err) {
+    } catch {
       setAlive(false);
       return false;
     } finally {
@@ -39,13 +40,18 @@ export function BackendStatusProvider({ children }: { children: React.ReactNode 
 
   useEffect(() => {
     let mounted = true;
-    // initial check
-    check().catch(() => {});
+    // initial check (deferred to avoid synchronous setState in effect)
+    setTimeout(() => {
+      void check().catch(() => {});
+    }, 0);
 
     // poll every 30s
     const id = setInterval(() => {
       if (!mounted) return;
-      check().catch(() => {});
+      // defer to avoid setState synchronously inside effect
+      setTimeout(() => {
+        void check().catch(() => {});
+      }, 0);
     }, 30000);
 
     return () => {

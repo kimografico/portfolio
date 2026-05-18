@@ -27,6 +27,7 @@ function normalizeImages(
 }
 import { useEffect, useState, useRef } from 'react';
 import UIButton from '../../../components/ui/UIButton';
+import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
 import { IconImage } from '../../../components/iconos/IconImage';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
@@ -91,7 +92,6 @@ export default function EditProjectPage() {
   const [loadStatus, setLoadStatus] = useState<'loading' | 'loaded' | 'error'>(
     isValidId ? 'loading' : 'error',
   );
-  const [loadError, setLoadError] = useState(isValidId ? '' : 'ID de proyecto inválido');
   const [status, setStatus] = useState<
     'idle' | 'loading' | 'success' | 'error' | 'deleting' | 'deleted'
   >('idle');
@@ -166,10 +166,9 @@ export default function EditProjectPage() {
           stack: p.stack ?? [],
         });
         setLoadStatus('loaded');
-      } catch (err) {
+      } catch {
         if (cancelled) return;
         setLoadStatus('error');
-        setLoadError(err instanceof Error ? err.message : 'Error al cargar el proyecto');
       }
     }
     load();
@@ -190,8 +189,8 @@ export default function EditProjectPage() {
   if (loadStatus === 'error' || !form) {
     return (
       <section data-id="edit-project-page">
-        <div className="mb-6 p-4 bg-red-50 border border-red-300 text-red-800 rounded">
-          ❌ {loadError || 'Error desconocido'}
+        <div className="mb-6">
+          <BackendOfflineAlert />
         </div>
         <UIButton
           onClick={() => navigate('/kimo/data')}
@@ -623,14 +622,14 @@ export default function EditProjectPage() {
               >
                 📁 Seleccionar archivos
               </button>
-              <button
+              <UIButton
                 type="button"
                 onClick={addImagen}
-                className="text-xs text-accent hover:underline"
-                data-id="edit-project-add-image-btn"
+                addBtn
+                dataId="edit-project-add-image-btn"
               >
-                + Añadir URL
-              </button>
+                Añadir URL
+              </UIButton>
             </div>
           </div>
 
@@ -771,14 +770,14 @@ export default function EditProjectPage() {
         <div>
           <div className="flex items-center justify-between mb-2">
             <p className="text-xs font-semibold text-muted">Videos</p>
-            <button
+            <UIButton
               type="button"
               onClick={() => addVideo()}
-              className="text-xs text-accent hover:underline"
-              data-id="edit-project-add-video-btn"
+              addBtn
+              dataId="edit-project-add-video-btn"
             >
-              + Añadir video
-            </button>
+              Añadir video
+            </UIButton>
           </div>
           <div className="space-y-2">
             {f.videos.map((v, i) => (
@@ -818,14 +817,14 @@ export default function EditProjectPage() {
         <div>
           <div className="flex items-center justify-between mb-2">
             <p className="text-xs font-semibold text-muted">Extras / Tareas por hacer</p>
-            <button
+            <UIButton
               type="button"
               onClick={() => addExtras()}
-              className="text-xs text-accent hover:underline"
-              data-id="edit-project-add-extra-btn"
+              addBtn
+              dataId="edit-project-add-extra-btn"
             >
-              + Añadir tarea
-            </button>
+              Añadir tarea
+            </UIButton>
           </div>
           <div className="space-y-2">
             {f.extras.map((ex, i) => (
@@ -869,9 +868,10 @@ export default function EditProjectPage() {
         </div>
 
         {/* Submit */}
-        <div className="flex items-center gap-4 pt-2">
+        <div className="flex flex-col md:flex-row items-center gap-3 pt-2 md:flex-nowrap">
           <UIButton
             type="submit"
+            mobileFullWidth
             saveBtn
             disabled={status === 'loading' || status === 'deleting' || status === 'deleted'}
             dataId="edit-project-submit"
@@ -883,6 +883,7 @@ export default function EditProjectPage() {
             onClick={handleDeleteProject}
             color="accent"
             solid
+            mobileFullWidth
             disabled={status === 'deleting' || status === 'deleted'}
             dataId="edit-project-delete-btn"
           >
@@ -892,14 +893,15 @@ export default function EditProjectPage() {
             type="button"
             onClick={() => navigate('/kimo/data')}
             color="text"
+            mobileFullWidth
             dataId="edit-project-cancel"
             disabled={status === 'deleting' || status === 'deleted'}
           >
             Cancelar
           </UIButton>
-          <p className="text-xs text-muted">
-            El backend debe estar activo: <code className="font-mono">pnpm backend</code>
-          </p>
+          <div className="w-full md:w-auto md:ml-auto">
+            <BackendOfflineAlert />
+          </div>
         </div>
 
         {/* Feedback de éxito */}

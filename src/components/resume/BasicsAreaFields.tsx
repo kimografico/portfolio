@@ -21,7 +21,7 @@ export default function BasicsAreaFields({ area, data, onFieldChange }: BasicsAr
           type="text"
           value={data.title}
           onChange={(e) => onFieldChange('title', e.target.value)}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           data-id={`basics-${area}-title-input`}
         />
       </label>
@@ -30,7 +30,7 @@ export default function BasicsAreaFields({ area, data, onFieldChange }: BasicsAr
         <textarea
           value={data.summary}
           onChange={(e) => onFieldChange('summary', e.target.value)}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           rows={4}
           data-id={`basics-${area}-summary-textarea`}
         />
@@ -40,7 +40,7 @@ export default function BasicsAreaFields({ area, data, onFieldChange }: BasicsAr
         <textarea
           value={data.additionalInfo ?? ''}
           onChange={(e) => onFieldChange('additionalInfo', e.target.value)}
-          className="rounded-md border border-border px-3 py-2 text-sm"
+          className="rounded-md border border-border bg-bg px-3 py-2 text-sm"
           rows={5}
           data-id={`basics-${area}-additional-info-textarea`}
         />
