@@ -1126,5 +1126,57 @@
     "extras": [],
     "type": "gd",
     "category": "papeleria"
+  },
+  {
+    "id": 299,
+    "date": "2021-05-19 00:00",
+    "title": "Tríptico XXL de Actividades Extraescolares de Escalada",
+    "cliente": "Natural Climb",
+    "descripcion": "Tríptico XXL de promoción de Actividades Extraescolares de Escalada en el rocódromo Natural Climb de Valencia",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "triptico-xxl-de-actividades-extraescolares-de-escalada001.jpg",
+        "label": "4"
+      },
+      {
+        "image": "triptico-xxl-de-actividades-extraescolares-de-escalada002.jpg",
+        "label": "6"
+      },
+      {
+        "image": "triptico-xxl-de-actividades-extraescolares-de-escalada003.jpg",
+        "label": "8"
+      },
+      {
+        "image": "triptico-xxl-de-actividades-extraescolares-de-escalada004.jpg",
+        "label": "9"
+      },
+      {
+        "image": "triptico-xxl-de-actividades-extraescolares-de-escalada005.jpg",
+        "label": "12"
+      },
+      {
+        "image": "triptico-xxl-de-actividades-extraescolares-de-escalada006.jpg",
+        "label": "3"
+      },
+      {
+        "image": "triptico-xxl-de-actividades-extraescolares-de-escalada007.jpg",
+        "label": "1"
+      },
+      {
+        "image": "triptico-xxl-de-actividades-extraescolares-de-escalada008.jpg",
+        "label": "13"
+      },
+      {
+        "image": "triptico-xxl-de-actividades-extraescolares-de-escalada009.jpg",
+        "label": "VERSION 3-01"
+      },
+      {
+        "image": "triptico-xxl-de-actividades-extraescolares-de-escalada010.jpg",
+        "label": "VERSION 3-02"
+      }
+    ],
+    "videos": [],
+    "extras": []
   }
 ]

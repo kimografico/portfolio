@@ -1020,7 +1020,7 @@
   },
   {
     "id": 94,
-    "date": "2015-02-04 21:07",
+    "date": "2015-02-04 00:00",
     "title": "LaserGame 2.0",
     "cliente": "LaserGame",
     "descripcion": "Logotipo para un laberinto de laser tag",
@@ -1028,11 +1028,17 @@
       {
         "image": "lasergame-2-0001.jpg",
         "label": ""
+      },
+      {
+        "image": "lasergame-2-0002.jpg",
+        "label": "Directrices de Marca LASERGAME"
       }
     ],
     "videos": [],
     "extras": [],
-    "visible": true
+    "visible": true,
+    "type": "gd",
+    "category": "logotipos"
   },
   {
     "id": 86,
@@ -1863,9 +1869,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Ajustar proporción del thumb"
-    ],
+    "extras": ["Ajustar proporción del thumb"],
     "type": "gd",
     "category": "logotipos"
   },
@@ -2208,6 +2212,78 @@
       {
         "image": "avant-i-boga003.jpg",
         "label": "Avant i Boga barca"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 301,
+    "date": "2021-12-14 00:00",
+    "title": "Judit Domínguez",
+    "cliente": "Judit Domínguez",
+    "descripcion": "Logotipo y rótulo para una peluquería",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "judit-dominguez001.jpg",
+        "label": "JUDIT DOMINGUEZ LOGO2"
+      },
+      {
+        "image": "judit-dominguez002.jpg",
+        "label": "JUDIT DOMINGUEZ LOGO"
+      },
+      {
+        "image": "judit-dominguez003.jpg",
+        "label": "a"
+      },
+      {
+        "image": "judit-dominguez004.jpg",
+        "label": "b"
+      },
+      {
+        "image": "judit-dominguez005.jpg",
+        "label": "c"
+      },
+      {
+        "image": "judit-dominguez006.jpg",
+        "label": "10"
+      },
+      {
+        "image": "judit-dominguez007.jpg",
+        "label": "4"
+      },
+      {
+        "image": "judit-dominguez008.jpg",
+        "label": "9"
+      },
+      {
+        "image": "judit-dominguez009.jpg",
+        "label": "8"
+      },
+      {
+        "image": "judit-dominguez010.jpg",
+        "label": "1"
+      },
+      {
+        "image": "judit-dominguez011.jpg",
+        "label": "2"
+      },
+      {
+        "image": "judit-dominguez012.jpg",
+        "label": "3"
+      },
+      {
+        "image": "judit-dominguez013.jpg",
+        "label": "5"
+      },
+      {
+        "image": "judit-dominguez014.jpg",
+        "label": "6"
+      },
+      {
+        "image": "judit-dominguez015.jpg",
+        "label": "7"
       }
     ],
     "videos": [],

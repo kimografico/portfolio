@@ -240,9 +240,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Añadir alguna foto actual"
-    ],
+    "extras": ["Añadir alguna foto actual"],
     "visible": true,
     "type": "gd",
     "category": "carteleria"
@@ -288,9 +286,7 @@
       }
     ],
     "videos": [],
-    "extras": [
-      "Hacer mockups"
-    ],
+    "extras": ["Hacer mockups"],
     "visible": true,
     "type": "gd",
     "category": "carteleria"
@@ -1246,6 +1242,66 @@
       {
         "image": "montanejos-escenico004.jpg",
         "label": "Junio 2025"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 298,
+    "date": "2014-02-02 00:00",
+    "title": "Nanai",
+    "cliente": "Pi McCarthy",
+    "descripcion": "Diversos carteles para el grupo de música Nanai",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "nanai001.jpg",
+        "label": "1"
+      },
+      {
+        "image": "nanai002.jpg",
+        "label": "A3_2_1"
+      },
+      {
+        "image": "nanai003.jpg",
+        "label": "A3_2_3"
+      },
+      {
+        "image": "nanai004.jpg",
+        "label": "CAMINO DE LUZ_5"
+      },
+      {
+        "image": "nanai005.jpg",
+        "label": "FB Nanai 5"
+      },
+      {
+        "image": "nanai006.jpg",
+        "label": "FB Nanai 10"
+      },
+      {
+        "image": "nanai007.jpg",
+        "label": "FB Nanai 11"
+      },
+      {
+        "image": "nanai008.jpg",
+        "label": "FB Nanai 12"
+      }
+    ],
+    "videos": [],
+    "extras": []
+  },
+  {
+    "id": 302,
+    "date": "2016-02-17 00:00",
+    "title": "Sirenas de Ciudad",
+    "cliente": "Belén Motilla",
+    "descripcion": "Portada de un podcast",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "sirenas-de-ciudad001.jpg",
+        "label": "Sirenas de Ciudad"
       }
     ],
     "videos": [],
