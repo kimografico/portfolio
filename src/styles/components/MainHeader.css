@@ -6,23 +6,13 @@
 }
 .logo-link .kimo-text,
 .logo-link .grafico-text {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .logo-link:hover .kimo-text {
-  fill: var(--color-accent, #bf5627);
+  fill: var(--color-accent);
 }
 
 .logo-link:hover .grafico-text {
-  fill: var(--color-text, #1d1d1b);
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo-link:hover .kimo-text {
-    fill: var(--color-accent, #e67e4d);
-  }
-
-  .logo-link:hover .grafico-text {
-    fill: var(--color-text, #ffffff);
-  }
+  fill: var(--color-text);
 }

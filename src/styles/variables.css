@@ -1,39 +1,65 @@
+/* ═══════════════════════════════════════════════════
+   STUDIO EDITION — Design & Development Portfolio
+   Cool stone grays · Bold vermillion · Deep ink
+   ═══════════════════════════════════════════════════ */
+
 :root {
+  /* --- Surfaces --- */
+  --color-bg: #f4f4f2;
+  --color-surface: #ffffff;
+  --color-border: #dddbd6;
+  --color-off: #bfbdb8;
   --color-bg-btn: var(--color-surface);
   --color-text-btn: var(--color-text);
-  --color-bg-modal: #fff;
+  --color-bg-modal: #ffffff;
   --color-text-modal: var(--color-text);
-  --color-bg-map: #f2f7fc;
-  --color-bg-gallery: #f8fafc;
-  --color-icon-gallery: #222;
-  --color-bg: #f8f7f4;
-  --color-surface: #ffffff;
-  --color-border: #e5e4e0;
-  --color-muted: #9e9c96;
-  --color-off: #cfcfcb;
-  --color-text: #1a1917;
-  --color-accent: #d4542a;
-  --color-dev: #225cba;
-  --color-design: #ea920e;
-  --color-cta: #008d4b;
-  --color-highlight: --scrollbar-bg: #f3f3f3;
+  --color-bg-map: #eeecea;
+  --color-bg-gallery: #f8f8f6;
+  --color-icon-gallery: #1a1a18;
+
+  /* --- Typography --- */
+  --color-text: #111110;
+  --color-muted: #75736e;
+
+  /* --- Accents --- */
+  --color-accent: #d92b04;
+  --color-dev: #2563eb;
+  --color-design: #d97706;
+  --color-cta: #059669;
+
+  /* --- Misc --- */
+  --color-highlight: transparent;
+  --scrollbar-bg: #edebe6;
+
+  /* --- Fonts --- */
   --font-sans: 'DM Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
 
+/* ──────────────── Dark mode ──────────────── */
+
 [data-theme='dark'] {
-  --color-bg-modal: #232323;
-  --color-bg-map: #111;
-  --color-bg-gallery: #18181b;
-  --color-icon-gallery: #fafafa;
-  --color-bg: #1e1e1e;
-  --color-surface: #2a2a2a;
-  --color-border: #3a3a3a;
-  --color-muted: #8a8a8a;
-  --color-off: #454545;
-  --color-text: #e8e8e8;
-  --color-accent: #e0673f;
-  --color-design: #935901;
-  --color-highlight: #000000;
-  --scrollbar-bg: #0f0f0f;
+  /* --- Surfaces --- */
+  --color-bg: #111110;
+  --color-surface: #1c1c1a;
+  --color-border: #2d2d2a;
+  --color-off: #3d3d38;
+  --color-bg-modal: #1c1c1a;
+  --color-bg-map: #0a0a09;
+  --color-bg-gallery: #151514;
+  --color-icon-gallery: #ececea;
+
+  /* --- Typography --- */
+  --color-text: #ececea;
+  --color-muted: #878680;
+
+  /* --- Accents (brighter for contrast) --- */
+  --color-accent: #ff3d14;
+  --color-dev: #60a5fa;
+  --color-design: #fbbf24;
+  --color-cta: #34d399;
+
+  /* --- Misc --- */
+  --color-highlight: transparent;
+  --scrollbar-bg: #0a0a09;
 }

@@ -1,7 +1,7 @@
 /* GraphicDesign.css: utilidades y estilos para la sección de diseño gráfico */
 
 .icono-categoria {
-  @apply transition-colors duration-300 group-hover:stroke-red-600 text-muted;
+  @apply transition-colors duration-300 group-hover:text-accent text-muted;
 }
 
 /* Icono de categoría con animación de hover */
@@ -15,6 +15,6 @@
 }
 
 .group:hover .category-icon {
-  transform: scale(1.5) rotate(-6deg);
-  color: #dc2626; /* text-red-600 */
+  transform: scale(1.4) rotate(-4deg);
+  color: var(--color-accent);
 }
