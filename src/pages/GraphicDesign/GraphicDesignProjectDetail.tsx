@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import UIButton from '../../components/ui/UIButton';
 import ProjectDetailPage from '../../components/compositions/ProjectDetailPage';
 import logotypesData from '../../data/graphic-design/logotipos.json';
@@ -13,6 +13,7 @@ import {
   processProjectsImages,
   buildGraphicDesignImagePath,
 } from '../../data/config/imagePathHelper';
+import { useProjectDetail } from '../../hooks/useProjectDetail';
 import type { GraphicDesignProject } from '../../interfaces/graphicDesign';
 import '../../styles/Developer.css';
 import { APP_BASENAME } from '../../data/config/app';
@@ -59,13 +60,16 @@ function getYear(date: string): string {
 
 export default function GraphicDesignProjectDetail() {
   const { category, id } = useParams();
-  const navigate = useNavigate();
 
-  // Validar que category sea válida
-  const categoryConfig = category && category in projectDataMap ? projectDataMap[category] : null;
+  const { category: categoryInfo, navigation } = useProjectDetail<GraphicDesignProject>({
+    projectDataMap,
+    categoryParam: category,
+    projectId: id,
+    basePath: '/graphic-design',
+  });
 
   // Si categoría no es válida, renderizar error
-  if (!categoryConfig) {
+  if (!categoryInfo.isValid) {
     return (
       <div
         className="max-w-7xl mx-auto py-16 px-4"
@@ -73,7 +77,7 @@ export default function GraphicDesignProjectDetail() {
       >
         <p className="text-muted mb-4">Categoría no encontrada.</p>
         <UIButton
-          onClick={() => navigate('/graphic-design')}
+          onClick={() => navigation.goBack()}
           link
           arrowBack
           dataId="back-to-graphic-design"
@@ -84,30 +88,15 @@ export default function GraphicDesignProjectDetail() {
     );
   }
 
-  const { data: projects, label } = categoryConfig;
+  const { project, hasPrev, hasNext, goToPrev, goToNext, goBack } = navigation;
 
-  const currentIndex = projects.findIndex((p) => p.id.toString() === id);
-  const project: GraphicDesignProject | undefined =
-    currentIndex !== -1 ? projects[currentIndex] : undefined;
-
-  const prev = currentIndex > 0 ? projects[currentIndex - 1] : undefined;
-  const next =
-    currentIndex !== -1 && currentIndex < projects.length - 1
-      ? projects[currentIndex + 1]
-      : undefined;
-
-  // Si proyecto no existe, renderizar error (categoría ya fue validada arriba)
+  // Si proyecto no existe, renderizar error
   if (!project) {
     return (
       <div className="max-w-7xl mx-auto py-16 px-4" data-id={`${category}-detail-not-found`}>
         <p className="text-muted mb-4">Proyecto no encontrado.</p>
-        <UIButton
-          onClick={() => navigate(`/graphic-design/${category}`)}
-          link
-          arrowBack
-          dataId="back-to-category-btn"
-        >
-          Volver a {label}
+        <UIButton onClick={goBack} link arrowBack dataId="back-to-category-btn">
+          Volver a {categoryInfo.label}
         </UIButton>
       </div>
     );
@@ -120,14 +109,14 @@ export default function GraphicDesignProjectDetail() {
       videosGridDataId={`${category}-videos-grid`}
       backButtonDataId="back-to-category-btn"
       imageButtonDataIdPrefix="graphic-design"
-      backButtonLabel={`Volver a ${label}`}
+      backButtonLabel={`Volver a ${categoryInfo.label}`}
       editButtonHref={`${APP_BASENAME}/kimo/edit-project/${project.id}`}
       editButtonDataId="graphic-design-edit-project-btn"
-      onBack={() => navigate(`/graphic-design/${category}`)}
-      onPrev={() => prev && navigate(`/graphic-design/${category}/${prev.id}`)}
-      onNext={() => next && navigate(`/graphic-design/${category}/${next.id}`)}
-      disabledPrev={!prev}
-      disabledNext={!next}
+      onBack={goBack}
+      onPrev={goToPrev}
+      onNext={goToNext}
+      disabledPrev={!hasPrev}
+      disabledNext={!hasNext}
       year={getYear(project.date)}
       title={project.title}
       cliente={project.cliente}

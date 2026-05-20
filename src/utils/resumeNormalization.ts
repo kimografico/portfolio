@@ -1,4 +1,5 @@
 import type { ResumeBasicsArea, ResumeData } from '../interfaces/resume';
+import { generateId } from './resumeFactories';
 
 const CATEGORY_OPTIONS = [
   { value: 'design', label: 'Diseño' },
@@ -30,8 +31,12 @@ export function normalizeBasicsArea(area: ResumeBasicsArea): ResumeBasicsArea {
   };
 }
 
+/**
+ * Asegura que un objeto tenga un ID válido.
+ * Si el objeto no tiene ID, genera uno nuevo usando generateId().
+ */
 function ensureId<T extends { id?: string }>(item: T): T & { id: string } {
-  return { ...item, id: item.id || Math.random().toString(36).slice(2) + Date.now().toString(36) };
+  return { ...item, id: item.id || generateId() };
 }
 
 export function normalizeResume(data: ResumeData): ResumeData {

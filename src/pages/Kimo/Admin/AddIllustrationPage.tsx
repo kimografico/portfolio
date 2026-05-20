@@ -9,6 +9,7 @@ import {
 import ImageDropZone from '../../../components/compositions/ImageDropZone';
 import UIButton from '../../../components/ui/UIButton';
 import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
+import FormStatusAlert from '../../../components/ui/FormStatusAlert';
 import {
   createKimoIllustration,
   uploadKimoImages,
@@ -370,21 +371,15 @@ export default function AddIllustrationPage() {
       </div>
 
       {status === 'success' && (
-        <div
-          className="rounded-lg border border-green-300 bg-green-50 p-4 text-green-800"
-          data-id="add-illustration-success"
-        >
-          ✅ Ilustración creada correctamente {createdId ? `(${createdId})` : ''}
-        </div>
+        <FormStatusAlert variant="success" dataId="add-illustration-success">
+          Ilustración creada correctamente {createdId ? `(${createdId})` : ''}
+        </FormStatusAlert>
       )}
 
       {status === 'error' && (
-        <div
-          className="rounded-lg border border-red-300 bg-red-50 p-4 text-red-800"
-          data-id="add-illustration-error"
-        >
-          ❌ {errorMsg}
-        </div>
+        <FormStatusAlert variant="error" dataId="add-illustration-error">
+          {errorMsg}
+        </FormStatusAlert>
       )}
 
       <form

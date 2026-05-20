@@ -8,7 +8,12 @@ import type {
   Workshop,
 } from '../interfaces/resume';
 
-function generateId() {
+/**
+ * Genera un ID único combinando caracteres aleatorios con timestamp.
+ * Formato: [random base36][timestamp base36]
+ * Ejemplo: "k7j3h2f1abc123"
+ */
+export function generateId(): string {
   return Math.random().toString(36).slice(2) + Date.now().toString(36);
 }
 

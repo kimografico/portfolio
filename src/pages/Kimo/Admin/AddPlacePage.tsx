@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react';
 import UIButton from '../../../components/ui/UIButton';
 import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
+import FormStatusAlert from '../../../components/ui/FormStatusAlert';
 import {
   createKimoPlace,
   createKimoPlaceMarker,
@@ -177,20 +178,14 @@ export default function AddPlacePage() {
           </div>
 
           {placeStatus === 'success' && (
-            <div
-              className="rounded-lg border border-green-300 bg-green-50 p-4 text-green-800"
-              data-id="add-place-success"
-            >
-              ✅ Lugar creado correctamente {createdPlaceId ? `(${createdPlaceId})` : ''}
-            </div>
+            <FormStatusAlert variant="success" dataId="add-place-success">
+              Lugar creado correctamente {createdPlaceId ? `(${createdPlaceId})` : ''}
+            </FormStatusAlert>
           )}
           {placeStatus === 'error' && (
-            <div
-              className="rounded-lg border border-red-300 bg-red-50 p-4 text-red-800"
-              data-id="add-place-error"
-            >
-              ❌ {placeError}
-            </div>
+            <FormStatusAlert variant="error" dataId="add-place-error">
+              {placeError}
+            </FormStatusAlert>
           )}
 
           <label className="grid gap-2 text-sm font-medium text-ink">
@@ -270,20 +265,14 @@ export default function AddPlacePage() {
           </div>
 
           {markerStatus === 'success' && (
-            <div
-              className="rounded-lg border border-green-300 bg-green-50 p-4 text-green-800"
-              data-id="add-place-marker-success"
-            >
-              ✅ Marcador creado correctamente {createdMarkerId ? `(${createdMarkerId})` : ''}
-            </div>
+            <FormStatusAlert variant="success" dataId="add-place-marker-success">
+              Marcador creado correctamente {createdMarkerId ? `(${createdMarkerId})` : ''}
+            </FormStatusAlert>
           )}
           {markerStatus === 'error' && (
-            <div
-              className="rounded-lg border border-red-300 bg-red-50 p-4 text-red-800"
-              data-id="add-place-marker-error"
-            >
-              ❌ {markerError}
-            </div>
+            <FormStatusAlert variant="error" dataId="add-place-marker-error">
+              {markerError}
+            </FormStatusAlert>
           )}
 
           <label className="grid gap-2 text-sm font-medium text-ink">

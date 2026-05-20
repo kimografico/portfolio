@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, type ChangeEvent, type FormEvent } from 'react';
 import UIButton from '../../../components/ui/UIButton';
 import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
+import FormStatusAlert from '../../../components/ui/FormStatusAlert';
 import { IconImage } from '../../../components/iconos/IconImage';
 import books from '../../../data/kimo/books.json';
 import { createKimoBook, uploadKimoImages, type KimoBookPayload } from '../../../api/apiClient';
@@ -151,21 +152,15 @@ export default function AddBookPage() {
       </div>
 
       {status === 'success' && (
-        <div
-          className="rounded-lg border border-green-300 bg-green-50 p-4 text-green-800"
-          data-id="add-book-success"
-        >
-          ✅ Libro creado correctamente {createdId ? `(${createdId})` : ''}
-        </div>
+        <FormStatusAlert variant="success" dataId="add-book-success">
+          Libro creado correctamente {createdId ? `(${createdId})` : ''}
+        </FormStatusAlert>
       )}
 
       {status === 'error' && (
-        <div
-          className="rounded-lg border border-red-300 bg-red-50 p-4 text-red-800"
-          data-id="add-book-error"
-        >
-          ❌ {errorMsg}
-        </div>
+        <FormStatusAlert variant="error" dataId="add-book-error">
+          {errorMsg}
+        </FormStatusAlert>
       )}
 
       <form

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState, type DragEvent } from 'react';
 import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
+import FormStatusAlert from '../../../components/ui/FormStatusAlert';
 import { useBackendStatus } from '../../../contexts/BackendStatusContext';
 import type { ReactNode } from 'react';
 import { getResume, updateResume } from '../../../api/apiClient';
@@ -236,9 +237,9 @@ export default function ResumeManagerPage() {
 
     return (
       <section data-id="resume-manager-page">
-        <div className="rounded-xl border border-red-300 bg-red-50 p-4 text-red-800">
+        <FormStatusAlert variant="error">
           {message || 'No se pudo cargar el curriculum'}
-        </div>
+        </FormStatusAlert>
       </section>
     );
   }
@@ -268,15 +269,9 @@ export default function ResumeManagerPage() {
         </div>
       </header>
 
-      {status === 'success' && (
-        <div className="rounded-xl border border-green-300 bg-green-50 p-4 text-green-800">
-          {message}
-        </div>
-      )}
+      {status === 'success' && <FormStatusAlert variant="success">{message}</FormStatusAlert>}
 
-      {status === 'error' && (
-        <div className="rounded-xl border border-red-300 bg-red-50 p-4 text-red-800">{message}</div>
-      )}
+      {status === 'error' && <FormStatusAlert variant="error">{message}</FormStatusAlert>}
 
       <SectionCard title="Basics" subtitle="Datos compartidos y bloques de Diseño / Desarrollo">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2" data-id="basics-fields-grid">
