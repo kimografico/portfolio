@@ -6,6 +6,7 @@ import { APP_BASENAME } from '../data/config/app';
 import HeroSection from '../components/layout/HeroSection';
 import RecentProjectsSection from '../components/layout/RecentProjectsSection';
 import SobreSection from '../components/layout/SobreSection';
+import MyClients from '../components/compositions/MyClients';
 import type { Project } from '../interfaces/project';
 
 export default function Home() {
@@ -50,6 +51,7 @@ export default function Home() {
           heading="Diseñador gráfico de formación, desarrollador de software por convicción."
           description="Aquí irá una descripción real sobre la trayectoria y enfoque de trabajo. Diseño gráfico, identidad visual, desarrollo web y software — todo en un mismo espacio."
         />
+        <MyClients opacity={0.25} />
       </section>
     </>
   );

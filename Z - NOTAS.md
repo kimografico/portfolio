@@ -10,6 +10,11 @@ Aprovechar esta memoria para hacer más tests e2e
 
 ---
 
+Crear un componente carrusel al que se le puedan pasar imagenes de proyectos y las pase en full width
+Se le pasa si es full width o enmarcado, y también el alto de forma numerica.
+
+---
+
 ```javascript
 export const NativeMaximum = {
   args: {

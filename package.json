@@ -18,6 +18,7 @@
     "backend:fixed": "node api/server.cjs",
     "backend": "nodemon api/server.cjs",
     "start": "concurrently \"pnpm dev\" \"pnpm backend\"",
+    "refresh-clients": "node scripts/refresh-clients.cjs",
     "thumbs": "node scripts/generate-thumbs.cjs",
     "thumbs:new": "node scripts/generate-thumbs.cjs --new",
     "thumbs:id": "node scripts/generate-thumbs.cjs --id",
