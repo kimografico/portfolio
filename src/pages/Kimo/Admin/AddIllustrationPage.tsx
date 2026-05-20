@@ -1,74 +1,111 @@
-import { useEffect, useMemo, useState, type ChangeEvent, type FormEvent } from 'react';
+import {
+  useEffect,
+  useRef,
+  useState,
+  type ChangeEvent,
+  type DragEvent,
+  type FormEvent,
+} from 'react';
+import ImageDropZone from '../../../components/compositions/ImageDropZone';
 import UIButton from '../../../components/ui/UIButton';
 import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
-import { IconImage } from '../../../components/iconos/IconImage';
-import illustrations from '../../../data/kimo/illustrations.json';
 import {
   createKimoIllustration,
   uploadKimoImages,
   type KimoIllustrationPayload,
 } from '../../../api/apiClient';
-import type { Illustration } from '../../../interfaces/illustration';
-import { slugify } from '../../../utils/slugify';
 import { APP_BASENAME } from '../../../data/config/app';
 import { useBackendStatus } from '../../../contexts/BackendStatusContext';
 
 interface IllustrationFormState {
-  id: string;
   nombre: string;
   fecha: string;
   cliente: string;
   descripcion: string;
 }
 
-interface ExtraImageState {
+interface IllustrationImageState {
   label: string;
   file: File | null;
-  preview: string;
+  image: string;
 }
 
 const initialForm: IllustrationFormState = {
-  id: '',
   nombre: '',
   fecha: '',
   cliente: '',
   descripcion: '',
 };
 
-const emptyExtra = (): ExtraImageState => ({ label: '', file: null, preview: '' });
+const emptyImage = (): IllustrationImageState => ({ label: '', file: null, image: '' });
 
 function hasBlobPreview(value: string): boolean {
   return value.startsWith('blob:');
 }
 
+function getStoredImageName(value: string): string {
+  const trimmed = value.trim();
+  if (trimmed === '') {
+    return '';
+  }
+
+  const normalized = trimmed.split('?')[0].split('#')[0];
+  const parts = normalized.split('/').filter(Boolean);
+  return parts[parts.length - 1] ?? '';
+}
+
 export default function AddIllustrationPage() {
   const { alive } = useBackendStatus();
   const [form, setForm] = useState<IllustrationFormState>(initialForm);
-  const [mainFile, setMainFile] = useState<File | null>(null);
-  const [mainPreview, setMainPreview] = useState('');
-  const [extras, setExtras] = useState<ExtraImageState[]>([emptyExtra()]);
+  const [images, setImages] = useState<IllustrationImageState[]>([emptyImage()]);
+  const [imgErrors, setImgErrors] = useState<Record<number, boolean>>({});
+  const [dragIndex, setDragIndex] = useState<number | null>(null);
+  const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [errorMsg, setErrorMsg] = useState('');
   const [createdId, setCreatedId] = useState('');
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const previewUrlsRef = useRef<Set<string>>(new Set());
 
-  const existingIds = useMemo(
-    () => new Set((illustrations as Illustration[]).map((item) => item.id)),
-    [],
-  );
+  useEffect(() => {
+    const activePreviews = previewUrlsRef.current;
 
-  useEffect(
-    () => () => {
-      if (hasBlobPreview(mainPreview)) {
-        URL.revokeObjectURL(mainPreview);
-      }
-      extras.forEach((extra) => {
-        if (hasBlobPreview(extra.preview)) {
-          URL.revokeObjectURL(extra.preview);
-        }
+    return () => {
+      activePreviews.forEach((url) => {
+        URL.revokeObjectURL(url);
       });
-    },
-    [extras, mainPreview],
-  );
+      activePreviews.clear();
+    };
+  }, []);
+
+  function registerPreview(url: string): string {
+    if (hasBlobPreview(url)) {
+      previewUrlsRef.current.add(url);
+    }
+
+    return url;
+  }
+
+  function releasePreview(url: string) {
+    if (!hasBlobPreview(url)) {
+      return;
+    }
+
+    URL.revokeObjectURL(url);
+    previewUrlsRef.current.delete(url);
+  }
+
+  function clearImageErrors() {
+    setImgErrors({});
+  }
+
+  function clearPreviews(items: IllustrationImageState[]) {
+    items.forEach((item) => {
+      if (item.image) {
+        releasePreview(item.image);
+      }
+    });
+  }
 
   if (!alive) {
     return (
@@ -86,57 +123,151 @@ export default function AddIllustrationPage() {
   }
 
   function handleNameChange(value: string) {
-    setForm((prev) => ({
-      ...prev,
-      nombre: value,
-      id: prev.id.trim() === '' ? slugify(value) : prev.id,
-    }));
+    setForm((prev) => ({ ...prev, nombre: value }));
   }
 
-  function handleMainFileChange(event: ChangeEvent<HTMLInputElement>) {
-    const file = event.target.files?.[0] ?? null;
-    if (hasBlobPreview(mainPreview)) {
-      URL.revokeObjectURL(mainPreview);
+  function appendImageFiles(files: File[]) {
+    const imageFiles = files.filter((file) => file.type.startsWith('image/'));
+    if (imageFiles.length === 0) {
+      return;
     }
-    setMainFile(file);
-    setMainPreview(file ? URL.createObjectURL(file) : '');
+
+    setImages((prev) => {
+      const next = [...prev];
+      const firstItemIsEmpty =
+        next.length === 1 && next[0]?.file === null && next[0]?.image.trim() === '';
+
+      if (firstItemIsEmpty) {
+        const [firstFile, ...restFiles] = imageFiles;
+        if (firstFile) {
+          next[0] = {
+            label: '',
+            file: firstFile,
+            image: registerPreview(URL.createObjectURL(firstFile)),
+          };
+        }
+
+        restFiles.forEach((file) => {
+          next.push({ label: '', file, image: registerPreview(URL.createObjectURL(file)) });
+        });
+
+        return next;
+      }
+
+      imageFiles.forEach((file) => {
+        next.push({ label: '', file, image: registerPreview(URL.createObjectURL(file)) });
+      });
+
+      return next;
+    });
+
+    clearImageErrors();
+  }
+
+  function handleFileSelect(event: ChangeEvent<HTMLInputElement>) {
+    appendImageFiles(Array.from(event.target.files ?? []));
     event.target.value = '';
   }
 
-  function handleExtraFileChange(index: number, event: ChangeEvent<HTMLInputElement>) {
-    const file = event.target.files?.[0] ?? null;
-    setExtras((prev) =>
-      prev.map((extra, i) => {
-        if (i !== index) return extra;
-        if (hasBlobPreview(extra.preview)) {
-          URL.revokeObjectURL(extra.preview);
+  function handleDropZoneDragOver(event: DragEvent<HTMLDivElement>) {
+    event.preventDefault();
+    event.dataTransfer.dropEffect = 'copy';
+  }
+
+  function handleDropZoneDrop(event: DragEvent<HTMLDivElement>) {
+    event.preventDefault();
+    appendImageFiles(Array.from(event.dataTransfer.files));
+  }
+
+  function handleImageChange(index: number, field: 'image' | 'label', value: string) {
+    setImages((prev) =>
+      prev.map((item, i) => {
+        if (i !== index) return item;
+
+        if (field === 'label') {
+          return { ...item, label: value };
         }
+
+        if (item.image && hasBlobPreview(item.image) && item.image !== value) {
+          releasePreview(item.image);
+        }
+
         return {
-          ...extra,
-          file,
-          preview: file ? URL.createObjectURL(file) : '',
+          ...item,
+          file: null,
+          image: value,
         };
       }),
     );
-    event.target.value = '';
+
+    setImgErrors((prev) => {
+      const next = { ...prev };
+      delete next[index];
+      return next;
+    });
   }
 
-  function handleExtraLabelChange(index: number, value: string) {
-    setExtras((prev) => prev.map((extra, i) => (i === index ? { ...extra, label: value } : extra)));
+  function addImage() {
+    setImages((prev) => [...prev, emptyImage()]);
+    clearImageErrors();
   }
 
-  function addExtraImage() {
-    setExtras((prev) => [...prev, emptyExtra()]);
-  }
-
-  function removeExtraImage(index: number) {
-    setExtras((prev) => {
-      const extra = prev[index];
-      if (extra?.preview && hasBlobPreview(extra.preview)) {
-        URL.revokeObjectURL(extra.preview);
+  function moveImage(fromIndex: number, toIndex: number) {
+    setImages((prev) => {
+      if (
+        fromIndex === toIndex ||
+        fromIndex < 0 ||
+        toIndex < 0 ||
+        fromIndex >= prev.length ||
+        toIndex >= prev.length
+      ) {
+        return prev;
       }
+
+      const next = [...prev];
+      const [moved] = next.splice(fromIndex, 1);
+      next.splice(toIndex, 0, moved);
+      return next;
+    });
+
+    clearImageErrors();
+  }
+
+  function handleImageDragStart(index: number) {
+    setDragIndex(index);
+  }
+
+  function handleImageDragOver(event: DragEvent<HTMLDivElement>, index: number) {
+    event.preventDefault();
+    setDragOverIndex(index);
+  }
+
+  function handleImageDrop(index: number) {
+    if (dragIndex !== null) {
+      moveImage(dragIndex, index);
+    }
+
+    setDragIndex(null);
+    setDragOverIndex(null);
+  }
+
+  function handleImageDragEnd() {
+    setDragIndex(null);
+    setDragOverIndex(null);
+  }
+
+  function removeImage(index: number) {
+    setImages((prev) => {
+      const item = prev[index];
+      if (item?.image) {
+        releasePreview(item.image);
+      }
+
       return prev.filter((_, i) => i !== index);
     });
+    setDragIndex(null);
+    setDragOverIndex(null);
+    clearImageErrors();
   }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -145,50 +276,74 @@ export default function AddIllustrationPage() {
     setErrorMsg('');
 
     try {
-      const illustrationId = slugify(form.id || form.nombre);
-      if (!illustrationId) {
-        throw new Error('El id o el nombre son obligatorios para generar un identificador');
-      }
-      if (existingIds.has(illustrationId)) {
-        throw new Error(`Ya existe una ilustración con id "${illustrationId}"`);
-      }
       if (!form.nombre.trim()) {
         throw new Error('El nombre es obligatorio');
       }
-      if (!mainFile) {
-        throw new Error('Selecciona una imagen principal antes de guardar');
+
+      const mainImage = images[0];
+      if (!mainImage || (!mainImage.file && mainImage.image.trim() === '')) {
+        throw new Error('La primera imagen es obligatoria y será la imagen principal');
       }
 
-      const activeExtras = extras.filter((extra) => extra.file);
-      const uploaded = await uploadKimoImages(
-        [mainFile, ...activeExtras.map((extra) => extra.file as File)],
-        'illustrations',
-        illustrationId,
-      );
+      const fileImages = images
+        .map((item, index) => ({ item, index }))
+        .filter(({ item }) => item.file !== null)
+        .map(({ item }) => item.file as File);
 
-      const mainImage = uploaded[0]?.ruta ?? '';
-      const extraImages = uploaded.slice(1).map((item, index) => ({
-        image: item.ruta,
-        label: activeExtras[index]?.label.trim() ?? '',
-      }));
+      const uploaded = fileImages.length
+        ? await uploadKimoImages(fileImages, 'illustrations', form.nombre.trim())
+        : [];
+
+      let uploadIndex = 0;
+      const resolvedImages = images
+        .map((item, index) => {
+          if (item.file) {
+            const uploadedItem = uploaded[uploadIndex];
+            uploadIndex += 1;
+
+            return {
+              image: getStoredImageName(uploadedItem?.ruta ?? ''),
+              label: item.label.trim(),
+            };
+          }
+
+          if (index === 0) {
+            return {
+              image: getStoredImageName(item.image),
+              label: item.label.trim(),
+            };
+          }
+
+          return item.image.trim() === ''
+            ? null
+            : {
+                image: getStoredImageName(item.image),
+                label: item.label.trim(),
+              };
+        })
+        .filter((entry): entry is { image: string; label: string } => entry !== null)
+        .filter((entry) => entry.image.trim() !== '');
 
       const payload: KimoIllustrationPayload = {
-        id: illustrationId,
         nombre: form.nombre.trim(),
-        image: mainImage,
+        image: resolvedImages[0]?.image ?? '',
         fecha: form.fecha.trim(),
         cliente: form.cliente.trim(),
         descripcion: form.descripcion.trim(),
-        imagenesExtra: extraImages,
+        imagenesExtra: resolvedImages.slice(1),
       };
 
-      await createKimoIllustration(payload);
-      setCreatedId(illustrationId);
+      const result = await createKimoIllustration(payload);
+      const created = result.data as { id?: string } | undefined;
+
+      setCreatedId(created?.id ?? '');
       setStatus('success');
       setForm(initialForm);
-      setMainFile(null);
-      setMainPreview('');
-      setExtras([emptyExtra()]);
+      clearPreviews(images);
+      setImages([emptyImage()]);
+      setImgErrors({});
+      setDragIndex(null);
+      setDragOverIndex(null);
     } catch (error) {
       setStatus('error');
       setErrorMsg(error instanceof Error ? error.message : 'Error al crear la ilustración');
@@ -201,7 +356,7 @@ export default function AddIllustrationPage() {
         <div>
           <h2 className="text-2xl font-semibold text-ink">Añadir ilustración</h2>
           <p className="text-sm text-muted">
-            Se guarda en illustrations.json y la imagen principal se sube al backend.
+            Se guarda en illustrations.json y la primera imagen de la lista será la principal.
           </p>
         </div>
         <UIButton
@@ -238,16 +393,6 @@ export default function AddIllustrationPage() {
         data-id="add-illustration-form"
       >
         <div className="grid gap-4 md:grid-cols-2">
-          <label className="grid gap-2 text-sm font-medium text-ink">
-            ID
-            <input
-              className="rounded-lg border border-border bg-bg px-3 py-2 text-sm"
-              value={form.id}
-              onChange={(e) => handleField('id', e.target.value)}
-              placeholder="Se autogenera si se deja vacío"
-              data-id="add-illustration-id"
-            />
-          </label>
           <label className="grid gap-2 text-sm font-medium text-ink">
             Nombre *
             <input
@@ -289,119 +434,35 @@ export default function AddIllustrationPage() {
           />
         </label>
 
-        <div className="grid gap-6 lg:grid-cols-[260px_1fr]">
-          <div className="rounded-xl border border-dashed border-border bg-bg p-4">
-            <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-ink">
-              <IconImage size={20} />
-              Imagen principal
-            </div>
-            <label className="flex min-h-56 cursor-pointer flex-col items-center justify-center gap-3 rounded-lg border border-border bg-surface p-4 text-center text-sm text-muted hover:border-primary">
-              {mainPreview ? (
-                <img
-                  src={mainPreview}
-                  alt="Vista previa de la ilustración principal"
-                  className="max-h-64 rounded-md object-cover"
-                  data-id="add-illustration-main-preview"
-                />
-              ) : (
-                <>
-                  <IconImage size={44} />
-                  <span>Selecciona la ilustración principal</span>
-                </>
-              )}
-              <input
-                className="hidden"
-                type="file"
-                accept="image/*"
-                onChange={handleMainFileChange}
-                data-id="add-illustration-main-input"
-              />
-            </label>
-          </div>
-
-          <div className="grid gap-4 rounded-xl border border-border bg-bg p-4">
-            <div className="flex items-center justify-between gap-3">
-              <div>
-                <h3 className="text-sm font-semibold text-ink">Imágenes extra</h3>
-                <p className="text-xs text-muted">
-                  Se guardan en el mismo JSON dentro de imagenesExtra.
-                </p>
-              </div>
-              <button
-                type="button"
-                onClick={addExtraImage}
-                className="rounded-lg border border-border px-3 py-2 text-sm font-medium text-ink hover:border-primary"
-                data-id="add-illustration-extra-btn"
-              >
-                Añadir imagen extra
-              </button>
-            </div>
-
-            <div className="grid gap-4">
-              {extras.map((extra, index) => (
-                <div
-                  key={`extra-${index}`}
-                  className="grid gap-3 rounded-lg border border-border bg-surface p-4 md:grid-cols-[1fr_160px] md:items-start"
-                >
-                  <label className="grid gap-2 text-sm font-medium text-ink">
-                    Texto / label
-                    <input
-                      className="rounded-lg border border-border bg-bg px-3 py-2 text-sm"
-                      value={extra.label}
-                      onChange={(e) => handleExtraLabelChange(index, e.target.value)}
-                      placeholder="Descripción corta"
-                      data-id={`add-illustration-extra-label-${index}`}
-                    />
-                  </label>
-                  <div className="grid gap-2">
-                    <label className="flex min-h-28 cursor-pointer items-center justify-center rounded-lg border border-dashed border-border bg-bg px-3 py-2 text-center text-xs text-muted hover:border-primary">
-                      {extra.preview ? (
-                        <img
-                          src={extra.preview}
-                          alt={`Vista previa extra ${index + 1}`}
-                          className="max-h-24 rounded-md object-cover"
-                          data-id={`add-illustration-extra-preview-${index}`}
-                        />
-                      ) : (
-                        <span>Selecciona imagen</span>
-                      )}
-                      <input
-                        className="hidden"
-                        type="file"
-                        accept="image/*"
-                        onChange={(event) => handleExtraFileChange(index, event)}
-                        data-id={`add-illustration-extra-input-${index}`}
-                      />
-                    </label>
-                    {extras.length > 1 && (
-                      <button
-                        type="button"
-                        onClick={() => removeExtraImage(index)}
-                        className="text-left text-xs font-medium text-red-600 hover:text-red-700"
-                        data-id={`add-illustration-extra-remove-${index}`}
-                      >
-                        Eliminar imagen
-                      </button>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className="grid gap-3 rounded-xl border border-border bg-bg p-4 text-sm text-muted">
-          <p>
-            <strong className="text-ink">Tip:</strong> el id se autogenera a partir del nombre si lo
-            dejas vacío.
-          </p>
-          <p>
-            <strong className="text-ink">Persistencia:</strong> illustrations.json.
-          </p>
+        <div className="grid gap-4 rounded-xl border border-border bg-bg p-4">
+          <ImageDropZone
+            images={images.map((item) => ({ image: item.image, label: item.label }))}
+            imgErrors={imgErrors}
+            dragIndex={dragIndex}
+            dragOverIndex={dragOverIndex}
+            fileInputRef={fileInputRef}
+            onSelectFilesClick={() => fileInputRef.current?.click()}
+            onAddImage={addImage}
+            onFileSelect={handleFileSelect}
+            onDropZoneDragOver={handleDropZoneDragOver}
+            onDropZoneDrop={handleDropZoneDrop}
+            onImageDragStart={handleImageDragStart}
+            onImageDragOver={handleImageDragOver}
+            onImageDrop={handleImageDrop}
+            onImageDragEnd={handleImageDragEnd}
+            onImageChange={handleImageChange}
+            onRemoveImage={removeImage}
+            onImageError={(index) => setImgErrors((prev) => ({ ...prev, [index]: true }))}
+          />
         </div>
 
         <div className="flex items-center gap-4">
-          <UIButton saveBtn disabled={status === 'loading'} dataId="add-illustration-save-btn">
+          <UIButton
+            type="submit"
+            saveBtn
+            disabled={status === 'loading'}
+            dataId="add-illustration-save-btn"
+          >
             {status === 'loading' ? 'Guardando…' : 'Añadir ilustración'}
           </UIButton>
         </div>

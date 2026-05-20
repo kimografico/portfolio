@@ -145,6 +145,23 @@ function createIllustration(req, res) {
     illustrations.push(newIllustration);
     saveCollection('illustrations.json', illustrations);
 
+    // Generar thumbnail automáticamente para ilustraciones
+    const { spawn } = require('child_process');
+    const child = spawn(
+      'node',
+      ['scripts/generate-thumbs.cjs', '--collection', 'illustrations', '--id', String(id)],
+      {
+        stdio: 'ignore',
+        cwd: process.cwd(),
+        detached: true,
+      },
+    );
+    child.unref();
+    child.on('error', (err) => {
+      console.error('Failed to spawn generate-thumbs for new illustration:', err.message);
+    });
+    console.log(`Spawned generate-thumbs (pid=${child.pid}) for illustration id=${id}`);
+
     res.status(201).json({
       success: true,
       data: newIllustration,
@@ -246,13 +263,10 @@ function uploadKimoImages(req, res) {
       throw error;
     }
 
-    const uploadRoot = require('path').join(
-      process.cwd(),
-      'public',
-      'images',
-      'kimo',
-      destCollection,
-    );
+    const uploadRoot =
+      destCollection === 'illustrations'
+        ? require('path').join(process.cwd(), 'public', 'images', 'illustrations')
+        : require('path').join(process.cwd(), 'public', 'images', 'kimo', destCollection);
     const fs = require('fs');
     const path = require('path');
     const ALLOWED_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg', '.avif'];

@@ -2,15 +2,17 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 
 /**
- * Script para generar thumbnails optimizados de proyectos
+ * Script para generar thumbnails optimizados de proyectos e ilustraciones
  *
  * Modos de ejecución:
  *   node scripts/generate-thumbs.cjs               → Regenera TODOS los thumbs
  *   node scripts/generate-thumbs.cjs --new        → Genera solo los que FALTAN
  *   node scripts/generate-thumbs.cjs --id 023     → Genera thumb de UN proyecto específico
+ *   node scripts/generate-thumbs.cjs --collection illustrations --id 004
  *
  * Resultado:
- *   - Thumbs guardados en: public/images/portfolio/thumbs/{id}.jpg
+ *   - Proyectos: thumbs guardados en public/images/portfolio/thumbs/{id}.jpg
+ *   - Ilustraciones: thumbs guardados en public/images/kimo/illustrations/thumbs/{id}.jpg
  *   - Tamaño máximo: 400px de ancho, altura proporcional
  *   - Formato: JPEG (optimizado para web)
  */
@@ -22,6 +24,9 @@ const sharp = require('sharp');
 const ROOT = process.cwd();
 const DATA_ROOT = path.join(ROOT, 'src', 'data');
 const THUMBS_DIR = path.join(ROOT, 'public', 'images', 'portfolio', 'thumbs');
+const ILLUSTRATIONS_DATA = path.join(ROOT, 'src', 'data', 'kimo', 'illustrations.json');
+const ILLUSTRATIONS_DIR = path.join(ROOT, 'public', 'images', 'illustrations');
+const ILLUSTRATIONS_THUMBS_DIR = path.join(ILLUSTRATIONS_DIR, 'thumbs');
 const APP_BASENAME = '/portfolio';
 
 const THUMB_WIDTH = 500;
@@ -29,6 +34,13 @@ const THUMB_WIDTH = 500;
 // --- Parsear argumentos ---
 const args = new Set(process.argv.slice(2));
 const isNew = args.has('--new');
+const collectionArgIndex = process.argv.indexOf('--collection');
+const collectionArg = process.argv.find((arg) => arg.startsWith('--collection='));
+const collection =
+  (collectionArg && collectionArg.split('=')[1]) ||
+  (collectionArgIndex !== -1 ? process.argv[collectionArgIndex + 1] : '') ||
+  '';
+const isIllustrationMode = collection === 'illustrations';
 
 // Buscar --id=XXX, --id XXX, o varios ids: --id 5 6 7
 let idArgs = [];
@@ -48,7 +60,7 @@ if (idEq) {
 
 function printHelp() {
   console.log(
-    `\nUSO:\n  pnpm thumbs            # Regenera TODOS los thumbs\n  pnpm thumbs:new        # Genera solo los que FALTAN\n  pnpm thumbs:id 5 6 7   # Genera thumbs para los IDs indicados\n`,
+    `\nUSO:\n  pnpm thumbs                      # Regenera TODOS los thumbs de proyectos\n  pnpm thumbs:new                  # Genera solo los que FALTAN\n  pnpm thumbs:id 5 6 7             # Genera thumbs para proyectos concretos\n  node scripts/generate-thumbs.cjs --collection illustrations --id 004\n`,
   );
 }
 
@@ -89,8 +101,19 @@ function ensureThumbsDir() {
   }
 }
 
+function ensureIllustrationThumbsDir() {
+  if (!fs.existsSync(ILLUSTRATIONS_THUMBS_DIR)) {
+    fs.mkdirSync(ILLUSTRATIONS_THUMBS_DIR, { recursive: true });
+    console.log(`Carpeta creada: ${ILLUSTRATIONS_THUMBS_DIR}`);
+  }
+}
+
 function getThumbPath(projectId) {
   return path.join(THUMBS_DIR, `${projectId}.jpg`);
+}
+
+function getIllustrationThumbPath(illustrationId) {
+  return path.join(ILLUSTRATIONS_THUMBS_DIR, `${illustrationId}.jpg`);
 }
 
 function thumbExists(projectId) {
@@ -128,8 +151,86 @@ async function generateThumbFromUrl(projectId, imageUrl) {
   }
 }
 
+async function generateIllustrationThumb(illustrationId, imageName) {
+  try {
+    const imagePath = path.join(ILLUSTRATIONS_DIR, imageName);
+
+    if (!fs.existsSync(imagePath)) {
+      console.warn(`  ⚠️  Imagen de ilustración no encontrada: ${imagePath}`);
+      return false;
+    }
+
+    const thumbPath = getIllustrationThumbPath(illustrationId);
+
+    await sharp(imagePath)
+      .resize(THUMB_WIDTH, undefined, {
+        withoutEnlargement: true,
+        fit: 'cover',
+      })
+      .jpeg({ quality: 80 })
+      .toFile(thumbPath);
+
+    return true;
+  } catch (error) {
+    console.error(`  ❌  Error generando thumb para ilustración ${illustrationId}:`, error.message);
+    return false;
+  }
+}
+
+function thumbExistsForCollection(id, mode) {
+  if (mode === 'illustrations') {
+    return fs.existsSync(getIllustrationThumbPath(id));
+  }
+
+  return thumbExists(id);
+}
+
 async function run() {
-  ensureThumbsDir();
+  if (isIllustrationMode) {
+    ensureIllustrationThumbsDir();
+  } else {
+    ensureThumbsDir();
+  }
+
+  if (isIllustrationMode) {
+    const raw = fs.readFileSync(ILLUSTRATIONS_DATA, 'utf8');
+    const illustrations = JSON.parse(raw);
+
+    const toProcess = Array.isArray(illustrations)
+      ? illustrations
+          .filter((item) => item.id && item.image)
+          .filter((item) => (idArgs.length > 0 ? idArgs.includes(String(item.id)) : true))
+          .filter((item) => (isNew ? !thumbExistsForCollection(item.id, 'illustrations') : true))
+      : [];
+
+    if (toProcess.length === 0) {
+      if (idArgs.length > 0) {
+        printHelp();
+      } else {
+        console.log('🤷 No hay thumbs de ilustraciones para generar. ✓');
+      }
+      return;
+    }
+
+    let success = 0;
+    let failed = 0;
+
+    for (const illustration of toProcess) {
+      process.stdout.write(`  [${illustration.id}] ${illustration.nombre.substring(0, 50)}... `);
+      const ok = await generateIllustrationThumb(illustration.id, illustration.image);
+      if (ok) {
+        console.log('✓');
+        success++;
+      } else {
+        console.log('✗');
+        failed++;
+      }
+    }
+
+    console.log(`\nResumen: ${success} generados, ${failed} fallidos.`);
+    process.exit(failed > 0 ? 1 : 0);
+    return;
+  }
 
   // --- Leer todos los proyectos ---
   const jsonFiles = walkJsonFiles(DATA_ROOT).sort();

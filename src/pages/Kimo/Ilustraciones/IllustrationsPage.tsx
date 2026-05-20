@@ -27,8 +27,7 @@ export default function IllustrationsPage() {
             label: img.label,
           })) ?? []),
         ],
-        // Miniatura: imagen principal absoluta
-        thumb: `${ILLUSTRATIONS_PATH}/${item.image}`,
+        thumb: `${ILLUSTRATIONS_PATH}/thumbs/${item.id}.jpg`,
       })),
     [],
   );
@@ -70,7 +69,7 @@ export default function IllustrationsPage() {
                 to={`/kimo/ilustraciones/${project.id}`}
                 dataId={`illustration-card-${project.id}`}
                 widescreen={false}
-                // No pasamos buildImagePath: las rutas ya están procesadas
+                buildImagePath={(filename) => `${ILLUSTRATIONS_PATH}/${filename}`}
               />
             ))}
           </div>
