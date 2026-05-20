@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import type { BookModalProps } from '../../interfaces/books';
+import type { BookModalProps } from '../../interfaces/book';
 import '../../styles/components/BookModal.css';
 import { IconClose } from '../../components/iconos';
 

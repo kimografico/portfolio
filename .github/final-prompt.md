@@ -1,0 +1,6 @@
+Quiero que analices todo el proyecto y hagas varios documentos, que guardarás en la carpeta DOCS como Markdowns.
+portfolio.md - Una descripción funcional tipo manual de usuario, con todo lo que puede consultar un usuario sin autenticarse. No se nombrará la autenticación, simplemente se omitirá todo lo que caiga en el apartado admin o kimo
+portfolio-admin.md - Una descripción funcional tipo manual de usuario, con todo lo que puede consultar un usuario autenticado, y con todo lo que puede manejar con el backend servido. Añadir/editar proyectos, consultar libros, viajes....
+backend.md - Un analisis técnico de que capacidades tiene el backend, listadas y explicadas. Como se accede a cada funcionalidad, y que tecnología se ha utilizado.
+frontend.md - Un texto explicando las tecnologías utilizadas. Un listado de la arquitectura a nivel general (por carpetas, no por cada archivo) y una sección de tools donde se listen y expliquen el uso de los scripts, utils, helpers, etc...
+components.md - Lista corta de componentes y que hace cada uno

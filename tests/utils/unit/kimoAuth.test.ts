@@ -8,7 +8,7 @@ import {
   isKimoHashReady,
   sanitizeKimoRedirect,
   setKimoAuthenticated,
-} from '../../../src/lib/kimoAuth';
+} from '../../../src/utils/kimoAuth';
 
 describe('kimoAuth', () => {
   afterEach(() => {

@@ -1,7 +1,8 @@
-import { ProjectCard, type BaseProject } from '../ui/ProjectCard';
+import { ProjectCard } from '../ui/ProjectCard';
+import type { BaseProject } from '../../interfaces/project';
 import CategoryHero from '../ui/CategoryHero';
 import EmptyState from '../ui/EmptyState';
-import type { IconProps } from '../../types/icons';
+import type { IconProps } from '../../interfaces/ui';
 import type { ComponentType } from 'react';
 import { useShowHidden } from '../../hooks/useShowHidden';
 

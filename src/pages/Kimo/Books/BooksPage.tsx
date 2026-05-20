@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import type { View } from '../../../types';
+import type { View } from '../../../interfaces/book';
 import UIButton from '../../../components/ui/UIButton';
 import { APP_BASENAME } from '../../../data/config/app';
 import { useBackendStatus } from '../../../contexts/BackendStatusContext';
-import { isKimoAuthenticated } from '../../../lib/kimoAuth';
+import { isKimoAuthenticated } from '../../../utils/kimoAuth';
 import '../../../styles/components/buttonStyles.css';
 import booksData from '../../../data/kimo/books.json';
 import BooksTable from './BooksTable';

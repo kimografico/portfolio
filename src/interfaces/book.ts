@@ -1,3 +1,5 @@
+import type { FC } from 'react';
+
 export interface Book {
   id: string;
   title: string;
@@ -12,3 +14,29 @@ export interface Book {
 }
 
 export type View = 'table' | 'gallery';
+
+export interface BooksTableProps {
+  books: Book[];
+}
+
+export interface BooksGalleryProps {
+  books: Book[];
+}
+
+export interface BooksFilterProps {
+  books: Book[];
+  onFiltered: (filtered: Book[]) => void;
+  dataId?: string;
+  IconFallback?: FC<{ size?: number; color?: string }>;
+  buildImagePath?: (filename: string) => string;
+}
+
+export interface BookModalProps {
+  book: Book;
+  onClose: () => void;
+  dataId?: string;
+  IconFallback?: FC<{ size?: number; color?: string }>;
+  buildImagePath?: (filename: string) => string;
+  onPrev?: () => void;
+  onNext?: () => void;
+}

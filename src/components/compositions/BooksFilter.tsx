@@ -1,6 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import type { Book } from '../../types';
-import type { BooksFilterProps } from '../../interfaces/books';
+import type { Book, BooksFilterProps } from '../../interfaces/book';
 
 function buildAuthorCounts(books: Book[]): Record<string, number> {
   const counts: Record<string, number> = {};

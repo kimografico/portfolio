@@ -8,7 +8,7 @@
 
 import type { WebProject } from '../../interfaces/developer';
 import type { ComponentType } from 'react';
-import type { IconProps } from '../../types/icons';
+import type { IconProps } from '../../interfaces/ui';
 import type { GalleryRouteConfig } from './graphicDesignGalleries';
 
 import wordpressData from '../development/wordpress.json';

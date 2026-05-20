@@ -1,11 +1,12 @@
 import { useMemo } from 'react';
 import UIButton from '../../../components/ui/UIButton';
-import { ProjectCard, type BaseProject } from '../../../components/ui/ProjectCard';
+import { ProjectCard } from '../../../components/ui/ProjectCard';
 import { APP_BASENAME } from '../../../data/config/app';
 import illustrations from '../../../data/kimo/illustrations.json';
 import { useBackendStatus } from '../../../contexts/BackendStatusContext';
 import type { Illustration } from '../../../interfaces/illustration';
-import { isKimoAuthenticated } from '../../../lib/kimoAuth';
+import type { BaseProject } from '../../../interfaces/project';
+import { isKimoAuthenticated } from '../../../utils/kimoAuth';
 
 const ILLUSTRATIONS_PATH = import.meta.env.VITE_ILLUSTRATIONS_PATH;
 

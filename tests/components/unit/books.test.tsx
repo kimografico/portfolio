@@ -1,10 +1,11 @@
 import { fireEvent, render, screen, waitFor, act } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import { describe, it, vi, afterEach } from 'vitest';
+import type { Book } from '../../../src/interfaces/book';
+import type { BaseProject } from '../../../src/interfaces/project';
 import BooksFilter from '../../../src/components/compositions/BooksFilter';
 import BookModal from '../../../src/components/compositions/BookModal';
-import { ProjectCard, type BaseProject } from '../../../src/components/ui/ProjectCard';
-import type { Book } from '../../../src/types';
+import { ProjectCard } from '../../../src/components/ui/ProjectCard';
 
 const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true } as const;
 

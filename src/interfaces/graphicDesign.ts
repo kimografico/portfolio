@@ -1,4 +1,4 @@
-import type { BaseProject } from '../components/ui/ProjectCard';
+import type { BaseProject } from './project';
 
 export interface GraphicDesignProject extends BaseProject {
   cliente: string;

@@ -1,4 +1,4 @@
-import type { IconProps } from '../../types/icons';
+import type { IconProps } from '../../interfaces/ui';
 
 export function LogoCSS({ size = 24, ...props }: IconProps) {
   return (

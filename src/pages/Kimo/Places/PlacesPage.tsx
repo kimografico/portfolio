@@ -5,7 +5,7 @@ import { APP_BASENAME } from '../../../data/config/app';
 import places from '../../../data/kimo/places.json';
 import markers from '../../../data/kimo/places_markers.json';
 import { useBackendStatus } from '../../../contexts/BackendStatusContext';
-import { isKimoAuthenticated } from '../../../lib/kimoAuth';
+import { isKimoAuthenticated } from '../../../utils/kimoAuth';
 
 /**
  * Página de lugares visitados: muestra mapa y tabla

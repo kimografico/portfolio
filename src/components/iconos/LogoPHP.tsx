@@ -1,4 +1,4 @@
-import type { IconProps } from '../../types/icons';
+import type { IconProps } from '../../interfaces/ui';
 
 export function LogoPHP({ size = 24, color = '#777BB3', ...props }: IconProps) {
   return (

@@ -6,7 +6,7 @@
 export const API_BASE = 'http://localhost:3001';
 
 import type { ResumeData } from '../interfaces/resume';
-import { isKimoAuthenticated } from '../lib/kimoAuth';
+import { isKimoAuthenticated } from '../utils/kimoAuth';
 
 /** Respuesta genérica de la API */
 interface ApiResponse<T = unknown> {

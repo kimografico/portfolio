@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import type { ColumnDef } from '@tanstack/react-table';
 import BaseTable from '../../../components/compositions/BaseTable';
-import type { Place } from '../../../types/places';
+import type { Place } from '../../../interfaces/place';
 import places from '../../../data/kimo/places.json';
 
 const COUNTRY_FLAGS: Record<string, string> = {

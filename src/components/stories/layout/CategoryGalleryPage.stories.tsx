@@ -3,7 +3,7 @@ import { MemoryRouter } from 'react-router-dom';
 import CategoryGalleryPage from '../../layout/CategoryGalleryPage';
 import { IconPlant } from '../../iconos/IconPlant';
 import { IconCode } from '../../iconos/IconCode';
-import type { BaseProject } from '../../ui/ProjectCard';
+import type { BaseProject } from '../../../interfaces/project';
 
 const meta = {
   title: 'layout/CategoryGalleryPage',

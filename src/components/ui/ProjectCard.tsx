@@ -1,22 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import type { IconProps } from '../../types/icons';
+import type { IconProps } from '../../interfaces/ui';
+import type { BaseProject } from '../../interfaces/project';
 import type { ComponentType } from 'react';
-
-/**
- * Propiedades mínimas requeridas para un proyecto en ProjectCard
- * Agnóstico de la fuente (web, diseño gráfico, etc.)
- */
-export interface BaseProject {
-  id: number | string;
-  date: string;
-  title: string;
-  cliente?: string;
-  thumb?: string;
-  imagenes?: Array<{ image: string; label?: string }>;
-  stack?: string[];
-  [key: string]: unknown;
-}
 
 interface ProjectCardProps<T extends BaseProject> {
   /** Proyecto a renderizar (tipo genérico) */

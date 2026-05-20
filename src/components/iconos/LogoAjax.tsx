@@ -1,4 +1,4 @@
-import type { IconProps } from '../../types/icons';
+import type { IconProps } from '../../interfaces/ui';
 
 export function LogoAjax({ size = 24, color = 'url(#SVGID_1_)', ...props }: IconProps) {
   return (
