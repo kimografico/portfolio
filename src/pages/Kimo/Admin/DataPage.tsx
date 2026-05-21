@@ -48,9 +48,9 @@ type VisibilityFilter = 'all' | 'visible' | 'hidden';
 export default function DataPage() {
   const navigate = useNavigate();
   const { alive } = useBackendStatus();
-  const [filterType, setFilterType] = useState('Desarrollo');
+  const [filterType, setFilterType] = useState('');
   const [filterCategory, setFilterCategory] = useState('');
-  const [filterCliente, setFilterCliente] = useState('');
+  const [filterCliente, setFilterCliente] = useState('KIMO');
   const [filterVisibility, setFilterVisibility] = useState<VisibilityFilter>('all');
   // showHidden controla la galería (persiste en localStorage); no afecta a esta tabla
   const [showHidden, setShowHidden] = useShowHidden();

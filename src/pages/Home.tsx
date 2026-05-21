@@ -76,7 +76,7 @@ export default function Home() {
         />
         <ProjectCarousel
           images={projectCarouselImages}
-          height={420}
+          height={400}
           ariaLabel="Carrusel de proyectos destacados"
           dataId="home-project-carousel"
           fullWidth
