@@ -1,0 +1,63 @@
+/* ProjectCarousel Styles */
+
+.project-carousel__viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(0, 0, 0, 0.04)),
+    var(--color-bg-gallery, #f4f1ea);
+}
+
+.project-carousel__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transform: scale(1);
+  transition:
+    opacity 900ms ease-in-out,
+    transform 900ms ease-in-out;
+  will-change: opacity, transform;
+  user-select: none;
+  pointer-events: none;
+}
+
+.project-carousel__image--active {
+  opacity: 1;
+  animation: project-carousel-zoom 10s forwards;
+}
+
+.project-carousel__image--active.project-carousel__image--entering {
+  opacity: 0;
+}
+
+.project-carousel__image--exiting {
+  opacity: 0;
+  transform: scale(1.075);
+  animation: none;
+}
+
+@keyframes project-carousel-zoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-carousel__image,
+  .project-carousel__image--active,
+  .project-carousel__image--exiting {
+    animation: none;
+    transition: none;
+    transform: none;
+  }
+}
