@@ -86,7 +86,7 @@ export default function ImageDropZone({
 
       {!minimalistic && (
         <div
-          className="border-2 border-dashed border-gray-300 rounded-lg p-4 mb-3 text-center text-sm text-muted hover:border-accent hover:bg-accent/5 transition-colors cursor-pointer min-h-48"
+          className="border-2 border-dashed border-[var(--color-border)] rounded-lg p-4 mb-3 text-center text-sm text-muted hover:border-accent hover:bg-accent/5 transition-colors cursor-pointer min-h-48"
           onDragOver={onDropZoneDragOver}
           onDrop={onDropZoneDrop}
           onClick={onSelectFilesClick}
@@ -109,7 +109,7 @@ export default function ImageDropZone({
             }}
             onDragEnd={onImageDragEnd}
             className={`flex gap-3 items-center p-2 rounded border transition-all ${
-              dragOverIndex === i ? 'border-accent bg-accent/5' : 'border-gray-200'
+              dragOverIndex === i ? 'border-accent bg-accent/5' : 'border-[var(--color-border)]'
             } ${dragIndex === i ? 'opacity-40' : ''}`}
           >
             <span

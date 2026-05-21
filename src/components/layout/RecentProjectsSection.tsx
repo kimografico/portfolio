@@ -23,7 +23,7 @@ export default function RecentProjectsSection({ projects }: RecentProjectsSectio
             id="proyectos-heading"
             className="font-mono text-xs tracking-widest uppercase text-muted"
           >
-            Proyectos recientes
+            Proyectos destacados
           </h2>
         </div>
         <ul className="divide-y divide-border list-none m-0 p-0" data-id="recent-projects-list">
