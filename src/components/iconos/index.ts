@@ -54,6 +54,7 @@ export { IconWP } from './IconWP';
 export { LogoAjax } from './LogoAjax';
 export { IconServerDown } from './IconServerDown';
 export { IconServer } from './IconServer';
+export { IconSpeech } from './IconSpeech';
 export { default as IconClose } from './IconClose';
 export { default as IconVisible } from './IconVisible';
 export { default as IconHidden } from './IconHidden';
