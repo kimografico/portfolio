@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import '../styles/components/buttonStyles.css';
 import '../styles/home.css';
 import recentWorks from '../data/recent-works.json';
+import carouselData from '../data/carousel.json';
 import { APP_BASENAME } from '../data/config/app';
 import HeroSection from '../components/layout/HeroSection';
 import RecentProjectsSection from '../components/layout/RecentProjectsSection';
@@ -9,29 +10,7 @@ import ProjectCarousel from '../components/compositions/ProjectCarousel';
 import SobreSection from '../components/layout/SobreSection';
 import MyClients from '../components/compositions/MyClients';
 import type { Project } from '../interfaces/project';
-
-const projectCarouselImages = [
-  {
-    src: `${APP_BASENAME}/images/portfolio/design/etiquetas/rediseno002.jpg`,
-    alt: 'Odin Doble Miel',
-  },
-  {
-    src: `${APP_BASENAME}/images/portfolio/design/proyectos-especiales/tirador-de-hidromiel-de-madera001.jpg`,
-    alt: 'Odin madera grabada',
-  },
-  {
-    src: `${APP_BASENAME}/images/portfolio/design/proyectos-especiales/baraja-lbg002.jpg`,
-    alt: 'Baraja LBG',
-  },
-  {
-    src: `${APP_BASENAME}/images/portfolio/design/editorial/manual-de-marca001.jpg`,
-    alt: 'Logotipo Montanejos',
-  },
-  {
-    src: `${APP_BASENAME}/images/portfolio/web/wordpress/colordmar001.jpg`,
-    alt: 'Web ColorDeMar',
-  },
-];
+import type { CarouselImage } from '../interfaces/carousel';
 
 export default function Home() {
   // Señal UX interna: solo ayuda a decidir qué cabecera mostrar en páginas hijas.
@@ -75,7 +54,7 @@ export default function Home() {
           description="Aquí irá una descripción real sobre la trayectoria y enfoque de trabajo. Diseño gráfico, identidad visual, desarrollo web y software — todo en un mismo espacio."
         />
         <ProjectCarousel
-          images={projectCarouselImages}
+          images={carouselData as CarouselImage[]}
           height={400}
           ariaLabel="Carrusel de proyectos destacados"
           dataId="home-project-carousel"

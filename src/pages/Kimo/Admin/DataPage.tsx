@@ -20,6 +20,7 @@ import {
 } from './data/filters';
 import { calculateDuplicateIds as calculateAdminDuplicateIds } from './data/duplicates';
 import DataActionBar from '../../../components/compositions/DataActionBar';
+import CarouselManager from '../../../components/compositions/CarouselManager';
 
 // Necesario para crear columnas tipadas
 const columnHelper = createColumnHelper<DataEntry>();
@@ -504,6 +505,9 @@ export default function DataPage() {
       <div className="mt-12">
         <RecentWorksManagerPage />
       </div>
+
+      {/* Bloque de administración del carrusel de la home */}
+      <CarouselManager />
     </section>
   );
 }
