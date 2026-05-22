@@ -53,6 +53,7 @@ export default function Home() {
             { label: 'Ver desarrollos web', href: `${APP_BASENAME}/dev` },
           ]}
           decorator="01"
+          speed={12}
           animated
         />
 

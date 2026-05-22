@@ -120,17 +120,17 @@ export default function HeroSection({
             >
               {title}
             </h1>
-            {/* h-[4.875rem] = 3 líneas × leading-relaxed(1.625) × text-base(1rem).
-                Ambos <p> son absolute + min-h igual al contenedor:
-                así translateY(±110%) siempre los saca completamente del área visible,
-                independientemente de si el texto ocupa 2 o 3 líneas. */}
+            {/* Mobile: aumentar la altura para permitir 4 líneas (6.5rem).
+                Desktop (md+): mantener 3 líneas (4.875rem).
+                Ambos <p> son absolute y tienen min-h responsive para evitar saltos
+                cuando el texto tiene 2/3/4 líneas. */}
             <div
-              className="mb-12 max-w-[52ch] relative overflow-hidden h-[4.875rem]"
+              className="mb-12 max-w-[52ch] relative overflow-hidden h-[6.5rem] md:h-[4.875rem]"
               aria-live="polite"
               aria-atomic="true"
             >
               <p
-                className="text-base leading-relaxed text-muted absolute inset-x-0 top-0 min-h-[4.875rem]"
+                className="text-base leading-relaxed text-muted absolute inset-x-0 top-0 min-h-[6.5rem] md:min-h-[4.875rem]"
                 style={{
                   transform: phase === 'exit' ? 'translateY(-110%)' : 'translateY(0)',
                   transition: phase !== 'reset' ? 'transform 600ms ease-in-out' : 'none',
@@ -140,7 +140,7 @@ export default function HeroSection({
               </p>
               {descriptionArray.length > 1 && (
                 <p
-                  className="text-base leading-relaxed text-muted absolute inset-x-0 top-0 min-h-[4.875rem]"
+                  className="text-base leading-relaxed text-muted absolute inset-x-0 top-0 min-h-[6.5rem] md:min-h-[4.875rem]"
                   aria-hidden="true"
                   style={{
                     transform: phase === 'exit' ? 'translateY(0)' : 'translateY(110%)',
