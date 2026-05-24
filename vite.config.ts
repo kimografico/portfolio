@@ -26,6 +26,9 @@ export default defineConfig({
         display: 'standalone',
         orientation: 'portrait',
         // scope y start_url deben coincidir con `base` de Vite y con el basename de React Router
+        // Identificador de la app (útil para algunas validaciones y para que coincida
+        // la identidad de la app con la URL). Si no se especifica, se usa start_url.
+        id: '/portfolio/',
         scope: '/portfolio/',
         start_url: '/portfolio/',
         // Usar el favicon existente como icono de prueba para desarrollo/local.
@@ -46,6 +49,29 @@ export default defineConfig({
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable',
+          },
+        ],
+        // Screenshots para el UI de instalación enriquecida (desktop/mobile)
+        screenshots: [
+          {
+            src: 'pwa-screenshot-wide.png',
+            sizes: '1280x720',
+            type: 'image/png',
+            // form_factor 'wide' sugiere desktop/tablet landscape
+            form_factor: 'wide',
+          },
+          {
+            src: 'pwa-screenshot-mobile.png',
+            sizes: '720x1280',
+            type: 'image/png',
+            // sin form_factor (mobile por defecto)
+          },
+        ],
+        // Ejemplo de handlers de protocolo (opcional). Descomenta/modifica si lo necesitas.
+        protocol_handlers: [
+          {
+            protocol: 'web+kimografico',
+            url: '/portfolio/?url=%s',
           },
         ],
       },
