@@ -1,5 +1,4 @@
 import { useCallback, useMemo, useState } from 'react';
-import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
 import UIButton from '../../../components/ui/UIButton';
 import IconVisible from '../../../components/iconos/IconVisible';
 import IconHidden from '../../../components/iconos/IconHidden';
@@ -320,9 +319,12 @@ export default function DataPage() {
     [selectedIds, localVisibility, allCurrentSelected, handleSelectRow, toggleSelectAll],
   );
 
+  if (!alive) {
+    return null;
+  }
+
   return (
     <section data-id="data-page">
-      <BackendOfflineAlert />
       <div className="flex flex-col md:flex-row md:items-center mb-8 gap-2 md:gap-4 w-full">
         <h2 className="text-xl w-full md:flex-1">
           Todos los proyectos{' '}
@@ -348,7 +350,7 @@ export default function DataPage() {
           addBtn
           onClick={() => window.open(`${APP_BASENAME}/kimo/add-project`, '_blank')}
           dataId="data-add-project-btn"
-          disabled={alive === false}
+          disabled={!alive}
         >
           Añadir Proyecto
         </UIButton>

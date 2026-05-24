@@ -47,13 +47,12 @@ export default function IllustrationsPage() {
                 exploración de conceptos visuales.
               </p>
             </div>
-            {isKimoAuthenticated() && (
+            {alive && isKimoAuthenticated() && (
               <UIButton
                 href={`${APP_BASENAME}/kimo/add-illustration`}
                 dataId="illustrations-add-btn"
                 addBtn
                 arrow
-                disabled={alive === false}
               >
                 Añadir ilustración
               </UIButton>

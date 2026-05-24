@@ -20,14 +20,8 @@ export default function BooksPage() {
     <section data-id="books-page">
       <div className="flex flex-col gap-4 mb-8 md:flex-row md:items-center">
         <h2 className="text-xl flex-1">Lista de Libros que he ido leyendo</h2>
-        {isKimoAuthenticated() && (
-          <UIButton
-            href={`${APP_BASENAME}/kimo/add-book`}
-            dataId="books-add-book-btn"
-            addBtn
-            arrow
-            disabled={alive === false}
-          >
+        {alive && isKimoAuthenticated() && (
+          <UIButton href={`${APP_BASENAME}/kimo/add-book`} dataId="books-add-book-btn" addBtn arrow>
             Añadir libro
           </UIButton>
         )}

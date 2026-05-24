@@ -1,4 +1,5 @@
 import { Outlet, NavLink } from 'react-router-dom';
+import { useBackendStatus } from '../../contexts/BackendStatusContext';
 
 import {
   IconBook,
@@ -15,6 +16,8 @@ import '../../styles/espacio-personal.css';
  * Incluye navegación interna para subrutas (books, places).
  */
 export default function KimoLayout() {
+  const { alive } = useBackendStatus();
+
   return (
     <section className="kimo-section">
       <h1 className="kimo-title">Kimo - Mi espacio personal</h1>
@@ -67,28 +70,32 @@ export default function KimoLayout() {
           <IconSpots className="inline md:hidden" size={32} strokeWidth={1} />
           <span className="hidden md:inline">Iconos</span>
         </NavLink>
-        <NavLink
-          to="resume"
-          className={({ isActive }) =>
-            `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
-          }
-          aria-label="Curriculum"
-          data-id="kimo-nav-resume"
-        >
-          <IconFile className="inline md:hidden" size={32} strokeWidth={1} />
-          <span className="hidden md:inline">Curriculum</span>
-        </NavLink>
-        <NavLink
-          to="data"
-          className={({ isActive }) =>
-            `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
-          }
-          aria-label="Datos"
-          data-id="kimo-nav-data"
-        >
-          <IconTable className="inline md:hidden" size={32} strokeWidth={1} />
-          <span className="hidden md:inline">Proyectos</span>
-        </NavLink>
+        {alive && (
+          <>
+            <NavLink
+              to="resume"
+              className={({ isActive }) =>
+                `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
+              }
+              aria-label="Curriculum"
+              data-id="kimo-nav-resume"
+            >
+              <IconFile className="inline md:hidden" size={32} strokeWidth={1} />
+              <span className="hidden md:inline">Curriculum</span>
+            </NavLink>
+            <NavLink
+              to="data"
+              className={({ isActive }) =>
+                `kimo-nav-link ${isActive ? 'kimo-nav-link-active' : 'kimo-nav-link-inactive'}`
+              }
+              aria-label="Datos"
+              data-id="kimo-nav-data"
+            >
+              <IconTable className="inline md:hidden" size={32} strokeWidth={1} />
+              <span className="hidden md:inline">Proyectos</span>
+            </NavLink>
+          </>
+        )}
       </nav>
       <section>
         <Outlet />

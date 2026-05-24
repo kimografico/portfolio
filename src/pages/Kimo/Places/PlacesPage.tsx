@@ -29,13 +29,12 @@ export default function PlacesPage() {
           <h2 className="text-xl font-semibold text-ink">Lugares visitados</h2>
           <p className="text-sm text-muted">Mapa con marcadores y tabla de viajes.</p>
         </div>
-        {isKimoAuthenticated() && (
+        {alive && isKimoAuthenticated() && (
           <UIButton
             href={`${APP_BASENAME}/kimo/add-place`}
             dataId="places-add-place-btn"
             addBtn
             arrow
-            disabled={alive === false}
           >
             Añadir lugar
           </UIButton>
