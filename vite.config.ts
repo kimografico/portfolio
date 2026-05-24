@@ -28,22 +28,20 @@ export default defineConfig({
         // scope y start_url deben coincidir con `base` de Vite y con el basename de React Router
         scope: '/portfolio/',
         start_url: '/portfolio/',
+        // Usar el favicon existente como icono de prueba para desarrollo/local.
+        // Reemplaza estos por PNGs reales en `public/` cuando los tengas.
         icons: [
           {
-            // Icono estándar para Android y escritorio
             src: 'pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            // Icono de alta resolución
             src: 'pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
           },
           {
-            // Icono maskable: permite que Android recorte el icono en formas adaptativas
-            // Asegúrate de que el contenido importante quede dentro del "safe zone" (80% central)
             src: 'pwa-512x512-maskable.png',
             sizes: '512x512',
             type: 'image/png',
