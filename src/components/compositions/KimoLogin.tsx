@@ -60,8 +60,6 @@ export default function KimoLogin({
             />
           </label>
 
-          {/* Mensaje de ayuda eliminado tras configurar el hash real */}
-
           {notice ? (
             <div
               className="rounded-xl border border-amber-400/40 bg-amber-400/10 px-4 py-3 text-sm leading-6 text-ink"
