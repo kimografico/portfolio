@@ -4,6 +4,7 @@
  */
 
 import UIButton from '../ui/UIButton';
+import { useEffect, useState } from 'react';
 
 import type { HeroSectionProps } from '../../interfaces/hero';
 
@@ -15,7 +16,45 @@ export default function HeroSection({
   decorator = '01',
   image,
   separator,
+  animated = false,
+  speed = 10,
 }: HeroSectionProps) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  // Máquina de 3 fases:
+  //  idle  → posiciones de reposo, transiciones activas
+  //  exit  → frase actual sube, siguiente entra desde abajo
+  //  reset → swap instantáneo de contenido sin transición (evita el "bounce back")
+  const [phase, setPhase] = useState<'idle' | 'exit' | 'reset'>('idle');
+
+  const descriptionArray = Array.isArray(description) ? description : [description];
+  const nextIndex = (currentIndex + 1) % descriptionArray.length;
+  const activeDescription = descriptionArray[currentIndex] ?? '';
+  const nextDescription = descriptionArray[nextIndex] ?? activeDescription;
+
+  // Dispara el ciclo periódicamente
+  useEffect(() => {
+    if (!animated || descriptionArray.length <= 1) return undefined;
+    const id = window.setInterval(() => {
+      setPhase((p) => (p === 'idle' ? 'exit' : p));
+    }, speed * 1000);
+    return () => window.clearInterval(id);
+  }, [animated, descriptionArray.length, speed]);
+
+  // Gestiona las transiciones entre fases
+  useEffect(() => {
+    if (phase === 'exit') {
+      const t = window.setTimeout(() => {
+        setCurrentIndex((i) => (i + 1) % descriptionArray.length);
+        setPhase('reset');
+      }, 600);
+      return () => window.clearTimeout(t);
+    }
+    if (phase === 'reset') {
+      // Un frame después del swap: re-activa transiciones sin animación visible
+      const raf = requestAnimationFrame(() => setPhase('idle'));
+      return () => cancelAnimationFrame(raf);
+    }
+  }, [phase, descriptionArray.length]);
   const paddingClass = separator ? 'pt-10 md:pt-16 pb-0 md:pb-4' : 'py-20 md:py-32';
 
   return (
@@ -81,7 +120,37 @@ export default function HeroSection({
             >
               {title}
             </h1>
-            <p className="text-base leading-relaxed text-muted max-w-[52ch] mb-12">{description}</p>
+            {/* Mobile: aumentar la altura para permitir 4 líneas (6.5rem).
+                Desktop (md+): mantener 3 líneas (4.875rem).
+                Ambos <p> son absolute y tienen min-h responsive para evitar saltos
+                cuando el texto tiene 2/3/4 líneas. */}
+            <div
+              className="mb-12 max-w-[52ch] relative overflow-hidden h-[6.5rem] md:h-[4.875rem]"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              <p
+                className="text-base leading-relaxed text-muted absolute inset-x-0 top-0 min-h-[6.5rem] md:min-h-[4.875rem]"
+                style={{
+                  transform: phase === 'exit' ? 'translateY(-110%)' : 'translateY(0)',
+                  transition: phase !== 'reset' ? 'transform 600ms ease-in-out' : 'none',
+                }}
+              >
+                {activeDescription}
+              </p>
+              {descriptionArray.length > 1 && (
+                <p
+                  className="text-base leading-relaxed text-muted absolute inset-x-0 top-0 min-h-[6.5rem] md:min-h-[4.875rem]"
+                  aria-hidden="true"
+                  style={{
+                    transform: phase === 'exit' ? 'translateY(0)' : 'translateY(110%)',
+                    transition: phase !== 'reset' ? 'transform 600ms ease-in-out' : 'none',
+                  }}
+                >
+                  {nextDescription}
+                </p>
+              )}
+            </div>
             {ctas.length > 0 && (
               <div className="flex flex-wrap gap-4" data-id="hero-cta-btns">
                 {ctas.map((cta) => (

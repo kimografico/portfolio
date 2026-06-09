@@ -1,3 +1,14 @@
+export interface BaseProject {
+  id: number | string;
+  date: string;
+  title: string;
+  cliente?: string;
+  thumb?: string;
+  imagenes?: Array<{ image: string; label?: string }>;
+  stack?: string[];
+  [key: string]: unknown;
+}
+
 export interface Project {
   num: string;
   title: string;

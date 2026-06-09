@@ -1,7 +1,8 @@
-import { ProjectCard, type BaseProject } from '../ui/ProjectCard';
+import { ProjectCard } from '../ui/ProjectCard';
+import type { BaseProject } from '../../interfaces/project';
 import CategoryHero from '../ui/CategoryHero';
 import EmptyState from '../ui/EmptyState';
-import type { IconProps } from '../../types/icons';
+import type { IconProps } from '../../interfaces/ui';
 import type { ComponentType } from 'react';
 import { useShowHidden } from '../../hooks/useShowHidden';
 
@@ -94,7 +95,7 @@ export default function CategoryGalleryPage<T extends BaseProject>({
           <EmptyState description={emptyStateDescription} dataId={`${dataIdPrefix}-empty`} />
         ) : (
           <div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
             data-id={`${dataIdPrefix}-grid`}
           >
             {sortedProjects.map((project) => (

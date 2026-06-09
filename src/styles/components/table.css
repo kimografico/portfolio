@@ -53,7 +53,7 @@
 
 /* Flecha activa (color accent) */
 .sort-arrow-active {
-  color: var(--color-accent, #e11d48);
+  color: var(--color-accent);
   transition: color 0.2s;
 }
 

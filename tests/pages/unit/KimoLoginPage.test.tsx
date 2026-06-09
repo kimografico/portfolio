@@ -26,7 +26,7 @@ const sanitizeKimoRedirectMock = vi.hoisted(() =>
 );
 const setKimoAuthenticatedMock = vi.hoisted(() => vi.fn());
 
-vi.mock('../../../src/lib/kimoAuth', () => ({
+vi.mock('../../../src/utils/kimoAuth', () => ({
   checkKimoPassword: checkKimoPasswordMock,
   isKimoAuthenticated: isKimoAuthenticatedMock,
   sanitizeKimoRedirect: sanitizeKimoRedirectMock,

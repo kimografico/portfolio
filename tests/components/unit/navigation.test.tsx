@@ -7,7 +7,7 @@ import ScrollToTop from '../../../src/components/layout/ScrollToTop';
 
 const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true } as const;
 
-vi.mock('../../../src/lib/kimoAuth', () => ({
+vi.mock('../../../src/utils/kimoAuth', () => ({
   isKimoAuthenticated: vi.fn(() => false),
   sanitizeKimoRedirect: vi.fn((redirect: string | null) => redirect || '/kimo'),
 }));

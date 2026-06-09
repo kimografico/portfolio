@@ -8,7 +8,7 @@ export interface DevVideo {
   label: string;
 }
 
-import type { BaseProject } from '../components/ui/ProjectCard';
+import type { BaseProject } from './project';
 
 export interface WebProject extends BaseProject {
   cliente: string;

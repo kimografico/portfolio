@@ -1,4 +1,4 @@
-import type { IconProps } from '../../types/icons';
+import type { IconProps } from '../../interfaces/ui';
 
 /**
  * IconClose: Círculo con una X en el centro, para botones de cerrar.

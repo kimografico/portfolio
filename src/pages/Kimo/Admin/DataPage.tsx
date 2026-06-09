@@ -1,5 +1,4 @@
 import { useCallback, useMemo, useState } from 'react';
-import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
 import UIButton from '../../../components/ui/UIButton';
 import IconVisible from '../../../components/iconos/IconVisible';
 import IconHidden from '../../../components/iconos/IconHidden';
@@ -20,6 +19,7 @@ import {
 } from './data/filters';
 import { calculateDuplicateIds as calculateAdminDuplicateIds } from './data/duplicates';
 import DataActionBar from '../../../components/compositions/DataActionBar';
+import CarouselManager from '../../../components/compositions/CarouselManager';
 
 // Necesario para crear columnas tipadas
 const columnHelper = createColumnHelper<DataEntry>();
@@ -48,9 +48,9 @@ type VisibilityFilter = 'all' | 'visible' | 'hidden';
 export default function DataPage() {
   const navigate = useNavigate();
   const { alive } = useBackendStatus();
-  const [filterType, setFilterType] = useState('Desarrollo');
+  const [filterType, setFilterType] = useState('');
   const [filterCategory, setFilterCategory] = useState('');
-  const [filterCliente, setFilterCliente] = useState('');
+  const [filterCliente, setFilterCliente] = useState('KIMO');
   const [filterVisibility, setFilterVisibility] = useState<VisibilityFilter>('all');
   // showHidden controla la galería (persiste en localStorage); no afecta a esta tabla
   const [showHidden, setShowHidden] = useShowHidden();
@@ -319,9 +319,12 @@ export default function DataPage() {
     [selectedIds, localVisibility, allCurrentSelected, handleSelectRow, toggleSelectAll],
   );
 
+  if (!alive) {
+    return null;
+  }
+
   return (
     <section data-id="data-page">
-      <BackendOfflineAlert />
       <div className="flex flex-col md:flex-row md:items-center mb-8 gap-2 md:gap-4 w-full">
         <h2 className="text-xl w-full md:flex-1">
           Todos los proyectos{' '}
@@ -347,7 +350,7 @@ export default function DataPage() {
           addBtn
           onClick={() => window.open(`${APP_BASENAME}/kimo/add-project`, '_blank')}
           dataId="data-add-project-btn"
-          disabled={alive === false}
+          disabled={!alive}
         >
           Añadir Proyecto
         </UIButton>
@@ -504,6 +507,9 @@ export default function DataPage() {
       <div className="mt-12">
         <RecentWorksManagerPage />
       </div>
+
+      {/* Bloque de administración del carrusel de la home */}
+      <CarouselManager />
     </section>
   );
 }

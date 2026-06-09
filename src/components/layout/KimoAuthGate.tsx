@@ -1,5 +1,5 @@
 import { Navigate, Outlet, useLocation } from 'react-router-dom';
-import { isKimoAuthenticated, sanitizeKimoRedirect } from '../../lib/kimoAuth';
+import { isKimoAuthenticated, sanitizeKimoRedirect } from '../../utils/kimoAuth';
 
 export default function KimoAuthGate() {
   const location = useLocation();

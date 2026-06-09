@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import type { View } from '../../../types';
+import type { View } from '../../../interfaces/book';
 import UIButton from '../../../components/ui/UIButton';
 import { APP_BASENAME } from '../../../data/config/app';
 import { useBackendStatus } from '../../../contexts/BackendStatusContext';
-import { isKimoAuthenticated } from '../../../lib/kimoAuth';
+import { isKimoAuthenticated } from '../../../utils/kimoAuth';
 import '../../../styles/components/buttonStyles.css';
 import booksData from '../../../data/kimo/books.json';
 import BooksTable from './BooksTable';
@@ -20,14 +20,8 @@ export default function BooksPage() {
     <section data-id="books-page">
       <div className="flex flex-col gap-4 mb-8 md:flex-row md:items-center">
         <h2 className="text-xl flex-1">Lista de Libros que he ido leyendo</h2>
-        {isKimoAuthenticated() && (
-          <UIButton
-            href={`${APP_BASENAME}/kimo/add-book`}
-            dataId="books-add-book-btn"
-            addBtn
-            arrow
-            disabled={alive === false}
-          >
+        {alive && isKimoAuthenticated() && (
+          <UIButton href={`${APP_BASENAME}/kimo/add-book`} dataId="books-add-book-btn" addBtn arrow>
             Añadir libro
           </UIButton>
         )}

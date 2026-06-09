@@ -70,6 +70,7 @@ export async function hashKimoPassword(password: string): Promise<string> {
 
 export async function checkKimoPassword(password: string): Promise<KimoPasswordCheckResult> {
   const hash = await hashKimoPassword(password);
+  // console.log('KIMO password hash:', hash); // CAMBIAR PASSWORD PARA LOGIN
   const configuredHash = getKimoConfiguredHash();
 
   return {

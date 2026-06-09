@@ -1,9 +1,28 @@
-import { render, screen } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
+import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { describe, expect, it, vi } from 'vitest';
 import AddBookPage from '../../../src/pages/Kimo/Admin/AddBookPage';
 import AddIllustrationPage from '../../../src/pages/Kimo/Admin/AddIllustrationPage';
 import AddPlacePage from '../../../src/pages/Kimo/Admin/AddPlacePage';
 import AddProjectPage from '../../../src/pages/Kimo/Admin/AddProjectPage';
+
+import { createKimoIllustration, uploadKimoImages } from '../../../src/api/apiClient';
+
+vi.mock('../../../src/api/apiClient', async () => {
+  const actual = await vi.importActual<typeof import('../../../src/api/apiClient')>(
+    '../../../src/api/apiClient',
+  );
+
+  return {
+    ...actual,
+    createKimoIllustration: vi.fn().mockResolvedValue({
+      success: true,
+      data: { id: 'illustration-demo' },
+    }),
+    uploadKimoImages: vi
+      .fn()
+      .mockResolvedValue([{ ruta: '/images/kimo/illustrations/demo-main.webp', label: '' }]),
+  };
+});
 
 describe('Kimo add pages', () => {
   it('renderiza el formulario para añadir proyectos', () => {
@@ -33,6 +52,41 @@ describe('Kimo add pages', () => {
     expect(screen.getByLabelText(/nombre/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/^fecha$/i)).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /volver a ilustraciones/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /añadir ilustración/i })).toHaveAttribute(
+      'type',
+      'submit',
+    );
+    expect(screen.queryByLabelText(/^id$/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/persistencia/i)).not.toBeInTheDocument();
+    expect(screen.queryByText(/tip:/i)).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /seleccionar archivos/i })).toBeInTheDocument();
+  });
+
+  it('envía la ilustración al pulsar guardar', async () => {
+    render(<AddIllustrationPage />);
+
+    fireEvent.change(screen.getByLabelText(/nombre/i), { target: { value: 'Ilustración demo' } });
+
+    const fileInput = document.querySelector<HTMLInputElement>(
+      '[data-id="add-project-file-input"]',
+    );
+    expect(fileInput).not.toBeNull();
+
+    const file = new File(['demo'], 'demo.png', { type: 'image/png' });
+    fireEvent.change(fileInput as HTMLInputElement, { target: { files: [file] } });
+
+    fireEvent.click(screen.getByRole('button', { name: /añadir ilustración/i }));
+
+    await waitFor(() => {
+      expect(uploadKimoImages).toHaveBeenCalledWith([file], 'illustrations', 'Ilustración demo');
+      expect(createKimoIllustration).toHaveBeenCalledWith(
+        expect.objectContaining({
+          nombre: 'Ilustración demo',
+          image: 'demo-main.webp',
+          imagenesExtra: [],
+        }),
+      );
+    });
   });
 
   it('renderiza el formulario para añadir lugares', () => {

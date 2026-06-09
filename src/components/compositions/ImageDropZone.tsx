@@ -12,6 +12,7 @@ type ImageDropZoneProps = {
   imgErrors: Record<number, boolean>;
   dragIndex: number | null;
   dragOverIndex: number | null;
+  minimalistic?: boolean;
   fileInputRef: RefObject<HTMLInputElement | null>;
   onSelectFilesClick: () => void;
   onAddImage: () => void;
@@ -32,6 +33,7 @@ export default function ImageDropZone({
   imgErrors,
   dragIndex,
   dragOverIndex,
+  minimalistic = false,
   fileInputRef,
   onSelectFilesClick,
   onAddImage,
@@ -51,14 +53,16 @@ export default function ImageDropZone({
       <div className="flex items-center justify-between mb-2">
         <p className="text-xs font-semibold text-muted">Imágenes</p>
         <div className="flex gap-3">
-          <button
-            type="button"
-            onClick={onSelectFilesClick}
-            className="text-xs text-accent hover:underline"
-            data-id="add-project-select-files-btn"
-          >
-            📁 Seleccionar archivos
-          </button>
+          {!minimalistic && (
+            <button
+              type="button"
+              onClick={onSelectFilesClick}
+              className="text-xs text-accent hover:underline"
+              data-id="add-project-select-files-btn"
+            >
+              📁 Seleccionar archivos
+            </button>
+          )}
           <button
             type="button"
             onClick={onAddImage}
@@ -80,15 +84,17 @@ export default function ImageDropZone({
         onChange={onFileSelect}
       />
 
-      <div
-        className="border-2 border-dashed border-gray-300 rounded-lg p-4 mb-3 text-center text-sm text-muted hover:border-accent hover:bg-accent/5 transition-colors cursor-pointer min-h-48"
-        onDragOver={onDropZoneDragOver}
-        onDrop={onDropZoneDrop}
-        onClick={onSelectFilesClick}
-        data-id="add-project-dropzone"
-      >
-        Arrastra imágenes aquí o haz clic para seleccionar
-      </div>
+      {!minimalistic && (
+        <div
+          className="border-2 border-dashed border-[var(--color-border)] rounded-lg p-4 mb-3 text-center text-sm text-muted hover:border-accent hover:bg-accent/5 transition-colors cursor-pointer min-h-48"
+          onDragOver={onDropZoneDragOver}
+          onDrop={onDropZoneDrop}
+          onClick={onSelectFilesClick}
+          data-id="add-project-dropzone"
+        >
+          Arrastra imágenes aquí o haz clic para seleccionar
+        </div>
+      )}
 
       <div className="space-y-2">
         {images.map((img, i) => (
@@ -103,7 +109,7 @@ export default function ImageDropZone({
             }}
             onDragEnd={onImageDragEnd}
             className={`flex gap-3 items-center p-2 rounded border transition-all ${
-              dragOverIndex === i ? 'border-accent bg-accent/5' : 'border-gray-200'
+              dragOverIndex === i ? 'border-accent bg-accent/5' : 'border-[var(--color-border)]'
             } ${dragIndex === i ? 'opacity-40' : ''}`}
           >
             <span

@@ -669,7 +669,7 @@ export default function EditProjectPage() {
                 }}
                 onDragEnd={handleImgDragEnd}
                 className={`flex gap-3 items-center p-2 rounded border transition-all ${
-                  dragOverIndex === i ? 'border-accent bg-accent/5' : 'border-gray-200'
+                  dragOverIndex === i ? 'border-accent bg-accent/5' : 'border-[var(--color-border)]'
                 } ${dragIndex === i ? 'opacity-40' : ''}`}
               >
                 <span

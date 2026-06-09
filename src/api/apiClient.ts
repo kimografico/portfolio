@@ -6,7 +6,7 @@
 export const API_BASE = 'http://localhost:3001';
 
 import type { ResumeData } from '../interfaces/resume';
-import { isKimoAuthenticated } from '../lib/kimoAuth';
+import { isKimoAuthenticated } from '../utils/kimoAuth';
 
 /** Respuesta genérica de la API */
 interface ApiResponse<T = unknown> {
@@ -296,6 +296,26 @@ export function createKimoPlaceMarker(data: KimoPlaceMarkerPayload) {
   return apiFetch('/api/kimo/places-markers', {
     method: 'POST',
     body: JSON.stringify(data),
+  });
+}
+
+// --- Carrusel home ---
+
+export interface CarouselImageItem {
+  src: string;
+  alt: string;
+}
+
+/** Obtiene la lista de imágenes del carrusel desde el backend */
+export function getCarousel() {
+  return apiFetch<CarouselImageItem[]>('/api/carousel');
+}
+
+/** Sobrescribe la lista de imágenes del carrusel */
+export function updateCarousel(data: CarouselImageItem[]) {
+  return apiFetch('/api/carousel', {
+    method: 'PUT',
+    body: JSON.stringify({ data }),
   });
 }
 

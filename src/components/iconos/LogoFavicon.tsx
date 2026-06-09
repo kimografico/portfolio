@@ -1,5 +1,5 @@
 export default LogoFavicon;
-import type { IconProps } from '../../types/icons';
+import type { IconProps } from '../../interfaces/ui';
 
 export function LogoFavicon({ size = 48, ...props }: IconProps) {
   return (

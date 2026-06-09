@@ -1,4 +1,4 @@
-import type { IconProps } from '../../types/icons';
+import type { IconProps } from '../../interfaces/ui';
 
 export function LogoWordpress({ size = 24, color = '#21759B', ...props }: IconProps) {
   return (

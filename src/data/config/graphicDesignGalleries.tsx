@@ -7,9 +7,9 @@
  */
 
 import type { GraphicDesignProject } from '../../interfaces/graphicDesign';
-import type { BaseProject } from '../../components/ui/ProjectCard';
+import type { BaseProject } from '../../interfaces/project';
 import type { ComponentType } from 'react';
-import type { IconProps } from '../../types/icons';
+import type { IconProps } from '../../interfaces/ui';
 
 import logotypesData from '../graphic-design/logotipos.json';
 import papeleriaData from '../graphic-design/papeleria.json';

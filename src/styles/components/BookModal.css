@@ -14,14 +14,14 @@
   top: 0.75rem;
   right: 0.75rem;
   font-size: 1.25rem;
-  color: var(--color-muted, #9e9c96);
+  color: var(--color-muted);
   background: none;
   border: none;
   cursor: pointer;
   transition: color 0.2s;
 }
 .modal-close:hover {
-  color: var(--color-accent, #d4542a);
+  color: var(--color-accent);
 }
 
 /* Portada del libro */

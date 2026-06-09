@@ -15,10 +15,17 @@ const BackendStatusContext = createContext<BackendStatus>({
 });
 
 export function BackendStatusProvider({ children }: { children: React.ReactNode }) {
-  const [alive, setAlive] = useState(true);
-  const [checking, setChecking] = useState(true);
+  const isLocalhost =
+    typeof window !== 'undefined' &&
+    ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname);
+
+  const [alive, setAlive] = useState<boolean>(() => (isLocalhost ? true : false));
+  const [checking, setChecking] = useState<boolean>(() => (isLocalhost ? true : false));
 
   const check = useCallback(async () => {
+    if (!isLocalhost) {
+      return false;
+    }
     setChecking(true);
     try {
       const res = await fetch(`${API_BASE}/health`, { cache: 'no-store' });
@@ -36,9 +43,14 @@ export function BackendStatusProvider({ children }: { children: React.ReactNode 
     } finally {
       setChecking(false);
     }
-  }, []);
+  }, [isLocalhost]);
 
   useEffect(() => {
+    if (!isLocalhost) {
+      // Don't attempt backend checks when not running on localhost
+      return undefined;
+    }
+
     let mounted = true;
     // initial check (deferred to avoid synchronous setState in effect)
     setTimeout(() => {
@@ -58,7 +70,7 @@ export function BackendStatusProvider({ children }: { children: React.ReactNode 
       mounted = false;
       clearInterval(id);
     };
-  }, [check]);
+  }, [check, isLocalhost]);
 
   return (
     <BackendStatusContext.Provider value={{ alive, checking, check }}>

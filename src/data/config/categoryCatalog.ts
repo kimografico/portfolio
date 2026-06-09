@@ -145,3 +145,31 @@ export const GRAPHIC_DESIGN_CATEGORY_BY_ADMIN_LABEL = Object.fromEntries(
 export const DEVELOPER_CATEGORY_BY_ADMIN_LABEL = Object.fromEntries(
   DEVELOPER_CATEGORY_CATALOG.map((category) => [category.adminLabel, category.slug]),
 ) as Record<string, string>;
+
+/**
+ * Tipo simplificado de categoría para uso en páginas de categoría.
+ * Se usa en CategoryHomeTemplate para renderizar CategoryCards.
+ */
+export interface SimplifiedCategory {
+  key: string;
+  title: string;
+  description: string;
+  icon: ComponentType<{ size: number; strokeWidth: number; className: string }>;
+}
+
+/**
+ * Convierte un catálogo de categorías completo a un formato simplificado.
+ * Útil para generar las constantes DEVELOPER_CATEGORIES y GRAPHIC_DESIGN_CATEGORIES.
+ */
+export function toSimplifiedCategories(catalog: CategoryCatalogEntry[]): SimplifiedCategory[] {
+  return catalog.map(({ key, title, description, icon }) => ({
+    key,
+    title,
+    description,
+    icon,
+  }));
+}
+
+// Constantes pre-computadas para uso directo en páginas
+export const DEVELOPER_CATEGORIES = toSimplifiedCategories(DEVELOPER_CATEGORY_CATALOG);
+export const GRAPHIC_DESIGN_CATEGORIES = toSimplifiedCategories(GRAPHIC_DESIGN_CATEGORY_CATALOG);

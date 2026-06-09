@@ -34,7 +34,7 @@ export default meta;
 
 type Story = StoryObj<typeof ImageDropZone>;
 
-function InteractiveStory() {
+function InteractiveStory({ minimalistic = false }: { minimalistic?: boolean }) {
   const [images, setImages] = useState<ProjectImageItem[]>([
     {
       image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800',
@@ -125,10 +125,15 @@ function InteractiveStory() {
       onImageChange={handleImageChange}
       onRemoveImage={handleRemoveImage}
       onImageError={handleImageError}
+      minimalistic={minimalistic}
     />
   );
 }
 
 export const Default: Story = {
   render: () => <InteractiveStory />,
+};
+
+export const Minimalistic: Story = {
+  render: () => <InteractiveStory minimalistic />,
 };

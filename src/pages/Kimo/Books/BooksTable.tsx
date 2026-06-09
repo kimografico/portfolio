@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import type { BooksTableProps } from '../../../interfaces/books';
+import type { BooksTableProps } from '../../../interfaces/book';
 import BookModal from '../../../components/compositions/BookModal';
 import BooksFilter from '../../../components/compositions/BooksFilter';
 import BaseTable from '../../../components/compositions/BaseTable';
-import type { Book } from '../../../types';
+import type { Book } from '../../../interfaces/book';
 import { createColumnHelper, type ColumnDef } from '@tanstack/react-table';
 
 const columnHelper = createColumnHelper<Book>();

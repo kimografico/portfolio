@@ -1,11 +1,12 @@
 import { useMemo } from 'react';
 import UIButton from '../../../components/ui/UIButton';
-import { ProjectCard, type BaseProject } from '../../../components/ui/ProjectCard';
+import { ProjectCard } from '../../../components/ui/ProjectCard';
 import { APP_BASENAME } from '../../../data/config/app';
 import illustrations from '../../../data/kimo/illustrations.json';
 import { useBackendStatus } from '../../../contexts/BackendStatusContext';
 import type { Illustration } from '../../../interfaces/illustration';
-import { isKimoAuthenticated } from '../../../lib/kimoAuth';
+import type { BaseProject } from '../../../interfaces/project';
+import { isKimoAuthenticated } from '../../../utils/kimoAuth';
 
 const ILLUSTRATIONS_PATH = import.meta.env.VITE_ILLUSTRATIONS_PATH;
 
@@ -27,8 +28,7 @@ export default function IllustrationsPage() {
             label: img.label,
           })) ?? []),
         ],
-        // Miniatura: imagen principal absoluta
-        thumb: `${ILLUSTRATIONS_PATH}/${item.image}`,
+        thumb: `${ILLUSTRATIONS_PATH}/thumbs/${item.id}.jpg`,
       })),
     [],
   );
@@ -47,20 +47,19 @@ export default function IllustrationsPage() {
                 exploración de conceptos visuales.
               </p>
             </div>
-            {isKimoAuthenticated() && (
+            {alive && isKimoAuthenticated() && (
               <UIButton
                 href={`${APP_BASENAME}/kimo/add-illustration`}
                 dataId="illustrations-add-btn"
                 addBtn
                 arrow
-                disabled={alive === false}
               >
                 Añadir ilustración
               </UIButton>
             )}
           </div>
           <div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
             data-id="illustrations-gallery-grid"
           >
             {data.map((project) => (
@@ -70,7 +69,7 @@ export default function IllustrationsPage() {
                 to={`/kimo/ilustraciones/${project.id}`}
                 dataId={`illustration-card-${project.id}`}
                 widescreen={false}
-                // No pasamos buildImagePath: las rutas ya están procesadas
+                buildImagePath={(filename) => `${ILLUSTRATIONS_PATH}/${filename}`}
               />
             ))}
           </div>

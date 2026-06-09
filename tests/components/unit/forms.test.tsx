@@ -130,4 +130,48 @@ describe('form-like components', () => {
     expect(screen.getByDisplayValue('cover.jpg')).toBeInTheDocument();
     expect(screen.getByDisplayValue('Portada')).toBeInTheDocument();
   });
+
+  it('oculta el dropzone y el botón de seleccionar archivos en modo minimalistic', () => {
+    // En modo minimalista el componente mantiene solo la edición de imágenes existentes.
+    const onSelectFilesClick = vi.fn();
+    const onAddImage = vi.fn();
+    const onFileSelect = vi.fn();
+    const onDropZoneDragOver = vi.fn();
+    const onDropZoneDrop = vi.fn();
+    const onImageDragStart = vi.fn();
+    const onImageDragOver = vi.fn();
+    const onImageDrop = vi.fn();
+    const onImageDragEnd = vi.fn();
+    const onImageChange = vi.fn();
+    const onRemoveImage = vi.fn();
+    const onImageError = vi.fn();
+    const fileInputRef = { current: null } as RefObject<HTMLInputElement | null>;
+
+    render(
+      <ImageDropZone
+        images={[{ image: 'cover.jpg', label: 'Portada' }]}
+        imgErrors={{}}
+        dragIndex={null}
+        dragOverIndex={null}
+        minimalistic
+        fileInputRef={fileInputRef}
+        onSelectFilesClick={onSelectFilesClick}
+        onAddImage={onAddImage}
+        onFileSelect={onFileSelect}
+        onDropZoneDragOver={onDropZoneDragOver}
+        onDropZoneDrop={onDropZoneDrop}
+        onImageDragStart={onImageDragStart}
+        onImageDragOver={onImageDragOver}
+        onImageDrop={onImageDrop}
+        onImageDragEnd={onImageDragEnd}
+        onImageChange={onImageChange}
+        onRemoveImage={onRemoveImage}
+        onImageError={onImageError}
+      />,
+    );
+
+    expect(screen.queryByRole('button', { name: /seleccionar archivos/i })).not.toBeInTheDocument();
+    expect(screen.queryByText(/arrastra imágenes aquí/i)).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /\+ añadir url/i })).toBeInTheDocument();
+  });
 });

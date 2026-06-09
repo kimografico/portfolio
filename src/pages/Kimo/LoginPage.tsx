@@ -6,7 +6,7 @@ import {
   isKimoAuthenticated,
   sanitizeKimoRedirect,
   setKimoAuthenticated,
-} from '../../lib/kimoAuth';
+} from '../../utils/kimoAuth';
 
 export default function KimoLoginPage() {
   const navigate = useNavigate();

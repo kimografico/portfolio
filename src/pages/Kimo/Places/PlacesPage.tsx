@@ -5,7 +5,7 @@ import { APP_BASENAME } from '../../../data/config/app';
 import places from '../../../data/kimo/places.json';
 import markers from '../../../data/kimo/places_markers.json';
 import { useBackendStatus } from '../../../contexts/BackendStatusContext';
-import { isKimoAuthenticated } from '../../../lib/kimoAuth';
+import { isKimoAuthenticated } from '../../../utils/kimoAuth';
 
 /**
  * Página de lugares visitados: muestra mapa y tabla
@@ -29,13 +29,12 @@ export default function PlacesPage() {
           <h2 className="text-xl font-semibold text-ink">Lugares visitados</h2>
           <p className="text-sm text-muted">Mapa con marcadores y tabla de viajes.</p>
         </div>
-        {isKimoAuthenticated() && (
+        {alive && isKimoAuthenticated() && (
           <UIButton
             href={`${APP_BASENAME}/kimo/add-place`}
             dataId="places-add-place-btn"
             addBtn
             arrow
-            disabled={alive === false}
           >
             Añadir lugar
           </UIButton>
