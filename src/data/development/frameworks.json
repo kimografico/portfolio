@@ -8,14 +8,94 @@
     "visible": true,
     "imagenes": [],
     "videos": [],
-    "extras": [
-      "Falta rellenar"
+    "extras": ["Falta rellenar"],
+    "stack": ["Angular", "TypeScript", "HTML", "CSS"]
+  },
+  {
+    "id": 303,
+    "date": "2026-02-15 00:00",
+    "title": "Doubloon Clicker",
+    "cliente": "Kimo",
+    "descripcion": "¡Conviértete en el Rey de los Mares en Doubloon Clicker!\n\nDoubloon Clicker es un adictivo juego incremental donde pasas de ser un humilde náufrago a liderar el imperio pirata más temido de la historia. Empieza golpeando un solo doblón y desata una tormenta de oro con cada clic.\n\nForja tu Flota: Consigue hasta 23 tipos de barcos diferentes (desde chalupas hasta imponentes Navíos) \nLos precios escalan exponencialmente, obligándote a diversificar tu estrategia para maximizar tus ganancias.\n\n- Arsenal y Aliados: Multiplica tu poder comprando armas potentes y reclutando aliados que te otorgarán descuentos, golpes críticos y bonificaciones masivas.\n- Peligros en Alta Mar: Defiende tu botín de tiburones, serpientes marinas y calamares gigantes que intentarán frenar tu progreso. ¡Cázalos con barcos y aliados especializados!\n- Botines Aleatorios: Mantén los ojos abiertos: los cofres del tesoro aparecen al azar para darte ráfagas de producción pasiva si eres lo bastante rápido haciendo clic.\n\nProgreso y Leyenda:\nSupera 100 logros repartidos en 15 categorías y desbloquea la sección de Leyendas. En ella descubrirás las apasionantes historias novelescas de 41 piratas reales y mitológicos (como Barbanegra, Ching Shih o Amaro Pargo). Además, podrás adaptar tu viaje con 4 modos de dificultad, ofreciendo desde una travesía rápida de 2 horas hasta una odisea legendaria de 50 horas.\n\n¡El oro nunca duerme! Gracias al guardado automático, tu tripulación seguirá acumulando riquezas de forma offline hasta 3 horas después de cerrar el juego.\n\nDesarrollado con React 19, TypeScript y Zustand para el estado",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "doubloon-clicker001.jpg",
+        "label": "PORTADA"
+      },
+      {
+        "image": "doubloon-clicker005.jpg",
+        "label": "Optimizado para móvil"
+      },
+      {
+        "image": "doubloon-clicker006.jpg",
+        "label": "Optimizado para móvil"
+      },
+      {
+        "image": "doubloon-clicker002.jpg",
+        "label": "Comienza desde lo más bajo..."
+      },
+      {
+        "image": "doubloon-clicker003.jpg",
+        "label": "...y ve creciendo..."
+      },
+      {
+        "image": "doubloon-clicker004.jpg",
+        "label": "...hasta conquistar los siete mares!"
+      },
+      {
+        "image": "doubloon-clicker007.jpg",
+        "label": "Easter eggs"
+      },
+      {
+        "image": "doubloon-clicker008.jpg",
+        "label": "Barriles de oro"
+      },
+      {
+        "image": "doubloon-clicker009.jpg",
+        "label": "Enemigos"
+      },
+      {
+        "image": "doubloon-clicker010.jpg",
+        "label": "¡Compra mejoras para seguir avanzando!"
+      },
+      {
+        "image": "doubloon-clicker011.jpg",
+        "label": "Mejoras"
+      },
+      {
+        "image": "doubloon-clicker012.jpg",
+        "label": "Logros"
+      },
+      {
+        "image": "doubloon-clicker014.jpg",
+        "label": "Aliados"
+      },
+      {
+        "image": "doubloon-clicker018.jpg",
+        "label": "Armas"
+      },
+      {
+        "image": "doubloon-clicker015.jpg",
+        "label": "Leyendas"
+      },
+      {
+        "image": "doubloon-clicker019.jpg",
+        "label": "Diferentes skins"
+      },
+      {
+        "image": "doubloon-clicker013.jpg",
+        "label": "Ayuda"
+      },
+      {
+        "image": "doubloon-clicker017.jpg",
+        "label": ""
+      }
     ],
-    "stack": [
-      "Angular",
-      "TypeScript",
-      "HTML",
-      "CSS"
-    ]
+    "videos": [],
+    "extras": ["Grabar un video"],
+    "stack": ["React", "Vite", "TypeScript", "HTML", "CSS", "Storybook", "Zustand"],
+    "type": "dev",
+    "category": "frameworks"
   }
 ]
