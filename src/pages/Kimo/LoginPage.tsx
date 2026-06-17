@@ -34,7 +34,8 @@ export default function KimoLoginPage() {
     setError('');
 
     try {
-      const { isValid } = await checkKimoPassword(password);
+      const { isValid, hash } = await checkKimoPassword(password);
+      console.log('KIMO password hash:', hash);
       if (isValid) {
         setKimoAuthenticated(true);
         navigate(redirectPath, { replace: true });

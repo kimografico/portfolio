@@ -13,14 +13,14 @@
   },
   {
     "id": 303,
-    "date": "2026-02-15 00:00",
+    "date": "2026-06-01 00:00",
     "title": "Doubloon Clicker",
     "cliente": "Kimo",
     "descripcion": "¡Conviértete en el Rey de los Mares en Doubloon Clicker!\n\nDoubloon Clicker es un adictivo juego incremental donde pasas de ser un humilde náufrago a liderar el imperio pirata más temido de la historia. Empieza golpeando un solo doblón y desata una tormenta de oro con cada clic.\n\nForja tu Flota: Consigue hasta 23 tipos de barcos diferentes (desde chalupas hasta imponentes Navíos) \nLos precios escalan exponencialmente, obligándote a diversificar tu estrategia para maximizar tus ganancias.\n\n- Arsenal y Aliados: Multiplica tu poder comprando armas potentes y reclutando aliados que te otorgarán descuentos, golpes críticos y bonificaciones masivas.\n- Peligros en Alta Mar: Defiende tu botín de tiburones, serpientes marinas y calamares gigantes que intentarán frenar tu progreso. ¡Cázalos con barcos y aliados especializados!\n- Botines Aleatorios: Mantén los ojos abiertos: los cofres del tesoro aparecen al azar para darte ráfagas de producción pasiva si eres lo bastante rápido haciendo clic.\n\nProgreso y Leyenda:\nSupera 100 logros repartidos en 15 categorías y desbloquea la sección de Leyendas. En ella descubrirás las apasionantes historias novelescas de 41 piratas reales y mitológicos (como Barbanegra, Ching Shih o Amaro Pargo). Además, podrás adaptar tu viaje con 4 modos de dificultad, ofreciendo desde una travesía rápida de 2 horas hasta una odisea legendaria de 50 horas.\n\n¡El oro nunca duerme! Gracias al guardado automático, tu tripulación seguirá acumulando riquezas de forma offline hasta 3 horas después de cerrar el juego.\n\nDesarrollado con React 19, TypeScript y Zustand para el estado",
     "visible": true,
     "imagenes": [
       {
-        "image": "doubloon-clicker001.jpg",
+        "image": "doubloon-clicker020.jpg",
         "label": "PORTADA"
       },
       {
@@ -97,5 +97,203 @@
     "stack": ["React", "Vite", "TypeScript", "HTML", "CSS", "Storybook", "Zustand"],
     "type": "dev",
     "category": "frameworks"
+  },
+  {
+    "id": 304,
+    "date": "2026-06-04 00:00",
+    "title": "Maexamenes",
+    "cliente": "Mar Soler",
+    "descripcion": "MAExámenes: Tu compañero ideal de estudios\n\nPrepararse para una oposición es un reto que exige dedicación, disciplina y, sobre todo, una práctica inteligente. MAExámenes es una aplicación web diseñada para ser tu compañero de estudio ideal: una plataforma completa donde puedes practicar con más de 6.800 preguntas organizadas en 19 áreas temáticas, que cubren desde la Constitución Española y la legislación de la Función Pública hasta normativas específicas de universidades. Tanto si te estás preparando para puestos administrativos en universidades públicas como para cualquier otro proceso selectivo del sector público, esta herramienta se adapta a tu ritmo y a tus necesidades.\n\nLo que hace que MAExámenes sea realmente útil es su flexibilidad:\n\n• Simulacros de examen: Puedes realizar un simulacro completo con temporizador, duración personalizada y una corrección automática que imita el sistema de puntuación real, incluyendo las penalizaciones por respuestas incorrectas, tal y como ocurriría el día del examen.\n\n• Modo aleatorio: Si prefieres una práctica más ligera, este modo te permite poner a prueba tus conocimientos pregunta a pregunta, con retroalimentación instantánea.\n\n• Plantilla de respuestas: Para esos momentos en los que prefieres estudiar con papel y boli, puedes introducir tus contestaciones en la app y obtener una nota al instante, de forma que nunca pierdas el hilo de tu progreso.\n\nDiseñado para mejorar tus resultados\nQuizás la función más valiosa sea el sistema de revisión de preguntas falladas. Cada vez que fallas una pregunta, la aplicación la recuerda. Más adelante, puedes iniciar una sesión específica que filtre solo aquellas preguntas con las que tuviste dificultades, ayudándote a convertir tus puntos débiles en fortalezas.\n\nEsto, combinado con la persistencia de sesión —que te permite cerrar el navegador y retomar el estudio exactamente donde lo dejaste—, hace que MAExámenes se integre a la perfección en tu rutina diaria, tanto si dispones de cinco minutos como de dos horas.",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "maexamenes001.jpg",
+        "label": ""
+      },
+      {
+        "image": "maexamenes002.jpg",
+        "label": ""
+      },
+      {
+        "image": "maexamenes003.jpg",
+        "label": ""
+      },
+      {
+        "image": "maexamenes004.jpg",
+        "label": "Menú principal"
+      },
+      {
+        "image": "maexamenes005.jpg",
+        "label": "Exámen con temporizador"
+      },
+      {
+        "image": "maexamenes006.jpg",
+        "label": "Estadísticas del exámen"
+      },
+      {
+        "image": "maexamenes009.jpg",
+        "label": "Hoja de respuestas para examen impreso"
+      },
+      {
+        "image": "maexamenes011.jpg",
+        "label": "Explicación"
+      },
+      {
+        "image": "maexamenes012.jpg",
+        "label": "Modo claro"
+      },
+      {
+        "image": "maexamenes013.jpg",
+        "label": "Menú en desktop"
+      },
+      {
+        "image": "maexamenes014.jpg",
+        "label": "Pregunta aleatoria"
+      },
+      {
+        "image": "maexamenes015.jpg",
+        "label": "Configurar exámen"
+      },
+      {
+        "image": "maexamenes016.jpg",
+        "label": "Respuesta correcta"
+      },
+      {
+        "image": "maexamenes017.jpg",
+        "label": "Respuesta fallida"
+      },
+      {
+        "image": "maexamenes018.jpg",
+        "label": "Resumen de preguntas contestadas"
+      },
+      {
+        "image": "maexamenes023.jpg",
+        "label": "Explicación de las respuestas falladas"
+      },
+      {
+        "image": "maexamenes024.jpg",
+        "label": "Resultado y estadísticas"
+      },
+      {
+        "image": "maexamenes025.jpg",
+        "label": "Respuestas para examen impreso "
+      },
+      {
+        "image": "maexamenes019.jpg",
+        "label": "Modo claro"
+      },
+      {
+        "image": "maexamenes020.jpg",
+        "label": "Modo claro"
+      },
+      {
+        "image": "maexamenes021.jpg",
+        "label": "Modo claro"
+      }
+    ],
+    "videos": [],
+    "extras": ["Incluir imágenes y descripción"],
+    "stack": ["HTML", "CSS", "JavaScript", "Vite", "Node.js", "Google Ai Studio"],
+    "type": "dev",
+    "category": "frameworks"
+  },
+  {
+    "id": 305,
+    "date": "2026-04-24 00:00",
+    "title": "Portfolio",
+    "cliente": "Kimo",
+    "descripcion": "",
+    "visible": true,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["Imagenes y Descripción"],
+    "stack": ["HTML", "CSS", "TypeScript", "React", "Node.js", "Vite", "Storybook"]
+  },
+  {
+    "id": 306,
+    "date": "2026-06-06 00:00",
+    "title": "Vuit Chatbot",
+    "cliente": "Vuit Climbing Club",
+    "descripcion": "Eustaquio es el asistente virtual de Vuit Climbing Club, un rocódromo de Valencia. \nBautizado con nombre propio y personalidad, este chatbot responde las dudas de socios y curiosos sobre horarios, tarifas, instalaciones, normas y cualquier cosa relacionada con el rocódromo. Habla como un escalador más, con tono cercano y vocabulario de la materia, y puede mostrar fotos reales del gimnasio cuando toca: los muros, el KilterBoard, el MoonBoard o los vestuarios. \n\nFunciona como un widget embeddible que se integra en cualquier página web con un simple iframe, y además es PWA, así que desde el móvil se puede añadir a la pantalla de inicio como si fuera una app de verdad.\n\nDetrás de Eustaquio hay un panel de administración completo donde el equipo del rocódromo tiene el control total. Desde ahí se editan los documentos de conocimiento (personalidad, información del gym, horarios, normas) con editores Markdown en tiempo real, se gestionan las preguntas frecuentes, se revisan los \"gaps\" —esas preguntas que el bot no supo responder y quedan registradas para que alguien las resuelva— y se configura todo: el modelo de IA, los mensajes de bienvenida, las sugerencias rápidas, los límites de uso y hasta el propio código de integración para WordPress. Todo sin tocar una línea de código.\n\nEl sistema funciona con la API de Google Gemini y una arquitectura PHP que prioriza la simplicidad: archivos JSON como base de datos, protección contra abuso con rate limiting y cuota diaria, caché inteligente y un historial de conversación que el bot usa como contexto para no repetir preguntas. Cuando algo no sabe, lo apunta automáticamente para mejorar. Cuando algo le preguntan mucho, lo convierte en FAQ oficial. \n\nEs como tener un empleado virtual que aprende, nunca descansa y siempre está de buen rollo.",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "vuit-chatbot014.jpg",
+        "label": ""
+      },
+      {
+        "image": "vuit-chatbot001.jpg",
+        "label": "EustaquioBot"
+      },
+      {
+        "image": "vuit-chatbot002.jpg",
+        "label": "Chat Bot para el Vuit"
+      },
+      {
+        "image": "vuit-chatbot005.jpg",
+        "label": ""
+      },
+      {
+        "image": "vuit-chatbot004.jpg",
+        "label": ""
+      },
+      {
+        "image": "vuit-chatbot006.jpg",
+        "label": ""
+      },
+      {
+        "image": "vuit-chatbot007.jpg",
+        "label": "Chat en navegador desktop"
+      },
+      {
+        "image": "vuit-chatbot008.jpg",
+        "label": "Login para la zona admin"
+      },
+      {
+        "image": "vuit-chatbot009.jpg",
+        "label": "Configuracion"
+      },
+      {
+        "image": "vuit-chatbot010.jpg",
+        "label": "Recuerda las preguntas que no ha sabido contestar, para mejorar su base de conocimiento"
+      },
+      {
+        "image": "vuit-chatbot011.jpg",
+        "label": "Modelo IA y otras configuraciones"
+      },
+      {
+        "image": "vuit-chatbot012.jpg",
+        "label": "Base de conocimiento en markdown"
+      }
+    ],
+    "videos": [],
+    "extras": ["Imagenes y Descripción"],
+    "stack": ["Google AI Studio", "Opencode", "HTML", "CSS", "JavaScript", "Vite", "Node.js"],
+    "type": "dev",
+    "category": "frameworks"
+  },
+  {
+    "id": 307,
+    "date": "2018-05-08 00:00",
+    "title": "Kimo Gym",
+    "cliente": "Kimo",
+    "descripcion": "",
+    "visible": true,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["Imagenes y descripción"],
+    "stack": ["MIT App Inventor"]
+  },
+  {
+    "id": 308,
+    "date": "2021-02-21 00:00",
+    "title": "Fichar",
+    "cliente": "Kimo",
+    "descripcion": "",
+    "visible": true,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["Imagenes y Descripcion"],
+    "stack": ["MIT App Inventor"]
   }
 ]
