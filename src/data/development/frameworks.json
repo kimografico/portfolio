@@ -204,10 +204,17 @@
     "cliente": "Kimo",
     "descripcion": "",
     "visible": true,
-    "imagenes": [],
+    "imagenes": [
+      {
+        "image": "portfolio001.jpg",
+        "label": ""
+      }
+    ],
     "videos": [],
     "extras": ["Imagenes y Descripción"],
-    "stack": ["HTML", "CSS", "TypeScript", "React", "Node.js", "Vite", "Storybook"]
+    "stack": ["HTML", "CSS", "TypeScript", "React", "Node.js", "Vite", "Storybook"],
+    "type": "dev",
+    "category": "frameworks"
   },
   {
     "id": 306,
