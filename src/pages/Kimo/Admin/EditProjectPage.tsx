@@ -416,6 +416,36 @@ export default function EditProjectPage() {
       };
 
       await updateProject(projectId, payload);
+
+      // Recargar datos del proyecto para reflejar los nombres reales de las imágenes
+      const refreshed = await getProject(projectId);
+      const p = refreshed.data as ProjectData;
+      const normalizeVideos = (arr: unknown[]): { image: string; label: string }[] =>
+        arr.map((v) =>
+          typeof v === 'string'
+            ? { image: v, label: '' }
+            : {
+                image: (v as { image?: string })?.image ?? '',
+                label: (v as { label?: string })?.label ?? '',
+              },
+        );
+      const normalizeStringArray = (arr: unknown[]): string[] =>
+        arr.map((v) => (typeof v === 'string' ? v : ((v as { ruta?: string })?.ruta ?? '')));
+
+      setForm({
+        type: p.type,
+        category: p.category,
+        title: p.title ?? '',
+        cliente: p.cliente ?? '',
+        descripcion: p.descripcion ?? '',
+        visible: p.visible !== false,
+        date: p.date ? p.date.split(' ')[0] : '',
+        imagenes: p.imagenes?.length ? normalizeImages(p.imagenes) : [emptyImagen()],
+        videos: p.videos?.length ? normalizeVideos(p.videos) : [emptyVideo()],
+        extras: p.extras?.length ? normalizeStringArray(p.extras) : [''],
+        stack: p.stack ?? [],
+      });
+
       setStatus('success');
     } catch (err) {
       setStatus('error');
