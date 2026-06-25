@@ -18,10 +18,102 @@
       {
         "image": "el-raco-solidari003.jpg",
         "label": "Cosateca - Zona Admin"
+      },
+      {
+        "image": "el-raco-solidari004.jpg",
+        "label": "Menú"
+      },
+      {
+        "image": "el-raco-solidari005.png",
+        "label": "Login"
+      },
+      {
+        "image": "el-raco-solidari006.png",
+        "label": "Nuevo registro"
+      },
+      {
+        "image": "el-raco-solidari008.png",
+        "label": "Recuperación de contraseña"
+      },
+      {
+        "image": "el-raco-solidari007.png",
+        "label": "Recuperación de contraseña"
+      },
+      {
+        "image": "el-raco-solidari009.jpg",
+        "label": "Cosateca"
+      },
+      {
+        "image": "el-raco-solidari010.png",
+        "label": "Detalle de Item en Cosateca"
+      },
+      {
+        "image": "el-raco-solidari011.jpg",
+        "label": "Tiempoteca"
+      },
+      {
+        "image": "el-raco-solidari012.png",
+        "label": "Zona Admin de Tiempoteca"
+      },
+      {
+        "image": "el-raco-solidari013.png",
+        "label": "Confirmar asistencia a evento"
+      },
+      {
+        "image": "el-raco-solidari014.png",
+        "label": "Administrar Solicitudes"
+      },
+      {
+        "image": "el-raco-solidari015.png",
+        "label": "Penalizaciones"
+      },
+      {
+        "image": "el-raco-solidari016.png",
+        "label": "Penalizaciones"
+      },
+      {
+        "image": "el-raco-solidari017.png",
+        "label": "Zona Usuario"
+      },
+      {
+        "image": "el-raco-solidari018.png",
+        "label": "Historico de solicitudes de un usuario"
+      },
+      {
+        "image": "el-raco-solidari019.png",
+        "label": "Editar Perfil"
+      },
+      {
+        "image": "el-raco-solidari020.png",
+        "label": "Pipeline de Gitlab (CI/CD)"
+      },
+      {
+        "image": "el-raco-solidari022.png",
+        "label": ""
+      },
+      {
+        "image": "el-raco-solidari021.png",
+        "label": ""
+      },
+      {
+        "image": "el-raco-solidari023.png",
+        "label": ""
+      },
+      {
+        "image": "el-raco-solidari026.png",
+        "label": ""
+      },
+      {
+        "image": "el-raco-solidari024.png",
+        "label": ""
+      },
+      {
+        "image": "el-raco-solidari025.png",
+        "label": ""
       }
     ],
     "videos": [],
-    "extras": ["Falta rellenar"],
+    "extras": [],
     "stack": ["Angular", "TypeScript", "HTML", "CSS"],
     "type": "dev",
     "category": "frameworks"
