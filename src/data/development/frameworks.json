@@ -108,7 +108,7 @@
       }
     ],
     "videos": [],
-    "extras": ["Grabar un video"],
+    "extras": ["Grabar un video - https://doubloon-clicker.kimo-grafico.workers.dev/"],
     "stack": ["React", "Vite", "TypeScript", "HTML", "CSS", "Storybook", "Zustand"],
     "type": "dev",
     "category": "frameworks"
@@ -207,7 +207,7 @@
       }
     ],
     "videos": [],
-    "extras": ["Incluir imágenes y descripción"],
+    "extras": ["Incluir imágenes y descripción - https://maexamenes.pages.dev/?access=ma3x4m3n3s"],
     "stack": ["HTML", "CSS", "JavaScript", "Vite", "Node.js", "Google Ai Studio"],
     "type": "dev",
     "category": "frameworks"
@@ -289,7 +289,7 @@
       }
     ],
     "videos": [],
-    "extras": ["Imagenes y Descripción"],
+    "extras": ["Imagenes y Descripción - https://kimografico.com/eustaquio-bot/chat/"],
     "stack": ["Google AI Studio", "Opencode", "HTML", "CSS", "JavaScript", "Vite", "Node.js"],
     "type": "dev",
     "category": "frameworks"
@@ -299,12 +299,51 @@
     "date": "2018-05-08 00:00",
     "title": "Kimo Gym",
     "cliente": "Kimo",
-    "descripcion": "",
+    "descripcion": "Primera app móvil que realicé, mediante programación por bloques en MIT APP Inventor.\nSe trata de un registro de ejercicios de gimnasio gamificado, con medias mensuales, frases motivadoras, posibilidad de exportar historial a texto, y varias estadísticas.",
     "visible": true,
-    "imagenes": [],
+    "imagenes": [
+      {
+        "image": "kimo-gym001.jpg",
+        "label": ""
+      },
+      {
+        "image": "kimo-gym002.jpg",
+        "label": ""
+      },
+      {
+        "image": "kimo-gym003.jpg",
+        "label": "Bloques de MIT APP Inventor"
+      },
+      {
+        "image": "kimo-gym004.jpg",
+        "label": "Comienzo"
+      },
+      {
+        "image": "kimo-gym005.jpg",
+        "label": "Tabla vacía"
+      },
+      {
+        "image": "kimo-gym006.jpg",
+        "label": "Tabla llena"
+      },
+      {
+        "image": "kimo-gym007.jpg",
+        "label": "Gráfica mensual"
+      },
+      {
+        "image": "kimo-gym008.jpg",
+        "label": "Añadir registro manualmente"
+      },
+      {
+        "image": "kimo-gym009.jpg",
+        "label": "Input Fecha"
+      }
+    ],
     "videos": [],
-    "extras": ["Imagenes y descripción"],
-    "stack": ["MIT App Inventor"]
+    "extras": [],
+    "stack": ["MIT App Inventor", "TinyDB"],
+    "type": "dev",
+    "category": "frameworks"
   },
   {
     "id": 308,
@@ -317,5 +356,33 @@
     "videos": [],
     "extras": ["Imagenes y Descripcion"],
     "stack": ["MIT App Inventor"]
+  },
+  {
+    "id": 309,
+    "date": "2026-06-24 00:00",
+    "title": "Kimo Gym v2",
+    "cliente": "Kimo",
+    "descripcion": "¿Cuantas flexiones has hecho hoy? ¿Y esta semana? ¿Llevas cuenta de tus dominadas o simplemente vas al gym \"y ya verás\"? Kimo GYM nació para resolver un problema que todos los que entrenamos conocemos: el caos de no saber realmente cuánto estamos progresando. Con un diseño oscuro y minimalista pensado para usarlo entre serie y serie, esta app te permite registrar tus repeticiones de flexiones, dominadas, pesas y abdominales en un segundo. Un toque, un swipe, y listo. Sin excusas, sin complicaciones. Solo tú y tus números.\n\nPero Kimo GYM no es solo un contador. Es un sistema completo que te empuja a mejorar cada día. Cada ejercicio suma puntos, y tu puntuación se traduce en estrellas que reflejan tu esfuerzo real de los últimos 30 días. ¿Bajo en estrellas? La app te lo dice con colores y tendencias. ¿Necesitas un descanso? Un temporizador de 90 segundos se activa automáticamente tras cada serie. Gráficas de esfuerzo diario, medias de rendimiento, citas motivacionales que aparecen cuando menos lo esperas... todo está diseñado para que entres, registres y salgas sintiéndote un poco mejor de lo que entraste. Tu cuerpo lleva la cuenta. Kimo GYM la pone en negro y blanco.\n\nDisponible como Progressive Web App, funciona desde el navegador de tu móvil sin necesidad de instalar nada. Añádela a tu pantalla de inicio y tendrás una experiencia nativa con vibración háptica, sonidos de retroalimentación y navegación por gestos (swipe para cambiar de ejercicio). Tus datos se guardan localmente en tu dispositivo: privacidad total, servidores cero. Ya sea que estés empezando tu primer mes de entrenamiento o llevas años midiendo cada repetición, Kimo GYM se adapta a tu ritmo. Empieza hoy. Mañana tu yo del pasado te lo agradecerá.",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "kimo-gym-v2001.jpg",
+        "label": ""
+      }
+    ],
+    "videos": [],
+    "extras": ["descripcion y fotos - https://kimo-gym-2.kimo-grafico.workers.dev/"],
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Vite",
+      "Google AI Studio",
+      "Storybook"
+    ],
+    "type": "dev",
+    "category": "frameworks"
   }
 ]
