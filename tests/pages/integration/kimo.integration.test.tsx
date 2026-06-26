@@ -34,7 +34,9 @@ describe('kimo integration', () => {
       </MemoryRouter>,
     );
 
-    expect(await screen.findByRole('heading', { name: /acceso a kimo/i })).toBeInTheDocument();
+    await waitFor(() => {
+      expect(screen.getByRole('heading', { name: /acceso a kimo/i })).toBeInTheDocument();
+    });
     expect(screen.getByRole('button', { name: /entrar/i })).toBeInTheDocument();
   });
 
