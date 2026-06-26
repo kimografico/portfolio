@@ -22,8 +22,8 @@
     "thumbs": "node scripts/generate-thumbs.cjs",
     "thumbs:new": "node scripts/generate-thumbs.cjs --new",
     "thumbs:id": "node scripts/generate-thumbs.cjs --id",
-    "test:e2e": "cucumber-js --import ts-node/register --import tests/e2e/support/world.ts --import tests/e2e/step-definitions/**/*.ts tests/e2e/features/**/*.feature",
-    "test:e2e:browser": "E2E_HEADLESS=false E2E_SLOW_MO=1000 cucumber-js --import ts-node/register --import tests/e2e/support/world.ts --import tests/e2e/step-definitions/**/*.ts tests/e2e/features/**/*.feature"
+    "test:e2e": "node --import tsx/esm ./node_modules/@cucumber/cucumber/bin/cucumber.js --import tests/e2e/support/world.ts --import tests/e2e/step-definitions/**/*.ts tests/e2e/features/**/*.feature",
+    "test:e2e:browser": "E2E_HEADLESS=false E2E_SLOW_MO=1000 node --import tsx/esm ./node_modules/@cucumber/cucumber/bin/cucumber.js --import tests/e2e/support/world.ts --import tests/e2e/step-definitions/**/*.ts tests/e2e/features/**/*.feature"
   },
   "dependencies": {
     "@tanstack/react-table": "^8.21.3",
@@ -68,7 +68,7 @@
     "sharp": "^0.34.5",
     "storybook": "^10.3.6",
     "tailwindcss": "^3.4.19",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.20.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.58.2",
     "vite": "^8.0.9",
