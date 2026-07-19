@@ -40,6 +40,14 @@ function isEmptyString(value: string): boolean {
   return value.trim() === '';
 }
 
+function getStoredImageName(value: string): string {
+  const trimmed = value.trim();
+  if (trimmed === '') return '';
+  const normalized = trimmed.split('?')[0].split('#')[0];
+  const parts = normalized.split('/').filter(Boolean);
+  return parts[parts.length - 1] ?? '';
+}
+
 export default function AddBookPage() {
   const { alive } = useBackendStatus();
   const [form, setForm] = useState<BookFormState>(initialForm);
@@ -117,7 +125,7 @@ export default function AddBookPage() {
         title: form.title.trim(),
         author: form.author.trim(),
         language: form.language.trim(),
-        cover: uploadedCover[0]?.ruta ?? '',
+        cover: getStoredImageName(uploadedCover[0]?.ruta ?? ''),
         dateRead: form.dateRead.trim(),
         genre: form.genre.trim(),
         isbn: form.isbn.trim(),
@@ -307,7 +315,12 @@ export default function AddBookPage() {
         </div>
 
         <div className="flex items-center gap-4">
-          <UIButton saveBtn disabled={status === 'loading'} dataId="add-book-save-btn">
+          <UIButton
+            saveBtn
+            type="submit"
+            disabled={status === 'loading'}
+            dataId="add-book-save-btn"
+          >
             {status === 'loading' ? 'Guardando…' : 'Añadir libro'}
           </UIButton>
         </div>

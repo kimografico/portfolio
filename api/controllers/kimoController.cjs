@@ -263,10 +263,7 @@ function uploadKimoImages(req, res) {
       throw error;
     }
 
-    const uploadRoot =
-      destCollection === 'illustrations'
-        ? require('path').join(process.cwd(), 'public', 'images', 'illustrations')
-        : require('path').join(process.cwd(), 'public', 'images', 'kimo', destCollection);
+    const uploadRoot = require('path').join(process.cwd(), 'public', 'images', destCollection);
     const fs = require('fs');
     const path = require('path');
     const ALLOWED_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp', '.svg', '.avif'];
@@ -314,7 +311,7 @@ function uploadKimoImages(req, res) {
       fs.writeFileSync(destPath, file.buffer);
 
       savedImages.push({
-        ruta: `/images/kimo/${destCollection}/${fileName}`,
+        ruta: `/images/${destCollection}/${fileName}`,
         label: file.originalname.replace(/\.[^.]+$/, ''),
       });
       serial += 1;

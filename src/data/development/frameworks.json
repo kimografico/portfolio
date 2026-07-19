@@ -442,12 +442,51 @@
     "date": "2021-02-21 00:00",
     "title": "Fichar",
     "cliente": "Kimo",
-    "descripcion": "",
+    "descripcion": "Aplicación para fichar de forma local, y llevar un control personal de horas de entrada y salida, asi como de la diferencia entre ellas y el cómputo global a final de mes",
     "visible": true,
-    "imagenes": [],
+    "imagenes": [
+      {
+        "image": "fichar001.jpg",
+        "label": ""
+      },
+      {
+        "image": "fichar002.jpg",
+        "label": ""
+      },
+      {
+        "image": "fichar003.jpg",
+        "label": ""
+      },
+      {
+        "image": "fichar004.jpg",
+        "label": "Pantalla principal"
+      },
+      {
+        "image": "fichar005.jpg",
+        "label": "Histórico"
+      },
+      {
+        "image": "fichar006.jpg",
+        "label": "Posibilidad de añadir una entrada o salida manualmente"
+      },
+      {
+        "image": "fichar007.jpg",
+        "label": "Componente de fecha"
+      },
+      {
+        "image": "fichar008.jpg",
+        "label": "Confirmación de borrado"
+      },
+      {
+        "image": "fichar009.jpg",
+        "label": "Vista Debug de Base de datos"
+      }
+    ],
     "videos": [],
-    "extras": ["Imagenes y Descripcion"],
-    "stack": ["MIT App Inventor"]
+    "extras": [],
+    "stack": ["MIT App Inventor"],
+    "type": "dev",
+    "category": "frameworks"
   },
   {
     "id": 309,
