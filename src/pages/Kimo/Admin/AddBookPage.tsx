@@ -153,6 +153,9 @@ export default function AddBookPage() {
           <p className="text-sm text-muted">
             Se guarda en books.json y la portada se sube al backend.
           </p>
+          <p className="text-sm text-muted">
+            Las portadas miden 450x650 píxeles y deben estár a calidad 6 aproximadamente.
+          </p>
         </div>
         <UIButton href={`${APP_BASENAME}/kimo/books`} arrowBack link dataId="add-book-back-btn">
           Volver a Biblioteca
