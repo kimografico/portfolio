@@ -40,6 +40,22 @@ export default function BooksTable({ books }: BooksTableProps) {
   const [selectedBook, setSelectedBook] = useState<Book | null>(null);
   const [filteredBooks, setFilteredBooks] = useState<Book[]>(books);
 
+  const sortedBooks = [...filteredBooks]
+    .map((book, index) => ({ book, index }))
+    .sort((a, b) => {
+      const aDate = a.book.dateRead?.trim() ?? '';
+      const bDate = b.book.dateRead?.trim() ?? '';
+      if (aDate && bDate) {
+        const cmp = bDate.localeCompare(aDate);
+        if (cmp !== 0) return cmp;
+        return b.index - a.index;
+      }
+      if (aDate) return -1;
+      if (bDate) return 1;
+      return b.index - a.index;
+    })
+    .map(({ book }) => book);
+
   const handleRowClick = (book: Book) => {
     setSelectedBook(book);
   };
@@ -52,7 +68,7 @@ export default function BooksTable({ books }: BooksTableProps) {
 
       <div data-id="books-table">
         <BaseTable<Book, string>
-          data={filteredBooks}
+          data={sortedBooks}
           columns={columns}
           initialSorting={[{ id: 'dateRead', desc: true }]}
           onRowClick={handleRowClick}

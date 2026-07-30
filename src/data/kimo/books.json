@@ -1966,5 +1966,29 @@
     "isbn": "9780380727148",
     "series": "Anno Dracula",
     "synopsis": "El relato del libro se lleva a cabo durante Primera Guerra Mundial, y se centra en los esfuerzos del Club Diógenes para investigar el intento de Alemania de crear poderosos aviadores no-muertos. Al frente de las operaciones en Alemania se encuentran personajes de la talla de Rotwang, el doctor Caligari y el doctor Mabuse. Uno de sus esfuerzos más exitosos es un piloto no-muerto conocido como el Barón Rojo. La historia también cuenta con un Edgar Allan Poe vampirizado que es asignado como el escritor fantasma de la autobiografía del Barón Rojo."
+  },
+  {
+    "id": "a",
+    "title": "Aleación de Ley",
+    "author": "Brandon Sanderson",
+    "language": "Español",
+    "cover": "aleacion-de-ley.jpg",
+    "dateRead": "2026-07",
+    "genre": "Fantasía",
+    "isbn": "9788466658928",
+    "series": "Nacidos de la Bruma",
+    "synopsis": "La historia tiene lugar trecientos años después del final de la primera trilogía y sigue las aventuras de Waxillium Ladrian, un vigilante de la ley que debe regresar a su ciudad natal para ocupar su legítimo lugar como jefe de su casa. Cuando una serie de misteriosos robos sacuden a la ciudad, Wax recibe la ayuda de su fiel amigo Wayne y la habilidosa Marasi Colms para resolver el misterio detrás de una conspiración más grande de la que se pueden imaginar."
+  },
+  {
+    "id": "sombras-de-identidad",
+    "title": "Sombras de identidad",
+    "author": "Brandon Sanderson",
+    "language": "Español",
+    "cover": "sombras-de-identidad.jpg",
+    "dateRead": "2026-08",
+    "genre": "Fantasía",
+    "isbn": "9788466658850",
+    "series": "Nacidos de la Bruma",
+    "synopsis": "Un año después de la derrota de los Desvanecedores el clima social en Elendel se vuelve turbulento. Una serie de eventos ha puesto en guerra a las diferentes clases sociales y la supuesta corrupción del gobernador no hace más que empeorar el panorama. Cualquier cosa que pueda suceder terminará desatando una guerra civil. Wax Ladrian, junto con leal Wayne y la talentosa Marasi descubren que el caos es alimentado por una Kandra enloquecida que busca liberar al mundo de la influencia de su Dios. Wax no tarda en comprender que ese caso esta sumamente vinculado a su pasado y que mientras más averigua más se reabren las heridas que lo obligaron a dejar los Áridos para regresar a Elendel."
   }
 ]

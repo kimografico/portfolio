@@ -25,14 +25,20 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
       {/* Galería de portadas */}
       <div className="bookshelf-grid" data-id="books-gallery-grid">
         {[...filteredBooks]
+          .map((book, index) => ({ book, index }))
           .sort((a, b) => {
-            if (a.dateRead && a.dateRead.trim() !== '' && b.dateRead && b.dateRead.trim() !== '') {
-              return b.dateRead.localeCompare(a.dateRead);
+            const aDate = a.book.dateRead?.trim() ?? '';
+            const bDate = b.book.dateRead?.trim() ?? '';
+            if (aDate && bDate) {
+              const cmp = bDate.localeCompare(aDate);
+              if (cmp !== 0) return cmp;
+              return b.index - a.index;
             }
-            if (a.dateRead && a.dateRead.trim() !== '') return -1;
-            if (b.dateRead && b.dateRead.trim() !== '') return 1;
-            return 0;
+            if (aDate) return -1;
+            if (bDate) return 1;
+            return b.index - a.index;
           })
+          .map(({ book }) => book)
           .map((book) => (
             <button
               key={book.id}
