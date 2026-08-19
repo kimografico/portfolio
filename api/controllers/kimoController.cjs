@@ -303,11 +303,22 @@ function uploadKimoImages(req, res) {
       }
     }
 
+    const isSingleCover = destCollection === 'books' && req.files.length === 1;
+
     const savedImages = [];
     for (const file of req.files) {
       const ext = path.extname(file.originalname).toLowerCase();
-      const fileName = `${slug}${String(serial).padStart(3, '0')}${ext}`;
+      const fileName = isSingleCover
+        ? `${slug}${ext}`
+        : `${slug}${String(serial).padStart(3, '0')}${ext}`;
       const destPath = path.join(uploadRoot, fileName);
+
+      if (fs.existsSync(destPath)) {
+        const error = new Error(`El archivo "${fileName}" ya existe en el servidor`);
+        error.status = 409;
+        throw error;
+      }
+
       fs.writeFileSync(destPath, file.buffer);
 
       savedImages.push({
