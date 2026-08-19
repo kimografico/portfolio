@@ -48,6 +48,7 @@ const PLACE_COUNTRIES = [
   { value: 'th', label: 'Tailandia' },
   { value: 'gr', label: 'Grecia' },
   { value: 'ie', label: 'Irlanda' },
+  { value: 'gb', label: 'Reino Unido' },
   { value: 'ad', label: 'Andorra' },
 ];
 
@@ -58,6 +59,7 @@ const MARKER_COUNTRIES = [
   { value: 'TH', label: 'Tailandia' },
   { value: 'GR', label: 'Grecia' },
   { value: 'IE', label: 'Irlanda' },
+  { value: 'GB', label: 'Reino Unido' },
   { value: 'AD', label: 'Andorra' },
 ];
 

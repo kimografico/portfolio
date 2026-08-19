@@ -1,5 +1,11 @@
 [
-  { "city": "Aragón", "place": "Gea de Albarracín", "country": "es", "date": "2005", "people": "" },
+  {
+    "city": "Aragón",
+    "place": "Gea de Albarracín",
+    "country": "es",
+    "date": "2005",
+    "people": ""
+  },
   {
     "city": "Aragón",
     "place": "Gea de Albarracín",
@@ -112,7 +118,13 @@
     "date": "2017 / 08",
     "people": ""
   },
-  { "city": "Francia", "place": "París", "country": "fr", "date": "2018 / 04", "people": "" },
+  {
+    "city": "Francia",
+    "place": "París",
+    "country": "fr",
+    "date": "2018 / 04",
+    "people": ""
+  },
   {
     "city": "Países Bajos",
     "place": "Amsterdam",
@@ -127,7 +139,13 @@
     "date": "2018 / 08",
     "people": "Mar, Verobe"
   },
-  { "city": "Asia", "place": "Tailandia", "country": "th", "date": "2018 / 08", "people": "" },
+  {
+    "city": "Asia",
+    "place": "Tailandia",
+    "country": "th",
+    "date": "2018 / 08",
+    "people": ""
+  },
   {
     "city": "Navarra",
     "place": "Navarra",
@@ -233,10 +251,34 @@
     "date": "2025 / 10",
     "people": ""
   },
-  { "city": "Castilla y León", "place": "Burgos", "country": "es", "date": "", "people": "" },
-  { "city": "", "place": "Andorra", "country": "es", "date": "", "people": "" },
-  { "city": "Aragón", "place": "Teruel", "country": "es", "date": "", "people": "" },
-  { "city": "", "place": "Campings", "country": "es", "date": "", "people": "" },
+  {
+    "city": "Castilla y León",
+    "place": "Burgos",
+    "country": "es",
+    "date": "",
+    "people": ""
+  },
+  {
+    "city": "",
+    "place": "Andorra",
+    "country": "es",
+    "date": "",
+    "people": ""
+  },
+  {
+    "city": "Aragón",
+    "place": "Teruel",
+    "country": "es",
+    "date": "",
+    "people": ""
+  },
+  {
+    "city": "",
+    "place": "Campings",
+    "country": "es",
+    "date": "",
+    "people": ""
+  },
   {
     "city": "Valencia",
     "place": "Via Larga Jávea",
@@ -244,8 +286,20 @@
     "date": "",
     "people": ""
   },
-  { "city": "Valencia", "place": "Calpe", "country": "es", "date": "", "people": "" },
-  { "city": "Aragón", "place": "Valdelinares", "country": "es", "date": "", "people": "" },
+  {
+    "city": "Valencia",
+    "place": "Calpe",
+    "country": "es",
+    "date": "",
+    "people": ""
+  },
+  {
+    "city": "Aragón",
+    "place": "Valdelinares",
+    "country": "es",
+    "date": "",
+    "people": ""
+  },
   {
     "city": "Castilla y León",
     "place": "Cañón Rio Lobos (Soria)",
@@ -253,5 +307,19 @@
     "date": "",
     "people": ""
   },
-  { "city": "Aragón", "place": "Albarracín", "country": "es", "date": "", "people": "" }
+  {
+    "city": "Aragón",
+    "place": "Albarracín",
+    "country": "es",
+    "date": "",
+    "people": ""
+  },
+  {
+    "id": "place-001",
+    "city": "Inglaterra",
+    "place": "Londres",
+    "country": "gb",
+    "date": "2026 / 08",
+    "people": "Mar"
+  }
 ]

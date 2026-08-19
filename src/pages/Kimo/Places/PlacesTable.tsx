@@ -4,19 +4,6 @@ import BaseTable from '../../../components/compositions/BaseTable';
 import type { Place } from '../../../interfaces/place';
 import places from '../../../data/kimo/places.json';
 
-const COUNTRY_FLAGS: Record<string, string> = {
-  es: '',
-  nl: '🇳🇱',
-  fr: '🇫🇷',
-  th: '🇹🇭',
-  gr: '🇬🇷',
-  ie: '🇮🇪',
-};
-
-function getFlag(country: string) {
-  return COUNTRY_FLAGS[country] || '';
-}
-
 export default function PlacesTable() {
   const data = useMemo<Place[]>(() => places, []);
 
@@ -41,9 +28,11 @@ export default function PlacesTable() {
       {
         header: 'País',
         accessorKey: 'country',
-        cell: (info) => (
-          <span className="font-bold text-4xl">{getFlag(info.getValue() as string)}</span>
-        ),
+        cell: (info) => {
+          const country = (info.getValue() as string)?.toLowerCase();
+          if (!country || country === 'es') return null;
+          return <span className={`fi fi-${country} fis text-2xl`} />;
+        },
       },
       {
         header: 'Fecha',
