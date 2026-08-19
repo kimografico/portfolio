@@ -1,205 +1,190 @@
+import type { FeatureCollection } from 'geojson';
 import type { VisitedWorldMapProps } from '../../interfaces/map';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useMemo, useRef, useState } from 'react';
+import { ComposableMap, Geographies, Geography, Marker, ZoomableGroup } from 'react-simple-maps';
+import * as topojson from 'topojson-client';
+import countriesTopologyRaw from '../../data/config/countries-50m.json';
 
-// Paleta única para el mapa (azul o imagen de fondo)
-const UI_IMG_PATH =
-  import.meta.env.VITE_UI_IMG_PATH?.trim() || `${import.meta.env.BASE_URL}images/ui`;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const countriesTopology = countriesTopologyRaw as any;
 
 const mapColors = {
-  ocean: 'var(--color-bg-map)',
-  oceanImage: `url(${UI_IMG_PATH}/map-bg.jpg)`,
   country: 'var(--color-border)',
   countryVisited: 'var(--color-accent)',
-  marker: 'orange',
-  markerSize: 1,
-  markerStroke: '',
-  markerHover: 'yellow',
   border: 'var(--color-border)',
+  marker: 'orange',
+  markerHover: 'yellow',
 };
 
-type JsVectorMapInstance = {
-  destroy?: () => void;
+// ISO-3166-1 numeric codes for the visited countries
+const ISO2_TO_NUMERIC: Record<string, string> = {
+  AD: '020',
+  FR: '250',
+  GR: '300',
+  IE: '372',
+  NL: '528',
+  ES: '724',
+  TH: '764',
+  GB: '826',
 };
 
-function destroyMapInstance(instance: JsVectorMapInstance | null): void {
-  if (!instance || typeof instance.destroy !== 'function') {
-    return;
-  }
-
-  try {
-    instance.destroy();
-  } catch {
-    // Silencia error de doble dispose
-  }
-}
-
-function applyBackgroundMode(mapElement: HTMLDivElement, antique: boolean): void {
-  const svg = mapElement.querySelector('svg');
-
-  if (!svg) {
-    return;
-  }
-
-  svg.style.background = '';
-  svg.style.backgroundImage = '';
-  svg.style.backgroundSize = '';
-
-  if (antique) {
-    svg.style.backgroundImage = mapColors.oceanImage;
-    svg.style.backgroundSize = 'cover';
-
-    svg.querySelectorAll<SVGPathElement>('path[data-code]').forEach((path) => {
-      const fill = path.getAttribute('fill');
-      path.style.mixBlendMode = fill && fill !== mapColors.countryVisited ? 'multiply' : '';
-    });
-    return;
-  }
-
-  svg.style.background = mapColors.ocean;
-  svg.querySelectorAll<SVGPathElement>('path[data-code]').forEach((path) => {
-    path.style.mixBlendMode = '';
-  });
-}
-
-/**
- * Mapa vectorial minimalista de países visitados usando JVM.
- * - Resalta países visitados
- * - Muestra puntos en ubicaciones concretas
- * - Zoom nativo habilitado (botones, rueda, pinch)
- * - Accesible: role="img", aria-label
- */
 export default function VisitedWorldMap({
   height = 500,
   highlightedCountries,
   points,
 }: VisitedWorldMapProps) {
-  const mapRef = useRef<HTMLDivElement>(null);
-  const mapInstance = useRef<JsVectorMapInstance | null>(null);
-  const antiqueRef = useRef(false);
-  const [antique, setAntique] = useState(false);
+  const geos = useMemo(() => {
+    const geojson = topojson.feature(
+      countriesTopology,
+      countriesTopology.objects.countries,
+    ) as unknown as FeatureCollection;
 
-  useEffect(() => {
-    antiqueRef.current = antique;
-  }, [antique]);
+    // Split France (id 250) MultiPolygon into individual polygons.
+    // Mainland keeps id 250 (highlighted as visited).
+    // Overseas territories get synthetic ids (appear as separate countries).
+    const FRANCE_ID = '250';
+    const MAINLAND_BBOX = { lonMin: -5, lonMax: 8.5, latMin: 41, latMax: 51 };
+    let overseasIndex = 0;
 
-  useEffect(() => {
-    if (!mapRef.current) return;
-    let cancelled = false;
-    let styleTimeoutId: number | undefined;
-
-    const initializeMap = async () => {
-      const { default: jsVectorMap } = await import('jsvectormap');
-      await import('jsvectormap/dist/maps/world.js');
-
-      if (cancelled || !mapRef.current) {
-        return;
-      }
-
-      destroyMapInstance(mapInstance.current);
-
-      mapInstance.current = new jsVectorMap({
-        showTooltip: false,
-        selector: mapRef.current,
-        map: 'world',
-        zoomButtons: true,
-        zoomOnScroll: true,
-        zoomOnTouch: true,
-        regionStyle: {
-          initial: {
-            fill: mapColors.country,
-            'fill-opacity': 1,
-          },
-          selected: {
-            fill: mapColors.countryVisited,
-          },
-        },
-        selectedRegions: highlightedCountries,
-        markers: points.map((p) => ({
-          name: p.name,
-          coords: [p.lat, p.lon],
-        })),
-        markerStyle: {
-          initial: {
-            fill: mapColors.marker,
-            stroke: mapColors.markerStroke,
-            r: mapColors.markerSize,
-          },
-          hover: {
-            fill: mapColors.markerHover,
-            cursor: 'pointer',
-          },
-        },
-        labels: {
-          regions: {
-            render: () => '',
-          },
-        },
+    return geojson.features.flatMap((f) => {
+      if (String(f.id) !== FRANCE_ID) return [f as unknown as Record<string, unknown>];
+      if (f.geometry.type !== 'MultiPolygon') return [f as unknown as Record<string, unknown>];
+      return f.geometry.coordinates.map((polygon) => {
+        const ring = polygon[0];
+        const avgLon = ring.reduce((s, c) => s + c[0], 0) / ring.length;
+        const avgLat = ring.reduce((s, c) => s + c[1], 0) / ring.length;
+        const isMainland =
+          avgLon >= MAINLAND_BBOX.lonMin &&
+          avgLon <= MAINLAND_BBOX.lonMax &&
+          avgLat >= MAINLAND_BBOX.latMin &&
+          avgLat <= MAINLAND_BBOX.latMax;
+        return {
+          ...f,
+          id: isMainland ? f.id : `fr-territory-${overseasIndex++}`,
+          geometry: { type: 'Polygon' as const, coordinates: polygon },
+        } as unknown as Record<string, unknown>;
       });
+    });
+  }, []);
 
-      styleTimeoutId = window.setTimeout(() => {
-        if (mapRef.current) {
-          applyBackgroundMode(mapRef.current, antiqueRef.current);
-        }
-      }, 0);
-    };
+  const [hoveredMarker, setHoveredMarker] = useState<{ name: string; x: number; y: number } | null>(
+    null,
+  );
+  const mapRef = useRef<HTMLDivElement>(null);
 
-    void initializeMap();
+  const highlightedSet = useMemo(
+    () => new Set(highlightedCountries.map((c) => c.toUpperCase())),
+    [highlightedCountries],
+  );
 
-    return () => {
-      cancelled = true;
-
-      if (styleTimeoutId !== undefined) {
-        window.clearTimeout(styleTimeoutId);
-      }
-
-      destroyMapInstance(mapInstance.current);
-      mapInstance.current = null;
-    };
-  }, [highlightedCountries, points]);
-
-  useEffect(() => {
-    if (!mapRef.current) return;
-
-    const styleTimeoutId = window.setTimeout(() => {
-      applyBackgroundMode(mapRef.current as HTMLDivElement, antique);
-    }, 0);
-
-    return () => {
-      window.clearTimeout(styleTimeoutId);
-    };
-  }, [antique]);
+  const isVisited = useCallback(
+    (geo: { id?: string | number }): boolean => {
+      const numericId = String(geo.id ?? '');
+      // Find which ISO-2 code this numeric id corresponds to
+      const iso2 = Object.entries(ISO2_TO_NUMERIC).find(([, num]) => num === numericId)?.[0];
+      if (!iso2) return false;
+      // France: at 110m the overseas territories are tiny/invisible,
+      // so highlighting id 250 effectively highlights mainland only
+      return highlightedSet.has(iso2);
+    },
+    [highlightedSet],
+  );
 
   return (
     <div
+      ref={mapRef}
       className="relative w-full"
       style={{ height, overflow: 'hidden' }}
       data-id="visited-world-map-section"
     >
-      <div
-        key={antique ? 'antique' : 'modern'}
-        ref={mapRef}
-        role="img"
-        aria-label="Mapa de países visitados y lugares destacados"
-        className={`rounded-lg w-full h-full`}
-        style={{
-          width: '100%',
-          height: '100%',
-          overflow: 'hidden',
-          background: 'none',
+      <ComposableMap
+        projection="geoMercator"
+        projectionConfig={{
+          scale: 100,
+          center: [20, 50],
         }}
-      />
-      {/* Botón toggle abajo a la derecha */}
-      <button
-        type="button"
-        onClick={() => setAntique((v) => !v)}
-        className="absolute bottom-0 right-0 z-10 w-8 h-8 flex items-center justify-center text-base"
-        aria-pressed={antique}
-        title="Alternar estilo antiguo/moderno"
-        aria-label={antique ? 'Cambiar a estilo moderno' : 'Cambiar a estilo antiguo'}
-        data-id="visited-world-map-toggle"
+        width={800}
+        height={450}
+        style={{ width: '100%', height: '100%' }}
       >
-        {antique ? '⚓️' : '☠️'}
-      </button>
+        <ZoomableGroup zoom={1.6}>
+          <Geographies geography={geos}>
+            {({ geographies }) =>
+              geographies.map((geo) => (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  style={{
+                    default: {
+                      fill: isVisited(geo) ? mapColors.countryVisited : mapColors.country,
+                      stroke: '#000',
+                      strokeWidth: 0.1,
+                      outline: 'none',
+                    },
+                    hover: {
+                      fill: isVisited(geo) ? mapColors.countryVisited : mapColors.country,
+                      stroke: '#000',
+                      strokeWidth: 0.5,
+                      outline: 'none',
+                      cursor: 'default',
+                    },
+                    pressed: {
+                      fill: isVisited(geo) ? mapColors.countryVisited : mapColors.country,
+                      stroke: '#000',
+                      strokeWidth: 0.1,
+                      outline: 'none',
+                    },
+                  }}
+                />
+              ))
+            }
+          </Geographies>
+          {points.map((p, i) => (
+            <Marker key={`${p.name}-${p.lat}-${p.lon}-${i}`} coordinates={[p.lon, p.lat]}>
+              <circle
+                r={0.5}
+                fill={mapColors.marker}
+                stroke="none"
+                style={{ cursor: 'pointer' }}
+                onMouseEnter={(e) => {
+                  (e.target as SVGCircleElement).setAttribute('fill', mapColors.markerHover);
+                  const rect = mapRef.current?.getBoundingClientRect();
+                  if (!rect) return;
+                  setHoveredMarker({
+                    name: p.name,
+                    x: e.clientX - rect.left,
+                    y: e.clientY - rect.top,
+                  });
+                }}
+                onMouseLeave={(e) => {
+                  (e.target as SVGCircleElement).setAttribute('fill', mapColors.marker);
+                  setHoveredMarker(null);
+                }}
+              />
+            </Marker>
+          ))}
+        </ZoomableGroup>
+      </ComposableMap>
+      {hoveredMarker && (
+        <div
+          style={{
+            position: 'absolute',
+            left: hoveredMarker.x,
+            top: hoveredMarker.y - 10,
+            transform: 'translate(-50%, -100%)',
+            background: 'var(--color-surface)',
+            color: 'var(--color-text)',
+            padding: '2px 6px',
+            borderRadius: 4,
+            fontSize: 11,
+            pointerEvents: 'none',
+            whiteSpace: 'nowrap',
+            boxShadow: '0 1px 4px rgba(0,0,0,0.3)',
+          }}
+        >
+          {hoveredMarker.name}
+        </div>
+      )}
     </div>
   );
 }

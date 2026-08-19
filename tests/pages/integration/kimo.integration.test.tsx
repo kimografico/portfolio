@@ -5,18 +5,33 @@ import App from '../../../src/App';
 
 const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true } as const;
 
-const jsVectorMapDestroy = vi.hoisted(() => vi.fn());
-const jsVectorMapMock = vi.hoisted(() =>
-  vi.fn(function jsVectorMapFactory() {
-    return { destroy: jsVectorMapDestroy };
-  }),
-);
-
-vi.mock('jsvectormap', () => ({
-  default: jsVectorMapMock,
+vi.mock('react-simple-maps', () => ({
+  ComposableMap: ({ children }: { children: React.ReactNode }) => (
+    <div data-testid="composable-map">{children}</div>
+  ),
+  Geographies: ({ children }: { children: React.ReactNode }) => (
+    <div data-testid="geographies">{children}</div>
+  ),
+  Geography: () => <div data-testid="geography" />,
+  Marker: ({ children }: { children: React.ReactNode }) => (
+    <div data-testid="marker">{children}</div>
+  ),
+  ZoomableGroup: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
 }));
 
-vi.mock('jsvectormap/dist/maps/world.js', () => ({}));
+vi.mock('topojson-client', () => ({
+  feature: () => ({ features: [] }),
+}));
+
+// Mock the topology fetch
+const fetchMock = vi.fn().mockResolvedValue({
+  json: () =>
+    Promise.resolve({
+      type: 'Topology',
+      objects: { countries: { type: 'GeometryCollection', geometries: [] } },
+    }),
+});
+vi.stubGlobal('fetch', fetchMock);
 
 describe('kimo integration', () => {
   beforeEach(() => {
@@ -27,7 +42,6 @@ describe('kimo integration', () => {
   });
 
   it('redirige a login cuando una ruta privada no tiene sesión', async () => {
-    // Kimo no debe ser accesible sin pasar por el login y el guard de rutas.
     render(
       <MemoryRouter initialEntries={['/kimo/books']} future={routerFuture}>
         <App />
@@ -41,7 +55,6 @@ describe('kimo integration', () => {
   });
 
   it('muestra la biblioteca, cambia de vista y abre el modal de un libro', async () => {
-    // Este flujo integra filtro, cambio de vista y modal de detalle dentro de la misma página.
     window.localStorage.setItem('kimo-authenticated', 'true');
 
     const { container } = render(
@@ -72,7 +85,6 @@ describe('kimo integration', () => {
   });
 
   it('navega entre secciones privadas y muestra el mapa de lugares', async () => {
-    // La navegación interna de Kimo conecta layout, rutas privadas y la página de lugares.
     window.localStorage.setItem('kimo-authenticated', 'true');
 
     const { container } = render(
@@ -87,11 +99,5 @@ describe('kimo integration', () => {
     await waitFor(() => expect(container.querySelector('[data-id="places-page"]')).toBeTruthy());
     expect(container.querySelector('[data-id="places-map"]')).toBeTruthy();
     expect(container.querySelector('[data-id="places-table"]')).toBeTruthy();
-    expect(screen.getByRole('button', { name: /cambiar a estilo antiguo/i })).toBeInTheDocument();
-
-    await waitFor(() => expect(jsVectorMapMock).toHaveBeenCalled());
-
-    fireEvent.click(screen.getByRole('button', { name: /cambiar a estilo antiguo/i }));
-    expect(screen.getByRole('button', { name: /cambiar a estilo moderno/i })).toBeInTheDocument();
   });
 });
