@@ -315,11 +315,17 @@
     "people": ""
   },
   {
-    "id": "place-001",
     "city": "Inglaterra",
     "place": "Londres",
     "country": "gb",
     "date": "2026 / 08",
     "people": "Mar"
+  },
+  {
+    "city": "Santander",
+    "place": "Santander",
+    "country": "es",
+    "date": "2026 / 06",
+    "people": "Sopra"
   }
 ]
