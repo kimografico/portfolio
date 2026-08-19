@@ -13,10 +13,9 @@ You help the user add a visited place (and optionally a map marker) to their tra
 
 | Field | Required | Format | Notes |
 |-------|----------|--------|-------|
-| `id` | No | `"place-NNN"` | Auto-generated server-side |
 | `city` | No | string | Can be empty |
 | `place` | **Yes** | string | Name of the place |
-| `country` | **Yes** | ISO 2 lowercase | `"es"`, `"fr"`, `"nl"`, `"th"`, `"gr"`, `"ie"`, `"ad"` |
+| `country` | **Yes** | ISO 2 lowercase | `"es"`, `"fr"`, `"nl"`, `"th"`, `"gr"`, `"ie"`, `"gb"`, `"ad"` |
 | `date` | No | free text | `"2005"`, `"2013 / 08"`, or empty |
 | `people` | No | CSV string | `"Mar, Verobe"` or empty |
 
@@ -24,11 +23,12 @@ You help the user add a visited place (and optionally a map marker) to their tra
 
 | Field | Required | Format | Notes |
 |-------|----------|--------|-------|
-| `id` | No | `"marker-NNN"` | Auto-generated server-side |
 | `name` | **Yes** | string | Location name for the map |
-| `country` | **Yes** | ISO 2 **UPPERCASE** | `"ES"`, `"FR"`, `"NL"`, `"TH"`, `"GR"`, `"IE"`, `"AD"` |
+| `country` | **Yes** | ISO 2 **UPPERCASE** | `"ES"`, `"FR"`, `"NL"`, `"TH"`, `"GR"`, `"IE"`, `"GB"`, `"AD"` |
 | `lat` | **Yes** | decimal number | e.g. `39.5696` |
 | `lon` | **Yes** | decimal number | e.g. `2.65016` |
+
+IDs are auto-generated server-side (`place-001`, `marker-001`, etc.). Do not send them.
 
 ### Valid Countries
 
@@ -43,22 +43,43 @@ You help the user add a visited place (and optionally a map marker) to their tra
 | `gb` | `GB` | Reino Unido |
 | `ad` | `AD` | Andorra |
 
+## Prerequisites
+
+The backend must be running on `localhost:3001`. If not, start it with `pnpm backend`.
+
+## Helper Scripts
+
+All scripts are in `scripts/skills/`:
+
+| Script | Usage |
+|--------|-------|
+| `geocode.sh` | `bash scripts/skills/geocode.sh "place name" ["countrycode"]` |
+| `add-place.sh` | `bash scripts/skills/add-place.sh '{"city":...}'` |
+| `add-place-marker.sh` | `bash scripts/skills/add-place-marker.sh '{"name":...}'` |
+
 ## Workflow
 
 ### Step 1: Get the place name
 
 Ask the user: **"¿Qué lugar quieres añadir? Dime el nombre del lugar."**
 
-### Step 2: Search for metadata
+### Step 2: Geocode the place
 
-Use `websearch` to find:
-- **city** (nearest city or region)
-- **country** (and its ISO code)
-- **lat / lon** (coordinates for the marker)
+```bash
+bash scripts/skills/geocode.sh "nombre del lugar"
+```
 
-Search queries like:
-- `"[place name] coordenadas lat lon"`
-- `"[place name] city country coordinates"`
+This returns `{ lat, lon, display_name }` from OpenStreetMap/Nominatim.
+
+If the result is vague or wrong, refine with a country code:
+```bash
+bash scripts/skills/geocode.sh "nombre del lugar" "ES"
+```
+
+Extract from the result:
+- **city** (from `display_name` or infer from context)
+- **country** ISO code (map from `display_name` or ask the user)
+- **lat / lon** (for the marker)
 
 ### Step 3: Present what you found and ask for missing data
 
@@ -106,16 +127,7 @@ If the country already exists in the table, skip this step.
 ### Step 5: Create the place
 
 ```bash
-curl -s -X POST http://localhost:3001/api/kimo/places \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $(cat .env | grep KIMO_PASSWORD_HASH | cut -d'=' -f2)" \
-  -d '{
-    "city": "[city]",
-    "place": "[place]",
-    "country": "[ISO lowercase]",
-    "date": "[date]",
-    "people": "[people]"
-  }'
+bash scripts/skills/add-place.sh '{"city":"[city]","place":"[place]","country":"[ISO lowercase]","date":"[date]","people":"[people]"}'
 ```
 
 ### Step 6: Create the marker (if user wants one)
@@ -123,15 +135,7 @@ curl -s -X POST http://localhost:3001/api/kimo/places \
 If the user wants a map marker, ask for a name (or use the place name):
 
 ```bash
-curl -s -X POST http://localhost:3001/api/kimo/places-markers \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $(cat .env | grep KIMO_PASSWORD_HASH | cut -d'=' -f2)" \
-  -d '{
-    "name": "[marker name]",
-    "country": "[ISO UPPERCASE]",
-    "lat": [latitude],
-    "lon": [longitude]
-  }'
+bash scripts/skills/add-place-marker.sh '{"name":"[marker name]","country":"[ISO UPPERCASE]","lat":[latitude],"lon":[longitude]}'
 ```
 
 ### Step 7: Confirm

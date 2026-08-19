@@ -5,7 +5,7 @@ description: Use when the user wants to add a book to their personal library/por
 
 # Add Book Skill
 
-You help the user add a book to their personal library stored in `src/data/kimo/books.json` via the backend API.
+You help the user add a book to the personal library stored in `src/data/kimo/books.json` via the backend API.
 
 ## Data Structure
 
@@ -13,16 +13,30 @@ A book has these fields:
 
 | Field | Required | Format | Notes |
 |-------|----------|--------|-------|
-| `id` | No | slug string | Auto-generated from title via `slugify()` |
 | `title` | **Yes** | string | |
 | `author` | **Yes** | string | |
 | `language` | **Yes** | string | Only `"Español"` or `"Inglés"` |
-| `cover` | **Yes** | filename | Uploaded via `/api/kimo/upload` first |
+| `cover` | **Yes** | filename | Uploaded via `upload-kimo.sh` first |
 | `dateRead` | No | `"YYYY-MM"` or empty | When the user read the book |
 | `genre` | No | string | e.g. `"Aventuras"`, `"Fantasía"` |
 | `isbn` | No | string | e.g. `"9788467035544"` |
 | `series` | No | string | e.g. `"Canción de hielo y fuego"` |
 | `synopsis` | No | string | Paragraph |
+
+IDs are auto-generated from title via `slugify()`. Do not send them.
+
+## Prerequisites
+
+The backend must be running on `localhost:3001`. If not, start it with `pnpm backend`.
+
+## Helper Scripts
+
+All scripts are in `scripts/skills/`:
+
+| Script | Usage |
+|--------|-------|
+| `upload-kimo.sh` | `bash scripts/skills/upload-kimo.sh <collection> <title> <filepath>` |
+| `add-book.sh` | `bash scripts/skills/add-book.sh '{"title":...}'` |
 
 ## Workflow
 
@@ -72,11 +86,7 @@ Para completar el registro necesito:
 The user will provide a file path for the cover image. Upload it first:
 
 ```bash
-curl -s -X POST http://localhost:3001/api/kimo/upload \
-  -H "Authorization: Bearer $(cat .env | grep KIMO_PASSWORD_HASH | cut -d'=' -f2)" \
-  -F "collection=books" \
-  -F "title=[bookId]" \
-  -F "images=@[filePath]"
+bash scripts/skills/upload-kimo.sh books "[book-id]" "/ruta/imagen.jpg"
 ```
 
 The response will contain the uploaded file info. Extract the filename from the `ruta` field.
@@ -84,21 +94,7 @@ The response will contain the uploaded file info. Extract the filename from the 
 ### Step 5: Create the book
 
 ```bash
-curl -s -X POST http://localhost:3001/api/kimo/books \
-  -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $(cat .env | grep KIMO_PASSWORD_HASH | cut -d'=' -f2)" \
-  -d '{
-    "id": "[slugified-title]",
-    "title": "[title]",
-    "author": "[author]",
-    "language": "[Español or Inglés]",
-    "cover": "[uploaded-filename.jpg]",
-    "dateRead": "[YYYY-MM]",
-    "genre": "[genre]",
-    "isbn": "[isbn]",
-    "series": "[series]",
-    "synopsis": "[synopsis]"
-  }'
+bash scripts/skills/add-book.sh '{"title":"[title]","author":"[author]","language":"[Español or Inglés]","cover":"[uploaded-filename.jpg]","dateRead":"[YYYY-MM]","genre":"[genre]","isbn":"[isbn]","series":"[series]","synopsis":"[synopsis]"}'
 ```
 
 ### Step 6: Confirm
