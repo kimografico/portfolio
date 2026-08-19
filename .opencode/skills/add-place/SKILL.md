@@ -49,13 +49,13 @@ The backend must be running on `localhost:3001`. If not, start it with `pnpm bac
 
 ## Helper Scripts
 
-All scripts are in `scripts/skills/`:
+All scripts are in `scripts/skills/` (Node.js `.cjs` for cross-platform support):
 
 | Script | Usage |
 |--------|-------|
-| `geocode.sh` | `bash scripts/skills/geocode.sh "place name" ["countrycode"]` |
-| `add-place.sh` | `bash scripts/skills/add-place.sh '{"city":...}'` |
-| `add-place-marker.sh` | `bash scripts/skills/add-place-marker.sh '{"name":...}'` |
+| `geocode.cjs` | `node scripts/skills/geocode.cjs "place name" ["countrycode"]` |
+| `add-place.cjs` | `node scripts/skills/add-place.cjs '{"city":...}'` |
+| `add-place-marker.cjs` | `node scripts/skills/add-place-marker.cjs '{"name":...}'` |
 
 ## Workflow
 
@@ -66,14 +66,14 @@ Ask the user: **"¿Qué lugar quieres añadir? Dime el nombre del lugar."**
 ### Step 2: Geocode the place
 
 ```bash
-bash scripts/skills/geocode.sh "nombre del lugar"
+node scripts/skills/geocode.cjs "nombre del lugar"
 ```
 
 This returns `{ lat, lon, display_name }` from OpenStreetMap/Nominatim.
 
 If the result is vague or wrong, refine with a country code:
 ```bash
-bash scripts/skills/geocode.sh "nombre del lugar" "ES"
+node scripts/skills/geocode.cjs "nombre del lugar" "ES"
 ```
 
 Extract from the result:
@@ -127,7 +127,7 @@ If the country already exists in the table, skip this step.
 ### Step 5: Create the place
 
 ```bash
-bash scripts/skills/add-place.sh '{"city":"[city]","place":"[place]","country":"[ISO lowercase]","date":"[date]","people":"[people]"}'
+node scripts/skills/add-place.cjs '{"city":"[city]","place":"[place]","country":"[ISO lowercase]","date":"[date]","people":"[people]"}'
 ```
 
 ### Step 6: Create the marker (if user wants one)
@@ -135,7 +135,7 @@ bash scripts/skills/add-place.sh '{"city":"[city]","place":"[place]","country":"
 If the user wants a map marker, ask for a name (or use the place name):
 
 ```bash
-bash scripts/skills/add-place-marker.sh '{"name":"[marker name]","country":"[ISO UPPERCASE]","lat":[latitude],"lon":[longitude]}'
+node scripts/skills/add-place-marker.cjs '{"name":"[marker name]","country":"[ISO UPPERCASE]","lat":[latitude],"lon":[longitude]}'
 ```
 
 ### Step 7: Confirm
