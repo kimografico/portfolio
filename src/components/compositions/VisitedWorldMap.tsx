@@ -3,29 +3,17 @@ import type { VisitedWorldMapProps } from '../../interfaces/map';
 import { useCallback, useMemo, useRef, useState } from 'react';
 import { ComposableMap, Geographies, Geography, Marker, ZoomableGroup } from 'react-simple-maps';
 import * as topojson from 'topojson-client';
-import countriesTopologyRaw from '../../data/config/countries-50m.json';
+import { VISITED_COUNTRIES } from '../../data/config/visitedCountries';
+import subunitsTopologyRaw from '../../data/config/world-subunits-50m.json';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const countriesTopology = countriesTopologyRaw as any;
+const subunitsTopology = subunitsTopologyRaw as any;
 
 const mapColors = {
   country: 'var(--color-border)',
   countryVisited: 'var(--color-accent)',
-  border: 'var(--color-border)',
   marker: 'orange',
   markerHover: 'yellow',
-};
-
-// ISO-3166-1 numeric codes for the visited countries
-const ISO2_TO_NUMERIC: Record<string, string> = {
-  AD: '020',
-  FR: '250',
-  GR: '300',
-  IE: '372',
-  NL: '528',
-  ES: '724',
-  TH: '764',
-  GB: '826',
 };
 
 export default function VisitedWorldMap({
@@ -35,36 +23,10 @@ export default function VisitedWorldMap({
 }: VisitedWorldMapProps) {
   const geos = useMemo(() => {
     const geojson = topojson.feature(
-      countriesTopology,
-      countriesTopology.objects.countries,
+      subunitsTopology,
+      subunitsTopology.objects.ne_50m_admin_0_map_subunits,
     ) as unknown as FeatureCollection;
-
-    // Split France (id 250) MultiPolygon into individual polygons.
-    // Mainland keeps id 250 (highlighted as visited).
-    // Overseas territories get synthetic ids (appear as separate countries).
-    const FRANCE_ID = '250';
-    const MAINLAND_BBOX = { lonMin: -5, lonMax: 8.5, latMin: 41, latMax: 51 };
-    let overseasIndex = 0;
-
-    return geojson.features.flatMap((f) => {
-      if (String(f.id) !== FRANCE_ID) return [f as unknown as Record<string, unknown>];
-      if (f.geometry.type !== 'MultiPolygon') return [f as unknown as Record<string, unknown>];
-      return f.geometry.coordinates.map((polygon) => {
-        const ring = polygon[0];
-        const avgLon = ring.reduce((s, c) => s + c[0], 0) / ring.length;
-        const avgLat = ring.reduce((s, c) => s + c[1], 0) / ring.length;
-        const isMainland =
-          avgLon >= MAINLAND_BBOX.lonMin &&
-          avgLon <= MAINLAND_BBOX.lonMax &&
-          avgLat >= MAINLAND_BBOX.latMin &&
-          avgLat <= MAINLAND_BBOX.latMax;
-        return {
-          ...f,
-          id: isMainland ? f.id : `fr-territory-${overseasIndex++}`,
-          geometry: { type: 'Polygon' as const, coordinates: polygon },
-        } as unknown as Record<string, unknown>;
-      });
-    });
+    return geojson.features as unknown as Array<Record<string, unknown>>;
   }, []);
 
   const [hoveredMarker, setHoveredMarker] = useState<{ name: string; x: number; y: number } | null>(
@@ -72,22 +34,21 @@ export default function VisitedWorldMap({
   );
   const mapRef = useRef<HTMLDivElement>(null);
 
-  const highlightedSet = useMemo(
-    () => new Set(highlightedCountries.map((c) => c.toUpperCase())),
-    [highlightedCountries],
-  );
+  const highlightedSuA3 = useMemo(() => {
+    const codes = new Set<string>();
+    for (const iso2 of highlightedCountries) {
+      const suA3 = VISITED_COUNTRIES[iso2.toUpperCase()];
+      if (suA3) suA3.forEach((c) => codes.add(c));
+    }
+    return codes;
+  }, [highlightedCountries]);
 
   const isVisited = useCallback(
-    (geo: { id?: string | number }): boolean => {
-      const numericId = String(geo.id ?? '');
-      // Find which ISO-2 code this numeric id corresponds to
-      const iso2 = Object.entries(ISO2_TO_NUMERIC).find(([, num]) => num === numericId)?.[0];
-      if (!iso2) return false;
-      // France: at 110m the overseas territories are tiny/invisible,
-      // so highlighting id 250 effectively highlights mainland only
-      return highlightedSet.has(iso2);
+    (geo: { properties?: Record<string, unknown> }): boolean => {
+      const suA3 = String(geo.properties?.SU_A3 ?? '');
+      return highlightedSuA3.has(suA3);
     },
-    [highlightedSet],
+    [highlightedSuA3],
   );
 
   return (
