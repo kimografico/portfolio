@@ -68,7 +68,7 @@ export default function VisitedWorldMap({
         height={450}
         style={{ width: '100%', height: '100%' }}
       >
-        <ZoomableGroup zoom={1.6}>
+        <ZoomableGroup zoom={1.6} maxZoom={25}>
           <Geographies geography={geos}>
             {({ geographies }) =>
               geographies.map((geo) => (
@@ -103,7 +103,7 @@ export default function VisitedWorldMap({
           {points.map((p, i) => (
             <Marker key={`${p.name}-${p.lat}-${p.lon}-${i}`} coordinates={[p.lon, p.lat]}>
               <circle
-                r={0.5}
+                r={0.25}
                 fill={mapColors.marker}
                 stroke="none"
                 style={{ cursor: 'pointer' }}
