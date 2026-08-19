@@ -32,6 +32,7 @@ export default function VisitedWorldMap({
   const [hoveredMarker, setHoveredMarker] = useState<{ name: string; x: number; y: number } | null>(
     null,
   );
+  const [hoveredCountry, setHoveredCountry] = useState<string | null>(null);
   const mapRef = useRef<HTMLDivElement>(null);
 
   const highlightedSuA3 = useMemo(() => {
@@ -75,6 +76,12 @@ export default function VisitedWorldMap({
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
+                  onMouseEnter={() => {
+                    const name = String(geo.properties?.NAME_ES ?? geo.properties?.NAME ?? '');
+                    if (!name) return;
+                    setHoveredCountry(name);
+                  }}
+                  onMouseLeave={() => setHoveredCountry(null)}
                   style={{
                     default: {
                       fill: isVisited(geo) ? mapColors.countryVisited : mapColors.country,
@@ -126,6 +133,25 @@ export default function VisitedWorldMap({
           ))}
         </ZoomableGroup>
       </ComposableMap>
+      {hoveredCountry && (
+        <div
+          style={{
+            position: 'absolute',
+            left: 0,
+            top: 0,
+            background: 'var(--color-bg)',
+            color: 'var(--color-text)',
+            padding: '3px 8px',
+            fontSize: 20,
+            fontWeight: 600,
+            pointerEvents: 'none',
+            whiteSpace: 'nowrap',
+            boxShadow: '0 1px 4px rgba(0,0,0,0.3)',
+          }}
+        >
+          {hoveredCountry}
+        </div>
+      )}
       {hoveredMarker && (
         <div
           style={{
