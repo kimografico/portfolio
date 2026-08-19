@@ -299,6 +299,21 @@ export function createKimoPlaceMarker(data: KimoPlaceMarkerPayload) {
   });
 }
 
+// --- Geocoding ---
+
+export interface GeocodeResult {
+  lat: number;
+  lon: number;
+  display_name: string;
+}
+
+export function geocode(q: string, countrycode?: string) {
+  return apiFetch<GeocodeResult>('/api/geocode', {
+    method: 'POST',
+    body: JSON.stringify({ q, countrycode }),
+  });
+}
+
 // --- Carrusel home ---
 
 export interface CarouselImageItem {

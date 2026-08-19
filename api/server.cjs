@@ -14,6 +14,7 @@ const recentWorksRouter = require('./routes/recent-works.cjs');
 const resumeRouter = require('./routes/resume.cjs');
 const kimoRouter = require('./routes/kimo.cjs');
 const carouselRouter = require('./routes/carousel.cjs');
+const geocodeRouter = require('./routes/geocode.cjs');
 const errorHandler = require('./middleware/errorHandler.cjs');
 
 const app = express();
@@ -51,6 +52,7 @@ app.use('/api/recent-works', recentWorksRouter);
 app.use('/api/resume', resumeRouter);
 app.use('/api/kimo', kimoRouter);
 app.use('/api/carousel', carouselRouter);
+app.use('/api/geocode', geocodeRouter);
 
 /**
  * GET /api/categories

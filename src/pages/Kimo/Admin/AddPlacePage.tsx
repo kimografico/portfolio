@@ -1,10 +1,11 @@
-import { useState, type FormEvent } from 'react';
+import { useState, useEffect, useRef, type FormEvent } from 'react';
 import UIButton from '../../../components/ui/UIButton';
 import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
 import FormStatusAlert from '../../../components/ui/FormStatusAlert';
 import {
   createKimoPlace,
   createKimoPlaceMarker,
+  geocode,
   type KimoPlaceMarkerPayload,
   type KimoPlacePayload,
 } from '../../../api/apiClient';
@@ -75,6 +76,8 @@ export default function AddPlacePage() {
   const [markerError, setMarkerError] = useState('');
   const [createdPlaceId, setCreatedPlaceId] = useState('');
   const [createdMarkerId, setCreatedMarkerId] = useState('');
+  const [geocodeStatus, setGeocodeStatus] = useState<'idle' | 'loading' | 'error'>('idle');
+  const geocodeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   function handlePlaceField<K extends keyof PlaceFormState>(key: K, value: PlaceFormState[K]) {
     setPlaceForm((prev) => ({ ...prev, [key]: value }));
@@ -83,6 +86,41 @@ export default function AddPlacePage() {
   function handleMarkerField<K extends keyof MarkerFormState>(key: K, value: MarkerFormState[K]) {
     setMarkerForm((prev) => ({ ...prev, [key]: value }));
   }
+
+  useEffect(() => {
+    if (geocodeTimerRef.current) {
+      clearTimeout(geocodeTimerRef.current);
+    }
+
+    const name = markerForm.name.trim();
+    const country = markerForm.country.trim();
+
+    if (name.length < 2) return;
+
+    geocodeTimerRef.current = setTimeout(async () => {
+      setGeocodeStatus('loading');
+      try {
+        const result = await geocode(name, country);
+        const data = result.data;
+        if (data) {
+          setMarkerForm((prev) => ({
+            ...prev,
+            lat: String(data.lat),
+            lon: String(data.lon),
+          }));
+          setGeocodeStatus('idle');
+        }
+      } catch {
+        setGeocodeStatus('error');
+      }
+    }, 800);
+
+    return () => {
+      if (geocodeTimerRef.current) {
+        clearTimeout(geocodeTimerRef.current);
+      }
+    };
+  }, [markerForm.name, markerForm.country]);
 
   if (!alive) {
     return (
@@ -324,6 +362,16 @@ export default function AddPlacePage() {
               />
             </label>
           </div>
+          {geocodeStatus === 'loading' && (
+            <p className="text-xs text-muted" data-id="add-marker-geocode-loading">
+              Buscando coordenadas…
+            </p>
+          )}
+          {geocodeStatus === 'error' && (
+            <p className="text-xs text-muted" data-id="add-marker-geocode-error">
+              No se encontraron coordenadas. Puedes introducirlas manualmente.
+            </p>
+          )}
 
           <div className="mt-auto">
             <UIButton
