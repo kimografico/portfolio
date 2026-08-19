@@ -7,7 +7,7 @@
  */
 export const VISITED_COUNTRIES: Record<string, string[]> = {
   AD: ['AND'], // Andorra
-  ES: ['ESP'], // Spain
+  ES: ['ESX'], // Spain
   FR: ['FXX'], // France (mainland only)
   GR: ['GRC'], // Greece
   IE: ['IRL'], // Ireland
