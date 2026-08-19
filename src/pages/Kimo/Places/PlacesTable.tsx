@@ -31,7 +31,7 @@ export default function PlacesTable() {
         cell: (info) => {
           const country = (info.getValue() as string)?.toLowerCase();
           if (!country || country === 'es') return null;
-          return <span className={`fi fi-${country} fis text-2xl`} />;
+          return <span className={`fi fi-${country} text-2xl`} />;
         },
       },
       {
