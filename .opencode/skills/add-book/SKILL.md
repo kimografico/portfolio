@@ -37,6 +37,7 @@ All scripts are in `scripts/skills/`:
 |--------|-------|
 | `upload-kimo.sh` | `bash scripts/skills/upload-kimo.sh <collection> <title> <filepath>` |
 | `add-book.sh` | `bash scripts/skills/add-book.sh '{"title":...}'` |
+| `list-book-tags.cjs` | `node scripts/skills/list-book-tags.cjs` → outputs existing genres and authors |
 
 ## Workflow
 
@@ -60,23 +61,38 @@ Extract from results:
 - **synopsis** (a 2-3 sentence summary in Spanish)
 - **language** (detect from title/author: if Spanish author or Spanish title → `"Español"`, otherwise → `"Inglés"`)
 
-### Step 3: Present what you found and ask for missing data
+### Step 3: Normalize genres and authors against existing data
 
-Show the user what you found and ask for the fields you **cannot** know:
+Before presenting data to the user, check existing books to avoid duplicate tags:
+
+```bash
+node scripts/skills/list-book-tags.cjs
+```
+
+This returns JSON with `genres` and `authors` arrays. Apply these rules:
+
+**Genres:**
+- If the found genre exactly matches an existing one → use it as-is
+- If the found genre is a subset/superset of an existing one (e.g. "Fantasía épica" → "Fantasía") → use the existing shorter form
+- If no match found → use the genre from the web search, but inform the user it's new
+
+**Authors:**
+- Normalize whitespace and accents
+- If the found author matches an existing one (case-insensitive, ignoring accents) → use the exact existing string
+- Handle common variations: initials vs full names (e.g. "B. Sanderson" → "Brandon Sanderson"), different separator styles (e.g. "Neil Gaiman y Terry Pratchett" vs "Neil Gaiman & Terry Pratchett")
+- If no match found → use the author from the web search, but inform the user it's new
+
+**Present the normalized result to the user like this:**
 
 ```
 He encontrado estos datos:
 - Título: [title]
-- Autor: [author]
+- Autor: [author] [-if new, add: "(nuevo — ¿lo añado así o prefieres otra variante?  existing: X, Y, Z)"]
 - Idioma: [Español/Inglés]
-- Género: [genre]
+- Género: [genre] [if new, add: "(nuevo — ¿lo añado así o prefieres otro? existentes: X, Y, Z)"]
 - ISBN: [isbn]
 - Serie: [series or "Ninguna"]
 - Sinopsis: [synopsis]
-
-Para completar el registro necesito:
-1. ¿Cuándo leíste este libro? (formato YYYY-MM, ej: "2024-03")
-2. ¿Tienes una imagen de la portada? (pásame la ruta del archivo)
 ```
 
 **Never skip asking for dateRead and cover.** The user must provide these.
