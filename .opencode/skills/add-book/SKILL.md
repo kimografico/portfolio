@@ -1,11 +1,11 @@
 ---
 name: add-book
-description: Use when the user wants to add a book to their personal library/portfolio. Trigger keywords: "añadir libro", "agregar libro", "nuevo libro", "add book", "libro", "book". Handles searching for book metadata (author, synopsis, genre, ISBN, series) and creating the book entry via the API.
+description: Use when the user wants to add a book to their personal library/portfolio. Trigger keywords: "añadir libro", "agregar libro", "nuevo libro", "add book", "libro", "book". Handles searching for book metadata (author, synopsis, genre, ISBN, series) and creating the book entry directly in the JSON file.
 ---
 
 # Add Book Skill
 
-You help the user add a book to the personal library stored in `src/data/kimo/books.json` via the backend API.
+You help the user add a book to the personal library stored in `src/data/kimo/books.json` by editing the JSON file directly. No backend needed.
 
 ## Data Structure
 
@@ -16,18 +16,14 @@ A book has these fields:
 | `title` | **Yes** | string | |
 | `author` | **Yes** | string | |
 | `language` | **Yes** | string | Only `"Español"` or `"Inglés"` |
-| `cover` | **Yes** | filename | Uploaded via `upload-kimo.sh` first |
+| `cover` | **Yes** | filename | User places the image in `public/images/books/` themselves |
 | `dateRead` | No | `"YYYY-MM"` or empty | When the user read the book |
 | `genre` | No | string | e.g. `"Aventuras"`, `"Fantasía"` |
 | `isbn` | No | string | e.g. `"9788467035544"` |
 | `series` | No | string | e.g. `"Canción de hielo y fuego"` |
 | `synopsis` | No | string | Paragraph |
 
-IDs are auto-generated from title via `slugify()`. Do not send them.
-
-## Prerequisites
-
-The backend must be running on `localhost:3001`. If not, start it with `pnpm backend`.
+The `id` is auto-generated from the title using `slugify()`: lowercase, accents removed, spaces → hyphens, max 80 chars.
 
 ## Helper Scripts
 
@@ -35,8 +31,6 @@ All scripts are in `scripts/skills/`:
 
 | Script | Usage |
 |--------|-------|
-| `upload-kimo.sh` | `bash scripts/skills/upload-kimo.sh <collection> <title> <filepath>` |
-| `add-book.sh` | `bash scripts/skills/add-book.sh '{"title":...}'` |
 | `list-book-tags.cjs` | `node scripts/skills/list-book-tags.cjs` → outputs existing genres and authors |
 
 ## Workflow
@@ -97,20 +91,27 @@ He encontrado estos datos:
 
 **Never skip asking for dateRead and cover.** The user must provide these.
 
-### Step 4: Upload the cover image
+### Step 4: Ask for the cover filename
 
-The user will provide a file path for the cover image. Upload it first:
+Ask the user for the cover image filename. The user places the image manually in `public/images/books/`. They should provide just the filename (e.g. `problema-tres-cuerpos.jpg`).
 
-```bash
-bash scripts/skills/upload-kimo.sh books "[book-id]" "/ruta/imagen.jpg"
-```
+### Step 5: Add the book entry to the JSON
 
-The response will contain the uploaded file info. Extract the filename from the `ruta` field.
+Read `src/data/kimo/books.json`, find the last entry before the closing `]`, and use the `edit` tool to append the new book. Add a comma after the previous entry's closing `}`, then add the new entry:
 
-### Step 5: Create the book
-
-```bash
-bash scripts/skills/add-book.sh '{"title":"[title]","author":"[author]","language":"[Español or Inglés]","cover":"[uploaded-filename.jpg]","dateRead":"[YYYY-MM]","genre":"[genre]","isbn":"[isbn]","series":"[series]","synopsis":"[synopsis]"}'
+```json
+{
+  "id": "[slugified-title]",
+  "title": "[title]",
+  "author": "[author]",
+  "language": "[Español or Inglés]",
+  "cover": "[filename.jpg]",
+  "dateRead": "[YYYY-MM]",
+  "genre": "[genre]",
+  "isbn": "[isbn]",
+  "series": "[series]",
+  "synopsis": "[synopsis]"
+}
 ```
 
 ### Step 6: Confirm
@@ -120,7 +121,6 @@ Tell the user: **"Libro creado correctamente con ID: `[generated-id]`"**
 ## Important Notes
 
 - The `id` is auto-generated from the title using `slugify()`: lowercase, accents removed, spaces → hyphens, max 80 chars
-- If the ID already exists, the API returns a 409 error. Add `-2`, `-3` etc. to resolve
+- If the ID already exists, add `-2`, `-3` etc. to resolve
 - The cover image filename stored is just the name, not the full path (e.g. `"libro001.jpg"`, not `"/images/books/libro001.jpg"`)
-- The backend must be running on `localhost:3001`
-- Auth token comes from `KIMO_PASSWORD_HASH` in `.env`
+- No backend or auth needed — this is a direct JSON edit
