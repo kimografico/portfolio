@@ -723,9 +723,9 @@ export default function EditProjectPage() {
                         else if (f.type === 'dev') tipoFolder = 'web';
                         // Si falta categoría, no se puede construir la ruta
                         if (tipoFolder && f.category) {
-                          src = `/portfolio/images/portfolio/${tipoFolder}/${f.category}/${img.image}`;
+                          src = `/images/portfolio/${tipoFolder}/${f.category}/${img.image}`;
                         } else {
-                          src = `/portfolio/images/portfolio/${img.image}`;
+                          src = `/images/portfolio/${img.image}`;
                         }
                       }
                       return (

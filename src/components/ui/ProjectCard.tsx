@@ -55,12 +55,12 @@ export const ProjectCard = <T extends BaseProject>({
   const thumbUrl =
     project.thumb && project.thumb.trim() !== ''
       ? project.thumb
-      : `/portfolio/images/portfolio/thumbs/${project.id}.jpg`;
+      : `/images/portfolio/thumbs/${project.id}.jpg`;
   const originalImage =
     buildImagePath && project.imagenes?.[0]?.image
       ? buildImagePath(project.imagenes[0].image)
       : project.imagenes?.[0]?.image || '';
-  const fallbackImage = '/portfolio/images/portfolio/no-cover.jpg';
+  const fallbackImage = '/images/portfolio/no-cover.jpg';
 
   const [imgSrc, setImgSrc] = useState<string>(thumbUrl);
   const [triedOriginal, setTriedOriginal] = useState(false);

@@ -3,7 +3,8 @@ import clientsData from '../../data/clients.json';
 import { useTheme } from '../../hooks/useTheme';
 
 // Ruta base donde viven los logos en public/
-const CLIENTS_BASE = '/portfolio/images/clients';
+// NOTA: en GitHub Pages (kimografico.github.io/portfolio) sería '/portfolio/images/clients'
+const CLIENTS_BASE = '/images/clients';
 
 // Dimensiones fijas de cada logo (coinciden con los archivos 150×75 de la carpeta clients)
 const LOGO_W = 150;

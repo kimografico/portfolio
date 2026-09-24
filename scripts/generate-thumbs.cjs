@@ -27,7 +27,9 @@ const THUMBS_DIR = path.join(ROOT, 'public', 'images', 'portfolio', 'thumbs');
 const ILLUSTRATIONS_DATA = path.join(ROOT, 'src', 'data', 'kimo', 'illustrations.json');
 const ILLUSTRATIONS_DIR = path.join(ROOT, 'public', 'images', 'illustrations');
 const ILLUSTRATIONS_THUMBS_DIR = path.join(ILLUSTRATIONS_DIR, 'thumbs');
-const APP_BASENAME = '/portfolio';
+// Raíz del dominio: los JSON guardan rutas sin subcarpeta.
+// NOTA: en GitHub Pages (kimografico.github.io/portfolio) sería '/portfolio'.
+const APP_BASENAME = '';
 
 const THUMB_WIDTH = 500;
 
@@ -123,7 +125,7 @@ function thumbExists(projectId) {
 async function generateThumbFromUrl(projectId, imageUrl) {
   try {
     // Convertir URL pública a ruta local
-    // URL: /portfolio/images/portfolio/web/vanilla/project001.jpg
+    // URL: /images/portfolio/web/vanilla/project001.jpg
     // Ruta: public/images/portfolio/web/vanilla/project001.jpg
     const urlPath = imageUrl.replace(APP_BASENAME, '').replace(/^\//, '');
     const imagePath = path.join(ROOT, 'public', urlPath);

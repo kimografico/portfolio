@@ -8,10 +8,11 @@
     <script>
       // Workaround para GitHub Pages + SPAs
       // Redirige a index.html pasando la ruta como parámetro
+      // NOTA: si se desplegase en kimografico.github.io/portfolio, cambiar a '/portfolio/index.html?redirect='
       const path = window.location.pathname;
       const searchParams = window.location.search;
       window.location.replace(
-        '/portfolio/index.html?redirect=' + encodeURIComponent(path + searchParams),
+        '/index.html?redirect=' + encodeURIComponent(path + searchParams),
       );
     </script>
   </head>

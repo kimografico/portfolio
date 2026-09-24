@@ -4,7 +4,10 @@ import { VitePWA } from 'vite-plugin-pwa';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/portfolio/',
+  // Base: raíz del dominio (kimografico.com).
+  // NOTA: si se vuelve a desplegar en GitHub Pages (kimografico.github.io/portfolio),
+  // hay que cambiar este valor y todos los paths PWA de abajo a '/portfolio/'.
+  base: '/',
   plugins: [
     react(),
     VitePWA({
@@ -28,9 +31,10 @@ export default defineConfig({
         // scope y start_url deben coincidir con `base` de Vite y con el basename de React Router
         // Identificador de la app (útil para algunas validaciones y para que coincida
         // la identidad de la app con la URL). Si no se especifica, se usa start_url.
-        id: '/portfolio/',
-        scope: '/portfolio/',
-        start_url: '/portfolio/',
+        // En GitHub Pages serían '/portfolio/' en los tres.
+        id: '/',
+        scope: '/',
+        start_url: '/',
         // Usar el favicon existente como icono de prueba para desarrollo/local.
         // Reemplaza estos por PNGs reales en `public/` cuando los tengas.
         icons: [
@@ -71,7 +75,7 @@ export default defineConfig({
         protocol_handlers: [
           {
             protocol: 'web+kimografico',
-            url: '/portfolio/?url=%s',
+            url: '/?url=%s',
           },
         ],
       },
@@ -83,7 +87,7 @@ export default defineConfig({
 
         // Fallback para SPA: en offline, cualquier navegación a una ruta conocida
         // devuelve index.html, permitiendo que React Router gestione el enrutado
-        navigateFallback: '/portfolio/index.html',
+        navigateFallback: '/index.html',
 
         // Excluir rutas de la API del backend del fallback de navegación
         navigateFallbackDenylist: [/^\/api\//],
@@ -119,7 +123,7 @@ export default defineConfig({
           {
             // Imágenes del portfolio — StaleWhileRevalidate:
             // sirve desde caché inmediatamente y actualiza en background
-            urlPattern: /\/portfolio\/images\/.*/i,
+            urlPattern: /\/images\/.*/i,
             handler: 'StaleWhileRevalidate',
             options: {
               cacheName: 'portfolio-images-cache',

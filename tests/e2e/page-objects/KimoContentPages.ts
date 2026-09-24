@@ -1,6 +1,7 @@
 import type { Page } from '@playwright/test';
 
-const APP_BASENAME = '/portfolio';
+// Raíz del dominio. NOTA: en GitHub Pages sería '/portfolio'
+const APP_BASENAME = '';
 
 function slugify(value: string): string {
   return value

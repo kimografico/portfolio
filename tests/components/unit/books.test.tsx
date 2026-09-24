@@ -95,7 +95,7 @@ describe('books domain components', () => {
     expect(image).toHaveAttribute('src', 'original.jpg');
 
     fireEvent.error(image);
-    expect(image).toHaveAttribute('src', '/portfolio/images/portfolio/no-cover.jpg');
+    expect(image).toHaveAttribute('src', '/images/portfolio/no-cover.jpg');
   });
 
   it('muestra el modal del libro con su información y cierra con animación', async () => {

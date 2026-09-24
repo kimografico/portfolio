@@ -5,8 +5,9 @@
 
 import { DEVELOPER_CATEGORY_CATALOG, GRAPHIC_DESIGN_CATEGORY_CATALOG } from './categoryCatalog';
 
-/** basename de React Router (debe coincidir con vite.config base) */
-export const APP_BASENAME = '/portfolio';
+// Raíz del dominio (kimografico.com) → base '/' en vite.config.ts y basename '/' en main.tsx.
+// NOTA: si vuelves a GitHub Pages (kimografico.github.io/portfolio), cambia a '/portfolio'.
+export const APP_BASENAME = '';
 
 /**
  * Rutas base para imágenes de proyectos
