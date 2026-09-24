@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import type { BookModalProps } from '../../interfaces/book';
 import '../../styles/components/BookModal.css';
 import { IconClose } from '../../components/iconos';
+import { APP_BASENAME } from '../../data/config/app';
 
 // Devuelve la bandera según el idioma
 function getFlag(lang: string): string {
@@ -163,7 +164,7 @@ function BookModal({ book, onClose }: BookModalProps) {
           src={(() => {
             const coverName =
               book.cover && book.cover.trim() !== '' ? book.cover.trim() : book.id + '.jpg';
-            const path = `${import.meta.env.VITE_BOOK_COVERS_PATH}/${coverName}`;
+            const path = `${APP_BASENAME}${import.meta.env.VITE_BOOK_COVERS_PATH}/${coverName}`;
             return path;
           })()}
           alt={`Portada de ${book.title}`}
@@ -171,7 +172,7 @@ function BookModal({ book, onClose }: BookModalProps) {
           draggable={false}
           onError={(e) => {
             const target = e.currentTarget;
-            const blankImage = `${import.meta.env.VITE_BOOK_COVERS_PATH}/_blank.jpg`;
+            const blankImage = `${APP_BASENAME}${import.meta.env.VITE_BOOK_COVERS_PATH}/_blank.jpg`;
             if (target.src !== blankImage) target.src = blankImage;
           }}
           data-id="book-modal-cover"

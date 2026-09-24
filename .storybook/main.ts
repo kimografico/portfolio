@@ -7,7 +7,9 @@ const config: StorybookConfig = {
     name: '@storybook/react-vite',
     options: {},
   },
-  staticDirs: [{ from: '../public', to: '/portfolio' }],
+  // Montar public en la raíz: las rutas de assets (/images/...) coinciden con el
+  // dominio raíz y con las rutas basename-free que guardan los JSONs.
+  staticDirs: [{ from: '../public', to: '/' }],
 };
 
 export default config;

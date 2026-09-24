@@ -37,6 +37,7 @@ import {
   deleteProjectsBatch,
   type ProjectData,
 } from '../../../api/apiClient';
+import { PORTFOLIO_IMAGES_BASE } from '../../../data/config/app';
 
 /**
  * Categorías disponibles por tipo.
@@ -723,9 +724,9 @@ export default function EditProjectPage() {
                         else if (f.type === 'dev') tipoFolder = 'web';
                         // Si falta categoría, no se puede construir la ruta
                         if (tipoFolder && f.category) {
-                          src = `/images/portfolio/${tipoFolder}/${f.category}/${img.image}`;
+                          src = `${PORTFOLIO_IMAGES_BASE}/${tipoFolder}/${f.category}/${img.image}`;
                         } else {
-                          src = `/images/portfolio/${img.image}`;
+                          src = `${PORTFOLIO_IMAGES_BASE}/${img.image}`;
                         }
                       }
                       return (

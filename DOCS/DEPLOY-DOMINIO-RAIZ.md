@@ -1,157 +1,124 @@
 # Despliegue en dominio raiz (kimografico.com)
 
-Documento que explica el cambio de base path realizado para desplegar el portfolio en un
-dominio propio **sin subcarpeta** (`https://kimografico.com/` en vez de
-`https://kimografico.github.io/portfolio/`).
+Documento que explica como esta configurado el base path del portfolio para poder
+desplegarlo en un dominio propio **sin subcarpeta** (`https://kimografico.com/`) o en
+GitHub Pages (`https://kimografico.github.io/portfolio/`) cambiando lo minimo posible.
 
 ---
 
-## Estado actual
+## Arquitectura: un solo interruptor
 
-Toda la aplicacion se construye y sirve desde la **raiz del dominio** (`/`):
+El prefijo de ruta (`base`) se define en **un unico sitio**: la propiedad `base` de
+`vite.config.ts`. De ahi se deriva todo automaticamente:
 
-- `vite.config.ts` → `base: '/'`
-- `APP_BASENAME` (React Router) → `''` (rutas relativas a la raiz)
-- Imagenes, portadas, ilustraciones y recursos UI → `/images/...`
-- PWA manifest → `id`, `scope` y `start_url` en `/`
-- Service worker → `navigateFallback: '/index.html'`
-- SPA fallback (`404.html`) → redirige a `/index.html`
+```
+vite.config.ts `base`
+   └─> import.meta.env.BASE_URL  (inyectado por Vite en build/dev)
+        └─> APP_BASENAME          (src/data/config/app.ts, sin barra final)
+             ├─> Bases de assets  (PORTFOLIO_IMAGES_BASE, CLIENTS_BASE, THUMBS_BASE, ...)
+             ├─> resolveAssetPath (normaliza CUALQUIER ruta al contexto actual)
+             └─> React Router basename (main.tsx)
+```
 
-> El workflow de GitHub Actions (`deploy.yml`) **no necesita cambios**: sube el contenido
-> de `dist/` sin prefijo. El path lo decide el `base` de Vite.
+Reglas que sigue el proyecto para que esto funcione:
+
+- **Los JSON guardan SOLO nombres de archivo** (proyectos, ilustraciones) o **rutas
+  relativas a la raiz del sitio** (`/images/...`, carrusel). Nunca llevan el prefijo.
+- **El codigo construye la URL completa** con las constantes de `app.ts`.
+- **`resolveAssetPath()`** resuelve en render las rutas almacenadas al contexto actual:
+  en la raiz las deja igual (`/images/...`) y en una subcarpeta les antepone el basename
+  (`/portfolio/images/...`). Tambien limpia el prefijo `/portfolio/` legacy de JSON
+  antiguos (via `processImagePath` en `imagePathHelper.ts`).
+- **Los paths PWA** (manifest `id`/`scope`/`start_url`, `navigateFallback`, handler de
+  protocolo, `urlPattern` del SW) viven en `vite.config.ts` y SI hay que ajustarlos a
+  mano, pero estan todos en el mismo archivo.
 
 ---
 
-## Archivos modificados
+## Estado actual: dominio raiz
 
-| Archivo | Antes (GitHub Pages) | Ahora (dominio raiz) |
-|---------|----------------------|----------------------|
-| `vite.config.ts` | `base: '/portfolio/'` | `base: '/'` |
-| `vite.config.ts` | PWA `id`/`scope`/`start_url: '/portfolio/'` | `'/'` |
-| `vite.config.ts` | URL protocol handler `/portfolio/?url=%s` | `/?url=%s` |
-| `vite.config.ts` | `navigateFallback: '/portfolio/index.html'` | `'/index.html'` |
-| `vite.config.ts` | `urlPattern: /\/portfolio\/images\/.*/i` | `/\/images\/.*/i` |
-| `src/data/config/app.ts` | `APP_BASENAME = '/portfolio'` | `APP_BASENAME = ''` |
-| `.env` | `VITE_BOOK_COVERS_PATH=/portfolio/images/books` | `/images/books` |
-| `.env` | `VITE_ILLUSTRATIONS_PATH=/portfolio/images/illustrations` | `/images/illustrations` |
-| `.env` | `VITE_UI_IMG_PATH=/portfolio/images/ui` | `/images/ui` |
-| `public/404.html` | `/portfolio/index.html?redirect=...` | `/index.html?redirect=...` |
-| `scripts/generate-thumbs.cjs` | `APP_BASENAME = '/portfolio'` | `''` |
-| `src/components/ui/ProjectCard.tsx` | `/portfolio/images/portfolio/thumbs/...` | `/images/portfolio/thumbs/...` |
-| `src/components/ui/ProjectCard.tsx` | `/portfolio/images/portfolio/no-cover.jpg` | `/images/portfolio/no-cover.jpg` |
-| `src/components/compositions/MyClients.tsx` | `/portfolio/images/clients` | `/images/clients` |
-| `src/pages/Kimo/Admin/EditProjectPage.tsx` | `/portfolio/images/portfolio/...` | `/images/portfolio/...` |
-| `src/data/carousel.json` | `/portfolio/images/portfolio/...` | `/images/portfolio/...` |
-| `tests/e2e/support/world.ts` | `baseURL: 'http://localhost:5173/portfolio/'` | `'http://localhost:5173/'` |
-| `tests/e2e/page-objects/PortfolioShell.ts` | `APP_BASENAME = '/portfolio'` | `''` |
-| `tests/e2e/page-objects/KimoContentPages.ts` | `APP_BASENAME = '/portfolio'` | `''` |
-| `tests/utils/unit/imagePathHelper.test.ts` | rutas `/portfolio/...` | rutas `/...` |
-| `tests/components/unit/books.test.tsx` | `/portfolio/images/portfolio/no-cover.jpg` | `/images/portfolio/no-cover.jpg` |
+- `vite.config.ts` → `base: '/'`, PWA con `id`/`scope`/`start_url: '/'`,
+  `navigateFallback: '/index.html'`, protocol handler `/?url=%s`, `urlPattern: /\/images\/.*/i`.
+- `.env` → `VITE_BOOK_COVERS_PATH=/images/books`, `VITE_ILLUSTRATIONS_PATH=/images/illustrations`,
+  `VITE_UI_IMG_PATH=/images/ui`. El codigo antepone `APP_BASENAME` a estas rutas.
+- `public/404.html` → redirige a `/index.html`.
+- `scripts/generate-thumbs.cjs` → reconstruye rutas basename-free (`/images/portfolio/...`).
 
 ---
 
 ## Como volver a GitHub Pages
 
-Si en algun momento se vuelve a desplegar en GitHub Pages
-(`https://kimografico.github.io/portfolio/`), hay que restaurar **todos** los valores
-de la tabla anterior. Checklist paso a paso:
+Son **dos archivos de configuracion** + el SPA fallback + los tests E2E. No se toca
+ningun dato (JSONs), ni componentes, ni `.env`:
 
-### 1. `vite.config.ts`
-
-```ts
-base: '/portfolio/',                  // antes: '/'
-id: '/portfolio/',                    // antes: '/'
-scope: '/portfolio/',                 // antes: '/'
-start_url: '/portfolio/',             // antes: '/'
-url: '/portfolio/?url=%s',            // antes: '/?url=%s'
-navigateFallback: '/portfolio/index.html',  // antes: '/index.html'
-urlPattern: /\/portfolio\/images\/.*/i,     // antes: /\/images\/.*/i
-```
-
-### 2. `src/data/config/app.ts`
+### 1. `vite.config.ts` (unico archivo de rutas)
 
 ```ts
-export const APP_BASENAME = '/portfolio';  // antes: ''
+base: '/portfolio/',
+// PWA manifest
+id: '/portfolio/',
+scope: '/portfolio/',
+start_url: '/portfolio/',
+// protocol handler
+url: '/portfolio/?url=%s',
+// service worker
+navigateFallback: '/portfolio/index.html',
+urlPattern: /\/portfolio\/images\/.*/i,   // cache de imagenes
 ```
 
-Con esto, React Router (`main.tsx`) y los builds de rutas (`${APP_BASENAME}/...`) se
-ajustan solos.
+> `APP_BASENAME` en `app.ts` se adapta SOLA porque deriva de `BASE_URL`.
 
-### 3. `.env` (variables del frontend)
-
-```
-VITE_BOOK_COVERS_PATH=/portfolio/images/books
-VITE_ILLUSTRATIONS_PATH=/portfolio/images/illustrations
-VITE_UI_IMG_PATH=/portfolio/images/ui
-```
-
-### 4. `public/404.html`
+### 2. `public/404.html`
 
 ```js
 '/portfolio/index.html?redirect=' + encodeURIComponent(path + searchParams),
 ```
 
-### 5. `scripts/generate-thumbs.cjs`
+(necesario en GitHub Pages; en hosting con SPA fallback se usa `public/_redirects`
+con `/* /index.html 200`)
 
-```js
-const APP_BASENAME = '/portfolio';  // antes: ''
-```
+### 3. Tests E2E
 
-### 6. Rutas hardcodeadas en `src`
+- `tests/e2e/support/world.ts` → `baseURL: 'http://localhost:5173/portfolio/'`
+- `tests/e2e/page-objects/PortfolioShell.ts` → `APP_BASENAME = '/portfolio'`
+- `tests/e2e/page-objects/KimoContentPages.ts` → `APP_BASENAME = '/portfolio'`
 
-- `src/components/ui/ProjectCard.tsx`
-  - `/portfolio/images/portfolio/thumbs/${project.id}.jpg`
-  - `/portfolio/images/portfolio/no-cover.jpg`
-- `src/components/compositions/MyClients.tsx`
-  - `CLIENTS_BASE = '/portfolio/images/clients'`
-- `src/pages/Kimo/Admin/EditProjectPage.tsx`
-  - `/portfolio/images/portfolio/${tipoFolder}/${f.category}/${img.image}`
-  - `/portfolio/images/portfolio/${img.image}`
-
-### 7. `src/data/carousel.json`
-
-Prependir `/portfolio` a los 4 `src`:
-
-```
-/portfolio/images/portfolio/design/etiquetas/rediseno002.jpg
-/portfolio/images/portfolio/design/proyectos-especiales/tirador-de-hidromiel-de-madera001.jpg
-/portfolio/images/portfolio/design/proyectos-especiales/baraja-lbg002.jpg
-/portfolio/images/portfolio/design/editorial/manual-de-marca001.jpg
-```
-
-### 8. Tests E2E
-
-- `tests/e2e/support/world.ts`:
-  `baseURL: 'http://localhost:5173/portfolio/'`
-- `tests/e2e/page-objects/PortfolioShell.ts`: `APP_BASENAME = '/portfolio'`
-- `tests/e2e/page-objects/KimoContentPages.ts`: `APP_BASENAME = '/portfolio'`
-
-### 9. Tests unitarios
-
-- `tests/utils/unit/imagePathHelper.test.ts`: espera rutas `/portfolio/...` como salida
-  del helper.
-- `tests/components/unit/books.test.tsx`: espera
-  `/portfolio/images/portfolio/no-cover.jpg`.
-
-### 10. Verificacion
+### 4. Verificacion
 
 ```sh
 pnpm typecheck
 pnpm lint
 pnpm test
+pnpm build   # comprobar que dist/index.html referencia /portfolio/assets/*
 ```
+
+---
+
+## Por que NO hay que tocar el resto
+
+| Elemento | Por que no se toca |
+|----------|--------------------|
+| JSONs de proyectos (GD/Dev/Kimo) | Solo guardan nombres de archivo |
+| `src/data/carousel.json` | Guarda rutas raiz-relative (`/images/...`); `resolveAssetPath` las resuelve en render |
+| `.env` + portadas/ilustraciones | El codigo antepone `APP_BASENAME` a las rutas de env |
+| `scripts/generate-thumbs.cjs` | Reconstruye rutas basename-free y las resuelve contra el filesystem |
+| `src/data/config/app.ts` | Deriva `APP_BASENAME` de `BASE_URL` |
+| `index.html` | No tiene rutas hardcodeadas |
+| `.github/workflows/deploy.yml` | Sube `dist/` tal cual; el path lo pone `base` de Vite |
+
+Los datos almacenados desde el admin (`/kimo`) tambien se normalizan: las subidas
+devuelven rutas raiz-relative y `CarouselManager` elimina el basename activo al
+guardar, de modo que los JSONs permanecen agnosticos al contexto.
 
 ---
 
 ## Puntos a no olvidar
 
-- **`.github/workflows/deploy.yml`**: no se toca. El workflow sube `dist/` tal cual; el
-  path lo define `base` de Vite.
-- **SPA fallback**: en GitHub Pages el hack del `404.html` es imprescindible; en un
-  hosting propio que soporte SPA (Cloudflare Pages, Netlify) se usa
-  `public/_redirects` con `/* /index.html 200` y el `404.html` se puede obviar.
-- **`index.html`**: no tiene rutas `/portfolio` hardcodeadas, no requiere cambios en
-  ningun escenario.
-- **JSON de proyectos** (GD/Dev/Kimo): no guardan el prefijo `/portfolio`, solo nombres
-  de archivo o rutas `/images/portfolio/...` sin prefijo. La compatibilidad con JSON
-  antiguos la mantiene `imagePathHelper.ts`, que reemplaza `/portfolio/` por `APP_BASENAME`.
+- **`import.meta.env.BASE_URL`** refleja el `base` de Vite tanto en `vite dev` como en
+  `vite build`. En tests de Vitest vale `'/'`.
+- **Nunca hardcodear** un prefijo (`/portfolio` o `/images`) en un componente o JSON
+  nuevo: usar las constantes de `app.ts` o `resolveAssetPath`.
+- El cache del **service worker** en navegadores ya instalados puede quedarse con las
+  rutas antiguas; borrar cache/manifest manualmente tras un cambio de base.
+- Si se cambia `base`, conviene regenerar PWA (el manifest incrustado en el build se
+  actualiza solo, pero `navigateFallback` y `urlPattern` son manuales).

@@ -60,7 +60,7 @@ portfolio/
 
 ## Enrutamiento (App.tsx)
 
-Todas las rutas lazy-loaded con React.lazy + Suspense. Basename: `/portfolio`.
+Todas las rutas lazy-loaded con React.lazy + Suspense. Basename dinámico: `APP_BASENAME` derivado del `base` de Vite ('' en dominio raíz, `/portfolio` en GitHub Pages).
 
 | Ruta | Pagina | Descripcion |
 |------|--------|-------------|
@@ -271,7 +271,7 @@ Funciones: `getProject`, `createProject`, `updateProject`, `updateVisibilityBatc
 
 ### Despliegue
 
-- **GitHub Pages**: Base path `/portfolio/`
+- **Dominio raíz (actual)**: `base: '/'`, PWA paths en raíz, `404.html` a `/index.html`. Switch a GitHub Pages: solo `vite.config.ts` (base + PWA) + `404.html` + baseURL tests E2E. Ver `DOCS/DEPLOY-DOMINIO-RAIZ.md`.
 - **SPA fallback**: `404.html` con redirect hack en `index.html`
 - **Build**: `tsc -b && vite build`
 - **Thumbnails**: Generados via Sharp (`scripts/generate-thumbs.cjs`)

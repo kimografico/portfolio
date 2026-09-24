@@ -8,7 +8,7 @@ import type { Illustration } from '../../../interfaces/illustration';
 import type { BaseProject } from '../../../interfaces/project';
 import { isKimoAuthenticated } from '../../../utils/kimoAuth';
 
-const ILLUSTRATIONS_PATH = import.meta.env.VITE_ILLUSTRATIONS_PATH;
+const ILLUSTRATIONS_PATH = `${APP_BASENAME}${import.meta.env.VITE_ILLUSTRATIONS_PATH ?? '/images/illustrations'}`;
 
 export default function IllustrationsPage() {
   const { alive } = useBackendStatus();

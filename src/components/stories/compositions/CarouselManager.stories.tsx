@@ -38,15 +38,15 @@ export const ThreeExamples: Story = {
   args: {
     initialImages: [
       {
-        src: '/portfolio/images/portfolio/design/etiquetas/rediseno002.jpg',
+        src: '/images/portfolio/design/etiquetas/rediseno002.jpg',
         alt: 'Odin Doble Miel',
       },
       {
-        src: '/portfolio/images/portfolio/design/proyectos-especiales/baraja-lbg002.jpg',
+        src: '/images/portfolio/design/proyectos-especiales/baraja-lbg002.jpg',
         alt: 'Baraja LBG',
       },
       {
-        src: '/portfolio/images/portfolio/web/wordpress/colordmar001.jpg',
+        src: '/images/portfolio/web/wordpress/colordmar001.jpg',
         alt: 'Web ColorDeMar',
       },
     ],

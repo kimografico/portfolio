@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ProjectCarouselProps } from '../../interfaces/carousel';
 import '../../styles/components/projectCarousel.css';
+import { resolveAssetPath } from '../../data/config/app';
 
 const AUTOPLAY_INTERVAL_MS = 4500;
 const TRANSITION_DURATION_MS = 900;
@@ -102,7 +103,7 @@ export default function ProjectCarousel({
               return (
                 <img
                   key={`${image.src}-${index}`}
-                  src={image.src}
+                  src={resolveAssetPath(image.src)}
                   alt={image.alt}
                   draggable={false}
                   decoding="async"

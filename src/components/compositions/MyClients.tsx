@@ -1,10 +1,7 @@
 import { useEffect, useMemo, useId, useState } from 'react';
 import clientsData from '../../data/clients.json';
 import { useTheme } from '../../hooks/useTheme';
-
-// Ruta base donde viven los logos en public/
-// NOTA: en GitHub Pages (kimografico.github.io/portfolio) sería '/portfolio/images/clients'
-const CLIENTS_BASE = '/images/clients';
+import { CLIENTS_BASE } from '../../data/config/app';
 
 // Dimensiones fijas de cada logo (coinciden con los archivos 150×75 de la carpeta clients)
 const LOGO_W = 150;

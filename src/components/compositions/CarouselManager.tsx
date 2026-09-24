@@ -23,6 +23,7 @@ import ImageDropZone, { type ProjectImageItem } from './ImageDropZone';
 import UIButton from '../ui/UIButton';
 import { useCarousel } from '../../hooks/useCarousel';
 import type { CarouselImageItem } from '../../api/apiClient';
+import { APP_BASENAME } from '../../data/config/app';
 
 interface CarouselManagerProps {
   /**
@@ -33,15 +34,27 @@ interface CarouselManagerProps {
   initialImages?: CarouselImageItem[];
 }
 
-/** Extrae el pathname de una URL absoluta; devuelve el valor original si ya es relativa. */
+/**
+ * Normaliza un valor de imagen antes de persistirlo:
+ * - URLs absolutas → solo pathname.
+ * - Rutas con el basename activo (p. ej. '/portfolio/images/...') → se
+ *   elimina el basename, dejando la ruta relativa a la raíz ('/images/...').
+ * Así el JSON nunca depende del contexto de desplegado.
+ */
 function toRelativePath(value: string): string {
+  let path = value;
   try {
     const url = new URL(value);
-    if (url.protocol === 'http:' || url.protocol === 'https:') return url.pathname;
-    return value;
+    if (url.protocol === 'http:' || url.protocol === 'https:') {
+      path = url.pathname;
+    }
   } catch {
-    return value;
+    // Queda como está si no es una URL absoluta.
   }
+  if (APP_BASENAME && (path.startsWith(`${APP_BASENAME}/`) || path === APP_BASENAME)) {
+    path = path.slice(APP_BASENAME.length) || '/';
+  }
+  return path;
 }
 
 export default function CarouselManager({ initialImages }: CarouselManagerProps = {}) {

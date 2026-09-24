@@ -6,7 +6,7 @@
  */
 
 import {
-  APP_BASENAME,
+  resolveAssetPath,
   GRAPHIC_DESIGN_IMAGES_BASE,
   DEVELOPER_IMAGES_BASE,
   GRAPHIC_DESIGN_CATEGORIES,
@@ -14,12 +14,15 @@ import {
 } from './app';
 
 /**
- * Reemplaza /portfolio/ por APP_BASENAME en una ruta de imagen
- * Usado para compatibilidad con rutas hardcodeadas en JSON
+ * Normaliza una ruta de imagen al contexto de desplegado actual.
+ * Elimina el prefijo '/portfolio/' (legado de la era GitHub Pages) y luego
+ * resuelve con el basename activo, de modo que cualquier dato —con o sin
+ * prefijo— funcione en la raíz y en subcarpeta sin tocarlo.
  */
 export const processImagePath = (ruta: string): string => {
   if (!ruta || typeof ruta !== 'string') return ruta;
-  return ruta.replace('/portfolio/', `${APP_BASENAME}/`);
+  const sinPrefijo = ruta.replace(/^\/portfolio\//, '/');
+  return resolveAssetPath(sinPrefijo);
 };
 
 /**
@@ -56,7 +59,7 @@ export const buildDeveloperImagePath = (
 
 /**
  * Procesa un objeto de imagen con propiedades ruta y label
- * Reemplaza /portfolio/ por APP_BASENAME si está hardcodeado
+ * Normaliza rutas de imagen al basename activo
  */
 export const processImageObject = (image: { image: string; label?: string }) => ({
   ...image,

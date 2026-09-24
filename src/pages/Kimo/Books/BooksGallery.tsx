@@ -3,6 +3,7 @@ import type { Book } from '../../../interfaces/book';
 import BookModal from '../../../components/compositions/BookModal';
 import BooksFilter from '../../../components/compositions/BooksFilter';
 import '../../../styles/books.css';
+import { APP_BASENAME } from '../../../data/config/app';
 
 import type { BooksGalleryProps } from '../../../interfaces/book';
 
@@ -52,10 +53,10 @@ export default function BooksGallery({ books }: BooksGalleryProps) {
                 src={(() => {
                   const coverName =
                     book.cover && book.cover.trim() !== '' ? book.cover.trim() : book.id + '.jpg';
-                  const blankImage = `${import.meta.env.VITE_BOOK_COVERS_PATH}/_blank.jpg`;
+                  const blankImage = `${APP_BASENAME}${import.meta.env.VITE_BOOK_COVERS_PATH}/_blank.jpg`;
                   const path = imgErrors[book.id]
                     ? blankImage
-                    : `${import.meta.env.VITE_BOOK_COVERS_PATH}/${coverName}`;
+                    : `${APP_BASENAME}${import.meta.env.VITE_BOOK_COVERS_PATH}/${coverName}`;
                   return path;
                 })()}
                 alt={`Portada de ${book.title}`}

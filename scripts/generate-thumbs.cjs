@@ -266,7 +266,7 @@ async function run() {
             if (firstImage && firstImage.image && type && category) {
               // Reconstruir la URL usando type, category e image
               const typeDir = type === 'gd' ? 'design' : 'web';
-              const imageUrl = `/portfolio/images/portfolio/${typeDir}/${category}/${firstImage.image}`;
+              const imageUrl = `/images/portfolio/${typeDir}/${category}/${firstImage.image}`;
               projects.push({
                 id: project.id,
                 title: project.title || `Project ${project.id}`,

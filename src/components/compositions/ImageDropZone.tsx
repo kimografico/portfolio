@@ -1,6 +1,7 @@
 import type { ChangeEvent, DragEvent, RefObject } from 'react';
 
 import { IconImage } from '../iconos/IconImage';
+import { resolveAssetPath } from '../../data/config/app';
 
 export type ProjectImageItem = {
   image: string;
@@ -126,7 +127,7 @@ export default function ImageDropZone({
             >
               {img.image && !imgErrors[i] ? (
                 <img
-                  src={img.image}
+                  src={resolveAssetPath(img.image)}
                   alt={img.label || `Imagen ${i + 1}`}
                   className="w-full h-full object-cover"
                   onError={() => onImageError(i)}
