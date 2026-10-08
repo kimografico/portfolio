@@ -79,11 +79,12 @@ Estructura idéntica a Diseño Gráfico:
 
 ### Categorías disponibles
 
-| Categoría  | Ruta              | Descripción                                  |
-| ---------- | ----------------- | -------------------------------------------- |
-| Vanilla    | `/dev/vanilla`    | Proyectos con JavaScript/TypeScript puro.    |
-| WordPress  | `/dev/wordpress`  | Desarrollos sobre WordPress.                 |
-| Frameworks | `/dev/frameworks` | Proyectos con React, Vue y otros frameworks. |
+| Categoría    | Ruta                  | Descripción                                        |
+| ------------ | --------------------- | -------------------------------------------------- |
+| Legacy       | `/dev/legacy`         | Proyectos hasta 2024.                              |
+| Aplicaciones | `/dev/apps`           | Aplicaciones con frameworks modernos.              |
+| Web          | `/dev/web`            | Proyectos de 2025 en adelante.                     |
+| Experimentos | `/dev/experiments`    | Proyectos personales y experimentales.             |
 
 ### Galería y detalle
 

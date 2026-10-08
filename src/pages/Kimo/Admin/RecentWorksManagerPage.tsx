@@ -19,9 +19,10 @@ import multimedia from '../../../data/graphic-design/multimedia.json';
 import packaging from '../../../data/graphic-design/packaging.json';
 import papeleria from '../../../data/graphic-design/papeleria.json';
 import proyectosEspeciales from '../../../data/graphic-design/proyectos-especiales.json';
-import frameworks from '../../../data/development/frameworks.json';
-import vanilla from '../../../data/development/vanilla.json';
-import wordpress from '../../../data/development/wordpress.json';
+import legacy from '../../../data/development/legacy.json';
+import apps from '../../../data/development/apps.json';
+import web from '../../../data/development/web.json';
+import experiments from '../../../data/development/experiments.json';
 
 // Interfaz para proyectos del JSON
 interface ProjectJSON {
@@ -50,9 +51,10 @@ const gdProjects: (ProjectJSON & { type: string; category: string })[] = [
 ];
 
 const devProjects: (ProjectJSON & { type: string; category: string })[] = [
-  ...(frameworks as any[]).map((p: any) => ({ ...p, type: 'dev', category: 'frameworks' })),
-  ...(vanilla as any[]).map((p: any) => ({ ...p, type: 'dev', category: 'vanilla' })),
-  ...(wordpress as any[]).map((p: any) => ({ ...p, type: 'dev', category: 'wordpress' })),
+  ...(legacy as any[]).map((p: any) => ({ ...p, type: 'dev', category: 'legacy' })),
+  ...(apps as any[]).map((p: any) => ({ ...p, type: 'dev', category: 'apps' })),
+  ...(web as any[]).map((p: any) => ({ ...p, type: 'dev', category: 'web' })),
+  ...(experiments as any[]).map((p: any) => ({ ...p, type: 'dev', category: 'experiments' })),
 ];
 /* eslint-enable @typescript-eslint/no-explicit-any */
 

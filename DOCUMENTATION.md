@@ -178,11 +178,12 @@ Muestra proyectos de desarrollo web en 3 categorías. Comparte la misma arquitec
 
 ### Categorías disponibles
 
-| Categoría  | Ruta URL          | JSON fuente     |
-| ---------- | ----------------- | --------------- |
-| Vanilla JS | `/dev/vanilla`    | vanilla.json    |
-| WordPress  | `/dev/wordpress`  | wordpress.json  |
-| Frameworks | `/dev/frameworks` | frameworks.json |
+| Categoría    | Ruta URL              | JSON fuente       |
+| ------------ | --------------------- | ----------------- |
+| Legacy       | `/dev/legacy`         | legacy.json       |
+| Aplicaciones | `/dev/apps`           | apps.json         |
+| Web          | `/dev/web`            | web.json          |
+| Experimentos | `/dev/experiments`    | experiments.json  |
 
 ### Componentes involucrados
 

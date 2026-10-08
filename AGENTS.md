@@ -143,9 +143,16 @@ Servidor Express en `localhost:3001`. Sin base de datos, JSON files como store.
 
 ### Proyectos Dev (`src/data/development/`)
 
-3 archivos: `vanilla.json`, `wordpress.json`, `frameworks.json`
+4 archivos: `legacy.json`, `apps.json`, `web.json`, `experiments.json`
 
 Mismo schema que GD mas `"stack": ["HTML", "CSS", "JS"]`
+
+| Archivo | Seccion | Criterio |
+|---------|---------|----------|
+| `legacy.json` | Legacy | Proyectos hasta 2024 |
+| `apps.json` | Aplicaciones | Frameworks, excepto Portfolio y Cosateca |
+| `web.json` | Web | Proyectos de 2025 en adelante |
+| `experiments.json` | Experimentos | Proyectos experimentales |
 
 ### Kimo (`src/data/kimo/`)
 

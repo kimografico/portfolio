@@ -262,7 +262,7 @@ Al usar `jsvectormap` (una librería de mapas del DOM), hay que mockear la inici
 
 | #   | Descripción                                                            | Tipo     |
 | --- | ---------------------------------------------------------------------- | -------- |
-| 1   | Renderiza las 3 tarjetas de categoría (WordPress, Vanilla, Frameworks) | unitario |
+| 1   | Renderiza las 4 tarjetas de categoría (Legacy, Aplicaciones, Web, Experimentos) | unitario |
 | 2   | La misma lógica de visibilidad del hero que en GraphicDesignHome       | unitario |
 
 ---
@@ -464,7 +464,7 @@ La validación es la primera línea de defensa del backend. Cada función debe p
 | --- | ------------------------------------------------------ |
 | 6   | `'carteleria'` es válida para `'gd'`                   |
 | 7   | `'logotipos'` es válida para `'gd'`                    |
-| 8   | `'frameworks'` es válida para `'dev'`                  |
+| 8   | `'experiments'` es válida para `'dev'`                |
 | 9   | `'carteleria'` no es válida para `'dev'` (lanza error) |
 | 10  | `'invalida'` no es válida para ninguno (lanza error)   |
 
@@ -554,7 +554,7 @@ Las funciones `slugify`, `pad` y `getNextSerial` son puras o casi puras y se pue
 | #   | Descripción                                                                 |
 | --- | --------------------------------------------------------------------------- |
 | 1   | `getFilePath('gd', 'carteleria')` devuelve la ruta correcta                 |
-| 2   | `getFilePath('dev', 'frameworks')` devuelve la ruta correcta                |
+| 2   | `getFilePath('dev', 'experiments')` devuelve la ruta correcta           |
 | 3   | `readJsonFile` lanza error si el archivo no existe                          |
 | 4   | `readJsonFile` devuelve el contenido parseado como objeto                   |
 | 5   | `writeJsonFile` crea el directorio si no existe (mock fs)                   |

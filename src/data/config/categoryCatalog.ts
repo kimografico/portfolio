@@ -9,8 +9,8 @@ import {
   IconLaptop,
   IconPen,
   IconPoster,
-  IconReact,
-  IconWP,
+  IconSave,
+  IconSkate,
 } from '../../components/iconos';
 
 export type CategorySection = 'graphic-design' | 'developer';
@@ -102,31 +102,40 @@ export const GRAPHIC_DESIGN_CATEGORY_CATALOG: CategoryCatalogEntry[] = [
 
 export const DEVELOPER_CATEGORY_CATALOG: CategoryCatalogEntry[] = [
   {
-    key: 'wordpress',
-    slug: 'wordpress',
-    title: 'WordPress',
-    description: 'Webs con CMS WordPress: catálogos, tiendas online y portfolios.',
-    icon: IconWP,
+    key: 'legacy',
+    slug: 'legacy',
+    title: 'Legacy',
+    description: 'Proyectos hasta 2024.',
+    icon: IconSave,
     adminType: 'Desarrollo',
-    adminLabel: 'WordPress',
+    adminLabel: 'Legacy',
   },
   {
-    key: 'vanilla',
-    slug: 'vanilla',
-    title: 'Vanilla',
-    description: 'Webs con HTML, CSS y JavaScript puro, sin frameworks.',
+    key: 'apps',
+    slug: 'apps',
+    title: 'Aplicaciones',
+    description: 'Aplicaciones con frameworks modernos.',
     icon: IconCode,
     adminType: 'Desarrollo',
-    adminLabel: 'Vanilla',
+    adminLabel: 'Aplicaciones',
   },
   {
-    key: 'frameworks',
-    slug: 'frameworks',
-    title: 'Frameworks',
-    description: 'Proyectos con React, Vue u otros frameworks modernos.',
-    icon: IconReact,
+    key: 'web',
+    slug: 'web',
+    title: 'Web',
+    description: 'Proyectos de 2025 en adelante.',
+    icon: IconLaptop,
     adminType: 'Desarrollo',
-    adminLabel: 'Frameworks',
+    adminLabel: 'Web',
+  },
+  {
+    key: 'experiments',
+    slug: 'experiments',
+    title: 'Experimentos',
+    description: 'Proyectos personales y experimentales.',
+    icon: IconSkate,
+    adminType: 'Desarrollo',
+    adminLabel: 'Experimentos',
   },
 ];
 

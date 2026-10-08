@@ -17,7 +17,7 @@ const VALID_CATEGORIES = {
     'papeleria',
     'proyectos-especiales',
   ],
-  dev: ['vanilla', 'wordpress', 'frameworks'],
+  dev: ['legacy', 'apps', 'web', 'experiments'],
 };
 
 /**

@@ -6,9 +6,10 @@ import multimedia from '../../../../data/graphic-design/multimedia.json';
 import packaging from '../../../../data/graphic-design/packaging.json';
 import papeleria from '../../../../data/graphic-design/papeleria.json';
 import proyectosEspeciales from '../../../../data/graphic-design/proyectos-especiales.json';
-import frameworks from '../../../../data/development/frameworks.json';
-import vanilla from '../../../../data/development/vanilla.json';
-import wordpress from '../../../../data/development/wordpress.json';
+import legacy from '../../../../data/development/legacy.json';
+import apps from '../../../../data/development/apps.json';
+import web from '../../../../data/development/web.json';
+import experiments from '../../../../data/development/experiments.json';
 import { processProjectsImages } from '../../../../data/config/imagePathHelper';
 import {
   DEVELOPER_CATEGORY_BY_SLUG,
@@ -49,9 +50,10 @@ const graphicDesignSources = [
 ] as const;
 
 const developerSources = [
-  { data: frameworks as AdminSourceEntry[], slug: 'frameworks' },
-  { data: vanilla as AdminSourceEntry[], slug: 'vanilla' },
-  { data: wordpress as AdminSourceEntry[], slug: 'wordpress' },
+  { data: legacy as AdminSourceEntry[], slug: 'legacy' },
+  { data: apps as AdminSourceEntry[], slug: 'apps' },
+  { data: web as AdminSourceEntry[], slug: 'web' },
+  { data: experiments as AdminSourceEntry[], slug: 'experiments' },
 ] as const;
 
 export const DATA_SOURCES: ReadonlyArray<AdminDataSource> = [

@@ -228,9 +228,10 @@ Los proyectos de desarrollo añaden **`stack`**: un array de strings con las tec
 
 **Desarrollo Web** (`src/data/development/`):
 
-- `vanilla.json` — HTML, CSS y JavaScript puro
-- `wordpress.json` — Proyectos con CMS WordPress
-- `frameworks.json` — React, Vue y otros frameworks
+- `legacy.json` — Proyectos hasta 2024
+- `apps.json` — Aplicaciones con frameworks modernos
+- `web.json` — Proyectos de 2025 en adelante
+- `experiments.json` — Proyectos experimentales
 
 ### `books.json`
 
@@ -295,7 +296,7 @@ Las galerías están configuradas dinámicamente en `src/config/graphicDesignGal
 
 ## 7. Sección pública: Desarrollo Web
 
-Accesible desde `/dev`. Organizada en 3 categorías (WordPress, Vanilla, Frameworks):
+Accesible desde `/dev`. Organizada en 4 categorías (Legacy, Aplicaciones, Web, Experimentos):
 
 - Misma arquitectura que Diseño Gráfico.
 - El detalle de proyecto muestra adicionalmente el **stack tecnológico** si está definido en el JSON.

@@ -1,124 +1,5 @@
 [
   {
-    "id": 270,
-    "date": "2025-05-15 00:00",
-    "title": "El Racó Solidari",
-    "cliente": "Sopra Steria / IES Serpis",
-    "descripcion": "Racó Solidari es una plataforma web sin ánimo de lucro diseñada para transformar el entorno educativo en un ecosistema de ayuda mutua, sostenibilidad y cooperación. Alineada con los Objetivos de Desarrollo Sostenible, esta iniciativa conecta a estudiantes y docentes para compartir recursos de forma altruista, demostrando cómo la tecnología puede fortalecer los lazos humanos y fomentar el consumo responsable dentro de la comunidad.  \n\nEl corazón del proyecto se divide en dos grandes espacios virtuales: la Cosateca, un catálogo interactivo de préstamo y donación de objetos (como libros o material técnico) donde las cosas reciben una segunda oportunidad; y la Tiempoteca, un tablón dinámico enfocado al intercambio de tiempo, donde los propios usuarios proponen y organizan talleres, tutorías de apoyo o actividades de voluntariado.  Para asegurar un entorno seguro y transparente, el acceso está protegido mediante la validación del correo institucional y cuenta con un sistema justo de normas, notificaciones automáticas y gestión de penalizaciones que garantizan el buen uso de los recursos. Nacida del talento de los estudiantes y el respaldo de mentores profesionales, esta red es el ejemplo perfecto de que compartir es construir comunidad.  \n\nDetalles técnicos del proyecto:\nLa plataforma utiliza una arquitectura desacoplada de alta calidad. El front-end está desarrollado con Angular, Angular Material, Sass y Bootstrap, logrando una interfaz moderna, accesible y completamente responsivo. El back-end está sustentado en Spring Boot (Java) para la gestión de la lógica de negocio, persistencia de datos y automatización de correos, documentando sus APIs con Swagger. El desarrollo se coordinó mediante metodologías ágiles (Scrum en Taiga), aplicando de forma estricta principios SOLID, Clean Code, control de versiones con Git, y un flujo de integración continua (GitLab CI/CD) respaldado por pruebas unitarias automatizadas en Jest y Husky.",
-    "visible": true,
-    "imagenes": [
-      {
-        "image": "el-raco-solidari001.jpg",
-        "label": "Cosateca"
-      },
-      {
-        "image": "el-raco-solidari002.jpg",
-        "label": "Tiempoteca"
-      },
-      {
-        "image": "el-raco-solidari003.jpg",
-        "label": "Cosateca - Zona Admin"
-      },
-      {
-        "image": "el-raco-solidari004.jpg",
-        "label": "Menú"
-      },
-      {
-        "image": "el-raco-solidari005.png",
-        "label": "Login"
-      },
-      {
-        "image": "el-raco-solidari006.png",
-        "label": "Nuevo registro"
-      },
-      {
-        "image": "el-raco-solidari008.png",
-        "label": "Recuperación de contraseña"
-      },
-      {
-        "image": "el-raco-solidari007.png",
-        "label": "Recuperación de contraseña"
-      },
-      {
-        "image": "el-raco-solidari009.jpg",
-        "label": "Cosateca"
-      },
-      {
-        "image": "el-raco-solidari010.png",
-        "label": "Detalle de Item en Cosateca"
-      },
-      {
-        "image": "el-raco-solidari011.jpg",
-        "label": "Tiempoteca"
-      },
-      {
-        "image": "el-raco-solidari012.png",
-        "label": "Zona Admin de Tiempoteca"
-      },
-      {
-        "image": "el-raco-solidari013.png",
-        "label": "Confirmar asistencia a evento"
-      },
-      {
-        "image": "el-raco-solidari014.png",
-        "label": "Administrar Solicitudes"
-      },
-      {
-        "image": "el-raco-solidari015.png",
-        "label": "Penalizaciones"
-      },
-      {
-        "image": "el-raco-solidari016.png",
-        "label": "Penalizaciones"
-      },
-      {
-        "image": "el-raco-solidari017.png",
-        "label": "Zona Usuario"
-      },
-      {
-        "image": "el-raco-solidari018.png",
-        "label": "Historico de solicitudes de un usuario"
-      },
-      {
-        "image": "el-raco-solidari019.png",
-        "label": "Editar Perfil"
-      },
-      {
-        "image": "el-raco-solidari020.png",
-        "label": "Pipeline de Gitlab (CI/CD)"
-      },
-      {
-        "image": "el-raco-solidari022.png",
-        "label": ""
-      },
-      {
-        "image": "el-raco-solidari021.png",
-        "label": ""
-      },
-      {
-        "image": "el-raco-solidari023.png",
-        "label": ""
-      },
-      {
-        "image": "el-raco-solidari026.png",
-        "label": ""
-      },
-      {
-        "image": "el-raco-solidari024.png",
-        "label": ""
-      },
-      {
-        "image": "el-raco-solidari025.png",
-        "label": ""
-      }
-    ],
-    "videos": [],
-    "extras": [],
-    "stack": ["Angular", "TypeScript", "HTML", "CSS"],
-    "type": "dev",
-    "category": "frameworks"
-  },
-  {
     "id": 303,
     "date": "2026-06-01 00:00",
     "title": "Doubloon Clicker",
@@ -203,7 +84,7 @@
     "extras": ["Grabar un video - https://doubloon-clicker.kimo-grafico.workers.dev/"],
     "stack": ["React", "Vite", "TypeScript", "HTML", "CSS", "Storybook", "Zustand"],
     "type": "dev",
-    "category": "frameworks"
+    "category": "apps"
   },
   {
     "id": 304,
@@ -302,26 +183,7 @@
     "extras": ["Incluir imágenes y descripción - https://maexamenes.pages.dev/?access=ma3x4m3n3s"],
     "stack": ["HTML", "CSS", "JavaScript", "Vite", "Node.js", "Google Ai Studio"],
     "type": "dev",
-    "category": "frameworks"
-  },
-  {
-    "id": 305,
-    "date": "2026-04-24 00:00",
-    "title": "Portfolio",
-    "cliente": "Kimo",
-    "descripcion": "",
-    "visible": true,
-    "imagenes": [
-      {
-        "image": "portfolio001.jpg",
-        "label": ""
-      }
-    ],
-    "videos": [],
-    "extras": ["Imagenes y Descripción"],
-    "stack": ["HTML", "CSS", "TypeScript", "React", "Node.js", "Vite", "Storybook"],
-    "type": "dev",
-    "category": "frameworks"
+    "category": "apps"
   },
   {
     "id": 306,
@@ -384,58 +246,7 @@
     "extras": ["Imagenes y Descripción - https://kimografico.com/eustaquio-bot/chat/"],
     "stack": ["Google AI Studio", "Opencode", "HTML", "CSS", "JavaScript", "Vite", "Node.js"],
     "type": "dev",
-    "category": "frameworks"
-  },
-  {
-    "id": 307,
-    "date": "2018-05-08 00:00",
-    "title": "Kimo Gym",
-    "cliente": "Kimo",
-    "descripcion": "Primera app móvil que realicé, mediante programación por bloques en MIT APP Inventor.\nSe trata de un registro de ejercicios de gimnasio gamificado, con medias mensuales, frases motivadoras, posibilidad de exportar historial a texto, y varias estadísticas.",
-    "visible": true,
-    "imagenes": [
-      {
-        "image": "kimo-gym001.jpg",
-        "label": ""
-      },
-      {
-        "image": "kimo-gym002.jpg",
-        "label": ""
-      },
-      {
-        "image": "kimo-gym003.jpg",
-        "label": "Bloques de MIT APP Inventor"
-      },
-      {
-        "image": "kimo-gym004.jpg",
-        "label": "Comienzo"
-      },
-      {
-        "image": "kimo-gym005.jpg",
-        "label": "Tabla vacía"
-      },
-      {
-        "image": "kimo-gym006.jpg",
-        "label": "Tabla llena"
-      },
-      {
-        "image": "kimo-gym007.jpg",
-        "label": "Gráfica mensual"
-      },
-      {
-        "image": "kimo-gym008.jpg",
-        "label": "Añadir registro manualmente"
-      },
-      {
-        "image": "kimo-gym009.jpg",
-        "label": "Input Fecha"
-      }
-    ],
-    "videos": [],
-    "extras": [],
-    "stack": ["MIT App Inventor", "TinyDB"],
-    "type": "dev",
-    "category": "frameworks"
+    "category": "apps"
   },
   {
     "id": 308,
@@ -486,7 +297,7 @@
     "extras": [],
     "stack": ["MIT App Inventor"],
     "type": "dev",
-    "category": "frameworks"
+    "category": "apps"
   },
   {
     "id": 309,
@@ -514,6 +325,6 @@
       "Storybook"
     ],
     "type": "dev",
-    "category": "frameworks"
+    "category": "apps"
   }
 ]

@@ -1,9 +1,10 @@
 import { useParams } from 'react-router-dom';
 import ProjectDetailPage from '../../components/compositions/ProjectDetailPage';
 import UIButton from '../../components/ui/UIButton';
-import frameworksData from '../../data/development/frameworks.json';
-import vanillaData from '../../data/development/vanilla.json';
-import wordpressData from '../../data/development/wordpress.json';
+import legacyData from '../../data/development/legacy.json';
+import appsData from '../../data/development/apps.json';
+import webData from '../../data/development/web.json';
+import experimentsData from '../../data/development/experiments.json';
 import { buildDeveloperImagePath } from '../../data/config/imagePathHelper';
 import { useProjectDetail } from '../../hooks/useProjectDetail';
 import type { WebProject } from '../../interfaces/developer';
@@ -12,9 +13,10 @@ import { APP_BASENAME } from '../../data/config/app';
 
 // Mapeo de parent a datos y etiqueta
 const projectDataMap: Record<string, { data: WebProject[]; label: string }> = {
-  frameworks: { data: frameworksData as WebProject[], label: 'Frameworks' },
-  vanilla: { data: vanillaData as WebProject[], label: 'Vanilla' },
-  wordpress: { data: wordpressData as WebProject[], label: 'WordPress' },
+  legacy: { data: legacyData as WebProject[], label: 'Legacy' },
+  apps: { data: appsData as WebProject[], label: 'Aplicaciones' },
+  web: { data: webData as WebProject[], label: 'Web' },
+  experiments: { data: experimentsData as WebProject[], label: 'Experimentos' },
 };
 
 function getYear(date: string): string {

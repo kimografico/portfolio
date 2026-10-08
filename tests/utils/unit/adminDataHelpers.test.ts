@@ -27,7 +27,7 @@ describe('admin data helpers', () => {
     const graphicCategories = getCategoryOptions('Diseño Gráfico');
     const clientes = getClienteOptions('Desarrollo', '');
 
-    expect(developmentCategories).toContain('WordPress');
+    expect(developmentCategories).toContain('Web');
     expect(graphicCategories).toContain('Editorial');
     expect(clientes).toContain('OTROS');
     expect(clientes.filter((cliente) => cliente !== 'OTROS')).toEqual(
@@ -90,8 +90,8 @@ describe('admin data helpers', () => {
 
   it('construye rutas de detalle para cada tipo de proyecto', () => {
     // La navegación del admin se apoya en estas rutas derivadas del catálogo.
-    expect(buildProjectDetailPath({ id: 12, type: 'Desarrollo', category: 'WordPress' })).toBe(
-      '/dev/wordpress/12',
+    expect(buildProjectDetailPath({ id: 12, type: 'Desarrollo', category: 'Web' })).toBe(
+      '/dev/web/12',
     );
     expect(buildProjectDetailPath({ id: 34, type: 'Diseño Gráfico', category: 'Editorial' })).toBe(
       '/graphic-design/editorial/34',

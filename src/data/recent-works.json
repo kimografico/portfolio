@@ -2,26 +2,26 @@
   {
     "num": "01",
     "title": "El Racó Solidari",
-    "tipo": "Frameworks",
+    "tipo": "Web",
     "year": "2025",
     "category": "Developer",
-    "href": "/dev/frameworks/270"
+    "href": "/dev/web/270"
   },
   {
     "num": "02",
     "title": "Web Gaia Climb",
-    "tipo": "Wordpress",
+    "tipo": "Legacy",
     "year": "2022",
     "category": "Developer",
-    "href": "/dev/wordpress/261"
+    "href": "/dev/legacy/261"
   },
   {
     "num": "03",
     "title": "Web Colordmar",
-    "tipo": "Wordpress",
+    "tipo": "Legacy",
     "year": "2020",
     "category": "Developer",
-    "href": "/dev/wordpress/213"
+    "href": "/dev/legacy/213"
   },
   {
     "num": "04",

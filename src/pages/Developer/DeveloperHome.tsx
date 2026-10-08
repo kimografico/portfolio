@@ -7,8 +7,9 @@ import { DEVELOPER_CATEGORIES } from '../../data/config/categoryCatalog';
  * Página de inicio de la sección de Desarrollo Web.
  * Usa CategoryHomeTemplate para unificar la lógica de páginas de categoría.
  *
- * Nota: gridCols es 'grid-cols-1 sm:grid-cols-3' porque Developer tiene solo 3 categorías
- * (frameworks, vanilla, wordpress) y queda mejor en una sola fila en desktop.
+ * Nota: gridCols es 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-4' porque Developer
+ * tiene 4 categorías (legacy, apps, web, experiments) y así caben en una sola
+ * fila en desktop.
  */
 export default function DeveloperHome() {
   return (
@@ -26,19 +27,19 @@ export default function DeveloperHome() {
           </>
         ),
         description:
-          'Creo soluciones web modernas, escalables y performantes. Especializado en React, vanilla JavaScript y WordPress. Cada proyecto es diseñado pensando en experiencia de usuario, accesibilidad y calidad de código.',
+          'Creo webs, aplicaciones y experiencias digitales. De lo clásico en WordPress y JavaScript a lo moderno con frameworks, pasando por experimentos con nuevas tecnologías. Cada proyecto es diseñado pensando en experiencia de usuario, accesibilidad y calidad de código.',
         image: 'images/ui/K3.png',
         separatorColor: 'var(--color-dev)',
       }}
       categoryHero={{
         title: 'Desarrollo Web',
         description:
-          'Proyectos de desarrollo web: WordPress, JavaScript vanilla y frameworks modernos. Cada sección muestra ejemplos reales con capturas, tecnologías utilizadas y descripción del proyecto.',
+          'Proyectos de desarrollo web agrupados por época y tecnología: webs heredadas, aplicaciones modernas, desarrollos recientes y experimentos. Cada sección muestra ejemplos reales con capturas, tecnologías utilizadas y descripción del proyecto.',
         dataId: 'developer-hero',
       }}
       categories={DEVELOPER_CATEGORIES}
       categoriesSectionDataId="developer-categories"
-      gridCols="grid-cols-1 sm:grid-cols-3"
+      gridCols="grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
     />
   );
 }

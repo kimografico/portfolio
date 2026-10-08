@@ -55,9 +55,10 @@ const CATEGORIES_BY_TYPE: Record<string, { label: string; value: string }[]> = {
     { value: 'proyectos-especiales', label: 'Proyectos especiales' },
   ],
   dev: [
-    { value: 'vanilla', label: 'Vanilla' },
-    { value: 'wordpress', label: 'WordPress' },
-    { value: 'frameworks', label: 'Frameworks' },
+    { value: 'legacy', label: 'Legacy' },
+    { value: 'apps', label: 'Aplicaciones' },
+    { value: 'web', label: 'Web' },
+    { value: 'experiments', label: 'Experimentos' },
   ],
 };
 

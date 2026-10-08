@@ -58,7 +58,7 @@ src/
 │
 ├── data/                   # Datos estáticos en JSON (importados directamente)
 │   ├── config/             # Configuración de la app, catálogo de categorías, helpers de rutas
-│   ├── development/        # JSONs de proyectos web (vanilla, wordpress, frameworks)
+│   ├── development/        # JSONs de proyectos web (legacy, apps, web, experiments)
 │   ├── graphic-design/     # JSONs de proyectos de diseño (8 categorías)
 │   ├── kimo/               # JSONs del espacio personal (books, illustrations, places)
 │   ├── carousel.json       # Imágenes del carrusel de la home

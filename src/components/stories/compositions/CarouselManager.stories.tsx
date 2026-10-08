@@ -46,7 +46,7 @@ export const ThreeExamples: Story = {
         alt: 'Baraja LBG',
       },
       {
-        src: '/images/portfolio/web/wordpress/colordmar001.jpg',
+        src: '/images/portfolio/web/web/colordmar001.jpg',
         alt: 'Web ColorDeMar',
       },
     ],

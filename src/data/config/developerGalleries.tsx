@@ -11,9 +11,10 @@ import type { ComponentType } from 'react';
 import type { IconProps } from '../../interfaces/ui';
 import type { GalleryRouteConfig } from './graphicDesignGalleries';
 
-import wordpressData from '../development/wordpress.json';
-import vanillaData from '../development/vanilla.json';
-import frameworksData from '../development/frameworks.json';
+import legacyData from '../development/legacy.json';
+import appsData from '../development/apps.json';
+import webData from '../development/web.json';
+import experimentsData from '../development/experiments.json';
 import { processProjectsImages, buildDeveloperImagePath } from './imagePathHelper';
 import { DEVELOPER_CATEGORY_BY_SLUG, type CategoryCatalogEntry } from './categoryCatalog';
 
@@ -30,6 +31,9 @@ import {
   LogoPrestashop,
   LogoFlash,
   IconCode,
+  IconSave,
+  IconLaptop,
+  IconSkate,
   LogoAjax,
   IconTPV,
 } from '../../components/iconos';
@@ -66,31 +70,40 @@ interface GalleryDefinition {
 
 const DEVELOPER_GALLERY_DEFINITIONS: GalleryDefinition[] = [
   {
-    slug: 'wordpress',
-    projects: wordpressData as WebProject[],
-    icon: LogoWordpress,
-    color: 'blue',
-    opacity: 0.075,
-    emptyStateDescription:
-      'Esta sección está en preparación. Pronto encontrarás aquí los proyectos desarrollados con WordPress.',
-  },
-  {
-    slug: 'vanilla',
-    projects: vanillaData as WebProject[],
-    icon: IconCode,
+    slug: 'legacy',
+    projects: legacyData as WebProject[],
+    icon: IconSave,
     color: 'yellow',
     opacity: 0.15,
     emptyStateDescription:
-      'Esta sección está en preparación. Pronto encontrarás aquí los proyectos en Vanilla.',
+      'Esta sección está en preparación. Pronto encontrarás aquí los proyectos hasta 2024.',
   },
   {
-    slug: 'frameworks',
-    projects: frameworksData as WebProject[],
-    icon: LogoReact,
+    slug: 'apps',
+    projects: appsData as WebProject[],
+    icon: IconCode,
     color: 'green',
     opacity: 0.1,
     emptyStateDescription:
-      'Esta sección está en preparación. Pronto encontrarás aquí los proyectos con frameworks modernos.',
+      'Esta sección está en preparación. Pronto encontrarás aquí las aplicaciones con frameworks modernos.',
+  },
+  {
+    slug: 'web',
+    projects: webData as WebProject[],
+    icon: IconLaptop,
+    color: 'blue',
+    opacity: 0.075,
+    emptyStateDescription:
+      'Esta sección está en preparación. Pronto encontrarás aquí los proyectos de 2025 en adelante.',
+  },
+  {
+    slug: 'experiments',
+    projects: experimentsData as WebProject[],
+    icon: IconSkate,
+    color: 'orange',
+    opacity: 0.1,
+    emptyStateDescription:
+      'Esta sección está en preparación. Pronto encontrarás aquí los proyectos experimentales.',
   },
 ];
 

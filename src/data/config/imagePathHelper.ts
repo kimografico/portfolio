@@ -43,7 +43,7 @@ export const buildGraphicDesignImagePath = (
 
 /**
  * Construye la ruta completa de una imagen de proyecto de desarrollo
- * @param category - Categoría del proyecto (vanilla, wordpress, frameworks)
+ * @param category - Categoría del proyecto (legacy, apps, web, experiments)
  * @param filename - Solo nombre del archivo
  * @returns Ruta completa para usar en <img src>
  */

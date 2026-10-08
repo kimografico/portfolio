@@ -52,10 +52,10 @@ describe('public routes integration', () => {
     );
 
     await waitFor(() => expect(container.querySelector('[data-id="developer-home"]')).toBeTruthy());
-    fireEvent.click(container.querySelector('[data-id="category-card-wordpress"]') as HTMLElement);
+    fireEvent.click(container.querySelector('[data-id="category-card-legacy"]') as HTMLElement);
 
-    await waitFor(() => expect(container.querySelector('[data-id="wordpress-page"]')).toBeTruthy());
-    expect(screen.getByRole('heading', { name: /wordpress/i })).toBeInTheDocument();
+    await waitFor(() => expect(container.querySelector('[data-id="legacy-page"]')).toBeTruthy());
+    expect(screen.getByRole('heading', { name: /legacy/i })).toBeInTheDocument();
   });
 
   it('muestra la página 404 y permite volver al inicio', async () => {

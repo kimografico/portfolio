@@ -50,9 +50,10 @@ src/data/
 │   ├── papeleria.json
 │   └── proyectos-especiales.json
 ├── development/
-│   ├── vanilla.json
-│   ├── wordpress.json
-│   └── frameworks.json
+│   ├── legacy.json
+│   ├── apps.json
+│   ├── web.json
+│   └── experiments.json
 └── ...
 ```
 
@@ -105,7 +106,7 @@ Devuelve todos los proyectos de todos los JSONs.
 **Query params:**
 
 - `type`: `gd` (graphic-design) o `dev` (development) — filtro opcional
-- `category`: Nombre del JSON (ej: `carteleria`, `vanilla`)
+- `category`: Nombre del JSON (ej: `carteleria`, `legacy`)
 - `visible`: `true` | `false` | `all` (por defecto: `all`)
 
 **Ejemplos:**
@@ -113,7 +114,7 @@ Devuelve todos los proyectos de todos los JSONs.
 ```
 GET /api/projects
 GET /api/projects?type=gd&visible=true
-GET /api/projects?category=vanilla
+GET /api/projects?category=legacy
 ```
 
 **Response (200 OK):**
@@ -366,7 +367,7 @@ Devuelve todas las categorías disponibles (nombres de archivos JSON).
       "papeleria",
       "proyectos-especiales"
     ],
-    "dev": ["vanilla", "wordpress", "frameworks"]
+    "dev": ["legacy", "apps", "web", "experiments"]
   }
 }
 ```

@@ -12,8 +12,8 @@ describe('imagePathHelper', () => {
   it('adapta rutas antiguas al basename actual de la app', () => {
     // El helper mantiene compatibilidad con JSON antiguos que aún usan /portfolio/ hardcodeado.
     // En la raíz del dominio lo sustituye por '/' para que las imágenes carguen igual.
-    expect(processImagePath('/portfolio/images/portfolio/web/vanilla/test.jpg')).toBe(
-      '/images/portfolio/web/vanilla/test.jpg',
+    expect(processImagePath('/portfolio/images/portfolio/web/legacy/test.jpg')).toBe(
+      '/images/portfolio/web/legacy/test.jpg',
     );
   });
 
@@ -22,9 +22,7 @@ describe('imagePathHelper', () => {
     expect(buildGraphicDesignImagePath('editorial', 'cover.jpg')).toBe(
       '/images/portfolio/design/editorial/cover.jpg',
     );
-    expect(buildDeveloperImagePath('wordpress', 'home.jpg')).toBe(
-      '/images/portfolio/web/wordpress/home.jpg',
-    );
+    expect(buildDeveloperImagePath('web', 'home.jpg')).toBe('/images/portfolio/web/web/home.jpg');
   });
 
   it('procesa objetos y colecciones sin tocar campos que no son imagen', () => {

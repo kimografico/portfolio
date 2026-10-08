@@ -94,13 +94,13 @@ Gestión CRUD de proyectos del portfolio (diseño gráfico y desarrollo web).
 | DELETE | `/api/projects/:id`        | Sí   | Elimina un proyecto.                                                                                                            |
 | PATCH  | `/api/projects/visibility` | Sí   | Actualiza visibilidad en lote. Body: `{ ids: number[], visible: boolean }`.                                                     |
 
-**Almacenamiento**: cada categoría tiene su propio JSON en `src/data/graphic-design/` o `src/data/development/` (ej: `editorial.json`, `wordpress.json`).
+**Almacenamiento**: cada categoría tiene su propio JSON en `src/data/graphic-design/` o `src/data/development/` (ej: `editorial.json`, `legacy.json`).
 
 **Validación** (`validation.cjs`):
 
 - Tipos válidos: `gd`, `dev`.
 - Categorías de diseño: `logotipos`, `editorial`, `etiquetas`, `papeleria`, `carteleria`, `packaging`, `proyectos-especiales`, `multimedia`.
-- Categorías de desarrollo: `vanilla`, `wordpress`, `frameworks`.
+- Categorías de desarrollo: `legacy`, `apps`, `web`, `experiments`.
 - Campos obligatorios en creación: `title`, `type`, `category`.
 
 ---

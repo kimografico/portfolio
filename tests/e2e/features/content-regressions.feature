@@ -8,7 +8,7 @@ Feature: Regresiones de contenido, imágenes y tablas
 
     Examples:
       | ruta                  | prefijo      |
-      | /dev/wordpress        | wordpress    |
+      | /dev/legacy           | legacy       |
       | /graphic-design/logotipos | logotipos |
 
   @books-gallery-fallback-modal

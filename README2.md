@@ -14,7 +14,7 @@
 ## ✨ Características
 
 - Portfolio de **diseño gráfico** con 8 categorías (logotipos, papelería, cartelería, multimedia, packaging, etiquetas, editorial, proyectos especiales)
-- Portfolio de **desarrollo web** con 3 categorías (Vanilla JS, WordPress, Frameworks)
+- Portfolio de **desarrollo web** con 4 categorías (Legacy, Aplicaciones, Web, Experimentos)
 - Sección privada `/kimo`: biblioteca de libros, lugares visitados con mapa interactivo, ilustraciones y gestión de CV
 - **Modo claro/oscuro** persistido en `localStorage`, sincronizado globalmente sin Context
 - **Backend Express** local para CRUD de proyectos y subida de imágenes
