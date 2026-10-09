@@ -82,7 +82,7 @@
     ],
     "videos": [],
     "extras": ["Grabar un video - https://doubloon-clicker.kimo-grafico.workers.dev/"],
-    "stack": ["React", "Vite", "TypeScript", "HTML", "CSS", "Storybook", "Zustand"],
+    "stack": ["Copilot", "TypeScript", "React", "Vite", "Storybook", "Zustand"],
     "type": "dev",
     "category": "apps"
   },
@@ -181,7 +181,7 @@
     ],
     "videos": [],
     "extras": ["Incluir imágenes y descripción - https://maexamenes.pages.dev/?access=ma3x4m3n3s"],
-    "stack": ["HTML", "CSS", "JavaScript", "Vite", "Node.js", "Google Ai Studio"],
+    "stack": ["TypeScript", "Vite", "Node.js", "AI Studio"],
     "type": "dev",
     "category": "apps"
   },
@@ -244,7 +244,7 @@
     ],
     "videos": [],
     "extras": ["Imagenes y Descripción - https://kimografico.com/eustaquio-bot/chat/"],
-    "stack": ["Google AI Studio", "Opencode", "HTML", "CSS", "JavaScript", "Vite", "Node.js"],
+    "stack": ["TypeScript", "AI Studio", "Opencode", "Vite", "Node.js"],
     "type": "dev",
     "category": "apps"
   },
@@ -295,14 +295,14 @@
     ],
     "videos": [],
     "extras": [],
-    "stack": ["MIT App Inventor"],
+    "stack": ["MIT App Inventor", "TinyDB"],
     "type": "dev",
     "category": "apps"
   },
   {
     "id": 309,
     "date": "2026-06-24 00:00",
-    "title": "Kimo Gym v2",
+    "title": "Kimo Gym 2",
     "cliente": "Kimo",
     "descripcion": "¿Cuantas flexiones has hecho hoy? ¿Y esta semana? ¿Llevas cuenta de tus dominadas o simplemente vas al gym \"y ya verás\"? Kimo GYM nació para resolver un problema que todos los que entrenamos conocemos: el caos de no saber realmente cuánto estamos progresando. Con un diseño oscuro y minimalista pensado para usarlo entre serie y serie, esta app te permite registrar tus repeticiones de flexiones, dominadas, pesas y abdominales en un segundo. Un toque, un swipe, y listo. Sin excusas, sin complicaciones. Solo tú y tus números.\n\nPero Kimo GYM no es solo un contador. Es un sistema completo que te empuja a mejorar cada día. Cada ejercicio suma puntos, y tu puntuación se traduce en estrellas que reflejan tu esfuerzo real de los últimos 30 días. ¿Bajo en estrellas? La app te lo dice con colores y tendencias. ¿Necesitas un descanso? Un temporizador de 90 segundos se activa automáticamente tras cada serie. Gráficas de esfuerzo diario, medias de rendimiento, citas motivacionales que aparecen cuando menos lo esperas... todo está diseñado para que entres, registres y salgas sintiéndote un poco mejor de lo que entraste. Tu cuerpo lleva la cuenta. Kimo GYM la pone en negro y blanco.\n\nDisponible como Progressive Web App, funciona desde el navegador de tu móvil sin necesidad de instalar nada. Añádela a tu pantalla de inicio y tendrás una experiencia nativa con vibración háptica, sonidos de retroalimentación y navegación por gestos (swipe para cambiar de ejercicio). Tus datos se guardan localmente en tu dispositivo: privacidad total, servidores cero. Ya sea que estés empezando tu primer mes de entrenamiento o llevas años midiendo cada repetición, Kimo GYM se adapta a tu ritmo. Empieza hoy. Mañana tu yo del pasado te lo agradecerá.",
     "visible": true,
@@ -314,17 +314,106 @@
     ],
     "videos": [],
     "extras": ["descripcion y fotos - https://kimo-gym-2.kimo-grafico.workers.dev/"],
-    "stack": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "TypeScript",
-      "React",
-      "Vite",
-      "Google AI Studio",
-      "Storybook"
-    ],
+    "stack": ["TypeScript", "React", "Vite", "AI Studio", "Storybook"],
     "type": "dev",
     "category": "apps"
+  },
+  {
+    "id": 310,
+    "date": "2018-05-09 00:00",
+    "title": "Kimo Gym",
+    "cliente": "Kimo",
+    "descripcion": "Aplicación para seguir rutinas de ejercicio, generando estadísticas. La imagen cambia según la media, aportando gamificación a la experiencia.",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "kimo-gym001.jpg",
+        "label": "1"
+      },
+      {
+        "image": "kimo-gym002.jpg",
+        "label": "2"
+      },
+      {
+        "image": "kimo-gym003.jpg",
+        "label": "3"
+      },
+      {
+        "image": "kimo-gym004.jpg",
+        "label": "Screenshot_2026-06-24-23-01-56-728_appinventor.ai_kimo_grafico.KimoGYM_x4"
+      },
+      {
+        "image": "kimo-gym005.jpg",
+        "label": "Screenshot_2026-06-24-23-02-08-819_appinventor.ai_kimo_grafico.KimoGYM_x4"
+      },
+      {
+        "image": "kimo-gym006.jpg",
+        "label": "Screenshot_2026-06-24-23-02-23-604_appinventor.ai_kimo_grafico.KimoGYM_x4"
+      },
+      {
+        "image": "kimo-gym007.jpg",
+        "label": "Screenshot_2026-06-24-23-02-31-632_appinventor.ai_kimo_grafico.KimoGYM_x4"
+      },
+      {
+        "image": "kimo-gym008.jpg",
+        "label": "Screenshot_2026-06-24-23-02-47-253_appinventor.ai_kimo_grafico.KimoGYM_x4"
+      },
+      {
+        "image": "kimo-gym009.jpg",
+        "label": "Screenshot_2026-06-24-23-03-17-194_appinventor.ai_kimo_grafico.KimoGYM_x4"
+      },
+      {
+        "image": "kimo-gym010.jpg",
+        "label": "Screenshot_2026-06-24-23-03-40-130_appinventor.ai_kimo_grafico.KimoGYM_x4"
+      },
+      {
+        "image": "kimo-gym011.jpg",
+        "label": "Screenshot_2026-06-24-23-04-02-664_appinventor.ai_kimo_grafico.KimoGYM_x4"
+      },
+      {
+        "image": "kimo-gym012.jpg",
+        "label": "Screenshot_2026-06-24-23-04-07-723_appinventor.ai_kimo_grafico.KimoGYM_x4"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "stack": ["MIT App Inventor", "TinyDB"],
+    "type": "dev",
+    "category": "apps"
+  },
+  {
+    "id": 312,
+    "date": "2026-07-22 00:00",
+    "title": "Gestor de Bonos",
+    "cliente": "Avant i Boga",
+    "descripcion": "",
+    "visible": false,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["Faltan cosas"],
+    "stack": ["TypeScript", "AI Studio", "Opencode", "Node.js", "Vite"],
+    "type": "dev",
+    "category": "apps"
+  },
+  {
+    "id": 314,
+    "date": "2026-06-27 00:00",
+    "title": "Tabata",
+    "cliente": "Vuit Climbing Club",
+    "descripcion": "",
+    "visible": false,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["Faltan cosas"],
+    "stack": [
+      "TypeScript",
+      "AI Studio",
+      "Opencode",
+      "Node.js",
+      "Vite",
+      "Zustand",
+      "Storybook",
+      "Capacitor"
+    ]
   }
 ]

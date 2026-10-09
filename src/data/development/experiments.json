@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": 313,
+    "date": "2026-08-03 00:00",
+    "title": "Conversor de fechas",
+    "cliente": "BBVA",
+    "descripcion": "",
+    "visible": false,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["Faltan cosas"],
+    "stack": ["AI Studio", "TypeScript", "Node.js", "Vite"]
+  },
+  {
+    "id": 315,
+    "date": "2026-10-07 00:00",
+    "title": "Web Cloner",
+    "cliente": "Kimo",
+    "descripcion": "",
+    "visible": false,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["Faltan cosas"],
+    "stack": ["JavaScript", "Node.js", "Electron"]
+  }
+]

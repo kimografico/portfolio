@@ -87,14 +87,14 @@ export const ProjectCard = <T extends BaseProject>({
   return (
     <Link
       to={to}
-      className="group flex flex-col bg-surface rounded-xl overflow-hidden border border-border hover:shadow-lg transition-shadow focus:outline-none focus:ring-2 focus:ring-primary"
+      className="group relative flex flex-col bg-surface rounded-xl border border-border hover:shadow-lg hover:z-10 focus-within:z-10 transition-shadow focus:outline-none focus:ring-2 focus:ring-primary"
       data-id={dataId}
       tabIndex={0}
       data-id-link={dataId}
     >
       {/* Thumbnail */}
       <div
-        className={`overflow-hidden flex items-center justify-center bg-gray-100 ${
+        className={`overflow-hidden rounded-t-xl flex items-center justify-center bg-gray-100 ${
           widescreen ? 'aspect-video' : 'aspect-[4/3]'
         }`}
       >
@@ -139,7 +139,7 @@ export const ProjectCard = <T extends BaseProject>({
                   />
                   <span
                     role="tooltip"
-                    className="pointer-events-none absolute bottom-full left-1/2 z-20 mb-1 -translate-x-1/2 whitespace-nowrap rounded-md bg-ink px-2 py-0.5 text-[10px] font-medium text-surface opacity-0 shadow-md transition-opacity duration-150 group-hover/icon:opacity-100"
+                    className="pointer-events-none absolute left-full top-1/2 z-20 ml-1.5 -translate-y-1/2 whitespace-nowrap rounded-md border border-border bg-surface px-2.5 py-1 text-xs font-medium text-ink opacity-0 shadow-md transition-opacity duration-150 group-hover/icon:opacity-100"
                   >
                     {tech}
                   </span>

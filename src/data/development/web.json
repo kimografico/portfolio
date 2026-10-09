@@ -114,7 +114,7 @@
     ],
     "videos": [],
     "extras": [],
-    "stack": ["Angular", "TypeScript", "HTML", "CSS"],
+    "stack": ["Angular", "TypeScript"],
     "type": "dev",
     "category": "web"
   },
@@ -133,7 +133,21 @@
     ],
     "videos": [],
     "extras": ["Imagenes y Descripción"],
-    "stack": ["HTML", "CSS", "TypeScript", "React", "Node.js", "Vite", "Storybook"],
+    "stack": ["TypeScript", "React", "Node.js", "Vite", "Storybook"],
+    "type": "dev",
+    "category": "web"
+  },
+  {
+    "id": 311,
+    "date": "2026-09-02 00:00",
+    "title": "Bumfest Tiana 2026",
+    "cliente": "2LB Produccions & Ajuntament de Tiana",
+    "descripcion": "",
+    "visible": false,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["Faltan cosas"],
+    "stack": ["AI Studio", "Opencode", "React", "Node.js", "Vite", "TypeScript"],
     "type": "dev",
     "category": "web"
   }
