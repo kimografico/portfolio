@@ -123,7 +123,7 @@
     "date": "2026-04-24 00:00",
     "title": "Portfolio",
     "cliente": "Kimo",
-    "descripcion": "",
+    "descripcion": "Un cambio de etapa pedía a gritos un cambio de casa. Decidí jubilar mi antiguo portfolio en WordPress para construir desde cero esta Single Page Application, concebida no solo como escaparate de mi trabajo de diseño y desarrollo, sino como el entorno perfecto para aplicar buenas prácticas y afianzar conceptos de programación.\n\nEl frontend está desarrollado con React, TypeScript, Vite y Tailwind CSS. Para la gestión de datos no utilizo una base de datos externa: toda la información reside en archivos JSON estáticos que administro desde un espacio privado gracias a un backend ligero en Express/Node.js en local. Además, el sitio incluye un sistema de temas claro/oscuro sincronizado, componentes aislados con Storybook y tests con Vitest, todo alojado en GitHub Pages con dominio propio.\n\nUn portfolio rápido, amigable y hecho a mi medida para seguir compartiendo cada nueva aplicación o diseño.",
     "visible": true,
     "imagenes": [
       {
@@ -142,7 +142,7 @@
     "date": "2026-09-02 00:00",
     "title": "Bumfest Tiana 2026",
     "cliente": "2LB Produccions & Ajuntament de Tiana",
-    "descripcion": "",
+    "descripcion": "Página web oficial para Bum Tiana Fest, un festival dedicado a la crianza y la primera infancia celebrado en Tiana (Barcelona). Concebí este sitio informativo como un punto de encuentro ágil para familias y visitantes, permitiendo consultar la programación organizada por categorías, explorar las actividades a través de un timeline visual con horarios, visualizar a los patrocinadores en un carrusel dinámico y acceder a la reserva de plazas en talleres mediante formularios externos. Además, cuidé especialmente la experiencia de usuario enlazando las distintas ubicaciones del festival directamente con Google Maps para facilitar la llegada y el desplazamiento durante la jornada.\n\nEn el apartado técnico, la web está desarrollada con React, Vite y Tailwind CSS. Con un planteamiento mobile-first pensado para una navegación cómoda desde el teléfono móvil durante el evento, estructuré el proyecto mediante una arquitectura de componentes modulares documentados en Storybook. Asimismo, presté especial atención al diseño inclusivo cumpliendo con las pautas de accesibilidad WCAG 2.1 AA.\n\nUn sitio web amigable, accesible y muy práctico, pensado para guiar a las familias antes y durante el festival.",
     "visible": false,
     "imagenes": [],
     "videos": [],

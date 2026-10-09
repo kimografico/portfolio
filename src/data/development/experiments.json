@@ -13,14 +13,30 @@
   },
   {
     "id": 315,
-    "date": "2026-10-07 00:00",
+    "date": "2026-05-25 00:00",
     "title": "Web Cloner",
     "cliente": "Kimo",
-    "descripcion": "",
+    "descripcion": "A veces, mantener un sitio web sencillo o un archivo antiguo en WordPress resulta ser un overkill innecesario: consume recursos, requiere actualizaciones constantes y añade una capa de complejidad que ya no aporta valor. Con esa idea en mente creé esta aplicación de escritorio: para poder convertir páginas hechas en WordPress (o cualquier sitio estático y SPA) en webs puramente estáticas, limpias y fáciles de mover, manteniendo intactos los archivos, las imágenes y la estructura original de carpetas.\n\nEl enfoque técnico\n\nLa aplicación está construida con Electron como entorno de escritorio y utiliza Playwright junto con Google Chrome para automatizar el rastreo de los enlaces internos, mientras que Cheerio se encarga de procesar el HTML. La filosofía detrás del código es la sencillez: no utiliza TypeScript, frameworks de interfaz (como React o Vue) ni herramientas de compilación complejas (Vite o webpack); el código que se escribe es exactamente el que se ejecuta.\n\nEl programa no altera ni reescribe el código original de las páginas; simplemente descarga y enlaza de forma inteligente los recursos necesarios respetando la jerarquía de directorios. Esto la convierte en una herramienta excelente no solo para simplificar sitios en producción, sino también como un punto de partida perfecto para congelar un proyecto y migrarlo cómodamente a otro framework o arquitectura estática de forma local.",
     "visible": false,
     "imagenes": [],
     "videos": [],
     "extras": ["Faltan cosas"],
-    "stack": ["JavaScript", "Node.js", "Electron"]
+    "stack": ["JavaScript", "Node.js", "Electron"],
+    "type": "dev",
+    "category": "experiments"
+  },
+  {
+    "id": 317,
+    "date": "2026-05-25 00:00",
+    "title": "Impositor A5",
+    "cliente": "Kimo",
+    "descripcion": "¿Qué es y por qué la creé?\n\nPreparar documentos PDF para imprimir en formato folleto (booklet) con encuadernación en gusanillo o lomo de caballo suele ser un dolor de cabeza si se hace de forma manual. Creé esta ligera aplicación de escritorio para automatizar ese proceso exacto: toma cualquier PDF en formato A4 y genera un nuevo documento A4 apaisado con dos páginas A5 por cara, perfectamente ordenadas para una impresión dúplex lista para encuadernar.\n\nEl enfoque técnico\n\nLa herramienta está desarrollada en Python, estructurada de forma limpia separando la interfaz gráfica de la lógica de negocio (core/ y ui/). Para la interfaz se ha utilizado PyQt6, ofreciendo una experiencia de escritorio rápida, nativa y sin complicaciones. Todo el motor de imposición se encuentra desacoplado y diseñado para ser fácilmente testeable y mantenible.\n\nDescárgalo en https://github.com/kimografico/ImposePDF_A5/releases/download/v6/impositor-a5.exe",
+    "visible": false,
+    "imagenes": [],
+    "videos": [],
+    "extras": ["Faltan cosas"],
+    "stack": ["Python", "pyinstaller"],
+    "type": "dev",
+    "category": "experiments"
   }
 ]
