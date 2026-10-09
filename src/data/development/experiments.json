@@ -4,12 +4,39 @@
     "date": "2026-08-03 00:00",
     "title": "Conversor de fechas",
     "cliente": "BBVA",
-    "descripcion": "",
-    "visible": false,
-    "imagenes": [],
+    "descripcion": "Simulador de Conversión de Fecha/Hora (Front → ASO → APX → HOST)\n¿Qué es y por qué lo creé?\n\nDurante mi paso por el proyecto de la app para Portugal de un banco internacional, uno de los dolores de cabeza más complejos y recurrentes era el tratamiento de fechas y zonas horarias a través de las distintas capas de la arquitectura. Pasábamos horas en reuniones diarias debatiendo y depurando cómo viajaba la información para cada componente de software. Cansado de la complejidad abstracta del problema, decidí construir esta herramienta interactiva: una forma visual, cómoda y en tiempo real de seguir el flujo completo de una fecha —desde el dispositivo del cliente, pasando por los microservicios y la capa de arquitectura, hasta la base de datos central— para facilitar el entendimiento y alinear a todo el equipo.\n\nEl enfoque técnico\n\nLa aplicación está desarrollada con React 18 y TypeScript (con tipado estricto), utilizando Vite como empaquetador y Tailwind CSS para una interfaz moderna y limpia en modo oscuro. A nivel de arquitectura, el proyecto sigue principios rigurosos: diseño modular basado en componentes con responsabilidad única, y funciones puras en la capa de utilidades de zona horaria para garantizar un parseo seguro y tolerante a fallos frente a múltiples formatos (ISO, cadenas de texto, timestamps o formatos europeos). Además, incluye un sistema interactivo de arrastrar y soltar (drag & drop) para simular transformaciones encadenadas, persistencia dual (local y en npoint.io) y un validador visual de reglas de negocio para los sistemas centralizados (HOST).\n\n[Prueba la herramienta](https://kimografico.github.io/date-simulate/)",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "conversor-de-fechas001.png",
+        "label": "Vista principal, donde puede verse el catalogo de conversiones"
+      },
+      {
+        "image": "conversor-de-fechas004.png",
+        "label": "Modal para introducir los datos esperados"
+      },
+      {
+        "image": "conversor-de-fechas002.png",
+        "label": "Vista limpia, con un error porque los datos que llegan no coinciden con los esperados"
+      },
+      {
+        "image": "conversor-de-fechas003.png",
+        "label": "Modales de confirmación"
+      },
+      {
+        "image": "conversor-de-fechas006.png",
+        "label": "Conversor de franjas horarias"
+      },
+      {
+        "image": "conversor-de-fechas005.png",
+        "label": "How to"
+      }
+    ],
     "videos": [],
-    "extras": ["Faltan cosas"],
-    "stack": ["AI Studio", "TypeScript", "Node.js", "Vite"]
+    "extras": [],
+    "stack": ["AI Studio", "TypeScript", "Node.js", "Vite"],
+    "type": "dev",
+    "category": "experiments"
   },
   {
     "id": 315,
@@ -30,12 +57,29 @@
     "date": "2026-05-25 00:00",
     "title": "Impositor A5",
     "cliente": "Kimo",
-    "descripcion": "¿Qué es y por qué la creé?\n\nPreparar documentos PDF para imprimir en formato folleto (booklet) con encuadernación en gusanillo o lomo de caballo suele ser un dolor de cabeza si se hace de forma manual. Creé esta ligera aplicación de escritorio para automatizar ese proceso exacto: toma cualquier PDF en formato A4 y genera un nuevo documento A4 apaisado con dos páginas A5 por cara, perfectamente ordenadas para una impresión dúplex lista para encuadernar.\n\nEl enfoque técnico\n\nLa herramienta está desarrollada en Python, estructurada de forma limpia separando la interfaz gráfica de la lógica de negocio (core/ y ui/). Para la interfaz se ha utilizado PyQt6, ofreciendo una experiencia de escritorio rápida, nativa y sin complicaciones. Todo el motor de imposición se encuentra desacoplado y diseñado para ser fácilmente testeable y mantenible.\n\nDescárgalo en https://github.com/kimografico/ImposePDF_A5/releases/download/v6/impositor-a5.exe",
-    "visible": false,
-    "imagenes": [],
+    "descripcion": "### ¿Qué es y por qué la creé?\n\nPara preparar **documentos PDF** para imprimir en **formato folleto** (booklet) con encuadernación en gusanillo o lomo cosido suele ser un dolor de cabeza si se hace de forma manual. \nCreé esta ligera aplicación de escritorio para automatizar ese proceso exacto: \n\n - Toma cualquier PDF en formato A4 \n\n - Genera un nuevo documento A4 apaisado con dos páginas A5 por cara, perfectamente ordenadas para una impresión dúplex lista para encuadernar.\n\n ### El enfoque técnico\n\nLa herramienta está desarrollada en **Python**, estructurada de forma limpia separando la interfaz gráfica de la lógica de negocio `core/` y `ui/`. Para la interfaz se ha utilizado **PyQt6**, ofreciendo una experiencia de escritorio rápida, nativa y sin complicaciones. \nPara distribuirla sin necesidad de instalar Python, el ejecutable portable se genera con **PyInstaller**. \n\nTodo el motor de imposición se encuentra desacoplado y diseñado para ser fácilmente testeable y mantenible.\n\n[Descarga el ejecutable](https://github.com/kimografico/ImposePDF_A5/releases/download/v6/impositor-a5.exe)",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "impositor-a5001.jpg",
+        "label": "ImpositorA5"
+      },
+      {
+        "image": "impositor-a5002.jpg",
+        "label": "Programa"
+      },
+      {
+        "image": "impositor-a5003.jpg",
+        "label": "Resumen y mensaje de éxito"
+      },
+      {
+        "image": "impositor-a5004.jpg",
+        "label": "Como se usa"
+      }
+    ],
     "videos": [],
-    "extras": ["Faltan cosas"],
-    "stack": ["Python", "pyinstaller"],
+    "extras": [],
+    "stack": ["Python", "Claude.ai"],
     "type": "dev",
     "category": "experiments"
   }

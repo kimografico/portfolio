@@ -1,31 +1,31 @@
 [
   {
     "num": "01",
-    "title": "El Racó Solidari",
+    "title": "Bumfest Tiana 2026",
     "tipo": "Web",
-    "year": "2025",
+    "year": "2026",
     "category": "Developer",
-    "href": "/dev/web/270"
+    "href": "/dev/web/311"
   },
   {
     "num": "02",
-    "title": "Web Gaia Climb",
-    "tipo": "Legacy",
-    "year": "2022",
+    "title": "Doubloon Clicker",
+    "tipo": "Apps",
+    "year": "2026",
     "category": "Developer",
-    "href": "/dev/legacy/261"
+    "href": "/dev/apps/303"
   },
   {
     "num": "03",
-    "title": "Web Colordmar",
-    "tipo": "Legacy",
-    "year": "2020",
+    "title": "Tabata",
+    "tipo": "Apps",
+    "year": "2026",
     "category": "Developer",
-    "href": "/dev/legacy/213"
+    "href": "/dev/apps/314"
   },
   {
     "num": "04",
-    "title": "Rediseño de etiquetas de Hidromiel Odín",
+    "title": "Rediseño",
     "tipo": "Etiquetas",
     "year": "2026",
     "category": "GraphicDesign",
@@ -33,7 +33,7 @@
   },
   {
     "num": "05",
-    "title": "Carteles Montanejos para Metro Valencia",
+    "title": "Carteles Turísticos Metro Valencia",
     "tipo": "Carteleria",
     "year": "2026",
     "category": "GraphicDesign",
@@ -41,7 +41,7 @@
   },
   {
     "num": "06",
-    "title": "Carteles para el 1º Foro de Turismo Inteligente",
+    "title": "Foro de Turismo Inteligente",
     "tipo": "Carteleria",
     "year": "2026",
     "category": "GraphicDesign",

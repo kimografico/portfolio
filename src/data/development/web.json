@@ -141,12 +141,73 @@
     "id": 311,
     "date": "2026-09-02 00:00",
     "title": "Bumfest Tiana 2026",
-    "cliente": "2LB Produccions & Ajuntament de Tiana",
-    "descripcion": "Página web oficial para Bum Tiana Fest, un festival dedicado a la crianza y la primera infancia celebrado en Tiana (Barcelona). Concebí este sitio informativo como un punto de encuentro ágil para familias y visitantes, permitiendo consultar la programación organizada por categorías, explorar las actividades a través de un timeline visual con horarios, visualizar a los patrocinadores en un carrusel dinámico y acceder a la reserva de plazas en talleres mediante formularios externos. Además, cuidé especialmente la experiencia de usuario enlazando las distintas ubicaciones del festival directamente con Google Maps para facilitar la llegada y el desplazamiento durante la jornada.\n\nEn el apartado técnico, la web está desarrollada con React, Vite y Tailwind CSS. Con un planteamiento mobile-first pensado para una navegación cómoda desde el teléfono móvil durante el evento, estructuré el proyecto mediante una arquitectura de componentes modulares documentados en Storybook. Asimismo, presté especial atención al diseño inclusivo cumpliendo con las pautas de accesibilidad WCAG 2.1 AA.\n\nUn sitio web amigable, accesible y muy práctico, pensado para guiar a las familias antes y durante el festival.",
+    "cliente": "2LB Produccions & Aj. de Tiana",
+    "descripcion": "Página web oficial para Bum Tiana Fest, un festival dedicado a la crianza y la primera infancia celebrado en Tiana (Barcelona). Concebí este sitio informativo como un punto de encuentro ágil para familias y visitantes, permitiendo consultar la programación organizada por categorías, explorar las actividades a través de un timeline visual con horarios, visualizar a los patrocinadores en un carrusel dinámico y acceder a la reserva de plazas en talleres mediante formularios externos. Además, cuidé especialmente la experiencia de usuario enlazando las distintas ubicaciones del festival directamente con Google Maps para facilitar la llegada y el desplazamiento durante la jornada.\n\nEn el apartado técnico, la web está desarrollada con React, Vite y Tailwind CSS. Con un planteamiento mobile-first pensado para una navegación cómoda desde el teléfono móvil durante el evento, estructuré el proyecto mediante una arquitectura de componentes modulares documentados en Storybook. Asimismo, presté especial atención al diseño inclusivo cumpliendo con las pautas de accesibilidad WCAG 2.1 AA.\n\nUn sitio web amigable, accesible y muy práctico, pensado para guiar a las familias antes y durante el festival.\n\n[BUMFEST Tiana](https://kimografico.github.io/bumtianafest/)",
     "visible": false,
-    "imagenes": [],
+    "imagenes": [
+      {
+        "image": "bumfest-tiana-2026001.jpg",
+        "label": "Portada"
+      },
+      {
+        "image": "bumfest-tiana-2026002.jpg",
+        "label": "Por qué se llama BumFest"
+      },
+      {
+        "image": "bumfest-tiana-2026003.jpg",
+        "label": "Talleres"
+      },
+      {
+        "image": "bumfest-tiana-2026004.jpg",
+        "label": "Charlas"
+      },
+      {
+        "image": "bumfest-tiana-2026005.jpg",
+        "label": "Concierto de clausura"
+      },
+      {
+        "image": "bumfest-tiana-2026006.jpg",
+        "label": "Horarios"
+      },
+      {
+        "image": "bumfest-tiana-2026007.jpg",
+        "label": "Localizaciones de la comida popular"
+      },
+      {
+        "image": "bumfest-tiana-2026008.jpg",
+        "label": "Patrocinadores y FAQ"
+      },
+      {
+        "image": "bumfest-tiana-2026009.jpg",
+        "label": "Localizaciones de las actividades"
+      },
+      {
+        "image": "bumfest-tiana-2026010.jpg",
+        "label": "Producción"
+      },
+      {
+        "image": "bumfest-tiana-2026011.jpg",
+        "label": "Footer"
+      },
+      {
+        "image": "bumfest-tiana-2026012.jpg",
+        "label": "Accesibilidad"
+      },
+      {
+        "image": "bumfest-tiana-2026013.jpg",
+        "label": "Detalle de Charla"
+      },
+      {
+        "image": "bumfest-tiana-2026014.jpg",
+        "label": "Detalle de taller"
+      },
+      {
+        "image": "bumfest-tiana-2026015.jpg",
+        "label": "Detalle de taller"
+      }
+    ],
     "videos": [],
-    "extras": ["Faltan cosas"],
+    "extras": [],
     "stack": ["AI Studio", "Opencode", "React", "Node.js", "Vite", "TypeScript"],
     "type": "dev",
     "category": "web"
