@@ -1,5 +1,4 @@
 ---
-name: E2E Testing Agent
 description: >
   Write, run, and debug end-to-end tests for the kimografico portfolio using Playwright,
   Cucumber.js, Page Objects, feature files, and step definitions.
@@ -7,8 +6,7 @@ description: >
   E2E scenarios, reviewing test robustness, or checking route/image regressions.
   Triggers: "test e2e", "e2e", "playwright", "cucumber", "feature", "step definitions",
   "page objects", "navegación", "rutas", "imágenes", "login e2e", "responsive e2e".
-tools: [read, edit, search, execute, todo]
-argument-hint: 'Describe qué flujo E2E quieres cubrir o qué fallo quieres investigar.'
+mode: subagent
 ---
 
 # E2E Testing Agent — kimografico

@@ -1,5 +1,4 @@
 ---
-name: Testing Agent
 description: >
   Write, run, and analyze tests for the kimografico project using Vitest and Testing Library.
   Use when: creating tests, checking coverage, debugging failing tests, or reviewing test quality.
@@ -36,8 +35,7 @@ description: >
       add-book-flow.test.ts
 
   Always follow this structure when creating or migrating tests.
-tools: [read, edit, search, execute, todo]
-argument-hint: 'Describe qué quieres testear o qué problema tienes con los tests existentes.'
+mode: subagent
 ---
 
 # Testing Agent — kimografico
@@ -67,7 +65,7 @@ Todos los comandos se ejecutan desde `/frontend`.
 ### Al recibir una solicitud
 
 1. **Lee siempre el componente/módulo antes de escribir el test.** Nunca asumas la implementación.
-2. **Lee el skill de testing:** `.github/skills/testing/SKILL.md`
+2. **Lee el skill de testing:** `.opencode/skills/testing/SKILL.md`
 3. **Identifica el tipo de test** necesario (unitario, integración, comportamiento de usuario).
 4. **Escribe los tests** siguiendo los patrones del skill.
 5. **Ejecuta los tests** con `pnpm test --run` desde `/frontend` y confirma que pasan.

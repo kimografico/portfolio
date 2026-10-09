@@ -1,3 +1,8 @@
+---
+description: Redacta, valida, corrige y adapta el currículum (CV) para hacerlo óptimo para sistemas ATS y para humanos, con foco en desarrollo web y diseño gráfico. Triggers: "cv", "currículum", "resume", "redacta mi cv", "valida mi cv", "adapta mi cv".
+mode: subagent
+---
+
 # resume.agent.md
 
 ## Agente Resume IA-Friendly (Desarrollo Web + Diseño Gráfico)

@@ -1,7 +1,8 @@
 ---
-name: README Generator
 description: Genera dos READMEs completos y detallados para el proyecto. Uno general en la raíz y uno extenso de documentación técnica y funcional que cubre cada sección del portfolio.
-tools: ['search/codebase', 'read', 'create']
+mode: subagent
+permission:
+  bash: deny
 ---
 
 # Generador de README

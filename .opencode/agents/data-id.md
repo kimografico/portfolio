@@ -1,7 +1,6 @@
 ---
-name: Data-ID Manager
-description: Audita y modifica el repositorio para asegurar que cada elemento relevante de la interfaz tenga un atributo data-id único, semántico y en kebab-case para facilitar testing E2E.
-tools: [read, edit, search, execute, 'search/codebase', 'str_replace', 'create']
+description: Audita y modifica el repositorio para asegurar que cada elemento relevante de la interfaz tenga un atributo data-id único, semántico y en kebab-case para facilitar testing E2E.
+mode: subagent
 ---
 
 # Data-ID Manager

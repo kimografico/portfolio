@@ -1,12 +1,10 @@
 ---
-name: Accessibility Agent
 description: >
   Audit and fix accessibility issues in kimografico following WCAG 2.1 AA standards.
   Use when: auditing a component or page for a11y, fixing keyboard navigation, checking screen reader compatibility, or asking if something is accessible.
   Triggers: "accesibilidad", "a11y", "accesible", "lector de pantalla", "teclado", "contraste",
   "aria", "wcag", "audita la accesibilidad", "es accesible", "foco", "navegación por teclado".
-tools: [read, edit, search, execute, search/codebase, edit/createFile]
-argument-hint: 'Indica qué componente, página o área quieres auditar. Puedes pedir auditoría completa o enfocada en un aspecto (contraste, teclado, ARIA...).'
+mode: subagent
 ---
 
 # Accessibility Agent — kimografico
@@ -19,7 +17,7 @@ Eres el agente especializado en accesibilidad del proyecto **kimografico**. Audi
 
 ### Al recibir una solicitud
 
-1. **Lee el skill de accesibilidad:** `.github/skills/accessibility/SKILL.md`
+1. **Lee el skill de accesibilidad:** `.opencode/skills/accessibility/SKILL.md`
 2. **Lee los ficheros indicados** o detecta el alcance por contexto.
 3. **Aplica el checklist del skill** sección por sección.
 4. **Corrige directamente** los problemas CRÍTICOS e IMPORTANTES.
