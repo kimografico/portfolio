@@ -5,6 +5,9 @@ import type { BaseProject } from '../../interfaces/project';
 import type { ComponentType } from 'react';
 import { THUMBS_BASE, NO_COVER_PATH, resolveAssetPath } from '../../data/config/app';
 
+/** Tecnologías que no se muestran en la barra de stack de la tarjeta (solo visibles en el detalle) */
+const HIDDEN_STACK_KEYS = new Set(['OPENCODE', 'AI STUDIO', 'COPILOT', 'GITHUB COPILOT']);
+
 interface ProjectCardProps<T extends BaseProject> {
   /** Proyecto a renderizar (tipo genérico) */
   project: T;
@@ -77,6 +80,10 @@ export const ProjectCard = <T extends BaseProject>({
 
   const year = project.date?.slice(0, 4);
 
+  const visibleStack = project.stack?.filter(
+    (tech) => !HIDDEN_STACK_KEYS.has(tech.trim().toUpperCase()),
+  );
+
   return (
     <Link
       to={to}
@@ -115,14 +122,27 @@ export const ProjectCard = <T extends BaseProject>({
         )}
 
         {/* Stack icons - Solo si webProject es true y stackIconMap existe */}
-        {webProject && project.stack && stackIconMap && IconFallback && (
-          <div className="flex flex-row gap-2 mt-1 items-center" data-id={`${dataId}-stack`}>
-            {project.stack.map((tech) => {
+        {webProject && visibleStack && visibleStack.length > 0 && stackIconMap && IconFallback && (
+          <div className="flex flex-row gap-3 mt-1 items-center" data-id={`${dataId}-stack`}>
+            {visibleStack.map((tech) => {
               const key = tech.trim().toUpperCase();
               const Icon = stackIconMap[key] || IconFallback;
               return (
-                <span key={tech} className="inline-block align-middle" aria-hidden="true">
-                  <Icon size={28} className="text-muted hover:text-ink transition-colors" />
+                <span
+                  key={tech}
+                  className="group/icon relative inline-block align-middle"
+                  aria-hidden="true"
+                >
+                  <Icon
+                    size={22}
+                    className="text-muted group-hover/icon:text-ink transition-colors"
+                  />
+                  <span
+                    role="tooltip"
+                    className="pointer-events-none absolute bottom-full left-1/2 z-20 mb-1 -translate-x-1/2 whitespace-nowrap rounded-md bg-ink px-2 py-0.5 text-[10px] font-medium text-surface opacity-0 shadow-md transition-opacity duration-150 group-hover/icon:opacity-100"
+                  >
+                    {tech}
+                  </span>
                 </span>
               );
             })}
