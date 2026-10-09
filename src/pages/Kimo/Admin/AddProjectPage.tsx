@@ -4,6 +4,7 @@ import EditableFieldList from '../../../components/compositions/EditableFieldLis
 import TechStackTags from '../../../components/compositions/TechStackTags';
 import UIButton from '../../../components/ui/UIButton';
 import BackendOfflineAlert from '../../../components/ui/BackendOfflineAlert';
+import { STACK_QUICK_OPTIONS, AI_STACK_OPTIONS } from '../../../data/config/stackOptions';
 
 /**
  * Categorías disponibles por tipo.
@@ -27,22 +28,6 @@ const CATEGORIES_BY_TYPE: Record<string, { label: string; value: string }[]> = {
     { value: 'experiments', label: 'Experimentos' },
   ],
 };
-
-/** Tecnologías rápidas para el campo stack (solo dev) */
-const STACK_QUICK_OPTIONS = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Vue',
-  'Angular',
-  'WordPress',
-  'PHP',
-  'Node.js',
-  'Vite',
-  'Prestashop',
-];
 
 /**
  * AddProjectPage: Formulario para añadir un proyecto nuevo.
@@ -226,6 +211,7 @@ export default function AddProjectPage() {
           <TechStackTags
             stack={form.stack}
             options={STACK_QUICK_OPTIONS}
+            aiOptions={AI_STACK_OPTIONS}
             onToggle={toggleStack}
             onAddCustom={addCustomStack}
             dataIdBase="add-project-stack"

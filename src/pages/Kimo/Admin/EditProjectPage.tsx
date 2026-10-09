@@ -38,6 +38,7 @@ import {
   type ProjectData,
 } from '../../../api/apiClient';
 import { PORTFOLIO_IMAGES_BASE } from '../../../data/config/app';
+import { STACK_QUICK_OPTIONS, AI_STACK_OPTIONS } from '../../../data/config/stackOptions';
 
 /**
  * Categorías disponibles por tipo.
@@ -61,22 +62,6 @@ const CATEGORIES_BY_TYPE: Record<string, { label: string; value: string }[]> = {
     { value: 'experiments', label: 'Experimentos' },
   ],
 };
-
-/** Tecnologías rápidas para el campo stack (solo dev) */
-const STACK_QUICK_OPTIONS = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Vue',
-  'Angular',
-  'WordPress',
-  'PHP',
-  'Node.js',
-  'Vite',
-  'Prestashop',
-];
 
 /**
  * EditProjectPage: Formulario para editar un proyecto existente.
@@ -587,6 +572,24 @@ export default function EditProjectPage() {
             <p className="text-xs font-semibold text-muted mb-2">Stack tecnológico</p>
             <div className="flex flex-wrap gap-2 mb-2">
               {STACK_QUICK_OPTIONS.map((tech) => (
+                <button
+                  type="button"
+                  key={tech}
+                  onClick={() => toggleStack(tech)}
+                  data-id={`edit-project-stack-${tech.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
+                  className={`text-xs px-2 py-1 rounded border transition-colors ${
+                    f.stack.includes(tech)
+                      ? 'bg-accent text-white border-accent'
+                      : 'border-gray-300 text-muted hover:border-gray-400'
+                  }`}
+                >
+                  {tech}
+                </button>
+              ))}
+            </div>
+            <p className="text-xs font-semibold text-muted mb-2 mt-3">AI Development Platforms</p>
+            <div className="flex flex-wrap gap-2 mb-2">
+              {AI_STACK_OPTIONS.map((tech) => (
                 <button
                   type="button"
                   key={tech}
