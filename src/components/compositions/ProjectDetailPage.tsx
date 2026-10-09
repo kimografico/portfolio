@@ -3,7 +3,7 @@ import ImageLightbox from '../ui/ImageLightbox';
 import PrevNextBtns from '../ui/PrevNextBtns';
 import UIButton from '../ui/UIButton';
 import { useBackendStatus } from '../../contexts/BackendStatusContext';
-import { renderMultilineText } from '../../utils/renderMultilineText';
+import { MarkdownText } from '../ui/MarkdownText';
 
 interface ProjectMediaItem {
   image: string;
@@ -132,7 +132,7 @@ export default function ProjectDetailPage({
           </div>
 
           <div className="max-w-3xl text-base text-muted leading-relaxed mb-4">
-            {renderMultilineText(description)}
+            <MarkdownText text={description} />
           </div>
         </div>
       </section>

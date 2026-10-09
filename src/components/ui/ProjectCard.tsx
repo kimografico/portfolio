@@ -6,7 +6,13 @@ import type { ComponentType } from 'react';
 import { THUMBS_BASE, NO_COVER_PATH, resolveAssetPath } from '../../data/config/app';
 
 /** Tecnologías que no se muestran en la barra de stack de la tarjeta (solo visibles en el detalle) */
-const HIDDEN_STACK_KEYS = new Set(['OPENCODE', 'AI STUDIO', 'COPILOT', 'GITHUB COPILOT']);
+const HIDDEN_STACK_KEYS = new Set([
+  'OPENCODE',
+  'AI STUDIO',
+  'COPILOT',
+  'GITHUB COPILOT',
+  'CLAUDE.AI',
+]);
 
 interface ProjectCardProps<T extends BaseProject> {
   /** Proyecto a renderizar (tipo genérico) */
