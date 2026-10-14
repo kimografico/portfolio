@@ -82,5 +82,56 @@
     "stack": ["Python", "Claude.ai"],
     "type": "dev",
     "category": "experiments"
+  },
+  {
+    "id": 319,
+    "date": "2026-10-13 00:00",
+    "title": "Laboratorio",
+    "cliente": "Kimo",
+    "descripcion": "Cuando estás diseñando una web, la estructura clásica a veces se queda corta si buscas un impacto visual que capte de verdad la atención. **@kimografico/laboratorio** nace de la necesidad de tener mi propio kit personal de fondos interactivos y componentes reutilizables *—desde efectos de auroras y mallas fluidas hasta partículas y matrices en canvas—* para experimentar, aprender y darle personalidad a cualquier proyecto. Lo que empezó como un espacio de pruebas visuales se ha convertido en una **librería modular** y lista para importar desde otros desarrollos.\n\nA nivel técnico, el proyecto está construido con **Astro** como motor del catálogo/showcase web, mientras que los componentes e interactividad visual están desarrollados con **React 19** y animaciones de alto rendimiento basadas en **HTML5 Canvas**, integrando además los tokens y utilidades de Tailwind CSS v4. Está arquitecturado con un enfoque dual: el sitio web sirve como documentación en vivo, a la vez que compila la librería (dist/) lista para incrustarse como islas o componentes en Next.js, Vite o el propio Astro.\n\nEs un espacio vivo que iré ampliando a medida que surjan nuevos experimentos. Puedes explorar el catálogo completo y probar los fondos en directo en el laboratorio. ¡Pásate a echarle un vistazo si quieres ver cómo elevar el diseño web más allá de lo convencional!\n\n[@kimografico/laboratorio](https://kimografico.github.io/laboratorio/)",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "laboratorio005.png",
+        "label": "Portada"
+      },
+      {
+        "image": "laboratorio002.png",
+        "label": "Galería de experimentos"
+      },
+      {
+        "image": "laboratorio001.png",
+        "label": "Fondo interactivo"
+      },
+      {
+        "image": "laboratorio008.png",
+        "label": "Configuración de la interactividad"
+      },
+      {
+        "image": "laboratorio007.png",
+        "label": "A pantalla completa"
+      },
+      {
+        "image": "laboratorio009.png",
+        "label": "Código listo para pegar"
+      },
+      {
+        "image": "laboratorio004.png",
+        "label": "Componentes UI"
+      },
+      {
+        "image": "laboratorio006.png",
+        "label": "Iconos"
+      },
+      {
+        "image": "laboratorio003.png",
+        "label": "Tema claro"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "stack": ["Astro", "React", "Opencode", "TypeScript"],
+    "type": "dev",
+    "category": "experiments"
   }
 ]

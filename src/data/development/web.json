@@ -211,5 +211,48 @@
     "stack": ["AI Studio", "Opencode", "React", "Node.js", "Vite", "TypeScript"],
     "type": "dev",
     "category": "web"
+  },
+  {
+    "id": 318,
+    "date": "2026-10-10 00:00",
+    "title": "Wiki Dev",
+    "cliente": "Kimo",
+    "descripcion": "Cuando estás aprendiendo a programar o acumulando nuevos conceptos cada día, es fácil perder el hilo de lo que vas descubriendo. **wiki-dev** nace con una idea muy clara: crear un espacio propio y centralizado donde recopilar todos esos términos, tecnologías, paquetes y comparativas que un desarrollador necesita tener siempre a mano. De paso, aproveché el proyecto para explorar a fondo Astro y poner en práctica flujos de desarrollo modernos basados en especificaciones.\n\nA nivel técnico, el proyecto está construido con **Astro** y empaquetado como un sitio estático (SSG) servido directamente desde GitHub Pages, lo que garantiza una velocidad de carga excelente sin necesidad de base de datos ni backend complejos. El contenido se alimenta exclusivamente mediante archivos Markdown validados mediante esquemas estrictos con Zod y TypeScript, asegurando que cada entrada cumpla con los estándares de calidad. Además, incorpora islas interactivas en React para el buscador y las preferencias de usuario, estilos limpios con Tailwind CSS, y una robusta tubería de CI/CD en GitHub Actions con tests en Vitest que exigen una cobertura mínima del 90% en cada despliegue.\n\nSi te apetece echarle un vistazo al resultado o explorar cómo está estructurada la wiki, puedes visitar el sitio publicado en [wiki-dev](https://kimografico.github.io/wiki-dev/). \n\n[WIKIDEV](https://kimografico.github.io/wiki-dev/)",
+    "visible": true,
+    "imagenes": [
+      {
+        "image": "wiki-dev001.png",
+        "label": "Portada"
+      },
+      {
+        "image": "wiki-dev006.png",
+        "label": "Entradas"
+      },
+      {
+        "image": "wiki-dev004.png",
+        "label": "Glosario"
+      },
+      {
+        "image": "wiki-dev003.png",
+        "label": "Detalle de un concepto"
+      },
+      {
+        "image": "wiki-dev002.png",
+        "label": "Conceptos relacionados"
+      },
+      {
+        "image": "wiki-dev007.png",
+        "label": "Tema claro"
+      },
+      {
+        "image": "wiki-dev008.png",
+        "label": "MD con tema claro"
+      }
+    ],
+    "videos": [],
+    "extras": [],
+    "stack": ["Astro", "React", "Vite", "TypeScript"],
+    "type": "dev",
+    "category": "web"
   }
 ]
