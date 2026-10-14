@@ -121,7 +121,7 @@ export default function ImageDropZone({
             </span>
 
             <div
-              className="w-16 h-12 rounded overflow-hidden flex-shrink-0 border"
+              className="w-32 h-24 rounded overflow-hidden flex-shrink-0 border"
               style={{ background: 'var(--color-bg-btn)', borderColor: 'var(--color-border)' }}
               data-id="new-image-thumb"
             >
@@ -137,7 +137,7 @@ export default function ImageDropZone({
                   className="w-full h-full flex items-center justify-center text-lg"
                   style={{ color: 'var(--color-text-btn)' }}
                 >
-                  <IconImage aria-label="Sin imagen" className="w-7 h-7" />
+                  <IconImage aria-label="Sin imagen" className="w-10 h-10" />
                 </div>
               )}
             </div>

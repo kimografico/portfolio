@@ -543,7 +543,7 @@ export default function EditProjectPage() {
           <textarea
             id="ep-desc"
             data-id="edit-project-desc"
-            className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent resize-y"
+            className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent resize-y [field-sizing:content] min-h-[6rem]"
             rows={4}
             value={f.descripcion}
             onChange={(e) => handleField('descripcion', e.target.value)}
@@ -715,7 +715,7 @@ export default function EditProjectPage() {
                 </span>
 
                 <div
-                  className="w-16 h-12 rounded overflow-hidden flex-shrink-0 border"
+                  className="w-32 h-24 rounded overflow-hidden flex-shrink-0 border"
                   style={{ background: 'var(--color-bg-btn)', borderColor: 'var(--color-border)' }}
                 >
                   {img.image && !imgErrors[i] ? (
@@ -757,7 +757,7 @@ export default function EditProjectPage() {
                       style={{ background: 'var(--color-bg-btn)', color: 'var(--color-text-btn)' }}
                       data-id="new-image-thumb"
                     >
-                      <IconImage aria-label="Sin imagen" className="w-7 h-7" />
+                      <IconImage aria-label="Sin imagen" className="w-10 h-10" />
                     </div>
                   )}
                 </div>

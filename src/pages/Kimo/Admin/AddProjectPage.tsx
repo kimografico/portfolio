@@ -183,7 +183,7 @@ export default function AddProjectPage() {
           <textarea
             id="ap-desc"
             data-id="add-project-desc"
-            className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent resize-y"
+            className="w-full border rounded px-2 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent resize-y [field-sizing:content] min-h-[6rem]"
             rows={4}
             value={form.descripcion}
             onChange={(e) => handleField('descripcion', e.target.value)}
