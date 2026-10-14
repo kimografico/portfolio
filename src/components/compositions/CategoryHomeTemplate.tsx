@@ -145,17 +145,9 @@ export default function CategoryHomeTemplate({
         />
       )}
 
-      {/* RecentProjectsSection solo si acceso es directo/externo */}
-      {isDirectAccess && filteredProjects.length > 0 && (
-        <RecentProjectsSection
-          projects={filteredProjects}
-          viewAllHref={`${APP_BASENAME}${basePath}`}
-        />
-      )}
-
       {/* Categorías en grilla */}
       <section
-        className="flex-1 max-w-5xl mx-auto w-full px-4 py-12"
+        className="flex-1 max-w-7xl mx-auto w-full px-6 md:px-12 py-12 mt-12"
         data-id={categoriesSectionDataId}
       >
         <div className={`grid ${gridCols} gap-8`} data-id="categories-grid">
@@ -171,6 +163,14 @@ export default function CategoryHomeTemplate({
           ))}
         </div>
       </section>
+
+      {/* RecentProjectsSection solo si acceso es directo/externo */}
+      {isDirectAccess && filteredProjects.length > 0 && (
+        <RecentProjectsSection
+          projects={filteredProjects}
+          viewAllHref={`${APP_BASENAME}${basePath}`}
+        />
+      )}
     </div>
   );
 }
