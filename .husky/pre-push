@@ -1,23 +1,20 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
 echo "🔍 Running pre-push checks..."
 echo ""
 
 echo "📋 Linting..."
-pnpm lint || exit 1
+npm run lint || exit 1
 
 echo ""
 echo "🔤 Type checking..."
-pnpm typecheck || exit 1
+npm run typecheck || exit 1
 
 echo ""
 echo "🧪 Running tests..."
-pnpm test || exit 1
+npm run test || exit 1
 
 echo ""
 echo "🏗️  Building..."
-pnpm build || exit 1
+npm run build || exit 1
 
 echo ""
 echo "✅ All checks passed! Pushing..."
